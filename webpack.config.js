@@ -32,6 +32,7 @@ const config = {
     plugins: [
         new CopyPlugin({
             patterns: [
+                { from: 'SMART_SECTORv1.0/*.json', to:path.resolve(__dirname, 'build/api/SMART_SECTORv1.0','','[name][ext]')},
                 { from: 'src/**/*.html', to:path.resolve(__dirname, 'build','','[name][ext]')},
                 { from: 'src/**/*.css', to: path.resolve(__dirname, 'build','','[name][ext]')},
                 {
