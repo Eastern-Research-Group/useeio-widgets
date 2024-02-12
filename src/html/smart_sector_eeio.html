@@ -8,16 +8,38 @@
 </head>
 
 <body>
-    <div class="io" style="max-width: 1200px; margin: auto;">
-        <h1 class="text-center">Sector Contribution to Impact GHG</h1>
-        <p>
-            The sector contribution to impact GHG chart widget
-        </p>
-        <div class="impact-chart"></div>
+    <div class="io" style="margin: 25px;">
+        <div style="width: 80%; margin: auto;">
+            <h1 class="text-center">Sector Contribution to Impact GHG</h1>
+            <p>
+                The sector contribution to impact GHG chart widget
+            </p>>
+            <div id="smart-sector-eeio">
+            </div>
+        </div>
     </div>
 
+    <script src="lib/apexcharts.min.js"></script>
     <script src="lib/useeio_widgets.js"></script>
     <script>
+
+        var config = useeio.urlConfig();
+        var modelID = config.get().model || 'SMART_SECTORv1.0';
+
+        var model = useeio.model({
+            endpoint: './api',
+            model: modelID,
+            asJsonFiles: true,
+        });
+
+        var smartSectorChart = useeio.smartSectorChart({
+            model: model,
+            selector: '#smart-sector-eeio',
+        });
+        smartSectorChart.update({
+            sectors: ["1111A0"]
+        });
+
     </script>
 </body>
 

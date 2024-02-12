@@ -22,6 +22,7 @@ import { ImpactChart, ImpactChartConfig } from "./widgets/impact-chart";
 import { SettingsWidget, SettingsWidgetConfig } from "./widgets/settings";
 import { WebApiConfig, WebModel, modelOf } from "useeio";
 import { ProfileChart, ProfileChartConfig } from "./charts/profile-chart";
+import { SmartSectorEEIO, SmartSectorChartConfig } from "./charts/smart-sector-eeio";
 import { Paginator } from "./widgets/paginator";
 import { CountCombo } from "./widgets/count-combo";
 import { MatrixSelector } from "./widgets/matrix-selector";
@@ -104,6 +105,10 @@ export function dotsMenu(args: WidgetArgs): DotsMenu {
 
 export function profileChart(config: ProfileChartConfig): ProfileChart {
     return new ProfileChart(config);
+}
+
+export function smartSectorChart(config: SmartSectorChartConfig): SmartSectorEEIO {
+    return new SmartSectorEEIO(config);
 }
 
 export function paginator(args: WidgetArgs): Paginator {
