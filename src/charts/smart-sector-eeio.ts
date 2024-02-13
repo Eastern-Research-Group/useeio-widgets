@@ -1,11 +1,14 @@
 import * as apex from "apexcharts";
 import { Config, Widget } from "../";
-import { WebModel, Sector } from "useeio";
+import { WebModel, Sector, WebApiConfig } from "useeio";
+import {modelOfSmartSector, WebModelSmartSector} from '../smartSectorChart/webApiSmartSector';
+
 
 export interface SmartSectorChartConfig {
     model: WebModel;
     selector: string;
 }
+
 
 export class SmartSectorEEIO extends Widget {
 
@@ -13,7 +16,21 @@ export class SmartSectorEEIO extends Widget {
         super();
     }
 
+    
+
     async update(config: Config) {
+       const modelSmartSector = this.modelSmartSector({
+                endpoint: './api',
+                model: 'SMART_SECTORv1.0',
+                asJsonFiles: true,
+        
+        })
+
+        const impactoutputs = await modelSmartSector.impactOutPut();
+        const sectorContributionToImpactGhg = await modelSmartSector.sectorContributionToImpactGhg();
+        const sectorMapping = await modelSmartSector.sectorMapping();
+
+
         const options = await this.calculate(config);
         const chart = new ApexCharts(
             document.querySelector(this._chartConfig.selector),
@@ -40,9 +57,12 @@ export class SmartSectorEEIO extends Widget {
         });
     }
 
+     modelSmartSector(conf: WebApiConfig & {model: string}): WebModelSmartSector {
+        return modelOfSmartSector(conf);
+    }
+
     private async calculate(config: Config): Promise<apex.ApexOptions> {
         const sectors = await this.selectSectors(config);
-        console.log(sectors)
        
     
         return {
