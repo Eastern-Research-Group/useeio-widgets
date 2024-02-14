@@ -22,7 +22,7 @@ import { ImpactChart, ImpactChartConfig } from "./widgets/impact-chart";
 import { SettingsWidget, SettingsWidgetConfig } from "./widgets/settings";
 import { WebApiConfig, WebModel, modelOf } from "useeio";
 import { ProfileChart, ProfileChartConfig } from "./charts/profile-chart";
-import { SmartSectorEEIO, SmartSectorChartConfig } from "./charts/smart-sector-eeio";
+import { SmartSectorEEIO, SmartSectorChartConfig } from "./smartSectorChart/smart-sector-eeio";
 import { Paginator } from "./widgets/paginator";
 import { CountCombo } from "./widgets/count-combo";
 import { MatrixSelector } from "./widgets/matrix-selector";

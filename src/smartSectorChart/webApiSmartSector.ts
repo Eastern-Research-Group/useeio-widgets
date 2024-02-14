@@ -172,22 +172,49 @@ export class WebModelSmartSector {
         return this._sectorOutput || [];
       }
 
+    /**
+   * Get the output of the specific impactOutput
+   */
+   findSectorOutput(id: string, impactList:ImpactOutput[]): number {
+    const impactoutput:ImpactOutput = impactList.find(d => {
+      if (id === d.id) {
+        return true;
+      }
+    });
+    return impactoutput ? impactoutput.x : 0;
+  }
+
+  
+    /**
+   * Get the output of the specific impactOutput
+   */
+    findPurchasedGroup(id: string, SectorMappingList:SectorMapping[]): string {
+      const sectorMapping:SectorMapping = SectorMappingList.find(d => {
+        if (id === d.id) {
+          return true;
+        }
+      });
+      return sectorMapping.group ;
+    }
   
 }
+
+
 
 export interface SectorContributionToImpact {
 
-  sector_code: string;
+  sector_code?: string;
    
-  purchased_commodity_code: string;
+  purchased_commodity_code?: string;
   
-  impact_per_purchase: number;
+  impact_per_purchase?: number;
 
-  sector_output: number;
+  sector_output?: number;
 
-  "total_impact(MMT)": number;
+  "total_impact(MMT)"?: number;
 
 }
+
 
 export interface SectorMapping {
 

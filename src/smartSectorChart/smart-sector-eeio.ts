@@ -1,7 +1,9 @@
 import * as apex from "apexcharts";
-import { Config, Widget } from "../";
+import { Config, Widget } from "..";
 import { WebModel, Sector, WebApiConfig } from "useeio";
-import {modelOfSmartSector, WebModelSmartSector} from '../smartSectorChart/webApiSmartSector';
+import {modelOfSmartSector, WebModelSmartSector} from './webApiSmartSector';
+import {selectSectorName, smartSectorCalc} from '../smartSectorCalc/smartSectorCalculations'
+import {SmartSector} from '../smartSectorChart/smartSector'
 
 
 export interface SmartSectorChartConfig {
@@ -29,6 +31,25 @@ export class SmartSectorEEIO extends Widget {
         const impactoutputs = await modelSmartSector.impactOutPut();
         const sectorContributionToImpactGhg = await modelSmartSector.sectorContributionToImpactGhg();
         const sectorMapping = await modelSmartSector.sectorMapping();
+        const sectorsList = await this._chartConfig.model.sectors();
+
+        const smartSectorListGroup: SmartSector[]  = []
+        sectorContributionToImpactGhg.forEach((t, i) => {
+              const sumSectorCode = t.sector_code;
+              const sumSectorName =   selectSectorName(t.sector_code,sectorsList);
+              const sumImpactTotal =  (((t.impact_per_purchase)*(modelSmartSector.findSectorOutput(t.sector_code,impactoutputs)))/1000000000);
+              const sumPurchasedGroup =  modelSmartSector.findPurchasedGroup(t.purchased_commodity_code,sectorMapping);
+
+              smartSectorCalc(smartSectorListGroup,new SmartSector({
+                sumSectorCode:sumSectorCode,
+                sumSectorName:sumSectorName,
+                sumtotalImpact:sumImpactTotal,
+                sumPurchasedGroup:sumPurchasedGroup
+            }))
+
+
+        })
+
 
 
         const options = await this.calculate(config);
@@ -39,31 +60,12 @@ export class SmartSectorEEIO extends Widget {
         chart.render();
     }
 
-    private async selectSectors(config: Config): Promise<Sector[]> {
-        if (!config.sectors || config.sectors.length === 0) {
-            return [];
-        }
-
-
-        const sectors = await this._chartConfig.model.sectors();
-        return sectors.filter(s => {
-            if (config.sectors.indexOf(s.code) < 0) {
-                return false;
-            }
-            if (config.location && s.location !== config.location) {
-                return false;
-            }
-            return true;
-        });
-    }
 
      modelSmartSector(conf: WebApiConfig & {model: string}): WebModelSmartSector {
         return modelOfSmartSector(conf);
     }
 
-    private async calculate(config: Config): Promise<apex.ApexOptions> {
-        const sectors = await this.selectSectors(config);
-       
+    private async calculate(config: Config): Promise<apex.ApexOptions> {       
     
         return {
             chart: { type: "bar" },
