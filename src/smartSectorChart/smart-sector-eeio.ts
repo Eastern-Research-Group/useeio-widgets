@@ -1,9 +1,9 @@
 import * as apex from "apexcharts";
-import { Config, Widget } from "..";
+import { Widget } from "..";
 import { WebModel, Sector, WebApiConfig } from "useeio";
-import {modelOfSmartSector, WebModelSmartSector} from './webApiSmartSector';
-import {selectSectorName, smartSectorCalc} from '../smartSectorCalc/smartSectorCalculations'
-import {SmartSector} from '../smartSectorChart/smartSector'
+import {modelOfSmartSector, WebModelSmartSector, SectorMapping, SectorContributionToImpact, ImpactOutput } from './webApiSmartSector';
+import {selectSectorName, smartSectorCalc, SumSmartSectorTotal, sortedSectorCodeList, sortedSeriesList} from '../smartSectorCalc/smartSectorCalculations'
+import {SmartSector, SumSmartSectorTotalParts} from '../smartSectorChart/smartSector'
 
 
 export interface SmartSectorChartConfig {
@@ -18,9 +18,16 @@ export class SmartSectorEEIO extends Widget {
         super();
     }
 
+    private uniqueSortedMappingGroup(sortedSectorMappingByGroup:SectorMapping[]) : string[]{
+        const sortedMappingGroupList:string[] = sortedSectorMappingByGroup.map( t => 
+            {
+                return t.group;
+            })
+        return sortedMappingGroupList.filter((value, index) => sortedMappingGroupList.indexOf(value) === index)   
+    }
     
 
-    async update(config: Config) {
+    async update() {
        const modelSmartSector = this.modelSmartSector({
                 endpoint: './api',
                 model: 'SMART_SECTORv1.0',
@@ -28,17 +35,25 @@ export class SmartSectorEEIO extends Widget {
         
         })
 
-        const impactoutputs = await modelSmartSector.impactOutPut();
-        const sectorContributionToImpactGhg = await modelSmartSector.sectorContributionToImpactGhg();
-        const sectorMapping = await modelSmartSector.sectorMapping();
-        const sectorsList = await this._chartConfig.model.sectors();
+        const impactoutputs:ImpactOutput[] = await modelSmartSector.impactOutPut();
+        const sectorContributionToImpactGhg:SectorContributionToImpact[] = await modelSmartSector.sectorContributionToImpactGhg();
+        const sectorMappingList:SectorMapping[] = await modelSmartSector.sectorMapping();
+        const sectorsList:Sector[] = await this._chartConfig.model.sectors();
+
+        const sortedSectorMappingByGroup:SectorMapping[] = sectorMappingList.sort((a: SectorMapping, b: SectorMapping): any => {
+            return a.group.localeCompare(b.group);
+        });
+
+
+        const uniqueSortedMappingGroupNoDuplicates:string[] = this.uniqueSortedMappingGroup(sortedSectorMappingByGroup);
+        
 
         const smartSectorListGroup: SmartSector[]  = []
         sectorContributionToImpactGhg.forEach((t, i) => {
               const sumSectorCode = t.sector_code;
               const sumSectorName =   selectSectorName(t.sector_code,sectorsList);
               const sumImpactTotal =  (((t.impact_per_purchase)*(modelSmartSector.findSectorOutput(t.sector_code,impactoutputs)))/1000000000);
-              const sumPurchasedGroup =  modelSmartSector.findPurchasedGroup(t.purchased_commodity_code,sectorMapping);
+              const sumPurchasedGroup =  modelSmartSector.findPurchasedGroup(t.purchased_commodity_code,sectorMappingList);
 
               smartSectorCalc(smartSectorListGroup,new SmartSector({
                 sumSectorCode:sumSectorCode,
@@ -46,13 +61,22 @@ export class SmartSectorEEIO extends Widget {
                 sumtotalImpact:sumImpactTotal,
                 sumPurchasedGroup:sumPurchasedGroup
             }))
+        });
+
+        const sumSmartSectorTotalParts: SumSmartSectorTotalParts[] = SumSmartSectorTotal(sectorsList,smartSectorListGroup,uniqueSortedMappingGroupNoDuplicates);
+
+        const sortSumSmartSectorTotalParts:SumSmartSectorTotalParts[] = sumSmartSectorTotalParts.sort((a: SumSmartSectorTotalParts, b: SumSmartSectorTotalParts): any => {
+            return b._totalSectorCodeSummationImpact - a._totalSectorCodeSummationImpact;
+        });
+
+        const sortTopTen:SumSmartSectorTotalParts[] = sortSumSmartSectorTotalParts.slice(0,10);
 
 
-        })
 
 
 
-        const options = await this.calculate(config);
+        const options = await this.calculate(sortTopTen,uniqueSortedMappingGroupNoDuplicates);
+        
         const chart = new ApexCharts(
             document.querySelector(this._chartConfig.selector),
             options,
@@ -65,17 +89,69 @@ export class SmartSectorEEIO extends Widget {
         return modelOfSmartSector(conf);
     }
 
-    private async calculate(config: Config): Promise<apex.ApexOptions> {       
+    private async calculate(sortTopTen:SumSmartSectorTotalParts[],uniqueSortedMapping:string[]): Promise<apex.ApexOptions> {       
     
+        const sortedSectorCodes: string[] = sortedSectorCodeList(sortTopTen);
+        const sortedSeries:{name:string,data:number[]}[] = sortedSeriesList(sortTopTen,uniqueSortedMapping);
         return {
-            chart: { type: "bar" },
-            series: [{
-                name: "profile",
-                data: [],
-            }],
-            xaxis: {
-                categories: [],
-            },
+            series: sortedSeries,
+            colors:['#8D5B4C','#2E93fA', '#4CAF50', '#546E7A', '#E91E63', '#FF9800','#9b19f5','#2e2b28','#ab3da9','#A5978B'],
+                chart: {
+                type: 'bar',
+                height:450 ,
+                stacked: true,
+                toolbar: {
+                  show: true
+                }
+              },
+              responsive: [{
+                breakpoint: 480,
+                options: {
+                  legend: {
+                    position: 'bottom',
+                    offsetX: -10,
+                    offsetY: 0
+                  }
+                }
+              }],
+              plotOptions: {
+                bar: {
+                  horizontal: false,
+                  dataLabels: {
+                    total: {
+                      enabled: false
+                    }
+                  }
+                },
+              },
+              dataLabels: {
+                enabled: false
+              },
+              xaxis: {
+                title:{
+                  text:'Sector'
+                },
+                categories: sortedSectorCodes,
+              },
+              yaxis: [
+                {
+                  title:{
+                    text:'Total Impact (MMT CO2e)'
+                  },
+                  labels: {
+                    formatter: function(val) {
+                      return (Math.round(val * 10) / 10).toString();
+                    }
+                  }
+                }
+              ],
+              legend: {
+                position: 'right',
+                offsetY: 40
+              },
+              fill: {
+                opacity: 1
+              }
         };
     }
 

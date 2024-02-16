@@ -8,11 +8,11 @@
 </head>
 
 <body>
-    <div class="io" style="margin: 25px;">
-        <div style="width: 80%; margin: auto;">
+    <div class="io">
+        <div style="width: 100%; margin: auto;">
             <h1 class="text-center">Sector Contribution to Impact GHG</h1>
-            <p>
-                The sector contribution to impact GHG chart widget
+            <p class="text-center">
+                Sum of total impact (MMT)
             </p>
             <div id="smart-sector-eeio">
             </div>
@@ -36,9 +36,7 @@
             model: model,
             selector: '#smart-sector-eeio',
         });
-        smartSectorChart.update({
-            sectors: ["1111A0"]
-        });
+        smartSectorChart.update();
 
     </script>
 </body>
