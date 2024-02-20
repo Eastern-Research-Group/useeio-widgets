@@ -8,6 +8,7 @@ import {SmartSector, SumSmartSectorTotalParts} from '../smartSectorChart/smartSe
 
 export interface SmartSectorChartConfig {
     model: WebModel;
+    endpoint:string;
     selector: string;
 }
 
@@ -29,8 +30,8 @@ export class SmartSectorEEIO extends Widget {
 
     async update() {
        const modelSmartSector = this.modelSmartSector({
-                endpoint: './api',
-                model: 'SMART_SECTORv1.0',
+                endpoint: this._chartConfig.endpoint as string,
+                model: this._chartConfig.model.id() as string,
                 asJsonFiles: true,
         
         })
