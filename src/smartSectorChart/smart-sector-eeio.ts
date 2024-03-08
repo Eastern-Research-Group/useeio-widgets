@@ -37,7 +37,10 @@ export class SmartSectorEEIO extends Widget {
         })
 
         const impactoutputs:ImpactOutput[] = await modelSmartSector.impactOutPut();
-        const sectorContributionToImpactGhg:SectorContributionToImpact[] = await modelSmartSector.sectorContributionToImpactGhg();
+        const sectorContributionToImpactGhg:SectorContributionToImpact[] = await modelSmartSector.sectorContributionToImpactGhg("final/GWP-AR6-20.json");
+        const sectorContributionToImpactFinalGWP_AR6_20:SectorContributionToImpact[] = await modelSmartSector.sectorContributionToImpactGhg("final/GWP-AR6-100.json");
+        const sectorContributionToImpactFinalSCC:SectorContributionToImpact[] = await modelSmartSector.sectorContributionToImpactGhg("final/Social-Cost-of-Carbon.json");
+
         const sectorMappingList:SectorMapping[] = await modelSmartSector.sectorMapping();
         const sectorsList:Sector[] = await this._chartConfig.model.sectors();
 
@@ -124,6 +127,10 @@ export class SmartSectorEEIO extends Widget {
                     }
                   }
                 },
+              },
+              title:{
+                text: 'GWP-AR6-20 final',
+                align: 'center'
               },
               dataLabels: {
                 enabled: false

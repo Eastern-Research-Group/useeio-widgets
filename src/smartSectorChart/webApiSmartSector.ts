@@ -141,21 +141,23 @@ export class WebModelSmartSector {
    /**
    * Returns the sector_contribution_to_impact_ghg of the smart sector EEIO model.
    */
-     async sectorContributionToImpactGhg(): Promise<SectorContributionToImpact[]> {
+  async sectorContributionToImpactGhg(fileName:string): Promise<SectorContributionToImpact[]> 
+  {
       if (!this._sectorContributionToImpactGhg) 
       {
-        this._sectorContributionToImpactGhg = await this.api.getJson(this.modelId,  "sector_contribution_to_impact_ghg.json");
+        this._sectorContributionToImpactGhg = await this.api.getJson(this.modelId,  "sector_contribution_to_impact/"+fileName);
       }
     
     return this._sectorContributionToImpactGhg || [];
   }
+  
 
   /**
    * Returns the sector_mapping of the smart sector EEIO model.
    */
        async sectorMapping(): Promise<SectorMapping[]> {
         if (!this._sectoMapping) 
-        this._sectoMapping = await this.api.getJson(this.modelId,  "sector_mapping.json");
+        this._sectoMapping = await this.api.getJson(this.modelId,  "sector_mapping");
 
       
       return this._sectoMapping || [];
@@ -164,9 +166,9 @@ export class WebModelSmartSector {
     /**
    * Returns the x of the smart sector EEIO model.
    */
-         async impactOutPut(): Promise<ImpactOutput[]> {
+     async impactOutPut(): Promise<ImpactOutput[]> {
           if (!this._sectorOutput) 
-          this._sectorOutput = await this.api.getJson(this.modelId,  "x.json");
+          this._sectorOutput = await this.api.getJson(this.modelId,  "commodity_output");
     
         
         return this._sectorOutput || [];
@@ -177,7 +179,7 @@ export class WebModelSmartSector {
    */
    findSectorOutput(id: string, impactList:ImpactOutput[]): number {
     const impactoutput:ImpactOutput = impactList.find(d => {
-      if (id === d.id) {
+      if (id === d.sector_code) {
         return true;
       }
     });
@@ -204,14 +206,14 @@ export class WebModelSmartSector {
 export interface SectorContributionToImpact {
 
   sector_code?: string;
-   
+  emissions_source?: string;
+
   purchased_commodity_code?: string;
   
   impact_per_purchase?: number;
 
-  sector_output?: number;
-
-  "total_impact(MMT)"?: number;
+  commodity_output?: number;
+  total_impact?: number;
 
 }
 
@@ -227,7 +229,7 @@ export interface SectorMapping {
 
 export interface ImpactOutput {
 
-  id: string;
+  sector_code: string;
    
   x: number;
 
