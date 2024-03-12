@@ -1,16 +1,12 @@
 import * as apex from "apexcharts";
-import { Widget } from "..";
-import { WebModel, Sector, WebApiConfig } from "useeio";
-import {modelOfSmartSector, WebModelSmartSector, SectorMapping, SectorContributionToImpact, ImpactOutput } from './webApiSmartSector';
-import {selectSectorName, smartSectorCalc, SumSmartSectorTotal, sortedSectorCodeList, sortedSeriesList} from '../smartSectorCalc/smartSectorCalculations'
-import {SmartSector, SumSmartSectorTotalParts} from '../smartSectorChart/smartSector'
+import {sortedSectorCodeList, sortedSeriesList} from '../smartSectorCalc/smartSectorCalculations'
+import {SumSmartSectorTotalParts} from '../smartSectorChart/smartSector'
 
 export async function calculate(sortTopTen:SumSmartSectorTotalParts[],uniqueSortedMapping:string[],titleGraph:string): Promise<apex.ApexOptions> 
     {       
     
         let sortedSectorCodes: string[] = sortedSectorCodeList(sortTopTen);
         let sortedSeries:{name:string,data:number[]}[] = sortedSeriesList(sortTopTen,uniqueSortedMapping);
-
         return {
             series: sortedSeries,
             colors:['#8D5B4C','#2E93fA', '#4CAF50', '#546E7A', '#E91E63', '#FF9800','#9b19f5','#2e2b28','#ab3da9','#A5978B'],
@@ -63,7 +59,7 @@ export async function calculate(sortTopTen:SumSmartSectorTotalParts[],uniqueSort
                   },
                   labels: {
                     formatter: function(val) {
-                      return (Math.round(val * 10) / 10).toString();
+                      return val.toLocaleString();
                     }
                   }
                 }

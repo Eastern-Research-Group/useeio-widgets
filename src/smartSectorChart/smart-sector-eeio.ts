@@ -103,11 +103,10 @@ export class SmartSectorEEIO extends Widget {
         let sumSectorName =   selectSectorName(t.sector_code,sectorsList);
         let sumImpactTotal = 0
 
-        if(scc === "SCC")
+        if(scc.includes('Social'))
         sumImpactTotal = (((t.impact_per_purchase)*(modelSmartSector.findSectorOutput(t.sector_code,impactoutputs)))/1000000);
         else 
         sumImpactTotal =  (((t.impact_per_purchase)*(modelSmartSector.findSectorOutput(t.sector_code,impactoutputs)))/1000000000);
-
 
         let sumPurchasedGroup =  modelSmartSector.findPurchasedGroup(t.purchased_commodity_code,sectorMappingList);
 
@@ -120,10 +119,12 @@ export class SmartSectorEEIO extends Widget {
       });
 
       let sumSmartSectorTotalParts: SumSmartSectorTotalParts[] = SumSmartSectorTotal(sectorsList,smartSectorListGroup,uniqueSortedMappingGroupNoDuplicates);
+
+      
+
       let sortSumSmartSectorTotalParts:SumSmartSectorTotalParts[] = sumSmartSectorTotalParts.sort((a: SumSmartSectorTotalParts, b: SumSmartSectorTotalParts): any => {
           return b._totalSectorCodeSummationImpact - a._totalSectorCodeSummationImpact;
       });
-
 
       return sortSumSmartSectorTotalParts;
     }

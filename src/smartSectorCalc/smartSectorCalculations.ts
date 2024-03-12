@@ -127,7 +127,6 @@ export function SumSmartSectorTotal(sectorList:Sector[],smartSectorList:SmartSec
     return sumSmartSectorTotalParts
 }
 
-
 export function selectSectorName(sectorId:string, sectorList:Sector[]): string {
     let sector:Sector = sectorList.find(s => {
         if (s.id === sectorId) {
