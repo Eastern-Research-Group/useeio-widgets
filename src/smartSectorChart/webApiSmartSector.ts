@@ -125,7 +125,6 @@ private _target(...path: string[]): string {
  */
 export class WebModelSmartSector {
 
-  private _sectorContributionToImpactGhg?: SectorContributionToImpact[];
   private _sectoMapping?: SectorMapping[];
   private _sectorOutput?: ImpactOutput[];
 
@@ -143,12 +142,7 @@ export class WebModelSmartSector {
    */
   async sectorContributionToImpactGhg(fileName:string): Promise<SectorContributionToImpact[]> 
   {
-      if (!this._sectorContributionToImpactGhg) 
-      {
-        this._sectorContributionToImpactGhg = await this.api.getJson(this.modelId,  "sector_contribution_to_impact/"+fileName);
-      }
-    
-    return this._sectorContributionToImpactGhg || [];
+    return await this.api.getJson(this.modelId,  "sector_contribution_to_impact/"+fileName)
   }
   
 

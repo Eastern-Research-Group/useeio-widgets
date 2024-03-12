@@ -4,7 +4,7 @@ import { WebModel, Sector, WebApiConfig } from "useeio";
 import {modelOfSmartSector, WebModelSmartSector, SectorMapping, SectorContributionToImpact, ImpactOutput } from './webApiSmartSector';
 import {selectSectorName, smartSectorCalc, SumSmartSectorTotal, sortedSectorCodeList, sortedSeriesList} from '../smartSectorCalc/smartSectorCalculations'
 import {SmartSector, SumSmartSectorTotalParts} from '../smartSectorChart/smartSector'
-
+import { calculate } from "./toggleGraphs";
 
 export interface SmartSectorChartConfig {
     model: WebModel;
@@ -19,148 +19,113 @@ export class SmartSectorEEIO extends Widget {
         super();
     }
 
+    async update() {
+      let modelSmartSector = modelOfSmartSector({
+               endpoint: this._chartConfig.endpoint as string,
+               model: this._chartConfig.model.id() as string,
+               asJsonFiles: true
+       })
+
+       let sectorContributionToImpactFinalGWP_AR6_20:SectorContributionToImpact[] = await modelSmartSector.sectorContributionToImpactGhg("final/GWP-AR6-20.json");
+       let sectorContributionToImpactFinalGWP_AR6_100:SectorContributionToImpact[] = await modelSmartSector.sectorContributionToImpactGhg("final/GWP-AR6-100.json");
+       let sectorContributionToImpactFinalSCC:SectorContributionToImpact[] = await modelSmartSector.sectorContributionToImpactGhg("final/Social-Cost-of-Carbon.json");
+
+
+       let sectorMappingList:SectorMapping[] = await modelSmartSector.sectorMapping();  
+       let sortedSectorMappingByGroup:SectorMapping[] = sectorMappingList.sort((a: SectorMapping, b: SectorMapping): any => {
+           return a.group.localeCompare(b.group);
+       });
+       let uniqueSortedMappingGroupNoDuplicates:string[] = this.uniqueSortedMappingGroup(sortedSectorMappingByGroup);
+
+
+       let optionsFinalGWP_AR6_20 = await this.getGraphs(sectorContributionToImpactFinalGWP_AR6_20, modelSmartSector,'GWP-AR6-20');
+       let optionsFinalGWP_AR6_100 = await this.getGraphs(sectorContributionToImpactFinalGWP_AR6_100, modelSmartSector,'GWP-AR6-100');
+       let optionsFinalSCC = await this.getGraphs(sectorContributionToImpactFinalSCC, modelSmartSector,'Social Cost of Carbon');
+
+       let option20 = await calculate(optionsFinalGWP_AR6_20,uniqueSortedMappingGroupNoDuplicates,'GWP-AR6-20');
+       let option100 = await calculate(optionsFinalGWP_AR6_100,uniqueSortedMappingGroupNoDuplicates,'GWP-AR6-100');
+       let optionSCC = await calculate(optionsFinalSCC,uniqueSortedMappingGroupNoDuplicates,'Social Cost of Carbon');
+
+       let chart20 = new ApexCharts(
+           document.querySelector(this._chartConfig.selector),
+           option20,
+       );
+      let chart100 = new ApexCharts(
+            document.querySelector(this._chartConfig.selector+"-100"),
+            option100,
+        );
+
+       let chartSCC = new ApexCharts(
+            document.querySelector(this._chartConfig.selector+"-SCC"),
+            optionSCC,
+        );
+
+       chart20.render();
+       chart100.render(); 
+       chartSCC.render();
+   }
+
     private uniqueSortedMappingGroup(sortedSectorMappingByGroup:SectorMapping[]) : string[]{
-        const sortedMappingGroupList:string[] = sortedSectorMappingByGroup.map( t => 
+        let sortedMappingGroupList:string[] = sortedSectorMappingByGroup.map( t => 
             {
                 return t.group;
             })
         return sortedMappingGroupList.filter((value, index) => sortedMappingGroupList.indexOf(value) === index)   
     }
     
+    async getGraphs(sectorContributionToImpact:SectorContributionToImpact[], modelSmartSector:WebModelSmartSector,scc:string) : Promise<SumSmartSectorTotalParts[]>
+    {
+        let sortSumSmartSectorTotalParts:SumSmartSectorTotalParts[] = await this.calculateValues(sectorContributionToImpact,modelSmartSector,scc)
 
-    async update() {
-       const modelSmartSector = this.modelSmartSector({
-                endpoint: this._chartConfig.endpoint as string,
-                model: this._chartConfig.model.id() as string,
-                asJsonFiles: true,
-        
-        })
-
-        const impactoutputs:ImpactOutput[] = await modelSmartSector.impactOutPut();
-        const sectorContributionToImpactGhg:SectorContributionToImpact[] = await modelSmartSector.sectorContributionToImpactGhg("final/GWP-AR6-20.json");
-        const sectorContributionToImpactFinalGWP_AR6_20:SectorContributionToImpact[] = await modelSmartSector.sectorContributionToImpactGhg("final/GWP-AR6-100.json");
-        const sectorContributionToImpactFinalSCC:SectorContributionToImpact[] = await modelSmartSector.sectorContributionToImpactGhg("final/Social-Cost-of-Carbon.json");
-
-        const sectorMappingList:SectorMapping[] = await modelSmartSector.sectorMapping();
-        const sectorsList:Sector[] = await this._chartConfig.model.sectors();
-
-        const sortedSectorMappingByGroup:SectorMapping[] = sectorMappingList.sort((a: SectorMapping, b: SectorMapping): any => {
-            return a.group.localeCompare(b.group);
-        });
+        let sortTopTen:SumSmartSectorTotalParts[] = sortSumSmartSectorTotalParts.slice(0,10);
 
 
-        const uniqueSortedMappingGroupNoDuplicates:string[] = this.uniqueSortedMappingGroup(sortedSectorMappingByGroup);
-        
-
-        const smartSectorListGroup: SmartSector[]  = []
-        sectorContributionToImpactGhg.forEach((t, i) => {
-              const sumSectorCode = t.sector_code;
-              const sumSectorName =   selectSectorName(t.sector_code,sectorsList);
-              const sumImpactTotal =  (((t.impact_per_purchase)*(modelSmartSector.findSectorOutput(t.sector_code,impactoutputs)))/1000000000);
-              const sumPurchasedGroup =  modelSmartSector.findPurchasedGroup(t.purchased_commodity_code,sectorMappingList);
-
-              smartSectorCalc(smartSectorListGroup,new SmartSector({
-                sumSectorCode:sumSectorCode,
-                sumSectorName:sumSectorName,
-                sumtotalImpact:sumImpactTotal,
-                sumPurchasedGroup:sumPurchasedGroup
-            }))
-        });
-
-        const sumSmartSectorTotalParts: SumSmartSectorTotalParts[] = SumSmartSectorTotal(sectorsList,smartSectorListGroup,uniqueSortedMappingGroupNoDuplicates);
-
-        const sortSumSmartSectorTotalParts:SumSmartSectorTotalParts[] = sumSmartSectorTotalParts.sort((a: SumSmartSectorTotalParts, b: SumSmartSectorTotalParts): any => {
-            return b._totalSectorCodeSummationImpact - a._totalSectorCodeSummationImpact;
-        });
-
-        const sortTopTen:SumSmartSectorTotalParts[] = sortSumSmartSectorTotalParts.slice(0,10);
-
-
-
-
-
-        const options = await this.calculate(sortTopTen,uniqueSortedMappingGroupNoDuplicates);
-        
-        const chart = new ApexCharts(
-            document.querySelector(this._chartConfig.selector),
-            options,
-        );
-        chart.render();
+        return sortTopTen
     }
 
 
-     modelSmartSector(conf: WebApiConfig & {model: string}): WebModelSmartSector {
-        return modelOfSmartSector(conf);
-    }
+    async calculateValues(sectorContributionToImpactGhg:SectorContributionToImpact[],modelSmartSector:WebModelSmartSector,scc:string):Promise<SumSmartSectorTotalParts[]> {
+      let impactoutputs:ImpactOutput[] = await modelSmartSector.impactOutPut();
+      let sectorMappingList:SectorMapping[] = await modelSmartSector.sectorMapping();
+      let sectorsList:Sector[] = await this._chartConfig.model.sectors();
 
-    private async calculate(sortTopTen:SumSmartSectorTotalParts[],uniqueSortedMapping:string[]): Promise<apex.ApexOptions> {       
+      let sortedSectorMappingByGroup:SectorMapping[] = sectorMappingList.sort((a: SectorMapping, b: SectorMapping): any => {
+          return a.group.localeCompare(b.group);
+      });
+
+      let uniqueSortedMappingGroupNoDuplicates:string[] = this.uniqueSortedMappingGroup(sortedSectorMappingByGroup);
+      
+
+      let smartSectorListGroup: SmartSector[]  = []
     
-        const sortedSectorCodes: string[] = sortedSectorCodeList(sortTopTen);
-        const sortedSeries:{name:string,data:number[]}[] = sortedSeriesList(sortTopTen,uniqueSortedMapping);
-        return {
-            series: sortedSeries,
-            colors:['#8D5B4C','#2E93fA', '#4CAF50', '#546E7A', '#E91E63', '#FF9800','#9b19f5','#2e2b28','#ab3da9','#A5978B'],
-                chart: {
-                type: 'bar',
-                height:450 ,
-                stacked: true,
-                toolbar: {
-                  show: true
-                }
-              },
-              responsive: [{
-                breakpoint: 480,
-                options: {
-                  legend: {
-                    position: 'bottom',
-                    offsetX: -10,
-                    offsetY: 0
-                  }
-                }
-              }],
-              plotOptions: {
-                bar: {
-                  horizontal: false,
-                  dataLabels: {
-                    total: {
-                      enabled: false
-                    }
-                  }
-                },
-              },
-              title:{
-                text: 'GWP-AR6-20 final',
-                align: 'center'
-              },
-              dataLabels: {
-                enabled: false
-              },
-              xaxis: {
-                title:{
-                  text:'Sector'
-                },
-                categories: sortedSectorCodes,
-              },
-              yaxis: [
-                {
-                  title:{
-                    text:'Total Impact (MMT CO2e)'
-                  },
-                  labels: {
-                    formatter: function(val) {
-                      return (Math.round(val * 10) / 10).toString();
-                    }
-                  }
-                }
-              ],
-              legend: {
-                position: 'right',
-                offsetY: 40
-              },
-              fill: {
-                opacity: 1
-              }
-        };
+      sectorContributionToImpactGhg.forEach((t, i) => {
+        let sumSectorCode = t.sector_code;
+        let sumSectorName =   selectSectorName(t.sector_code,sectorsList);
+        let sumImpactTotal = 0
+
+        if(scc === "SCC")
+        sumImpactTotal = (((t.impact_per_purchase)*(modelSmartSector.findSectorOutput(t.sector_code,impactoutputs)))/1000000);
+        else 
+        sumImpactTotal =  (((t.impact_per_purchase)*(modelSmartSector.findSectorOutput(t.sector_code,impactoutputs)))/1000000000);
+
+
+        let sumPurchasedGroup =  modelSmartSector.findPurchasedGroup(t.purchased_commodity_code,sectorMappingList);
+
+        smartSectorCalc(smartSectorListGroup,new SmartSector({
+          sumSectorCode:sumSectorCode,
+          sumSectorName:sumSectorName,
+          sumtotalImpact:sumImpactTotal,
+          sumPurchasedGroup:sumPurchasedGroup
+        }))
+      });
+
+      let sumSmartSectorTotalParts: SumSmartSectorTotalParts[] = SumSmartSectorTotal(sectorsList,smartSectorListGroup,uniqueSortedMappingGroupNoDuplicates);
+      let sortSumSmartSectorTotalParts:SumSmartSectorTotalParts[] = sumSmartSectorTotalParts.sort((a: SumSmartSectorTotalParts, b: SumSmartSectorTotalParts): any => {
+          return b._totalSectorCodeSummationImpact - a._totalSectorCodeSummationImpact;
+      });
+
+
+      return sortSumSmartSectorTotalParts;
     }
 
-}
+  }

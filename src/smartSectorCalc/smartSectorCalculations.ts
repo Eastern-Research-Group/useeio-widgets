@@ -10,7 +10,7 @@ export function smartSectorCalc(smartSectorList:SmartSector[],addSector:SmartSec
     }
     else
     {
-      const smartSectorFound:SmartSector | undefined =  smartSectorList.find( t => 
+      let smartSectorFound:SmartSector | undefined =  smartSectorList.find( t => 
         {
             if(t._smartSector.sumSectorCode === addSector._smartSector.sumSectorCode &&
                t._smartSector.sumPurchasedGroup === addSector._smartSector.sumPurchasedGroup){
@@ -129,7 +129,7 @@ export function SumSmartSectorTotal(sectorList:Sector[],smartSectorList:SmartSec
 
 
 export function selectSectorName(sectorId:string, sectorList:Sector[]): string {
-    const sector:Sector = sectorList.find(s => {
+    let sector:Sector = sectorList.find(s => {
         if (s.id === sectorId) {
             return true;
         }
