@@ -190,7 +190,7 @@ export class WebModelSmartSector {
           return true;
         }
       });
-      return sectorMapping.group ;
+      return sectorMapping.group;
     }
   
 }
@@ -201,11 +201,8 @@ export interface SectorContributionToImpact {
 
   sector_code?: string;
   emissions_source?: string;
-
   purchased_commodity_code?: string;
-  
   impact_per_purchase?: number;
-
   commodity_output?: number;
   total_impact?: number;
 

@@ -1,9 +1,9 @@
 import * as apex from "apexcharts";
 import { Widget } from "..";
-import { WebModel, Sector, WebApiConfig } from "useeio";
+import { WebModel, Sector } from "useeio";
 import {modelOfSmartSector, WebModelSmartSector, SectorMapping, SectorContributionToImpact, ImpactOutput } from './webApiSmartSector';
-import {selectSectorName, smartSectorCalc, SumSmartSectorTotal, sortedSectorCodeList, sortedSeriesList} from '../smartSectorCalc/smartSectorCalculations'
-import {SmartSector, SumSmartSectorTotalParts} from '../smartSectorChart/smartSector'
+import {selectSectorName, smartSectorCalc, SumSmartSectorTotal } from '../smartSectorCalc/smartSectorCalculations'
+import {SmartSector, SumSmartSectorTotalParts } from '../smartSectorChart/smartSector'
 import { calculate } from "./toggleGraphs";
 
 export interface SmartSectorChartConfig {
@@ -29,6 +29,10 @@ export class SmartSectorEEIO extends Widget {
        let sectorContributionToImpactFinalGWP_AR6_20:SectorContributionToImpact[] = await modelSmartSector.sectorContributionToImpactGhg("final/GWP-AR6-20.json");
        let sectorContributionToImpactFinalGWP_AR6_100:SectorContributionToImpact[] = await modelSmartSector.sectorContributionToImpactGhg("final/GWP-AR6-100.json");
        let sectorContributionToImpactFinalSCC:SectorContributionToImpact[] = await modelSmartSector.sectorContributionToImpactGhg("final/Social-Cost-of-Carbon.json");
+      
+       let sectorContributionToImpactDirectGWP_AR6_20:SectorContributionToImpact[] = await modelSmartSector.sectorContributionToImpactGhg("direct/GWP-AR6-20.json");
+       let sectorContributionToImpactDirectGWP_AR6_100:SectorContributionToImpact[] = await modelSmartSector.sectorContributionToImpactGhg("direct/GWP-AR6-100.json");
+       let sectorContributionToImpactDirectSCC:SectorContributionToImpact[] = await modelSmartSector.sectorContributionToImpactGhg("direct/Social-Cost-of-Carbon.json");
 
 
        let sectorMappingList:SectorMapping[] = await modelSmartSector.sectorMapping();  
@@ -41,10 +45,19 @@ export class SmartSectorEEIO extends Widget {
        let optionsFinalGWP_AR6_20 = await this.getGraphs(sectorContributionToImpactFinalGWP_AR6_20, modelSmartSector,'GWP-AR6-20');
        let optionsFinalGWP_AR6_100 = await this.getGraphs(sectorContributionToImpactFinalGWP_AR6_100, modelSmartSector,'GWP-AR6-100');
        let optionsFinalSCC = await this.getGraphs(sectorContributionToImpactFinalSCC, modelSmartSector,'Social Cost of Carbon');
+       
 
-       let option20 = await calculate(optionsFinalGWP_AR6_20,uniqueSortedMappingGroupNoDuplicates,'GWP-AR6-20');
-       let option100 = await calculate(optionsFinalGWP_AR6_100,uniqueSortedMappingGroupNoDuplicates,'GWP-AR6-100');
-       let optionSCC = await calculate(optionsFinalSCC,uniqueSortedMappingGroupNoDuplicates,'Social Cost of Carbon');
+       let optionsDirectGWP_AR6_20 = await this.getGraphs(sectorContributionToImpactDirectGWP_AR6_20, modelSmartSector,'GWP-AR6-20');
+       let optionsDirectGWP_AR6_100 = await this.getGraphs(sectorContributionToImpactDirectGWP_AR6_100, modelSmartSector,'GWP-AR6-100');
+       let optionsDirectSCC = await this.getGraphs(sectorContributionToImpactDirectSCC, modelSmartSector,'Social Cost of Carbon');
+
+       let option20 = await calculate(optionsFinalGWP_AR6_20,this._chartConfig.model,uniqueSortedMappingGroupNoDuplicates,'GWP-AR6-20');
+       let option100 = await calculate(optionsFinalGWP_AR6_100,this._chartConfig.model,uniqueSortedMappingGroupNoDuplicates,'GWP-AR6-100');
+       let optionSCC = await calculate(optionsFinalSCC,this._chartConfig.model,uniqueSortedMappingGroupNoDuplicates,'Social Cost of Carbon');
+
+       let option20Direct = await calculate(optionsDirectGWP_AR6_20,this._chartConfig.model,uniqueSortedMappingGroupNoDuplicates,'GWP-AR6-20');
+       let option100Direct = await calculate(optionsDirectGWP_AR6_100,this._chartConfig.model,uniqueSortedMappingGroupNoDuplicates,'GWP-AR6-100');
+       let optionSCCDirect = await calculate(optionsDirectSCC,this._chartConfig.model,uniqueSortedMappingGroupNoDuplicates,'Social Cost of Carbon');
 
        let chart20 = new ApexCharts(
            document.querySelector(this._chartConfig.selector),
@@ -63,6 +76,24 @@ export class SmartSectorEEIO extends Widget {
        chart20.render();
        chart100.render(); 
        chartSCC.render();
+
+       let chart20Direct = new ApexCharts(
+        document.querySelector(this._chartConfig.selector+'_direct'),
+        option20Direct,
+    );
+    let chart100Direct = new ApexCharts(
+        document.querySelector(this._chartConfig.selector+"-100_direct"),
+        option100Direct,
+    );
+
+    let chartSCCDirect = new ApexCharts(
+        document.querySelector(this._chartConfig.selector+"-SCC_direct"),
+        optionSCCDirect,
+    );
+
+        chart20Direct.render();
+        chart100Direct.render(); 
+        chartSCCDirect.render();
    }
 
     private uniqueSortedMappingGroup(sortedSectorMappingByGroup:SectorMapping[]) : string[]{
@@ -102,13 +133,23 @@ export class SmartSectorEEIO extends Widget {
         let sumSectorCode = t.sector_code;
         let sumSectorName =   selectSectorName(t.sector_code,sectorsList);
         let sumImpactTotal = 0
+        let sumPurchasedGroup = ''
 
-        if(scc.includes('Social'))
-        sumImpactTotal = (((t.impact_per_purchase)*(modelSmartSector.findSectorOutput(t.sector_code,impactoutputs)))/1000000);
-        else 
-        sumImpactTotal =  (((t.impact_per_purchase)*(modelSmartSector.findSectorOutput(t.sector_code,impactoutputs)))/1000000000);
-
-        let sumPurchasedGroup =  modelSmartSector.findPurchasedGroup(t.purchased_commodity_code,sectorMappingList);
+        if(t?.purchased_commodity_code === undefined)
+        {
+            sumImpactTotal = t.total_impact;
+            sumPurchasedGroup =  modelSmartSector.findPurchasedGroup(t.emissions_source,sectorMappingList);
+        }
+        else
+        {
+            if(scc.includes('Social'))
+            sumImpactTotal = (((t.impact_per_purchase)*(modelSmartSector.findSectorOutput(t.sector_code,impactoutputs)))/1000000);
+            else 
+            sumImpactTotal =  (((t.impact_per_purchase)*(modelSmartSector.findSectorOutput(t.sector_code,impactoutputs)))/1000000000);
+    
+            sumPurchasedGroup = modelSmartSector.findPurchasedGroup(t.purchased_commodity_code,sectorMappingList);
+        }
+        
 
         smartSectorCalc(smartSectorListGroup,new SmartSector({
           sumSectorCode:sumSectorCode,
