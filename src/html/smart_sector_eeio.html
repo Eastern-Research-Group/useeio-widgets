@@ -15,52 +15,18 @@
     <label for="grap-selected">Choose a graph:</label>
     <br>
     <select id="my-select" onchange="changeGraph(this.value)">
-        <option value="20" selected>20 Years</option>
-        <option value="100">100 Years</option>
-        <option value="SCC">Social Cost of Carbon</option>
+        <option value="GWP-AR6-20" selected>20 Years</option>
+        <option value="GWP-AR6-100">100 Years</option>
+        <option value="Social-Cost-of-Carbon">Social Cost of Carbon</option>
      </select>
     </div>
-    <div class="io" id="20" name="20" style="display: block;">
+    <div class="io" id="activeGraph" name="20" style="display: block;">
         <div style="width: 100%; margin: auto;">
             <div id="smart-sector-eeio">
             </div>
         </div>
     </div>
 
-    <div class="io" id="100" name="100" style="display: none;">
-        <div style="width: 100%; margin: auto;">
-            <div id="smart-sector-eeio-100">
-            </div>
-        </div>
-    </div>
-
-    <div class="io" id="SCC" name="SCC" style="display: none;">
-        <div style="width: 100%; margin: auto;">
-            <div id="smart-sector-eeio-SCC">
-            </div>
-        </div>
-    </div>
-
-    <div class="io" id="20_direct" name="20" style="display: none;">
-        <div style="width: 100%; margin: auto;">
-            <div id="smart-sector-eeio_direct">
-            </div>
-        </div>
-    </div>
-
-    <div class="io" id="100_direct" name="100" style="display: none;" >
-        <div style="width: 100%; margin: auto;">
-            <div id="smart-sector-eeio-100_direct">
-            </div>
-        </div>
-    </div>
-
-    <div class="io" id="SCC_direct" name="SCC" style="display: none;">
-        <div style="width: 100%; margin: auto;">
-            <div id="smart-sector-eeio-SCC_direct">
-            </div>
-        </div>
-    </div>
 
     <div style=" margin-left: 20px;">
     <label for="grap-selected">Perspective:</label>
@@ -87,35 +53,18 @@
             endpoint: './api',
             selector: '#smart-sector-eeio',
         });
-        smartSectorChart.update();
+        smartSectorChart.init('GWP-AR6-20');
 
-    </script>
-
-
-<script type="text/javascript">
-    var perspectineName = 'final';
-    var graphType = '20';
+    var perspectiveName = 'final';
+    var graphType = 'GWP-AR6-20';
     function changeGraph(t)
             {
-               var nameClasses =  document.getElementsByClassName('io')
-
-                for (var i = 0; i < nameClasses.length; i ++) {
-                    nameClasses[i].style.display = 'none';
-                }
-
-                if(perspectineName === 'direct')
-                {
-                    document.getElementById(t+"_"+perspectineName).style.display = 'block';
-                    graphType = document.getElementById(t+"_"+perspectineName).getAttribute('name');
-                }
-                else
-                {
-                    document.getElementById(t).style.display = 'block';
-                    graphType = document.getElementById(t).getAttribute('name');
-                }
+ 
+                smartSectorChart.selectiveGraph(t,perspectiveName);
+                graphType = t;
 
 
-                if(t === 'SCC')
+                if(t === 'Social-Cost-of-Carbon')
                 {
                     document.getElementById('graphTitle').innerText = 'Sector Contribution to Impact per $';
                 }
@@ -128,7 +77,7 @@
             document.addEventListener('input',(e)=>{
                 if(e.target.getAttribute('name')=="myRadios")
                 {
-                    perspectineName = e.target.value
+                    perspectiveName = e.target.value
                     changeGraph(graphType);
 
                 }
