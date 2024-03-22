@@ -37,9 +37,9 @@ export class SmartSectorEEIO extends Widget {
     let uniqueSortedMappingGroupNoDuplicates:string[] = this.uniqueSortedMappingGroup(sortedSectorMappingByGroup);
 
     let sectorContributionToImpact:SectorContributionToImpact[] = await this.modelSmartSectorApi.sectorContributionToImpactGhg("final/"+graphName);
-
-    let options = await this.getGraphs(sectorContributionToImpact, this.modelSmartSectorApi, graphName.replace('-'," "));
-    let option = await calculate(options,this._chartConfig.model,uniqueSortedMappingGroupNoDuplicates, graphName.replace('-'," "));
+    let nameWithNoSpace = graphName.replace(/\-/g," ");
+    let options = await this.getGraphs(sectorContributionToImpact, this.modelSmartSectorApi, nameWithNoSpace);
+    let option = await calculate(options,this._chartConfig.model,uniqueSortedMappingGroupNoDuplicates, nameWithNoSpace);
     this.chart = new ApexCharts(
         document.querySelector(this._chartConfig.selector),
         option,
@@ -65,11 +65,12 @@ export class SmartSectorEEIO extends Widget {
         sectorContributionToImpact = await this.modelSmartSectorApi.sectorContributionToImpactGhg("direct/"+graphName);
 
     }
-
-    let options = await this.getGraphs(sectorContributionToImpact, this.modelSmartSectorApi, graphName.replace('-'," "));
-    let option = await calculate(options,this._chartConfig.model,uniqueSortedMappingGroupNoDuplicates, graphName.replace('-'," "));
+    let nameWithNoSpace = graphName.replace(/\-/g," ");
+    let options = await this.getGraphs(sectorContributionToImpact, this.modelSmartSectorApi, nameWithNoSpace);
+    let option = await calculate(options,this._chartConfig.model,uniqueSortedMappingGroupNoDuplicates, nameWithNoSpace);
     
     this.chart.updateOptions(option);
+    this.chart.resetSeries();
    }
 
     private uniqueSortedMappingGroup(sortedSectorMappingByGroup:SectorMapping[]) : string[]{

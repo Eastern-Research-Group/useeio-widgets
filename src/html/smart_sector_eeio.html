@@ -3,20 +3,20 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Sector Contribution to Impact GHG</title>
+    <title>Sector Contribution to Impact</title>
     <link rel="stylesheet" type="text/css" href="widgets.css">
 </head>
 
 
 <body>
-    <h1 id="graphTitle" class="text-center">Sector Contribution to Impact GHG</h1>
+    <h1 id="graphTitle" class="text-center">Sector Contribution to Impact</h1>
 
     <div style=" margin-left: 20px;">
-    <label for="grap-selected">Choose a graph:</label>
+    <label for="grap-selected">Select Impact:</label>
     <br>
     <select id="my-select" onchange="changeGraph(this.value)">
-        <option value="GWP-AR6-20" selected>20 Years</option>
-        <option value="GWP-AR6-100">100 Years</option>
+        <option value="GWP-AR6-20" selected>20yr GWP </option>
+        <option value="GWP-AR6-100">100yr GWP</option>
         <option value="Social-Cost-of-Carbon">Social Cost of Carbon</option>
      </select>
     </div>
@@ -59,19 +59,8 @@
     var graphType = 'GWP-AR6-20';
     function changeGraph(t)
             {
- 
                 smartSectorChart.selectiveGraph(t,perspectiveName);
                 graphType = t;
-
-
-                if(t === 'Social-Cost-of-Carbon')
-                {
-                    document.getElementById('graphTitle').innerText = 'Sector Contribution to Impact per $';
-                }
-                else
-                {
-                    document.getElementById('graphTitle').innerText = 'Sector Contribution to Impact GHG';
-                }
             }
 
             document.addEventListener('input',(e)=>{

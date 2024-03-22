@@ -10,17 +10,18 @@ export async function calculate(sortTopTen:SumSmartSectorTotalParts[],model: Web
         let sectorsList:Sector[] = await model.sectors();
         let sortedSectorCodes: string[] = sortedSectorCodeList(sortTopTen);
         let sortedSeries:{name:string,data:number[]}[] = sortedSeriesList(sortTopTen,uniqueSortedMapping);
-        // let sortedSectorCodesWithNames: string[] = sortedSectorCodes.map( t =>
-        //  {
-        //   let sectorName:Sector = sectorsList.find( s => 
-        //     {
-        //       if(s.id === t)
-        //       {
-        //         return true
-        //       }
-        //     })
-        //    return sectorName.id +" - "+sectorName.name;
-        //  });
+        
+        let sortedSectorCodesWithNamesWithArray: string[][] = sortedSectorCodes.map( t =>
+         {
+          let sectorName:Sector = sectorsList.find( s => 
+            {
+              if(s.id === t)
+              {
+                return true
+              }
+            })
+           return  [sectorName.id].concat(sectorName.name.split(' '))
+         });
 
         return {
             series: sortedSeries,
@@ -64,28 +65,14 @@ export async function calculate(sortTopTen:SumSmartSectorTotalParts[],model: Web
                 title:{
                   text:'Sector'
                 },
-                categories: sortedSectorCodes,
-                 tooltip: {
-                  enabled: true,
-                  formatter:  function(val) {
-                    
-                       let sectorName:Sector = sectorsList.find( s => 
-                         {
-                           if(s.id === val)
-                           {
-                             return true
-                           }
-                         });
-                           return sectorName.name             
-                    },
-              }
-              
+                
+                categories: sortedSectorCodesWithNamesWithArray,
               },
               yaxis: [
                 {
                   title:{
                     
-                    text: titleGraph.includes('Social') ? 'Impact per $ (Million Dollars)':'Total Impact (MMT CO2e)'
+                    text: titleGraph.includes('Social') ? 'Total Impact (Million $)':'Total Impact (MMT CO2e)'
                   },
                   labels: {
                     formatter: function(val) {
@@ -98,6 +85,15 @@ export async function calculate(sortTopTen:SumSmartSectorTotalParts[],model: Web
                 position: 'right',
                 offsetY: 40
               },
+              tooltip: {
+                enabled: true,
+                onDatasetHover: {
+                    highlightDataSeries: false,
+                },
+                x: {
+                    show: false
+                }
+            },
               fill: {
                 opacity: 1
               }
