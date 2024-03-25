@@ -117,6 +117,33 @@ private _target(...path: string[]): string {
     return req;
   }
 
+   async api<T>(...path: string[]): Promise<T> {
+    // construct the URL
+    let url = this._target(...path);
+    if (this._config.asJsonFiles) {
+      if (!url.endsWith(".json")) {
+        url += ".json";
+      }
+    }
+
+      return caches.match(url).then((response) => {
+        if (response !== undefined) {
+          return response.json().then(data => data as T);
+        } else {
+          return fetch(url)
+            .then((response) => {
+              let responseClone = response.clone();
+  
+              caches.open("v1").then((cache) => {
+                cache.put(url, responseClone);
+              });
+              return response.json().then(data => data as T);
+            })
+        }
+      })
+    
+  }
+
 }   
 
 /**
@@ -144,6 +171,14 @@ export class WebModelSmartSector {
   {
     return await this.api.getJson(this.modelId,  "sector_contribution_to_impact/"+fileName)
   }
+
+   /**
+   * Returns the sector_contribution_to_impact_ghg of the smart sector EEIO model.
+   */
+   async sectorContributionToImpactGhgAPI(fileName:string): Promise<SectorContributionToImpact[]> 
+   {
+     return await this.api.api(this.modelId,  "sector_contribution_to_impact/"+fileName)
+   }
   
 
   /**

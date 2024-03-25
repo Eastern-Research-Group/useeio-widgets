@@ -36,7 +36,8 @@ export class SmartSectorEEIO extends Widget {
        });
     let uniqueSortedMappingGroupNoDuplicates:string[] = this.uniqueSortedMappingGroup(sortedSectorMappingByGroup);
 
-    let sectorContributionToImpact:SectorContributionToImpact[] = await this.modelSmartSectorApi.sectorContributionToImpactGhg("final/"+graphName);
+
+    let sectorContributionToImpact:SectorContributionToImpact[] = await this.modelSmartSectorApi.sectorContributionToImpactGhgAPI("final/"+graphName);
     let nameWithNoSpace = graphName.replace(/\-/g," ");
     let options = await this.getGraphs(sectorContributionToImpact, this.modelSmartSectorApi, nameWithNoSpace);
     let option = await calculate(options,this._chartConfig.model,uniqueSortedMappingGroupNoDuplicates, nameWithNoSpace);
@@ -58,11 +59,11 @@ export class SmartSectorEEIO extends Widget {
     let uniqueSortedMappingGroupNoDuplicates:string[] = this.uniqueSortedMappingGroup(sortedSectorMappingByGroup);
     if(perspective === 'final')
     {
-        sectorContributionToImpact = await this.modelSmartSectorApi.sectorContributionToImpactGhg("final/"+graphName);
+        sectorContributionToImpact = await this.modelSmartSectorApi.sectorContributionToImpactGhgAPI("final/"+graphName);
     }
     else if(perspective === 'direct')
     {
-        sectorContributionToImpact = await this.modelSmartSectorApi.sectorContributionToImpactGhg("direct/"+graphName);
+        sectorContributionToImpact = await this.modelSmartSectorApi.sectorContributionToImpactGhgAPI("direct/"+graphName);
 
     }
     let nameWithNoSpace = graphName.replace(/\-/g," ");
