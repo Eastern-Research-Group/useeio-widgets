@@ -1,6 +1,8 @@
 
 import {SmartSector, SumSmartSectorTotalParts} from '../smartSectorChart/smartSector';
 import { Sector } from "useeio";
+import {modelOfSmartSector, WebModelSmartSector, SectorMapping, SectorContributionToImpact, ImpactOutput } from '../smartSectorWebApi.ts/webApiSmartSector';
+
 
 
 export function smartSectorCalc(smartSectorList:SmartSector[],addSector:SmartSector)
@@ -135,4 +137,17 @@ export function selectSectorName(sectorId:string, sectorList:Sector[]): string {
     });
 
     return sector ? sector.name : "Direct"
+}
+
+export function uniqueSortedMappingGroupNoDuplicatesList(sectorMappingList:SectorMapping[]):string[]{
+    let sortedSectorMappingByGroup:SectorMapping[] = sectorMappingList.sort((a: SectorMapping, b: SectorMapping): any => {
+          
+        return a.group.localeCompare(b.group);
+     });
+
+    let sortedMappingGroupList:string[] = sortedSectorMappingByGroup.map( t => 
+    {           
+         return t.group;
+    })
+    return sortedMappingGroupList.filter((value, index) => sortedMappingGroupList.indexOf(value) === index)   
 }

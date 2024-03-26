@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Impact chart</title>
+    <link rel="stylesheet" type="text/css" href="widgets.css">
+</head>
+
+<body>
+    <form id=formtest>
+        <textarea name="textarea" id="text2"></textarea>
+        <br>
+        <input type="button" value="save" onclick="changeSector()">
+    </form>
+
+    <div class="io" style="margin: 25px;">
+        <div style="width: 80%; margin: auto;">
+            <div id="profile-chart">
+            </div>
+        </div>
+    </div>
+
+    <script src="lib/apexcharts.min.js"></script>
+    <script src="lib/useeio_widgets.js"></script>
+    <script>
+
+        var config = useeio.urlConfig();
+        var modelID = config.get().model || 'SMART_SECTORv1.0';
+
+        var model = useeio.model({
+            endpoint: './api',
+            model: modelID,
+            asJsonFiles: true,
+        });
+
+        var smartSectorChartPerPurchase = useeio.smartSectorImpactPerPurchase({
+            model: model,
+            endpoint: './api',
+            selector: '#profile-chart',
+        });
+
+
+        smartSectorChartPerPurchase.init('GWP-AR6-20');
+
+        function changeSector()
+            {
+                 var textArea = document.getElementById("text2").value;
+                 console.log(textArea)
+                smartSectorChartPerPurchase.updateGraph(textArea);
+            }
+    </script>
+</body>
+
+</html>

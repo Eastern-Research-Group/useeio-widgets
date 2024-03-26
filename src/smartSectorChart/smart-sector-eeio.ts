@@ -1,8 +1,8 @@
 import * as apex from "apexcharts";
 import { Widget } from "..";
 import { WebModel, Sector } from "useeio";
-import {modelOfSmartSector, WebModelSmartSector, SectorMapping, SectorContributionToImpact, ImpactOutput } from './webApiSmartSector';
-import {selectSectorName, smartSectorCalc, SumSmartSectorTotal } from '../smartSectorCalc/smartSectorCalculations'
+import {modelOfSmartSector, WebModelSmartSector, SectorMapping, SectorContributionToImpact, ImpactOutput } from '../smartSectorWebApi.ts/webApiSmartSector';
+import {selectSectorName, smartSectorCalc, SumSmartSectorTotal , uniqueSortedMappingGroupNoDuplicatesList} from '../smartSectorCalc/smartSectorCalculations'
 import {SmartSector, SumSmartSectorTotalParts } from '../smartSectorChart/smartSector'
 import { calculate } from "./toggleGraphs";
 
@@ -16,6 +16,7 @@ export interface SmartSectorChartConfig {
 export class SmartSectorEEIO extends Widget {
     chart:ApexCharts;
     modelSmartSectorApi:WebModelSmartSector;
+    uniqueSortedMappingGroupNoDuplicates:string[];
 
     constructor(private _chartConfig: SmartSectorChartConfig) {
         super();
@@ -30,17 +31,12 @@ export class SmartSectorEEIO extends Widget {
 
    async init(graphName:string)
    {
-    let sectorMappingList:SectorMapping[] = await this.modelSmartSectorApi.sectorMapping();  
-    let sortedSectorMappingByGroup:SectorMapping[] = sectorMappingList.sort((a: SectorMapping, b: SectorMapping): any => {
-           return a.group.localeCompare(b.group);
-       });
-    let uniqueSortedMappingGroupNoDuplicates:string[] = this.uniqueSortedMappingGroup(sortedSectorMappingByGroup);
-
-
+    const sectorMappingList:SectorMapping[] = await this.modelSmartSectorApi.sectorMapping();  
+    this.uniqueSortedMappingGroupNoDuplicates = uniqueSortedMappingGroupNoDuplicatesList(sectorMappingList);
     let sectorContributionToImpact:SectorContributionToImpact[] = await this.modelSmartSectorApi.sectorContributionToImpactGhgAPI("final/"+graphName);
     let nameWithNoSpace = graphName.replace(/\-/g," ");
     let options = await this.getGraphs(sectorContributionToImpact, this.modelSmartSectorApi, nameWithNoSpace);
-    let option = await calculate(options,this._chartConfig.model,uniqueSortedMappingGroupNoDuplicates, nameWithNoSpace);
+    let option = await calculate(options,this._chartConfig.model,this.uniqueSortedMappingGroupNoDuplicates, nameWithNoSpace);
     this.chart = new ApexCharts(
         document.querySelector(this._chartConfig.selector),
         option,
@@ -52,11 +48,7 @@ export class SmartSectorEEIO extends Widget {
    async selectiveGraph(graphName:string,perspective:string)
    {
     let sectorContributionToImpact:SectorContributionToImpact[] = []
-    let sectorMappingList:SectorMapping[] = await this.modelSmartSectorApi.sectorMapping();  
-    let sortedSectorMappingByGroup:SectorMapping[] = sectorMappingList.sort((a: SectorMapping, b: SectorMapping): any => {
-           return a.group.localeCompare(b.group);
-       });
-    let uniqueSortedMappingGroupNoDuplicates:string[] = this.uniqueSortedMappingGroup(sortedSectorMappingByGroup);
+    
     if(perspective === 'final')
     {
         sectorContributionToImpact = await this.modelSmartSectorApi.sectorContributionToImpactGhgAPI("final/"+graphName);
@@ -68,19 +60,11 @@ export class SmartSectorEEIO extends Widget {
     }
     let nameWithNoSpace = graphName.replace(/\-/g," ");
     let options = await this.getGraphs(sectorContributionToImpact, this.modelSmartSectorApi, nameWithNoSpace);
-    let option = await calculate(options,this._chartConfig.model,uniqueSortedMappingGroupNoDuplicates, nameWithNoSpace);
+    let option = await calculate(options,this._chartConfig.model,this.uniqueSortedMappingGroupNoDuplicates, nameWithNoSpace);
     
     this.chart.updateOptions(option);
     this.chart.resetSeries();
    }
-
-    private uniqueSortedMappingGroup(sortedSectorMappingByGroup:SectorMapping[]) : string[]{
-        let sortedMappingGroupList:string[] = sortedSectorMappingByGroup.map( t => 
-            {
-                return t.group;
-            })
-        return sortedMappingGroupList.filter((value, index) => sortedMappingGroupList.indexOf(value) === index)   
-    }
     
     async getGraphs(sectorContributionToImpact:SectorContributionToImpact[], modelSmartSector:WebModelSmartSector,scc:string) : Promise<SumSmartSectorTotalParts[]>
     {
@@ -94,15 +78,9 @@ export class SmartSectorEEIO extends Widget {
 
 
     async calculateValues(sectorContributionToImpactGhg:SectorContributionToImpact[],modelSmartSector:WebModelSmartSector,scc:string):Promise<SumSmartSectorTotalParts[]> {
-      let impactoutputs:ImpactOutput[] = await modelSmartSector.impactOutPut();
-      let sectorMappingList:SectorMapping[] = await modelSmartSector.sectorMapping();
-      let sectorsList:Sector[] = await this._chartConfig.model.sectors();
-
-      let sortedSectorMappingByGroup:SectorMapping[] = sectorMappingList.sort((a: SectorMapping, b: SectorMapping): any => {
-          return a.group.localeCompare(b.group);
-      });
-
-      let uniqueSortedMappingGroupNoDuplicates:string[] = this.uniqueSortedMappingGroup(sortedSectorMappingByGroup);
+      const impactoutputs:ImpactOutput[] = await modelSmartSector.impactOutPut();
+      const sectorMappingList:SectorMapping[] = await modelSmartSector.sectorMapping();
+      const sectorsList:Sector[] = await this._chartConfig.model.sectors();
       
 
       let smartSectorListGroup: SmartSector[]  = []
@@ -137,7 +115,7 @@ export class SmartSectorEEIO extends Widget {
         }))
       });
 
-      let sumSmartSectorTotalParts: SumSmartSectorTotalParts[] = SumSmartSectorTotal(sectorsList,smartSectorListGroup,uniqueSortedMappingGroupNoDuplicates);
+      let sumSmartSectorTotalParts: SumSmartSectorTotalParts[] = SumSmartSectorTotal(sectorsList,smartSectorListGroup,this.uniqueSortedMappingGroupNoDuplicates);
 
       
 

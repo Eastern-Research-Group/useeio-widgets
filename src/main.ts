@@ -28,6 +28,7 @@ import { CountCombo } from "./widgets/count-combo";
 import { MatrixSelector } from "./widgets/matrix-selector";
 import { IOGrid } from "./widgets/iogrid/iogrid";
 import { DotsMenu } from "./widgets/dotsMenu";
+import { SmartSectorEEIOImpactPurchasePerSector}from './smartSectorSumOfImpcatPerPurchase.ts/smart-sector-eeio-impact-per-purchase';
 
 export * from "./naics";
 
@@ -109,6 +110,10 @@ export function profileChart(config: ProfileChartConfig): ProfileChart {
 
 export function smartSectorChart(config: SmartSectorChartConfig): SmartSectorEEIO {
     return new SmartSectorEEIO(config);
+}
+
+export function smartSectorImpactPerPurchase(config: SmartSectorChartConfig): SmartSectorEEIOImpactPurchasePerSector {
+    return new SmartSectorEEIOImpactPurchasePerSector(config);
 }
 
 export function paginator(args: WidgetArgs): Paginator {

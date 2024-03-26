@@ -9,10 +9,11 @@ export class SmartSector {
     }
 }
 
+
 export class SumSmartSectorTotalParts
 {
     _sectorCode:string;
-    _totalSectorCodeSummationImpact:number;
+    _totalSectorCodeSummationImpact?:number;
     _smartSectors:SmartSector[] = new Array<SmartSector>()
 
     constructor(_sectorCode:string,_totalSectorCodeSummationImpact:number)
@@ -34,4 +35,39 @@ export interface ChartSmartSector{
     sumSectorName:string;
     sumtotalImpact:number;
     sumPurchasedGroup:string;
+}
+
+
+
+export class SortingImpactPerPurchaseWithTop
+{
+    _sectorCode:string;
+    _sectorName:string;
+    _smartSectors:ImpactPerPurchaseSector[] = new Array<ImpactPerPurchaseSector>()    
+    constructor(_sectorCode:string, _sectorName:string, impactPerPurchase?:ImpactPerPurchaseSector)
+    {
+        this._sectorCode = _sectorCode;
+        this._sectorName = _sectorName;
+        this._smartSectors.push(impactPerPurchase);
+    }
+
+    addSmartSectorsByCommodityGroup(_smartSectors?:ImpactPerPurchaseSector) {
+        this._smartSectors.push(_smartSectors);
+    }
+
+}
+
+
+
+export interface ImpactPerPurchaseSector{
+    sectorCode:string;
+    purchaseCommodity:string;
+    impactPerPurchase:number;
+    purchasedGroup:string;
+}
+
+export interface SortedImpactPerPurchaseTopList{
+    sector_code:string;
+    sector_name:string;
+    topFifteenImpactPerPurchase:ImpactPerPurchaseSector[];
 }
