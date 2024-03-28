@@ -8,18 +8,13 @@
 </head>
 
 <body>
-    <form id=formtest>
-        <textarea name="textarea" id="text2"></textarea>
-        <br>
-        <input type="button" value="save" onclick="changeSector()">
-    </form>
-
-    <div class="io" style="margin: 25px;">
-        <div style="width: 80%; margin: auto;">
-            <div id="profile-chart">
+            <div style="width: 80%; margin: auto;">
+                <div id="profile-chart">
+                </div>
             </div>
-        </div>
-    </div>
+            <div class="sector-list"></div>
+
+
 
     <script src="lib/apexcharts.min.js"></script>
     <script src="lib/useeio_widgets.js"></script>
@@ -34,21 +29,17 @@
             asJsonFiles: true,
         });
 
-        var smartSectorChartPerPurchase = useeio.smartSectorImpactPerPurchase({
+        var sectorListSearch = useeio.sectorListSearch({modelOne:{
+            model: model,
+            endpoint: './api',
+            selector: '.sector-list',
+        },modelTwo:{
             model: model,
             endpoint: './api',
             selector: '#profile-chart',
-        });
-
-
-        smartSectorChartPerPurchase.init('GWP-AR6-20');
-
-        function changeSector()
-            {
-                 var textArea = document.getElementById("text2").value;
-                 console.log(textArea)
-                smartSectorChartPerPurchase.updateGraph(textArea);
-            }
+        }});
+        sectorListSearch.update();
+        
     </script>
 </body>
 

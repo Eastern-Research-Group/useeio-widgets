@@ -21,7 +21,7 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget
     sectorContributionToImpact:SectorContributionToImpact[];
     getTopValuesFromSectors:SortedImpactPerPurchaseTopList[];
     sectorsList:Sector[];
-
+    sectorsListlowerCase:String[];
     constructor(private _chartConfig: SmartSectorChartConfig) {
         super();
         this.modelSmartSectorApi = modelOfSmartSector({
@@ -52,12 +52,6 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget
     );
 
     this.chart.render();
-   }
-
-   getSectorsNames():string[]
-   {
-    
-    return this.sectorsList.map( t => t.name);
    }
 
    async updateGraph(sectorName?:string)

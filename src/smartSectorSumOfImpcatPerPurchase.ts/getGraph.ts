@@ -9,21 +9,23 @@ export async function apexGraph(sortingImpactPerPurchaseWithTopList:SortedImpact
             purchae_commodity: string;
             impactPerPurchase: number;
         }[]
-
         let values  = sortingImpactPerPurchaseWithTopList.find( t => {
             if(t.sector_name === sectorName){
                 return true
             }
         })
-
+        
         data = values.topFifteenImpactPerPurchase.map(t => {
             return {
             purchae_commodity:t.purchaseCommodity,
             impactPerPurchase:t.impactPerPurchase}
         });
-
         let sectorGraphTitle = values.sector_code + ' - ' +values.sector_name;
-      
+        let sortedSectorCodesWithNamesWithArray: string[][] = data.map( t =>
+          {
+           
+            return  t.purchae_commodity.split(' ')
+          });
       
 
       return {
@@ -54,10 +56,7 @@ export async function apexGraph(sortingImpactPerPurchaseWithTopList:SortedImpact
         align: 'center'
       },
       xaxis: {
-        categories: data.map(t => t.purchae_commodity),
-        title:{     
-          text: 'Purchased Commodities',
-        },
+        categories: sortedSectorCodesWithNamesWithArray,
       },
       yaxis: {
         title: {
