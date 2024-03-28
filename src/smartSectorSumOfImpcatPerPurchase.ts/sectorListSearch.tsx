@@ -4,9 +4,14 @@ import { TextField } from "@material-ui/core";
 import { SmartSectorEEIOImpactPurchasePerSector}from '../smartSectorSumOfImpcatPerPurchase.ts/smart-sector-eeio-impact-per-purchase';
 import * as strings from "../util/strings";
 import { Widget } from "../widget";
-import {modelOfSmartSector, WebModelSmartSector, SectorMapping, SectorContributionToImpact, ImpactOutput } from '../smartSectorWebApi.ts/webApiSmartSector';
+import {modelOfSmartSector, WebModelSmartSector } from '../smartSectorWebApi.ts/webApiSmartSector';
 import React from "react";
-import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
+import { makeStyles} from "@material-ui/core/styles";
+import InputLabel from '@material-ui/core/InputLabel';
+import FormControl from '@material-ui/core/FormControl';
+import Select from '@material-ui/core/Select';
+
+
 
 export interface SmartSectorChartConfigModels {modelOne:{
     model: WebModel,
@@ -60,15 +65,22 @@ export class SectorListSearch extends Widget {
 
 }
 
+
 const Component = (props: { widget: SectorListSearch }) => {
 
 
+
     const [searchTerm, setSearchTerm] = React.useState<string | null>(null);
-    const [value, setValue] = React.useState<string>();
+    const [value, setValue] = React.useState<string>('');
+    const [graph, setGraph] = React.useState<string>('');
+
+;
+    React.useEffect(() => {
+        setGraph(props.widget.smartSectorImpactPurchase.getGraph())
+    }, []);
 
     let sectors = props.widget.sectors;
 
-    console.log(searchTerm + 'searchTerm')
     if (searchTerm) {
         sectors = sectors.filter((s) => strings.search(s.name, searchTerm) >= 0);
     }
@@ -94,7 +106,6 @@ const Component = (props: { widget: SectorListSearch }) => {
             handleState = {handleState}
         />
     ));
-    let marginTop = 0;
 
     const onSearch = (value: string) => {
         if (!value) {
@@ -104,30 +115,49 @@ const Component = (props: { widget: SectorListSearch }) => {
         setSearchTerm(term.length === 0 ? null : term)
     };
 
-    const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        root: {
-            '& > *': {
-                margin: theme.spacing(1),
-                width: 400,
-            },
+    const useStyles = makeStyles((theme) => ({
+        margin: {
+          margin: theme.spacing(1),
+          minWidth: 150,
         },
-    }),
-);
+      }));
+
+
+
+    const handleChange = (event:any) => {
+        setGraph(event.target.value);
+        props.widget.smartSectorImpactPurchase.changeGraph(event.target.value,value);
+    };
+
 
 const classes = useStyles();
     return (
-        <>
-            <div style={{ marginTop: marginTop }}>
-                <form  className={classes.root} noValidate autoComplete="off">
-                <TextField value={searchTerm} id="outlined-basic" label="Search" variant="outlined" size="small" onChange={e => onSearch(e.target.value)} />
-                </form>
-                { searchTerm != null ?
-                    <table className="sector-list-table" id="sector-list-table"> 
-                        <tbody id="sectorListSearch" className="sector-list-body">{rows}</tbody>
-                    </table> : null}
-            </div>
-        </>
+        <div>
+            <FormControl className={classes.margin} >
+                        <TextField value={searchTerm}  label="Searh Sector" variant="outlined" size="small" onChange={e => onSearch(e.target.value)} />
+                        { searchTerm != null ?
+                            <table className="sector-list-table" id="sector-list-table"> 
+                                <tbody id="sectorListSearch" className="sector-list-body">{rows}</tbody>
+                            </table> : null
+                        }
+            </FormControl>
+            <FormControl className={classes.margin} >
+                <InputLabel id="demo-controlled-open-select-label">Select Impact:</InputLabel>
+                <Select
+                native
+                value={graph}
+                onChange={handleChange}
+                label="Select Impact:"
+                inputProps={{
+                    name: 'graph',
+                }}
+                >
+                <option value="GWP-AR6-20">20yr GWP</option>
+                <option value="GWP-AR6-100">100yr GWP</option>
+                <option value="Social-Cost-of-Carbon">Social Cost of Carbon</option>
+                </Select>
+            </FormControl>
+      </div>
     );
 };
 

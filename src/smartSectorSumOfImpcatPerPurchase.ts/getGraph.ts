@@ -52,7 +52,7 @@ export async function apexGraph(sortingImpactPerPurchaseWithTopList:SortedImpact
         colors: ['transparent']
       },
       title:{
-        text: sectorGraphTitle,
+        text: sectorGraphTitle+` (${graphTitleName})`,
         align: 'center'
       },
       xaxis: {
@@ -61,6 +61,10 @@ export async function apexGraph(sortingImpactPerPurchaseWithTopList:SortedImpact
       yaxis: {
         title: {
           text: 'Impact per $'
+        },labels: {
+          formatter: function(val) {
+            return (Math.round(val * 100) / 100).toFixed(2);
+          }
         }
       },
       fill: {

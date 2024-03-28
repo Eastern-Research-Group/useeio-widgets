@@ -22,6 +22,7 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget
     getTopValuesFromSectors:SortedImpactPerPurchaseTopList[];
     sectorsList:Sector[];
     sectorsListlowerCase:String[];
+    graphName:string = '';
     constructor(private _chartConfig: SmartSectorChartConfig) {
         super();
         this.modelSmartSectorApi = modelOfSmartSector({
@@ -37,6 +38,7 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget
 
   async init(graphName?:string, sectorName?:string)
    {
+    this.graphName = graphName;
     this.sectorsList = await this._chartConfig.model.sectors();
     let sector_name:string = sectorName? sectorName:'Fresh soybeans, canola, flaxseeds, and other oilseeds';
     const sectorMappingList:SectorMapping[] = await this.modelSmartSectorApi.sectorMapping();  
@@ -54,12 +56,34 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget
     this.chart.render();
    }
 
+   async changeGraph(graphName?:string, sectorName?:string)
+   {
+    this.graphName = graphName;
+    this.sectorsList = await this._chartConfig.model.sectors();
+    let sector_name:string = sectorName? sectorName:'Fresh soybeans, canola, flaxseeds, and other oilseeds';
+    const sectorMappingList:SectorMapping[] = await this.modelSmartSectorApi.sectorMapping();  
+    this.uniqueSortedMappingGroupNoDuplicates = uniqueSortedMappingGroupNoDuplicatesList(sectorMappingList);
+    let titleNameWithNoSpace = graphName.replace(/\-/g," ");
+    this.sectorContributionToImpact = [];
+    this.getTopValuesFromSectors = [];
+    this.sectorContributionToImpact = await this.modelSmartSectorApi.sectorContributionToImpactGhgAPI("final/"+graphName);
+    this.getTopValuesFromSectors = await this.getTopFifteenImpactPerPurchaseWithGroup(this.sectorContributionToImpact,this.modelSmartSectorApi);
+
+    let options = await apexGraph(this.getTopValuesFromSectors,sector_name, titleNameWithNoSpace);
+    this.chart.updateOptions(options);
+    this.chart.resetSeries();
+   }
+
    async updateGraph(sectorName?:string)
    {
  
-    let options = await apexGraph(this.getTopValuesFromSectors,sectorName);
+    let options = await apexGraph(this.getTopValuesFromSectors,sectorName,this.graphName.replace(/\-/g," "));
     this.chart.updateOptions(options);
     this.chart.resetSeries();
+   }
+
+   getGraph():string{
+    return this.graphName
    }
 
    async getTopFifteenImpactPerPurchaseWithGroup(sectorContributionToImpactGhg:SectorContributionToImpact[],modelSmartSector:WebModelSmartSector):Promise<SortedImpactPerPurchaseTopList[]>
