@@ -1,14 +1,12 @@
-import { Card, CardContent, Grid, makeStyles, Paper, Tab, TablePagination, Tabs, Typography } from "@material-ui/core";
 import * as ReactDOM from "react-dom";
-import { Indicator, Matrix, NaicsMap, Sector, WebModel } from "useeio";
+import { Sector, WebModel } from "useeio";
 import { TextField } from "@material-ui/core";
 import { SmartSectorEEIOImpactPurchasePerSector}from '../smartSectorSumOfImpcatPerPurchase.ts/smart-sector-eeio-impact-per-purchase';
 import * as strings from "../util/strings";
 import { Widget } from "../widget";
 import {modelOfSmartSector, WebModelSmartSector, SectorMapping, SectorContributionToImpact, ImpactOutput } from '../smartSectorWebApi.ts/webApiSmartSector';
-
-
-
+import React from "react";
+import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 
 export interface SmartSectorChartConfigModels {modelOne:{
     model: WebModel,
@@ -106,16 +104,28 @@ const Component = (props: { widget: SectorListSearch }) => {
         setSearchTerm(term.length === 0 ? null : term)
     };
 
+    const useStyles = makeStyles((theme: Theme) =>
+    createStyles({
+        root: {
+            '& > *': {
+                margin: theme.spacing(1),
+                width: 400,
+            },
+        },
+    }),
+);
+
+const classes = useStyles();
     return (
         <>
             <div style={{ marginTop: marginTop }}>
-            <form  noValidate autoComplete="off">
-            <TextField value={searchTerm} id="outlined-basic" label="Search" variant="outlined" size="small" onChange={e => onSearch(e.target.value)} />
-            </form>
-                { searchTerm != null ? <div className="sector-list-table">
-                    
-                <table id="sectorListSearch" className="sector-list-body">{rows}</table>
-                </div>: null }
+                <form  className={classes.root} noValidate autoComplete="off">
+                <TextField value={searchTerm} id="outlined-basic" label="Search" variant="outlined" size="small" onChange={e => onSearch(e.target.value)} />
+                </form>
+                { searchTerm != null ?
+                    <table className="sector-list-table" id="sector-list-table"> 
+                        <tbody id="sectorListSearch" className="sector-list-body">{rows}</tbody>
+                    </table> : null}
             </div>
         </>
     );
@@ -144,11 +154,6 @@ const Row = (props: RowProps) => {
     return (
     
         <tr>
-            <td
-                key={props.sector.code}
-                className={classes.td}
-            >
-            </td>
             <td className={classes.td}>
                 <a style={{ cursor: "pointer" }} title={sector.name} onClick={()=> props.handleState(sector.name)}>
                     {strings.cut(sector.name, 80)}
