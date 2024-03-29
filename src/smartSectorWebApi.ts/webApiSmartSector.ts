@@ -128,8 +128,21 @@ private _target(...path: string[]): string {
 
       return caches.match(url).then((response) => {
         if (response !== undefined) {
+          const date = new Date(response.headers.get('date'));
+        // if cached file is older than 1 hours
+        if(Date.now() > date.getTime() + 1000 * 60 * 60){
+          return fetch(url)
+          .then((response) => {
+            let responseClone = response.clone();
+            caches.open("v1").then((cache) => {
+              cache.delete(url);
+              cache.put(url, responseClone);
+            });
+            return response.json().then(data => data as T);
+        })}
           return response.json().then(data => data as T);
-        } else {
+        }
+         else {
           return fetch(url)
             .then((response) => {
               let responseClone = response.clone();
