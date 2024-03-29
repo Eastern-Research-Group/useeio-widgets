@@ -82,7 +82,7 @@ const Component = (props: { widget: SectorListSearch }) => {
     let sectors = props.widget.sectors;
 
     if (searchTerm) {
-        sectors = sectors.filter((s) => strings.search(s.name, searchTerm) >= 0);
+        sectors = sectors.filter((s) => {return ((strings.search(s.name, searchTerm) >= 0)  || (strings.search(s.code, searchTerm) >= 0))});
     }
 
     const handleState = (e:string) => {
@@ -140,10 +140,10 @@ const classes = useStyles();
     return (
         <div>
             <FormControl className={classes.margin} >
-                        <TextField value={searchTerm}  label="Searh Sector" variant="outlined" size="small" onChange={e => onSearch(e.target.value)} />
+                        <TextField value={searchTerm}  label="Search Sector" variant="outlined" size="small" onChange={e => onSearch(e.target.value)} />
                         { searchTerm != null ?
                         <div className={classes.selector} id="div1">
-                            <table className="sector-list-table" id="sector-list-table"> 
+                            <table id="sector-list-table"> 
                                 <tbody id="sectorListSearch" className="sector-list-body">{rows}</tbody>
                             </table>
                             </div> : null
@@ -192,6 +192,14 @@ const Row = (props: RowProps) => {
     return (
     
         <tr>
+            <td
+                key={props.sector.code}
+                className={classes.td}
+            >
+                <a style={{ cursor: "pointer" }} title={sector.code} onClick={()=> props.handleState(sector.name)}>
+                        {sector.code}
+                </a>
+            </td>
             <td className={classes.td}>
                 <a style={{ cursor: "pointer" }} title={sector.name} onClick={()=> props.handleState(sector.name)}>
                     {strings.cut(sector.name, 80)}
