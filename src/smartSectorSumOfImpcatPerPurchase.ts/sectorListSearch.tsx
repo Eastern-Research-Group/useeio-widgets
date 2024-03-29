@@ -86,7 +86,7 @@ const Component = (props: { widget: SectorListSearch }) => {
     }
 
     const handleState = (e:string) => {
-        setSearchTerm(e);
+        setSearchTerm(null);
         setValue(e);
         props.widget.smartSectorImpactPurchase.updateGraph(e);
     };
