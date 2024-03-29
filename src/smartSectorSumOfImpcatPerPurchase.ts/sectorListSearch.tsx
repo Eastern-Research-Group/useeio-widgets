@@ -120,6 +120,12 @@ const Component = (props: { widget: SectorListSearch }) => {
           margin: theme.spacing(1),
           minWidth: 150,
         },
+        selector:{
+                width: 'auto',
+                height: '200px',
+                border: '1px solid black',
+                overflowY: 'scroll'              
+        }
       }));
 
 
@@ -136,9 +142,11 @@ const classes = useStyles();
             <FormControl className={classes.margin} >
                         <TextField value={searchTerm}  label="Searh Sector" variant="outlined" size="small" onChange={e => onSearch(e.target.value)} />
                         { searchTerm != null ?
+                        <div className={classes.selector} id="div1">
                             <table className="sector-list-table" id="sector-list-table"> 
                                 <tbody id="sectorListSearch" className="sector-list-body">{rows}</tbody>
-                            </table> : null
+                            </table>
+                            </div> : null
                         }
             </FormControl>
             <FormControl className={classes.margin} >

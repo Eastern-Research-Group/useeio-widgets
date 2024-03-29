@@ -1,9 +1,8 @@
-import * as apex from "apexcharts";
-import { Config, Widget } from "..";
+import {  Widget } from "..";
 import { WebModel, Sector } from "useeio";
-import {modelOfSmartSector, WebModelSmartSector, SectorMapping, SectorContributionToImpact, ImpactOutput } from '../smartSectorWebApi.ts/webApiSmartSector';
-import {selectSectorName, smartSectorCalc, SumSmartSectorTotal, uniqueSortedMappingGroupNoDuplicatesList } from '../smartSectorCalc/smartSectorCalculations'
-import {SmartSector, SortedImpactPerPurchaseTopList, SumSmartSectorTotalParts, SortingImpactPerPurchaseWithTop, ImpactPerPurchaseSector} from '../smartSectorChart/smartSector'
+import { modelOfSmartSector, WebModelSmartSector, SectorMapping, SectorContributionToImpact } from '../smartSectorWebApi.ts/webApiSmartSector';
+import {selectSectorName, uniqueSortedMappingGroupNoDuplicatesList } from '../smartSectorCalc/smartSectorCalculations'
+import {SortedImpactPerPurchaseTopList, SortingImpactPerPurchaseWithTop, ImpactPerPurchaseSector} from '../smartSectorChart/smartSector'
 import { apexGraph } from "../smartSectorSumOfImpcatPerPurchase.ts/getGraph";
 
 export interface SmartSectorChartConfig {
