@@ -125,44 +125,12 @@ private _target(...path: string[]): string {
         url += ".json";
       }
     }
-
-     if(caches != undefined || caches != null){
-      return caches?.match(url).then((response) => {
-        if (response !== undefined) {
-          const date = new Date(response.headers.get('date'));
-        // if cached file is older than 1 hours
-        if(Date.now() > date.getTime() + 1000 * 60 * 60){
-          return fetch(url)
-          .then((response) => {
-            let responseClone = response.clone();
-            caches?.open("v1").then((cache) => {
-              cache.delete(url);
-              cache.put(url, responseClone);
-            });
-            return response.json().then(data => data as T);
-        })}
-          return response.json().then(data => data as T);
-        }
-         else {
-          return fetch(url)
-            .then((response) => {
-              return response.json().then(data => data as T);
-            })
-        }
-      })
-    }
-    else{
         return fetch(url)
           .then((response) => {
-            let responseClone = response.clone();
-
-            caches.open("v1").then((cache) => {
-              cache.put(url, responseClone);
-            });
             return response.json().then(data => data as T);
           })
     }  
-  }
+  
 
 }   
 
