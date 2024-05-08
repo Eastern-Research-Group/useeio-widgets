@@ -5,33 +5,6 @@ import {modelOfSmartSector, WebModelSmartSector, SectorMapping, SectorContributi
 
 
 
-export function smartSectorCalc(smartSectorList:SmartSector[],addSector:SmartSector)
-{
-    if(smartSectorList.length === 0){
-        smartSectorList.push(addSector);
-    }
-    else
-    {
-      let smartSectorFound:SmartSector | undefined =  smartSectorList.find( t => 
-        {
-            if(t._smartSector.sumSectorCode === addSector._smartSector.sumSectorCode &&
-               t._smartSector.sumPurchasedGroup === addSector._smartSector.sumPurchasedGroup){
-                return true;
-                }
-         });
-  
-      if(smartSectorFound !== undefined)
-      {
-        smartSectorFound._smartSector.sumtotalImpact += addSector._smartSector.sumtotalImpact;
-      }
-      else
-      {
-        smartSectorList.push(addSector); 
-      }      
-    }
-
-}
-
 export function sortedSectorCodeList(sortTopTen:SumSmartSectorTotalParts[]): string[]{
     return sortTopTen.map((v) => {
         return v._sectorCode
@@ -72,57 +45,57 @@ export function SumSmartSectorTotal(sectorList:Sector[],smartSectorList:SmartSec
     let groupInidcator:string = uniqueGroupIds[0];
     let sumSmartSectorTotalParts:SumSmartSectorTotalParts[] =[]
     
+    
+    const items = smartSectorList.filter(item => item._smartSector.sumPurchasedGroup.indexOf(groupInidcator) !== -1);
+    items.forEach((v, index) =>
+        {
+            let smartSectorCodeFirstIndicator:string = '';
+            if(v._smartSector.sumSectorCode !== smartSectorCodeFirstIndicator)
+            {
+                let sumSmartSectorTotalPart = new SumSmartSectorTotalParts(v._smartSector.sumSectorCode,v._smartSector.sumtotalImpact);
+                sumSmartSectorTotalPart.addSmartSectors(v);
+                sumSmartSectorTotalParts.push(sumSmartSectorTotalPart);
+
+                smartSectorCodeFirstIndicator = v._smartSector.sumSectorCode;
+            }
+        })
 
     uniqueGroupIds.forEach(
         (g, index) => 
         {
-            if(groupInidcator === g)
-            {    
-                let smartSectorCodeIndicator:string = '';
-                smartSectorList.forEach((v, index) =>
-                {
-                
-                    if(v._smartSector.sumSectorCode !== smartSectorCodeIndicator && v._smartSector.sumPurchasedGroup === g)
-                    {
-                        let sumSmartSectorTotalPart = new SumSmartSectorTotalParts(v._smartSector.sumSectorCode,
-                            v._smartSector.sumtotalImpact);
-                            sumSmartSectorTotalPart.addSmartSectors(v);
-                        sumSmartSectorTotalParts.push(sumSmartSectorTotalPart);
-
-                            smartSectorCodeIndicator = v._smartSector.sumSectorCode;
-                    }
-                })
-            }
-            else if(groupInidcator !== g)
+            if(groupInidcator !== g)
             {
                 
                 sumSmartSectorTotalParts.forEach((s, index)=>
-                 {
-                    let smartSector:SmartSector | undefined |null = smartSectorList.find((v, index) =>
                     {
-                        if(v._smartSector.sumPurchasedGroup === g && v._smartSector.sumSectorCode === s._sectorCode)
+                        const items = smartSectorList.filter(item => item._smartSector.sumPurchasedGroup.indexOf(g) !== -1);
+
+                        let smartSector:SmartSector | undefined |null = items.find((v, index) =>
                         {
-                            return true
+                            if(v._smartSector.sumPurchasedGroup === g && v._smartSector.sumSectorCode === s._sectorCode)
+                            {
+                                return true
+                            }
+                            
+                        })
+
+                        if(smartSector !== undefined && smartSector !== null)
+                        {
+                            s._totalSectorCodeSummationImpact += smartSector._smartSector.sumtotalImpact;
+                            s.addSmartSectors(smartSector)
                         }
-                        
-                    })
+                        else
+                        {
+                            s.addSmartSectors(new SmartSector({
+                                sumSectorCode:s._sectorCode,
+                                sumSectorName:selectSectorName(s._sectorCode, sectorList),
+                                sumtotalImpact:0,
+                                sumPurchasedGroup:g
+                            }))
 
-                    if(smartSector !== undefined && smartSector !== null){
-                        s._totalSectorCodeSummationImpact += smartSector._smartSector.sumtotalImpact;
-                        s.addSmartSectors(smartSector)
+                        }
                     }
-                    else
-                    {
-                        s.addSmartSectors(new SmartSector({
-                            sumSectorCode:s._sectorCode,
-                            sumSectorName:selectSectorName(s._sectorCode, sectorList),
-                            sumtotalImpact:0,
-                            sumPurchasedGroup:g
-                        }))
-
-                    }
-
-                })
+                )
             }             
         }
     )

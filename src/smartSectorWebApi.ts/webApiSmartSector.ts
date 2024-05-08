@@ -1,4 +1,7 @@
 
+import db64 from 'db64'
+
+
 export interface WebApiConfig {
 
     /**
@@ -146,6 +149,12 @@ export class WebModelSmartSector {
   
 
   constructor(private api: WebApiSmartSector, private readonly modelId: string) {
+
+  }
+
+  async init()
+  {
+    await db64.create('Charts', ['SectorEEIO'])
   }
 
   id(): string {
@@ -165,7 +174,30 @@ export class WebModelSmartSector {
    */
    async sectorContributionToImpactGhgAPI(fileName:string): Promise<SectorContributionToImpact[]> 
    {
-     return await this.api.api(this.modelId,  "sector_contribution_to_impact/"+fileName)
+
+    const snes = db64.use('Charts', 'SectorEEIO');
+    // Entries need to be initialize
+    await snes.set('','');
+
+    if(snes != null || snes != undefined)
+    {
+    
+      const fieldValueData = await snes.get(fileName);
+        if(fieldValueData != undefined)
+        {
+          return JSON.parse(fieldValueData);
+        }
+        else
+        {
+          let data:SectorContributionToImpact[] = await this.api.api(this.modelId,  "sector_contribution_to_impact/"+fileName);
+          await snes.set(fileName,JSON.stringify(data));
+          return data;
+        }
+    }
+    else
+    {
+      return await this.api.api(this.modelId,  "sector_contribution_to_impact/"+fileName);
+    }
    }
   
 

@@ -55,6 +55,7 @@ export class SectorListSearch extends Widget {
     }
 
     async update() {
+        this.modelSmartSectorApi.init();
         this.smartSectorImpactPurchase.init('GWP-AR6-20');
         this.sectors = await this._chartConfig.model.sectors();
         ReactDOM.render(

@@ -2,7 +2,7 @@ import * as apex from "apexcharts";
 import { Widget } from "..";
 import { WebModel, Sector } from "useeio";
 import {modelOfSmartSector, WebModelSmartSector, SectorMapping, SectorContributionToImpact, ImpactOutput } from '../smartSectorWebApi.ts/webApiSmartSector';
-import {selectSectorName, smartSectorCalc, SumSmartSectorTotal , uniqueSortedMappingGroupNoDuplicatesList} from '../smartSectorCalc/smartSectorCalculations'
+import {selectSectorName, SumSmartSectorTotal , uniqueSortedMappingGroupNoDuplicatesList} from '../smartSectorCalc/smartSectorCalculations'
 import {SmartSector, SumSmartSectorTotalParts } from '../smartSectorChart/smartSector'
 import { calculate } from "./toggleGraphs";
 
@@ -31,6 +31,7 @@ export class SmartSectorEEIO extends Widget {
 
    async init(graphName:string)
    {
+    this.modelSmartSectorApi.init()
     const sectorMappingList:SectorMapping[] = await this.modelSmartSectorApi.sectorMapping();  
     this.uniqueSortedMappingGroupNoDuplicates = uniqueSortedMappingGroupNoDuplicatesList(sectorMappingList);
     let sectorContributionToImpact:SectorContributionToImpact[] = await this.modelSmartSectorApi.sectorContributionToImpactGhgAPI("final/"+graphName);
@@ -106,13 +107,40 @@ export class SmartSectorEEIO extends Widget {
             sumPurchasedGroup = modelSmartSector.findPurchasedGroup(t.purchased_commodity_code,sectorMappingList);
         }
         
+        
+        let addSector = new SmartSector({
+            sumSectorCode:sumSectorCode,
+            sumSectorName:sumSectorName,
+            sumtotalImpact:sumImpactTotal,
+            sumPurchasedGroup:sumPurchasedGroup
+          });
+  
+          if(smartSectorListGroup.length === 0)
+          {
+              smartSectorListGroup.push(addSector);
+          }
+          else
+          {
+            let smartSectorFound:SmartSector | undefined =  smartSectorListGroup.find( t => 
+            {
+                if(t._smartSector.sumSectorCode === addSector._smartSector.sumSectorCode &&
+                 t._smartSector.sumPurchasedGroup === addSector._smartSector.sumPurchasedGroup){
+                     return true;
+                     }
+            });
+      
+          if(smartSectorFound !== undefined)
+          {
+              smartSectorFound._smartSector.sumtotalImpact += addSector._smartSector.sumtotalImpact;
+          }
+          else
+          {
+              smartSectorListGroup.push(addSector); 
+          }   
+         }   
+          
 
-        smartSectorCalc(smartSectorListGroup,new SmartSector({
-          sumSectorCode:sumSectorCode,
-          sumSectorName:sumSectorName,
-          sumtotalImpact:sumImpactTotal,
-          sumPurchasedGroup:sumPurchasedGroup
-        }))
+        
       });
 
       let sumSmartSectorTotalParts: SumSmartSectorTotalParts[] = SumSmartSectorTotal(sectorsList,smartSectorListGroup,this.uniqueSortedMappingGroupNoDuplicates);
