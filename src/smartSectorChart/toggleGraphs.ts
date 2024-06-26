@@ -72,7 +72,7 @@ export async function calculate(sortTopTen:SumSmartSectorTotalParts[],model: Web
                 {
                   title:{
                     
-                    text: titleGraph.includes('Social') ? 'Total Impact (Million $)':'Total Impact (MMT CO2e)'
+                    text: 'Total Emissions (MMT CO2e)'
                   },
                   labels: {
                     formatter: function(val) {

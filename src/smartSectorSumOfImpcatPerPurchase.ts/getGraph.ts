@@ -30,7 +30,7 @@ export async function apexGraph(sortingImpactPerPurchaseWithTopList:SortedImpact
 
       return {
         series: [{
-        name: 'Impact per purchase',
+        name: 'GHG Emissions Intensity in metric tons CO2e per million dollars of output',
         data: data.map(t => t.impactPerPurchase)
       }],
         chart: {
@@ -60,7 +60,7 @@ export async function apexGraph(sortingImpactPerPurchaseWithTopList:SortedImpact
       },
       yaxis: {
         title: {
-          text: 'Impact per $'
+          text: 'GHG Intensity (Million Tons CO2e/Million $)'
         },labels: {
           formatter: function(val) {
             return (Math.round(val * 100) / 100).toFixed(2);

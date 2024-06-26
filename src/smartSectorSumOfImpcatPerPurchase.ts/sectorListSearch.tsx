@@ -71,7 +71,7 @@ const Component = (props: { widget: SectorListSearch }) => {
 
 
 
-    const [searchTerm, setSearchTerm] = React.useState<string | null>(null);
+    const [searchTerm, setSearchTerm] = React.useState<string>('');
     const [value, setValue] = React.useState<string>('');
     const [graph, setGraph] = React.useState<string>('');
 
@@ -87,7 +87,7 @@ const Component = (props: { widget: SectorListSearch }) => {
     }
 
     const handleState = (e:string) => {
-        setSearchTerm(null);
+        setSearchTerm('');
         setValue(e);
         props.widget.smartSectorImpactPurchase.updateGraph(e);
     };
@@ -110,10 +110,10 @@ const Component = (props: { widget: SectorListSearch }) => {
 
     const onSearch = (value: string) => {
         if (!value) {
-            setSearchTerm(null)
+            setSearchTerm('')
         }
         const term = value.trim().toLowerCase();
-        setSearchTerm(term.length === 0 ? null : term)
+        setSearchTerm(term.length === 0 ? '' : term)
     };
 
     const useStyles = makeStyles((theme) => ({
@@ -151,12 +151,12 @@ const classes = useStyles();
                         }
             </FormControl>
             <FormControl className={classes.margin} >
-                <InputLabel id="demo-controlled-open-select-label">Select Impact:</InputLabel>
+                <InputLabel id="demo-controlled-open-select-label">Select Metric (GWP or SCC):</InputLabel>
                 <Select
                 native
                 value={graph}
                 onChange={handleChange}
-                label="Select Impact:"
+                label="Select Metric (GWP or SCC)"
                 inputProps={{
                     name: 'graph',
                 }}
