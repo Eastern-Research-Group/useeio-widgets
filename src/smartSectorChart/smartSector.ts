@@ -57,6 +57,28 @@ export class SortingImpactPerPurchaseWithTop
 
 }
 
+export class SortingPercentContribution
+{
+    _sectorCode:string;
+    _sectorName:string;
+    _contributionList:ContributionListForSector[] = new Array<ContributionListForSector>()    
+    constructor(_sectorCode:string, _sectorName:string, contribution?:ContributionListForSector)
+    {
+        this._sectorCode = _sectorCode;
+        this._sectorName = _sectorName;
+        this._contributionList.push(contribution);
+    }
+
+    addContributionSectorList(contribution?:ContributionListForSector) {
+        this._contributionList.push(contribution);
+    }
+
+}
+
+export interface ContributionListForSector {
+   sectorPurchased:string;
+   contribution:number;
+}
 
 
 export interface ImpactPerPurchaseSector{

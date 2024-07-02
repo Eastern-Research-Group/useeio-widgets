@@ -28,8 +28,8 @@ import { CountCombo } from "./widgets/count-combo";
 import { MatrixSelector } from "./widgets/matrix-selector";
 import { IOGrid } from "./widgets/iogrid/iogrid";
 import { DotsMenu } from "./widgets/dotsMenu";
-import { SmartSectorEEIOImpactPurchasePerSector}from './smartSectorSumOfImpcatPerPurchase.ts/smart-sector-eeio-impact-per-purchase';
 import { SectorListSearch}from './smartSectorSumOfImpcatPerPurchase.ts/sectorListSearch';
+import { PieListSearch} from './totalGhgEmissionPieChart.ts/pieListSearch';
 import { SmartSectorChartConfigModels } from "./smartSectorSumOfImpcatPerPurchase.ts/sectorListSearch";
 
 export * from "./naics";
@@ -114,12 +114,12 @@ export function smartSectorChart(config: SmartSectorChartConfig): SmartSectorEEI
     return new SmartSectorEEIO(config);
 }
 
-export function smartSectorImpactPerPurchase(config: SmartSectorChartConfig): SmartSectorEEIOImpactPurchasePerSector {
-    return new SmartSectorEEIOImpactPurchasePerSector(config);
-}
-
 export function sectorListSearch(config: SmartSectorChartConfigModels): SectorListSearch {
     return new SectorListSearch(config);
+}
+
+export function pieListSearch(config: SmartSectorChartConfigModels): PieListSearch {
+    return new PieListSearch(config);
 }
 
 export function paginator(args: WidgetArgs): Paginator {

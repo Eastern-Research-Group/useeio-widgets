@@ -199,6 +199,37 @@ export class WebModelSmartSector {
       return await this.api.api(this.modelId,  "sector_contribution_to_impact/"+fileName);
     }
    }
+
+   /**
+   * Returns the SMART_SECTORv1.0/percent_contribution_to_impact_by_sector of the smart sector EEIO model.
+   */
+      async percentContribution(fileName:string): Promise<PercentContribution[]> 
+      {
+   
+       const snes = db64.use('percentContribution', 'SectorEEIOPercentContribution');
+       // Entries need to be initialize
+       await snes.set('','');
+   
+       if(snes != null || snes != undefined)
+       {
+       
+         const fieldValueData = await snes.get(fileName);
+           if(fieldValueData != undefined)
+           {
+             return JSON.parse(fieldValueData);
+           }
+           else
+           {
+             let data:PercentContribution[] = await this.api.api(this.modelId,  "percent_contribution_to_impact_by_sector/"+fileName);
+             await snes.set(fileName,JSON.stringify(data));
+             return data;
+           }
+       }
+       else
+       {
+         return await this.api.api(this.modelId,  "percent_contribution_to_impact_by_sector/"+fileName);
+       }
+      }
   
 
   /**
@@ -263,6 +294,13 @@ export interface SectorContributionToImpact {
 
 }
 
+export interface PercentContribution {
+
+  sector?: string;
+  sector_purchased?: string;
+  contribution?: number;
+
+}
 
 export interface SectorMapping {
 

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>GHG Emissions Intensity in metric tons CO2e per million dollars of output</title>
+    <link rel="stylesheet" type="text/css" href="widgets.css">
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        .flex-container {
+          display: flex;
+          font-size: 30px;
+          text-align: center;
+        }
+        
+        .flex-item {
+          padding: 10px;
+          flex: 50%;
+        }
+        
+        .pie-list {
+          padding: 10px;
+          flex: 50%;
+        }
+        
+        @media (max-width: 1000px) {
+          .pie-list, .flex-item {
+            flex: 100%;
+            display: flex;
+          }
+          .flex-container {
+          display: flex;
+          flex-wrap: wrap;
+          font-size: 30px;
+          text-align: center;
+        }
+        
+        }
+        </style>
+</head>
+
+<body>
+    <h1 id="graphTitle" class="text-center">Pie Chart - Total GHG emissions for sector</h1>
+
+           
+            <div class="flex-container">
+                <div  class="pie-list"></div>
+
+                <div class="flex-item">
+                    <div id="profile-chart">
+                    </div>
+                </div>
+            </div>
+
+
+
+    <script src="lib/apexcharts.min.js"></script>
+    <script src="lib/useeio_widgets.js"></script>
+    <script>
+
+        var config = useeio.urlConfig();
+        var modelID = config.get().model || 'SMART_SECTORv1.0';
+
+        var model = useeio.model({
+            endpoint: './api',
+            model: modelID,
+            asJsonFiles: true,
+        });
+
+        var pieListSearch = useeio.pieListSearch({modelOne:{
+            model: model,
+            endpoint: './api',
+            selector: '.pie-list',
+        },modelTwo:{
+            model: model,
+            endpoint: './api',
+            selector: '#profile-chart',
+        }});
+        pieListSearch.update();
+    </script>
+</body>
+
+</html>
