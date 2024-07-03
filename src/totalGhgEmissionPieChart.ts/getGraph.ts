@@ -13,6 +13,7 @@ export async function apexGraph(contributionList:SortingPercentContribution[],se
         
         let sectorPurchasedList:string[] = [];
         let contrubutionList:number[] = [];
+        let contrubutionColorList:string[] = [];
 
         if(values === undefined)
           {
@@ -49,15 +50,25 @@ export async function apexGraph(contributionList:SortingPercentContribution[],se
           }
         else
         {
+          let sectorGraphTitle = values._sectorCode + ' - ' +sector_name;
+
           values._contributionList.map(t => {
             sectorPurchasedList.push(t.sectorPurchased)
             contrubutionList.push(t.contribution)
+
+            if(t.sectorPurchased.match(sectorGraphTitle)){
+              contrubutionColorList.push('#0074d3')
+            }
+            else
+            {
+              contrubutionColorList.push('#D30000')
+            }
           });
   
-          let sectorGraphTitle = values._sectorCode + ' - ' +sector_name;
 
           return {
             series: contrubutionList,
+            colors:contrubutionColorList,
             chart: {
             width: 800,
             type: 'pie',
