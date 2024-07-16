@@ -17,6 +17,7 @@ export class SmartSectorEEIO extends Widget {
     chart:ApexCharts;
     modelSmartSectorApi:WebModelSmartSector;
     uniqueSortedMappingGroupNoDuplicates:string[];
+    toggleNumSelection:number;
 
     constructor(private _chartConfig: SmartSectorChartConfig) {
         super();
@@ -31,12 +32,13 @@ export class SmartSectorEEIO extends Widget {
 
    async init(graphName:string)
    {
+    this.toggleNumSelection = 10;
     this.modelSmartSectorApi.init()
     const sectorMappingList:SectorMapping[] = await this.modelSmartSectorApi.sectorMapping();  
     this.uniqueSortedMappingGroupNoDuplicates = uniqueSortedMappingGroupNoDuplicatesList(sectorMappingList);
     let sectorContributionToImpact:SectorContributionToImpact[] = await this.modelSmartSectorApi.sectorContributionToImpactGhgAPI("final/"+graphName);
     let nameWithNoSpace = graphName.replace(/\-/g," ");
-    let options = await this.getGraphs(sectorContributionToImpact, this.modelSmartSectorApi, nameWithNoSpace);
+    let options = await this.getGraphs(sectorContributionToImpact, this.modelSmartSectorApi, nameWithNoSpace, this.toggleNumSelection);
     let option = await calculate(options,this._chartConfig.model,this.uniqueSortedMappingGroupNoDuplicates, nameWithNoSpace);
     this.chart = new ApexCharts(
         document.querySelector(this._chartConfig.selector),
@@ -46,8 +48,12 @@ export class SmartSectorEEIO extends Widget {
     this.chart.render();
    }
 
-   async selectiveGraph(graphName:string,perspective:string)
+   async selectiveGraph(graphName:string,perspective:string, selectNumSectors?:number)
    {
+
+    let selectNumOfSectors = selectNumSectors ? selectNumSectors : this.toggleNumSelection; 
+    this.toggleNumSelection = selectNumOfSectors;
+    
     let sectorContributionToImpact:SectorContributionToImpact[] = []
     
     if(perspective === 'final')
@@ -60,18 +66,18 @@ export class SmartSectorEEIO extends Widget {
 
     }
     let nameWithNoSpace = graphName.replace(/\-/g," ");
-    let options = await this.getGraphs(sectorContributionToImpact, this.modelSmartSectorApi, nameWithNoSpace);
+    let options = await this.getGraphs(sectorContributionToImpact, this.modelSmartSectorApi, nameWithNoSpace,this.toggleNumSelection);
     let option = await calculate(options,this._chartConfig.model,this.uniqueSortedMappingGroupNoDuplicates, nameWithNoSpace);
     
     this.chart.updateOptions(option);
     this.chart.resetSeries();
    }
     
-    async getGraphs(sectorContributionToImpact:SectorContributionToImpact[], modelSmartSector:WebModelSmartSector,scc:string) : Promise<SumSmartSectorTotalParts[]>
+    async getGraphs(sectorContributionToImpact:SectorContributionToImpact[], modelSmartSector:WebModelSmartSector,scc:string,selectNumSectors?:number) : Promise<SumSmartSectorTotalParts[]>
     {
         let sortSumSmartSectorTotalParts:SumSmartSectorTotalParts[] = await this.calculateValues(sectorContributionToImpact,modelSmartSector,scc)
 
-        let sortTopTen:SumSmartSectorTotalParts[] = sortSumSmartSectorTotalParts.slice(0,10);
+        let sortTopTen:SumSmartSectorTotalParts[] = sortSumSmartSectorTotalParts.slice(0,selectNumSectors);
 
 
         return sortTopTen
