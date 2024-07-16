@@ -2,6 +2,7 @@ import * as ReactDOM from "react-dom";
 import { Sector, WebModel } from "useeio";
 import { TextField } from "@material-ui/core";
 import { PiePercentContribution}from './piePercentContribution'
+import { PiePercentContributionDirectAndIndirect } from "./piePercentContributionDirectAndIndirect";
 import * as strings from "../util/strings";
 import { Widget } from "../widget";
 import {modelOfSmartSector, WebModelSmartSector } from '../smartSectorWebApi.ts/webApiSmartSector';
@@ -29,8 +30,8 @@ export interface SmartSectorChartConfigNormal {
     selector: '.sector-list',
 }
 
-export function piePercentContributionList(config: SmartSectorChartConfigNormal): PiePercentContribution {
-    return new PiePercentContribution(config);
+export function piePercentContributionList(config: SmartSectorChartConfigNormal): PiePercentContributionDirectAndIndirect {
+    return new PiePercentContributionDirectAndIndirect(config);
 }
 
 export class PieListSearch extends Widget {
@@ -40,7 +41,7 @@ export class PieListSearch extends Widget {
      */
     sectors: Sector[];
     modelSmartSectorApi:WebModelSmartSector;
-    piePercentContribution:PiePercentContribution;
+    piePercentContribution:PiePercentContributionDirectAndIndirect;
     _chartConfig: SmartSectorChartConfigNormal;
 
     constructor(_chartConfig: SmartSectorChartConfig) {

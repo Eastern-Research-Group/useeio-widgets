@@ -75,11 +75,33 @@ export class SortingPercentContribution
 
 }
 
+export class SortingPercentContributionIndirectAndDirect
+{
+    _sectorCode:string;
+    _sectorName:string;
+    _contributionList:ContributionListForSectorDirectOrIndirect[] = new Array<ContributionListForSectorDirectOrIndirect>()    
+    constructor(_sectorCode:string, _sectorName:string, contribution?:ContributionListForSectorDirectOrIndirect)
+    {
+        this._sectorCode = _sectorCode;
+        this._sectorName = _sectorName;
+        this._contributionList.push(contribution);
+    }
+
+    addContributionSectorList(contribution?:ContributionListForSectorDirectOrIndirect) {
+        this._contributionList.push(contribution);
+    }
+
+}
+
 export interface ContributionListForSector {
    sectorPurchased:string;
    contribution:number;
 }
 
+export interface ContributionListForSectorDirectOrIndirect {
+    directOrIndirect:string;
+    contribution:number;
+ }
 
 export interface ImpactPerPurchaseSector{
     sectorCode:string;

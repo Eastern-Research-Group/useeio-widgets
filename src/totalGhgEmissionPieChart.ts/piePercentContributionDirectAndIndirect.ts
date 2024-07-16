@@ -2,8 +2,8 @@ import {  Widget } from "..";
 import { WebModel, Sector } from "useeio";
 import { modelOfSmartSector, WebModelSmartSector, SectorMapping, PercentContribution } from '../smartSectorWebApi.ts/webApiSmartSector';
 import {selectSectorName, uniqueSortedMappingGroupNoDuplicatesList } from '../smartSectorCalc/smartSectorCalculations'
-import { SortingPercentContribution} from '../smartSectorChart/smartSector'
-import { apexGraph } from "../totalGhgEmissionPieChart.ts/getGraph";
+import { SortingPercentContribution, SortingPercentContributionIndirectAndDirect, ContributionListForSectorDirectOrIndirect} from '../smartSectorChart/smartSector'
+import { apexGraph } from "./getGraphDirectorIndirect";
 
 export interface SmartSectorChartConfig {
     model: WebModel;
@@ -12,13 +12,13 @@ export interface SmartSectorChartConfig {
 }
 
 
-export class PiePercentContribution extends Widget 
+export class PiePercentContributionDirectAndIndirect extends Widget 
 {
     chart:ApexCharts;
     modelSmartSectorApi:WebModelSmartSector;
     uniqueSortedMappingGroupNoDuplicates:string[];
     percentContributionList:PercentContribution[];
-    contributionList:SortingPercentContribution[];
+    contributionList:SortingPercentContributionIndirectAndDirect[];
     sectorsList:Sector[];
     sectorsListlowerCase:String[];
     graphName:string = '';
@@ -82,68 +82,118 @@ export class PiePercentContribution extends Widget
     return this.graphName
    }
 
-   async contributionListPerSector(sectorContribution:PercentContribution[]):Promise<SortingPercentContribution[]>
+   async contributionListPerSector(sectorContribution:PercentContribution[]):Promise<SortingPercentContributionIndirectAndDirect[]>
   {
     const sectorsList:Sector[] = await this._chartConfig.model.sectors();
-    let sortedPercentList:SortingPercentContribution[] = []
+    let sortedPercentList:SortingPercentContributionIndirectAndDirect[] = []
   
 
     sectorContribution.forEach((t) => 
     {
+
       if(sortedPercentList.length === 0)
       {
 
-        let sortingContribution =  new SortingPercentContribution(
+
+        let directOrIndirect = 'Indirect'
+        if(t.sector_purchased?.toString().includes(t.sector.toString()) && t.sector_purchased !== null)
+        {         
+          directOrIndirect = 'Direct'
+        }
+
+        let sortingContribution =  new SortingPercentContributionIndirectAndDirect(
           t.sector,
           selectSectorName(t.sector,sectorsList),
           {
-            sectorPurchased:t.sector_purchased,
+            directOrIndirect: directOrIndirect,
             contribution:t.contribution
           }
         );
 
-
         sortedPercentList.push(sortingContribution);
+
+        
       }
       else
       {
-        let contributionPercentageFound:SortingPercentContribution | undefined =  sortedPercentList.find( i => 
+        let contributionPercentageFound:SortingPercentContributionIndirectAndDirect | undefined =  sortedPercentList.find( i => 
          {
             if(t.sector === i._sectorCode)
             {
                 return true;
             }
          });
-  
-        if(contributionPercentageFound !== undefined)
-        { 
-          if(t.sector_purchased === undefined || t.sector_purchased === null)
+
+         if(contributionPercentageFound !== undefined)
+          { 
+            let indirect:ContributionListForSectorDirectOrIndirect = contributionPercentageFound._contributionList.find( j =>
+                {
+                  if(j.directOrIndirect === "Indirect")
+                   {
+                      return true
+                   }
+                  
+                }
+            )
+
+            let direct:ContributionListForSectorDirectOrIndirect = contributionPercentageFound._contributionList.find( j =>
+              {
+                if(j.directOrIndirect === "Direct")
+                 {
+                    return true
+                 }
+                
+              }
+          )
+
+           
+            if(indirect !== undefined && (!(t.sector_purchased?.toString().includes(t.sector.toString())) || t.sector_purchased == null))
             {
+              
+              indirect.contribution += t.contribution;
+
+            }
+            else if(direct === undefined && t.sector_purchased.includes(t.sector))
+            {
+             
               contributionPercentageFound.addContributionSectorList({
-                sectorPurchased:"All Others",
+                directOrIndirect:"Direct",
                 contribution:t.contribution
               })
+
             }
             else
             {
+             
               contributionPercentageFound.addContributionSectorList({
-                sectorPurchased:t.sector_purchased,
+                directOrIndirect:"Indirect",
                 contribution:t.contribution
-              });
+              })
+
             }
-        }
+          }
         else
         {
-          let sortingContribution =  new SortingPercentContribution(
-            t.sector,
-            selectSectorName(t.sector,sectorsList),
-            {
-              sectorPurchased:t.sector_purchased,
-              contribution:t.contribution
+
+         
+              let sign = 'Indirect'
+            if(t.sector_purchased?.toString().includes(t.sector.toString()) && t.sector_purchased !== null)
+            {         
+              sign = 'Direct'
             }
-          );
-  
-          sortedPercentList.push(sortingContribution);
+
+            let sortingContribution =  new SortingPercentContributionIndirectAndDirect(
+              t.sector,
+              selectSectorName(t.sector,sectorsList),
+              {
+                directOrIndirect: sign,
+                contribution:t.contribution
+              }
+            );
+
+            sortedPercentList.push(sortingContribution);
+           
+
         }
         
       }
