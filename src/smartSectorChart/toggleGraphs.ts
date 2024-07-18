@@ -20,18 +20,14 @@ export async function calculate(sortTopTen:SumSmartSectorTotalParts[],model: Web
                 return true
               }
             })
-           return  [sectorName.id].concat(sectorName.name.split(' '))
+           return  [sectorName.id].concat(sectorName.name)
          });
 
+         console.log(sortedSectorCodesWithNamesWithArray)
+
          let colors = ['#8D5B4C','#2E93fA', '#4CAF50', '#546E7A', '#E91E63', '#FF9800','#9b19f5','#2e2b28','#ab3da9','#A5978B']
-         if(sortedSectorCodesWithNamesWithArray.length > 10)
-         {
-          colors = ['#98FB98','#B0E0E6', '#008000', '#800000', '#FF8C00',
-             '#D2691E','#8A2BE2','#5F9EA0','#E6E6FA','#FAFAD2',
-             '#9932CC','#FF00FF','#D8BFD8','#FAF0E6','#2F4F4F',
-             '#FFDEAD','#006400','#9400D3','#BDB76B','#808000',
-             '#2E8B57','#7CFC00','#00008B','#C71585','#00BFFF']
-         }
+         
+
 
         return {
             series: sortedSeries,
@@ -68,11 +64,16 @@ export async function calculate(sortTopTen:SumSmartSectorTotalParts[],model: Web
                 enabled: false
               },
               xaxis: {
-                title:{
-                  text:'Sector'
-                },
-                
+                type: 'category',
                 categories: sortedSectorCodesWithNamesWithArray,
+                labels: {
+                  show: true,
+                  rotate: -45,
+                  rotateAlways: true,
+                  hideOverlappingLabels: false,
+                  trim: true,
+                  minHeight: -100
+                }
               },
               yaxis: [
                 {
@@ -80,6 +81,8 @@ export async function calculate(sortTopTen:SumSmartSectorTotalParts[],model: Web
                     
                     text: 'Total Emissions (MMT CO2e)'
                   },
+                  min: 0,
+                  max: undefined,
                   labels: {
                     formatter: function(val) {
                       return val.toLocaleString();
@@ -88,8 +91,7 @@ export async function calculate(sortTopTen:SumSmartSectorTotalParts[],model: Web
                 }
               ],
               legend: {
-                position: 'right',
-                offsetY: 40
+                position: 'bottom',
               },
               tooltip: {
                 enabled: true,

@@ -10,38 +10,41 @@
 
 <body>
     <h1 id="graphTitle" class="text-center">Top 10 Sectors based on Total Embodied GHG Emissions</h1>
-
-    <div class="io" id="activeGraph" name="20" style="display: block;">
-        <div style="width: 100%; margin: auto;">
-            <div id="smart-sector-eeio">
-            </div>
+    <div style=" display: flex; flex-direction: column;height: 85vh;">
+        <div style=" flex-grow: 1;">
+                    <div id="smart-sector-eeio">
+                    </div>
         </div>
+        <div style=" flex-grow: 1;">
+            <div style=" display: flex; flex-direction: row;">
+                <div style=" margin-left: 20px;">
+                    <label for="grap-selected">Select Metric (GWP or SCC):</label>
+                    <br>
+                    <select id="my-select" onchange="changeGraph(this.value)">
+                        <option value="GWP-AR6-20" >20yr GWP </option>
+                        <option value="GWP-AR6-100" selected>100yr GWP</option>
+                        <option value="Social-Cost-of-Carbon">Social Cost of Carbon</option>
+                    </select>
+                </div>
+                <div style=" margin-left: 20px;">
+                    <label for="grap-selected">Allocation of Indirect Emissions:</label>
+                    <br>
+                    <input type="radio" name="myRadios" value="final" checked/> Final
+                    <input type="radio" name="myRadios" value="direct" /> Direct
+                </div>
+                <div style=" margin-left: 20px;">
+                    <label for="grap-selected">Top Sectors </label>
+                    <br>
+                    <select id="my-select" onchange="toggleNumSelection(this.value)">
+                        <option value=25 >25</option>
+                        <option value=10 selected>10</option>
+                    </select>
+                </div>
+        </div>
+        </div>
+        
     </div>
-    <div style=" display: flex; flex-direction: row;">
-            <div style=" margin-left: 20px;">
-                <label for="grap-selected">Select Metric (GWP or SCC):</label>
-                <br>
-                <select id="my-select" onchange="changeGraph(this.value)">
-                    <option value="GWP-AR6-20" >20yr GWP </option>
-                    <option value="GWP-AR6-100" selected>100yr GWP</option>
-                    <option value="Social-Cost-of-Carbon">Social Cost of Carbon</option>
-                </select>
-            </div>
-            <div style=" margin-left: 20px;">
-                <label for="grap-selected">Allocation of Indirect Emissions:</label>
-                <br>
-                <input type="radio" name="myRadios" value="final" checked/> Final
-                <input type="radio" name="myRadios" value="direct" /> Direct
-            </div>
-            <div style=" margin-left: 20px;">
-                <label for="grap-selected">Top Sectors </label>
-                <br>
-                <select id="my-select" onchange="toggleNumSelection(this.value)">
-                    <option value=25 >25</option>
-                    <option value=10 selected>10</option>
-                </select>
-            </div>
-    </div>
+    
    
 
     <script src="lib/apexcharts.min.js"></script>
