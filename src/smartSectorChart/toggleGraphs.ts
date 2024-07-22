@@ -4,12 +4,13 @@ import {SumSmartSectorTotalParts} from '../smartSectorChart/smartSector';
 import { WebModel, Sector } from "useeio";
 
 
-export async function calculate(sortTopTen:SumSmartSectorTotalParts[],model: WebModel,uniqueSortedMapping:string[],titleGraph?:string): Promise<apex.ApexOptions> 
+export async function calculate(sortTopTen:SumSmartSectorTotalParts[],model: WebModel,uniqueSortedMapping:string[],titleGraph?:string, impactSelector?:string): Promise<apex.ApexOptions> 
     {       
 
         let sectorsList:Sector[] = await model.sectors();
         let sortedSectorCodes: string[] = sortedSectorCodeList(sortTopTen);
-        let sortedSeries:{name:string,data:number[]}[] = sortedSeriesList(sortTopTen,uniqueSortedMapping);
+        console.log(sortTopTen)
+        let sortedSeries:{name:string,data:number[]}[] = sortedSeriesList(sortTopTen,uniqueSortedMapping,impactSelector);
         
         let sortedSectorCodesWithNamesWithArray: string[][] = sortedSectorCodes.map( t =>
          {
@@ -23,7 +24,6 @@ export async function calculate(sortTopTen:SumSmartSectorTotalParts[],model: Web
            return  [sectorName.id].concat(sectorName.name)
          });
 
-         console.log(sortedSectorCodesWithNamesWithArray)
 
          let colors = ['#8D5B4C','#2E93fA', '#4CAF50', '#546E7A', '#E91E63', '#FF9800','#9b19f5','#2e2b28','#ab3da9','#A5978B']
          

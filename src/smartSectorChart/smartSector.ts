@@ -33,7 +33,8 @@ export class SumSmartSectorTotalParts
 export interface ChartSmartSector{
     sumSectorCode:string;
     sumSectorName:string;
-    sumtotalImpact:number;
+    sumtotalImpact?:number;
+    sumImpactPerDollar?:number;
     sumPurchasedGroup:string;
 }
 

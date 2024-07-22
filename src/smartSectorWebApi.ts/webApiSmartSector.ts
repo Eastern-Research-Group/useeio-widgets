@@ -276,8 +276,20 @@ export class WebModelSmartSector {
           return true;
         }
       });
-      return sectorMapping.group;
-    }
+        return sectorMapping.group_detail;
+        }
+
+         /**
+   * Get the output of the specific impactOutput
+   */
+    findGroup(id: string, SectorMappingList:SectorMapping[]): SectorMapping {
+      const sectorMapping:SectorMapping = SectorMappingList.find(d => {
+        if (id === d.id) {
+          return true;
+        }
+      });
+        return sectorMapping;
+        }
   
 }
 
@@ -291,6 +303,7 @@ export interface SectorContributionToImpact {
   impact_per_purchase?: number;
   commodity_output?: number;
   total_impact?: number;
+  impact_per_dollar?:number;
 
 }
 
@@ -306,8 +319,9 @@ export interface SectorMapping {
 
   id: string;
    
-  group: string;
+  group_detail: string;
 
+  group_summary:string;
 
 }
 

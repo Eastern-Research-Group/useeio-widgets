@@ -17,8 +17,8 @@
         </div>
         <div style=" flex-grow: 1;">
             <div style=" display: flex; flex-direction: row;">
-                <div style=" margin-left: 20px;">
-                    <label for="grap-selected">Select Metric (GWP or SCC):</label>
+                <div style=" margin-left: 20px;flex-grow: 1;">
+                    <label for="metric-selected">Select Metric (GWP or SCC):</label>
                     <br>
                     <select id="my-select" onchange="changeGraph(this.value)">
                         <option value="GWP-AR6-20" >20yr GWP </option>
@@ -26,19 +26,32 @@
                         <option value="Social-Cost-of-Carbon">Social Cost of Carbon</option>
                     </select>
                 </div>
-                <div style=" margin-left: 20px;">
-                    <label for="grap-selected">Allocation of Indirect Emissions:</label>
+                <div style=" margin-left: 20px;flex-grow: 1;">
+                    <label for="allocation-selected">Allocation of Indirect Emissions:</label>
                     <br>
                     <input type="radio" name="myRadios" value="final" checked/> Final
                     <input type="radio" name="myRadios" value="direct" /> Direct
                 </div>
-                <div style=" margin-left: 20px;">
-                    <label for="grap-selected">Top Sectors </label>
+                <div style=" margin-left: 20px;flex-grow: 1;">
+                    <label for="grap-selected">Top Sectors: </label>
                     <br>
                     <select id="my-select" onchange="toggleNumSelection(this.value)">
                         <option value=25 >25</option>
                         <option value=10 selected>10</option>
                     </select>
+                </div>
+
+                <div style=" margin-left: 20px;flex-grow: 1;">
+                    <label for="impact-selected">Select Total Impact and Impact Per Dollar :</label>
+                    <br>
+                    <input type="radio" name="impactRadio" value="total_impact" checked/> Total
+                    <input type="radio" name="impactRadio" value="impact_per_dollar" /> Per $ 
+                </div>
+                <div style=" margin-left: 20px;flex-grow: 1;">
+                    <label for="group-selected">Select Detail and Simple:</label>
+                    <br>
+                    <input type="radio" name="groupRadio" value="group_detail" checked/> Detail
+                    <input type="radio" name="groupRadio" value="group_summary" /> Simple
                 </div>
         </div>
         </div>
@@ -52,6 +65,9 @@
     <script>
         var perspectiveName = 'final';
         var graphType = 'GWP-AR6-100';
+        var topSectors = 10;
+        var groupSelector = 'group_detail';
+        var impactSelector = 'total_impact';
         var config = useeio.urlConfig();
         var modelID = config.get().model || 'SMART_SECTORv1.0';
 
@@ -73,11 +89,23 @@
                 smartSectorChart.selectiveGraph(t,perspectiveName);
                 graphType = t;
             }
+    
+    function changeGroup()
+            {
+                smartSectorChart.selectiveGraph(graphType,perspectiveName,topSectors,impactSelector,groupSelector);
+            }
+
+    function changeImpactSelector()
+            {
+                smartSectorChart.selectiveGraph(graphType,perspectiveName,topSectors,impactSelector,groupSelector);
+            }
 
     function toggleNumSelection(n)
             {
                 smartSectorChart.selectiveGraph(graphType,perspectiveName,n);
-                
+                topSectors = n;
+
+                document.getElementById("graphTitle").innerHTML = `Top ${n} Sectors based on Total Embodied GHG Emissions`; 
             }
 
             document.addEventListener('input',(e)=>{
@@ -86,6 +114,23 @@
                     perspectiveName = e.target.value
                     changeGraph(graphType);
 
+                }
+            })
+
+            document.addEventListener('input',(e)=>{
+                if(e.target.getAttribute('name')=="impactRadio")
+                {
+                    impactSelector = e.target.value
+                    changeImpactSelector();
+
+                }
+            })
+
+            document.addEventListener('input',(e)=>{
+                if(e.target.getAttribute('name')=="groupRadio")
+                {
+                    groupSelector = e.target.value
+                    changeGroup();
                 }
             })
 </script>
