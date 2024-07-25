@@ -96,7 +96,7 @@ export class PiePercentContributionDirectAndIndirect extends Widget
 
 
         let directOrIndirect = 'Indirect'
-        if(t.sector_purchased?.toString().includes(t.sector.toString()) && t.sector_purchased !== null)
+        if(t.sector_purchased_detail == 'Direct')
         {         
           directOrIndirect = 'Direct'
         }
@@ -147,13 +147,13 @@ export class PiePercentContributionDirectAndIndirect extends Widget
           )
 
            
-            if(indirect !== undefined && (!(t.sector_purchased?.toString().includes(t.sector.toString())) || t.sector_purchased == null))
+            if(indirect !== undefined && (!(t.sector_purchased_detail == 'Direct')))
             {
               
               indirect.contribution += t.contribution;
 
             }
-            else if(direct === undefined && t.sector_purchased.includes(t.sector))
+            else if(direct === undefined && t.sector_purchased_detail == 'Direct')
             {
              
               contributionPercentageFound.addContributionSectorList({
@@ -177,7 +177,7 @@ export class PiePercentContributionDirectAndIndirect extends Widget
 
          
               let sign = 'Indirect'
-            if(t.sector_purchased?.toString().includes(t.sector.toString()) && t.sector_purchased !== null)
+            if(t.sector_purchased_detail == 'Direct')
             {         
               sign = 'Direct'
             }

@@ -308,7 +308,7 @@ export class WebModelSmartSector {
           return true;
         }
       });
-        return sectorMapping.group_detail;
+        return sectorMapping?.group_detail;
         }
 
          /**
@@ -343,6 +343,7 @@ export interface PercentContribution {
 
   sector?: string;
   sector_purchased?: string;
+  sector_purchased_detail?:string;
   contribution?: number;
 
 }

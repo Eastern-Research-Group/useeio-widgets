@@ -98,7 +98,7 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget
       let purchasedGroup = modelSmartSector.findPurchasedGroup(t.purchased_commodity_code,sectorMappingList);
       let sectorName = selectSectorName(t.sector_code,sectorsList);
       let purchaseCommodity
-      if(purchasedGroup == "All Others")
+      if(purchasedGroup == "All Others" || purchasedGroup == undefined)
       {
         purchaseCommodity = "All Others"
       }
