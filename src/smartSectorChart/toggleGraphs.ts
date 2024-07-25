@@ -10,8 +10,14 @@ export async function calculate(sortTopTen:SumSmartSectorTotalParts[],model: Web
         let sectorsList:Sector[] = await model.sectors();
         let sortedSectorCodes: string[] = sortedSectorCodeList(sortTopTen);
         let sortedSeries:{name:string,data:number[]}[] = sortedSeriesList(sortTopTen,uniqueSortedMapping,impactSelector);
-        
-        let sortedSectorCodesWithNamesWithArray: string[][] = sortedSectorCodes.map( t =>
+        let yaxisTitle = 'Total Emissions (MMT CO2e)';
+
+        if (impactSelector == 'impact_per_purchase')
+          {
+             yaxisTitle = 'Total Emissions (kg / $)'
+          }
+          
+                  let sortedSectorCodesWithNamesWithArray: string[][] = sortedSectorCodes.map( t =>
          {
           let sectorName:Sector = sectorsList.find( s => 
             {
@@ -79,7 +85,7 @@ export async function calculate(sortTopTen:SumSmartSectorTotalParts[],model: Web
                 {
                   title:{
                     
-                    text: 'Total Emissions (MMT CO2e)'
+                    text: yaxisTitle
                   },
                   min: 0,
                   max: undefined,
