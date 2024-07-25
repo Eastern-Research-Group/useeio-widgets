@@ -4,7 +4,6 @@ import {SortedImpactPerPurchaseTopList} from '../smartSectorChart/smartSector';
 
 export async function apexGraph(sortingImpactPerPurchaseWithTopList:SortedImpactPerPurchaseTopList[],sectorName:string,graphTitleName?:string): Promise<apex.ApexOptions> 
     {     
-        console.log(sortingImpactPerPurchaseWithTopList)
         let data:{
             purchae_commodity: string;
             impactPerPurchase: number;
@@ -15,7 +14,6 @@ export async function apexGraph(sortingImpactPerPurchaseWithTopList:SortedImpact
             }
         })
         
-        console.log(values)
         data = values.topFifteenImpactPerPurchase.map(t => {
             return {
             purchae_commodity:t.purchaseCommodity,
