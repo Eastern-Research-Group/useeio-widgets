@@ -201,6 +201,38 @@ export class WebModelSmartSector {
    }
 
    /**
+   * Returns the sector_contribution_to_impact_ranked of the smart sector EEIO model.
+   */
+   async sectorContributionToImpactRankedGhgAPI(fileName:string): Promise<SectorContributionToImpact[]> 
+   {
+
+    const snes = db64.use('Ranked', 'Impact');
+    // Entries need to be initialize
+    await snes.set('','');
+
+    if(snes != null || snes != undefined)
+    {
+    
+      const fieldValueData = await snes.get(fileName);
+        if(fieldValueData != undefined)
+        {
+          return JSON.parse(fieldValueData);
+        }
+        else
+        {
+          let data:SectorContributionToImpact[] = await this.api.api(this.modelId,  "sector_contribution_to_impact_ranked/"+fileName);
+          await snes.set(fileName,JSON.stringify(data));
+          return data;
+        }
+    }
+    else
+    {
+      return await this.api.api(this.modelId,  "sector_contribution_to_impact_ranked/"+fileName);
+    }
+   }
+
+
+   /**
    * Returns the SMART_SECTORv1.0/percent_contribution_to_impact_by_sector of the smart sector EEIO model.
    */
       async percentContribution(fileName:string): Promise<PercentContribution[]> 

@@ -56,7 +56,7 @@ export class SectorListSearch extends Widget {
 
     async update() {
         this.modelSmartSectorApi.init();
-        this.smartSectorImpactPurchase.init('GWP-AR6-20');
+        this.smartSectorImpactPurchase.init('GWP-AR6-100');
         this.sectors = await this._chartConfig.model.sectors();
         ReactDOM.render(
             <Component widget={this} />,
@@ -161,8 +161,8 @@ const classes = useStyles();
                     name: 'graph',
                 }}
                 >
-                <option value="GWP-AR6-20">20yr GWP</option>
                 <option value="GWP-AR6-100">100yr GWP</option>
+                <option value="GWP-AR6-20">20yr GWP</option>
                 <option value="Social-Cost-of-Carbon">Social Cost of Carbon</option>
                 </Select>
             </FormControl>

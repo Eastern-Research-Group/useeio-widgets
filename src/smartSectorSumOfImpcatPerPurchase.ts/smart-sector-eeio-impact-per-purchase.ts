@@ -43,7 +43,7 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget
     const sectorMappingList:SectorMapping[] = await this.modelSmartSectorApi.sectorMapping();  
     this.uniqueSortedMappingGroupNoDuplicates = uniqueSortedMappingGroupNoDuplicatesList(sectorMappingList);
     let titleNameWithNoSpace = graphName.replace(/\-/g," ");
-    this.sectorContributionToImpact = await this.modelSmartSectorApi.sectorContributionToImpactGhgAPI("final/"+graphName);
+    this.sectorContributionToImpact = await this.modelSmartSectorApi.sectorContributionToImpactRankedGhgAPI("final/"+graphName);
     this.getTopValuesFromSectors = await this.getTopFifteenImpactPerPurchaseWithGroup(this.sectorContributionToImpact,this.modelSmartSectorApi);
 
     let options = await apexGraph(this.getTopValuesFromSectors,sector_name, titleNameWithNoSpace);
@@ -65,7 +65,7 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget
     let titleNameWithNoSpace = graphName.replace(/\-/g," ");
     this.sectorContributionToImpact = [];
     this.getTopValuesFromSectors = [];
-    this.sectorContributionToImpact = await this.modelSmartSectorApi.sectorContributionToImpactGhgAPI("final/"+graphName);
+    this.sectorContributionToImpact = await this.modelSmartSectorApi.sectorContributionToImpactRankedGhgAPI("final/"+graphName);
     this.getTopValuesFromSectors = await this.getTopFifteenImpactPerPurchaseWithGroup(this.sectorContributionToImpact,this.modelSmartSectorApi);
 
     let options = await apexGraph(this.getTopValuesFromSectors,sector_name, titleNameWithNoSpace);
@@ -97,7 +97,13 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget
 
       let purchasedGroup = modelSmartSector.findPurchasedGroup(t.purchased_commodity_code,sectorMappingList);
       let sectorName = selectSectorName(t.sector_code,sectorsList);
-      let purchaseCommodity = selectSectorName(t.purchased_commodity_code,sectorsList);
+      let purchaseCommodity
+      if(purchasedGroup == "All Others")
+      {
+        purchaseCommodity = "All Others"
+      }
+      else
+        purchaseCommodity= selectSectorName(t.purchased_commodity_code,sectorsList);
 
       if(sortListWithTop15OfEachSector.length === 0)
       {
@@ -158,9 +164,7 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget
       return {
         sector_code: t._sectorCode,
         sector_name: t._sectorName,
-        topFifteenImpactPerPurchase: t._smartSectors.sort((a:ImpactPerPurchaseSector, b:ImpactPerPurchaseSector) => {
-          return  b.impactPerPurchase - a.impactPerPurchase;
-        }).slice(0,15)
+        topFifteenImpactPerPurchase: t._smartSectors.slice(0,15)
       }
       
     })
