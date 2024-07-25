@@ -9,7 +9,6 @@ export async function calculate(sortTopTen:SumSmartSectorTotalParts[],model: Web
 
         let sectorsList:Sector[] = await model.sectors();
         let sortedSectorCodes: string[] = sortedSectorCodeList(sortTopTen);
-        console.log(sortTopTen)
         let sortedSeries:{name:string,data:number[]}[] = sortedSeriesList(sortTopTen,uniqueSortedMapping,impactSelector);
         
         let sortedSectorCodesWithNamesWithArray: string[][] = sortedSectorCodes.map( t =>
@@ -21,6 +20,7 @@ export async function calculate(sortTopTen:SumSmartSectorTotalParts[],model: Web
                 return true
               }
             })
+          
            return  [sectorName.id].concat(sectorName.name)
          });
 

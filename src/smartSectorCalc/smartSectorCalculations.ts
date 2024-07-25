@@ -20,7 +20,7 @@ export function sortedSeriesList(sortTopTen:SumSmartSectorTotalParts[],uniqueSor
             sortTopTen.forEach((s) => {
                s._smartSectors.forEach((l) => {
                     if(v === l._smartSector.sumPurchasedGroup){
-                        if (impactSelector == 'impact_per_dollar')
+                        if (impactSelector == 'impact_per_purchase')
                             {
                                 data.push(l._smartSector.sumImpactPerDollar);
                             }
@@ -71,7 +71,7 @@ export function SumSmartSectorTotal(sectorList:Sector[],smartSectorList:SmartSec
     items.forEach((v, index) =>
         {
             let impact 
-            if (impactSelector == 'impact_per_dollar')
+            if (impactSelector == 'impact_per_purchase')
             {
                 impact = v._smartSector.sumImpactPerDollar
             }
@@ -112,7 +112,7 @@ export function SumSmartSectorTotal(sectorList:Sector[],smartSectorList:SmartSec
 
                         if(smartSector !== undefined && smartSector !== null)
                         {
-                            if (impactSelector == 'impact_per_dollar')
+                            if (impactSelector == 'impact_per_purchase')
                                 {
                                     s._totalSectorCodeSummationImpact += smartSector._smartSector.sumImpactPerDollar;
                                 }
@@ -124,7 +124,7 @@ export function SumSmartSectorTotal(sectorList:Sector[],smartSectorList:SmartSec
                         }
                         else
                         {
-                            if (impactSelector == 'impact_per_dollar')
+                            if (impactSelector == 'impact_per_purchase')
                                 {
                                     s.addSmartSectors(new SmartSector({
                                         sumSectorCode:s._sectorCode,

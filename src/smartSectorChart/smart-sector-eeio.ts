@@ -128,13 +128,13 @@ export class SmartSectorEEIO extends Widget {
 
         var addSector:SmartSector
 
-        if(selectImpactSelection === 'impact_per_dollar')
+        if(selectImpactSelection === 'impact_per_purchase')
             {
 
                  addSector = new SmartSector({
                     sumSectorCode:sumSectorCode,
                     sumSectorName:sumSectorName,
-                    sumImpactPerDollar:t.impact_per_dollar,
+                    sumImpactPerDollar:t.impact_per_purchase,
                     sumPurchasedGroup:sumPurchasedGroup
                   });
             }
@@ -165,7 +165,7 @@ export class SmartSectorEEIO extends Widget {
       
           if(smartSectorFound !== undefined)
           {
-            if(selectImpactSelection === 'impact_per_dollar')
+            if(selectImpactSelection === 'impact_per_purchase')
                 {
 
                     smartSectorFound._smartSector.sumImpactPerDollar += addSector._smartSector.sumImpactPerDollar;
