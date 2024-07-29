@@ -211,32 +211,52 @@
             <article  role="article" class="article" lang="en">
 
             <h1>Prototype - Lifecycle GHG Emissions Assessment Tool</h1>
-            <p>The Lifecycle GHG Emission Assessment Tool provides data visualizations of supply chain embodied emissions of over 400 ecario sectors. The tool is based on the EPA's USEEIO model and emission factors from (XXX): </p>
-  
-                    <ul>
+            <p>The Lifecycle Greenhouse Gas (GHG) Emission Assessment Tool provides data visualizations of supply chain embodied emissions of over 400 categories of goods and services (sectors) in the U.S. Sectors can be filtered based on their overall embodied GHG emissions (i.e., cradle-to-gate). Emissions include the <em>Direct</em> emissions (e.g., facility operations), as well as the <em>Indirect</em> emissions (e.g. emissions embedded in purchases made by the sector, also known as the supply chain or Scope 3 emissions).</p>
+			<p>Two types of visualizations are avaiable:</p>
+                    <ol>
                   
-                      <li><a href="./sum_of_impact_per_purchase.html" target="_blank">
-                            Impact per purchase - Vertical Bar Chart
-                        </a></li>
-                      <li><a href="./pie_chart.html" target="_blank">
-                            Pie Chart
-                        </a></li>
-                      <li><a href="./smart_sector_eeio.html" target="_blank">
-                            Sector Contribution to Impact - Vertical Bar Chart
-                        </a></li>
-                    </ul>
+                      <li>a <a href="./sum_of_impact_per_purchase.html" target="_blank">comparison of embodied GHG emissions across sectors</a>, or,
+                        </li>
+                      <li>for a select sector, an assessment of the contributions to the embodied GHG emissions from purchased goods and services, as both a 
+					  <a href="./pie_chart.html" target="_blank">pie chart</a>
+					  and <a href="./smart_sector_eeio.html" target="_blank">bar chart</a>.
+						</li>
+                    </ol>
+            <p>Users may select different metrics to view results, such as the aggregate Global Warming Potential using a 100-yr or 20-yr timeframe, or using EPA’s estimates for the Social Cost of Carbon.</p>
+			<p>Sectors can be ranked based on the total magnitude of their embodied emissions (i.e., million metric tonnes (MMT) CO2e) or by their emissions intensity. Emissions intensities reflect total emissions relative to the economic output of the sector.</p>
+			<p>Additionally, results can be viewed from two different perspectives. The <em>Point of Consumption</em> perspective shows the embodied emissions (i.e., Scope 3 emissions) based on the purchases made by providers of the good or service. The <em>Supply chain</em> perspective highlights the supply chain hotspots for the good or service (i.e., where the <em>Direct</em> emissions are highest).</p>
 
-           
-                    <ul>
-                        <li><a href="#">Top 25 sectors by total embodied GHG emissions (disaggregated by direct & indirect emissions)</a></li>
-                        <li><a href="#">Top 25 sectors by total embodied GHG emissions (disaggregated by direct, purchased electricity, transportation, & all other indirectissions)</a></li>
-                        <li><a href="#">Top 25 sectors by total embodied GHG emissions (disaggregated by direct, purchased electricity, transportation, top 8 contributiregtors and all other indirect emissions)</a></li>
-                        <li><a href="#">Top 25 sectors by total embodied GHG emissions (disaggregated by direct, purchased electricity, transportation, top 8 contributiregtors and all other indirect emissions)</a></li>
-                        <li><a href="#">Top 10 sectors by total embodied GG emissions (disaggregated by direct, purchased electricity, transportation, top 8 contributiretors and all other indirect emissions)</a></li>
-                        <li><a href="#">Selected construction material producing sectors by total embodied GG emissions (disaggregated by supplier emission contitibas)</a></li>
-                        <li><a href="#">Product GHG Emissions Intensity in metric tons of CO2e per million dollars of output</a></li>
-                    </ul>
-
+			<h3>Data Source</h3>
+			<p>The tool is based on EPA's United State Environmentally-Extended Input-Output (USEEIO) model, which categorizes goods and services based on the list of commodities included in the 2017 Input-Output tables from the U.S. Bureau of Economic Analysis (BEA), often referred to as the BEA IO accounts. The USEEIO model takes advantage of the U.S. BEA having mapped the network of relationships among businesses throughout the U.S. (from those engaged in the extraction of raw materials and resources to businesses that sell goods or services to the consumer). This network of relationships is then overlaid with environmental, resource use and socioeconomic data collected by government agencies. Associations are then drawn between goods and services and those data.</p>
+			<table><thead>
+			  <tr>
+				<th>Source</th>
+				<th>Data Year</th>
+				<th>Purpose</th>
+			  </tr></thead>
+			<tbody>
+			  <tr>
+				<td>EPA's Greenhouse Gas Inventory</td>
+				<td>2022</td>
+				<td>Primary GHG emissions data</td>
+			  </tr>
+			  <tr>
+				<td>BEA Input-Output Accounts</td>
+				<td>2017</td>
+				<td>Economic transactions between sectors</td>
+			  </tr>
+			  <tr>
+				<td>EPA's Report on the Social Cost of Greenhouse Gases</td>
+				<td>n.a.</td>
+				<td>Social cost of carbon calculations</td>
+			  </tr>
+			  <tr>
+				<td>International Panel on Climate Change, GWP Characterization Factors</td>
+				<td>n.a.</td>
+				<td>Global Warming Potential calculations</td>
+			  </tr>
+			</tbody>
+			</table>
             </article>
             <p>&nbsp;&nbsp;</p>
         </div>
