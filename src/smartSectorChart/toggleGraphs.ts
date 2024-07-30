@@ -14,7 +14,7 @@ export async function calculate(sortTopTen:SumSmartSectorTotalParts[],model: Web
 
         if (impactSelector == 'impact_per_purchase')
           {
-             yaxisTitle = 'Total Emissions (kg / $)'
+             yaxisTitle = 'Emissions Intensity (Metric Tons CO2e per Million Dollars of Output)'
           }
           
                   let sortedSectorCodesWithNamesWithArray: string[][] = sortedSectorCodes.map( t =>
