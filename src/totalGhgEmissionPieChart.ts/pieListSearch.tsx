@@ -87,7 +87,7 @@ const Component = (props: { widget: PieListSearch }) => {
 
     const [searchTerm, setSearchTerm] = React.useState<string>('');
     const [value, setValue] = React.useState<string>('');
-    const [graph, setGraph] = React.useState<string>('GWP-AR6-20');
+    const [graph, setGraph] = React.useState<string>('GWP-AR6-100');
     const [graphDetails, setGraphDetails] = React.useState<string>('Aggregate');
     const [aggregate, setAggregate] = React.useState<boolean>( true );
     const [detail, setDetail] = React.useState<boolean>( false );
@@ -208,7 +208,7 @@ const Component = (props: { widget: PieListSearch }) => {
                 </Select>
             </FormControl>
             <FormControl className={classes.margin} >
-                <InputLabel id="demo-controlled-open-select-label">Select Detail or Aggregate Graph</InputLabel>
+                <InputLabel id="demo-controlled-open-select-label">Sector Grouping</InputLabel>
                 <Select
                 id="aggregateId"
                 native
@@ -219,8 +219,8 @@ const Component = (props: { widget: PieListSearch }) => {
                     name: 'details',
                 }}
                 >
-                <option value="Aggregate">Aggregate</option>
-                <option value="Detail">Detail</option>
+                <option value="Aggregate">Direct vs Indirect</option>
+                <option value="Detail">Detailed</option>
                
                 </Select>
             </FormControl>
