@@ -139,7 +139,6 @@ const Component = (props: { widget: PieListSearch }) => {
         
        if(graphDetails === 'Aggregate')
         {
-        console.log( 'Aggregate')
         props.widget.piePercentContribution.changeGraph(event.target.value,value);
        }
        else
@@ -150,7 +149,6 @@ const Component = (props: { widget: PieListSearch }) => {
         setGraphDetails(event.target.value);
         if(event.target.value === 'Aggregate')
         {
-            console.log( 'Aggregate')
             setAggregate(true)
             setDetail(false)
             props.widget.piePercentContribution.changeGraph(graph,value);
@@ -181,9 +179,6 @@ const Component = (props: { widget: PieListSearch }) => {
 
 
     let classes = useStyles();
-    console.log(aggregate)
-    console.log(detail)
-
     return (
         <div>
             <FormControl className={classes.margin} >

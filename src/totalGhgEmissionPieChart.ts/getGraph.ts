@@ -52,7 +52,6 @@ export async function apexGraph(contributionList:SortingPercentContribution[],se
         {
           let sectorGraphTitle = values._sectorCode + ' - ' +sector_name;
 
-          console.log(values)
           values._contributionList.map(t => {
             sectorPurchasedList.push(t.sectorPurchased)
             contrubutionList.push(t.contribution)
