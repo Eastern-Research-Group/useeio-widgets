@@ -56,14 +56,23 @@ export class PiePercentContribution extends Widget
 
    async changeGraph(graphName?:string, sectorName?:string)
    {
-    this.graphName = graphName;
+    if(this.graphName !== graphName)
+    {
+      this.graphName = graphName;
+      this.percentContributionList = await this.modelSmartSectorApi.percentContribution(graphName);
+      this.contributionList = await this.contributionListPerSector(this.percentContributionList);
+    }
+
+    if(this.uniqueSortedMappingGroupNoDuplicates === undefined || this.uniqueSortedMappingGroupNoDuplicates === null)
+    {
+      const sectorMappingList:SectorMapping[] = await this.modelSmartSectorApi.sectorMapping();  
+      this.uniqueSortedMappingGroupNoDuplicates = uniqueSortedMappingGroupNoDuplicatesList(sectorMappingList);
+    }
+
     this.sectorsList = await this._chartConfig.model.sectors();
     let sector_name:string = sectorName? sectorName:'Fresh soybeans, canola, flaxseeds, and other oilseeds';
-    const sectorMappingList:SectorMapping[] = await this.modelSmartSectorApi.sectorMapping();  
-    this.uniqueSortedMappingGroupNoDuplicates = uniqueSortedMappingGroupNoDuplicatesList(sectorMappingList);
     let titleNameWithNoSpace = graphName.replace(/\-/g," ");
-    this.percentContributionList = await this.modelSmartSectorApi.percentContribution(graphName);
-    this.contributionList = await this.contributionListPerSector(this.percentContributionList);
+
     let options = await apexGraph(this.contributionList,sector_name,titleNameWithNoSpace);
 
     this.chart.updateOptions(options);
@@ -97,7 +106,7 @@ export class PiePercentContribution extends Widget
           t.sector,
           selectSectorName(t.sector,sectorsList),
           {
-            sectorPurchased:t.sector_purchased,
+            sectorPurchased:t.sector_purchased_detail,
             contribution:t.contribution
           }
         );
@@ -117,20 +126,11 @@ export class PiePercentContribution extends Widget
   
         if(contributionPercentageFound !== undefined)
         { 
-          if(t.sector_purchased === undefined || t.sector_purchased === null)
-            {
+          
               contributionPercentageFound.addContributionSectorList({
-                sectorPurchased:"All Others",
-                contribution:t.contribution
-              })
-            }
-            else
-            {
-              contributionPercentageFound.addContributionSectorList({
-                sectorPurchased:t.sector_purchased,
+                sectorPurchased:t.sector_purchased_detail,
                 contribution:t.contribution
               });
-            }
         }
         else
         {
@@ -138,7 +138,7 @@ export class PiePercentContribution extends Widget
             t.sector,
             selectSectorName(t.sector,sectorsList),
             {
-              sectorPurchased:t.sector_purchased,
+              sectorPurchased:t.sector_purchased_detail,
               contribution:t.contribution
             }
           );

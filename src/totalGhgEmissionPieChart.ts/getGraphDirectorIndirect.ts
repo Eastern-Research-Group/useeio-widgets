@@ -71,24 +71,22 @@ export async function apexGraph(contributionList:SortingPercentContributionIndir
             series: contrubutionList,
             colors:contrubutionColorList,
             chart: {
-            width: 500,
+            width: 600,
             type: 'pie',
           },
           title:{
             text: sectorGraphTitle +` (${graphName})`,
             align: 'center',
-            floating:false,
             style: {
-              fontSize:  '9px',
-              fontWeight:  'bold',
+              fontSize:  '10px',
             }
           },
           labels: sectorPurchasedList,
           responsive: [{
-            breakpoint: 400,
+            breakpoint: 480,
             options: {
               chart: {
-                width: 300
+                width: 400
               },
               legend: {
                 position: 'bottom'

@@ -1,7 +1,7 @@
 import * as ReactDOM from "react-dom";
 import { Sector, WebModel } from "useeio";
 import { TextField } from "@material-ui/core";
-import { PiePercentContribution}from './piePercentContribution'
+import { PiePercentContribution }from './piePercentContribution'
 import { PiePercentContributionDirectAndIndirect } from "./piePercentContributionDirectAndIndirect";
 import * as strings from "../util/strings";
 import { Widget } from "../widget";
@@ -14,11 +14,16 @@ import Select from '@material-ui/core/Select';
 
 
 
-export interface SmartSectorChartConfig {modelOne:{
+export interface SmartSectorChartConfigPie {modelOne:{
     model: WebModel,
     endpoint: './api',
     selector: '.sector-list',
 },modelTwo:{
+    model: WebModel,
+    endpoint: './api',
+    selector: '.sector-list',
+},
+modelThree:{
     model: WebModel,
     endpoint: './api',
     selector: '.sector-list',
@@ -34,6 +39,10 @@ export function piePercentContributionList(config: SmartSectorChartConfigNormal)
     return new PiePercentContributionDirectAndIndirect(config);
 }
 
+export function piePercentContributionListSectors(config: SmartSectorChartConfigNormal): PiePercentContribution {
+    return new PiePercentContribution(config);
+}
+
 export class PieListSearch extends Widget {
 
     /**
@@ -42,9 +51,11 @@ export class PieListSearch extends Widget {
     sectors: Sector[];
     modelSmartSectorApi:WebModelSmartSector;
     piePercentContribution:PiePercentContributionDirectAndIndirect;
+    piePercentContributionSectors:PiePercentContribution;
+
     _chartConfig: SmartSectorChartConfigNormal;
 
-    constructor(_chartConfig: SmartSectorChartConfig) {
+    constructor(_chartConfig: SmartSectorChartConfigPie) {
         super();
         this._chartConfig = _chartConfig.modelOne;
         this.modelSmartSectorApi = modelOfSmartSector({
@@ -53,11 +64,15 @@ export class PieListSearch extends Widget {
             asJsonFiles: true
     })
     this.piePercentContribution = piePercentContributionList(_chartConfig.modelTwo)
+    this.piePercentContributionSectors = piePercentContributionListSectors(_chartConfig.modelThree)
+
     }
 
     async update() {
         this.modelSmartSectorApi.init();
         this.piePercentContribution.init('GWP-AR6-20');
+        this.piePercentContributionSectors.init('GWP-AR6-20');
+
         this.sectors = await this._chartConfig.model.sectors();
         ReactDOM.render(
             <Component widget={this} />,
@@ -72,12 +87,13 @@ const Component = (props: { widget: PieListSearch }) => {
 
     const [searchTerm, setSearchTerm] = React.useState<string>('');
     const [value, setValue] = React.useState<string>('');
-    const [graph, setGraph] = React.useState<string>('');
+    const [graph, setGraph] = React.useState<string>('GWP-AR6-20');
+    const [graphDetails, setGraphDetails] = React.useState<string>('Aggregate');
+    const [aggregate, setAggregate] = React.useState<boolean>( true );
+    const [detail, setDetail] = React.useState<boolean>( false );
 
-;
-    React.useEffect(() => {
-        setGraph(props.widget.piePercentContribution.getGraph())
-    }, []);
+
+
 
     let sectors = props.widget.sectors;
 
@@ -88,7 +104,10 @@ const Component = (props: { widget: PieListSearch }) => {
     const handleState = (e:string) => {
         setSearchTerm('');
         setValue(e);
-        props.widget.piePercentContribution.updateGraph(e);
+        if(graphDetails === 'Aggregate')
+            props.widget.piePercentContribution.updateGraph(e);
+        else
+            props.widget.piePercentContributionSectors.updateGraph(e);
     };
 
     // create the sector ranking, if there is a result
@@ -115,7 +134,38 @@ const Component = (props: { widget: PieListSearch }) => {
         setSearchTerm(term.length === 0 ? '' : term)
     };
 
-    const useStyles = makeStyles((theme) => ({
+    const handleChange = (event:any) => {
+        setGraph(event.target.value);
+        
+       if(graphDetails === 'Aggregate')
+        {
+        console.log( 'Aggregate')
+        props.widget.piePercentContribution.changeGraph(event.target.value,value);
+       }
+       else
+            props.widget.piePercentContributionSectors.changeGraph(event.target.value,value);
+    };
+
+    const handleChangeGraphDetail = (event:any) => {
+        setGraphDetails(event.target.value);
+        if(event.target.value === 'Aggregate')
+        {
+            console.log( 'Aggregate')
+            setAggregate(true)
+            setDetail(false)
+            props.widget.piePercentContribution.changeGraph(graph,value);
+
+        }
+        else
+        {
+            setAggregate(false)
+            setDetail(true)
+            props.widget.piePercentContributionSectors.changeGraph(graph,value);
+
+        }
+    };
+
+    let useStyles = makeStyles((theme) => ({
         margin: {
           margin: theme.spacing(1),
           minWidth: 150,
@@ -125,18 +175,15 @@ const Component = (props: { widget: PieListSearch }) => {
                 height: '200px',
                 border: '1px solid black',
                 overflowY: 'scroll'              
-        }
+        },
       }));
 
 
 
-    const handleChange = (event:any) => {
-        setGraph(event.target.value);
-        props.widget.piePercentContribution.changeGraph(event.target.value,value);
-    };
+    let classes = useStyles();
+    console.log(aggregate)
+    console.log(detail)
 
-
-const classes = useStyles();
     return (
         <div>
             <FormControl className={classes.margin} >
@@ -165,6 +212,31 @@ const classes = useStyles();
                 <option value="Social-Cost-of-Carbon">Social Cost of Carbon</option>
                 </Select>
             </FormControl>
+            <FormControl className={classes.margin} >
+                <InputLabel id="demo-controlled-open-select-label">Select Detail or Aggregate Graph</InputLabel>
+                <Select
+                id="aggregateId"
+                native
+                value={graphDetails}
+                onChange={handleChangeGraphDetail}
+                label="Detail or Aggregate"
+                inputProps={{
+                    name: 'details',
+                }}
+                >
+                <option value="Aggregate">Aggregate</option>
+                <option value="Detail">Detail</option>
+               
+                </Select>
+            </FormControl>
+            <div  style={{
+            position:'relative'
+            }}>
+                    <div style={{visibility: aggregate ? 'visible' : 'hidden', position: 'absolute', marginLeft: 'auto', marginRight: 'auto' }} id="profile-chart">
+                    </div>
+                    <div style={{visibility: detail ? 'visible' : 'hidden', position: 'absolute', marginLeft: 'auto', marginRight: 'auto'}} id="profile-chart-details">
+                    </div>
+            </div>
       </div>
     );
 };

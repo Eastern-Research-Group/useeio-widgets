@@ -52,11 +52,12 @@ export async function apexGraph(contributionList:SortingPercentContribution[],se
         {
           let sectorGraphTitle = values._sectorCode + ' - ' +sector_name;
 
+          console.log(values)
           values._contributionList.map(t => {
             sectorPurchasedList.push(t.sectorPurchased)
             contrubutionList.push(t.contribution)
 
-            if(t.sectorPurchased.match(sectorGraphTitle)){
+            if(t.sectorPurchased.match("Direct")){
               contrubutionColorList.push('#0074d3')
             }
             else
@@ -70,12 +71,15 @@ export async function apexGraph(contributionList:SortingPercentContribution[],se
             series: contrubutionList,
             colors:contrubutionColorList,
             chart: {
-            width: 800,
+            width: 600,
             type: 'pie',
           },
           title:{
             text: sectorGraphTitle +` (${graphName})`,
-            align: 'center'
+            align: 'center',
+            style: {
+              fontSize:  '10px',
+            }
           },
           labels: sectorPurchasedList,
           responsive: [{

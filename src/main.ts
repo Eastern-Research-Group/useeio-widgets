@@ -29,7 +29,7 @@ import { MatrixSelector } from "./widgets/matrix-selector";
 import { IOGrid } from "./widgets/iogrid/iogrid";
 import { DotsMenu } from "./widgets/dotsMenu";
 import { SectorListSearch}from './smartSectorSumOfImpcatPerPurchase.ts/sectorListSearch';
-import { PieListSearch} from './totalGhgEmissionPieChart.ts/pieListSearch';
+import { PieListSearch, SmartSectorChartConfigPie} from './totalGhgEmissionPieChart.ts/pieListSearch';
 import { SmartSectorChartConfigModels } from "./smartSectorSumOfImpcatPerPurchase.ts/sectorListSearch";
 
 export * from "./naics";
@@ -118,7 +118,7 @@ export function sectorListSearch(config: SmartSectorChartConfigModels): SectorLi
     return new SectorListSearch(config);
 }
 
-export function pieListSearch(config: SmartSectorChartConfigModels): PieListSearch {
+export function pieListSearch(config: SmartSectorChartConfigPie): PieListSearch {
     return new PieListSearch(config);
 }
 
