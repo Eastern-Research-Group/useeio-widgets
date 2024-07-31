@@ -236,12 +236,34 @@ export class SmartSectorEEIO extends Widget {
       this.listSumSmartSectorTotalParts = SumSmartSectorTotal(sectorsList,smartSectorListGroup,this.uniqueSortedMappingGroupNoDuplicates,selectImpactSelection);
 
       
+      let listOfStackGraph
+      if(this.selectorName === 'construction_materials')
+        {
+            listOfStackGraph = this.listSumSmartSectorTotalParts.filter(t => {
+                return t._constructionMaterials === 1;
+            })
+        }
 
-      let sortSumSmartSectorTotalParts:SumSmartSectorTotalParts[] = this.listSumSmartSectorTotalParts.sort((a: SumSmartSectorTotalParts, b: SumSmartSectorTotalParts): any => {
-          return b._totalSectorCodeSummationImpact - a._totalSectorCodeSummationImpact;
-      });
+    else if(this.selectorName === 'total_rank')
+        {
+            listOfStackGraph = this.listSumSmartSectorTotalParts.sort((a: SumSmartSectorTotalParts, b: SumSmartSectorTotalParts): any => {
+                 return b._totalRank - a._totalRank;
+            });
+        }
+    else if(this.selectorName === 'intensity_rank')
+        {
+            listOfStackGraph = this.listSumSmartSectorTotalParts.sort((a: SumSmartSectorTotalParts, b: SumSmartSectorTotalParts): any => {
+                return b._intensityRank - a._intensityRank;
+            });
+        }
+    else if(this.selectorName === 'energy_intensive')
+        {
+            listOfStackGraph = this.listSumSmartSectorTotalParts.filter(t => {
+                    return t._energyIntensive === 1;
+             })
+        }
 
-      return sortSumSmartSectorTotalParts;
+      return listOfStackGraph;
     }
 
 
@@ -287,7 +309,7 @@ export class SmartSectorEEIO extends Widget {
         sortTopTen = sortSumSmartSectorTotalParts.slice(0,totalRankSelector.num);
       }
 
-      let option = await calculate(sortTopTen ? sortTopTen:sortSumSmartSectorTotalParts,this._chartConfig.model,this.uniqueSortedMappingGroupNoDuplicates, nameWithNoSpace, this.toggleImpactSelection);
+      let option = await calculate((sortTopTen != undefined || sortTopTen != null) ? sortTopTen:sortSumSmartSectorTotalParts,this._chartConfig.model,this.uniqueSortedMappingGroupNoDuplicates, nameWithNoSpace, this.toggleImpactSelection);
 
       this.chart.updateOptions(option);
       this.chart.resetSeries();
