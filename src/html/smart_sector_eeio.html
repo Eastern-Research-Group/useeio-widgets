@@ -41,6 +41,8 @@
                         <option data-value='{"name":"total_rank","num":"25"}'>Top 25 Total Embodied GHG</option>
                         <option data-value='{"name":"intensity_rank","num":"10"}'>Top 10 Embodied GHG Intensity</option>
                         <option data-value='{"name":"intensity_rank","num":"25"}'>Top 25 Embodied GHG Intensity</option>
+                        <option data-value='{"name":"construction_materials"}'>Construction Materials</option>
+                        <option data-value='{"name":"energy_intensive"}'>Energy Intensive Industries</option>
                     </select>
                 </div>
 
@@ -138,8 +140,14 @@
             {
                 smartSectorChart.selectorFilter($('#mySelect').find(":selected").data("value"));
 
-                topSectors = $('#mySelect').find(":selected").data("value").num;
-                document.getElementById("graphTitle").innerHTML = `Top ${n} Sectors based on Total Embodied GHG Emissions`; 
+                if($('#mySelect').find(":selected").data("value").num !== undefined || $('#mySelect').find(":selected").data("value").num !== null){
+                    topSectors = $('#mySelect').find(":selected").data("value").num;
+                }
+                else
+                {
+                    topSectors = undefined
+                }
+                document.getElementById("graphTitle").innerHTML = `${n}`; 
             }
 
           

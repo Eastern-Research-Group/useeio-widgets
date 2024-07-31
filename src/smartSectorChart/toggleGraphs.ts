@@ -7,6 +7,7 @@ import { WebModel, Sector } from "useeio";
 export async function calculate(sortTopTen:SumSmartSectorTotalParts[],model: WebModel,uniqueSortedMapping:string[],titleGraph?:string, impactSelector?:string): Promise<apex.ApexOptions> 
     {       
 
+      if(sortTopTen.length > 0){
         let sectorsList:Sector[] = await model.sectors();
         let sortedSectorCodes: string[] = sortedSectorCodeList(sortTopTen);
         let sortedSeries:{name:string,data:number[]}[] = sortedSeriesList(sortTopTen,uniqueSortedMapping,impactSelector);
@@ -135,6 +136,45 @@ export async function calculate(sortTopTen:SumSmartSectorTotalParts[],model: Web
                 opacity: 1
               }
         };
+      }
+      else
+      {
+        return {
+          series: [{name:"NA",data:[]}],
+          chart: {
+            type: 'bar',
+            height: 500,
+            stacked: true,
+            toolbar: {
+              show: true
+            }
+          },
+        title:{
+          text: 'No Data',
+          align: 'center'
+        },
+        labels: [],
+        noData: {
+          text: "There's no data",
+          align: 'center',
+          verticalAlign: 'middle',
+          offsetX: 0,
+          offsetY: 0
+          },
+        responsive: [{
+          breakpoint: 480,
+          options: {
+            chart: {
+              width: 400
+            },
+            legend: {
+              position: 'bottom'
+            }
+          }
+        }]
+        }
+      }
+        
     }
 
     

@@ -23,6 +23,7 @@ export class SmartSectorEEIO extends Widget {
     listSumSmartSectorTotalParts:SumSmartSectorTotalParts[];
     perspective:string;
     graphName:string;
+    selectorName:string;
     sectorContributionToImpact:SectorContributionToImpact[] = []
 
     constructor(private _chartConfig: SmartSectorChartConfig) {
@@ -44,6 +45,7 @@ export class SmartSectorEEIO extends Widget {
     this.modelSmartSectorApi.init()
     this.graphName = graphName;
     this.perspective = 'final'
+    this.selectorName = 'total_rank'
     const sectorMappingList:SectorMapping[] = await this.modelSmartSectorApi.sectorMapping();  
     this.uniqueSortedMappingGroupNoDuplicates = uniqueSortedMappingGroupNoDuplicatesList(sectorMappingList,this.toggleGroupSelection);
     this.sectorContributionToImpact= await this.modelSmartSectorApi.sectorContributionToImpactGhgAPI("final/"+graphName);
@@ -63,7 +65,6 @@ export class SmartSectorEEIO extends Widget {
 
     let selectNumOfSectors = (selectNumSectors != undefined || selectNumSectors != null) ? selectNumSectors : this.toggleNumSelection; 
     this.toggleNumSelection = selectNumOfSectors;
-    
     let selectImpactSelector = (selectImpactSelection != undefined || selectImpactSelection != null)? selectImpactSelection : this.toggleImpactSelection; 
     this.toggleImpactSelection = selectImpactSelector;
 
@@ -94,6 +95,32 @@ export class SmartSectorEEIO extends Widget {
 
     let listOfStackGraph = await this.getGraphs(this.sectorContributionToImpact, this.modelSmartSectorApi, nameWithNoSpace,this.toggleNumSelection,this.toggleImpactSelection,this.toggleGroupSelection);
     
+    if(this.selectorName === 'construction_materials')
+        {
+            listOfStackGraph = listOfStackGraph.filter(t => {
+                return t._constructionMaterials === 1;
+            })
+        }
+
+    else if(this.selectorName === 'total_rank')
+        {
+            listOfStackGraph = listOfStackGraph.sort((a: SumSmartSectorTotalParts, b: SumSmartSectorTotalParts): any => {
+                 return b._totalRank - a._totalRank;
+            });
+        }
+    else if(this.selectorName === 'intensity_rank')
+        {
+            listOfStackGraph = listOfStackGraph.sort((a: SumSmartSectorTotalParts, b: SumSmartSectorTotalParts): any => {
+                return b._intensityRank - a._intensityRank;
+            });
+        }
+    else if(this.selectorName === 'energy_intensive')
+        {
+            listOfStackGraph = listOfStackGraph.filter(t => {
+                    return t._energyIntensive === 1;
+             })
+        }
+
     let option = await calculate(listOfStackGraph,this._chartConfig.model,this.uniqueSortedMappingGroupNoDuplicates, nameWithNoSpace, this.toggleImpactSelection);
     
     this.chart.updateOptions(option);
@@ -149,7 +176,8 @@ export class SmartSectorEEIO extends Widget {
                     sumPurchasedGroup:sumPurchasedGroup,
                     sumConstructionMaterials:t.construction_materials,
                     sumIntensityRank:t.intensity_rank,
-                    sumTotalRank:t.total_rank
+                    sumTotalRank:t.total_rank,
+                    sumEnergyIntensive:t.energy_intensive
                   });
             }
         else
@@ -161,7 +189,8 @@ export class SmartSectorEEIO extends Widget {
                     sumPurchasedGroup:sumPurchasedGroup,
                     sumConstructionMaterials:t.construction_materials,
                     sumIntensityRank:t.intensity_rank,
-                    sumTotalRank:t.total_rank
+                    sumTotalRank:t.total_rank,
+                    sumEnergyIntensive:t.energy_intensive
                   });
             }
 
@@ -220,33 +249,48 @@ export class SmartSectorEEIO extends Widget {
     {
       let nameWithNoSpace = this.graphName.replace(/\-/g," ");
       let sortSumSmartSectorTotalParts:SumSmartSectorTotalParts[]
+      let sortTopTen:SumSmartSectorTotalParts[] 
       if(totalRankSelector.name === 'total_rank')
         {
             sortSumSmartSectorTotalParts = this.listSumSmartSectorTotalParts.sort((a: SumSmartSectorTotalParts, b: SumSmartSectorTotalParts): any => {
                 return b._totalRank - a._totalRank;
             });
         }
-      if(totalRankSelector.name === 'intensity_rank')
+      else if(totalRankSelector.name === 'intensity_rank')
         {
             sortSumSmartSectorTotalParts = this.listSumSmartSectorTotalParts.sort((a: SumSmartSectorTotalParts, b: SumSmartSectorTotalParts): any => {
                 return b._intensityRank - a._intensityRank;
             });
         }
-      if(totalRankSelector.name === 'construction_materials')
+      else if(totalRankSelector.name === 'construction_materials')
         {
-            sortSumSmartSectorTotalParts = this.listSumSmartSectorTotalParts.sort((a: SumSmartSectorTotalParts, b: SumSmartSectorTotalParts): any => {
-                return b._constructionMaterials - a._constructionMaterials;
-            });
+            sortSumSmartSectorTotalParts = this.listSumSmartSectorTotalParts.filter(t => {
+                return t._constructionMaterials === 1;
+            })
+        }
+      else if(totalRankSelector.name === 'energy_intensive')
+        {
+            sortSumSmartSectorTotalParts = this.listSumSmartSectorTotalParts.filter(t => {
+                  return t._energyIntensive === 1;
+             })
         }
 
-      
-      this.toggleNumSelection = totalRankSelector.num;
-      let sortTopTen:SumSmartSectorTotalParts[] = sortSumSmartSectorTotalParts.slice(0,totalRankSelector.num);
+      this.selectorName = totalRankSelector.name;
 
-      let option = await calculate(sortTopTen,this._chartConfig.model,this.uniqueSortedMappingGroupNoDuplicates, nameWithNoSpace, this.toggleImpactSelection);
+      if(totalRankSelector.num === undefined || totalRankSelector.num === null)
+      {
+        this.toggleNumSelection = sortSumSmartSectorTotalParts.length
+      }
+      else
+      {
+        this.toggleNumSelection = totalRankSelector.num;
+        sortTopTen = sortSumSmartSectorTotalParts.slice(0,totalRankSelector.num);
+      }
+
+      let option = await calculate(sortTopTen ? sortTopTen:sortSumSmartSectorTotalParts,this._chartConfig.model,this.uniqueSortedMappingGroupNoDuplicates, nameWithNoSpace, this.toggleImpactSelection);
 
       this.chart.updateOptions(option);
-     this.chart.resetSeries();
+      this.chart.resetSeries();
     }
 
   }
