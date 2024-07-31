@@ -338,6 +338,7 @@ export interface SectorContributionToImpact {
   impact_per_dollar?:number;
   total_rank?:number;
   intensity_rank?:number;
+  model?:string;
   construction_materials?:number;
   energy_intensive?:number;
 

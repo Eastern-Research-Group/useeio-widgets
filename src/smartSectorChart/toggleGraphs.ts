@@ -4,10 +4,20 @@ import {SumSmartSectorTotalParts} from '../smartSectorChart/smartSector';
 import { WebModel, Sector } from "useeio";
 
 
-export async function calculate(topSectorList:SumSmartSectorTotalParts[],model: WebModel,uniqueSortedMapping:string[],titleGraph?:string, impactSelector?:string): Promise<apex.ApexOptions> 
+export async function calculate(topSectorList:SumSmartSectorTotalParts[],model: WebModel,uniqueSortedMapping:string[],titleGraph?:string, impactSelector?:string, groupMappingSector?:string): Promise<apex.ApexOptions> 
     {       
+      
       let sortTopTen:SumSmartSectorTotalParts[] = topSectorList.sort((a: SumSmartSectorTotalParts, b: SumSmartSectorTotalParts): any => {
         return b._totalSectorCodeSummationImpact - a._totalSectorCodeSummationImpact;})
+
+        if(groupMappingSector === 'group_detail')
+        {
+          sortTopTen = sortTopTen.filter(t => {return (t._model === "Detail")})
+        }
+        else
+        {
+          sortTopTen = sortTopTen.filter(t => {return (t._model === "Summary")})
+        }
 
       if(sortTopTen.length > 0){
         let sectorsList:Sector[] = await model.sectors();

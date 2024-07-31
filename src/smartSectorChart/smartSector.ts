@@ -18,10 +18,10 @@ export class SumSmartSectorTotalParts
     _intensityRank?:number;
     _constructionMaterials?:number;
     _energyIntensive?:number;
-
+    _model?:string;
     _smartSectors:SmartSector[] = new Array<SmartSector>()
 
-    constructor(_sectorCode:string,_totalSectorCodeSummationImpact:number,_totalRank?:number,_intensityRank?:number,_constructionMaterials?:number, _energy_intensive?:number)
+    constructor(_sectorCode:string,_totalSectorCodeSummationImpact:number,_totalRank?:number,_intensityRank?:number,_constructionMaterials?:number, _energy_intensive?:number,model?:string)
     {
         this._sectorCode = _sectorCode;
         this._totalSectorCodeSummationImpact = _totalSectorCodeSummationImpact;
@@ -29,6 +29,7 @@ export class SumSmartSectorTotalParts
         this._intensityRank = _intensityRank;
         this._constructionMaterials = _constructionMaterials;
         this._energyIntensive = _energy_intensive;
+        this._model = model
     }
 
     
@@ -48,6 +49,7 @@ export interface ChartSmartSector{
     sumIntensityRank?:number;
     sumConstructionMaterials?:number;
     sumEnergyIntensive?:number;
+    sumModel?:string;
 }
 
 

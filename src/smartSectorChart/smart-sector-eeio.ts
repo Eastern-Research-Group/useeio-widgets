@@ -51,7 +51,7 @@ export class SmartSectorEEIO extends Widget {
     this.sectorContributionToImpact= await this.modelSmartSectorApi.sectorContributionToImpactGhgAPI("final/"+graphName);
     let nameWithNoSpace = graphName.replace(/\-/g," ");
     let options = await this.getGraphs(this.sectorContributionToImpact, this.modelSmartSectorApi, nameWithNoSpace, this.toggleNumSelection,this.toggleImpactSelection,this.toggleGroupSelection);
-    let option = await calculate(options,this._chartConfig.model,this.uniqueSortedMappingGroupNoDuplicates, nameWithNoSpace);
+    let option = await calculate(options,this._chartConfig.model,this.uniqueSortedMappingGroupNoDuplicates, nameWithNoSpace,this.toggleImpactSelection,this.toggleGroupSelection);
     this.chart = new ApexCharts(
         document.querySelector(this._chartConfig.selector),
         option,
@@ -121,7 +121,7 @@ export class SmartSectorEEIO extends Widget {
              })
         }
 
-    let option = await calculate(listOfStackGraph,this._chartConfig.model,this.uniqueSortedMappingGroupNoDuplicates, nameWithNoSpace, this.toggleImpactSelection);
+    let option = await calculate(listOfStackGraph,this._chartConfig.model,this.uniqueSortedMappingGroupNoDuplicates, nameWithNoSpace, this.toggleImpactSelection, this.toggleGroupSelection);
     
     this.chart.updateOptions(option);
     this.chart.resetSeries();
@@ -177,7 +177,8 @@ export class SmartSectorEEIO extends Widget {
                     sumConstructionMaterials:t.construction_materials,
                     sumIntensityRank:t.intensity_rank,
                     sumTotalRank:t.total_rank,
-                    sumEnergyIntensive:t.energy_intensive
+                    sumEnergyIntensive:t.energy_intensive,
+                    sumModel:t.model
                   });
             }
         else
@@ -190,7 +191,8 @@ export class SmartSectorEEIO extends Widget {
                     sumConstructionMaterials:t.construction_materials,
                     sumIntensityRank:t.intensity_rank,
                     sumTotalRank:t.total_rank,
-                    sumEnergyIntensive:t.energy_intensive
+                    sumEnergyIntensive:t.energy_intensive,
+                    sumModel:t.model
                   });
             }
 
@@ -309,7 +311,7 @@ export class SmartSectorEEIO extends Widget {
         sortTopTen = sortSumSmartSectorTotalParts.slice(0,totalRankSelector.num);
       }
 
-      let option = await calculate((sortTopTen != undefined || sortTopTen != null) ? sortTopTen:sortSumSmartSectorTotalParts,this._chartConfig.model,this.uniqueSortedMappingGroupNoDuplicates, nameWithNoSpace, this.toggleImpactSelection);
+      let option = await calculate((sortTopTen != undefined || sortTopTen != null) ? sortTopTen:sortSumSmartSectorTotalParts,this._chartConfig.model,this.uniqueSortedMappingGroupNoDuplicates, nameWithNoSpace, this.toggleImpactSelection,this.toggleGroupSelection);
 
       this.chart.updateOptions(option);
       this.chart.resetSeries();

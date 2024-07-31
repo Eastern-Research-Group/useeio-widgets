@@ -83,7 +83,7 @@ export function SumSmartSectorTotal(sectorList:Sector[],smartSectorList:SmartSec
             let smartSectorCodeFirstIndicator:string = '';
             if(v._smartSector.sumSectorCode !== smartSectorCodeFirstIndicator)
             {
-                let sumSmartSectorTotalPart = new SumSmartSectorTotalParts(v._smartSector.sumSectorCode,impact,v._smartSector.sumTotalRank,v._smartSector.sumIntensityRank,v._smartSector.sumConstructionMaterials);
+                let sumSmartSectorTotalPart = new SumSmartSectorTotalParts(v._smartSector.sumSectorCode,impact,v._smartSector.sumTotalRank,v._smartSector.sumIntensityRank,v._smartSector.sumConstructionMaterials,v._smartSector.sumEnergyIntensive,v._smartSector.sumModel);
                 sumSmartSectorTotalPart.addSmartSectors(v);
                 sumSmartSectorTotalParts.push(sumSmartSectorTotalPart);
 
