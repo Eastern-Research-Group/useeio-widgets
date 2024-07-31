@@ -77,7 +77,7 @@ export async function apexGraph(contributionList:SortingPercentContribution[],se
             text: sectorGraphTitle +` (${graphName})`,
             align: 'center',
             style: {
-              fontSize:  '10px',
+              fontSize:  '14px',
             }
           },
           labels: sectorPurchasedList,
@@ -91,7 +91,15 @@ export async function apexGraph(contributionList:SortingPercentContribution[],se
                 position: 'bottom'
               }
             }
-          }]
+          }],
+          tooltip: {
+            enabled: true,
+            y: {
+              formatter: function (val) {
+                return "" + (val * 100).toFixed(2) + "%"
+              }
+            }
+          }
           };
         }
       
