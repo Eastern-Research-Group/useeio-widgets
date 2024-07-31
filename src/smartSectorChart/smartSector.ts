@@ -14,13 +14,19 @@ export class SumSmartSectorTotalParts
 {
     _sectorCode:string;
     _totalSectorCodeSummationImpact?:number;
+    _totalRank?:number;
+    _intensityRank?:number;
+    _constructionMaterials?:number;
+
     _smartSectors:SmartSector[] = new Array<SmartSector>()
 
-    constructor(_sectorCode:string,_totalSectorCodeSummationImpact:number)
+    constructor(_sectorCode:string,_totalSectorCodeSummationImpact:number,_totalRank?:number,_intensityRank?:number,_constructionMaterials?:number)
     {
         this._sectorCode = _sectorCode;
         this._totalSectorCodeSummationImpact = _totalSectorCodeSummationImpact;
-        
+        this._totalRank = _totalRank;
+        this._intensityRank = _intensityRank;
+        this._constructionMaterials = _constructionMaterials;
     }
 
     
@@ -36,6 +42,9 @@ export interface ChartSmartSector{
     sumtotalImpact?:number;
     sumImpactPerDollar?:number;
     sumPurchasedGroup:string;
+    sumTotalRank?:number;
+    sumIntensityRank?:number;
+    sumConstructionMaterials?:number;
 }
 
 

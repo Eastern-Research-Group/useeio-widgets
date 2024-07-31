@@ -336,6 +336,9 @@ export interface SectorContributionToImpact {
   commodity_output?: number;
   total_impact?: number;
   impact_per_dollar?:number;
+  total_rank?:number;
+  intensity_rank?:number;
+  construction_materials?:number;
 
 }
 

@@ -20,6 +20,11 @@ export class SmartSectorEEIO extends Widget {
     toggleNumSelection:number;
     toggleImpactSelection:string;
     toggleGroupSelection:string;
+    listSumSmartSectorTotalParts:SumSmartSectorTotalParts[];
+    perspective:string;
+    graphName:string;
+    sectorContributionToImpact:SectorContributionToImpact[] = []
+
     constructor(private _chartConfig: SmartSectorChartConfig) {
         super();
         this.modelSmartSectorApi = modelOfSmartSector({
@@ -37,11 +42,13 @@ export class SmartSectorEEIO extends Widget {
     this.toggleGroupSelection = 'group_detail';
     this.toggleImpactSelection = 'total_impact';
     this.modelSmartSectorApi.init()
+    this.graphName = graphName;
+    this.perspective = 'final'
     const sectorMappingList:SectorMapping[] = await this.modelSmartSectorApi.sectorMapping();  
     this.uniqueSortedMappingGroupNoDuplicates = uniqueSortedMappingGroupNoDuplicatesList(sectorMappingList,this.toggleGroupSelection);
-    let sectorContributionToImpact:SectorContributionToImpact[] = await this.modelSmartSectorApi.sectorContributionToImpactGhgAPI("final/"+graphName);
+    this.sectorContributionToImpact= await this.modelSmartSectorApi.sectorContributionToImpactGhgAPI("final/"+graphName);
     let nameWithNoSpace = graphName.replace(/\-/g," ");
-    let options = await this.getGraphs(sectorContributionToImpact, this.modelSmartSectorApi, nameWithNoSpace, this.toggleNumSelection,this.toggleImpactSelection,this.toggleGroupSelection);
+    let options = await this.getGraphs(this.sectorContributionToImpact, this.modelSmartSectorApi, nameWithNoSpace, this.toggleNumSelection,this.toggleImpactSelection,this.toggleGroupSelection);
     let option = await calculate(options,this._chartConfig.model,this.uniqueSortedMappingGroupNoDuplicates, nameWithNoSpace);
     this.chart = new ApexCharts(
         document.querySelector(this._chartConfig.selector),
@@ -61,29 +68,33 @@ export class SmartSectorEEIO extends Widget {
     this.toggleImpactSelection = selectImpactSelector;
 
     let selectGroupSelector = (selectGroupSelection != undefined || selectGroupSelection != null) ? selectGroupSelection : this.toggleGroupSelection; 
-    this.toggleGroupSelection = selectGroupSelector;
-
-    let sectorContributionToImpact:SectorContributionToImpact[] = []
-    
-    if(perspective === 'final')
+    if(this.toggleGroupSelection !== selectGroupSelector)
     {
-        sectorContributionToImpact = await this.modelSmartSectorApi.sectorContributionToImpactGhgAPI("final/"+graphName);
-    }
-    else if(perspective === 'direct')
-    {
-        sectorContributionToImpact = await this.modelSmartSectorApi.sectorContributionToImpactGhgAPI("direct/"+graphName);
+        this.toggleGroupSelection = selectGroupSelector;
+        const sectorMappingList:SectorMapping[] = await this.modelSmartSectorApi.sectorMapping(); 
+        this.uniqueSortedMappingGroupNoDuplicates = uniqueSortedMappingGroupNoDuplicatesList(sectorMappingList,this.toggleGroupSelection);
     }
 
-    const sectorMappingList:SectorMapping[] = await this.modelSmartSectorApi.sectorMapping(); 
+    if(this.perspective !== perspective || this.graphName !== graphName)
+    {
+        this.perspective = perspective;
+        this.graphName = graphName;
 
-
-    this.uniqueSortedMappingGroupNoDuplicates = uniqueSortedMappingGroupNoDuplicatesList(sectorMappingList,this.toggleGroupSelection);
+        if(perspective === 'final')
+        {
+            this.sectorContributionToImpact = await this.modelSmartSectorApi.sectorContributionToImpactGhgAPI("final/"+graphName);
+        }
+        else if(perspective === 'direct')
+        {
+            this.sectorContributionToImpact = await this.modelSmartSectorApi.sectorContributionToImpactGhgAPI("direct/"+graphName);
+        }
+    }
 
     let nameWithNoSpace = graphName.replace(/\-/g," ");
 
-    let options = await this.getGraphs(sectorContributionToImpact, this.modelSmartSectorApi, nameWithNoSpace,this.toggleNumSelection,this.toggleImpactSelection,this.toggleGroupSelection);
+    let listOfStackGraph = await this.getGraphs(this.sectorContributionToImpact, this.modelSmartSectorApi, nameWithNoSpace,this.toggleNumSelection,this.toggleImpactSelection,this.toggleGroupSelection);
     
-    let option = await calculate(options,this._chartConfig.model,this.uniqueSortedMappingGroupNoDuplicates, nameWithNoSpace, this.toggleImpactSelection);
+    let option = await calculate(listOfStackGraph,this._chartConfig.model,this.uniqueSortedMappingGroupNoDuplicates, nameWithNoSpace, this.toggleImpactSelection);
     
     this.chart.updateOptions(option);
     this.chart.resetSeries();
@@ -135,7 +146,10 @@ export class SmartSectorEEIO extends Widget {
                     sumSectorCode:sumSectorCode,
                     sumSectorName:sumSectorName,
                     sumImpactPerDollar:t.impact_per_purchase,
-                    sumPurchasedGroup:sumPurchasedGroup
+                    sumPurchasedGroup:sumPurchasedGroup,
+                    sumConstructionMaterials:t.construction_materials,
+                    sumIntensityRank:t.intensity_rank,
+                    sumTotalRank:t.total_rank
                   });
             }
         else
@@ -144,7 +158,10 @@ export class SmartSectorEEIO extends Widget {
                     sumSectorCode:sumSectorCode,
                     sumSectorName:sumSectorName,
                     sumtotalImpact:t.total_impact,
-                    sumPurchasedGroup:sumPurchasedGroup
+                    sumPurchasedGroup:sumPurchasedGroup,
+                    sumConstructionMaterials:t.construction_materials,
+                    sumIntensityRank:t.intensity_rank,
+                    sumTotalRank:t.total_rank
                   });
             }
 
@@ -187,15 +204,49 @@ export class SmartSectorEEIO extends Widget {
         
       });
 
-      let sumSmartSectorTotalParts: SumSmartSectorTotalParts[] = SumSmartSectorTotal(sectorsList,smartSectorListGroup,this.uniqueSortedMappingGroupNoDuplicates,selectImpactSelection);
+      this.listSumSmartSectorTotalParts = SumSmartSectorTotal(sectorsList,smartSectorListGroup,this.uniqueSortedMappingGroupNoDuplicates,selectImpactSelection);
 
       
 
-      let sortSumSmartSectorTotalParts:SumSmartSectorTotalParts[] = sumSmartSectorTotalParts.sort((a: SumSmartSectorTotalParts, b: SumSmartSectorTotalParts): any => {
+      let sortSumSmartSectorTotalParts:SumSmartSectorTotalParts[] = this.listSumSmartSectorTotalParts.sort((a: SumSmartSectorTotalParts, b: SumSmartSectorTotalParts): any => {
           return b._totalSectorCodeSummationImpact - a._totalSectorCodeSummationImpact;
       });
 
       return sortSumSmartSectorTotalParts;
+    }
+
+
+    async selectorFilter(totalRankSelector:{name:string,num:number})
+    {
+      let nameWithNoSpace = this.graphName.replace(/\-/g," ");
+      let sortSumSmartSectorTotalParts:SumSmartSectorTotalParts[]
+      if(totalRankSelector.name === 'total_rank')
+        {
+            sortSumSmartSectorTotalParts = this.listSumSmartSectorTotalParts.sort((a: SumSmartSectorTotalParts, b: SumSmartSectorTotalParts): any => {
+                return b._totalRank - a._totalRank;
+            });
+        }
+      if(totalRankSelector.name === 'intensity_rank')
+        {
+            sortSumSmartSectorTotalParts = this.listSumSmartSectorTotalParts.sort((a: SumSmartSectorTotalParts, b: SumSmartSectorTotalParts): any => {
+                return b._intensityRank - a._intensityRank;
+            });
+        }
+      if(totalRankSelector.name === 'construction_materials')
+        {
+            sortSumSmartSectorTotalParts = this.listSumSmartSectorTotalParts.sort((a: SumSmartSectorTotalParts, b: SumSmartSectorTotalParts): any => {
+                return b._constructionMaterials - a._constructionMaterials;
+            });
+        }
+
+      
+      this.toggleNumSelection = totalRankSelector.num;
+      let sortTopTen:SumSmartSectorTotalParts[] = sortSumSmartSectorTotalParts.slice(0,totalRankSelector.num);
+
+      let option = await calculate(sortTopTen,this._chartConfig.model,this.uniqueSortedMappingGroupNoDuplicates, nameWithNoSpace, this.toggleImpactSelection);
+
+      this.chart.updateOptions(option);
+     this.chart.resetSeries();
     }
 
   }

@@ -36,9 +36,11 @@
                 <div style=" margin-left: 20px;flex-grow: 1;">
                     <label for="grap-selected">Top Sectors: </label>
                     <br>
-                    <select id="my-select" onchange="toggleNumSelection(this.value)">
-                        <option value=25 >25</option>
-                        <option value=10 selected>10</option>
+                    <select id="mySelect" onchange="toggleNumSelection(this.value)">
+                        <option data-value='{"name":"total_rank","num":"10"}'>Top 10 Total Embodied GHG</option>
+                        <option data-value='{"name":"total_rank","num":"25"}'>Top 25 Total Embodied GHG</option>
+                        <option data-value='{"name":"intensity_rank","num":"10"}'>Top 10 Embodied GHG Intensity</option>
+                        <option data-value='{"name":"intensity_rank","num":"25"}'>Top 25 Embodied GHG Intensity</option>
                     </select>
                 </div>
 
@@ -64,7 +66,9 @@
 
     <script src="lib/apexcharts.min.js"></script>
     <script src="lib/useeio_widgets.js"></script>
-    <script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script  type="text/javascript"> 
         var perspectiveName = 'final';
         var graphType = 'GWP-AR6-100';
         var topSectors = 10;
@@ -102,13 +106,7 @@
                 smartSectorChart.selectiveGraph(graphType,perspectiveName,topSectors,impactSelector,groupSelector);
             }
 
-    function toggleNumSelection(n)
-            {
-                smartSectorChart.selectiveGraph(graphType,perspectiveName,n);
-                topSectors = n;
-
-                document.getElementById("graphTitle").innerHTML = `Top ${n} Sectors based on Total Embodied GHG Emissions`; 
-            }
+    
 
             document.addEventListener('input',(e)=>{
                 if(e.target.getAttribute('name')=="myRadios")
@@ -135,7 +133,17 @@
                     changeGroup();
                 }
             })
-</script>
+
+            function toggleNumSelection(n)
+            {
+                smartSectorChart.selectorFilter($('#mySelect').find(":selected").data("value"));
+
+                topSectors = $('#mySelect').find(":selected").data("value").num;
+                document.getElementById("graphTitle").innerHTML = `Top ${n} Sectors based on Total Embodied GHG Emissions`; 
+            }
+
+          
+        </script>
 </body>
 
 </html>
