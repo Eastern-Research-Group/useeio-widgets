@@ -10,12 +10,29 @@ export async function calculate(sortTopTen:SumSmartSectorTotalParts[],model: Web
         let sectorsList:Sector[] = await model.sectors();
         let sortedSectorCodes: string[] = sortedSectorCodeList(sortTopTen);
         let sortedSeries:{name:string,data:number[]}[] = sortedSeriesList(sortTopTen,uniqueSortedMapping,impactSelector);
-        let yaxisTitle = 'Total Emissions (MMT CO2e)';
-
+        let yaxisTitle = '';
         if (impactSelector == 'impact_per_purchase')
           {
-             yaxisTitle = 'Emissions Intensity (tonnes CO2e per Million $ of Output)'
+            if (titleGraph == 'Social Cost of Carbon')
+              {
+                yaxisTitle = 'Emissions Intensity (Million $ per Million $ of Output)'
+              }
+            else
+              {
+                yaxisTitle = 'Emissions Intensity (tonnes CO2e per Million $ of Output)'
+              };
           }
+        else
+          {
+            if (titleGraph == 'Social Cost of Carbon')
+              {
+                yaxisTitle = 'Total Impact (Billion dollars)'
+              }
+            else
+              {
+                yaxisTitle = 'Total Emissions (MMT CO2e)'
+              };
+          };
           
         let sortedSectorCodesWithNamesWithArray: string[][] = sortedSectorCodes.map( t =>
          {

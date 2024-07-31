@@ -25,7 +25,11 @@ export async function apexGraph(sortingImpactPerPurchaseWithTopList:SortedImpact
            
             return  t.purchase_commodity.split(' ')
           });
-
+        let yaxisTitle = 'Emissions Intensity (tonnes CO2e per Million $ of Output)';
+        if (graphTitleName == 'Social Cost of Carbon')
+          {
+            yaxisTitle = 'Emissions Intensity (Million $ per Million $ of Output)'
+          }
 
       return {
         series: [{
@@ -59,7 +63,7 @@ export async function apexGraph(sortingImpactPerPurchaseWithTopList:SortedImpact
       },
       yaxis: {
         title: {
-          text: 'Emissions Intensity (tonnes CO2e per Million $ of Output)'
+          text: yaxisTitle
         },
         forceNiceScale: true,
         labels: {
