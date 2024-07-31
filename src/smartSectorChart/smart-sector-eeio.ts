@@ -105,13 +105,13 @@ export class SmartSectorEEIO extends Widget {
     else if(this.selectorName === 'total_rank')
         {
             listOfStackGraph = listOfStackGraph.sort((a: SumSmartSectorTotalParts, b: SumSmartSectorTotalParts): any => {
-                 return b._totalRank - a._totalRank;
+                 return a._totalRank - b._totalRank;
             });
         }
     else if(this.selectorName === 'intensity_rank')
         {
             listOfStackGraph = listOfStackGraph.sort((a: SumSmartSectorTotalParts, b: SumSmartSectorTotalParts): any => {
-                return b._intensityRank - a._intensityRank;
+                return a._intensityRank - b._intensityRank;
             });
         }
     else if(this.selectorName === 'energy_intensive')
@@ -247,13 +247,13 @@ export class SmartSectorEEIO extends Widget {
     else if(this.selectorName === 'total_rank')
         {
             listOfStackGraph = this.listSumSmartSectorTotalParts.sort((a: SumSmartSectorTotalParts, b: SumSmartSectorTotalParts): any => {
-                 return b._totalRank - a._totalRank;
+                 return a._totalRank - b._totalRank;
             });
         }
     else if(this.selectorName === 'intensity_rank')
         {
             listOfStackGraph = this.listSumSmartSectorTotalParts.sort((a: SumSmartSectorTotalParts, b: SumSmartSectorTotalParts): any => {
-                return b._intensityRank - a._intensityRank;
+                return a._intensityRank - b._intensityRank;
             });
         }
     else if(this.selectorName === 'energy_intensive')
@@ -275,13 +275,13 @@ export class SmartSectorEEIO extends Widget {
       if(totalRankSelector.name === 'total_rank')
         {
             sortSumSmartSectorTotalParts = this.listSumSmartSectorTotalParts.sort((a: SumSmartSectorTotalParts, b: SumSmartSectorTotalParts): any => {
-                return b._totalRank - a._totalRank;
+                return a._totalRank - b._totalRank;
             });
         }
       else if(totalRankSelector.name === 'intensity_rank')
         {
             sortSumSmartSectorTotalParts = this.listSumSmartSectorTotalParts.sort((a: SumSmartSectorTotalParts, b: SumSmartSectorTotalParts): any => {
-                return b._intensityRank - a._intensityRank;
+                return a._intensityRank - b._intensityRank;
             });
         }
       else if(totalRankSelector.name === 'construction_materials')
