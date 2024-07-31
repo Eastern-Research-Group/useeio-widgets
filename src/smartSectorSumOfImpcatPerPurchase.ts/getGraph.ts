@@ -5,7 +5,7 @@ import {SortedImpactPerPurchaseTopList} from '../smartSectorChart/smartSector';
 export async function apexGraph(sortingImpactPerPurchaseWithTopList:SortedImpactPerPurchaseTopList[],sectorName:string,graphTitleName?:string): Promise<apex.ApexOptions> 
     {     
         let data:{
-            purchae_commodity: string;
+            purchase_commodity: string;
             impactPerPurchase: number;
         }[]
         let values  = sortingImpactPerPurchaseWithTopList.find( t => {
@@ -16,16 +16,16 @@ export async function apexGraph(sortingImpactPerPurchaseWithTopList:SortedImpact
         
         data = values.topFifteenImpactPerPurchase.map(t => {
             return {
-            purchae_commodity:t.purchaseCommodity,
+            purchase_commodity:t.purchaseCommodity,
             impactPerPurchase:t.impactPerPurchase}
         });
         let sectorGraphTitle = values.sector_code + ' - ' +values.sector_name;
         let sortedSectorCodesWithNamesWithArray: string[][] = data.map( t =>
           {
            
-            return  t.purchae_commodity.split(' ')
+            return  t.purchase_commodity.split(' ')
           });
-      
+
 
       return {
         series: [{
@@ -72,7 +72,7 @@ export async function apexGraph(sortingImpactPerPurchaseWithTopList:SortedImpact
       tooltip: {
         y: {
           formatter: function (val) {
-            return "" + val + ""
+            return "" + val.toFixed(3) + ""
           }
         }
       }

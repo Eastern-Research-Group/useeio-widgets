@@ -17,7 +17,7 @@ export async function calculate(sortTopTen:SumSmartSectorTotalParts[],model: Web
              yaxisTitle = 'Emissions Intensity (Metric Tons CO2e per Million Dollars of Output)'
           }
           
-                  let sortedSectorCodesWithNamesWithArray: string[][] = sortedSectorCodes.map( t =>
+        let sortedSectorCodesWithNamesWithArray: string[][] = sortedSectorCodes.map( t =>
          {
           let sectorName:Sector = sectorsList.find( s => 
             {
@@ -27,7 +27,7 @@ export async function calculate(sortTopTen:SumSmartSectorTotalParts[],model: Web
               }
             })
           
-           return  [sectorName.id].concat(sectorName.name)
+           return  [sectorName.name].concat(sectorName.id)
          });
 
 
@@ -91,7 +91,7 @@ export async function calculate(sortTopTen:SumSmartSectorTotalParts[],model: Web
                   max: undefined,
                   labels: {
                     formatter: function(val) {
-                      return val.toLocaleString();
+                      return val.toFixed(1);
                     }
                   }
                 }
@@ -103,6 +103,11 @@ export async function calculate(sortTopTen:SumSmartSectorTotalParts[],model: Web
                 enabled: true,
                 onDatasetHover: {
                     highlightDataSeries: false,
+                },
+                y: {
+                  formatter: function (val) {
+                    return "" + val.toFixed(3) + ""
+                  }
                 },
                 x: {
                     show: false
