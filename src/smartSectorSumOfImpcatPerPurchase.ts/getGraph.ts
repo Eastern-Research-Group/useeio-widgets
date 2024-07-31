@@ -34,7 +34,7 @@ export async function apexGraph(sortingImpactPerPurchaseWithTopList:SortedImpact
       }],
         chart: {
         type: 'bar',
-        height: 350
+        height: 500
       },
       plotOptions: {
         bar: {
@@ -59,8 +59,10 @@ export async function apexGraph(sortingImpactPerPurchaseWithTopList:SortedImpact
       },
       yaxis: {
         title: {
-          text: 'Emissions Intensity (Metric Tons CO2e per Million Dollars of Output)'
-        },labels: {
+          text: 'Emissions Intensity (tonnes CO2e per Million $ of Output)'
+        },
+        forceNiceScale: true,
+        labels: {
           formatter: function(val) {
             return (Math.round(val * 100) / 100).toFixed(2);
           }

@@ -14,7 +14,7 @@ export async function calculate(sortTopTen:SumSmartSectorTotalParts[],model: Web
 
         if (impactSelector == 'impact_per_purchase')
           {
-             yaxisTitle = 'Emissions Intensity (Metric Tons CO2e per Million Dollars of Output)'
+             yaxisTitle = 'Emissions Intensity (tonnes CO2e per Million $ of Output)'
           }
           
         let sortedSectorCodesWithNamesWithArray: string[][] = sortedSectorCodes.map( t =>
@@ -40,7 +40,7 @@ export async function calculate(sortTopTen:SumSmartSectorTotalParts[],model: Web
             colors: colors,
                 chart: {
                 type: 'bar',
-                height:450 ,
+                height: 500,
                 stacked: true,
                 toolbar: {
                   show: true
@@ -87,6 +87,7 @@ export async function calculate(sortTopTen:SumSmartSectorTotalParts[],model: Web
                     
                     text: yaxisTitle
                   },
+                  forceNiceScale: true,
                   min: 0,
                   max: undefined,
                   labels: {
