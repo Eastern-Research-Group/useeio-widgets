@@ -151,10 +151,6 @@ export async function calculate(topSectorList:SumSmartSectorTotalParts[],model: 
               show: true
             }
           },
-        title:{
-          text: 'No Data',
-          align: 'center'
-        },
         labels: [],
         noData: {
           text: "There's no data",
