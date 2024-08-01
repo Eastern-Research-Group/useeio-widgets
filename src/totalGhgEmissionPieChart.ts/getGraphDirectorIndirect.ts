@@ -51,7 +51,6 @@ export async function apexGraph(contributionList:SortingPercentContributionIndir
           }
         else
         {
-          let sectorGraphTitle = values._sectorCode + ' - ' +sector_name;
 
           values._contributionList.map(t => {
             sectorPurchasedList.push(t.directOrIndirect)
@@ -73,13 +72,6 @@ export async function apexGraph(contributionList:SortingPercentContributionIndir
             chart: {
             width: 600,
             type: 'pie',
-          },
-          title:{
-            text: sectorGraphTitle +` (${graphName})`,
-            align: 'center',
-            style: {
-              fontSize:  '14px',
-            }
           },
           labels: sectorPurchasedList,
           responsive: [{

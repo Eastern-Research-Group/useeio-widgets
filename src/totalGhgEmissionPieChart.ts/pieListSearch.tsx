@@ -87,6 +87,7 @@ const Component = (props: { widget: PieListSearch }) => {
 
     const [searchTerm, setSearchTerm] = React.useState<string>('');
     const [value, setValue] = React.useState<string>('');
+    const [title, setTitle] = React.useState<string>('1111A0 - Fresh soybeans, canola, flaxseeds, and other oilseeds');
     const [graph, setGraph] = React.useState<string>('GWP-AR6-100');
     const [graphDetails, setGraphDetails] = React.useState<string>('Aggregate');
     const [aggregate, setAggregate] = React.useState<boolean>( true );
@@ -101,7 +102,9 @@ const Component = (props: { widget: PieListSearch }) => {
         sectors = sectors.filter((s) => {return ((strings.search(s.name, searchTerm) >= 0)  || (strings.search(s.code, searchTerm) >= 0))});
     }
 
-    const handleState = (e:string) => {
+    const handleState = (e:string,c:string) => {
+        setTitle( c + " - " + e)
+
         setSearchTerm('');
         setValue(e);
         if(graphDetails === 'Aggregate')
@@ -176,62 +179,99 @@ const Component = (props: { widget: PieListSearch }) => {
         },
       }));
 
-
-
     let classes = useStyles();
     return (
-        <div>
-            <FormControl className={classes.margin} >
-                        <TextField value={searchTerm}  label="Search Sector" variant="outlined" size="small" onChange={e => onSearch(e.target.value)} />
-                        { searchTerm != null ?
-                        <div className={classes.selector} id="div1">
-                            <table id="sector-list-table"> 
-                                <tbody id="sectorListSearch" className="sector-list-body">{rows}</tbody>
-                            </table>
-                            </div> : null
-                        }
-            </FormControl>
-            <FormControl className={classes.margin} >
-                <InputLabel id="demo-controlled-open-select-label">Select Metric (GWP or SCC):</InputLabel>
-                <Select
-                native
-                value={graph}
-                onChange={handleChange}
-                label="Select Metric (GWP or SCC)"
-                inputProps={{
-                    name: 'graph',
-                }}
-                >
-                <option value="GWP-AR6-20">20yr GWP</option>
-                <option value="GWP-AR6-100">100yr GWP</option>
-                <option value="Social-Cost-of-Carbon">Social Cost of Carbon</option>
-                </Select>
-            </FormControl>
-            <FormControl className={classes.margin} >
-                <InputLabel id="demo-controlled-open-select-label">Sector Grouping</InputLabel>
-                <Select
-                id="aggregateId"
-                native
-                value={graphDetails}
-                onChange={handleChangeGraphDetail}
-                label="Detail or Aggregate"
-                inputProps={{
-                    name: 'details',
-                }}
-                >
-                <option value="Aggregate">Direct vs Indirect</option>
-                <option value="Detail">Detailed</option>
-               
-                </Select>
-            </FormControl>
-            <div  style={{
-            position:'relative'
+        <div style={{
+            display:'flex',
+            flexDirection:'row',
+            flexWrap:'wrap',
+            gap: '5%'
             }}>
-                    <div style={{visibility: aggregate ? 'visible' : 'hidden', position: 'absolute', marginLeft: 'auto', marginRight: 'auto' }} id="profile-chart">
+            <div>
+                <div style={{
+                display:'flex',
+                flexDirection:'column',
+                flexWrap:'wrap'
+                }}>
+                    <FormControl className={classes.margin} >
+                            <TextField value={searchTerm}  label="Search Sector" variant="outlined" size="small" onChange={e => onSearch(e.target.value)} />
+                            { searchTerm != null ?
+                            <div className={classes.selector} id="div1">
+                                <table id="sector-list-table"> 
+                                    <tbody id="sectorListSearch" className="sector-list-body">{rows}</tbody>
+                                </table>
+                                </div> : null
+                            }
+                    </FormControl>
+                    <div style={{
+                    display:'flex',
+                    flexDirection:'row',
+                    flexWrap:'wrap'
+                    }}>
+                        <FormControl className={classes.margin} >
+                        <InputLabel id="demo-controlled-open-select-label">Select Metric (GWP or SCC):</InputLabel>
+                        <Select
+                        native
+                        value={graph}
+                        onChange={handleChange}
+                        label="Select Metric (GWP or SCC)"
+                        inputProps={{
+                            name: 'graph',
+                        }}
+                        >
+                        <option value="GWP-AR6-20">20yr GWP</option>
+                        <option value="GWP-AR6-100">100yr GWP</option>
+                        <option value="Social-Cost-of-Carbon">Social Cost of Carbon</option>
+                        </Select>
+                    </FormControl>
+                    <FormControl className={classes.margin} >
+                        <InputLabel id="demo-controlled-open-select-label">Sector Grouping</InputLabel>
+                        <Select
+                        id="aggregateId"
+                        native
+                        value={graphDetails}
+                        onChange={handleChangeGraphDetail}
+                        label="Detail or Aggregate"
+                        inputProps={{
+                            name: 'details',
+                        }}
+                        >
+                        <option value="Aggregate">Direct vs Indirect</option>
+                        <option value="Detail">Detailed</option>
+                    
+                        </Select>
+                    </FormControl>
                     </div>
-                    <div style={{visibility: detail ? 'visible' : 'hidden', position: 'absolute', marginLeft: 'auto', marginRight: 'auto'}} id="profile-chart-details">
-                    </div>
+                </div>
             </div>
+
+            <div>
+                <div style={{
+                    display:'flex',
+                    flexDirection:'column'
+                    }}>
+                    <div style={{
+                        overflowWrap: 'break-word',
+                        whiteSpace: 'normal',
+                        fontWeight: 'bold',
+                        wordWrap:'break-word',
+                        textAlign: 'center',
+                        width: '500px'
+                        }}>
+                            {title} ({graph})
+                        </div>
+                        <div  style={{
+                    position:'relative',
+                    }}>
+                            <div style={{visibility: aggregate ? 'visible' : 'hidden', position: 'absolute', marginLeft: 'auto', marginRight: 'auto' }} id="profile-chart">
+                            </div>
+                            <div style={{visibility: detail ? 'visible' : 'hidden', position: 'absolute', marginLeft: 'auto', marginRight: 'auto'}} id="profile-chart-details">
+                            </div>
+                    </div>
+                </div>
+            
+            </div>
+            
       </div>
     );
 };
@@ -263,12 +303,12 @@ const Row = (props: RowProps) => {
                 key={props.sector.code}
                 className={classes.td}
             >
-                <a style={{ cursor: "pointer" }} title={sector.code} onClick={()=> props.handleState(sector.name)}>
+                <a style={{ cursor: "pointer" }} title={sector.code} onClick={()=> props.handleState(sector.name,sector.code)}>
                         {sector.code}
                 </a>
             </td>
             <td className={classes.td}>
-                <a style={{ cursor: "pointer" }} title={sector.name} onClick={()=> props.handleState(sector.name)}>
+                <a style={{ cursor: "pointer" }} title={sector.name} onClick={()=> props.handleState(sector.name,sector.code)}>
                     {strings.cut(sector.name, 80)}
                 </a>
             </td>
