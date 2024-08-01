@@ -82,7 +82,10 @@ export async function calculate(topSectorList:SumSmartSectorTotalParts[],model: 
                   horizontal: false,
                   dataLabels: {
                     total: {
-                      enabled: false
+                      enabled: true,
+                      formatter: function (val) {
+                        return "" + parseFloat(val).toFixed(1) + ""
+                      }
                     }
                   }
                 },
