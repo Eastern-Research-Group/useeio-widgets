@@ -65,6 +65,7 @@ export class SmartSectorEEIO extends Widget {
 
     let selectNumOfSectors = (selectNumSectors != undefined || selectNumSectors != null) ? selectNumSectors : this.toggleNumSelection; 
     this.toggleNumSelection = selectNumOfSectors;
+
     let selectImpactSelector = (selectImpactSelection != undefined || selectImpactSelection != null)? selectImpactSelection : this.toggleImpactSelection; 
     this.toggleImpactSelection = selectImpactSelector;
 
@@ -95,32 +96,6 @@ export class SmartSectorEEIO extends Widget {
 
     let listOfStackGraph = await this.getGraphs(this.sectorContributionToImpact, this.modelSmartSectorApi, nameWithNoSpace,this.toggleNumSelection,this.toggleImpactSelection,this.toggleGroupSelection);
     
-    if(this.selectorName === 'construction_materials')
-        {
-            listOfStackGraph = listOfStackGraph.filter(t => {
-                return t._constructionMaterials === 1;
-            })
-        }
-
-    else if(this.selectorName === 'total_rank')
-        {
-            listOfStackGraph = listOfStackGraph.sort((a: SumSmartSectorTotalParts, b: SumSmartSectorTotalParts): any => {
-                 return a._totalRank - b._totalRank;
-            });
-        }
-    else if(this.selectorName === 'intensity_rank')
-        {
-            listOfStackGraph = listOfStackGraph.sort((a: SumSmartSectorTotalParts, b: SumSmartSectorTotalParts): any => {
-                return a._intensityRank - b._intensityRank;
-            });
-        }
-    else if(this.selectorName === 'energy_intensive')
-        {
-            listOfStackGraph = listOfStackGraph.filter(t => {
-                    return t._energyIntensive === 1;
-             })
-        }
-
     let option = await calculate(listOfStackGraph,this._chartConfig.model,this.uniqueSortedMappingGroupNoDuplicates, nameWithNoSpace, this.toggleImpactSelection, this.toggleGroupSelection);
     
     this.chart.updateOptions(option);
@@ -130,7 +105,6 @@ export class SmartSectorEEIO extends Widget {
     async getGraphs(sectorContributionToImpact:SectorContributionToImpact[], modelSmartSector:WebModelSmartSector,scc:string,selectNumSectors?:number, selectImpactSelection?:string, selectGroupSelection?:string) : Promise<SumSmartSectorTotalParts[]>
     {
         let sortSumSmartSectorTotalParts:SumSmartSectorTotalParts[] = await this.calculateValues(sectorContributionToImpact,modelSmartSector,scc, selectImpactSelection,selectGroupSelection)
-
         let sortTopTen:SumSmartSectorTotalParts[] = sortSumSmartSectorTotalParts.slice(0,selectNumSectors);
 
 
@@ -142,7 +116,6 @@ export class SmartSectorEEIO extends Widget {
       const sectorMappingList:SectorMapping[] = await modelSmartSector.sectorMapping();
       const sectorsList:Sector[] = await this._chartConfig.model.sectors();
       
-
       let smartSectorListGroup: SmartSector[]  = []
       sectorContributionToImpactGhg.forEach((t, i) => {
         let sumSectorCode = t.sector_code;
@@ -264,6 +237,8 @@ export class SmartSectorEEIO extends Widget {
                     return t._energyIntensive === 1;
              })
         }
+
+        listOfStackGraph = listOfStackGraph.filter(t => {return (t._model === "Detail")})
 
       return listOfStackGraph;
     }

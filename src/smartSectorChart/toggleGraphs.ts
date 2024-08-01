@@ -10,8 +10,6 @@ export async function calculate(topSectorList:SumSmartSectorTotalParts[],model: 
       let sortTopTen:SumSmartSectorTotalParts[] = topSectorList.sort((a: SumSmartSectorTotalParts, b: SumSmartSectorTotalParts): any => {
         return b._totalSectorCodeSummationImpact - a._totalSectorCodeSummationImpact;})
 
-      sortTopTen = sortTopTen.filter(t => {return (t._model === "Detail")})
-
       if(sortTopTen.length > 0){
         let sectorsList:Sector[] = await model.sectors();
         let sortedSectorCodes: string[] = sortedSectorCodeList(sortTopTen);
