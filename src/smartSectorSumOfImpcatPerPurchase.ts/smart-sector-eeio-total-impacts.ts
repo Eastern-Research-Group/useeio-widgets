@@ -3,7 +3,8 @@ import { WebModel, Sector } from "useeio";
 import { modelOfSmartSector, WebModelSmartSector, SectorMapping, SectorContributionToImpact } from '../smartSectorWebApi.ts/webApiSmartSector';
 import {selectSectorName, uniqueSortedMappingGroupNoDuplicatesList } from '../smartSectorCalc/smartSectorCalculations'
 import {SortedImpactPerPurchaseTopList, SortingImpactPerPurchaseWithTop, ImpactPerPurchaseSector} from '../smartSectorChart/smartSector'
-import { apexGraph } from "../smartSectorSumOfImpcatPerPurchase.ts/getGraph";
+import { apexGraph } from "../smartSectorSumOfImpcatPerPurchase.ts/getImpactGraph";
+import { allGridColumnsFieldsSelector } from "@mui/x-data-grid";
 
 export interface SmartSectorChartConfig {
     model: WebModel;
@@ -12,7 +13,7 @@ export interface SmartSectorChartConfig {
 }
 
 
-export class SmartSectorEEIOImpactPurchasePerSector extends Widget 
+export class SmartSectorEEIOTotalImpactPerSector extends Widget 
 {
     chart:ApexCharts;
     modelSmartSectorApi:WebModelSmartSector;
@@ -44,7 +45,7 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget
     this.uniqueSortedMappingGroupNoDuplicates = uniqueSortedMappingGroupNoDuplicatesList(sectorMappingList);
     let titleNameWithNoSpace = graphName.replace(/\-/g," ");
     this.sectorContributionToImpact = await this.modelSmartSectorApi.sectorContributionToImpactRankedGhgAPI("final/"+graphName);
-    this.getTopValuesFromSectors = await this.getTopFifteenImpactPerPurchaseWithGroup(this.sectorContributionToImpact,this.modelSmartSectorApi);
+    this.getTopValuesFromSectors = await this.getTopFifteenTotalImpactWithGroup(this.sectorContributionToImpact,this.modelSmartSectorApi);
 
     let options = await apexGraph(this.getTopValuesFromSectors,sector_name, titleNameWithNoSpace);
     this.chart = new ApexCharts(
@@ -66,7 +67,7 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget
     this.sectorContributionToImpact = [];
     this.getTopValuesFromSectors = [];
     this.sectorContributionToImpact = await this.modelSmartSectorApi.sectorContributionToImpactRankedGhgAPI("final/"+graphName);
-    this.getTopValuesFromSectors = await this.getTopFifteenImpactPerPurchaseWithGroup(this.sectorContributionToImpact,this.modelSmartSectorApi);
+    this.getTopValuesFromSectors = await this.getTopFifteenTotalImpactWithGroup(this.sectorContributionToImpact,this.modelSmartSectorApi);
 
     let options = await apexGraph(this.getTopValuesFromSectors,sector_name, titleNameWithNoSpace);
     this.chart.updateOptions(options);
@@ -85,7 +86,7 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget
     return this.graphName
    }
 
-   async getTopFifteenImpactPerPurchaseWithGroup(sectorContributionToImpactGhg:SectorContributionToImpact[],modelSmartSector:WebModelSmartSector):Promise<SortedImpactPerPurchaseTopList[]>
+   async getTopFifteenTotalImpactWithGroup(sectorContributionToImpactGhg:SectorContributionToImpact[],modelSmartSector:WebModelSmartSector):Promise<SortedImpactPerPurchaseTopList[]>
   {
     const sectorMappingList:SectorMapping[] = await modelSmartSector.sectorMapping();
     const sectorsList:Sector[] = await this._chartConfig.model.sectors();
@@ -93,8 +94,8 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget
   
     sectorContributionToImpactGhg.forEach((t, i) => 
     {
-      if (t.impact_per_purchase > 0.001) {
-
+      
+      //All records in (sector_contribution_to_impact_ranked/final) of "total_impact" 
       let purchasedGroup = modelSmartSector.findPurchasedGroup(t.purchased_commodity_code,sectorMappingList);
       let sectorName = selectSectorName(t.sector_code,sectorsList);
       let purchaseCommodity
@@ -114,7 +115,7 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget
           {
             sectorCode:t.sector_code,
             purchaseCommodity:purchaseCommodity,
-            impactPerPurchase:t.impact_per_purchase,
+            totalImpact:t.total_impact,
             purchasedGroup:purchasedGroup
           }
         );
@@ -136,7 +137,7 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget
           sortingImpactPerPurchaseWithTop15.addSmartSectorsByCommodityGroup({
             sectorCode:t.sector_code,
             purchaseCommodity:purchaseCommodity,
-            impactPerPurchase:t.impact_per_purchase,
+            totalImpact:t.total_impact,
             purchasedGroup:purchasedGroup
           });
         }
@@ -148,7 +149,7 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget
             {
               sectorCode:t.sector_code,
               purchaseCommodity:purchaseCommodity,
-              impactPerPurchase:t.impact_per_purchase,
+              totalImpact:t.total_impact,
               purchasedGroup:purchasedGroup
             }
           );
@@ -157,11 +158,10 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget
         }
         
       }
-    }
     });
 
     let sortedImpactPerPurchaseTopList:SortedImpactPerPurchaseTopList[] = sortListWithTop15OfEachSector.map(t => {
-      
+
       let topFifteen:ImpactPerPurchaseSector[] = t._smartSectors.sort((a: ImpactPerPurchaseSector, b: ImpactPerPurchaseSector): any => {
           
         return b.totalImpact - (a.totalImpact);
@@ -176,11 +176,12 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget
      const directObject = topFifteen.filter(t => t.purchaseCommodity === 'Direct')
      topFifteen.splice(directIndex,1)
      topFifteen.push(...directObject)
-     
+
+
       return {
         sector_code: t._sectorCode,
         sector_name: t._sectorName,
-        topFifteenImpactPerPurchase: topFifteen
+        topFifteenTotalImpact: topFifteen
       }
       
     })

@@ -6,7 +6,7 @@ export async function apexGraph(sortingImpactPerPurchaseWithTopList:SortedImpact
     {     
         let data:{
             purchase_commodity: string;
-            impactPerPurchase: number;
+            totalImpact: number;
         }[]
         let values  = sortingImpactPerPurchaseWithTopList.find( t => {
             if(t.sector_name === sectorName){
@@ -14,27 +14,32 @@ export async function apexGraph(sortingImpactPerPurchaseWithTopList:SortedImpact
             }
         })
         
-        data = values.topFifteenImpactPerPurchase.map(t => {
+        data = values.topFifteenTotalImpact.map(t => {
             return {
             purchase_commodity:t.purchaseCommodity,
-            impactPerPurchase:t.impactPerPurchase}
+            totalImpact:t.totalImpact}
         });
-        let sectorGraphTitle = values.sector_code + ' - ' +values.sector_name;
+
         let sortedSectorCodesWithNamesWithArray: string[][] = data.map( t =>
           {
            
             return  t.purchase_commodity.split(' ')
           });
-        let yaxisTitle = 'Emissions Intensity (tonnes CO2e per Million $ of Output)';
+
+        let yaxisTitle = '';
         if (graphTitleName == 'Social Cost of Carbon')
-          {
-            yaxisTitle = 'Emissions Intensity (Million $ per Million $ of Output)'
-          }
+        {
+            yaxisTitle = 'Total Impact (Billion dollars)'
+        }
+        else
+        {
+            yaxisTitle = 'Total Emissions (MMT CO2e)'
+        };
 
       return {
         series: [{
-        name: 'Emissions Intensity',
-        data: data.map(t => t.impactPerPurchase)
+        name: 'Total Emissions',
+        data: data.map(t => t.totalImpact)
       }],
         chart: {
         type: 'bar',

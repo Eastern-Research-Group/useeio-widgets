@@ -121,12 +121,14 @@ export interface ContributionListForSectorDirectOrIndirect {
 export interface ImpactPerPurchaseSector{
     sectorCode:string;
     purchaseCommodity:string;
-    impactPerPurchase:number;
+    impactPerPurchase?:number;
     purchasedGroup:string;
+    totalImpact?:number;
 }
 
 export interface SortedImpactPerPurchaseTopList{
     sector_code:string;
     sector_name:string;
-    topFifteenImpactPerPurchase:ImpactPerPurchaseSector[];
+    topFifteenImpactPerPurchase?:ImpactPerPurchaseSector[];
+    topFifteenTotalImpact?:ImpactPerPurchaseSector[];
 }

@@ -30,7 +30,6 @@ import { IOGrid } from "./widgets/iogrid/iogrid";
 import { DotsMenu } from "./widgets/dotsMenu";
 import { SectorListSearch}from './smartSectorSumOfImpcatPerPurchase.ts/sectorListSearch';
 import { PieListSearch, SmartSectorChartConfigPie} from './totalGhgEmissionPieChart.ts/pieListSearch';
-import { SmartSectorChartConfigModels } from "./smartSectorSumOfImpcatPerPurchase.ts/sectorListSearch";
 
 export * from "./naics";
 
@@ -114,7 +113,7 @@ export function smartSectorChart(config: SmartSectorChartConfig): SmartSectorEEI
     return new SmartSectorEEIO(config);
 }
 
-export function sectorListSearch(config: SmartSectorChartConfigModels): SectorListSearch {
+export function sectorListSearch(config: SmartSectorChartConfigPie): SectorListSearch {
     return new SectorListSearch(config);
 }
 
