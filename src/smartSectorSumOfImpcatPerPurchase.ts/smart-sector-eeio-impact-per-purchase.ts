@@ -175,7 +175,7 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget
      const directIndex = topFifteen.findIndex(t => t.purchaseCommodity === 'Direct')
      const directObject = topFifteen.filter(t => t.purchaseCommodity === 'Direct')
      topFifteen.splice(directIndex,1)
-     topFifteen.push(...directObject)
+     topFifteen.splice(0, 0, ...directObject)
      
       return {
         sector_code: t._sectorCode,
