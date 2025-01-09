@@ -23,7 +23,7 @@ export async function calculate(topSectorList:SumSmartSectorTotalParts[],model: 
               }
             else
               {
-                yaxisTitle = 'Emissions Intensity (tonnes CO2e per Million $ of Output)'
+                yaxisTitle = 'Emissions Intensity (Metric tons CO2e per Million $ of Output)'
               };
           }
         else
