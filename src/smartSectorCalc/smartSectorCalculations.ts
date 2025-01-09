@@ -134,6 +134,10 @@ export function selectSectorName(sectorId:string, sectorList:Sector[]): string {
         }
     });
 
+    if(sector == null || sector == undefined){
+        return "Direct"
+    }
+
     return sector?.name
 }
 
