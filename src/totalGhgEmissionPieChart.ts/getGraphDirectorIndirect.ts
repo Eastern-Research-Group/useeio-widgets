@@ -72,7 +72,31 @@ export async function apexGraph(contributionList:SortingPercentContributionIndir
             chart: {
             width: 600,
             type: 'pie',
-          },
+            toolbar: {
+              show: true,
+              tools: {
+                  download: true,
+                  zoom: false,
+                  zoomin: false,
+                  zoomout: false,
+                  pan: false,
+                  reset: false,
+              },
+              export: {
+                  csv: {
+                      filename: 'Direct vs Indirect',
+                      columnDelimiter: ',',
+                      headerCategory: 'Sector Purchased',
+                      headerValue: 'Contribution'
+                  },
+                  svg: {
+                      filename: 'Direct vs Indirect'
+                  },
+                  png: {
+                      filename: 'Direct vs Indirect'
+                  }
+              }
+          }},
           labels: sectorPurchasedList,
           responsive: [{
             breakpoint: 480,

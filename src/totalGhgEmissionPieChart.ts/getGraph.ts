@@ -71,7 +71,31 @@ export async function apexGraph(contributionList:SortingPercentContribution[],se
             chart: {
             width: 600,
             type: 'pie',
-          },
+            toolbar: {
+              show: true,
+              tools: {
+                  download: true,
+                  zoom: false,
+                  zoomin: false, 
+                  zoomout: false,
+                  pan: false,
+                  reset: false,
+              },
+              export: {
+                  csv: {
+                      filename: 'Detailed',
+                      columnDelimiter: ',',
+                     headerCategory: 'Sector Purchased',
+                      headerValue: 'Contribution'
+                  },
+                  svg: {
+                      filename: 'Detailed'
+                  },
+                  png: {
+                      filename: 'Detailed'
+                  }
+              }
+          }},
           labels: sectorPurchasedList,
           responsive: [{
             breakpoint: 480,
