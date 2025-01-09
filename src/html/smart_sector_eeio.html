@@ -10,7 +10,7 @@
 
 <body>
     <h1 id="graphTitle" class="text-center">Top 10 Sectors based on Total Embodied GHG Emissions</h1>
-	<p>For the selected group of sectors, this chart compares the contribution to total impacts (Global Warming Potential (GWP) or Social Cost of Carbon (SCC)) or Emission Intensity from <em>Direct</em> emissions from facility operations and <em>Indirect</em> emissions embedded in the purchases made from all other sectors.</p>
+	<p>For the selected group of sectors, this chart presents the total embodied GHG emissions or emission intensity of each sector based on contributions from <em>Direct</em> emissions due to the sector's operations and <em>Indirect</em> emissions embedded in the purchases made from all other sectors in the supply chain.</p>
     <div style=" display: flex; flex-direction: column;height: 85vh;">
         <div style=" flex-grow: 1;">
                     <div id="smart-sector-eeio">
@@ -37,19 +37,19 @@
                     <label for="grap-selected">Sector Filter: </label>
                     <br>
                     <select id="mySelect" onchange="toggleNumSelection(this.value)">
-                        <option data-value='{"name":"total_rank","num":"10"}'>Top 10 Total Embodied GHG</option>
-                        <option data-value='{"name":"total_rank","num":"25"}'>Top 25 Total Embodied GHG</option>
+                        <option data-value='{"name":"total_rank","num":"10"}'>Top 10 Total Embodied GHG Emissions</option>
+                        <option data-value='{"name":"total_rank","num":"25"}'>Top 25 Total Embodied GHG Emissions</option>
                         <option data-value='{"name":"intensity_rank","num":"10"}'>Top 10 Embodied GHG Intensity</option>
                         <option data-value='{"name":"intensity_rank","num":"25"}'>Top 25 Embodied GHG Intensity</option>
-                        <option data-value='{"name":"construction_materials"}'>Construction Materials</option>
-                        <option data-value='{"name":"energy_intensive"}'>Energy Intensive Industries</option>
+                        <option data-value='{"name":"construction_materials"}'>Select Construction Material Manufacturing Sectors</option>
+                        <option data-value='{"name":"energy_intensive"}'>Energy Intensive Sectors</option>
                     </select>
                 </div>
 
                 <div style=" margin-left: 20px;flex-grow: 1;">
                     <label for="impact-selected">Select Result View:</label>
                     <br>
-                    <input type="radio" name="impactRadio" value="total_impact" checked/> Total Emissions
+                    <input type="radio" name="impactRadio" value="total_impact" checked/> Emissions
                     <input type="radio" name="impactRadio" value="impact_per_purchase" /> Emission Intensity
                 </div>
                 <div style=" margin-left: 20px;flex-grow: 1;">

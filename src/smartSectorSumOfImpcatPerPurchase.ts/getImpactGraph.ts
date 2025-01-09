@@ -33,7 +33,7 @@ export async function apexGraph(sortingImpactPerPurchaseWithTopList:SortedImpact
         }
         else
         {
-            yaxisTitle = 'Total Emissions (MMT CO2e)'
+            yaxisTitle = 'Emissions (MMT CO2e)'
         };
 
       return {

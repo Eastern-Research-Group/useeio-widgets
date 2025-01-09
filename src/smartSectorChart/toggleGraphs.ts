@@ -34,7 +34,7 @@ export async function calculate(topSectorList:SumSmartSectorTotalParts[],model: 
               }
             else
               {
-                yaxisTitle = 'Total Emissions (MMT CO2e)'
+                yaxisTitle = 'Emissions (MMT CO2e)'
               };
           };
           
