@@ -198,6 +198,12 @@ const Component = (props: { widget: PieListSearch }) => {
                             { searchTerm != null ?
                             <div className={classes.selector} id="div1">
                                 <table id="sector-list-table"> 
+                                <thead>
+                                    <tr>
+                                        <th  className={`indicator`}>BEA/NAICS<br/>Code</th>
+                                        <th  className={`indicator`}>Sector Name</th>
+                                    </tr>
+                                </thead>
                                     <tbody id="sectorListSearch" className="sector-list-body">{rows}</tbody>
                                 </table>
                                 </div> : null
