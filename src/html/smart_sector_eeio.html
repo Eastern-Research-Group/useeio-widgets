@@ -19,12 +19,12 @@
         <div style=" flex-grow: 1;">
             <div style=" display: flex; flex-direction: row;">
                 <div style=" margin-left: 20px;flex-grow: 1;">
-                    <label for="metric-selected">Select Metric (GWP or SCC):</label>
+                    <label for="metric-selected">Select GWP Factor:</label>
                     <br>
                     <select id="my-select" onchange="changeGraph(this.value)">
-                        <option value="GWP-AR6-20" >20yr GWP </option>
-                        <option value="GWP-AR6-100" selected>100yr GWP</option>
-                        <option value="Social-Cost-of-Carbon">Social Cost of Carbon</option>
+                        <option value="GWP-AR6-20" >CO2e based on 20yr GWP</option>
+                        <option value="GWP-AR6-100" selected>CO2e based on 100yr GWP</option>
+                        <!--  <option value="Social-Cost-of-Carbon">Social Cost of Carbon</option>  -->
                     </select>
                 </div>
                 <div style=" margin-left: 20px;flex-grow: 1;">

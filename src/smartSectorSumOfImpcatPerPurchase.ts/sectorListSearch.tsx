@@ -231,19 +231,19 @@ const classes = useStyles();
                             }
                 </FormControl>
                 <FormControl className={classes.margin} >
-                    <InputLabel id="demo-controlled-open-select-label">Select Metric (GWP or SCC):</InputLabel>
+                    <InputLabel id="demo-controlled-open-select-label">Select GWP Factor:</InputLabel>
                     <Select
                     native
                     value={graph}
                     onChange={handleChange}
-                    label="Select Metric (GWP or SCC)"
+                    label="Select GWP Factor"
                     inputProps={{
                         name: 'graph',
                     }}
                     >
-                    <option value="GWP-AR6-100">100yr GWP</option>
-                    <option value="GWP-AR6-20">20yr GWP</option>
-                    <option value="Social-Cost-of-Carbon">Social Cost of Carbon</option>
+                    <option value="GWP-AR6-100">CO2e based on 100yr GWP</option>
+                    <option value="GWP-AR6-20">CO2e based on 20yr GWP</option>
+                    {/* <option value="Social-Cost-of-Carbon">Social Cost of Carbon</option> */}
                     </Select>
                 </FormControl>
 
