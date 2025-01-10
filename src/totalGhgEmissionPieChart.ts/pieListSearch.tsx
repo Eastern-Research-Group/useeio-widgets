@@ -231,7 +231,7 @@ const Component = (props: { widget: PieListSearch }) => {
                         </Select>
                     </FormControl>
                     <FormControl className={classes.margin} >
-                        <InputLabel id="demo-controlled-open-select-label">Sector Grouping</InputLabel>
+                        <InputLabel id="demo-controlled-open-select-label">Level of Detail:</InputLabel>
                         <Select
                         id="aggregateId"
                         native
