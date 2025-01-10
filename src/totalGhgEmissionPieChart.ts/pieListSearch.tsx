@@ -242,7 +242,7 @@ const Component = (props: { widget: PieListSearch }) => {
                             name: 'details',
                         }}
                         >
-                        <option value="Aggregate">Direct vs Indirect</option>
+                        <option value="Aggregate">Simple</option>
                         <option value="Detail">Detailed</option>
                     
                         </Select>

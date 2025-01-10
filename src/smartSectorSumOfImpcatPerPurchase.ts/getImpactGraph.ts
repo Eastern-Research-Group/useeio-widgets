@@ -38,7 +38,7 @@ export async function apexGraph(sortingImpactPerPurchaseWithTopList:SortedImpact
 
       return {
         series: [{
-        name: 'Total Emissions',
+        name: 'Emissions',
         data: data.map(t => t.totalImpact)
       }],
         chart: {

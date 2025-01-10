@@ -250,7 +250,7 @@ const classes = useStyles();
                 <FormControl component="fieldset">
                 <FormLabel component="legend">Select Result View:</FormLabel>
                 <RadioGroup row aria-label="Select Result View" name="impactRadio" value={changePrespective} onChange={handleGraphChange}>
-                    <FormControlLabel value="total_impact" control={<Radio color="default" size="small" />} label="Total Emissions" />
+                    <FormControlLabel value="total_impact" control={<Radio color="default" size="small" />} label="Emissions" />
                     <FormControlLabel value="impact_per_purchase" control={<Radio color="default" size="small"  />} label="Emission Intensity" />
                 </RadioGroup>
                 </FormControl>
