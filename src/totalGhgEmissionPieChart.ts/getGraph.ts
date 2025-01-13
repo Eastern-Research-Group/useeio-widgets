@@ -55,12 +55,29 @@ export async function apexGraph(contributionList:SortingPercentContribution[],se
             sectorPurchasedList.push(t.sectorPurchased)
             contrubutionList.push(t.contribution)
 
-            if(t.sectorPurchased.match("Direct")){
-              contrubutionColorList.push('#0074d3')
+            
+            if(t.sectorPurchased.match("Agriculture")){
+              contrubutionColorList.push('#8D5B4C')
             }
-            else
-            {
-              contrubutionColorList.push('#D30000')
+            else if(t.sectorPurchased.match("Construction")){
+              contrubutionColorList.push('#2E93fA')
+            }else if(t.sectorPurchased.match("Fuels")){
+              contrubutionColorList.push('#546E7A')
+            }else if(t.sectorPurchased.match("Manufacturing")){
+              contrubutionColorList.push('#E91E63')
+            }else if(t.sectorPurchased.match("Minerals")){
+              contrubutionColorList.push('#FF9800')
+            }else if(t.sectorPurchased.match("Other")){
+              contrubutionColorList.push('#9b19f5')
+            }else if(t.sectorPurchased.match("Purchased Electricity")){
+              contrubutionColorList.push('#2e2b28')
+            }else if(t.sectorPurchased.match("Transport")){
+              contrubutionColorList.push('#ab3da9')
+            }else if(t.sectorPurchased.match("Utilities")){
+              contrubutionColorList.push('#A5978B')
+            }
+            else{
+              contrubutionColorList.push('#4CAF50')
             }
           });
   
