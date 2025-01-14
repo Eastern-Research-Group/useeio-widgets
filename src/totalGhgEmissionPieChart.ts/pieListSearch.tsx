@@ -87,8 +87,9 @@ const Component = (props: { widget: PieListSearch }) => {
 
     const [searchTerm, setSearchTerm] = React.useState<string>('');
     const [value, setValue] = React.useState<string>('');
-    const [title, setTitle] = React.useState<string>('1111A0 - Fresh soybeans, canola, flaxseeds, and other oilseeds');
+    const [title, setTitle] = React.useState<string>('Fresh soybeans, canola, flaxseeds, and other oilseeds Manufacturing (BEA/NAICS 1111A0)');
     const [graph, setGraph] = React.useState<string>('GWP-AR6-100');
+    const [year, setYear] = React.useState<string>('100')
     const [graphDetails, setGraphDetails] = React.useState<string>('Aggregate');
     const [aggregate, setAggregate] = React.useState<boolean>( true );
     const [detail, setDetail] = React.useState<boolean>( false );
@@ -103,7 +104,7 @@ const Component = (props: { widget: PieListSearch }) => {
     }
 
     const handleState = (e:string,c:string) => {
-        setTitle( c + " - " + e)
+        setTitle( e + " Manufacturing " + '('+ c +')')
 
         setSearchTerm('');
         setValue(e);
@@ -139,6 +140,7 @@ const Component = (props: { widget: PieListSearch }) => {
 
     const handleChange = (event:any) => {
         setGraph(event.target.value);
+        setYear(new String(event.target.value).replace('GWP-AR6-',''));
         
        if(graphDetails === 'Aggregate')
         {
@@ -256,17 +258,46 @@ const Component = (props: { widget: PieListSearch }) => {
                     display:'flex',
                     flexDirection:'column'
                     }}>
-                    <div style={{
-                        overflowWrap: 'break-word',
-                        whiteSpace: 'normal',
-                        fontWeight: 'bold',
-                        wordWrap:'break-word',
-                        textAlign: 'center',
-                        width: '500px'
-                        }}>
-                            {title} ({graph})
-                        </div>
-                        <div  style={{
+                        {
+                            aggregate ? 
+                            <div
+                            style={{
+                                fontWeight: 'bold',
+                                textAlign: 'center',
+                                }}
+                            >
+                                <div>Direct and Indirect GHG Emissions</div>
+                                <div
+                                style={{
+                                overflowWrap: 'break-word',
+                                whiteSpace: 'normal',
+                                fontWeight: 'bold',
+                                wordWrap:'break-word',
+                                textAlign: 'center',
+                                width: '500px'
+                                }}>{title}</div>
+                                <div>Based on {year}-year GWP factors (IPCC, 2021)</div>
+                            </div>
+                                : 
+                            <div
+                                 style={{
+                                fontWeight: 'bold',
+                                textAlign: 'center',
+                                }}>
+                                <div>Detail GHG Emissions</div>
+                                <div
+                                style={{
+                                    overflowWrap: 'break-word',
+                                    whiteSpace: 'normal',
+                                    fontWeight: 'bold',
+                                    wordWrap:'break-word',
+                                    textAlign: 'center',
+                                    width: '500px'
+                                    }}>{title}</div>
+                                <div>Based on {year}-year GWP factors (IPCC, 2021)</div>
+                            </div>
+                        }
+                    <div  style={{
                     position:'relative',
                     }}>
                             <div style={{visibility: aggregate ? 'visible' : 'hidden', position: 'absolute', marginLeft: 'auto', marginRight: 'auto' }} id="profile-chart">

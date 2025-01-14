@@ -80,8 +80,9 @@ const Component = (props: { widget: SectorListSearch }) => {
 
     const [searchTerm, setSearchTerm] = React.useState<string>('');
     const [value, setValue] = React.useState<string>('');
-    const [title, setTitle] = React.useState<string>('1111A0 - Fresh soybeans, canola, flaxseeds, and other oilseeds');
+    const [title, setTitle] = React.useState<string>('Fresh soybeans, canola, flaxseeds, and other oilseeds Manufacturing (BEA/NAICS 1111A0)');
     const [graph, setGraph] = React.useState<string>('');
+    const [year, setYear] = React.useState<string>('100')
     const [totalImpactGraph, setTotalImpactGraph] = React.useState<boolean>( false );
     const [impactPerPurchaseGraph, setImpactPerPurchaseGraph] = React.useState<boolean>( true );
     const [changePrespective, setChangePrespective] = React.useState('impact_per_purchase');
@@ -113,7 +114,7 @@ const Component = (props: { widget: SectorListSearch }) => {
     }
 
     const handleState = (e:string,c:string) => {
-        setTitle( c + " - " + e)
+        setTitle( e + " Manufacturing " + '('+ c +')')
         setSearchTerm('');
         setValue(e);
 
@@ -168,6 +169,7 @@ const Component = (props: { widget: SectorListSearch }) => {
 
     const handleChange = (event:any) => {
         setGraph(event.target.value);
+        setYear(new String(event.target.value).replace('GWP-AR6-',''));
 
         if( changePrespective === 'impact_per_purchase')
             {
@@ -191,15 +193,41 @@ const classes = useStyles();
                     display:'flex',
                     flexDirection:'column'
                     }}>
-                        <div style={{
-                            overflowWrap: 'break-word',
-                            whiteSpace: 'normal',
-                            fontWeight: 'bold',
-                            wordWrap:'break-word',
-                            textAlign: 'center',
-                            }}>
-                                {title} ({graph})
-                        </div>
+                       {
+                            totalImpactGraph ? 
+                            <div
+                            style={{
+                                fontWeight: 'bold',
+                                textAlign: 'center',
+                                }}
+                            >
+                                <div>Total Sector GHG Emissions</div>
+                                <div
+                                style={{
+                                overflowWrap: 'break-word',
+                                whiteSpace: 'normal',
+                                fontWeight: 'bold',
+                                wordWrap:'break-word',
+                                }}>{title}</div>
+                                <div>Based on {year}-year GWP factors (IPCC, 2021)</div>
+                            </div>
+                                : 
+                            <div
+                                 style={{
+                                fontWeight: 'bold',
+                                textAlign: 'center',
+                                }}>
+                                <div>Total Sector GHG Emissions Intensity</div>
+                                <div
+                                style={{
+                                    overflowWrap: 'break-word',
+                                    whiteSpace: 'normal',
+                                    fontWeight: 'bold',
+                                    wordWrap:'break-word',
+                                    }}>{title}</div>
+                                <div>Based on {year}-year GWP factors (IPCC, 2021)</div>
+                            </div>
+                        }
                         <div  style={{
                     display: 'grid'
                     }}>
