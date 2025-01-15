@@ -32,6 +32,7 @@ const config = {
     plugins: [
         new CopyPlugin({
             patterns: [
+                { from: 'SMART_TABLE_RECORDS/*.json', to:path.resolve(__dirname, 'build/api/SMART_TABLE_RECORDS','','[name][ext]')},
                 { from: 'SMART_SECTORv1.0/*.json', to:path.resolve(__dirname, 'build/api/SMART_SECTORv1.0','','[name][ext]')},
                 { from: 'SMART_SECTORv1.0/sector_contribution_to_impact_ranked/final/*.json', to:path.resolve(__dirname, 'build/api/SMART_SECTORv1.0/sector_contribution_to_impact_ranked/final','','[name][ext]')},
                 { from: 'SMART_SECTORv1.0/sector_contribution_to_impact/final/*.json', to:path.resolve(__dirname, 'build/api/SMART_SECTORv1.0/sector_contribution_to_impact/final','','[name][ext]')},

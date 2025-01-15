@@ -144,6 +144,7 @@ private _target(...path: string[]): string {
 export class WebModelSmartSector {
 
   private _sectoMapping?: SectorMapping[];
+  private _sectorListTable:DataRow[];
   private _sectorOutput?: ImpactOutput[];
 
   
@@ -275,6 +276,16 @@ export class WebModelSmartSector {
       return this._sectoMapping || [];
     }
 
+      /**
+   * Returns the sector_mapping of the smart sector EEIO model.
+   */
+      async sectorRecordList(): Promise<DataRow[]> {
+        if (!this._sectorListTable) 
+        this._sectorListTable = await this.api.getJson(this.modelId,  "sectorInfo");
+
+      return this._sectorListTable || [];
+    }
+
     /**
    * Returns the x of the smart sector EEIO model.
    */
@@ -351,6 +362,14 @@ export interface PercentContribution {
   sector_purchased_detail?:string;
   contribution?: number;
 
+}
+
+// Table info struture
+export interface DataRow {
+  Code: string;
+  Name: string;
+  Group: string;
+  Description: string;
 }
 
 export interface SectorMapping {

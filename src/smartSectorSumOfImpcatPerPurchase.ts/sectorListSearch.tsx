@@ -282,6 +282,17 @@ const classes = useStyles();
                     <FormControlLabel value="impact_per_purchase" control={<Radio color="default" size="small"  />} label="Emission Intensity" />
                 </RadioGroup>
                 </FormControl>
+                <div
+                    style={{
+                        overflowWrap: 'break-word',
+                        whiteSpace: 'normal',
+                        wordWrap:'break-word',
+                        textAlign: 'center',
+                        width: '200px'
+                        }}
+                    >
+                    This link provides detailed information about the <a href="./sector-info-table.html">sectors BEA/NAICS Codes</a>.
+                </div>
             </div>
       </div>
     );

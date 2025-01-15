@@ -35,6 +35,10 @@ export interface SmartSectorChartConfigNormal {
     selector: '.sector-list',
 }
 
+export interface dataTableConfig {
+    selector: string,
+}
+
 export function piePercentContributionList(config: SmartSectorChartConfigNormal): PiePercentContributionDirectAndIndirect {
     return new PiePercentContributionDirectAndIndirect(config);
 }
@@ -249,6 +253,18 @@ const Component = (props: { widget: PieListSearch }) => {
                     
                         </Select>
                     </FormControl>
+                    <div
+                    style={{
+                        overflowWrap: 'break-word',
+                        whiteSpace: 'normal',
+                        wordWrap:'break-word',
+                        textAlign: 'center',
+                        width: '300px'
+                        }}
+                    >
+                    This link provides detailed information about the <a href="./sector-info-table.html">sectors BEA/NAICS Codes</a>.
+                    </div>
+                    
                     </div>
                 </div>
             </div>

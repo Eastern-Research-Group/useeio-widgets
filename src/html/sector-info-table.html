@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sector Information Table</title>
+    <link rel="stylesheet" type="text/css" href="widgets.css">
+
+</head>
+
+<body>
+    <h1 id="graphTitle" class="text-center">Sector Information Table</h1>
+      <div>
+         <div  class="table-list"></div>
+      </div>
+
+    <script src="lib/apexcharts.min.js"></script>
+    <script src="lib/useeio_widgets.js"></script>
+    <script>
+
+        var dataTable = useeio.dataTable({
+            selector: '.table-list',
+        });
+        dataTable.update();
+
+    </script>
+</body>
+
+</html>
