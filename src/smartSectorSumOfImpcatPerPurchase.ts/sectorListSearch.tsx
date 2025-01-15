@@ -291,7 +291,7 @@ const classes = useStyles();
                         width: '200px'
                         }}
                     >
-                    This link provides detailed information about the <a href="./sector-info-table.html">sectors BEA/NAICS Codes</a>.
+                    See more info about the <a href="./sector-info-table.html" target="_blank">sectors BEA/NAICS Codes</a>.
                 </div>
             </div>
       </div>

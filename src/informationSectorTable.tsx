@@ -112,10 +112,10 @@ const DataTable = (props: { dataTable: DataRow[] }) =>  {
         <Table aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell>Code</TableCell>
-              <TableCell align="right">Name</TableCell>
-              <TableCell align="right">Group</TableCell>
-              <TableCell align="right">Description</TableCell>
+              <TableCell>BEA/NAICS Code</TableCell>
+              <TableCell>Name</TableCell>
+              <TableCell>Group</TableCell>
+              <TableCell>Description</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -124,9 +124,9 @@ const DataTable = (props: { dataTable: DataRow[] }) =>  {
                 <TableCell component="th" scope="row">
                   {row.Code}
                 </TableCell>
-                <TableCell align="right">{row.Name}</TableCell>
-                <TableCell align="right">{row.Group}</TableCell>
-                <TableCell align="right">{row.Description}</TableCell>
+                <TableCell>{row.Name}</TableCell>
+                <TableCell>{row.Group}</TableCell>
+                <TableCell>{row.Description}</TableCell>
               </TableRow>
             ))}
           </TableBody>
