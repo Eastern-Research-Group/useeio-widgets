@@ -167,7 +167,7 @@ export class WebModelSmartSector {
    */
   async sectorContributionToImpactGhg(fileName:string): Promise<SectorContributionToImpact[]> 
   {
-    return await this.api.getJson(this.modelId,  "sector_contribution_to_impact/"+fileName)
+    return await this.api.getJson(this.modelId,  "sector_contribution_to_impact/final/"+fileName)
   }
 
    /**
@@ -190,14 +190,14 @@ export class WebModelSmartSector {
         }
         else
         {
-          let data:SectorContributionToImpact[] = await this.api.api(this.modelId,  "sector_contribution_to_impact/"+fileName);
+          let data:SectorContributionToImpact[] = await this.api.api(this.modelId,  "sector_contribution_to_impact/final/"+fileName);
           await snes.set(fileName,JSON.stringify(data));
           return data;
         }
     }
     else
     {
-      return await this.api.api(this.modelId,  "sector_contribution_to_impact/"+fileName);
+      return await this.api.api(this.modelId,  "sector_contribution_to_impact/final/"+fileName);
     }
    }
 
