@@ -148,7 +148,7 @@ const Component = (props: { widget: SectorListSearch }) => {
         if (!value) {
             setSearchTerm('')
         }
-        const term = value.trim().toLowerCase();
+        const term = value.trimStart().toLowerCase();
         setSearchTerm(term.length === 0 ? '' : term)
     };
 
