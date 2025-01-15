@@ -14,6 +14,7 @@ export async function apexGraph(sortingImpactPerPurchaseWithTopList:SortedImpact
             }
         })
         
+        let unitLabel:string = '';
         data = values.topFifteenImpactPerPurchase.map(t => {
             return {
             purchase_commodity:t.purchaseCommodity,
@@ -26,57 +27,63 @@ export async function apexGraph(sortingImpactPerPurchaseWithTopList:SortedImpact
             return  t.purchase_commodity.split(' ')
           });
         let yaxisTitle = 'Emissions Intensity (Metric tons CO2e per Million $ of Output)';
-        if (graphTitleName == 'Social Cost of Carbon')
+        unitLabel = 'tons CO2e per Million $ of Output';
+        if (graphTitleName == ' Social Cost of Carbon')
           {
             yaxisTitle = 'Emissions Intensity (Million $ per Million $ of Output)'
+            unitLabel = ' Million $ per Million $ of Output';
           }
+
+        let colors = data.map( (t)=>
+          {
+              return (t.purchase_commodity.includes('Direct')? '#4CAF50':'#2E93fA')
+          })
 
       return {
         series: [{
-        name: 'Emissions Intensity',
-        data: data.map(t => t.impactPerPurchase)
-      }],
+          name: 'Emissions Intensity',
+          data: data.map(t => t.impactPerPurchase)
+        }],
         chart: {
-        type: 'bar',
         height: 500,
+        type: 'bar' 
       },
+      colors: colors,
       plotOptions: {
         bar: {
-          horizontal: false,
-          columnWidth: '55%'
-              },
+          columnWidth: '55%',
+          distributed: true,
+        }
       },
       dataLabels: {
         enabled: false
       },
-      stroke: {
-        show: true,
-        width: 2,
-        colors: ['transparent']
+      legend: {
+        show: false
       },
       xaxis: {
-        categories: sortedSectorCodesWithNamesWithArray,
+        categories: sortedSectorCodesWithNamesWithArray
       },
       yaxis: {
-        title: {
-          text: yaxisTitle
+          title: {
+            text: yaxisTitle
+          },
+          forceNiceScale: true,
+          labels: {
+            formatter: function(val) {
+              return (Math.round(val * 100) / 100).toFixed(2);
+            }
+          }
         },
-        forceNiceScale: true,
-        labels: {
-          formatter: function(val) {
-            return (Math.round(val * 100) / 100).toFixed(2);
+        fill: {
+          opacity: 1
+        },
+        tooltip: {
+          y: {
+            formatter: function (val) {
+              return "" + val.toFixed(3) + " " + unitLabel
+            }
           }
         }
-      },
-      fill: {
-        opacity: 1
-      },
-      tooltip: {
-        y: {
-          formatter: function (val) {
-            return "" + val.toFixed(3) + ""
-          }
-        }
-      }
-      };
+    };
 }

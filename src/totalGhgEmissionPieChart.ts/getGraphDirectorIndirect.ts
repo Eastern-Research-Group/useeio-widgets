@@ -57,7 +57,7 @@ export async function apexGraph(contributionList:SortingPercentContributionIndir
             contrubutionList.push(t.contribution)
 
             if(t.directOrIndirect.match("Direct")){
-              contrubutionColorList.push('#0074d3')
+              contrubutionColorList.push('#4CAF50')
             }
             else
             {

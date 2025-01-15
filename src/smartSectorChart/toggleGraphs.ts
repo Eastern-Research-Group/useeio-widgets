@@ -15,15 +15,18 @@ export async function calculate(topSectorList:SumSmartSectorTotalParts[],model: 
         let sortedSectorCodes: string[] = sortedSectorCodeList(sortTopTen);
         let sortedSeries:{name:string,data:number[]}[] = sortedSeriesList(sortTopTen,uniqueSortedMapping,impactSelector);
         let yaxisTitle = '';
+        let unitLabel:string = '';
         if (impactSelector == 'impact_per_purchase')
           {
             if (titleGraph == 'Social Cost of Carbon')
               {
                 yaxisTitle = 'Emissions Intensity (Million $ per Million $ of Output)'
+                unitLabel = 'Million $ per Million $ of Output'
               }
             else
               {
                 yaxisTitle = 'Emissions Intensity (Metric tons CO2e per Million $ of Output)'
+                unitLabel = 'tons CO2e per Million $ of Output'
               };
           }
         else
@@ -31,10 +34,12 @@ export async function calculate(topSectorList:SumSmartSectorTotalParts[],model: 
             if (titleGraph == 'Social Cost of Carbon')
               {
                 yaxisTitle = 'Total Impact (Billion dollars)'
+                unitLabel = 'Billion dollars'
               }
             else
               {
                 yaxisTitle = 'Emissions (MMT CO2e)'
+                unitLabel = 'MMT CO2e'
               };
           };
           
@@ -131,7 +136,7 @@ export async function calculate(topSectorList:SumSmartSectorTotalParts[],model: 
                 },
                 y: {
                   formatter: function (val) {
-                    return "" + val.toFixed(3) + ""
+                    return "" + val.toFixed(3) + " " + unitLabel
                   }
                 },
                 x: {
