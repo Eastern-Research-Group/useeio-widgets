@@ -272,18 +272,21 @@ const Component = (props: { widget: PieListSearch }) => {
                     
                         </Select>
                     </FormControl>
+                    
+                    </div>
                     <div
                     style={{
                         overflowWrap: 'break-word',
                         whiteSpace: 'normal',
                         wordWrap:'break-word',
                         textAlign: 'center',
-                        width: '300px'
+                        alignContent:'center',
+                        width: '300px',
+                        paddingBottom:'30px',
+                        marginBottom:'15px'
                         }}
                     >
                     See more info about the <a href="./sector-info-table.html" target="_blank">sectors BEA/NAICS Codes</a>.
-                    </div>
-                    
                     </div>
                 </div>
             </div>
