@@ -22,6 +22,9 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget
     sectorsList:Sector[];
     sectorsListlowerCase:String[];
     graphName:string = '';
+    perspective:string = '';
+    sectorMappingList:SectorMapping[]
+
     constructor(private _chartConfig: SmartSectorChartConfig) {
         super();
         this.modelSmartSectorApi = modelOfSmartSector({
@@ -38,13 +41,14 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget
   async init(graphName?:string, sectorName?:string)
    {
     this.graphName = graphName;
+    this.perspective = 'final'
     this.sectorsList = await this._chartConfig.model.sectors();
     let sector_name:string = sectorName? sectorName:'Fresh soybeans, canola, flaxseeds, and other oilseeds';
-    const sectorMappingList:SectorMapping[] = await this.modelSmartSectorApi.sectorMapping();  
-    this.uniqueSortedMappingGroupNoDuplicates = uniqueSortedMappingGroupNoDuplicatesList(sectorMappingList);
+    this.sectorMappingList = await this.modelSmartSectorApi.sectorMapping();  
+    this.uniqueSortedMappingGroupNoDuplicates = uniqueSortedMappingGroupNoDuplicatesList(this.sectorMappingList);
     let titleNameWithNoSpace = graphName.replace(/\-/g," ");
     this.sectorContributionToImpact = await this.modelSmartSectorApi.sectorContributionToImpactRankedGhgAPI("final/"+graphName);
-    this.getTopValuesFromSectors = await this.getTopFifteenImpactPerPurchaseWithGroup(this.sectorContributionToImpact,this.modelSmartSectorApi);
+    this.getTopValuesFromSectors = await this.getTopFifteenImpactPerPurchaseWithGroup(this.sectorContributionToImpact,this.modelSmartSectorApi, 'final');
 
     let options = await apexGraph(this.getTopValuesFromSectors,sector_name, titleNameWithNoSpace);
     this.chart = new ApexCharts(
@@ -55,8 +59,18 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget
     this.chart.render();
    }
 
-   async changeGraph(graphName?:string, sectorName?:string)
+   async changePerspectiveGraph(perspective:string, graphName?:string, sectorName?:string)
    {
+    if(this.perspective != perspective)
+    {
+      this.perspective = perspective;
+    }
+    this.changeGraph(graphName,sectorName,perspective);
+   }
+
+   async changeGraph(graphName?:string, sectorName?:string, perspective?:string)
+   {
+    this.perspective = perspective
     this.graphName = graphName;
     this.sectorsList = await this._chartConfig.model.sectors();
     let sector_name:string = sectorName? sectorName:'Fresh soybeans, canola, flaxseeds, and other oilseeds';
@@ -65,8 +79,8 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget
     let titleNameWithNoSpace = graphName.replace(/\-/g," ");
     this.sectorContributionToImpact = [];
     this.getTopValuesFromSectors = [];
-    this.sectorContributionToImpact = await this.modelSmartSectorApi.sectorContributionToImpactRankedGhgAPI("final/"+graphName);
-    this.getTopValuesFromSectors = await this.getTopFifteenImpactPerPurchaseWithGroup(this.sectorContributionToImpact,this.modelSmartSectorApi);
+    this.sectorContributionToImpact = await this.modelSmartSectorApi.sectorContributionToImpactRankedGhgAPI(this.perspective+"/"+graphName);
+    this.getTopValuesFromSectors = await this.getTopFifteenImpactPerPurchaseWithGroup(this.sectorContributionToImpact,this.modelSmartSectorApi,perspective);
 
     let options = await apexGraph(this.getTopValuesFromSectors,sector_name, titleNameWithNoSpace);
     this.chart.updateOptions(options);
@@ -85,78 +99,157 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget
     return this.graphName
    }
 
-   async getTopFifteenImpactPerPurchaseWithGroup(sectorContributionToImpactGhg:SectorContributionToImpact[],modelSmartSector:WebModelSmartSector):Promise<SortedImpactPerPurchaseTopList[]>
+   async getTopFifteenImpactPerPurchaseWithGroup(sectorContributionToImpactGhg:SectorContributionToImpact[],modelSmartSector:WebModelSmartSector, perspective:string):Promise<SortedImpactPerPurchaseTopList[]>
   {
-    const sectorMappingList:SectorMapping[] = await modelSmartSector.sectorMapping();
+    this.perspective = perspective;
     const sectorsList:Sector[] = await this._chartConfig.model.sectors();
     let sortListWithTop15OfEachSector:SortingImpactPerPurchaseWithTop[] = []
-  
     sectorContributionToImpactGhg.forEach((t, i) => 
     {
       if (t.impact_per_purchase > 0.001) {
 
-      let purchasedGroup = modelSmartSector.findPurchasedGroup(t.purchased_commodity_code,sectorMappingList);
-      let sectorName = selectSectorName(t.sector_code,sectorsList);
-      let purchaseCommodity
-      if(purchasedGroup == "All Others" || purchasedGroup == undefined)
-      {
-        purchaseCommodity = "All Others"
-      }
-      else
-        purchaseCommodity= selectSectorName(t.purchased_commodity_code,sectorsList);
+        if(perspective == 'final')
+        {
 
-      if(sortListWithTop15OfEachSector.length === 0)
-      {
-
-        let sortingImpactPerPurchaseWithTop15 =  new SortingImpactPerPurchaseWithTop(
-          t.sector_code,
-          sectorName,
-          {
-            sectorCode:t.sector_code,
-            purchaseCommodity:purchaseCommodity,
-            impactPerPurchase:t.impact_per_purchase,
-            purchasedGroup:purchasedGroup
-          }
-        );
-
-        sortListWithTop15OfEachSector.push(sortingImpactPerPurchaseWithTop15);
-      }
-      else
-      {
-        let sortingImpactPerPurchaseWithTop15:SortingImpactPerPurchaseWithTop | undefined =  sortListWithTop15OfEachSector.find( i => 
-         {
-            if(t.sector_code === i._sectorCode)
-            {
-                return true;
+          let purchasedGroup = this.sectorMappingList.find(d => {
+            if (t.purchased_commodity_code == d.id) {
+              return true;
             }
-         });
-  
-        if(sortingImpactPerPurchaseWithTop15 !== undefined)
-        { 
-          sortingImpactPerPurchaseWithTop15.addSmartSectorsByCommodityGroup({
-            sectorCode:t.sector_code,
-            purchaseCommodity:purchaseCommodity,
-            impactPerPurchase:t.impact_per_purchase,
-            purchasedGroup:purchasedGroup
-          });
+          })?.group_detail;
+          
+
+          let sectorName = selectSectorName(t.sector_code,sectorsList);
+          let purchaseCommodity
+          if(purchasedGroup == "All Others" || purchasedGroup == undefined)
+          {
+            purchaseCommodity = "All Others"
+          }
+          else
+            purchaseCommodity= selectSectorName(t.purchased_commodity_code,sectorsList);
+    
+          if(sortListWithTop15OfEachSector.length === 0)
+          {
+    
+            let sortingImpactPerPurchaseWithTop15 =  new SortingImpactPerPurchaseWithTop(
+              t.sector_code,
+              sectorName,
+              {
+                sectorCode:t.sector_code,
+                purchaseCommodity:purchaseCommodity,
+                impactPerPurchase:t.impact_per_purchase,
+                purchasedGroup:purchasedGroup
+              }
+            );
+    
+            sortListWithTop15OfEachSector.push(sortingImpactPerPurchaseWithTop15);
+          }
+          else
+          {
+            let sortingImpactPerPurchaseWithTop15:SortingImpactPerPurchaseWithTop | undefined =  sortListWithTop15OfEachSector.find( i => 
+             {
+                if(t.sector_code === i._sectorCode)
+                {
+                    return true;
+                }
+             });
+      
+            if(sortingImpactPerPurchaseWithTop15 !== undefined)
+            { 
+              sortingImpactPerPurchaseWithTop15.addSmartSectorsByCommodityGroup({
+                sectorCode:t.sector_code,
+                purchaseCommodity:purchaseCommodity,
+                impactPerPurchase:t.impact_per_purchase,
+                purchasedGroup:purchasedGroup
+              });
+            }
+            else
+            {
+              let sortingImpactPerPurchaseWithTop15 =  new SortingImpactPerPurchaseWithTop(
+                t.sector_code,
+                sectorName,
+                {
+                  sectorCode:t.sector_code,
+                  purchaseCommodity:purchaseCommodity,
+                  impactPerPurchase:t.impact_per_purchase,
+                  purchasedGroup:purchasedGroup
+                }
+              );
+      
+              sortListWithTop15OfEachSector.push(sortingImpactPerPurchaseWithTop15);
+            }
+            
+          }
+        }
+        else{
+          let purchasedGroup = this.sectorMappingList.find(d => {
+            if (t.emissions_source == d.id) {
+              return true;
+            }
+          })?.group_detail;
+
+        let sectorName = selectSectorName(t.sector_code,sectorsList);
+        let purchaseCommodity
+        if(purchasedGroup == "All Others" || purchasedGroup == undefined)
+        {
+          purchaseCommodity = "All Others"
         }
         else
-        {
-          let sortingImpactPerPurchaseWithTop15 =  new SortingImpactPerPurchaseWithTop(
-            t.sector_code,
-            sectorName,
-            {
-              sectorCode:t.sector_code,
-              purchaseCommodity:purchaseCommodity,
-              impactPerPurchase:t.impact_per_purchase,
-              purchasedGroup:purchasedGroup
+        purchaseCommodity= selectSectorName(t.emissions_source,sectorsList);
+
+          if(sortListWithTop15OfEachSector.length === 0)
+          {
+    
+            let sortingImpactPerPurchaseWithTop15 =  new SortingImpactPerPurchaseWithTop(
+              t.sector_code,
+              sectorName,
+              {
+                sectorCode:t.sector_code,
+                purchaseCommodity:purchaseCommodity,
+                impactPerPurchase:t.impact_per_purchase,
+                purchasedGroup:purchasedGroup
+              }
+            );
+    
+            sortListWithTop15OfEachSector.push(sortingImpactPerPurchaseWithTop15);
+          }
+          else
+          {
+            let sortingImpactPerPurchaseWithTop15:SortingImpactPerPurchaseWithTop | undefined =  sortListWithTop15OfEachSector.find( i => 
+             {
+                if(t.sector_code === i._sectorCode)
+                {
+                    return true;
+                }
+             });
+      
+            if(sortingImpactPerPurchaseWithTop15 !== undefined)
+            { 
+              sortingImpactPerPurchaseWithTop15.addSmartSectorsByCommodityGroup({
+                sectorCode:t.sector_code,
+                purchaseCommodity:purchaseCommodity,
+                impactPerPurchase:t.impact_per_purchase,
+                purchasedGroup:purchasedGroup
+              });
             }
-          );
-  
-          sortListWithTop15OfEachSector.push(sortingImpactPerPurchaseWithTop15);
+            else
+            {
+              let sortingImpactPerPurchaseWithTop15 =  new SortingImpactPerPurchaseWithTop(
+                t.sector_code,
+                sectorName,
+                {
+                  sectorCode:t.sector_code,
+                  purchaseCommodity:purchaseCommodity,
+                  impactPerPurchase:t.impact_per_purchase,
+                  purchasedGroup:purchasedGroup
+                }
+              );
+      
+              sortListWithTop15OfEachSector.push(sortingImpactPerPurchaseWithTop15);
+            }
+            
+          }
         }
-        
-      }
+
     }
     });
 

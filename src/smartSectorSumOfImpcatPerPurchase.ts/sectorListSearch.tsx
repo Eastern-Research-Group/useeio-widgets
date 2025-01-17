@@ -83,6 +83,7 @@ const Component = (props: { widget: SectorListSearch }) => {
     const [title, setTitle] = React.useState<string>('Fresh soybeans, canola, flaxseeds, and other oilseeds Manufacturing (BEA/NAICS 1111A0)');
     const [graph, setGraph] = React.useState<string>('');
     const [year, setYear] = React.useState<string>('100')
+    const [perspective, setPerspective] = React.useState<string>('final');
     const [totalImpactGraph, setTotalImpactGraph] = React.useState<boolean>( false );
     const [impactPerPurchaseGraph, setImpactPerPurchaseGraph] = React.useState<boolean>( true );
     const [changePrespective, setChangePrespective] = React.useState('impact_per_purchase');
@@ -95,11 +96,11 @@ const Component = (props: { widget: SectorListSearch }) => {
 
         if(event.target.value === 'impact_per_purchase')
         {
-            props.widget.smartSectorImpactPurchase.changeGraph(graph,value);
+            props.widget.smartSectorImpactPurchase.changeGraph(graph,value,perspective);
         }
         else
         {
-            props.widget.smartSectorTotalImpact.changeGraph(graph,value);
+            props.widget.smartSectorTotalImpact.changeGraph(graph,value,perspective);
         }
     };
 
@@ -173,14 +174,19 @@ const Component = (props: { widget: SectorListSearch }) => {
 
         if( changePrespective === 'impact_per_purchase')
             {
-                props.widget.smartSectorImpactPurchase.changeGraph(event.target.value,value);
+                props.widget.smartSectorImpactPurchase.changeGraph(event.target.value,value,perspective);
             }
         else
             {
-                props.widget.smartSectorTotalImpact.changeGraph(event.target.value,value);
+                props.widget.smartSectorTotalImpact.changeGraph(event.target.value,value,perspective);
             }    
         };
 
+        const handleChangePerspective = (event:any) => {
+            setPerspective(event.target.value);
+            props.widget.smartSectorImpactPurchase.changePerspectiveGraph(event.target.value,graph,value);
+            props.widget.smartSectorTotalImpact.changePerspectiveGraph(event.target.value,graph,value);
+          };
 
 const classes = useStyles();
     return (
@@ -257,6 +263,21 @@ const classes = useStyles();
                                 </table>
                                 </div> : null
                             }
+                </FormControl>
+                <FormControl className={classes.margin}>
+                    <InputLabel id="demo-controlled-open-select-label">Select perspective:</InputLabel>
+                    <Select
+                    native
+                    value={perspective}
+                    onChange={handleChangePerspective}
+                    label="Select perspective"
+                    inputProps={{
+                        name: 'perspective',
+                    }}
+                    >
+                    <option value="final">Point of Consumption</option>
+                    <option value="direct">Supply Chain</option>
+                    </Select>
                 </FormControl>
                 <FormControl className={classes.margin} >
                     <InputLabel id="demo-controlled-open-select-label">Select GWP Factor:</InputLabel>

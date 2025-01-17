@@ -22,6 +22,8 @@ export class PiePercentContributionDirectAndIndirect extends Widget
     sectorsList:Sector[];
     sectorsListlowerCase:String[];
     graphName:string = '';
+    perspective:string;
+
     constructor(private _chartConfig: SmartSectorChartConfig) {
         super();
         this.modelSmartSectorApi = modelOfSmartSector({
@@ -38,12 +40,13 @@ export class PiePercentContributionDirectAndIndirect extends Widget
   async init(graphName?:string, sectorName?:string)
    {
     this.graphName = graphName;
+    this.perspective = 'final'
     this.sectorsList = await this._chartConfig.model.sectors();
     let sector_name:string = sectorName? sectorName:'Fresh soybeans, canola, flaxseeds, and other oilseeds';
     const sectorMappingList:SectorMapping[] = await this.modelSmartSectorApi.sectorMapping();  
     this.uniqueSortedMappingGroupNoDuplicates = uniqueSortedMappingGroupNoDuplicatesList(sectorMappingList);
     let titleNameWithNoSpace = graphName.replace(/\-/g," ");
-    this.percentContributionList = await this.modelSmartSectorApi.percentContribution(graphName);
+    this.percentContributionList = await this.modelSmartSectorApi.percentContribution("final/"+graphName);
     this.contributionList = await this.contributionListPerSector(this.percentContributionList);
     let options = await apexGraph(this.contributionList,sector_name,titleNameWithNoSpace);
     this.chart = new ApexCharts(
@@ -54,12 +57,24 @@ export class PiePercentContributionDirectAndIndirect extends Widget
     this.chart.render();
    }
 
+   async changePerspectiveGraph(perspective:string, graphName?:string, sectorName?:string)
+   {
+    if(this.perspective !== perspective)
+      {
+        this.perspective = perspective;
+        this.graphName = graphName;
+        this.percentContributionList = await this.modelSmartSectorApi.percentContribution(this.perspective+"/"+graphName);
+        this.contributionList = await this.contributionListPerSector(this.percentContributionList);
+        this.changeGraph(graphName,sectorName);
+      }
+   }
+   
    async changeGraph(graphName?:string, sectorName?:string)
    {
     if(this.graphName !== graphName)
     {
       this.graphName = graphName;
-      this.percentContributionList = await this.modelSmartSectorApi.percentContribution(graphName);
+      this.percentContributionList = await this.modelSmartSectorApi.percentContribution(this.perspective+"/"+graphName);
       this.contributionList = await this.contributionListPerSector(this.percentContributionList);
     }
 

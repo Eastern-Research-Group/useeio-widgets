@@ -74,8 +74,8 @@ export class PieListSearch extends Widget {
 
     async update() {
         this.modelSmartSectorApi.init();
-        this.piePercentContribution.init('GWP-AR6-20');
-        this.piePercentContributionSectors.init('GWP-AR6-20');
+        this.piePercentContribution.init('GWP-AR6-100');
+        this.piePercentContributionSectors.init('GWP-AR6-100');
 
         this.sectors = await this._chartConfig.model.sectors();
         ReactDOM.render(
@@ -97,7 +97,7 @@ const Component = (props: { widget: PieListSearch }) => {
     const [graphDetails, setGraphDetails] = React.useState<string>('Aggregate');
     const [aggregate, setAggregate] = React.useState<boolean>( true );
     const [detail, setDetail] = React.useState<boolean>( false );
-
+    const [perspective, setPerspective] = React.useState<string>('final');
 
 
 
@@ -146,13 +146,17 @@ const Component = (props: { widget: PieListSearch }) => {
         setGraph(event.target.value);
         setYear(new String(event.target.value).replace('GWP-AR6-',''));
         
-       if(graphDetails === 'Aggregate')
-        {
-        props.widget.piePercentContribution.changeGraph(event.target.value,value);
-       }
-       else
+        if(graphDetails === 'Aggregate')
+            props.widget.piePercentContribution.changeGraph(event.target.value,value);
+        else
             props.widget.piePercentContributionSectors.changeGraph(event.target.value,value);
     };
+
+    const handleChangePerspective = (event:any) => {
+            setPerspective(event.target.value);
+            props.widget.piePercentContribution.changePerspectiveGraph(event.target.value,graph,value);
+            props.widget.piePercentContributionSectors.changePerspectiveGraph(event.target.value,graph,value);
+        }
 
     const handleChangeGraphDetail = (event:any) => {
         setGraphDetails(event.target.value);
@@ -220,6 +224,21 @@ const Component = (props: { widget: PieListSearch }) => {
                     flexDirection:'row',
                     flexWrap:'wrap'
                     }}>
+                        <FormControl className={classes.margin}>
+                        <InputLabel id="demo-controlled-open-select-label">Select perspective:</InputLabel>
+                        <Select
+                        native
+                        value={perspective}
+                        onChange={handleChangePerspective}
+                        label="Select perspective"
+                        inputProps={{
+                        name: 'perspective',
+                        }}
+                        >
+                        <option value="final">Point of Consumption</option>
+                        <option value="direct">Supply Chain</option>
+                        </Select>
+                        </FormControl>
                         <FormControl className={classes.margin} >
                         <InputLabel id="demo-controlled-open-select-label">Select GWP Factor:</InputLabel>
                         <Select
@@ -231,8 +250,8 @@ const Component = (props: { widget: PieListSearch }) => {
                             name: 'graph',
                         }}
                         >
-                        <option value="GWP-AR6-20">CO2e based on 20yr GWP</option>
                         <option value="GWP-AR6-100">CO2e based on 100yr GWP</option>
+                        <option value="GWP-AR6-20">CO2e based on 20yr GWP</option>
                         {/* <option value="Social-Cost-of-Carbon">Social Cost of Carbon</option> */}
                         </Select>
                     </FormControl>

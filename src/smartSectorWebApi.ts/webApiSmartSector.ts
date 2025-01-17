@@ -167,7 +167,7 @@ export class WebModelSmartSector {
    */
   async sectorContributionToImpactGhg(fileName:string): Promise<SectorContributionToImpact[]> 
   {
-    return await this.api.getJson(this.modelId,  "sector_contribution_to_impact/final/"+fileName)
+    return await this.api.getJson(this.modelId,  "sector_contribution_to_impact/"+fileName)
   }
 
    /**
@@ -190,14 +190,14 @@ export class WebModelSmartSector {
         }
         else
         {
-          let data:SectorContributionToImpact[] = await this.api.api(this.modelId,  "sector_contribution_to_impact/final/"+fileName);
+          let data:SectorContributionToImpact[] = await this.api.api(this.modelId,  "sector_contribution_to_impact/"+fileName);
           await snes.set(fileName,JSON.stringify(data));
           return data;
         }
     }
     else
     {
-      return await this.api.api(this.modelId,  "sector_contribution_to_impact/final/"+fileName);
+      return await this.api.api(this.modelId,  "sector_contribution_to_impact/"+fileName);
     }
    }
 
@@ -315,7 +315,7 @@ export class WebModelSmartSector {
    */
     findPurchasedGroup(id: string, SectorMappingList:SectorMapping[]): string {
       const sectorMapping:SectorMapping = SectorMappingList.find(d => {
-        if (id === d.id) {
+        if (id == d.id) {
           return true;
         }
       });
