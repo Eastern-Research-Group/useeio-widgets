@@ -9,7 +9,7 @@
 
 
 <body>
-    <h1 id="graphTitle" class="text-center">Top 10 Sectors based on Total Embodied GHG Emissions</h1>
+    <h1 id="graphTitle" class="text-center">Top 10 Sectors Based on Total Embodied GHG Emissions</h1>
 	<p>For the selected group of sectors, this chart presents the total embodied GHG emissions or emission intensity of each sector based on contributions from <em>Direct</em> emissions due to the sector's operations and <em>Indirect</em> emissions embedded in the purchases made from all other sectors in the supply chain.</p>
     <div style=" display: flex; flex-direction: column;height: 85vh;">
         <div style=" flex-grow: 1;">
@@ -155,7 +155,28 @@
                 {
                     topSectors = undefined
                 }
-                document.getElementById("graphTitle").innerHTML = `${n}`; 
+                var name = `${n}`
+                switch(n) {
+                    case "Top 10 Total Embodied GHG Emissions":
+                        name = "Top 10 Sectors Based on Total Embodied GHG Emissions";
+                        break;
+                    case "Top 25 Total Embodied GHG Emissions":
+                        name = "Top 25 Sectors Based on Total Embodied GHG Emissions";
+                        break;
+                    case "Top 10 Embodied GHG Intensity":
+                        name = "Top 10 Sectors Based on Embodied GHG Emission Intensity";
+                        break;
+                    case "Top 25 Embodied GHG Intensity":
+                        name = "Top 25 Sectors Based on Embodied GHG Emission Intensity";
+                        break;
+                    case "Select Construction Material Manufacturing Sectors":
+                        name = "Embodied GHG Emissions of Selected Construction Material Manufacturing Sectors";
+                        break;
+                    case "Energy Intensive Sectors":
+                        name = "Embodied GHG Emissions of Energy Intensive Sectors";
+                        break;
+                }
+                document.getElementById("graphTitle").innerHTML = `${name}`; 
             }
 
           
