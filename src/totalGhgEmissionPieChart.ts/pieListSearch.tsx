@@ -91,7 +91,7 @@ const Component = (props: { widget: PieListSearch }) => {
 
     const [searchTerm, setSearchTerm] = React.useState<string>('');
     const [value, setValue] = React.useState<string>('');
-    const [title, setTitle] = React.useState<string>('Fresh soybeans, canola, flaxseeds, and other oilseeds Manufacturing (BEA/NAICS 1111A0)');
+    const [title, setTitle] = React.useState<string>('Fresh soybeans, canola, flaxseeds, and other oilseeds (BEA/NAICS 1111A0)');
     const [graph, setGraph] = React.useState<string>('GWP-AR6-100');
     const [year, setYear] = React.useState<string>('100')
     const [graphDetails, setGraphDetails] = React.useState<string>('Aggregate');
@@ -108,7 +108,7 @@ const Component = (props: { widget: PieListSearch }) => {
     }
 
     const handleState = (e:string,c:string) => {
-        setTitle( e + " Manufacturing " + '('+ c +')')
+        setTitle( e + ' ('+ c +')')
 
         setSearchTerm('');
         setValue(e);
