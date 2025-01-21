@@ -56,10 +56,13 @@ export async function calculate(topSectorList:SumSmartSectorTotalParts[],model: 
            return  [sectorName.name].concat(sectorName.id)
          });
 
-
-         let colors = ['#8D5B4C','#2E93fA', '#4CAF50', '#546E7A', '#E91E63', '#FF9800','#9b19f5','#2e2b28','#ab3da9','#A5978B']
-         
-
+         let colors:string[] =[]
+         if(groupMappingSector === 'group_summary')
+         {
+          colors = ['#4CAF50','#2e2b28', '#ab3da9', '#9b19f5']
+         }
+         else
+          colors = ['#4CAF50','#2e2b28', '#ab3da9', '#546E7A', '#E91E63', '#FF9800','#2E93fA','#8D5B4C','#A5978B','#9b19f5']
 
         return {
             series: sortedSeries,

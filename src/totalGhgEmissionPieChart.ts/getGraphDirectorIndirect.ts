@@ -61,7 +61,7 @@ export async function apexGraph(contributionList:SortingPercentContributionIndir
             }
             else
             {
-              contrubutionColorList.push('#D30000')
+              contrubutionColorList.push('#2E93fA')
             }
           });
   

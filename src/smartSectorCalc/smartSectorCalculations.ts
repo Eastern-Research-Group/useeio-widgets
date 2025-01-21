@@ -141,6 +141,8 @@ export function uniqueSortedMappingGroupNoDuplicatesList(sectorMappingList:Secto
     
     let sortedSectorMappingByGroup:SectorMapping[];
     let sortedMappingGroupList:string[];
+    let groupMapping:string[];
+    let customOrder:string[];
 
     if(groupSelection === 'group_summary')
     {
@@ -153,6 +155,10 @@ export function uniqueSortedMappingGroupNoDuplicatesList(sectorMappingList:Secto
         {           
              return t.group_summary;
         })
+
+         groupMapping = sortedMappingGroupList.filter((value, index) => sortedMappingGroupList.indexOf(value) === index)   
+
+         customOrder = ['Direct', 'Purchased Electricity', 'Transport', 'Other'];
     }
     else
     {
@@ -165,8 +171,22 @@ export function uniqueSortedMappingGroupNoDuplicatesList(sectorMappingList:Secto
         {           
              return t.group_detail;
         })
+         groupMapping = sortedMappingGroupList.filter((value, index) => sortedMappingGroupList.indexOf(value) === index)   
+
+        customOrder = ['Direct', 'Purchased Electricity', 'Transport', 'Fuels', 'Manufacturing', 'Minerals', 'Construction', 'Agriculture', 'Utilities', 'Other' ];
     }
+
+        const orderMap: { [key: string]: number } = customOrder.reduce((map, name, index) => {
+            map[name] = index;
+            return map;
+        }, {} as { [key: string]: number });
+
+    const sortedList: string[] = groupMapping
+        .filter(name => customOrder.includes(name))  
+        .sort((a, b) => (orderMap[a] ?? Infinity) - (orderMap[b] ?? Infinity))  
+        .concat(groupMapping.filter(name => !customOrder.includes(name))); 
+
     
-    
-    return sortedMappingGroupList.filter((value, index) => sortedMappingGroupList.indexOf(value) === index)   
+    console.log(sortedList)
+    return sortedList 
 }
