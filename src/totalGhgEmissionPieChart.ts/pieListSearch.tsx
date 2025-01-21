@@ -322,7 +322,7 @@ const Component = (props: { widget: PieListSearch }) => {
                                 fontWeight: 'bold',
                                 textAlign: 'center',
                                 }}>
-                                <div>Detail GHG Emissions</div>
+                                <div>Direct and Indirect GHG Emissions</div>
                                 <div
                                 style={{
                                     overflowWrap: 'break-word',

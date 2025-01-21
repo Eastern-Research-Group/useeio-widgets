@@ -207,7 +207,6 @@ const classes = useStyles();
                                 textAlign: 'center',
                                 }}
                             >
-                                <div>Total Sector GHG Emissions</div>
                                 <div
                                 style={{
                                 overflowWrap: 'break-word',
@@ -215,6 +214,7 @@ const classes = useStyles();
                                 fontWeight: 'bold',
                                 wordWrap:'break-word',
                                 }}>{title}</div>
+                                <div>Contribution to Sector Total GHG Emissions by Source</div>
                                 <div>Based on {year}-year GWP factors (IPCC, 2021)</div>
                             </div>
                                 : 
@@ -223,7 +223,6 @@ const classes = useStyles();
                                 fontWeight: 'bold',
                                 textAlign: 'center',
                                 }}>
-                                <div>Total Sector GHG Emissions Intensity</div>
                                 <div
                                 style={{
                                     overflowWrap: 'break-word',
@@ -231,6 +230,7 @@ const classes = useStyles();
                                     fontWeight: 'bold',
                                     wordWrap:'break-word',
                                     }}>{title}</div>
+                                <div>Contribution to Sector Carbon Intensity by Source</div>
                                 <div>Based on {year}-year GWP factors (IPCC, 2021)</div>
                             </div>
                         }
