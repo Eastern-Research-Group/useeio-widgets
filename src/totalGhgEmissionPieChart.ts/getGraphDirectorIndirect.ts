@@ -1,5 +1,5 @@
 import * as apex from "apexcharts";
-import {SortingPercentContribution, SortingPercentContributionIndirectAndDirect} from '../smartSectorChart/smartSector'
+import {SortingPercentContribution, SortingPercentContributionIndirectAndDirect, ContributionListForSector, ContributionListForSectorDirectOrIndirect} from '../smartSectorChart/smartSector'
 import { wrap } from "module";
 
 
@@ -71,7 +71,7 @@ export async function apexGraph(contributionList:SortingPercentContributionIndir
             colors:contrubutionColorList,
             chart: {
             width: 600,
-            type: 'pie',
+            type: 'donut',
             toolbar: {
               show: true,
               tools: {
@@ -97,6 +97,29 @@ export async function apexGraph(contributionList:SortingPercentContributionIndir
                   }
               }
           }},
+           plotOptions: {
+                      pie:{
+                        donut: {
+                          size:'80%',
+                          labels: {
+                            show:true,
+                            value:{
+                              show:true,
+                              formatter: function (val) {
+                                
+                                let uniqueValue:ContributionListForSectorDirectOrIndirect = values._contributionList.find(t => {
+                                  if(t.contribution.toString() == val)
+                                    return true
+                                });
+                      
+                                // Return both total and percentage combined in the same label
+                                return `${(uniqueValue.totalImpactSum).toFixed(2)} MMT CO2e & (${(uniqueValue.contribution*100).toFixed(2)}%)`;
+                              }
+                            }
+                          }
+                        }
+                      }
+                      },
           labels: sectorPurchasedList,
           responsive: [{
             breakpoint: 480,

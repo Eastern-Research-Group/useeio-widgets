@@ -1,5 +1,5 @@
 import * as apex from "apexcharts";
-import {SortingPercentContribution} from '../smartSectorChart/smartSector'
+import {ContributionListForSector, SortingPercentContribution} from '../smartSectorChart/smartSector'
 
 
 export async function apexGraph(contributionList:SortingPercentContribution[],sector_name:string,graphName?:string): Promise<apex.ApexOptions> 
@@ -11,13 +11,14 @@ export async function apexGraph(contributionList:SortingPercentContribution[],se
             }
         })
         
+        let totalImpactsList:number[] = [];
         let sectorPurchasedList:string[] = [];
         let contrubutionList:number[] = [];
         let contrubutionColorList:string[] = [];
 
         if(values === undefined)
           {
-            return {
+            var options:apex.ApexOptions = {
               series: [],
               chart: {
               width: 800,
@@ -47,6 +48,8 @@ export async function apexGraph(contributionList:SortingPercentContribution[],se
               }
             }]
             };
+
+            return options;
           }
         else
         {
@@ -54,7 +57,7 @@ export async function apexGraph(contributionList:SortingPercentContribution[],se
           values._contributionList.map(t => {
             sectorPurchasedList.push(t.sectorPurchased)
             contrubutionList.push(t.contribution)
-
+            totalImpactsList.push(t.totalImpactsSum)
             
             if(t.sectorPurchased.match("Agriculture")){
               contrubutionColorList.push('#8D5B4C')
@@ -82,12 +85,12 @@ export async function apexGraph(contributionList:SortingPercentContribution[],se
           });
   
 
-          return {
+          var options:apex.ApexOptions = {
             series: contrubutionList,
             colors:contrubutionColorList,
             chart: {
             width: 600,
-            type: 'pie',
+            type: 'donut',
             toolbar: {
               show: true,
               tools: {
@@ -113,6 +116,29 @@ export async function apexGraph(contributionList:SortingPercentContribution[],se
                   }
               }
           }},
+          plotOptions: {
+            pie:{
+              donut: {
+                size:'80%',
+                labels: {
+                  show:true,
+                  value:{
+                    show:true,
+                    formatter: function (val) {
+                      
+                      let uniqueValue:ContributionListForSector = values._contributionList.find(t => {
+                        if(t.contribution.toString() == val)
+                          return true
+                      });
+            
+                      // Return both total and percentage combined in the same label
+                      return `${(uniqueValue.totalImpactsSum).toFixed(2)} MMT CO2e & (${(uniqueValue.contribution*100).toFixed(2)}%)`;
+                    }
+                  }
+                }
+              }
+            }
+            },
           labels: sectorPurchasedList,
           responsive: [{
             breakpoint: 480,
@@ -134,8 +160,10 @@ export async function apexGraph(contributionList:SortingPercentContribution[],se
             }
           }
           };
-        }
-      
+
+          return options;
+
+        }      
 
       
 }

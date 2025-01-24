@@ -130,7 +130,8 @@ export class PiePercentContributionDirectAndIndirect extends Widget
           selectSectorName(t.sector,sectorsList),
           {
             directOrIndirect: directOrIndirect,
-            contribution:t.contribution
+            contribution:t.contribution,
+            totalImpactSum:t.total_impacts_sum
           }
         );
 
@@ -175,6 +176,7 @@ export class PiePercentContributionDirectAndIndirect extends Widget
             {
               
               indirect.contribution += t.contribution;
+              indirect.totalImpactSum += t.total_impacts_sum;
 
             }
             else if(direct === undefined && t.sector_purchased_detail == 'Direct')
@@ -182,7 +184,8 @@ export class PiePercentContributionDirectAndIndirect extends Widget
              
               contributionPercentageFound.addContributionSectorList({
                 directOrIndirect:"Direct",
-                contribution:t.contribution
+                contribution:t.contribution,
+                totalImpactSum:t.total_impacts_sum
               })
 
             }
@@ -191,7 +194,8 @@ export class PiePercentContributionDirectAndIndirect extends Widget
              
               contributionPercentageFound.addContributionSectorList({
                 directOrIndirect:"Indirect",
-                contribution:t.contribution
+                contribution:t.contribution,
+                totalImpactSum:t.total_impacts_sum
               })
 
             }
@@ -211,7 +215,8 @@ export class PiePercentContributionDirectAndIndirect extends Widget
               selectSectorName(t.sector,sectorsList),
               {
                 directOrIndirect: sign,
-                contribution:t.contribution
+                contribution:t.contribution,
+                totalImpactSum:t.total_impacts_sum
               }
             );
 
