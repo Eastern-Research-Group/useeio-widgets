@@ -237,11 +237,11 @@ const classes = useStyles();
                         <div  style={{
                     display: 'grid'
                     }}>
-                                <div style={{visibility: totalImpactGraph ? 'visible' : 'hidden', gridColumn: '1',
-  gridRow: '1', marginLeft: '10px', marginRight: '20px' }} id="total_impacts">
-                                </div>
-                                <div style={{visibility: impactPerPurchaseGraph ? 'visible' : 'hidden', gridColumn: '1',
-  gridRow: '1', marginLeft: '10px', marginRight: '20px'}} id="impact_per_purchase">
+                                                        <div style={{visibility: totalImpactGraph ? 'visible' : 'hidden', gridColumn: '1',
+                        gridRow: '1', marginLeft: '10px', marginRight: '20px' }} id="total_impacts">
+                                                        </div>
+                                                        <div style={{visibility: impactPerPurchaseGraph ? 'visible' : 'hidden', gridColumn: '1',
+                        gridRow: '1', marginLeft: '10px', marginRight: '20px'}} id="impact_per_purchase">
                                 </div>
                         </div>
                 </div>

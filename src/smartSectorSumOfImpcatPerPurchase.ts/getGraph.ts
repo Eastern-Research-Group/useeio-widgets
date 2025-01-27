@@ -39,6 +39,12 @@ export async function apexGraph(sortingImpactPerPurchaseWithTopList:SortedImpact
               return (t.purchase_commodity.includes('Direct')? '#4CAF50':'#2E93fA')
           })
 
+        let totalSum:number = 0;
+          values.topFifteenImpactPerPurchase.forEach(t => {
+            totalSum += t.impactPerPurchase
+        });
+
+        console.log(totalSum)
       return {
         series: [{
           name: 'Emissions Intensity',
@@ -55,6 +61,18 @@ export async function apexGraph(sortingImpactPerPurchaseWithTopList:SortedImpact
           distributed: true,
         }
       },
+      annotations: {
+        yaxis: [{
+          y: values.topFifteenImpactPerPurchase[0].impactPerPurchase,  
+          borderColor: 'white',
+          label: {
+            text: `Total ${unitLabel} for sector ${sectorName}: ${totalSum.toFixed(2)}`,  
+            style:{
+              fontWeight:'bold',
+            }
+          }
+        }]
+      },
       dataLabels: {
         enabled: false
       },
@@ -68,6 +86,7 @@ export async function apexGraph(sortingImpactPerPurchaseWithTopList:SortedImpact
           title: {
             text: yaxisTitle
           },
+          max: values.topFifteenImpactPerPurchase[0].impactPerPurchase + values.topFifteenImpactPerPurchase[9].impactPerPurchase,
           forceNiceScale: true,
           labels: {
             formatter: function(val) {
