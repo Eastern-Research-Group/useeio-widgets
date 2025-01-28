@@ -107,6 +107,32 @@ const Component = (props: { widget: PieListSearch }) => {
         sectors = sectors.filter((s) => {return ((strings.search(s.name, searchTerm) >= 0)  || (strings.search(s.code, searchTerm) >= 0))});
     }
 
+    React.useEffect(() => {
+        const textElements = document.querySelectorAll<SVGTextElement>('#profile-chart-details svg text');
+        
+        if (textElements.length > 0) {
+          textElements[textElements.length - 1].setAttribute("visibility", "hidden");
+        }
+
+        const textElement = document.querySelectorAll<SVGTextElement>('#profile-chart svg text');
+        
+        if (textElement.length > 0) {
+          textElement[textElement.length - 1].setAttribute("visibility", "hidden");
+        }
+
+        let simple = aggregate ? 'visible' : 'hidden';
+        let details = detail ? 'visible' : 'hidden';
+
+        if (textElement.length > 0) {
+            textElement[textElement.length - 1].setAttribute("visibility", simple);
+          }
+
+          if (textElements.length > 0) {
+            textElements[textElements.length - 1].setAttribute("visibility", details);
+          }
+
+      }, [detail,aggregate]);
+
     const handleState = (e:string,c:string) => {
         setTitle( e + ' ('+ c +')')
 

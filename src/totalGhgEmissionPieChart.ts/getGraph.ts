@@ -118,19 +118,13 @@ export async function apexGraph(contributionList:SortingPercentContribution[],se
             },
             dataPointMouseLeave: function() {
 
-              if(pointSelection > 0)
+              if(!(pointSelection > 0))
               {
                 var textElements = document.querySelectorAll('#profile-chart-details svg text');
-                textElements[textElements.length - 1].setAttribute("visibility", "hidden")
+                textElements[textElements.length - 1].setAttribute("visibility", "visible"); 
               }
-              else
-              {
-                var textElements = document.querySelectorAll('#profile-chart-details svg text');
-              textElements[textElements.length - 1].setAttribute("visibility", "visible"); 
-              } 
-              
-          }
-          
+             
+          },          
         },
             toolbar: {
               show: true,
@@ -208,13 +202,13 @@ export async function apexGraph(contributionList:SortingPercentContribution[],se
           annotations: {
             texts: [
               {
-                text: `${totalSum.toFixed(2)} MMT CO2e and 100%`,  // Show initial total value as annotation in the center
-                x: 220,  // Center horizontally
-                y: 220,  // Center vertically
-                textAnchor: 'middle',  // Align text in the middle
-                foreColor: '#333',  // Text color
-                fontSize: '18px',  // Font size
-                fontWeight: 'bold',  // Font weight
+                text: `${totalSum.toFixed(2)} MMT CO2e (100%)`, 
+                x: 220, 
+                y: 220,  
+                textAnchor: 'middle',  
+                foreColor: '#333',  
+                fontSize: '18px',  
+                fontWeight: 'bold',  
               },
             ],
           },
