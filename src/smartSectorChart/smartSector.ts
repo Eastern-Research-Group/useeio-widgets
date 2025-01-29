@@ -111,11 +111,13 @@ export class SortingPercentContributionIndirectAndDirect
 export interface ContributionListForSector {
    sectorPurchased:string;
    contribution:number;
+   totalImpactsSum:number;
 }
 
 export interface ContributionListForSectorDirectOrIndirect {
     directOrIndirect:string;
     contribution:number;
+    totalImpactSum:number;
  }
 
 export interface ImpactPerPurchaseSector{

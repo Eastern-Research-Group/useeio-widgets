@@ -361,6 +361,7 @@ export interface PercentContribution {
   sector_purchased?: string;
   sector_purchased_detail?:string;
   contribution?: number;
+  total_impacts_sum?:number;
 
 }
 

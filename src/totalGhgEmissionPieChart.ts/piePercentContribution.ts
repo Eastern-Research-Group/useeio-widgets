@@ -122,7 +122,8 @@ export class PiePercentContribution extends Widget
           selectSectorName(t.sector,sectorsList),
           {
             sectorPurchased:t.sector_purchased_detail,
-            contribution:t.contribution
+            contribution:t.contribution,
+            totalImpactsSum:t.total_impacts_sum,
           }
         );
 
@@ -144,7 +145,8 @@ export class PiePercentContribution extends Widget
           
               contributionPercentageFound.addContributionSectorList({
                 sectorPurchased:t.sector_purchased_detail,
-                contribution:t.contribution
+                contribution:t.contribution,
+                totalImpactsSum:t.total_impacts_sum,
               });
         }
         else
@@ -154,7 +156,8 @@ export class PiePercentContribution extends Widget
             selectSectorName(t.sector,sectorsList),
             {
               sectorPurchased:t.sector_purchased_detail,
-              contribution:t.contribution
+              contribution:t.contribution,
+              totalImpactsSum:t.total_impacts_sum,
             }
           );
   

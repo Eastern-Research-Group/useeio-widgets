@@ -1,5 +1,5 @@
 import * as apex from "apexcharts";
-import {SortingPercentContribution} from '../smartSectorChart/smartSector'
+import {ContributionListForSector, SortingPercentContribution} from '../smartSectorChart/smartSector'
 
 
 export async function apexGraph(contributionList:SortingPercentContribution[],sector_name:string,graphName?:string): Promise<apex.ApexOptions> 
@@ -11,13 +11,14 @@ export async function apexGraph(contributionList:SortingPercentContribution[],se
             }
         })
         
+        let totalImpactsList:number[] = [];
         let sectorPurchasedList:string[] = [];
         let contrubutionList:number[] = [];
         let contrubutionColorList:string[] = [];
 
         if(values === undefined)
           {
-            return {
+            var options:apex.ApexOptions = {
               series: [],
               chart: {
               width: 800,
@@ -47,15 +48,18 @@ export async function apexGraph(contributionList:SortingPercentContribution[],se
               }
             }]
             };
+
+            return options;
           }
         else
         {
 
+          let totalSum:number = 0;
           values._contributionList.map(t => {
             sectorPurchasedList.push(t.sectorPurchased)
             contrubutionList.push(t.contribution)
-
-            
+            totalImpactsList.push(t.totalImpactsSum)
+            totalSum += t.totalImpactsSum;
             if(t.sectorPurchased.match("Agriculture")){
               contrubutionColorList.push('#8D5B4C')
             }
@@ -80,20 +84,54 @@ export async function apexGraph(contributionList:SortingPercentContribution[],se
               contrubutionColorList.push('#4CAF50')
             }
           });
-  
+          let pointSelection:number = 0;
 
-          return {
+
+ return {
             series: contrubutionList,
             colors:contrubutionColorList,
             chart: {
             width: 600,
-            type: 'pie',
+            height:471.8,
+            type: 'donut',
+            events: {
+            dataPointMouseEnter: function() {
+                var textElements = document.querySelectorAll('#profile-chart-details svg text');
+                textElements[textElements.length - 1].setAttribute("visibility", "hidden") 
+                
+            },
+            dataPointSelection: function(event, chartContext, config) {
+              
+              pointSelection = config.selectedDataPoints[0].length;
+              if(pointSelection > 0)
+              {
+                var textElements = document.querySelectorAll('#profile-chart-details svg text');
+                textElements[textElements.length - 1].setAttribute("visibility", "hidden")
+              }
+              else
+              {
+                var textElements = document.querySelectorAll('#profile-chart-details svg text');
+              textElements[textElements.length - 1].setAttribute("visibility", "visible");
+              }
+             
+
+            },
+            dataPointMouseLeave: function() {
+
+              if(!(pointSelection > 0))
+              {
+                var textElements = document.querySelectorAll('#profile-chart-details svg text');
+                textElements[textElements.length - 1].setAttribute("visibility", "visible"); 
+              }
+             
+          },          
+        },
             toolbar: {
               show: true,
               tools: {
                   download: true,
                   zoom: false,
-                  zoomin: false, 
+                  zoomin: false,
                   zoomout: false,
                   pan: false,
                   reset: false,
@@ -113,12 +151,34 @@ export async function apexGraph(contributionList:SortingPercentContribution[],se
                   }
               }
           }},
+           plotOptions: {
+                      pie:{
+                        donut: {
+                          size:'80%',
+                          labels: {
+                            show:true,
+                            value:{
+                              show:true,
+                              formatter: function (val) {
+                                let uniqueValue:ContributionListForSector = values._contributionList.find(t => {
+                                  if(t.contribution.toString() == val)
+                                    return true
+                                });
+                      
+                                // Return both total and percentage combined in the same label
+                                return `${(uniqueValue.totalImpactsSum).toFixed(2)} MMT CO2e  (${(uniqueValue.contribution*100).toFixed(2)}%)`;
+                            }
+                            }
+                          }
+                        }
+                      }
+                      },
           labels: sectorPurchasedList,
           responsive: [{
             breakpoint: 480,
             options: {
               chart: {
-                width: 400
+                width: 600
               },
               legend: {
                 position: 'bottom'
@@ -129,13 +189,32 @@ export async function apexGraph(contributionList:SortingPercentContribution[],se
             enabled: true,
             y: {
               formatter: function (val) {
-                return "" + (val * 100).toFixed(2) + "%"
+                let uniqueValue:ContributionListForSector = values._contributionList.find(t => {
+                  if(t.contribution == val)
+                    return true
+                });
+      
+                // Return both total and percentage combined in the same label
+                return `${(uniqueValue.totalImpactsSum).toFixed(2)} MMT CO2e  (${(uniqueValue.contribution*100).toFixed(2)}%)`;
               }
             }
-          }
+          },
+          annotations: {
+            texts: [
+              {
+                text: `${totalSum.toFixed(2)} MMT CO2e (100%)`, 
+                x: 220, 
+                y: 220,  
+                textAnchor: 'middle',  
+                foreColor: '#333',  
+                fontSize: '18px',  
+                fontWeight: 'bold',  
+              },
+            ],
+          },
           };
         }
-      
+          
 
       
 }
