@@ -114,7 +114,7 @@ export async function apexGraph(contributionList:SortingPercentContributionIndir
             toolbar: {
               show: true,
               tools: {
-                  download: true,
+                  download: false,
                   zoom: false,
                   zoomin: false,
                   zoomout: false,

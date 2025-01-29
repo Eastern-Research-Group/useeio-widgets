@@ -129,7 +129,7 @@ export async function apexGraph(contributionList:SortingPercentContribution[],se
             toolbar: {
               show: true,
               tools: {
-                  download: true,
+                  download: false,
                   zoom: false,
                   zoomin: false,
                   zoomout: false,

@@ -4,6 +4,7 @@ import { modelOfSmartSector, WebModelSmartSector, SectorMapping, PercentContribu
 import {selectSectorName, uniqueSortedMappingGroupNoDuplicatesList } from '../smartSectorCalc/smartSectorCalculations'
 import { SortingPercentContribution, SortingPercentContributionIndirectAndDirect, ContributionListForSectorDirectOrIndirect} from '../smartSectorChart/smartSector'
 import { apexGraph } from "./getGraphDirectorIndirect";
+import * as apex from "apexcharts";
 
 export interface SmartSectorChartConfig {
     model: WebModel;
@@ -23,6 +24,8 @@ export class PiePercentContributionDirectAndIndirect extends Widget
     sectorsListlowerCase:String[];
     graphName:string = '';
     perspective:string;
+    sectorCode:string = '1111A0';
+    options:apex.ApexOptions;
 
     constructor(private _chartConfig: SmartSectorChartConfig) {
         super();
@@ -48,10 +51,10 @@ export class PiePercentContributionDirectAndIndirect extends Widget
     let titleNameWithNoSpace = graphName.replace(/\-/g," ");
     this.percentContributionList = await this.modelSmartSectorApi.percentContribution("final/"+graphName);
     this.contributionList = await this.contributionListPerSector(this.percentContributionList);
-    let options = await apexGraph(this.contributionList,sector_name,titleNameWithNoSpace);
+    this.options = await apexGraph(this.contributionList,sector_name,titleNameWithNoSpace);
     this.chart = new ApexCharts(
         document.querySelector(this._chartConfig.selector),
-        options,
+        this.options,
     );
 
     this.chart.render();
@@ -88,17 +91,17 @@ export class PiePercentContributionDirectAndIndirect extends Widget
     let sector_name:string = sectorName? sectorName:'Fresh soybeans, canola, flaxseeds, and other oilseeds';
     let titleNameWithNoSpace = graphName.replace(/\-/g," ");
     
-    let options = await apexGraph(this.contributionList,sector_name,titleNameWithNoSpace);
+    this.options = await apexGraph(this.contributionList,sector_name,titleNameWithNoSpace);
 
-    this.chart.updateOptions(options);
+    this.chart.updateOptions(this.options);
     this.chart.resetSeries();
    }
 
-   async updateGraph(sectorName?:string)
+   async updateGraph(sectorName?:string,sectorCode?:string)
    {
- 
-    let options = await apexGraph(this.contributionList ,sectorName ,this.graphName.replace(/\-/g," "));
-    this.chart.updateOptions(options);
+    this.sectorCode = sectorCode;
+    this.options = await apexGraph(this.contributionList ,sectorName ,this.graphName.replace(/\-/g," "));
+    this.chart.updateOptions(this.options);
     this.chart.resetSeries();
    }
 
@@ -232,6 +235,57 @@ export class PiePercentContributionDirectAndIndirect extends Widget
 
     return sortedPercentList;
    }
+
+    addExportEventListeners(type:string) {
+
+      let titleName:string;
+      if(this.perspective == 'final')
+        {
+          titleName = `Sector: ${this.sectorCode}, ${this.graphName}, Point of Consumption`
+
+        }
+      else
+        {
+          titleName = `Sector: ${this.sectorCode}, ${this.graphName}, Supply Chain`
+        }
+
+          // Show the title before export
+          this.chart.updateOptions({
+            ...this.options,
+            title: {
+              text: titleName, // Title visible before exporting
+            },
+          toolbar: {
+            tools: {
+            download: true}
+            }
+      });
+
+    // Delay to ensure title is updated before export
+    setTimeout(() => {
+      if (type === "png") {
+        this.chart.exports.exportToPng();
+      } else if (type === "svg") {
+        this.chart.exports.exportToSVG();
+      } else if (type === "csv") {
+        this.chart.dataURI().then(() => {
+          this.chart.exports.exportToCSV({
+            series: this.options['series'],
+            columnDelimiter: ',',
+            fileName:titleName
+          }); 
+        });      
+      }
+
+      // Hide the title after export
+      this.chart.updateOptions({
+        ...this.options,
+        title: {
+          text: "", 
+        },
+      });
+    }, 100);
+  }
   }
   
 

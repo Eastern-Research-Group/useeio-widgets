@@ -11,6 +11,7 @@ import { makeStyles} from "@material-ui/core/styles";
 import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
+import { Menu, MenuItem, IconButton } from "@material-ui/core";
 
 
 
@@ -99,7 +100,21 @@ const Component = (props: { widget: PieListSearch }) => {
     const [detail, setDetail] = React.useState<boolean>( false );
     const [perspective, setPerspective] = React.useState<string>('final');
 
+    const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+    const open = Boolean(anchorEl);
+  
+    const handleMenuClick = (event: React.MouseEvent<HTMLElement>) => {
+      setAnchorEl(event.currentTarget);
+    };
+  
+    const handleMenuClose = (type?: string) => {
+      if(graphDetails === 'Aggregate')
+        props.widget.piePercentContribution.addExportEventListeners(type);
+        else
+        props.widget.piePercentContributionSectors.addExportEventListeners(type);
 
+      setAnchorEl(null);
+    };
 
     let sectors = props.widget.sectors;
 
@@ -139,9 +154,9 @@ const Component = (props: { widget: PieListSearch }) => {
         setSearchTerm('');
         setValue(e);
         if(graphDetails === 'Aggregate')
-            props.widget.piePercentContribution.updateGraph(e);
+            props.widget.piePercentContribution.updateGraph(e,c);
         else
-            props.widget.piePercentContributionSectors.updateGraph(e);
+            props.widget.piePercentContributionSectors.updateGraph(e,c);
     };
 
     // create the sector ranking, if there is a result
@@ -361,6 +376,22 @@ const Component = (props: { widget: PieListSearch }) => {
                                 <div>Based on {year}-year GWP factors (IPCC, 2021)</div>
                             </div>
                         }
+                    <div>
+                        {/* Menu Icon Button */}
+                        <IconButton onClick={handleMenuClick}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="none" d="M0 0h24v24H0V0z"></path>
+                            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                            </svg>
+                        </IconButton>
+
+                        {/* Dropdown Menu */}
+                        <Menu anchorEl={anchorEl} open={open} onClose={() => handleMenuClose()}>
+                            <MenuItem onClick={() => handleMenuClose("svg")}>Download SVG</MenuItem>
+                            <MenuItem onClick={() => handleMenuClose("png")}>Download PNG</MenuItem>
+                            <MenuItem onClick={() => handleMenuClose("csv")}>Download CSV</MenuItem>
+                        </Menu>
+                    </div>
                     <div  style={{
                     position:'relative',
                     }}>
