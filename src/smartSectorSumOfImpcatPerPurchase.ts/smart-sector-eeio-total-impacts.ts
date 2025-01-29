@@ -5,6 +5,7 @@ import {selectSectorName, uniqueSortedMappingGroupNoDuplicatesList } from '../sm
 import {SortedImpactPerPurchaseTopList, SortingImpactPerPurchaseWithTop, ImpactPerPurchaseSector} from '../smartSectorChart/smartSector'
 import { apexGraph } from "../smartSectorSumOfImpcatPerPurchase.ts/getImpactGraph";
 import { allGridColumnsFieldsSelector } from "@mui/x-data-grid";
+import * as apex from "apexcharts";
 
 export interface SmartSectorChartConfig {
     model: WebModel;
@@ -24,6 +25,9 @@ export class SmartSectorEEIOTotalImpactPerSector extends Widget
     sectorsListlowerCase:String[];
     graphName:string = '';
     perspective:string;
+    sector_name:string = 'Fresh soybeans, canola, flaxseeds, and other oilseeds';
+    sectorCode:string = '1111A0';
+    options:apex.ApexOptions;
 
     constructor(private _chartConfig: SmartSectorChartConfig) {
         super();
@@ -50,10 +54,10 @@ export class SmartSectorEEIOTotalImpactPerSector extends Widget
     this.sectorContributionToImpact = await this.modelSmartSectorApi.sectorContributionToImpactRankedGhgAPI("final/"+graphName);
     this.getTopValuesFromSectors = await this.getTopFifteenTotalImpactWithGroup(this.sectorContributionToImpact,this.modelSmartSectorApi);
 
-    let options = await apexGraph(this.getTopValuesFromSectors,sector_name, titleNameWithNoSpace);
+    this.options = await apexGraph(this.getTopValuesFromSectors,sector_name, titleNameWithNoSpace);
     this.chart = new ApexCharts(
         document.querySelector(this._chartConfig.selector),
-        options,
+        this.options,
     );
 
     this.chart.render();
@@ -83,16 +87,16 @@ export class SmartSectorEEIOTotalImpactPerSector extends Widget
     this.sectorContributionToImpact = await this.modelSmartSectorApi.sectorContributionToImpactRankedGhgAPI(perspective+"/"+graphName);
     this.getTopValuesFromSectors = await this.getTopFifteenTotalImpactWithGroup(this.sectorContributionToImpact,this.modelSmartSectorApi);
 
-    let options = await apexGraph(this.getTopValuesFromSectors,sector_name, titleNameWithNoSpace);
-    this.chart.updateOptions(options);
+    this.options = await apexGraph(this.getTopValuesFromSectors,sector_name, titleNameWithNoSpace);
+    this.chart.updateOptions(this.options);
     this.chart.resetSeries();
    }
 
-   async updateGraph(sectorName?:string)
+   async updateGraph(sectorName?:string,sectorCode?:string)
    {
- 
-    let options = await apexGraph(this.getTopValuesFromSectors,sectorName,this.graphName.replace(/\-/g," "));
-    this.chart.updateOptions(options);
+    this.sectorCode = sectorCode;
+    this.options = await apexGraph(this.getTopValuesFromSectors,sectorName,this.graphName.replace(/\-/g," "));
+    this.chart.updateOptions(this.options);
     this.chart.resetSeries();
    }
 
@@ -272,6 +276,57 @@ export class SmartSectorEEIOTotalImpactPerSector extends Widget
 
     return sortedImpactPerPurchaseTopList;
    }
+
+   addExportEventListeners(type:string) {
+
+    let titleName:string;
+    if(this.perspective == 'final')
+      {
+        titleName = `Sector: ${this.sectorCode}, ${this.graphName}, Point of Consumption`
+
+      }
+    else
+      {
+        titleName = `Sector: ${this.sectorCode}, ${this.graphName}, Supply Chain`
+      }
+
+        // Show the title before export
+        this.chart.updateOptions({
+          ...this.options,
+          title: {
+            text: titleName, // Title visible before exporting
+          },
+        toolbar: {
+          tools: {
+          download: true}
+          }
+    });
+
+  // Delay to ensure title is updated before export
+  setTimeout(() => {
+    if (type === "png") {
+      this.chart.exports.exportToPng();
+    } else if (type === "svg") {
+      this.chart.exports.exportToSVG();
+    } else if (type === "csv") {
+      this.chart.dataURI().then(() => {
+        this.chart.exports.exportToCSV({
+          series: this.options['series'],
+          columnDelimiter: ',',
+          fileName:titleName
+        }); 
+      });      
+    }
+
+    // Hide the title after export
+    this.chart.updateOptions({
+      ...this.options,
+      title: {
+        text: "", 
+      },
+    });
+  }, 2000);
+}
   }
   
 

@@ -56,7 +56,29 @@ export async function apexGraph(sortingImpactPerPurchaseWithTopList:SortedImpact
         }],
         chart: {
         height: 500,
-        type: 'bar' 
+        type: 'bar',
+        toolbar: {
+          show: true,
+          tools: {
+              download: false,
+              zoom: false,
+              zoomin: false,
+              zoomout: false,
+              pan: false,
+              reset: false,
+          },
+          export: {
+              csv: {
+                  filename: 'Emissions'
+              },
+              svg: {
+                  filename: 'Emissions'
+              },
+              png: {
+                  filename: 'Emissions'
+              }
+          }
+      }
       },
       colors: colors,
       plotOptions: {

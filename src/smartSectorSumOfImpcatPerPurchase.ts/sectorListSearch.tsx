@@ -17,6 +17,7 @@ import FormLabel from '@material-ui/core/FormLabel';
 import { withStyles } from '@material-ui/core/styles';
 import { SmartSectorChartConfigPie } from "../totalGhgEmissionPieChart.ts/pieListSearch";
 import { SmartSectorEEIOTotalImpactPerSector}from '../smartSectorSumOfImpcatPerPurchase.ts/smart-sector-eeio-total-impacts';
+import { Menu, MenuItem, IconButton } from "@material-ui/core";
 
 
 
@@ -88,6 +89,25 @@ const Component = (props: { widget: SectorListSearch }) => {
     const [impactPerPurchaseGraph, setImpactPerPurchaseGraph] = React.useState<boolean>( true );
     const [changePrespective, setChangePrespective] = React.useState('impact_per_purchase');
 
+        const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+        const open = Boolean(anchorEl);
+      
+        const handleMenuClick = (event: React.MouseEvent<HTMLElement>) => {
+          setAnchorEl(event.currentTarget);
+        };
+      
+        const handleMenuClose = (type?: string) => {
+            if( changePrespective === 'impact_per_purchase')
+                {
+                    props.widget.smartSectorImpactPurchase.addExportEventListeners(type);
+                }
+            else
+                {
+                    props.widget.smartSectorTotalImpact.addExportEventListeners(type);
+                } 
+          setAnchorEl(null);
+        };
+        
     const handleGraphChange = (event:any) => {
       setChangePrespective(event.target.value);
 
@@ -121,11 +141,11 @@ const Component = (props: { widget: SectorListSearch }) => {
 
         if( changePrespective === 'impact_per_purchase')
             {
-                props.widget.smartSectorImpactPurchase.updateGraph(e);
+                props.widget.smartSectorImpactPurchase.updateGraph(e,c);
             }
         else
             {
-                props.widget.smartSectorTotalImpact.updateGraph(e);
+                props.widget.smartSectorTotalImpact.updateGraph(e,c);
             }      
     };
 
@@ -234,6 +254,22 @@ const classes = useStyles();
                                 <div>Based on {year}-year GWP factors (IPCC, 2021)</div>
                             </div>
                         }
+                                            <div>
+                        {/* Menu Icon Button */}
+                        <IconButton onClick={handleMenuClick}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="none" d="M0 0h24v24H0V0z"></path>
+                            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                            </svg>
+                        </IconButton>
+
+                        {/* Dropdown Menu */}
+                        <Menu anchorEl={anchorEl} open={open} onClose={() => handleMenuClose()}>
+                            <MenuItem onClick={() => handleMenuClose("svg")}>Download SVG</MenuItem>
+                            <MenuItem onClick={() => handleMenuClose("png")}>Download PNG</MenuItem>
+                            <MenuItem onClick={() => handleMenuClose("csv")}>Download CSV</MenuItem>
+                        </Menu>
+                    </div>
                         <div  style={{
                     display: 'grid'
                     }}>
