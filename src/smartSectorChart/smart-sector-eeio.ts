@@ -51,7 +51,7 @@ export class SmartSectorEEIO extends Widget {
     this.sectorContributionToImpact= await this.modelSmartSectorApi.sectorContributionToImpactGhgAPI("final/"+graphName);
     let nameWithNoSpace = graphName.replace(/\-/g," ");
     let options = await this.getValues(this.sectorContributionToImpact, this.modelSmartSectorApi, nameWithNoSpace, this.toggleNumSelection,this.toggleImpactSelection,this.toggleGroupSelection);
-    let option = await calculate(options,this._chartConfig.model,this.uniqueSortedMappingGroupNoDuplicates, nameWithNoSpace,this.toggleImpactSelection,this.toggleGroupSelection);
+    let option = await calculate(options,this._chartConfig.model,this.uniqueSortedMappingGroupNoDuplicates, nameWithNoSpace,this.toggleImpactSelection,this.toggleGroupSelection,this.perspective);
     this.chart = new ApexCharts(
         document.querySelector(this._chartConfig.selector),
         option,
@@ -96,7 +96,7 @@ export class SmartSectorEEIO extends Widget {
 
     let listOfStackGraph = await this.getValues(this.sectorContributionToImpact, this.modelSmartSectorApi, nameWithNoSpace,this.toggleNumSelection,this.toggleImpactSelection,this.toggleGroupSelection);
     
-    let option = await calculate(listOfStackGraph,this._chartConfig.model,this.uniqueSortedMappingGroupNoDuplicates, nameWithNoSpace, this.toggleImpactSelection, this.toggleGroupSelection);
+    let option = await calculate(listOfStackGraph,this._chartConfig.model,this.uniqueSortedMappingGroupNoDuplicates, nameWithNoSpace, this.toggleImpactSelection, this.toggleGroupSelection,this.perspective);
     
     this.chart.updateOptions(option);
     this.chart.resetSeries();
@@ -214,7 +214,8 @@ export class SmartSectorEEIO extends Widget {
           this.uniqueSortedMappingGroupNoDuplicates,
           nameWithNoSpace,
           this.toggleImpactSelection,
-          this.toggleGroupSelection
+          this.toggleGroupSelection,
+          this.perspective
         );
       
         this.chart.updateOptions(option);

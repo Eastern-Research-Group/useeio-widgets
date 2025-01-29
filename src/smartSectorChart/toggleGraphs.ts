@@ -4,7 +4,7 @@ import {SumSmartSectorTotalParts} from '../smartSectorChart/smartSector';
 import { WebModel, Sector } from "useeio";
 
 
-export async function calculate(topSectorList:SumSmartSectorTotalParts[],model: WebModel,uniqueSortedMapping:string[],titleGraph?:string, impactSelector?:string, groupMappingSector?:string): Promise<apex.ApexOptions> 
+export async function calculate(topSectorList:SumSmartSectorTotalParts[],model: WebModel,uniqueSortedMapping:string[],titleGraph?:string, impactSelector?:string, groupMappingSector?:string, perspective?:string): Promise<apex.ApexOptions> 
     {       
       
       let sortTopTen:SumSmartSectorTotalParts[] = topSectorList.sort((a: SumSmartSectorTotalParts, b: SumSmartSectorTotalParts): any => {
@@ -43,6 +43,17 @@ export async function calculate(topSectorList:SumSmartSectorTotalParts[],model: 
               };
           };
           
+          let titleName:string;
+          if(perspective == 'final')
+            {
+              titleName = `${titleGraph}, Point of Consumption`
+
+            }
+          else
+            {
+              titleName = `${titleGraph}, Supply Chain`
+            }
+
         let sortedSectorCodesWithNamesWithArray: string[][] = sortedSectorCodes.map( t =>
          {
           let sectorName:Sector = sectorsList.find( s => 
@@ -85,6 +96,11 @@ export async function calculate(topSectorList:SumSmartSectorTotalParts[],model: 
                   }
                 }
               }],
+              title:
+              {
+                text:titleName,
+                align:'center'
+              },
               plotOptions: {
                 bar: {
                   horizontal: false,
