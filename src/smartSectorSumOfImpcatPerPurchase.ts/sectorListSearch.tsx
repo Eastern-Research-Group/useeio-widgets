@@ -97,13 +97,18 @@ const Component = (props: { widget: SectorListSearch }) => {
         };
       
         const handleMenuClose = (type?: string) => {
+            let file = null;
+        if(['png','svg','csv'].includes(type))
+            {
+                file = type
+            }
             if( changePrespective === 'impact_per_purchase')
                 {
-                    props.widget.smartSectorImpactPurchase.addExportEventListeners(type);
+                    props.widget.smartSectorImpactPurchase.addExportEventListeners(file);
                 }
             else
                 {
-                    props.widget.smartSectorTotalImpact.addExportEventListeners(type);
+                    props.widget.smartSectorTotalImpact.addExportEventListeners(file);
                 } 
           setAnchorEl(null);
         };
@@ -254,7 +259,11 @@ const classes = useStyles();
                                 <div>Based on {year}-year GWP factors (IPCC, 2021)</div>
                             </div>
                         }
-                                            <div>
+                        <div style={{
+                            display: 'flex',
+                            justifyContent: 'flex-end',
+                            width: '100%'
+                        }}>
                         {/* Menu Icon Button */}
                         <IconButton onClick={handleMenuClick}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">

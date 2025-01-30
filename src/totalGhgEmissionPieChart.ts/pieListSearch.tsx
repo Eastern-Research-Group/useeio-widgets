@@ -108,10 +108,16 @@ const Component = (props: { widget: PieListSearch }) => {
     };
   
     const handleMenuClose = (type?: string) => {
+        let file = null
+        if(['png','svg','csv'].includes(type))
+            {
+                file = type
+            }
+
       if(graphDetails === 'Aggregate')
-        props.widget.piePercentContribution.addExportEventListeners(type);
+        props.widget.piePercentContribution.addExportEventListeners(file);
         else
-        props.widget.piePercentContributionSectors.addExportEventListeners(type);
+        props.widget.piePercentContributionSectors.addExportEventListeners(file);
 
       setAnchorEl(null);
     };
@@ -352,8 +358,7 @@ const Component = (props: { widget: PieListSearch }) => {
                                 whiteSpace: 'normal',
                                 fontWeight: 'bold',
                                 wordWrap:'break-word',
-                                textAlign: 'center',
-                                width: '500px'
+                                textAlign: 'center'
                                 }}>{title}</div>
                                 <div>Based on {year}-year GWP factors (IPCC, 2021)</div>
                             </div>
@@ -371,12 +376,15 @@ const Component = (props: { widget: PieListSearch }) => {
                                     fontWeight: 'bold',
                                     wordWrap:'break-word',
                                     textAlign: 'center',
-                                    width: '500px'
                                     }}>{title}</div>
                                 <div>Based on {year}-year GWP factors (IPCC, 2021)</div>
                             </div>
                         }
-                    <div>
+                        <div style={{
+                            display: 'flex',
+                            justifyContent: 'flex-end',
+                            width: '100%'
+                        }}>
                         {/* Menu Icon Button */}
                         <IconButton onClick={handleMenuClick}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">

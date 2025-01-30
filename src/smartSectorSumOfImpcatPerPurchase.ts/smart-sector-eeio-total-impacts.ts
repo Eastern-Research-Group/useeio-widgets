@@ -279,15 +279,17 @@ export class SmartSectorEEIOTotalImpactPerSector extends Widget
 
    addExportEventListeners(type:string) {
 
+    if(type !== null || type ! == undefined)
+    {
     let titleName:string;
     if(this.perspective == 'final')
       {
-        titleName = `Sector: ${this.sectorCode}, ${this.graphName}, Point of Consumption`
+        titleName = `Sector: ${this.sectorCode}, ${this.graphName.replace(/\-/g," ").replace(' AR6 ',"-")}, Point of Consumption`
 
       }
     else
       {
-        titleName = `Sector: ${this.sectorCode}, ${this.graphName}, Supply Chain`
+        titleName = `Sector: ${this.sectorCode}, ${this.graphName.replace(/\-/g," ").replace(' AR6 ',"-")}, Supply Chain`
       }
 
         // Show the title before export
@@ -326,7 +328,7 @@ export class SmartSectorEEIOTotalImpactPerSector extends Widget
       },
     });
   }, 2000);
-}
+}}
   }
   
 

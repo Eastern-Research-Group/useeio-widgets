@@ -46,12 +46,12 @@ export async function calculate(topSectorList:SumSmartSectorTotalParts[],model: 
           let titleName:string;
           if(perspective == 'final')
             {
-              titleName = `${titleGraph}, Point of Consumption`
+              titleName = `${titleGraph.replace(' AR6 ',"-")}, Point of Consumption`
 
             }
           else
             {
-              titleName = `${titleGraph}, Supply Chain`
+              titleName = `${titleGraph.replace(' AR6 ',"-")}, Supply Chain`
             }
 
         let sortedSectorCodesWithNamesWithArray: string[][] = sortedSectorCodes.map( t =>
