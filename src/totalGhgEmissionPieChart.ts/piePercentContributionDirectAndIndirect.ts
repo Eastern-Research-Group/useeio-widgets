@@ -250,17 +250,39 @@ export class PiePercentContributionDirectAndIndirect extends Widget
           titleName = `Sector: ${this.sectorCode}, ${this.graphName.replace(/\-/g," ").replace(' AR6 ',"-")}, Supply Chain`
         }
 
-          // Show the title before export
-          this.chart.updateOptions({
-            ...this.options,
-            title: {
-              text: titleName, // Title visible before exporting
-            },
-          toolbar: {
-            tools: {
-            download: true}
-            }
-      });
+        // Show the title before export
+        this.chart.updateOptions({
+          ...this.options,
+          chart: {
+            toolbar: {
+              show: true,
+              tools: {
+                  download: true,
+                  zoom: false,
+                  zoomin: false,
+                  zoomout: false,
+                  pan: false,
+                  reset: false,
+              },
+              export: {
+                  csv: {
+                      filename: `${titleName}-DirectVsIndirect`,
+                      columnDelimiter: ',',
+                     headerCategory: 'Sector Purchased',
+                      headerValue: 'Contribution'
+                  },
+                  svg: {
+                      filename: `${titleName}-DirectVsIndirect`,
+                  },
+                  png: {
+                      filename: `${titleName}-DirectVsIndirect`
+                  }
+              }
+          }},
+          title: {
+            text: titleName, // Title visible before exporting
+          }
+    });
 
     // Delay to ensure title is updated before export
     setTimeout(() => {
@@ -273,7 +295,7 @@ export class PiePercentContributionDirectAndIndirect extends Widget
           this.chart.exports.exportToCSV({
             series: this.options['series'],
             columnDelimiter: ',',
-            fileName:titleName
+            fileName:`${titleName}-DirectVsIndirect`.replace(',','-')
           }); 
         });      
       }

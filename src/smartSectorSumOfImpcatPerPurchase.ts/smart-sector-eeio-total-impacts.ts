@@ -295,12 +295,34 @@ export class SmartSectorEEIOTotalImpactPerSector extends Widget
         // Show the title before export
         this.chart.updateOptions({
           ...this.options,
+          chart: {
+            toolbar: {
+              show: true,
+              tools: {
+                  download: true,
+                  zoom: false,
+                  zoomin: false,
+                  zoomout: false,
+                  pan: false,
+                  reset: false,
+              },
+              export: {
+                  csv: {
+                      filename: `${titleName}-Emissions`,
+                      columnDelimiter: ',',
+                     headerCategory: 'Sector Purchased',
+                      headerValue: 'Contribution'
+                  },
+                  svg: {
+                      filename: `${titleName}-Emissions`,
+                  },
+                  png: {
+                      filename: `${titleName}-Emissions`
+                  }
+              }
+          }},
           title: {
             text: titleName, // Title visible before exporting
-          },
-        toolbar: {
-          tools: {
-          download: true}
           }
     });
 
@@ -315,7 +337,7 @@ export class SmartSectorEEIOTotalImpactPerSector extends Widget
         this.chart.exports.exportToCSV({
           series: this.options['series'],
           columnDelimiter: ',',
-          fileName:titleName
+          fileName:`${titleName}-Emissions`.replace(',','-')
         }); 
       });      
     }

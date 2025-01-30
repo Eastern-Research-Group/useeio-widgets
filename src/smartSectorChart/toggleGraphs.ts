@@ -46,12 +46,12 @@ export async function calculate(topSectorList:SumSmartSectorTotalParts[],model: 
           let titleName:string;
           if(perspective == 'final')
             {
-              titleName = `${titleGraph.replace(' AR6 ',"-")}, Point of Consumption`
+              titleName = `Top 10 Embodied GHG Intensity: ${titleGraph.replace(' AR6 ',"-")}, Point of Consumption`
 
             }
           else
             {
-              titleName = `${titleGraph.replace(' AR6 ',"-")}, Supply Chain`
+              titleName = `Top 10 Embodied GHG Intensity: ${titleGraph.replace(' AR6 ',"-")}, Supply Chain`
             }
 
         let sortedSectorCodesWithNamesWithArray: string[][] = sortedSectorCodes.map( t =>
@@ -83,8 +83,27 @@ export async function calculate(topSectorList:SumSmartSectorTotalParts[],model: 
                 height: 500,
                 stacked: true,
                 toolbar: {
-                  show: true
-                }
+                  show: true,
+                  tools: {
+                      download: true,
+                      zoom: false,
+                      zoomin: false,
+                      zoomout: false,
+                      pan: false,
+                      reset: false,
+                  },
+                  export: {
+                      csv: {
+                          filename: titleName.replace(',','-')
+                      },
+                      svg: {
+                          filename: titleName.replace(',','-')
+                      },
+                      png: {
+                          filename: titleName.replace(',','-')
+                      }
+                  }
+              }
               },
               responsive: [{
                 breakpoint: 480,

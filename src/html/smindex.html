@@ -224,8 +224,8 @@
               <li class="usa-card   tablet:grid-col-3">
                 <div class="usa-card__container" style="border-radius: 0;">
                     <div class="usa-card__media" style="border-radius: 0;">
-                      <div class="usa-card__img" style="border-radius: 0;">
-                      <img loading="eager" sizes="(max-width: 640px) calc(100vw - 2rem), 640px" width="640" height="360" src="image/directAndIndirect.png" alt="Comparison of Direct and
+                      <div class="usa-card__img" style="border-radius: 0;background-color: white !important;">
+                      <img loading="eager" style="object-fit: contain !important;" sizes="(max-width: 640px) calc(100vw - 2rem), 640px" width="640" height="180" src="image/directAndIndirect.png" alt="Comparison of Direct and
                       Indirect GHG Emissions by
                       Sector" />
                       </div>
@@ -241,8 +241,8 @@
             <li class="usa-card   tablet:grid-col-3">
               <div class="usa-card__container" style="border-radius: 0;">
                 <div class="usa-card__media" style="border-radius: 0;">
-                  <div class="usa-card__img" style="border-radius: 0;">
-                      <img loading="eager" sizes="(max-width: 640px) calc(100vw - 2rem), 640px" width="640" height="360" src="image/ContributionsToTotalSectors.png" alt="Contributions to Total Sector
+                  <div class="usa-card__img" style="border-radius: 0;background-color: white !important;">
+                      <img loading="eager" style="object-fit: contain !important;margin-top: 40%;" sizes="(max-width: 640px) calc(100vw - 2rem), 640px" width="640" height="180" src="image/ContributionsToTotalSectors.png" alt="Contributions to Total Sector
                       GHG Emissions by Source" />
                     </div>
                   </div>
@@ -255,8 +255,8 @@
               <li class="usa-card   tablet:grid-col-3">
                 <div class="usa-card__container" style="border-radius: 0;">
                   <div class="usa-card__media" style="border-radius: 0;">
-                    <div class="usa-card__img" style="border-radius: 0;">
-                        <img loading="eager" sizes="(max-width: 640px) calc(100vw - 2rem), 640px" width="640" height="360" src="image/topSectorsGraph.png" alt="Top Sectors Based on
+                    <div class="usa-card__img" style="border-radius: 0;background-color: white !important;">
+                        <img loading="eager" style="object-fit: contain !important;margin-top: 40%;" sizes="(max-width: 640px) calc(100vw - 2rem), 640px" width="640" height="180" src="image/topSectorsGraph.png" alt="Top Sectors Based on
                         Embodied GHG Emissions
                         or Emission Intensity and
                         Contributions by Source" />
@@ -335,6 +335,10 @@
             <p>&nbsp;&nbsp;</p>
         </div>
     </div>
+    <script>
+      const image = document.querySelector('.usa-card__img img');
+      image.removeAttribute('height');
+    </script>
   </main>
 
 

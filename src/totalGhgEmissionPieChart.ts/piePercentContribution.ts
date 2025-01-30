@@ -193,12 +193,34 @@ export class PiePercentContribution extends Widget
         // Show the title before export
         this.chart.updateOptions({
           ...this.options,
+          chart: {
+            toolbar: {
+              show: true,
+              tools: {
+                  download: true,
+                  zoom: false,
+                  zoomin: false,
+                  zoomout: false,
+                  pan: false,
+                  reset: false,
+              },
+              export: {
+                  csv: {
+                      filename: `${titleName}-Detailed`,
+                      columnDelimiter: ',',
+                     headerCategory: 'Sector Purchased',
+                      headerValue: 'Contribution'
+                  },
+                  svg: {
+                      filename: `${titleName}-Detailed`,
+                  },
+                  png: {
+                      filename: `${titleName}-Detailed`
+                  }
+              }
+          }},
           title: {
             text: titleName, // Title visible before exporting
-          },
-        toolbar: {
-          tools: {
-          download: true}
           }
     });
 
@@ -213,7 +235,7 @@ export class PiePercentContribution extends Widget
         this.chart.exports.exportToCSV({
           series: this.options['series'],
           columnDelimiter: ',',
-          fileName:titleName
+          fileName:`${titleName}-Detailed`.replace(',','-')
         }); 
       });      
     }
