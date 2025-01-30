@@ -177,7 +177,7 @@ export class PiePercentContribution extends Widget
    }
 
    addExportEventListeners(type:string) {
-    if(type !== null || type ! == undefined)
+    if(type !== 'null')
       {
     let titleName:string;
     if(this.perspective == 'final')
