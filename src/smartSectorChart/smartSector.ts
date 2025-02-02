@@ -1,136 +1,142 @@
-
-
 export class SmartSector {
-    _smartSector: ChartSmartSector;
-    
-    constructor(chartSmart?:ChartSmartSector)
-    {
-        this._smartSector = chartSmart;
-    }
+  _smartSector: ChartSmartSector;
+
+  constructor(chartSmart?: ChartSmartSector) {
+    this._smartSector = chartSmart;
+  }
 }
 
+export class SumSmartSectorTotalParts {
+  _sectorCode: string;
+  _totalSectorCodeSummationImpact?: number;
+  _totalRank?: number;
+  _intensityRank?: number;
+  _constructionMaterials?: number;
+  _energyIntensive?: number;
+  _model?: string;
+  _smartSectors: SmartSector[] = new Array<SmartSector>();
 
-export class SumSmartSectorTotalParts
-{
-    _sectorCode:string;
-    _totalSectorCodeSummationImpact?:number;
-    _totalRank?:number;
-    _intensityRank?:number;
-    _constructionMaterials?:number;
-    _energyIntensive?:number;
-    _model?:string;
-    _smartSectors:SmartSector[] = new Array<SmartSector>()
+  constructor(
+    _sectorCode: string,
+    _totalSectorCodeSummationImpact: number,
+    _totalRank?: number,
+    _intensityRank?: number,
+    _constructionMaterials?: number,
+    _energy_intensive?: number,
+    model?: string,
+  ) {
+    this._sectorCode = _sectorCode;
+    this._totalSectorCodeSummationImpact = _totalSectorCodeSummationImpact;
+    this._totalRank = _totalRank;
+    this._intensityRank = _intensityRank;
+    this._constructionMaterials = _constructionMaterials;
+    this._energyIntensive = _energy_intensive;
+    this._model = model;
+  }
 
-    constructor(_sectorCode:string,_totalSectorCodeSummationImpact:number,_totalRank?:number,_intensityRank?:number,_constructionMaterials?:number, _energy_intensive?:number,model?:string)
-    {
-        this._sectorCode = _sectorCode;
-        this._totalSectorCodeSummationImpact = _totalSectorCodeSummationImpact;
-        this._totalRank = _totalRank;
-        this._intensityRank = _intensityRank;
-        this._constructionMaterials = _constructionMaterials;
-        this._energyIntensive = _energy_intensive;
-        this._model = model
-    }
-
-    
-    addSmartSectors(_smartSec:SmartSector) {
-        this._smartSectors.push(_smartSec);
-    }
-
+  addSmartSectors(_smartSec: SmartSector) {
+    this._smartSectors.push(_smartSec);
+  }
 }
 
-export interface ChartSmartSector{
-    sumSectorCode:string;
-    sumSectorName:string;
-    sumtotalImpact?:number;
-    sumImpactPerDollar?:number;
-    sumPurchasedGroup:string;
-    sumTotalRank?:number;
-    sumIntensityRank?:number;
-    sumConstructionMaterials?:number;
-    sumEnergyIntensive?:number;
-    sumModel?:string;
+export interface ChartSmartSector {
+  sumSectorCode: string;
+  sumSectorName: string;
+  sumtotalImpact?: number;
+  sumImpactPerDollar?: number;
+  sumPurchasedGroup: string;
+  sumTotalRank?: number;
+  sumIntensityRank?: number;
+  sumConstructionMaterials?: number;
+  sumEnergyIntensive?: number;
+  sumModel?: string;
 }
 
+export class SortingImpactPerPurchaseWithTop {
+  _sectorCode: string;
+  _sectorName: string;
+  _smartSectors: ImpactPerPurchaseSector[] =
+    new Array<ImpactPerPurchaseSector>();
+  constructor(
+    _sectorCode: string,
+    _sectorName: string,
+    impactPerPurchase?: ImpactPerPurchaseSector,
+  ) {
+    this._sectorCode = _sectorCode;
+    this._sectorName = _sectorName;
+    this._smartSectors.push(impactPerPurchase);
+  }
 
-
-export class SortingImpactPerPurchaseWithTop
-{
-    _sectorCode:string;
-    _sectorName:string;
-    _smartSectors:ImpactPerPurchaseSector[] = new Array<ImpactPerPurchaseSector>()    
-    constructor(_sectorCode:string, _sectorName:string, impactPerPurchase?:ImpactPerPurchaseSector)
-    {
-        this._sectorCode = _sectorCode;
-        this._sectorName = _sectorName;
-        this._smartSectors.push(impactPerPurchase);
-    }
-
-    addSmartSectorsByCommodityGroup(_smartSectors?:ImpactPerPurchaseSector) {
-        this._smartSectors.push(_smartSectors);
-    }
-
+  addSmartSectorsByCommodityGroup(_smartSectors?: ImpactPerPurchaseSector) {
+    this._smartSectors.push(_smartSectors);
+  }
 }
 
-export class SortingPercentContribution
-{
-    _sectorCode:string;
-    _sectorName:string;
-    _contributionList:ContributionListForSector[] = new Array<ContributionListForSector>()    
-    constructor(_sectorCode:string, _sectorName:string, contribution?:ContributionListForSector)
-    {
-        this._sectorCode = _sectorCode;
-        this._sectorName = _sectorName;
-        this._contributionList.push(contribution);
-    }
+export class SortingPercentContribution {
+  _sectorCode: string;
+  _sectorName: string;
+  _contributionList: ContributionListForSector[] =
+    new Array<ContributionListForSector>();
+  constructor(
+    _sectorCode: string,
+    _sectorName: string,
+    contribution?: ContributionListForSector,
+  ) {
+    this._sectorCode = _sectorCode;
+    this._sectorName = _sectorName;
+    this._contributionList.push(contribution);
+  }
 
-    addContributionSectorList(contribution?:ContributionListForSector) {
-        this._contributionList.push(contribution);
-    }
-
+  addContributionSectorList(contribution?: ContributionListForSector) {
+    this._contributionList.push(contribution);
+  }
 }
 
-export class SortingPercentContributionIndirectAndDirect
-{
-    _sectorCode:string;
-    _sectorName:string;
-    _contributionList:ContributionListForSectorDirectOrIndirect[] = new Array<ContributionListForSectorDirectOrIndirect>()    
-    constructor(_sectorCode:string, _sectorName:string, contribution?:ContributionListForSectorDirectOrIndirect)
-    {
-        this._sectorCode = _sectorCode;
-        this._sectorName = _sectorName;
-        this._contributionList.push(contribution);
-    }
+export class SortingPercentContributionIndirectAndDirect {
+  _sectorCode: string;
+  _sectorName: string;
+  _contributionList: ContributionListForSectorDirectOrIndirect[] =
+    new Array<ContributionListForSectorDirectOrIndirect>();
+  constructor(
+    _sectorCode: string,
+    _sectorName: string,
+    contribution?: ContributionListForSectorDirectOrIndirect,
+  ) {
+    this._sectorCode = _sectorCode;
+    this._sectorName = _sectorName;
+    this._contributionList.push(contribution);
+  }
 
-    addContributionSectorList(contribution?:ContributionListForSectorDirectOrIndirect) {
-        this._contributionList.push(contribution);
-    }
-
+  addContributionSectorList(
+    contribution?: ContributionListForSectorDirectOrIndirect,
+  ) {
+    this._contributionList.push(contribution);
+  }
 }
 
 export interface ContributionListForSector {
-   sectorPurchased:string;
-   contribution:number;
-   totalImpactsSum:number;
+  sectorPurchased: string;
+  contribution: number;
+  totalImpactsSum: number;
 }
 
 export interface ContributionListForSectorDirectOrIndirect {
-    directOrIndirect:string;
-    contribution:number;
-    totalImpactSum:number;
- }
-
-export interface ImpactPerPurchaseSector{
-    sectorCode:string;
-    purchaseCommodity:string;
-    impactPerPurchase?:number;
-    purchasedGroup:string;
-    totalImpact?:number;
+  directOrIndirect: string;
+  contribution: number;
+  totalImpactSum: number;
 }
 
-export interface SortedImpactPerPurchaseTopList{
-    sector_code:string;
-    sector_name:string;
-    topFifteenImpactPerPurchase?:ImpactPerPurchaseSector[];
-    topFifteenTotalImpact?:ImpactPerPurchaseSector[];
+export interface ImpactPerPurchaseSector {
+  sectorCode: string;
+  purchaseCommodity: string;
+  impactPerPurchase?: number;
+  purchasedGroup: string;
+  totalImpact?: number;
+}
+
+export interface SortedImpactPerPurchaseTopList {
+  sector_code: string;
+  sector_name: string;
+  topFifteenImpactPerPurchase?: ImpactPerPurchaseSector[];
+  topFifteenTotalImpact?: ImpactPerPurchaseSector[];
 }

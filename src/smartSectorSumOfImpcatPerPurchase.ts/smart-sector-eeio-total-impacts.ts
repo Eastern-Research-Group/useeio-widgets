@@ -1,357 +1,380 @@
-import {  Widget } from "..";
+import { Widget } from "..";
 import { WebModel, Sector } from "useeio";
-import { modelOfSmartSector, WebModelSmartSector, SectorMapping, SectorContributionToImpact } from '../smartSectorWebApi.ts/webApiSmartSector';
-import {selectSectorName, uniqueSortedMappingGroupNoDuplicatesList } from '../smartSectorCalc/smartSectorCalculations'
-import {SortedImpactPerPurchaseTopList, SortingImpactPerPurchaseWithTop, ImpactPerPurchaseSector} from '../smartSectorChart/smartSector'
+import {
+  modelOfSmartSector,
+  WebModelSmartSector,
+  SectorMapping,
+  SectorContributionToImpact,
+} from "../smartSectorWebApi.ts/webApiSmartSector";
+import {
+  selectSectorName,
+  uniqueSortedMappingGroupNoDuplicatesList,
+} from "../smartSectorCalc/smartSectorCalculations";
+import {
+  SortedImpactPerPurchaseTopList,
+  SortingImpactPerPurchaseWithTop,
+  ImpactPerPurchaseSector,
+} from "../smartSectorChart/smartSector";
 import { apexGraph } from "../smartSectorSumOfImpcatPerPurchase.ts/getImpactGraph";
 import { allGridColumnsFieldsSelector } from "@mui/x-data-grid";
 import * as apex from "apexcharts";
 
 export interface SmartSectorChartConfig {
-    model: WebModel;
-    endpoint:string;
-    selector: string;
+  model: WebModel;
+  endpoint: string;
+  selector: string;
 }
 
+export class SmartSectorEEIOTotalImpactPerSector extends Widget {
+  chart: ApexCharts;
+  modelSmartSectorApi: WebModelSmartSector;
+  uniqueSortedMappingGroupNoDuplicates: string[];
+  sectorContributionToImpact: SectorContributionToImpact[];
+  getTopValuesFromSectors: SortedImpactPerPurchaseTopList[];
+  sectorsList: Sector[];
+  sectorsListlowerCase: string[];
+  graphName: string = "";
+  perspective: string;
+  sector_name: string = "Fresh soybeans, canola, flaxseeds, and other oilseeds";
+  sectorCode: string = "1111A0";
+  options: apex.ApexOptions;
 
-export class SmartSectorEEIOTotalImpactPerSector extends Widget 
-{
-    chart:ApexCharts;
-    modelSmartSectorApi:WebModelSmartSector;
-    uniqueSortedMappingGroupNoDuplicates:string[];
-    sectorContributionToImpact:SectorContributionToImpact[];
-    getTopValuesFromSectors:SortedImpactPerPurchaseTopList[];
-    sectorsList:Sector[];
-    sectorsListlowerCase:String[];
-    graphName:string = '';
-    perspective:string;
-    sector_name:string = 'Fresh soybeans, canola, flaxseeds, and other oilseeds';
-    sectorCode:string = '1111A0';
-    options:apex.ApexOptions;
-
-    constructor(private _chartConfig: SmartSectorChartConfig) {
-        super();
-        this.modelSmartSectorApi = modelOfSmartSector({
-            endpoint: this._chartConfig.endpoint as string,
-            model: this._chartConfig.model.id() as string,
-            asJsonFiles: true
+  constructor(private _chartConfig: SmartSectorChartConfig) {
+    super();
+    this.modelSmartSectorApi = modelOfSmartSector({
+      endpoint: this._chartConfig.endpoint as string,
+      model: this._chartConfig.model.id() as string,
+      asJsonFiles: true,
     });
+  }
 
-    }
-    
-    async update() {}
+  async update() {}
 
-
-  async init(graphName?:string, sectorName?:string)
-   {
+  async init(graphName?: string, sectorName?: string) {
     this.graphName = graphName;
-    this.perspective = 'final'
+    this.perspective = "final";
     this.sectorsList = await this._chartConfig.model.sectors();
-    let sector_name:string = sectorName? sectorName:'Fresh soybeans, canola, flaxseeds, and other oilseeds';
-    const sectorMappingList:SectorMapping[] = await this.modelSmartSectorApi.sectorMapping();  
-    this.uniqueSortedMappingGroupNoDuplicates = uniqueSortedMappingGroupNoDuplicatesList(sectorMappingList);
-    let titleNameWithNoSpace = graphName.replace(/\-/g," ");
-    this.sectorContributionToImpact = await this.modelSmartSectorApi.sectorContributionToImpactRankedGhgAPI("final/"+graphName);
-    this.getTopValuesFromSectors = await this.getTopFifteenTotalImpactWithGroup(this.sectorContributionToImpact,this.modelSmartSectorApi);
+    const sector_name: string = sectorName
+      ? sectorName
+      : "Fresh soybeans, canola, flaxseeds, and other oilseeds";
+    const sectorMappingList: SectorMapping[] =
+      await this.modelSmartSectorApi.sectorMapping();
+    this.uniqueSortedMappingGroupNoDuplicates =
+      uniqueSortedMappingGroupNoDuplicatesList(sectorMappingList);
+    const titleNameWithNoSpace = graphName.replace(/\-/g, " ");
+    this.sectorContributionToImpact =
+      await this.modelSmartSectorApi.sectorContributionToImpactRankedGhgAPI(
+        "final/" + graphName,
+      );
+    this.getTopValuesFromSectors = await this.getTopFifteenTotalImpactWithGroup(
+      this.sectorContributionToImpact,
+      this.modelSmartSectorApi,
+    );
 
-    this.options = await apexGraph(this.getTopValuesFromSectors,sector_name, titleNameWithNoSpace);
+    this.options = await apexGraph(
+      this.getTopValuesFromSectors,
+      sector_name,
+      titleNameWithNoSpace,
+    );
     this.chart = new ApexCharts(
-        document.querySelector(this._chartConfig.selector),
-        this.options,
+      document.querySelector(this._chartConfig.selector),
+      this.options,
     );
 
     this.chart.render();
-   }
+  }
 
-   async changePerspectiveGraph(perspective:string, graphName?:string, sectorName?:string)
-   {
-     if(this.perspective != perspective)
-     {
+  async changePerspectiveGraph(
+    perspective: string,
+    graphName?: string,
+    sectorName?: string,
+  ) {
+    if (this.perspective != perspective) {
       this.perspective = perspective;
-     }
+    }
 
-    this.changeGraph(graphName,sectorName,perspective);
-   }
+    this.changeGraph(graphName, sectorName, perspective);
+  }
 
-   async changeGraph(graphName?:string, sectorName?:string,perspective?:string)
-   {
+  async changeGraph(
+    graphName?: string,
+    sectorName?: string,
+    perspective?: string,
+  ) {
     this.perspective = perspective;
     this.graphName = graphName;
     this.sectorsList = await this._chartConfig.model.sectors();
-    let sector_name:string = sectorName? sectorName:'Fresh soybeans, canola, flaxseeds, and other oilseeds';
-    const sectorMappingList:SectorMapping[] = await this.modelSmartSectorApi.sectorMapping();  
-    this.uniqueSortedMappingGroupNoDuplicates = uniqueSortedMappingGroupNoDuplicatesList(sectorMappingList);
-    let titleNameWithNoSpace = graphName.replace(/\-/g," ");
+    const sector_name: string = sectorName
+      ? sectorName
+      : "Fresh soybeans, canola, flaxseeds, and other oilseeds";
+    const sectorMappingList: SectorMapping[] =
+      await this.modelSmartSectorApi.sectorMapping();
+    this.uniqueSortedMappingGroupNoDuplicates =
+      uniqueSortedMappingGroupNoDuplicatesList(sectorMappingList);
+    const titleNameWithNoSpace = graphName.replace(/\-/g, " ");
     this.sectorContributionToImpact = [];
     this.getTopValuesFromSectors = [];
-    this.sectorContributionToImpact = await this.modelSmartSectorApi.sectorContributionToImpactRankedGhgAPI(perspective+"/"+graphName);
-    this.getTopValuesFromSectors = await this.getTopFifteenTotalImpactWithGroup(this.sectorContributionToImpact,this.modelSmartSectorApi);
+    this.sectorContributionToImpact =
+      await this.modelSmartSectorApi.sectorContributionToImpactRankedGhgAPI(
+        perspective + "/" + graphName,
+      );
+    this.getTopValuesFromSectors = await this.getTopFifteenTotalImpactWithGroup(
+      this.sectorContributionToImpact,
+      this.modelSmartSectorApi,
+    );
 
-    this.options = await apexGraph(this.getTopValuesFromSectors,sector_name, titleNameWithNoSpace);
+    this.options = await apexGraph(
+      this.getTopValuesFromSectors,
+      sector_name,
+      titleNameWithNoSpace,
+    );
     this.chart.updateOptions(this.options);
     this.chart.resetSeries();
-   }
+  }
 
-   async updateGraph(sectorName?:string,sectorCode?:string)
-   {
+  async updateGraph(sectorName?: string, sectorCode?: string) {
     this.sectorCode = sectorCode;
-    this.options = await apexGraph(this.getTopValuesFromSectors,sectorName,this.graphName.replace(/\-/g," "));
+    this.options = await apexGraph(
+      this.getTopValuesFromSectors,
+      sectorName,
+      this.graphName.replace(/\-/g, " "),
+    );
     this.chart.updateOptions(this.options);
     this.chart.resetSeries();
-   }
+  }
 
-   getGraph():string{
-    return this.graphName
-   }
+  getGraph(): string {
+    return this.graphName;
+  }
 
-   async getTopFifteenTotalImpactWithGroup(sectorContributionToImpactGhg:SectorContributionToImpact[],modelSmartSector:WebModelSmartSector):Promise<SortedImpactPerPurchaseTopList[]>
-  {
-    const sectorMappingList:SectorMapping[] = await modelSmartSector.sectorMapping();
-    const sectorsList:Sector[] = await this._chartConfig.model.sectors();
-    let sortListWithTop15OfEachSector:SortingImpactPerPurchaseWithTop[] = []
-  
-    sectorContributionToImpactGhg.forEach((t, i) => 
-    {
-      
-      //All records in (sector_contribution_to_impact_ranked/final) of "total_impact" 
-      if(this.perspective == 'final')
-      {
-        let purchasedGroup = modelSmartSector.findPurchasedGroup(t.purchased_commodity_code,sectorMappingList);
-        let sectorName = selectSectorName(t.sector_code,sectorsList);
-        let purchaseCommodity
-        if(purchasedGroup == "All Others" || purchasedGroup == undefined)
-        {
-          purchaseCommodity = "All Others"
-        }
-        else
-          purchaseCommodity= selectSectorName(t.purchased_commodity_code,sectorsList);
-  
-        if(sortListWithTop15OfEachSector.length === 0)
-        {
-  
-          let sortingImpactPerPurchaseWithTop15 =  new SortingImpactPerPurchaseWithTop(
-            t.sector_code,
-            sectorName,
-            {
-              sectorCode:t.sector_code,
-              purchaseCommodity:purchaseCommodity,
-              totalImpact:t.total_impact,
-              purchasedGroup:purchasedGroup
-            }
+  async getTopFifteenTotalImpactWithGroup(
+    sectorContributionToImpactGhg: SectorContributionToImpact[],
+    modelSmartSector: WebModelSmartSector,
+  ): Promise<SortedImpactPerPurchaseTopList[]> {
+    const sectorMappingList: SectorMapping[] =
+      await modelSmartSector.sectorMapping();
+    const sectorsList: Sector[] = await this._chartConfig.model.sectors();
+    const sortListWithTop15OfEachSector: SortingImpactPerPurchaseWithTop[] = [];
+
+    sectorContributionToImpactGhg.forEach((t, i) => {
+      //All records in (sector_contribution_to_impact_ranked/final) of "total_impact"
+      if (this.perspective == "final") {
+        const purchasedGroup = modelSmartSector.findPurchasedGroup(
+          t.purchased_commodity_code,
+          sectorMappingList,
+        );
+        const sectorName = selectSectorName(t.sector_code, sectorsList);
+        let purchaseCommodity;
+        if (purchasedGroup == "All Others" || purchasedGroup == undefined) {
+          purchaseCommodity = "All Others";
+        } else
+          purchaseCommodity = selectSectorName(
+            t.purchased_commodity_code,
+            sectorsList,
           );
-  
-          sortListWithTop15OfEachSector.push(sortingImpactPerPurchaseWithTop15);
-        }
-        else
-        {
-          let sortingImpactPerPurchaseWithTop15:SortingImpactPerPurchaseWithTop | undefined =  sortListWithTop15OfEachSector.find( i => 
-           {
-              if(t.sector_code === i._sectorCode)
-              {
-                  return true;
-              }
-           });
-    
-          if(sortingImpactPerPurchaseWithTop15 !== undefined)
-          { 
-            sortingImpactPerPurchaseWithTop15.addSmartSectorsByCommodityGroup({
-              sectorCode:t.sector_code,
-              purchaseCommodity:purchaseCommodity,
-              totalImpact:t.total_impact,
-              purchasedGroup:purchasedGroup
+
+        if (sortListWithTop15OfEachSector.length === 0) {
+          const sortingImpactPerPurchaseWithTop15 =
+            new SortingImpactPerPurchaseWithTop(t.sector_code, sectorName, {
+              sectorCode: t.sector_code,
+              purchaseCommodity: purchaseCommodity,
+              totalImpact: t.total_impact,
+              purchasedGroup: purchasedGroup,
             });
-          }
-          else
-          {
-            let sortingImpactPerPurchaseWithTop15 =  new SortingImpactPerPurchaseWithTop(
-              t.sector_code,
-              sectorName,
-              {
-                sectorCode:t.sector_code,
-                purchaseCommodity:purchaseCommodity,
-                totalImpact:t.total_impact,
-                purchasedGroup:purchasedGroup
-              }
+
+          sortListWithTop15OfEachSector.push(sortingImpactPerPurchaseWithTop15);
+        } else {
+          const sortingImpactPerPurchaseWithTop15:
+            | SortingImpactPerPurchaseWithTop
+            | undefined = sortListWithTop15OfEachSector.find((i) => {
+            if (t.sector_code === i._sectorCode) {
+              return true;
+            }
+          });
+
+          if (sortingImpactPerPurchaseWithTop15 !== undefined) {
+            sortingImpactPerPurchaseWithTop15.addSmartSectorsByCommodityGroup({
+              sectorCode: t.sector_code,
+              purchaseCommodity: purchaseCommodity,
+              totalImpact: t.total_impact,
+              purchasedGroup: purchasedGroup,
+            });
+          } else {
+            const sortingImpactPerPurchaseWithTop15 =
+              new SortingImpactPerPurchaseWithTop(t.sector_code, sectorName, {
+                sectorCode: t.sector_code,
+                purchaseCommodity: purchaseCommodity,
+                totalImpact: t.total_impact,
+                purchasedGroup: purchasedGroup,
+              });
+
+            sortListWithTop15OfEachSector.push(
+              sortingImpactPerPurchaseWithTop15,
             );
-    
-            sortListWithTop15OfEachSector.push(sortingImpactPerPurchaseWithTop15);
           }
-          
         }
-      }
-      else{
-        let purchasedGroup = modelSmartSector.findPurchasedGroup(t.emissions_source,sectorMappingList);
-
-      let sectorName = selectSectorName(t.sector_code,sectorsList);
-      let purchaseCommodity
-      if(purchasedGroup == "All Others" || purchasedGroup == undefined)
-      {
-        purchaseCommodity = "All Others"
-      }
-      else
-        purchaseCommodity= selectSectorName(t.emissions_source,sectorsList);
-
-      if(sortListWithTop15OfEachSector.length === 0)
-      {
-
-        let sortingImpactPerPurchaseWithTop15 =  new SortingImpactPerPurchaseWithTop(
-          t.sector_code,
-          sectorName,
-          {
-            sectorCode:t.sector_code,
-            purchaseCommodity:purchaseCommodity,
-            totalImpact:t.total_impact,
-            purchasedGroup:purchasedGroup
-          }
+      } else {
+        const purchasedGroup = modelSmartSector.findPurchasedGroup(
+          t.emissions_source,
+          sectorMappingList,
         );
 
-        sortListWithTop15OfEachSector.push(sortingImpactPerPurchaseWithTop15);
-      }
-      else
-      {
-        let sortingImpactPerPurchaseWithTop15:SortingImpactPerPurchaseWithTop | undefined =  sortListWithTop15OfEachSector.find( i => 
-         {
-            if(t.sector_code === i._sectorCode)
-            {
-                return true;
-            }
-         });
-  
-        if(sortingImpactPerPurchaseWithTop15 !== undefined)
-        { 
-          sortingImpactPerPurchaseWithTop15.addSmartSectorsByCommodityGroup({
-            sectorCode:t.sector_code,
-            purchaseCommodity:purchaseCommodity,
-            totalImpact:t.total_impact,
-            purchasedGroup:purchasedGroup
-          });
-        }
-        else
-        {
-          let sortingImpactPerPurchaseWithTop15 =  new SortingImpactPerPurchaseWithTop(
-            t.sector_code,
-            sectorName,
-            {
-              sectorCode:t.sector_code,
-              purchaseCommodity:purchaseCommodity,
-              totalImpact:t.total_impact,
-              purchasedGroup:purchasedGroup
-            }
-          );
-  
+        const sectorName = selectSectorName(t.sector_code, sectorsList);
+        let purchaseCommodity;
+        if (purchasedGroup == "All Others" || purchasedGroup == undefined) {
+          purchaseCommodity = "All Others";
+        } else
+          purchaseCommodity = selectSectorName(t.emissions_source, sectorsList);
+
+        if (sortListWithTop15OfEachSector.length === 0) {
+          const sortingImpactPerPurchaseWithTop15 =
+            new SortingImpactPerPurchaseWithTop(t.sector_code, sectorName, {
+              sectorCode: t.sector_code,
+              purchaseCommodity: purchaseCommodity,
+              totalImpact: t.total_impact,
+              purchasedGroup: purchasedGroup,
+            });
+
           sortListWithTop15OfEachSector.push(sortingImpactPerPurchaseWithTop15);
+        } else {
+          const sortingImpactPerPurchaseWithTop15:
+            | SortingImpactPerPurchaseWithTop
+            | undefined = sortListWithTop15OfEachSector.find((i) => {
+            if (t.sector_code === i._sectorCode) {
+              return true;
+            }
+          });
+
+          if (sortingImpactPerPurchaseWithTop15 !== undefined) {
+            sortingImpactPerPurchaseWithTop15.addSmartSectorsByCommodityGroup({
+              sectorCode: t.sector_code,
+              purchaseCommodity: purchaseCommodity,
+              totalImpact: t.total_impact,
+              purchasedGroup: purchasedGroup,
+            });
+          } else {
+            const sortingImpactPerPurchaseWithTop15 =
+              new SortingImpactPerPurchaseWithTop(t.sector_code, sectorName, {
+                sectorCode: t.sector_code,
+                purchaseCommodity: purchaseCommodity,
+                totalImpact: t.total_impact,
+                purchasedGroup: purchasedGroup,
+              });
+
+            sortListWithTop15OfEachSector.push(
+              sortingImpactPerPurchaseWithTop15,
+            );
+          }
         }
-        
       }
-      }
-      
     });
 
-    let sortedImpactPerPurchaseTopList:SortedImpactPerPurchaseTopList[] = sortListWithTop15OfEachSector.map(t => {
+    const sortedImpactPerPurchaseTopList: SortedImpactPerPurchaseTopList[] =
+      sortListWithTop15OfEachSector.map((t) => {
+        const topFifteen: ImpactPerPurchaseSector[] = t._smartSectors
+          .sort(
+            (a: ImpactPerPurchaseSector, b: ImpactPerPurchaseSector): any => {
+              return b.totalImpact - a.totalImpact;
+            },
+          )
+          .slice(0, 15);
 
-      let topFifteen:ImpactPerPurchaseSector[] = t._smartSectors.sort((a: ImpactPerPurchaseSector, b: ImpactPerPurchaseSector): any => {
-          
-        return b.totalImpact - (a.totalImpact);
-     }).slice(0,15)
+        const index = topFifteen.findIndex(
+          (t) => t.purchaseCommodity === "All Others",
+        );
+        const allOtherobject = topFifteen.filter(
+          (t) => t.purchaseCommodity === "All Others",
+        );
+        topFifteen.splice(index, 1);
+        topFifteen.push(...allOtherobject);
 
-     const index = topFifteen.findIndex(t => t.purchaseCommodity === 'All Others')
-     const allOtherobject = topFifteen.filter(t => t.purchaseCommodity === 'All Others')
-     topFifteen.splice(index,1)
-     topFifteen.push(...allOtherobject)
+        const directIndex = topFifteen.findIndex(
+          (t) => t.purchaseCommodity === "Direct",
+        );
+        const directObject = topFifteen.filter(
+          (t) => t.purchaseCommodity === "Direct",
+        );
+        topFifteen.splice(directIndex, 1);
+        topFifteen.splice(0, 0, ...directObject);
 
-     const directIndex = topFifteen.findIndex(t => t.purchaseCommodity === 'Direct')
-     const directObject = topFifteen.filter(t => t.purchaseCommodity === 'Direct')
-     topFifteen.splice(directIndex,1)
-     topFifteen.splice(0, 0, ...directObject)
-
-
-      return {
-        sector_code: t._sectorCode,
-        sector_name: t._sectorName,
-        topFifteenTotalImpact: topFifteen
-      }
-      
-    })
-
+        return {
+          sector_code: t._sectorCode,
+          sector_name: t._sectorName,
+          topFifteenTotalImpact: topFifteen,
+        };
+      });
 
     return sortedImpactPerPurchaseTopList;
-   }
+  }
 
-   addExportEventListeners(type:string) {
-
-    if(type !== 'null')
-    {
-    let titleName:string;
-    if(this.perspective == 'final')
-      {
-        titleName = `Sector: ${this.sectorCode}, ${this.graphName.replace(/\-/g," ").replace(' AR6 ',"-")}, Point of Consumption`
-
-      }
-    else
-      {
-        titleName = `Sector: ${this.sectorCode}, ${this.graphName.replace(/\-/g," ").replace(' AR6 ',"-")}, Supply Chain`
+  addExportEventListeners(type: string) {
+    if (type !== "null") {
+      let titleName: string;
+      if (this.perspective == "final") {
+        titleName = `Sector: ${this.sectorCode}, ${this.graphName.replace(/\-/g, " ").replace(" AR6 ", "-")}, Point of Consumption`;
+      } else {
+        titleName = `Sector: ${this.sectorCode}, ${this.graphName.replace(/\-/g, " ").replace(" AR6 ", "-")}, Supply Chain`;
       }
 
-        // Show the title before export
+      // Show the title before export
+      this.chart.updateOptions({
+        ...this.options,
+        chart: {
+          toolbar: {
+            show: true,
+            tools: {
+              download: true,
+              zoom: false,
+              zoomin: false,
+              zoomout: false,
+              pan: false,
+              reset: false,
+            },
+            export: {
+              csv: {
+                filename: `${titleName}-Emissions`,
+                columnDelimiter: ",",
+                headerCategory: "Sector Purchased",
+                headerValue: "Contribution",
+              },
+              svg: {
+                filename: `${titleName}-Emissions`,
+              },
+              png: {
+                filename: `${titleName}-Emissions`,
+              },
+            },
+          },
+        },
+        title: {
+          text: titleName, // Title visible before exporting
+        },
+      });
+
+      // Delay to ensure title is updated before export
+      setTimeout(() => {
+        if (type === "png") {
+          this.chart.exports.exportToPng();
+        } else if (type === "svg") {
+          this.chart.exports.exportToSVG();
+        } else if (type === "csv") {
+          this.chart.dataURI().then(() => {
+            this.chart.exports.exportToCSV({
+              series: this.options["series"],
+              columnDelimiter: ",",
+              fileName: `${titleName}-Emissions`.replace(",", "-"),
+            });
+          });
+        }
+
+        // Hide the title after export
         this.chart.updateOptions({
           ...this.options,
-          chart: {
-            toolbar: {
-              show: true,
-              tools: {
-                  download: true,
-                  zoom: false,
-                  zoomin: false,
-                  zoomout: false,
-                  pan: false,
-                  reset: false,
-              },
-              export: {
-                  csv: {
-                      filename: `${titleName}-Emissions`,
-                      columnDelimiter: ',',
-                     headerCategory: 'Sector Purchased',
-                      headerValue: 'Contribution'
-                  },
-                  svg: {
-                      filename: `${titleName}-Emissions`,
-                  },
-                  png: {
-                      filename: `${titleName}-Emissions`
-                  }
-              }
-          }},
           title: {
-            text: titleName, // Title visible before exporting
-          }
-    });
-
-  // Delay to ensure title is updated before export
-  setTimeout(() => {
-    if (type === "png") {
-      this.chart.exports.exportToPng();
-    } else if (type === "svg") {
-      this.chart.exports.exportToSVG();
-    } else if (type === "csv") {
-      this.chart.dataURI().then(() => {
-        this.chart.exports.exportToCSV({
-          series: this.options['series'],
-          columnDelimiter: ',',
-          fileName:`${titleName}-Emissions`.replace(',','-')
-        }); 
-      });      
+            text: "",
+          },
+        });
+      }, 2000);
     }
-
-    // Hide the title after export
-    this.chart.updateOptions({
-      ...this.options,
-      title: {
-        text: "", 
-      },
-    });
-  }, 2000);
-}}
   }
-  
-
-  
+}

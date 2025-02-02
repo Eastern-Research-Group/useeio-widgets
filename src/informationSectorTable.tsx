@@ -26,11 +26,11 @@ export class DataTableInfo {
                     endpoint: './api',
                     model: 'SMART_TABLE_RECORDS',
                     asJsonFiles: true
-            })
+            });
     }
 
     async update() {
-      let dataTable:DataRow[] = await this.modelSmartSectorApi.sectorRecordList();
+      const dataTable:DataRow[] = await this.modelSmartSectorApi.sectorRecordList();
                 ReactDOM.render(
             <DataTable dataTable={dataTable}/>,
             document.querySelector(this.selector),
@@ -56,7 +56,7 @@ const DataTable = (props: { dataTable: DataRow[] }) =>  {
 
   React.useEffect(() => {
     setFilteredData(data); 
-  }, [data])
+  }, [data]);
 
   const handleFilterChange = (event:any) => {
     const { name, value } = event.target;
@@ -67,8 +67,8 @@ const DataTable = (props: { dataTable: DataRow[] }) =>  {
   };
 
   React.useEffect(() => {
-    let filtered = data.filter((row) => {
-      console.log(filters.code)
+    const filtered = data.filter((row) => {
+      console.log(filters.code);
       const matchesId = (filters.code === '' || row.Code.toLowerCase().includes(filters.code.toLowerCase()));
       const matchesCode = (filters.name === '' || row.Name.toLowerCase().includes(filters.name.toLowerCase()));
       const matchesGroup = (filters.group === '' || row.Group.toLowerCase().includes(filters.group.toLowerCase()));
@@ -78,8 +78,6 @@ const DataTable = (props: { dataTable: DataRow[] }) =>  {
     setFilteredData(filtered);
   }, [filters]); 
 
-  console.log(filteredData)
-  console.log(data)
   return (
     <div>
       <div style={{ marginBottom: 20 }}>
