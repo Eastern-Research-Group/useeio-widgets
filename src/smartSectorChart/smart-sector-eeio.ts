@@ -37,6 +37,7 @@ export class SmartSectorEEIO extends Widget {
   graphName: string;
   selectorName: string;
   sectorContributionToImpact: SectorContributionToImpact[] = [];
+  fileNameTitle:string = "Top 10 Total Embodied GHG Emissions"
 
   constructor(private _chartConfig: SmartSectorChartConfig) {
     super();
@@ -85,6 +86,7 @@ export class SmartSectorEEIO extends Widget {
       this.toggleImpactSelection,
       this.toggleGroupSelection,
       this.perspective,
+      this.fileNameTitle
     );
     this.chart = new ApexCharts(
       document.querySelector(this._chartConfig.selector),
@@ -164,6 +166,7 @@ export class SmartSectorEEIO extends Widget {
       this.toggleImpactSelection,
       this.toggleGroupSelection,
       this.perspective,
+      this.fileNameTitle
     );
 
     this.chart.updateOptions(option);
@@ -289,9 +292,10 @@ export class SmartSectorEEIO extends Widget {
     return listOfStackGraph.filter((t) => t._model === "Detail");
   }
 
-  async selectorFilter(totalRankSelector: { name: string; num?: number }) {
+  async selectorFilter(totalRankSelector: { name: string; num?: number, n:string },n:string) {
     const nameWithNoSpace = this.graphName.replace(/-/g, " ");
 
+    this.fileNameTitle = n;
     const filteredResults: SumSmartSectorTotalParts[] =
       this.listSumSmartSectorTotalParts.filter((t) => {
         switch (totalRankSelector.name) {
@@ -323,6 +327,7 @@ export class SmartSectorEEIO extends Widget {
       this.toggleImpactSelection,
       this.toggleGroupSelection,
       this.perspective,
+      n
     );
 
     this.chart.updateOptions(option);

@@ -144,8 +144,7 @@
 
             function toggleNumSelection(n)
             {
-                smartSectorChart.selectorFilter($('#mySelect').find(":selected").data("value"));
-
+                smartSectorChart.selectorFilter($('#mySelect').find(":selected").data("value"),n);
                 if($('#mySelect').find(":selected").data("value").num !== undefined || $('#mySelect').find(":selected").data("value").num !== null){
                     topSectors = $('#mySelect').find(":selected").data("value").num;
                 }

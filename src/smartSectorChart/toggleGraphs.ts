@@ -14,6 +14,7 @@ export async function calculate(
   impactSelector?: string,
   groupMappingSector?: string,
   perspective?: string,
+  titleFileName?:string
 ): Promise<apex.ApexOptions> {
   const sortTopTen: SumSmartSectorTotalParts[] = topSectorList.sort(
     (a: SumSmartSectorTotalParts, b: SumSmartSectorTotalParts): any => {
@@ -54,9 +55,9 @@ export async function calculate(
 
     let titleName: string;
     if (perspective == "final") {
-      titleName = `Top 10 Embodied GHG Intensity: ${titleGraph.replace(" AR6 ", "-")}, Point of Consumption`;
+      titleName = `${titleFileName}: ${titleGraph.replace(" AR6 ", "-")}, Point of Consumption`;
     } else {
-      titleName = `Top 10 Embodied GHG Intensity: ${titleGraph.replace(" AR6 ", "-")}, Supply Chain`;
+      titleName = `${titleFileName}: ${titleGraph.replace(" AR6 ", "-")}, Supply Chain`;
     }
 
     const sortedSectorCodesWithNamesWithArray: string[][] =
