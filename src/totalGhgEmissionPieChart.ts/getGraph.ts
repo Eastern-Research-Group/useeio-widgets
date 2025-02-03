@@ -145,20 +145,6 @@ export async function apexGraph(
             pan: false,
             reset: false,
           },
-          export: {
-            csv: {
-              filename: "Detailed",
-              columnDelimiter: ",",
-              headerCategory: "Sector Purchased",
-              headerValue: "Contribution",
-            },
-            svg: {
-              filename: "Detailed",
-            },
-            png: {
-              filename: "Detailed",
-            },
-          },
         },
       },
       plotOptions: {

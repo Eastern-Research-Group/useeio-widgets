@@ -45,7 +45,6 @@ export async function apexGraph(
     totalSum += t.impactPerPurchase;
   });
 
-  console.log(totalSum);
   return {
     series: [
       {
@@ -65,18 +64,7 @@ export async function apexGraph(
           zoomout: false,
           pan: false,
           reset: false,
-        },
-        export: {
-          csv: {
-            filename: "Emissions Intensity",
-          },
-          svg: {
-            filename: "Emissions Intensity",
-          },
-          png: {
-            filename: "Emissions Intensity",
-          },
-        },
+        }
       },
     },
     colors: colors,

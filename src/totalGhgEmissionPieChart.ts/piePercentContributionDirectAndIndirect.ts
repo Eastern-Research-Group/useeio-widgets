@@ -247,7 +247,7 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
   }
 
   addExportEventListeners(type: string) {
-    if (type !== "null") {
+    if (type !== null) {
       let titleName: string;
       if (this.perspective == "final") {
         titleName = `Sector: ${this.sectorCode}, ${this.graphName.replace(/\-/g, " ").replace(" AR6 ", "-")}, Point of Consumption`;
@@ -281,6 +281,7 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
               },
               png: {
                 filename: `${titleName}-DirectVsIndirect`,
+                
               },
             },
           },
@@ -312,8 +313,32 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
           title: {
             text: "",
           },
+          chart: {
+            toolbar: {
+              show: false,
+              tools: {
+                download: false,
+                zoom: false,
+                zoomin: false,
+                zoomout: false,
+                pan: false,
+                reset: false,
+              },
+            },
+            export: {
+              csv: {
+                filename: '',
+              },
+              svg: {
+                filename: '',
+              },
+              png: {
+                filename: '',
+              },
+            },
+          }
         });
-      }, 100);
+      }, 2000);
     }
   }
 }

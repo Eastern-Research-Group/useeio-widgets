@@ -66,17 +66,6 @@ export async function apexGraph(
           pan: false,
           reset: false,
         },
-        export: {
-          csv: {
-            filename: "Emissions",
-          },
-          svg: {
-            filename: "Emissions",
-          },
-          png: {
-            filename: "Emissions",
-          },
-        },
       },
     },
     colors: colors,

@@ -324,7 +324,7 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
   }
 
   addExportEventListeners(type: string) {
-    if (type !== "null") {
+    if (type !== null) {
       let titleName: string;
       if (this.perspective == "final") {
         titleName = `Sector: ${this.sectorCode}, ${this.graphName.replace(/\-/g, " ").replace(" AR6 ", "-")}, Point of Consumption`;
@@ -383,12 +383,35 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
           });
         }
 
-        // Hide the title after export
         this.chart.updateOptions({
           ...this.options,
           title: {
             text: "",
           },
+          chart: {
+            toolbar: {
+              show: false,
+              tools: {
+                download: false,
+                zoom: false,
+                zoomin: false,
+                zoomout: false,
+                pan: false,
+                reset: false,
+              },
+            },
+            export: {
+              csv: {
+                filename: '',
+              },
+              svg: {
+                filename: '',
+              },
+              png: {
+                filename: '',
+              },
+            },
+          }
         });
       }, 2000);
     }
