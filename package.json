@@ -13,7 +13,8 @@
     "Loren Heyns",
     "Yilun Zha",
     "Wesley Ingwersen",
-    "Hui Zhou"
+    "Hui Zhou",
+    "Jonas Hernandez"
   ],
   "scripts": {
     "build": "webpack --config webpack.config.js --mode=production",

@@ -81,7 +81,7 @@ export async function apexGraph(
           y: values.topFifteenImpactPerPurchase[0].impactPerPurchase,
           borderColor: "white",
           label: {
-            text: `Total ${unitLabel} for sector ${sectorName}: ${totalSum.toFixed(2)}`,
+            text: `${totalSum.toFixed(2)} Total ${unitLabel} for sector ${sectorName}`,
             style: {
               fontWeight: "bold",
             },
