@@ -109,8 +109,13 @@
                 smartSectorChart.selectiveGraph(graphType,perspectiveName,topSectors,impactSelector,groupSelector);
             }
 
-    function changeImpactSelector()
+    function changeImpactSelector(impactSelectorValue = null)
             {
+                impactSelector = impactSelectorValue ?? impactSelector;
+                if(impactSelectorValue !== null)
+                {
+                    selectRadio(impactSelectorValue)
+                }
                 smartSectorChart.selectiveGraph(graphType,perspectiveName,topSectors,impactSelector,groupSelector);
             }
 
@@ -129,22 +134,7 @@
                 if(e.target.getAttribute('name')=="impactRadio")
                 {
                     impactSelector = e.target.value
-
-                var name = ""
-                var paragraph =""
-                switch(impactSelector) {
-                    case "total_impact":
-                        name = "Top 10/25 Sectors Based on Total Embodied GHG Emissions";
-                        paragraph = "This chart presents the top 10 (25) sectors ranked on total embodied GHG emissions from contributions from Direct emissions due to the sector's operations and Indirect emissions embedded in the purchases made from all other sectors in the supply chain."
-                        break;
-                    case "impact_per_purchase":
-                        name = "Top 10 /25 Sectors Based on Embodied GHG Emission Intensity";
-                        paragraph = "This chart presents the top 10(25) sectors ranked on total embodied GHG emissions intensity from contributions from Direct emissions due to the sector's operations and Indirect emissions embedded in the purchases made from all other sectors in the supply chain."
-                        break;
-                }
-                document.getElementById("graphTitle").innerHTML = `${name}`; 
-                document.getElementById("graphParagraph").innerHTML = `${paragraph}`; 
-                
+                changeTitleAndParagraph()
                 changeImpactSelector();
 
                 }
@@ -158,17 +148,59 @@
                 }
             })
 
+            function selectRadio(value) {
+                const radios = document.getElementsByName('impactRadio');
+                
+                for (const radio of radios) {
+                    if (radio.value === value) {
+                        radio.checked = true;  // Set the matching radio button as checked
+                    } else {
+                        radio.checked = false;  // Uncheck the other radio buttons
+                    }
+                }
+            }
+
+            function changeTitleAndParagraph(impactSelectorValue = null){
+                impactSelector = impactSelectorValue ?? impactSelector;
+                var name = ""
+                var paragraph =""
+                switch(impactSelector) {
+                    case "total_impact":
+                        name = "Top 10/25 Sectors Based on Total Embodied GHG Emissions";
+                        paragraph = "This chart presents the top 10(25) sectors ranked on total embodied GHG emissions from contributions from Direct emissions due to the sector's operations and Indirect emissions embedded in the purchases made from all other sectors in the supply chain."
+                        break;
+                    case "impact_per_purchase":
+                        name = "Top 10/25 Sectors Based on Embodied GHG Emission Intensity";
+                        paragraph = "This chart presents the top 10(25) sectors ranked on total embodied GHG emissions intensity from contributions from Direct emissions due to the sector's operations and Indirect emissions embedded in the purchases made from all other sectors in the supply chain."
+                        break;
+                }
+                document.getElementById("graphTitle").innerHTML = `${name}`; 
+                document.getElementById("graphParagraph").innerHTML = `${paragraph}`; 
+            }
+
             function toggleNumSelection(n)
             {
                 smartSectorChart.selectorFilter($('#mySelect').find(":selected").data("value"),n);
                 if($('#mySelect').find(":selected").data("value").num !== undefined || $('#mySelect').find(":selected").data("value").num !== null){
                     topSectors = $('#mySelect').find(":selected").data("value").num;
                 }
-                else
-                {
-                    topSectors = undefined
+                
+                switch(n) {
+                    case "Top 10 Total Embodied GHG Emissions":
+                    case "Top 25 Total Embodied GHG Emissions":
+                    changeImpactSelector("total_impact")
+                    changeTitleAndParagraph("total_impact")
+
+                    break;
+                    case "Top 10 Embodied GHG Intensity":
+                    case "Top 25 Embodied GHG Intensity":
+                    changeImpactSelector("impact_per_purchase")
+                    changeTitleAndParagraph("impact_per_purchase")
+
+                    break;
                 }
-            }
+
+           }
 
           
         </script>

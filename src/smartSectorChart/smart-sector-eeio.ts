@@ -318,7 +318,6 @@ export class SmartSectorEEIO extends Widget {
 
     this.toggleNumSelection = totalRankSelector.num ?? filteredResults.length;
     const sortTopTen = filteredResults.slice(0, this.toggleNumSelection);
-
     const option = await calculate(
       sortTopTen,
       this._chartConfig.model,
