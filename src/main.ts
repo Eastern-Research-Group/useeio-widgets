@@ -28,7 +28,7 @@ import { CountCombo } from "./widgets/count-combo";
 import { MatrixSelector } from "./widgets/matrix-selector";
 import { IOGrid } from "./widgets/iogrid/iogrid";
 import { DotsMenu } from "./widgets/dotsMenu";
-import { SectorListSearch}from './smartSectorSumOfImpcatPerPurchase.ts/sectorListSearch';
+import { SectorListSearch}from './sector_contribution_to_impact_ranked_bar_chart.ts/sectorListSearch';
 import { PieListSearch, SmartSectorChartConfigPie, dataTableConfig} from './totalGhgEmissionPieChart.ts/pieListSearch';
 import { DataTableInfo } from './informationSectorTable';
 

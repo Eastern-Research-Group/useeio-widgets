@@ -19,13 +19,9 @@
         <div style=" flex-grow: 1;">
             <div style=" display: flex; flex-direction: row;">
                 <div style=" margin-left: 20px;flex-grow: 1;">
-                    <label for="metric-selected">Select GWP Factor:</label>
+                    <label for="my-select">Select Impact Factor:</label>
                     <br>
-                    <select id="my-select" onchange="changeGraph(this.value)">
-                        <option value="GWP-AR6-20" >CO2e based on 20yr GWP</option>
-                        <option value="GWP-AR6-100" selected>CO2e based on 100yr GWP</option>
-                        <!--  <option value="Social-Cost-of-Carbon">Social Cost of Carbon</option>  -->
-                    </select>
+                    <select id="my-select" onchange="changeGraph(this.value)"></select>
                 </div>
                 <div style=" margin-left: 20px;flex-grow: 1;">
                     <label for="allocation-selected">Results Perspective:</label>
@@ -202,7 +198,35 @@
 
            }
 
-          
+           const fileNames = [
+                "Acidification-Potential",
+                "Eutrophication-Potential",
+                "Freshwater-withdrawals",
+                "GWP-AR6-20",
+                "GWP-AR6-100",
+                "Human-Health---Respiratory-Effects",
+                "Jobs-Supported",
+                "Ozone-Depletion",
+                "Smog-Formation-Potential"
+            ];
+
+            function getLabel(file) {
+                const labels = {
+                "GWP-AR6-20": "CO2e based on 20yr GWP",
+                "GWP-AR6-100": "CO2e based on 100yr GWP"
+                };
+                return labels[file] || file.replace(/-+/g, ' ').trim();;
+            }
+
+            const select = document.getElementById('my-select');
+
+            fileNames.forEach(file => {
+                const option = document.createElement('option');
+                option.value = file;
+                option.textContent = getLabel(file);
+                if (file === 'GWP-AR6-100') option.selected = true;
+                select.appendChild(option);
+            });
         </script>
 </body>
 

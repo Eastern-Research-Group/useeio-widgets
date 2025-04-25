@@ -15,7 +15,7 @@ import {
   SortingImpactPerPurchaseWithTop,
   ImpactPerPurchaseSector,
 } from "../smartSectorChart/smartSector";
-import { apexGraph } from "../smartSectorSumOfImpcatPerPurchase.ts/getGraph";
+import { apexGraph } from "./getGraph";
 import * as apex from "apexcharts";
 
 export interface SmartSectorChartConfig {

@@ -1,7 +1,7 @@
 import * as ReactDOM from "react-dom";
 import { Sector, WebModel } from "useeio";
 import { TextField } from "@material-ui/core";
-import { SmartSectorEEIOImpactPurchasePerSector } from "../smartSectorSumOfImpcatPerPurchase.ts/smart-sector-eeio-impact-per-purchase";
+import { SmartSectorEEIOImpactPurchasePerSector } from "./smart-sector-eeio-impact-per-purchase";
 import * as strings from "../util/strings";
 import { Widget } from "../widget";
 import {
@@ -19,9 +19,9 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormLabel from "@material-ui/core/FormLabel";
 import { withStyles } from "@material-ui/core/styles";
 import { SmartSectorChartConfigPie } from "../totalGhgEmissionPieChart.ts/pieListSearch";
-import { SmartSectorEEIOTotalImpactPerSector } from "../smartSectorSumOfImpcatPerPurchase.ts/smart-sector-eeio-total-impacts";
+import { SmartSectorEEIOTotalImpactPerSector } from "./smart-sector-eeio-total-impacts";
 import { Menu, MenuItem, IconButton } from "@material-ui/core";
-
+import { fileNames } from "../smartSectorCalc/smartSectorCalculations"
 export interface SmartSectorChartConfigNormal {
   model: WebModel;
   endpoint: "./api";
@@ -80,6 +80,21 @@ export class SectorListSearch extends Widget {
 }
 
 const Component = (props: { widget: SectorListSearch }) => {
+
+  const customLabels: Record<string, string> = {
+    "GWP-AR6-100": "CO2e based on 100yr GWP",
+    "GWP-AR6-20": "CO2e based on 20yr GWP"
+  };
+
+  const getLabel = (filename: string): string => {
+    if (customLabels[filename]) return customLabels[filename];
+
+    return filename
+      .replace(/-+/g, ' ')
+      .trim();
+  };
+
+
   const [searchTerm, setSearchTerm] = React.useState<string>("");
   const [value, setValue] = React.useState<string>("");
   const [title, setTitle] = React.useState<string>(
@@ -404,20 +419,22 @@ const Component = (props: { widget: SectorListSearch }) => {
         </FormControl>
         <FormControl className={classes.margin}>
           <InputLabel id="demo-controlled-open-select-label">
-            Select GWP Factor:
+            Select Impact Factor:
           </InputLabel>
           <Select
             native
             value={graph}
             onChange={handleChange}
-            label="Select GWP Factor"
+            label="Select Impact Factor"
             inputProps={{
               name: "graph",
             }}
           >
-            <option value="GWP-AR6-100">CO2e based on 100yr GWP</option>
-            <option value="GWP-AR6-20">CO2e based on 20yr GWP</option>
-            {/* <option value="Social-Cost-of-Carbon">Social Cost of Carbon</option> */}
+             {fileNames.map((file) => (
+            <option key={file} value={file}>
+              {getLabel(file)}
+            </option>
+          ))}
           </Select>
         </FormControl>
 

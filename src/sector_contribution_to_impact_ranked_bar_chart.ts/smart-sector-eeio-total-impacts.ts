@@ -15,7 +15,7 @@ import {
   SortingImpactPerPurchaseWithTop,
   ImpactPerPurchaseSector,
 } from "../smartSectorChart/smartSector";
-import { apexGraph } from "../smartSectorSumOfImpcatPerPurchase.ts/getImpactGraph";
+import { apexGraph } from "./getImpactGraph";
 import { allGridColumnsFieldsSelector } from "@mui/x-data-grid";
 import * as apex from "apexcharts";
 
