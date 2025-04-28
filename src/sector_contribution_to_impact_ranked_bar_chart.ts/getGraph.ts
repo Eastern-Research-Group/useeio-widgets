@@ -31,9 +31,40 @@ export async function apexGraph(
   let yaxisTitle =
     "Emissions Intensity (Metric tons CO2e per Million $ of Output)";
   unitLabel = "tons CO2e per Million $ of Output";
-  if (graphTitleName == " Social Cost of Carbon") {
-    yaxisTitle = "Emissions Intensity (Million $ per Million $ of Output)";
-    unitLabel = " Million $ per Million $ of Output";
+  // note this switch duplicates that in toggleGraphs.ts
+  switch (graphTitleName) {
+    case "Social Cost of Carbon" :
+      yaxisTitle = "Emissions Intensity (Million $ per Million $ of Output)";
+      unitLabel = " Million $ per Million $ of Output";
+      break;
+    case "Acidification Potential":
+      yaxisTitle = "Emissions Intensity (kg SO2 eq. per Million $ of Output)";
+      unitLabel = "kg SO2 eq. per Million $ of Output";
+      break;
+    case "Eutrophication Potential":
+      yaxisTitle = "Emissions Intensity (MT N eq. per Million $ of Output)";
+      unitLabel = "MT N eq. per Million $ of Output";
+      break;
+    case "Human Health   Respiratory Effects":
+      yaxisTitle = "Emissions Intensity (kg PM2.5 eq. per Million $ of Output)";
+      unitLabel = "kg PM2.5 eq. per Million $ of Output";
+      break;
+    case "Ozone Depletion":
+      yaxisTitle = "Emissions Intensity (MT CFC eq. per Million $ of Output)";
+      unitLabel = "MT CFC eq. per Million $ of Output";
+      break;
+    case "Smog Formation Potential":
+      yaxisTitle = "Emissions Intensity (MT O3 eq. per Million $ of Output)";
+      unitLabel = "MT O3 eq. per Million $ of Output";
+      break;
+    case "Freshwater withdrawals":
+      yaxisTitle = "Resource Use (m3 per Million $ of Output)";
+      unitLabel = "m3 per Million $ of Output";
+      break;
+    case "Jobs Supported":
+      yaxisTitle = "Impact Intensity (jobs per Million $ of Output)";
+      unitLabel = "jobs per Million $ of Output";
+      break;
   }
 
   const colors = data.map((t) => {

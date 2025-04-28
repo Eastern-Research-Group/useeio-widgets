@@ -29,12 +29,44 @@ export async function apexGraph(
 
   let unitLabel: string = "";
   let yaxisTitle = "";
-  if (graphTitleName == "Social Cost of Carbon") {
-    yaxisTitle = "Total Impact (Billion dollars)";
-    unitLabel = " Billion dollars";
-  } else {
-    yaxisTitle = "Emissions (MMT CO2e)";
-    unitLabel = " MMT CO2e";
+  // Note this switch duplicates that in toggleGraphs.ts
+  switch(graphTitleName) {
+    case "Social Cost of Carbon":
+      yaxisTitle = "Total Impact (Billion dollars)";
+      unitLabel = " Billion dollars";
+      break;
+    case "Acidification Potential":
+      yaxisTitle = "Emissions (MMT SO2 eq.)";
+      unitLabel = "MMT SO2 eq.";
+      break;
+    case "Eutrophication Potential":
+      yaxisTitle = "Emissions (MMT N eq.)";
+      unitLabel = "MMT N eq.";
+      break;
+    case "Human Health   Respiratory Effects":
+      yaxisTitle = "Emissions (MMT PM2.5 eq.)";
+      unitLabel = "MMT PM2.5 eq.";
+      break;
+    case "Ozone Depletion":
+      yaxisTitle = "Emissions (MT CFC eq.)";
+      unitLabel = "MT CFC eq.";
+      break;
+    case "Smog Formation Potential":
+      yaxisTitle = "Emissions (MMT O3 eq.)";
+      unitLabel = "MMT O3 eq.";
+      break;
+    case "Freshwater withdrawals":
+      yaxisTitle = "Resource Use (million m3)";
+      unitLabel = "million m3";
+      break;
+    case "Jobs Supported":
+      yaxisTitle = "Jobs";
+      unitLabel = "Jobs";
+      break;
+    default:
+      yaxisTitle = "Emissions (MMT CO2e)";
+      unitLabel = " MMT CO2e";
+      break;
   }
 
   const colors = data.map((t) => {
