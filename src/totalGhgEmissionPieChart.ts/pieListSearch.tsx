@@ -423,6 +423,7 @@ const Component = (props: { widget: PieListSearch }) => {
               }}
             >
               <div>Direct and Indirect GHG Emissions</div>
+              {/* todo: make the text more adaptable based on selection */}
               <div
                 style={{
                   overflowWrap: "break-word",
@@ -435,6 +436,7 @@ const Component = (props: { widget: PieListSearch }) => {
                 {title}
               </div>
               <div>Based on {year}-year GWP factors (IPCC, 2021)</div>
+              {/* todo: make the text more adaptable based on selection */}
             </div>
           ) : (
             <div
@@ -444,6 +446,7 @@ const Component = (props: { widget: PieListSearch }) => {
               }}
             >
               <div>Direct and Indirect GHG Emissions</div>
+              {/* todo: make the text more adaptable based on selection */}
               <div
                 style={{
                   overflowWrap: "break-word",
@@ -456,6 +459,7 @@ const Component = (props: { widget: PieListSearch }) => {
                 {title}
               </div>
               <div>Based on {year}-year GWP factors (IPCC, 2021)</div>
+              {/* todo: make the text more adaptable based on selection */}
             </div>
           )}
           <div

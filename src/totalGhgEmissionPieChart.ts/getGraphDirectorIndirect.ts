@@ -154,6 +154,7 @@ export async function apexGraph(
                     });
 
                   // Return both total and percentage combined in the same label
+                  // TODO: update units
                   return `${uniqueValue.totalImpactSum.toFixed(2)} MMT CO2e  (${(uniqueValue.contribution * 100).toFixed(2)}%)`;
                 },
               },
@@ -185,6 +186,7 @@ export async function apexGraph(
               });
 
             // Return both total and percentage combined in the same label
+            // TODO: update units
             return `${uniqueValue.totalImpactSum.toFixed(2)} MMT CO2e  (${(uniqueValue.contribution * 100).toFixed(2)}%)`;
           },
         },
@@ -192,6 +194,7 @@ export async function apexGraph(
       annotations: {
         texts: [
           {
+            // TODO: update units
             text: `${totalSum.toFixed(2)} MMT CO2e (100%)`,
             x: 250,
             y: 240,

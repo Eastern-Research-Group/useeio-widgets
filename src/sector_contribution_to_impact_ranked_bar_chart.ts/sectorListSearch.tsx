@@ -283,6 +283,7 @@ const Component = (props: { widget: SectorListSearch }) => {
               </div>
               <div>Contribution to Sector Total GHG Emissions by Source</div>
               <div>Based on {year}-year GWP factors (IPCC, 2021)</div>
+              {/* todo: make the text more adaptable based on selection */}
             </div>
           ) : (
             <div
@@ -303,6 +304,7 @@ const Component = (props: { widget: SectorListSearch }) => {
               </div>
               <div>Contribution to Sector Carbon Intensity by Source</div>
               <div>Based on {year}-year GWP factors (IPCC, 2021)</div>
+              {/* todo: make the text more adaptable based on selection */}
             </div>
           )}
           <div
