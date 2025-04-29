@@ -3,16 +3,21 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Direct and Indirect GHG Emissions by Sector</title>
-    <!--- todo: change the title based on selection -->
+    <title></title>
+    <!--- changes dynamically according to graph -->
     <link rel="stylesheet" type="text/css" href="widgets.css">
 
 </head>
-
+<style>
+    .apexcharts-datalabel-value {
+      white-space: normal !important;
+      text-align: center;
+      display: block;
+      max-width: 120px;
+      margin: 0 auto;
+    }
+  </style>
 <body>
-    <h1 id="graphTitle" class="text-center">Comparison of Direct and Indirect GHG Emissions by Sector</h1>
-	<p>For the sector selected below, the chart shows the total and percentage of greenhouse gas (GHG) emissions attributable to <em>Direct</em> emissions from facility operations and <em>Indirect</em> emissions embedded in the purchases made by the sector.</p>
-    <!--- todo: make the text more adaptable based on selection -->
       <div>
          <div  class="pie-list"></div>
       </div>
@@ -47,6 +52,7 @@
         pieListSearch.update();
 
     </script>
+    
 </body>
 
 </html>

@@ -111,6 +111,11 @@ const Component = (props: { widget: SectorListSearch }) => {
     "impact_per_purchase",
   );
 
+  React.useEffect(() => {
+    //Changes meta title according to the graph selected
+    document.title = getLabel(graph);
+  }, [graph]);
+  
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
 
@@ -257,6 +262,21 @@ const Component = (props: { widget: SectorListSearch }) => {
         flexDirection: "column",
       }}
     >
+      {/* Update header with graph selected */}
+        <h1
+        id="graphTitle"
+        style={{
+          width: "100%",        
+          textAlign: "center",  
+          margin: "0 auto",     
+        }}
+      >
+        Contribution to Total Sector Emissions and Intensity for {getLabel(graph)}
+      </h1>
+      {/* Update paragraph with graph selected */}
+      <p id="paragraph" className="text-center">
+      For the sector selected below, the chart shows the contribution to total embodied GHG emissions and intensity from <em>Direct</em> emissions due to facility operations and <em>Indirect</em> emissions embedded in the purchases made from all other sectors for {getLabel(graph)}
+      </p>
       <div>
         <div
           style={{
@@ -281,10 +301,10 @@ const Component = (props: { widget: SectorListSearch }) => {
               >
                 {title}
               </div>
-              <div>Contribution to Sector Total GHG Emissions by Source</div>
-              <div>Based on {year}-year GWP factors (IPCC, 2021)</div>
-              {/* todo: make the text more adaptable based on selection */}
-            </div>
+                <div>Contribution to Sector Total GHG Emissions by Source</div>
+                {/* Updated title of the graph */}
+                <div>Based on {getLabel(graph)} factors (IPCC, 2021)</div>
+              </div>
           ) : (
             <div
               style={{
@@ -303,8 +323,8 @@ const Component = (props: { widget: SectorListSearch }) => {
                 {title}
               </div>
               <div>Contribution to Sector Carbon Intensity by Source</div>
-              <div>Based on {year}-year GWP factors (IPCC, 2021)</div>
-              {/* todo: make the text more adaptable based on selection */}
+              {/* Updated title of the graph */}
+              <div>Based on {getLabel(graph)} factors (IPCC, 2021)</div>
             </div>
           )}
           <div

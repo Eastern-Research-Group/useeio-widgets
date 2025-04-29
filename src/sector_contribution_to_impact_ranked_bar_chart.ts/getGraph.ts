@@ -45,7 +45,7 @@ export async function apexGraph(
       yaxisTitle = "Emissions Intensity (MT N eq. per Million $ of Output)";
       unitLabel = "MT N eq. per Million $ of Output";
       break;
-    case "Human Health   Respiratory Effects":
+    case "Human Health Respiratory Effects":
       yaxisTitle = "Emissions Intensity (kg PM2.5 eq. per Million $ of Output)";
       unitLabel = "kg PM2.5 eq. per Million $ of Output";
       break;
@@ -135,7 +135,7 @@ export async function apexGraph(
       },
       max:
         values.topFifteenImpactPerPurchase[0].impactPerPurchase +
-        values.topFifteenImpactPerPurchase[9].impactPerPurchase,
+        values.topFifteenImpactPerPurchase[values.topFifteenImpactPerPurchase.length -1].impactPerPurchase,
       forceNiceScale: true,
       labels: {
         formatter: function (val) {

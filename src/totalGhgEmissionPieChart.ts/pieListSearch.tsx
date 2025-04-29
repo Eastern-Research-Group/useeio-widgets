@@ -238,6 +238,11 @@ const Component = (props: { widget: PieListSearch }) => {
       );
   };
 
+  React.useEffect(() => {
+    //Changes meta title according to the graph selected
+    document.title = getLabel(graph);
+  }, [graph]);
+
   const handleChangePerspective = (event: any) => {
     setPerspective(event.target.value);
     props.widget.piePercentContribution.changePerspectiveGraph(
@@ -288,6 +293,22 @@ const Component = (props: { widget: PieListSearch }) => {
         gap: "5%",
       }}
     >
+      {/* Update header with graph selected */}
+       <h1
+        id="graphTitle"
+        style={{
+          width: "100%",        
+          textAlign: "center",  
+          margin: "0 auto",     
+        }}
+      >
+        Comparison of Direct and Indirect Emissions for {getLabel(graph)}
+      </h1>
+      {/* Update paragraph with graph selected */}
+      <p id="paragraph" className="text-center">
+        For the sector selected below, the chart shows the total and percentage emissions attributable to <em>Direct</em> emissions from facility operations and <em>Indirect</em> emissions embedded in the purchases made by the sector for {getLabel(graph)}.
+      </p>
+
       <div>
         <div
           style={{
@@ -422,8 +443,8 @@ const Component = (props: { widget: PieListSearch }) => {
                 textAlign: "center",
               }}
             >
-              <div>Direct and Indirect GHG Emissions</div>
-              {/* todo: make the text more adaptable based on selection */}
+              {/* Updated title of the graph with selected option */}
+              <div>Direct and Indirect Emissions for {getLabel(graph)}</div>
               <div
                 style={{
                   overflowWrap: "break-word",
@@ -435,8 +456,8 @@ const Component = (props: { widget: PieListSearch }) => {
               >
                 {title}
               </div>
-              <div>Based on {year}-year GWP factors (IPCC, 2021)</div>
-              {/* todo: make the text more adaptable based on selection */}
+              {/* Updated title of the graph */}
+              <div>Based on {getLabel(graph)} factors (IPCC, 2021)</div>
             </div>
           ) : (
             <div
@@ -445,8 +466,8 @@ const Component = (props: { widget: PieListSearch }) => {
                 textAlign: "center",
               }}
             >
-              <div>Direct and Indirect GHG Emissions</div>
-              {/* todo: make the text more adaptable based on selection */}
+              {/* Updated title of the graph with selected option */}
+              <div>Direct and Indirect Emissions for {getLabel(graph)}</div>
               <div
                 style={{
                   overflowWrap: "break-word",
@@ -458,8 +479,8 @@ const Component = (props: { widget: PieListSearch }) => {
               >
                 {title}
               </div>
-              <div>Based on {year}-year GWP factors (IPCC, 2021)</div>
-              {/* todo: make the text more adaptable based on selection */}
+              {/* Updated title of the graph with selected option */}
+              <div>Based on {getLabel(graph)} factors (IPCC, 2021)</div>
             </div>
           )}
           <div

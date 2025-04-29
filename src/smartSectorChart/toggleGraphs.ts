@@ -48,7 +48,7 @@ export async function calculate(
           yaxisTitle = "Emissions Intensity (MT N eq. per Million $ of Output)";
           unitLabel = "MT N eq. per Million $ of Output";
           break;
-        case "Human Health   Respiratory Effects":
+        case "Human Health Respiratory Effects":
           yaxisTitle = "Emissions Intensity (kg PM2.5 eq. per Million $ of Output)";
           unitLabel = "kg PM2.5 eq. per Million $ of Output";
           break;

@@ -69,7 +69,7 @@ export class SmartSectorEEIO extends Widget {
       await this.modelSmartSectorApi.sectorContributionToImpactGhgAPI(
         "final/" + graphName,
       );
-    const nameWithNoSpace = graphName.replace(/\-/g, " ");
+    const nameWithNoSpace = graphName.replace(/-+/g, ' ').trim();
     const options = await this.getValues(
       this.sectorContributionToImpact,
       this.modelSmartSectorApi,
@@ -147,7 +147,7 @@ export class SmartSectorEEIO extends Widget {
       }
     }
 
-    const nameWithNoSpace = graphName.replace(/\-/g, " ");
+    const nameWithNoSpace = graphName.replace(/-+/g, ' ').trim();
 
     const listOfStackGraph = await this.getValues(
       this.sectorContributionToImpact,
@@ -293,7 +293,7 @@ export class SmartSectorEEIO extends Widget {
   }
 
   async selectorFilter(totalRankSelector: { name: string; num?: number, n:string },n:string) {
-    const nameWithNoSpace = this.graphName.replace(/-/g, " ");
+    const nameWithNoSpace = this.graphName.replace(/-+/g, ' ').trim();
 
     this.fileNameTitle = n;
     const filteredResults: SumSmartSectorTotalParts[] =

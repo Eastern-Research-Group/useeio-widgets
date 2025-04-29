@@ -61,7 +61,7 @@ export class SmartSectorEEIOTotalImpactPerSector extends Widget {
       await this.modelSmartSectorApi.sectorMapping();
     this.uniqueSortedMappingGroupNoDuplicates =
       uniqueSortedMappingGroupNoDuplicatesList(sectorMappingList);
-    const titleNameWithNoSpace = graphName.replace(/\-/g, " ");
+    const titleNameWithNoSpace = graphName.replace(/-+/g, ' ').trim();
     this.sectorContributionToImpact =
       await this.modelSmartSectorApi.sectorContributionToImpactRankedGhgAPI(
         "final/" + graphName,
@@ -111,7 +111,7 @@ export class SmartSectorEEIOTotalImpactPerSector extends Widget {
       await this.modelSmartSectorApi.sectorMapping();
     this.uniqueSortedMappingGroupNoDuplicates =
       uniqueSortedMappingGroupNoDuplicatesList(sectorMappingList);
-    const titleNameWithNoSpace = graphName.replace(/\-/g, " ");
+    const titleNameWithNoSpace = graphName.replace(/-+/g, ' ').trim();
     this.sectorContributionToImpact = [];
     this.getTopValuesFromSectors = [];
     this.sectorContributionToImpact =
@@ -137,7 +137,7 @@ export class SmartSectorEEIOTotalImpactPerSector extends Widget {
     this.options = await apexGraph(
       this.getTopValuesFromSectors,
       sectorName,
-      this.graphName.replace(/\-/g, " "),
+      this.graphName.replace(/-+/g, ' ').trim(),
     );
     this.chart.updateOptions(this.options);
     this.chart.resetSeries();

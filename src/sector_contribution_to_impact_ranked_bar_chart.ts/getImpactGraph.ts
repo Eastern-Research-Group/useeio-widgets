@@ -43,7 +43,7 @@ export async function apexGraph(
       yaxisTitle = "Emissions (MMT N eq.)";
       unitLabel = "MMT N eq.";
       break;
-    case "Human Health   Respiratory Effects":
+    case "Human Health Respiratory Effects":
       yaxisTitle = "Emissions (MMT PM2.5 eq.)";
       unitLabel = "MMT PM2.5 eq.";
       break;
@@ -136,7 +136,7 @@ export async function apexGraph(
       },
       max:
         values.topFifteenTotalImpact[0].totalImpact +
-        values.topFifteenTotalImpact[9].totalImpact,
+        values.topFifteenTotalImpact[values.topFifteenTotalImpact.length -1].totalImpact,
       forceNiceScale: true,
       labels: {
         formatter: function (val) {

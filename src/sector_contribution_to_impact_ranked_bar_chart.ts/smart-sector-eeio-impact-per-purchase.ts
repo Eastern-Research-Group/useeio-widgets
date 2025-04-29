@@ -60,7 +60,7 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
     this.sectorMappingList = await this.modelSmartSectorApi.sectorMapping();
     this.uniqueSortedMappingGroupNoDuplicates =
       uniqueSortedMappingGroupNoDuplicatesList(this.sectorMappingList);
-    const titleNameWithNoSpace = graphName.replace(/\-/g, " ");
+    const titleNameWithNoSpace = graphName.replace(/-+/g, ' ').trim();
     this.sectorContributionToImpact =
       await this.modelSmartSectorApi.sectorContributionToImpactRankedGhgAPI(
         "final/" + graphName,
@@ -111,7 +111,7 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
       await this.modelSmartSectorApi.sectorMapping();
     this.uniqueSortedMappingGroupNoDuplicates =
       uniqueSortedMappingGroupNoDuplicatesList(sectorMappingList);
-    const titleNameWithNoSpace = graphName.replace(/\-/g, " ");
+    const titleNameWithNoSpace = graphName.replace(/-+/g, ' ').trim();
     this.sectorContributionToImpact = [];
     this.getTopValuesFromSectors = [];
     this.sectorContributionToImpact =

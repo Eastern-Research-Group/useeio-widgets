@@ -56,7 +56,7 @@ export class PiePercentContribution extends Widget {
       await this.modelSmartSectorApi.sectorMapping();
     this.uniqueSortedMappingGroupNoDuplicates =
       uniqueSortedMappingGroupNoDuplicatesList(sectorMappingList);
-    const titleNameWithNoSpace = graphName.replace(/\-/g, " ");
+    const titleNameWithNoSpace = graphName.replace(/-+/g, ' ').trim();
     this.percentContributionList =
       await this.modelSmartSectorApi.percentContribution("final/" + graphName);
     this.contributionList = await this.contributionListPerSector(
@@ -120,7 +120,7 @@ export class PiePercentContribution extends Widget {
     this.sector_name = sectorName
       ? sectorName
       : "Fresh soybeans, canola, flaxseeds, and other oilseeds";
-    const titleNameWithNoSpace = graphName.replace(/\-/g, " ");
+    const titleNameWithNoSpace = graphName.replace(/-+/g, ' ').trim();
 
     this.options = await apexGraph(
       this.contributionList,
@@ -137,7 +137,7 @@ export class PiePercentContribution extends Widget {
     this.options = await apexGraph(
       this.contributionList,
       sectorName,
-      this.graphName.replace(/\-/g, " "),
+      this.graphName.replace(/-+/g, ' ').trim(),
     );
     this.chart.updateOptions(this.options);
     this.chart.resetSeries();
