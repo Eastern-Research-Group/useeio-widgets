@@ -71,31 +71,31 @@ export async function apexGraph(
     let pointSelection: number = 0;
 
         //Direct and Indirect only
-        let unitLabel = "tons CO2e per Million $ of Output";
+        let unitLabel = "MMT CO2e";
         switch (graphName) {
           case "Social Cost of Carbon" :
-            unitLabel = " Million $ per Million $ of Output";
+            unitLabel = "Billion dollars";
             break;
           case "Acidification Potential":
-            unitLabel = "kg SO2 eq. per Million $ of Output";
+            unitLabel = "MMT SO2 eq.";
             break;
           case "Eutrophication Potential":
-            unitLabel = "MT N eq. per Million $ of Output";
+            unitLabel = "MMT N eq.";
             break;
           case "Human Health Respiratory Effects":
-            unitLabel = "kg PM2.5 eq. per Million $ of Output";
+            unitLabel = "MMT PM2.5 eq.";
             break;
           case "Ozone Depletion":
-            unitLabel = "MT CFC eq. per Million $ of Output";
+            unitLabel = "MT CFC eq.";
             break;
           case "Smog Formation Potential":
-            unitLabel = "MT O3 eq. per Million $ of Output";
+            unitLabel = "MMT O3 eq.";
             break;
           case "Freshwater withdrawals":
-            unitLabel = "m3 per Million $ of Output";
+            unitLabel = "million m3";
             break;
           case "Jobs Supported":
-            unitLabel = "jobs per Million $ of Output";
+            unitLabel = "Jobs";
             break;
         }
 
