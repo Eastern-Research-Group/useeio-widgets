@@ -99,6 +99,16 @@ export async function apexGraph(
             break;
         }
 
+        let totalValue
+        switch (graphName) {
+          case "Jobs Supported":
+            totalValue = `${totalSum.toLocaleString(undefined, {maximumFractionDigits: 0})} ${unitLabel} (100%)`;
+            break;
+          default:
+            totalValue = `${totalSum.toFixed(2)} ${unitLabel} (100%)`;
+            break;
+        }
+
     return {
       series: contrubutionList,
       colors: contrubutionColorList,
@@ -182,7 +192,16 @@ export async function apexGraph(
                       if (t.contribution.toString() == val) return true;
                     });
 
-                  return `${uniqueValue.totalImpactSum.toFixed(2)} ${unitLabel} (${(uniqueValue.contribution * 100).toFixed(2)}%)`;
+                    let value
+                    switch (graphName) {
+                      case "Jobs Supported":
+                        value = `${uniqueValue.totalImpactSum.toLocaleString(undefined, {maximumFractionDigits: 0})} ${unitLabel}  (${(uniqueValue.contribution * 100).toFixed(2)}%)`;
+                        break;
+                      default:
+                        value = `${uniqueValue.totalImpactSum.toFixed(2)} ${unitLabel} (${(uniqueValue.contribution * 100).toFixed(2)}%)`;
+                        break;
+                    }
+                      return value
                 },
                 fontSize: '15px',
               },
@@ -213,14 +232,23 @@ export async function apexGraph(
                 if (t.contribution == val) return true;
               });
 
-            return `${uniqueValue.totalImpactSum.toFixed(2)} ${unitLabel} (${(uniqueValue.contribution * 100).toFixed(2)}%)`;
-          },
+              let value
+              switch (graphName) {
+                case "Jobs Supported":
+                  value = `${uniqueValue.totalImpactSum.toLocaleString(undefined, {maximumFractionDigits: 0})} ${unitLabel}  (${(uniqueValue.contribution * 100).toFixed(2)}%)`;
+                  break;
+                default:
+                  value = `${uniqueValue.totalImpactSum.toFixed(2)} ${unitLabel} (${(uniqueValue.contribution * 100).toFixed(2)}%)`;
+                  break;
+              }
+                return value          
+              },
         },
       },
       annotations: {
         texts: [
           {
-            text: `${totalSum.toFixed(2)} ${unitLabel} (100%)`,
+            text: totalValue,
             x: 250,
             y: 240,
             textAnchor: "middle",
