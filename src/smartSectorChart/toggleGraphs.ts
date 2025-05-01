@@ -201,6 +201,7 @@ export async function calculate(
               enabled: true,
               formatter: function (val) {
                 return "" + parseFloat(val).toFixed(1) + "";
+                // possible to specifically format jobs differently here?
               },
             },
           },

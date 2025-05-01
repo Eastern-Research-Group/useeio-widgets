@@ -9,8 +9,9 @@
 
 
 <body>
-    <h1 id="graphTitle" class="text-center">Top 10/25 Sectors Based on Total Embodied GHG Emissions</h1>
-	<p id="graphParagraph">This chart presents the top 10 (25) sectors ranked on total embodied GHG emissions from contributions from Direct emissions due to the sector's operations and Indirect emissions embedded in the purchases made from all other sectors in the supply chain..</p>
+    <h1 id="graphTitle" class="text-center">Top 10 Sectors Based on Total Embodied Impacts</h1>
+	<p id="graphParagraph">This chart presents the top 10 sectors ranked on total embodied impacts from contributions from Direct emissions due to the sector's operations and Indirect emissions embedded in the purchases made from all other sectors in the supply chain.</p>
+    <!-- default title is for GHGs and 10 sectors -->
     <div style=" display: flex; flex-direction: column;height: 85vh;">
         <div style=" flex-grow: 1;">
                     <div id="smart-sector-eeio">
@@ -33,10 +34,10 @@
                     <label for="grap-selected">Sector Filter: </label>
                     <br>
                     <select id="mySelect" onchange="toggleNumSelection(this.value)">
-                        <option data-value='{"name":"total_rank","num":"10"}'>Top 10 Total Embodied GHG Emissions</option>
-                        <option data-value='{"name":"total_rank","num":"25"}'>Top 25 Total Embodied GHG Emissions</option>
-                        <option data-value='{"name":"intensity_rank","num":"10"}'>Top 10 Embodied GHG Intensity</option>
-                        <option data-value='{"name":"intensity_rank","num":"25"}'>Top 25 Embodied GHG Intensity</option>
+                        <option data-value='{"name":"total_rank","num":"10"}'>Top 10 Total Embodied Impacts</option>
+                        <option data-value='{"name":"total_rank","num":"25"}'>Top 25 Total Embodied Impacts</opion>
+                        <option data-value='{"name":"intensity_rank","num":"10"}'>Top 10 Embodied Impact Intensity</option>
+                        <option data-value='{"name":"intensity_rank","num":"25"}'>Top 25 Embodied Impact Intensity</option>
                         <option data-value='{"name":"construction_materials"}'>Select Construction Material Manufacturing Sectors</option>
                         <option data-value='{"name":"energy_intensive"}'>Energy Intensive Sectors</option>
                     </select>
@@ -45,8 +46,8 @@
                 <div style=" margin-left: 20px;flex-grow: 1;">
                     <label for="impact-selected">Select Result View:</label>
                     <br>
-                    <input type="radio" name="impactRadio" value="total_impact" checked/> Emissions
-                    <input type="radio" name="impactRadio" value="impact_per_purchase" /> Emission Intensity
+                    <input type="radio" name="impactRadio" value="total_impact" checked/> Total Impact
+                    <input type="radio" name="impactRadio" value="impact_per_purchase" /> Impact Intensity
                 </div>
                 <div style=" margin-left: 20px;flex-grow: 1;">
                     <label for="group-selected">Level of Detail:</label>
@@ -162,12 +163,14 @@
                 var paragraph =""
                 switch(impactSelector) {
                     case "total_impact":
-                        name = "Top 10/25 Sectors Based on Total Embodied GHG Emissions";
-                        paragraph = "This chart presents the top 10(25) sectors ranked on total embodied GHG emissions from contributions from Direct emissions due to the sector's operations and Indirect emissions embedded in the purchases made from all other sectors in the supply chain."
+                        name = "Top 10/25 Sectors Based on Total Embodied Impacts";
+                        paragraph = "This chart presents the top 10(25) sectors ranked on total embodied impacts from contributions from Direct emissions due to the sector's operations and Indirect emissions embedded in the purchases made from all other sectors in the supply chain."
+                        // edit these to include only the 10 or the 25 whichever is appropriate
                         break;
                     case "impact_per_purchase":
-                        name = "Top 10/25 Sectors Based on Embodied GHG Emission Intensity";
-                        paragraph = "This chart presents the top 10(25) sectors ranked on total embodied GHG emissions intensity from contributions from Direct emissions due to the sector's operations and Indirect emissions embedded in the purchases made from all other sectors in the supply chain."
+                        name = "Top 10/25 Sectors Based on Embodied Impact Intensity";
+                        paragraph = "This chart presents the top 10(25) sectors ranked on total embodied impact intensity from contributions from Direct emissions due to the sector's operations and Indirect emissions embedded in the purchases made from all other sectors in the supply chain."
+                        // edit these to include only the 10 or the 25 whichever is appropriate
                         break;
                 }
                 document.getElementById("graphTitle").innerHTML = `${name}`; 
@@ -182,14 +185,14 @@
                 }
                 
                 switch(n) {
-                    case "Top 10 Total Embodied GHG Emissions":
-                    case "Top 25 Total Embodied GHG Emissions":
+                    case "Top 10 Total Embodied Impacts":
+                    case "Top 25 Total Embodied Impacts":
                     changeImpactSelector("total_impact")
                     changeTitleAndParagraph("total_impact")
 
                     break;
-                    case "Top 10 Embodied GHG Intensity":
-                    case "Top 25 Embodied GHG Intensity":
+                    case "Top 10 Embodied Impact Intensity":
+                    case "Top 25 Embodied Impact Intensity":
                     changeImpactSelector("impact_per_purchase")
                     changeTitleAndParagraph("impact_per_purchase")
 

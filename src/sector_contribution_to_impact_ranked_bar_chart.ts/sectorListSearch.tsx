@@ -271,11 +271,11 @@ const Component = (props: { widget: SectorListSearch }) => {
           margin: "0 auto",     
         }}
       >
-        Contribution to Total Sector Emissions and Intensity for {getLabel(graph)}
+        Contribution to Total Sector Impacts and Intensity for {getLabel(graph)}
       </h1>
       {/* Update paragraph with graph selected */}
       <p id="paragraph" className="text-center">
-      For the sector selected below, the chart shows the contribution to total embodied GHG emissions and intensity from <em>Direct</em> emissions due to facility operations and <em>Indirect</em> emissions embedded in the purchases made from all other sectors for {getLabel(graph)}
+      For the sector selected below, the chart shows the contribution to total impacts and intensity from <em>Direct</em> emissions due to facility operations and <em>Indirect</em> emissions embedded in the purchases made from all other sectors for {getLabel(graph)}
       </p>
       <div>
         <div
@@ -301,7 +301,7 @@ const Component = (props: { widget: SectorListSearch }) => {
               >
                 {title}
               </div>
-                <div>Contribution to Sector Total GHG Emissions by Source</div>
+                <div>Contribution to Sector Total Impacts by Source</div>
                 {/* Updated title of the graph */}
                 <div>Based on {getLabel(graph)} factors (IPCC, 2021)</div>
               </div>
@@ -322,9 +322,10 @@ const Component = (props: { widget: SectorListSearch }) => {
               >
                 {title}
               </div>
-              <div>Contribution to Sector Carbon Intensity by Source</div>
+              <div>Contribution to Sector Intensity by Source</div>
               {/* Updated title of the graph */}
               <div>Based on {getLabel(graph)} factors (IPCC, 2021)</div>
+              {/* Remove or drop source? IPCC 2021 */}
             </div>
           )}
           <div
@@ -472,12 +473,12 @@ const Component = (props: { widget: SectorListSearch }) => {
             <FormControlLabel
               value="total_impact"
               control={<Radio color="default" size="small" />}
-              label="Emissions"
+              label="Total Impacts"
             />
             <FormControlLabel
               value="impact_per_purchase"
               control={<Radio color="default" size="small" />}
-              label="Emission Intensity"
+              label="Impact Intensity"
             />
           </RadioGroup>
         </FormControl>

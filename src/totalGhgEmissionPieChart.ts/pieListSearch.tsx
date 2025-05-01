@@ -302,11 +302,11 @@ const Component = (props: { widget: PieListSearch }) => {
           margin: "0 auto",     
         }}
       >
-        Comparison of Direct and Indirect Emissions for {getLabel(graph)}
+        Comparison of Direct and Indirect Impacts for {getLabel(graph)}
       </h1>
       {/* Update paragraph with graph selected */}
       <p id="paragraph" className="text-center">
-        For the sector selected below, the chart shows the total and percentage emissions attributable to <em>Direct</em> emissions from facility operations and <em>Indirect</em> emissions embedded in the purchases made by the sector for {getLabel(graph)}.
+        For the sector selected below, the chart shows the total and percentage impacts attributable to <em>Direct</em> emissions from facility operations and <em>Indirect</em> emissions embedded in the purchases made by the sector for {getLabel(graph)}.
       </p>
 
       <div>
@@ -444,7 +444,7 @@ const Component = (props: { widget: PieListSearch }) => {
               }}
             >
               {/* Updated title of the graph with selected option */}
-              <div>Direct and Indirect Emissions for {getLabel(graph)}</div>
+              <div>Direct and Indirect Impacts for {getLabel(graph)}</div>
               <div
                 style={{
                   overflowWrap: "break-word",
@@ -467,7 +467,7 @@ const Component = (props: { widget: PieListSearch }) => {
               }}
             >
               {/* Updated title of the graph with selected option */}
-              <div>Direct and Indirect Emissions for {getLabel(graph)}</div>
+              <div>Direct and Indirect Impacts for {getLabel(graph)}</div>
               <div
                 style={{
                   overflowWrap: "break-word",
