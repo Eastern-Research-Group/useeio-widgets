@@ -203,7 +203,7 @@ export async function calculate(
               let value
               switch (titleGraph) {
                 case "Jobs Supported":
-                  value = "" + Math.round(Number(val)).toLocaleString + "";
+                  value = "" + Math.round(Number(val)).toLocaleString() + "";
                   break;
                 default:
                   value =  "" + parseFloat(val).toFixed(1) + "";
