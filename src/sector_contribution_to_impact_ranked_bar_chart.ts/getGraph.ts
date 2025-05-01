@@ -1,6 +1,7 @@
 import * as apex from "apexcharts";
 import { SortedImpactPerPurchaseTopList } from "../smartSectorChart/smartSector";
 
+//Impact Intensity graph
 export async function apexGraph(
   sortingImpactPerPurchaseWithTopList: SortedImpactPerPurchaseTopList[],
   sectorName: string,

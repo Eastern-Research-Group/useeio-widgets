@@ -1,6 +1,7 @@
 import * as apex from "apexcharts";
 import { SortedImpactPerPurchaseTopList } from "../smartSectorChart/smartSector";
 
+//Total Impacts graph
 export async function apexGraph(
   sortingImpactPerPurchaseWithTopList: SortedImpactPerPurchaseTopList[],
   sectorName: string,
@@ -78,6 +79,15 @@ export async function apexGraph(
     totalSum += t.totalImpact;
   });
 
+  let totalValue
+    switch (graphTitleName) {
+      case "Jobs Supported":
+          totalValue = Math.round(totalSum).toLocaleString() + " Total "+ unitLabel + " for sector " + sectorName;
+          break;
+          default:
+          totalValue =  `${totalSum.toFixed(2)} Total ${unitLabel} for sector ${sectorName}`;
+          break;
+   }
   return {
     series: [
       {
@@ -113,7 +123,7 @@ export async function apexGraph(
           y: values.topFifteenTotalImpact[0].totalImpact,
           borderColor: "white",
           label: {
-            text: `${totalSum.toFixed(2)} Total ${unitLabel} for sector ${sectorName}`,
+            text: totalValue,
             style: {
               fontWeight: "bold",
             },
@@ -140,7 +150,16 @@ export async function apexGraph(
       forceNiceScale: true,
       labels: {
         formatter: function (val) {
-          return (Math.round(val * 100) / 100).toFixed(2);
+          let value
+              switch (graphTitleName) {
+                case "Jobs Supported":
+                  value = Math.round(val).toLocaleString()
+                  break;
+                default:
+                  value =  (Math.round(val * 100) / 100).toFixed(2);
+                  break;
+              }
+                return value
         },
       },
     },
@@ -150,7 +169,16 @@ export async function apexGraph(
     tooltip: {
       y: {
         formatter: function (val) {
-          return "" + val.toFixed(3) + " " + unitLabel;
+          let value
+          switch (graphTitleName) {
+            case "Jobs Supported":
+              value = "" + Math.round(val).toLocaleString() + " " + unitLabel;
+              break;
+            default:
+              value =  "" + val.toFixed(3) + " " + unitLabel;
+              break;
+          }
+            return value
         },
       },
     },

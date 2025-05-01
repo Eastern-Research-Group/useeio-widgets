@@ -200,8 +200,16 @@ export async function calculate(
             total: {
               enabled: true,
               formatter: function (val) {
-                return "" + parseFloat(val).toFixed(1) + "";
-                // possible to specifically format jobs differently here?
+              let value
+              switch (titleGraph) {
+                case "Jobs Supported":
+                  value = "" + Math.round(Number(val)).toLocaleString + "";
+                  break;
+                default:
+                  value =  "" + parseFloat(val).toFixed(1) + "";
+                  break;
+              }
+                return value
               },
             },
           },
@@ -247,7 +255,16 @@ export async function calculate(
         },
         y: {
           formatter: function (val) {
-            return "" + val.toFixed(3) + " " + unitLabel;
+            let value
+            switch (titleGraph) {
+              case "Jobs Supported":
+                value = "" + Math.round(val).toLocaleString() + " " + unitLabel
+                break;
+              default:
+                value =  "" + val.toFixed(3) + " " + unitLabel;
+                break;
+            }
+              return value
           },
         },
         x: {
