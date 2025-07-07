@@ -457,7 +457,7 @@ const Component = (props: { widget: PieListSearch }) => {
                 {title}
               </div>
               {/* Updated title of the graph */}
-              <div>Based on {getLabel(graph)} factors (IPCC, 2021)</div>
+              <div>{getLabel(graph)}</div>
             </div>
           ) : (
             <div
@@ -480,7 +480,7 @@ const Component = (props: { widget: PieListSearch }) => {
                 {title}
               </div>
               {/* Updated title of the graph with selected option */}
-              <div>Based on {getLabel(graph)} factors (IPCC, 2021)</div>
+              <div>{getLabel(graph)}</div>
             </div>
           )}
           <div

@@ -86,7 +86,7 @@ export async function calculate(
           yaxisTitle = "Emissions (MMT N eq.)";
           unitLabel = "MMT N eq.";
           break;
-        case "Human Health   Respiratory Effects":
+        case "Human Health Respiratory Effects":
           yaxisTitle = "Emissions (MMT PM2.5 eq.)";
           unitLabel = "MMT PM2.5 eq.";
           break;

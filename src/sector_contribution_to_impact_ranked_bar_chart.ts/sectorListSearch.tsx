@@ -303,7 +303,7 @@ const Component = (props: { widget: SectorListSearch }) => {
               </div>
                 <div>Contribution to Sector Total Impacts by Source</div>
                 {/* Updated title of the graph */}
-                <div>Based on {getLabel(graph)} factors (IPCC, 2021)</div>
+                <div>{getLabel(graph)}</div>
               </div>
           ) : (
             <div
@@ -324,8 +324,7 @@ const Component = (props: { widget: SectorListSearch }) => {
               </div>
               <div>Contribution to Sector Intensity by Source</div>
               {/* Updated title of the graph */}
-              <div>Based on {getLabel(graph)} factors (IPCC, 2021)</div>
-              {/* Remove or drop source? IPCC 2021 */}
+              <div>{getLabel(graph)}</div>
             </div>
           )}
           <div
