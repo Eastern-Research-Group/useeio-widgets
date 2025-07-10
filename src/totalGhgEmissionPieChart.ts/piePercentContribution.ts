@@ -30,7 +30,7 @@ export class PiePercentContribution extends Widget {
   sectorsListlowerCase: string[];
   graphName: string = "";
   perspective: string;
-  sector_name: string = "Fresh soybeans, canola, flaxseeds, and other oilseeds";
+  sector_name: string = "";
   sectorCode: string = "1111A0";
   options: apex.ApexOptions;
 
@@ -51,7 +51,7 @@ export class PiePercentContribution extends Widget {
     this.sectorsList = await this._chartConfig.model.sectors();
     this.sector_name = sectorName
       ? sectorName
-      : "Fresh soybeans, canola, flaxseeds, and other oilseeds";
+      : "";
     const sectorMappingList: SectorMapping[] =
       await this.modelSmartSectorApi.sectorMapping();
     this.uniqueSortedMappingGroupNoDuplicates =
@@ -119,7 +119,7 @@ export class PiePercentContribution extends Widget {
     this.sectorsList = await this._chartConfig.model.sectors();
     this.sector_name = sectorName
       ? sectorName
-      : "Fresh soybeans, canola, flaxseeds, and other oilseeds";
+      : "";
     const titleNameWithNoSpace = graphName.replace(/-+/g, ' ').trim();
 
     this.options = await apexGraph(

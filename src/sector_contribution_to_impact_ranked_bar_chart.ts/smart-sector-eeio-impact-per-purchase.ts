@@ -35,8 +35,8 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
   graphName: string = "";
   perspective: string = "";
   sectorMappingList: SectorMapping[];
-  sector_name: string = "Fresh soybeans, canola, flaxseeds, and other oilseeds";
-  sectorCode: string = "1111A0";
+  sector_name: string = "";
+  sectorCode: string = "";
   options: apex.ApexOptions;
 
   constructor(private _chartConfig: SmartSectorChartConfig) {
@@ -50,13 +50,14 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
 
   async update() {}
 
-  async init(graphName?: string, sectorName?: string) {
+  async init(graphName?: string, sectorName?: string, sectorCode?: string) {
     this.graphName = graphName;
+    this.sectorCode = sectorCode;
     this.perspective = "final";
     this.sectorsList = await this._chartConfig.model.sectors();
     const sector_name: string = sectorName
       ? sectorName
-      : "Fresh soybeans, canola, flaxseeds, and other oilseeds";
+      : "";
     this.sectorMappingList = await this.modelSmartSectorApi.sectorMapping();
     this.uniqueSortedMappingGroupNoDuplicates =
       uniqueSortedMappingGroupNoDuplicatesList(this.sectorMappingList);
@@ -106,7 +107,7 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
     this.sectorsList = await this._chartConfig.model.sectors();
     const sector_name: string = sectorName
       ? sectorName
-      : "Fresh soybeans, canola, flaxseeds, and other oilseeds";
+      : "";
     const sectorMappingList: SectorMapping[] =
       await this.modelSmartSectorApi.sectorMapping();
     this.uniqueSortedMappingGroupNoDuplicates =

@@ -86,11 +86,10 @@ export class PieListSearch extends Widget {
   }
 
   async update() {
-    this.modelSmartSectorApi.init();
-    this.piePercentContribution.init("GWP-AR6-100");
-    this.piePercentContributionSectors.init("GWP-AR6-100");
-
     this.sectors = await this._chartConfig.model.sectors();
+    this.modelSmartSectorApi.init();
+    this.piePercentContribution.init("GWP-AR6-100",this.sectors[0].name);
+    this.piePercentContributionSectors.init("GWP-AR6-100",this.sectors[0].name);
     ReactDOM.render(
       <Component widget={this} />,
       document.querySelector(this._chartConfig.selector),
@@ -101,9 +100,7 @@ export class PieListSearch extends Widget {
 const Component = (props: { widget: PieListSearch }) => {
   const [searchTerm, setSearchTerm] = React.useState<string>("");
   const [value, setValue] = React.useState<string>("");
-  const [title, setTitle] = React.useState<string>(
-    "Fresh soybeans, canola, flaxseeds, and other oilseeds (BEA/NAICS 1111A0)",
-  );
+  const [title, setTitle] = React.useState<string>("");
   const [graph, setGraph] = React.useState<string>("GWP-AR6-100");
   const [year, setYear] = React.useState<string>("100");
   const [graphDetails, setGraphDetails] = React.useState<string>("Aggregate");
@@ -155,6 +152,10 @@ const Component = (props: { widget: PieListSearch }) => {
       );
     });
   }
+
+  React.useEffect(() => {
+    setTitle(sectors[0].name + " (" + sectors[0].code + ")");
+  }, []);
 
   React.useEffect(() => {
     const textElements = document.querySelectorAll<SVGTextElement>(

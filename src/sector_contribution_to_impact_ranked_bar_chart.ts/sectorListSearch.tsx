@@ -68,10 +68,10 @@ export class SectorListSearch extends Widget {
   }
 
   async update() {
-    this.modelSmartSectorApi.init();
-    this.smartSectorImpactPurchase.init("GWP-AR6-100");
-    this.smartSectorTotalImpact.init("GWP-AR6-100");
     this.sectors = await this._chartConfig.model.sectors();
+    this.modelSmartSectorApi.init();
+    this.smartSectorImpactPurchase.init("GWP-AR6-100",this.sectors[0].name,this.sectors[0].code);
+    this.smartSectorTotalImpact.init("GWP-AR6-100",this.sectors[0].name, this.sectors[0].code);
     ReactDOM.render(
       <Component widget={this} />,
       document.querySelector(this._chartConfig.selector),
@@ -97,9 +97,7 @@ const Component = (props: { widget: SectorListSearch }) => {
 
   const [searchTerm, setSearchTerm] = React.useState<string>("");
   const [value, setValue] = React.useState<string>("");
-  const [title, setTitle] = React.useState<string>(
-    "Fresh soybeans, canola, flaxseeds, and other oilseeds (BEA/NAICS 1111A0)",
-  );
+  const [title, setTitle] = React.useState<string>("");
   const [graph, setGraph] = React.useState<string>("");
   const [year, setYear] = React.useState<string>("100");
   const [perspective, setPerspective] = React.useState<string>("final");
@@ -116,6 +114,10 @@ const Component = (props: { widget: SectorListSearch }) => {
     document.title = getLabel(graph);
   }, [graph]);
   
+  React.useEffect(() => {
+    setTitle(sectors[0].name + " (" + sectors[0].code + ")");
+  }, []);
+
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
 

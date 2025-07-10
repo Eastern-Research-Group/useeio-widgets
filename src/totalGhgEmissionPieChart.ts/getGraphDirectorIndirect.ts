@@ -29,10 +29,6 @@ export async function apexGraph(
         width: 500,
         type: "pie",
       },
-      title: {
-        text: "No Data",
-        align: "center",
-      },
       labels: [],
       noData: {
         text: "There's no data",

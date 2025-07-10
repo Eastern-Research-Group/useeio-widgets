@@ -54,7 +54,7 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
     this.sectorsList = await this._chartConfig.model.sectors();
     const sector_name: string = sectorName
       ? sectorName
-      : "Fresh soybeans, canola, flaxseeds, and other oilseeds";
+      : "";
     const sectorMappingList: SectorMapping[] =
       await this.modelSmartSectorApi.sectorMapping();
     this.uniqueSortedMappingGroupNoDuplicates =
@@ -122,7 +122,7 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
     this.sectorsList = await this._chartConfig.model.sectors();
     const sector_name: string = sectorName
       ? sectorName
-      : "Fresh soybeans, canola, flaxseeds, and other oilseeds";
+      : "";
     const titleNameWithNoSpace = graphName.replace(/-+/g, ' ').trim();
 
     this.options = await apexGraph(
