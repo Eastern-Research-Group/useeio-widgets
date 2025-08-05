@@ -70,8 +70,8 @@ export class SectorListSearch extends Widget {
   async update() {
     this.sectors = await this._chartConfig.model.sectors();
     this.modelSmartSectorApi.init();
-    this.smartSectorImpactPurchase.init("GWP-AR6-100",this.sectors[0].name,this.sectors[0].code);
-    this.smartSectorTotalImpact.init("GWP-AR6-100",this.sectors[0].name, this.sectors[0].code);
+    this.smartSectorImpactPurchase.init("Acidification-Potential",this.sectors[0].name,this.sectors[0].code);
+    this.smartSectorTotalImpact.init("Acidification-Potential",this.sectors[0].name, this.sectors[0].code);
     ReactDOM.render(
       <Component widget={this} />,
       document.querySelector(this._chartConfig.selector),
@@ -277,7 +277,7 @@ const Component = (props: { widget: SectorListSearch }) => {
       </h1>
       {/* Update paragraph with graph selected */}
       <p id="paragraph" className="text-center">
-      For the sector selected below, the chart shows the contribution to total impacts and intensity from <em>Direct</em> emissions due to facility operations and <em>Indirect</em> emissions embedded in the purchases made from all other sectors for {getLabel(graph)}
+      For the sector selected below, the chart shows the contribution to total impacts and intensity from <em>Direct</em> impacts due to facility operations and <em>Indirect</em> impacts embedded in the purchases made from all other sectors for {getLabel(graph)}
       </p>
       <div>
         <div
@@ -305,7 +305,7 @@ const Component = (props: { widget: SectorListSearch }) => {
               </div>
                 <div>Contribution to Sector Total Impacts by Source</div>
                 {/* Updated title of the graph */}
-                <div>{getLabel(graph)}</div>
+                <div>From {getLabel(graph)}</div>
               </div>
           ) : (
             <div
@@ -326,7 +326,7 @@ const Component = (props: { widget: SectorListSearch }) => {
               </div>
               <div>Contribution to Sector Intensity by Source</div>
               {/* Updated title of the graph */}
-              <div>{getLabel(graph)}</div>
+              <div>From {getLabel(graph)}</div>
             </div>
           )}
           <div
@@ -443,13 +443,13 @@ const Component = (props: { widget: SectorListSearch }) => {
         </FormControl>
         <FormControl className={classes.margin}>
           <InputLabel id="demo-controlled-open-select-label">
-            Select Impact Factor:
+            Select Indicator:
           </InputLabel>
           <Select
             native
             value={graph}
             onChange={handleChange}
-            label="Select Impact Factor"
+            label="Select Indicator"
             inputProps={{
               name: "graph",
             }}

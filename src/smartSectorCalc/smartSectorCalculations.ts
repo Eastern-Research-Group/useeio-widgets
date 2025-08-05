@@ -7,7 +7,7 @@ export const fileNames: string[] = [
     "Acidification-Potential",
     "Eutrophication-Potential",
     "Freshwater-withdrawals",
-    "GWP-AR6-20",
+    // "GWP-AR6-20",
     "GWP-AR6-100",
     "Human-Health---Respiratory-Effects",
     "Jobs-Supported",

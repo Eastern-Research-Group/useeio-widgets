@@ -29,42 +29,45 @@ export async function apexGraph(
   const sortedSectorCodesWithNamesWithArray: string[][] = data.map((t) => {
     return t.purchase_commodity.split(" ");
   });
-  let yaxisTitle =
-    "Emissions Intensity (Metric tons CO2e per Million $ of Output)";
-  unitLabel = "tons CO2e per Million $ of Output";
+  let yaxisTitle = "";
+  unitLabel = "";
   // note this switch duplicates that in toggleGraphs.ts
   switch (graphTitleName) {
     case "Social Cost of Carbon" :
-      yaxisTitle = "Emissions Intensity (Million $ per Million $ of Output)";
+      yaxisTitle = "Million $ per Million $ of Output";
       unitLabel = " Million $ per Million $ of Output";
       break;
     case "Acidification Potential":
-      yaxisTitle = "Emissions Intensity (kg SO2 eq. per Million $ of Output)";
+      yaxisTitle = "Kilograms of SO2 eq. Emissions per Million $ of Output";
       unitLabel = "kg SO2 eq. per Million $ of Output";
       break;
     case "Eutrophication Potential":
-      yaxisTitle = "Emissions Intensity (MT N eq. per Million $ of Output)";
-      unitLabel = "MT N eq. per Million $ of Output";
+      yaxisTitle = "Metric Tons of N eq. Release per Million $ of Output";
+      unitLabel = "tons N eq. per Million $ of Output";
       break;
     case "Human Health Respiratory Effects":
-      yaxisTitle = "Emissions Intensity (kg PM2.5 eq. per Million $ of Output)";
+      yaxisTitle = "Kilograms of PM 2.5 eq. Emissions per Million $ of Output";
       unitLabel = "kg PM2.5 eq. per Million $ of Output";
       break;
     case "Ozone Depletion":
-      yaxisTitle = "Emissions Intensity (MT CFC eq. per Million $ of Output)";
-      unitLabel = "MT CFC eq. per Million $ of Output";
+      yaxisTitle = "Metric Tons of CFC eq. Emissions per Million $ of Output";
+      unitLabel = "tons CFC eq. per Million $ of Output";
       break;
     case "Smog Formation Potential":
-      yaxisTitle = "Emissions Intensity (MT O3 eq. per Million $ of Output)";
-      unitLabel = "MT O3 eq. per Million $ of Output";
+      yaxisTitle = "Metric Tons of O3 eq. Emissions per Million $ of Output";
+      unitLabel = "tons O3 eq. per Million $ of Output";
       break;
     case "Freshwater withdrawals":
-      yaxisTitle = "Resource Use (m3 per Million $ of Output)";
+      yaxisTitle = "Cubic meters of Freshwater Used per Million $ of Output";
       unitLabel = "m3 per Million $ of Output";
       break;
     case "Jobs Supported":
-      yaxisTitle = "Impact Intensity (jobs per Million $ of Output)";
+      yaxisTitle = "Number of jobs per Million $ of Output";
       unitLabel = "jobs per Million $ of Output";
+      break;
+    default:
+      yaxisTitle = "Metric Tons of CO2 eq. Emissions per Million $ of Output";
+      unitLabel = "tons CO2e per Million $ of Output";
       break;
   }
 
@@ -80,7 +83,7 @@ export async function apexGraph(
   return {
     series: [
       {
-        name: "Emissions Intensity",
+        name: "Impact Intensity",
         data: data.map((t) => t.impactPerPurchase),
       },
     ],

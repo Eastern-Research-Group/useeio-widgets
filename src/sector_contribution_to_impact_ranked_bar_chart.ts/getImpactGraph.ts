@@ -37,36 +37,36 @@ export async function apexGraph(
       unitLabel = " Billion dollars";
       break;
     case "Acidification Potential":
-      yaxisTitle = "Emissions (MMT SO2 eq.)";
+      yaxisTitle = "Million Metric Tons of SO2 eq. Emissions";
       unitLabel = "MMT SO2 eq.";
       break;
     case "Eutrophication Potential":
-      yaxisTitle = "Emissions (MMT N eq.)";
+      yaxisTitle = "Million Metric Tons of N eq. Releases";
       unitLabel = "MMT N eq.";
       break;
     case "Human Health Respiratory Effects":
-      yaxisTitle = "Emissions (MMT PM2.5 eq.)";
+      yaxisTitle = "Million Metric Tons of PM2.5 eq. Emissions";
       unitLabel = "MMT PM2.5 eq.";
       break;
     case "Ozone Depletion":
-      yaxisTitle = "Emissions (MT CFC eq.)";
-      unitLabel = "MT CFC eq.";
+      yaxisTitle = "Metric Tons of CFC eq. Emissions";
+      unitLabel = "tons CFC eq.";
       break;
     case "Smog Formation Potential":
-      yaxisTitle = "Emissions (MMT O3 eq.)";
+      yaxisTitle = "Million Metric Tons of O3 eq. Emissions";
       unitLabel = "MMT O3 eq.";
       break;
     case "Freshwater withdrawals":
-      yaxisTitle = "Resource Use (million m3)";
+      yaxisTitle = "Million Cubic Meters of Freshwater Used";
       unitLabel = "million m3";
       break;
     case "Jobs Supported":
-      yaxisTitle = "Jobs";
+      yaxisTitle = "Number of Jobs Supported";
       unitLabel = "Jobs";
       break;
     default:
-      yaxisTitle = "Emissions (MMT CO2e)";
-      unitLabel = " MMT CO2e";
+      yaxisTitle = "Million Metric Tons of CO2 eq. Emissions";
+      unitLabel = "MMT CO2e";
       break;
   }
 
@@ -91,7 +91,7 @@ export async function apexGraph(
   return {
     series: [
       {
-        name: "Emissions",
+        name: "Impact",
         data: data.map((t) => t.totalImpact),
       },
     ],

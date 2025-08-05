@@ -88,8 +88,8 @@ export class PieListSearch extends Widget {
   async update() {
     this.sectors = await this._chartConfig.model.sectors();
     this.modelSmartSectorApi.init();
-    this.piePercentContribution.init("GWP-AR6-100",this.sectors[0].name);
-    this.piePercentContributionSectors.init("GWP-AR6-100",this.sectors[0].name);
+    this.piePercentContribution.init("Acidification-Potential",this.sectors[0].name);
+    this.piePercentContributionSectors.init("Acidification-Potential",this.sectors[0].name);
     ReactDOM.render(
       <Component widget={this} />,
       document.querySelector(this._chartConfig.selector),
@@ -101,7 +101,7 @@ const Component = (props: { widget: PieListSearch }) => {
   const [searchTerm, setSearchTerm] = React.useState<string>("");
   const [value, setValue] = React.useState<string>("");
   const [title, setTitle] = React.useState<string>("");
-  const [graph, setGraph] = React.useState<string>("GWP-AR6-100");
+  const [graph, setGraph] = React.useState<string>("Acidification-Potential");
   const [year, setYear] = React.useState<string>("100");
   const [graphDetails, setGraphDetails] = React.useState<string>("Aggregate");
   const [aggregate, setAggregate] = React.useState<boolean>(true);
@@ -303,11 +303,11 @@ const Component = (props: { widget: PieListSearch }) => {
           margin: "0 auto",     
         }}
       >
-        Comparison of Direct and Indirect Impacts for {getLabel(graph)}
+        Comparison of Direct and Indirect Suply Chain Impacts for {getLabel(graph)}
       </h1>
       {/* Update paragraph with graph selected */}
       <p id="paragraph" className="text-center">
-        For the sector selected below, the chart shows the total and percentage impacts attributable to <em>Direct</em> emissions from facility operations and <em>Indirect</em> emissions embedded in the purchases made by the sector for {getLabel(graph)}.
+        For the sector selected below, the chart shows the total and percentage impacts attributable to <em>Direct</em> impacts from facility operations and <em>Indirect</em> impacts embedded in the purchases made by the sector for {getLabel(graph)}.
       </p>
 
       <div>
@@ -372,13 +372,13 @@ const Component = (props: { widget: PieListSearch }) => {
             </FormControl>
             <FormControl className={classes.margin}>
               <InputLabel id="demo-controlled-open-select-label">
-                Select Impact Factor:
+                Select Indicator:
               </InputLabel>
               <Select
                 native
                 value={graph}
                 onChange={handleChange}
-                label="Select Impact Factor"
+                label="Select Indicator"
                 inputProps={{
                   name: "graph",
                 }}
@@ -445,7 +445,7 @@ const Component = (props: { widget: PieListSearch }) => {
               }}
             >
               {/* Updated title of the graph with selected option */}
-              <div>Direct and Indirect Impacts for {getLabel(graph)}</div>
+              <div>Direct and Indirect Supply Chain Impacts for {getLabel(graph)}</div>
               <div
                 style={{
                   overflowWrap: "break-word",
@@ -468,7 +468,7 @@ const Component = (props: { widget: PieListSearch }) => {
               }}
             >
               {/* Updated title of the graph with selected option */}
-              <div>Direct and Indirect Impacts for {getLabel(graph)}</div>
+              <div>Direct and Indirect Supply Chain Impacts for {getLabel(graph)}</div>
               <div
                 style={{
                   overflowWrap: "break-word",

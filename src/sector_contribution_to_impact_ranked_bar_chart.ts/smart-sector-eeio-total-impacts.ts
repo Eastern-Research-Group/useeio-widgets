@@ -333,16 +333,16 @@ export class SmartSectorEEIOTotalImpactPerSector extends Widget {
             },
             export: {
               csv: {
-                filename: `${titleName}-Emissions`,
+                filename: `${titleName}-Impacts`,
                 columnDelimiter: ",",
                 headerCategory: "Sector Purchased",
                 headerValue: "Contribution",
               },
               svg: {
-                filename: `${titleName}-Emissions`,
+                filename: `${titleName}-Impacts`,
               },
               png: {
-                filename: `${titleName}-Emissions`,
+                filename: `${titleName}-Impacts`,
               },
             },
           },
@@ -363,7 +363,7 @@ export class SmartSectorEEIOTotalImpactPerSector extends Widget {
             this.chart.exports.exportToCSV({
               series: this.options["series"],
               columnDelimiter: ",",
-              fileName: `${titleName}-Emissions`.replace(",", "-"),
+              fileName: `${titleName}-Impacts`.replace(",", "-"),
             });
           });
         }
