@@ -37,39 +37,39 @@ export async function calculate(
     if (impactSelector == "impact_per_purchase") {
       switch(titleGraph) {
         case "Social Cost of Carbon":
-          yaxisTitle = "Emissions Intensity (Million $ per Million $ of Output)";
+          yaxisTitle = "Million $ per Million $ of Output)";
           unitLabel = "Million $ per Million $ of Output";
           break;
         case "Acidification Potential":
-          yaxisTitle = "Emissions Intensity (kg SO2 eq. per Million $ of Output)";
+          yaxisTitle = "Kilograms of SO2 eq. Emissions per Million $ of Output";
           unitLabel = "kg SO2 eq. per Million $ of Output";
           break;
         case "Eutrophication Potential":
-          yaxisTitle = "Emissions Intensity (MT N eq. per Million $ of Output)";
-          unitLabel = "MT N eq. per Million $ of Output";
+          yaxisTitle = "Metric Tons of N eq. Release per Million $ of Output";
+          unitLabel = "tons N eq. per Million $ of Output";
           break;
         case "Human Health Respiratory Effects":
-          yaxisTitle = "Emissions Intensity (kg PM2.5 eq. per Million $ of Output)";
+          yaxisTitle = "Kilograms of PM 2.5 eq. Emissions per Million $ of Output";
           unitLabel = "kg PM2.5 eq. per Million $ of Output";
           break;
         case "Ozone Depletion":
-          yaxisTitle = "Emissions Intensity (MT CFC eq. per Million $ of Output)";
-          unitLabel = "MT CFC eq. per Million $ of Output";
+          yaxisTitle = "Metric Tons of CFC eq. Emissions per Million $ of Output";
+          unitLabel = "tons CFC eq. per Million $ of Output";
           break;
         case "Smog Formation Potential":
-          yaxisTitle = "Emissions Intensity (MT O3 eq. per Million $ of Output)";
-          unitLabel = "MT O3 eq. per Million $ of Output";
+          yaxisTitle = "Metric Tons of O3 eq. Emissions per Million $ of Output";
+          unitLabel = "tons O3 eq. per Million $ of Output";
           break;
         case "Freshwater withdrawals":
-          yaxisTitle = "Resource Use (m3 per Million $ of Output)";
+          yaxisTitle = "Cubic meters of Freshwater Used per Million $ of Output";
           unitLabel = "m3 per Million $ of Output";
           break;
         case "Jobs Supported":
-          yaxisTitle = "Impact Intensity (jobs per Million $ of Output)";
+          yaxisTitle = "Number of jobs per Million $ of Output";
           unitLabel = "jobs per Million $ of Output";
           break;
         default:
-          yaxisTitle = "Emissions Intensity (Metric tons CO2e per Million $ of Output)";
+          yaxisTitle = "Metric Tons of CO2 eq. Emissions per Million $ of Output";
           unitLabel = "tons CO2e per Million $ of Output";
       }
     } else {
@@ -79,35 +79,35 @@ export async function calculate(
           unitLabel = "Billion dollars";
           break;
         case "Acidification Potential":
-          yaxisTitle = "Emissions (MMT SO2 eq.)";
+          yaxisTitle = "Million Metric Tons of SO2 eq. Emissions";
           unitLabel = "MMT SO2 eq.";
           break;
         case "Eutrophication Potential":
-          yaxisTitle = "Emissions (MMT N eq.)";
+          yaxisTitle = "Million Metric Tons of N eq. Releases";
           unitLabel = "MMT N eq.";
           break;
         case "Human Health Respiratory Effects":
-          yaxisTitle = "Emissions (MMT PM2.5 eq.)";
+          yaxisTitle = "Million Metric Tons of PM2.5 eq. Emissions";
           unitLabel = "MMT PM2.5 eq.";
           break;
         case "Ozone Depletion":
-          yaxisTitle = "Emissions (MT CFC eq.)";
+          yaxisTitle = "Metric Tons of CFC eq. Emissions";
           unitLabel = "MT CFC eq.";
           break;
         case "Smog Formation Potential":
-          yaxisTitle = "Emissions (MMT O3 eq.)";
+          yaxisTitle = "Million Metric Tons of O3 eq. Emissions";
           unitLabel = "MMT O3 eq.";
           break;
         case "Freshwater withdrawals":
-          yaxisTitle = "Resource Use (million m3)";
+          yaxisTitle = "Million Cubic Meters of Freshwater Used";
           unitLabel = "million m3";
           break;
         case "Jobs Supported":
-          yaxisTitle = "Jobs";
+          yaxisTitle = "Number of Jobs Supported";
           unitLabel = "Jobs";
           break;
         default:
-          yaxisTitle = "Emissions (MMT CO2e)";
+          yaxisTitle = "Million Metric Tons of CO2 eq. Emissions";
           unitLabel = "MMT CO2e";
       }
     }
