@@ -73,3 +73,13 @@ export function formatNumber(x: number): string {
     const digits = Math.max(3, Math.ceil(Math.log10(1/x)));
     return x.toFixed(digits);
 }
+
+
+export function formatNumberGraph(value: number): string {
+    console.log(value)
+    if (value < 0.9) {
+        return value.toExponential(2); 
+    } else {
+        return value.toFixed(2); 
+    }
+};

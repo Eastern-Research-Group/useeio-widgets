@@ -162,6 +162,7 @@ const Component = (props: { widget: PieListSearch }) => {
 
   React.useEffect(() => {
     setTitle(sectors[0].name + " (" + sectors[0].code + ")");
+    setValue(sectors[0].name)
   }, []);
 
   React.useEffect(() => {
@@ -233,7 +234,6 @@ const Component = (props: { widget: PieListSearch }) => {
   const handleChange = (event: any) => {
     setGraph(event.target.value);
     setYear(new String(event.target.value).replace("GWP-AR6-", ""));
-
     if (graphDetails === "Aggregate")
       props.widget.piePercentContribution.changeGraph(
         event.target.value,
@@ -464,8 +464,6 @@ const Component = (props: { widget: PieListSearch }) => {
               >
                 {title}
               </div>
-              {/* Updated title of the graph */}
-              <div>{getLabel(graph)}</div>
             </div>
           ) : (
             <div
@@ -487,8 +485,6 @@ const Component = (props: { widget: PieListSearch }) => {
               >
                 {title}
               </div>
-              {/* Updated title of the graph with selected option */}
-              <div>{getLabel(graph)}</div>
             </div>
           )}
           <div

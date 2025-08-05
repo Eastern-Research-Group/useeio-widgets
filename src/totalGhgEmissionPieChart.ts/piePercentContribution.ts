@@ -49,9 +49,7 @@ export class PiePercentContribution extends Widget {
     this.graphName = graphName;
     this.perspective = "final";
     this.sectorsList = await this._chartConfig.model.sectors();
-    this.sector_name = sectorName
-      ? sectorName
-      : "";
+    this.sector_name = sectorName;
     const sectorMappingList: SectorMapping[] =
       await this.modelSmartSectorApi.sectorMapping();
     this.uniqueSortedMappingGroupNoDuplicates =
@@ -83,6 +81,7 @@ export class PiePercentContribution extends Widget {
     if (this.perspective !== perspective) {
       this.perspective = perspective;
       this.graphName = graphName;
+      this.sector_name = sectorName;
       this.percentContributionList =
         await this.modelSmartSectorApi.percentContribution(
           this.perspective + "/" + graphName,
@@ -117,9 +116,7 @@ export class PiePercentContribution extends Widget {
     }
 
     this.sectorsList = await this._chartConfig.model.sectors();
-    this.sector_name = sectorName
-      ? sectorName
-      : "";
+    this.sector_name = sectorName;
     const titleNameWithNoSpace = graphName.replace(/-+/g, ' ').trim();
 
     this.options = await apexGraph(
@@ -134,6 +131,7 @@ export class PiePercentContribution extends Widget {
 
   async updateGraph(sectorName?: string, sectorCode?: string) {
     this.sectorCode = sectorCode;
+    this.sector_name = sectorName;
     this.options = await apexGraph(
       this.contributionList,
       sectorName,

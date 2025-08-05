@@ -36,6 +36,7 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
   perspective: string;
   sectorCode: string = "1111A0";
   options: apex.ApexOptions;
+  sector_name:string;
 
   constructor(private _chartConfig: SmartSectorChartConfig) {
     super();
@@ -52,9 +53,7 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
     this.graphName = graphName;
     this.perspective = "final";
     this.sectorsList = await this._chartConfig.model.sectors();
-    const sector_name: string = sectorName
-      ? sectorName
-      : "";
+    this.sector_name = sectorName;
     const sectorMappingList: SectorMapping[] =
       await this.modelSmartSectorApi.sectorMapping();
     this.uniqueSortedMappingGroupNoDuplicates =
@@ -67,7 +66,7 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
     );
     this.options = await apexGraph(
       this.contributionList,
-      sector_name,
+      this.sector_name,
       titleNameWithNoSpace,
     );
     this.chart = new ApexCharts(
@@ -86,6 +85,7 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
     if (this.perspective !== perspective) {
       this.perspective = perspective;
       this.graphName = graphName;
+      this.sector_name = sectorName;
       this.percentContributionList =
         await this.modelSmartSectorApi.percentContribution(
           this.perspective + "/" + graphName,
@@ -120,14 +120,13 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
     }
 
     this.sectorsList = await this._chartConfig.model.sectors();
-    const sector_name: string = sectorName
-      ? sectorName
-      : "";
+    this.sector_name = sectorName
+
     const titleNameWithNoSpace = graphName.replace(/-+/g, ' ').trim();
 
     this.options = await apexGraph(
       this.contributionList,
-      sector_name,
+      this.sector_name,
       titleNameWithNoSpace,
     );
 
@@ -137,6 +136,7 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
 
   async updateGraph(sectorName?: string, sectorCode?: string) {
     this.sectorCode = sectorCode;
+    this.sector_name = sectorName;
     this.options = await apexGraph(
       this.contributionList,
       sectorName,

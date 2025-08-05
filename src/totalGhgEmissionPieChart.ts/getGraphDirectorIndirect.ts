@@ -6,6 +6,7 @@ import {
   ContributionListForSectorDirectOrIndirect,
 } from "../smartSectorChart/smartSector";
 import { wrap } from "module";
+import { formatNumberGraph } from "../util";
 
 export async function apexGraph(
   contributionList: SortingPercentContributionIndirectAndDirect[],
@@ -49,7 +50,14 @@ export async function apexGraph(
             },
           },
         },
-      ],
+      ],      
+      annotations: {
+        texts: [
+          {
+            text: '',
+          },
+        ],
+      },
     };
   } else {
     let totalSum: number = 0;
@@ -101,7 +109,7 @@ export async function apexGraph(
             totalValue = `${totalSum.toLocaleString(undefined, {maximumFractionDigits: 0})} ${unitLabel} (100%)`;
             break;
           default:
-            totalValue = `${totalSum.toFixed(2)} ${unitLabel} (100%)`;
+            totalValue = `${formatNumberGraph(totalSum)} ${unitLabel} (100%)`;
             break;
         }
 
@@ -194,7 +202,7 @@ export async function apexGraph(
                         value = `${uniqueValue.totalImpactSum.toLocaleString(undefined, {maximumFractionDigits: 0})} ${unitLabel}  (${(uniqueValue.contribution * 100).toFixed(2)}%)`;
                         break;
                       default:
-                        value = `${uniqueValue.totalImpactSum.toFixed(2)} ${unitLabel} (${(uniqueValue.contribution * 100).toFixed(2)}%)`;
+                        value = `${formatNumberGraph(uniqueValue.totalImpactSum)} ${unitLabel} (${(uniqueValue.contribution * 100).toFixed(2)}%)`;
                         break;
                     }
                       return value
@@ -234,7 +242,7 @@ export async function apexGraph(
                   value = `${uniqueValue.totalImpactSum.toLocaleString(undefined, {maximumFractionDigits: 0})} ${unitLabel}  (${(uniqueValue.contribution * 100).toFixed(2)}%)`;
                   break;
                 default:
-                  value = `${uniqueValue.totalImpactSum.toFixed(2)} ${unitLabel} (${(uniqueValue.contribution * 100).toFixed(2)}%)`;
+                  value = `${formatNumberGraph(uniqueValue.totalImpactSum)} ${unitLabel} (${(uniqueValue.contribution * 100).toFixed(2)}%)`;
                   break;
               }
                 return value          
