@@ -124,7 +124,8 @@ const Component = (props: { widget: PieListSearch }) => {
     "Human-Health---Respiratory-Effects": "Human Health Respiratory Effects (PM2.5 eq)",
     "Jobs-Supported": "Jobs Supported",
     "Ozone-Depletion": "Ozone Depletion Potential (CFC eq)",
-    "Smog-Formation-Potential": "Smog Formation Potential (O3 eq)"
+    "Smog-Formation-Potential": "Smog Formation Potential (O3 eq)",
+    // "Value-Added": "Value Added ($)"
   };
 
   const getLabel = (filename: string): string => {

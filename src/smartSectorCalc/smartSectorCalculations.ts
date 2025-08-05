@@ -14,6 +14,7 @@ export const fileNames: string[] = [
     "Ozone-Depletion",
     "Smog-Formation-Potential",
     // "Social-Cost-of-Carbon"
+    // "Value-Added"
   ];
 
 export function sortedSectorCodeList(sortTopTen:SumSmartSectorTotalParts[]): string[]{
@@ -96,6 +97,7 @@ export function SumSmartSectorTotal(
                         v._smartSector.sumTotalRank,
                         v._smartSector.sumIntensityRank,
                         v._smartSector.sumConstructionMaterials,
+                        v._smartSector.sumSectorSnapshots,
                         v._smartSector.sumEnergyIntensive,
                         v._smartSector.sumModel
                     );

@@ -40,6 +40,7 @@
                         <option data-value='{"name":"intensity_rank","num":"25"}'>Top 25 Embodied Impact Intensity</option>
                         <option data-value='{"name":"construction_materials"}'>Select Construction Material Manufacturing Sectors</option>
                         <option data-value='{"name":"energy_intensive"}'>Energy Intensive Sectors</option>
+                        <!-- <option data-value='{"name":"sector_snapshots"}'>Select EPA Smart Sectors</option> -->
                     </select>
                 </div>
 
@@ -186,6 +187,10 @@
                         name = "Select Energy Intensive Sectors";
                         paragraph = "This chart presents select energy intensive sectors ranked on embodied impacts from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
                         break;
+                    case "select_sector_snapshots":
+                        name = "Select EPA Smart Sectors";
+                        paragraph = "This chart presents select EPA Smart Sectors ranked on embodied impacts from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
+                        break;
                 }
                 document.getElementById("graphTitle").innerHTML = `${name}`; 
                 document.getElementById("graphParagraph").innerHTML = `${paragraph}`; 
@@ -223,6 +228,9 @@
                     case "Energy Intensive Sectors": 
                     changeTitleAndParagraph("select_sectors_energy")
                     break;
+                    case "Select EPA Smart Sectors":
+                    changeTitleAndParagraph("select_sector_snapshots")
+                    break;
                 }
 
            }
@@ -236,7 +244,8 @@
                 "Human-Health---Respiratory-Effects",
                 "Jobs-Supported",
                 "Ozone-Depletion",
-                "Smog-Formation-Potential"
+                "Smog-Formation-Potential",
+                // "Value-Added"
             ];
 
             function getLabel(file) {
@@ -249,7 +258,8 @@
                 "Human-Health---Respiratory-Effects": "Human Health Respiratory Effects (PM2.5 eq)",
                 "Jobs-Supported": "Jobs Supported",
                 "Ozone-Depletion": "Ozone Depletion Potential (CFC eq)",
-                "Smog-Formation-Potential": "Smog Formation Potential (O3 eq)"
+                "Smog-Formation-Potential": "Smog Formation Potential (O3 eq)",
+                // "Value-Added": "Value Added ($)"
                 };
                 return labels[file] || file.replace(/-+/g, ' ').trim();;
             }
