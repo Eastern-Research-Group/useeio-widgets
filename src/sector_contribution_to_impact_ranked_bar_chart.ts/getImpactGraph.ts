@@ -1,5 +1,6 @@
 import * as apex from "apexcharts";
 import { SortedImpactPerPurchaseTopList } from "../smartSectorChart/smartSector";
+import { formatNumberGraph } from "../util";
 
 //Total Impacts graph
 export async function apexGraph(
@@ -17,13 +18,16 @@ export async function apexGraph(
     }
   });
 
-  data = values.topFifteenTotalImpact.map((t) => {
+  data = values?.topFifteenTotalImpact.map((t) => {
     return {
       purchase_commodity: t.purchaseCommodity,
       totalImpact: t.totalImpact,
     };
   });
 
+  let list = data?.map( impact => (parseFloat((impact?.totalImpact.toString()))))
+  let highestNumber:number = Math.max(...list)
+  let highNumberFormat = formatNumberGraph(highestNumber)
   const sortedSectorCodesWithNamesWithArray: string[][] = data.map((t) => {
     return t.purchase_commodity.split(" ");
   });
@@ -85,7 +89,7 @@ export async function apexGraph(
           totalValue = Math.round(totalSum).toLocaleString() + " Total "+ unitLabel + " for sector " + sectorName;
           break;
           default:
-          totalValue =  `${totalSum.toFixed(2)} Total ${unitLabel} for sector ${sectorName}`;
+          totalValue =  `${formatNumberGraph(totalSum)} Total ${unitLabel} for sector ${sectorName}`;
           break;
    }
   return {
@@ -120,7 +124,7 @@ export async function apexGraph(
     annotations: {
       yaxis: [
         {
-          y: values.topFifteenTotalImpact[0].totalImpact,
+          y: highNumberFormat,
           borderColor: "white",
           label: {
             text: totalValue,
@@ -144,9 +148,7 @@ export async function apexGraph(
       title: {
         text: yaxisTitle,
       },
-      max:
-        values.topFifteenTotalImpact[0].totalImpact +
-        values.topFifteenTotalImpact[values.topFifteenTotalImpact.length -1].totalImpact,
+      max:parseFloat(highNumberFormat),
       forceNiceScale: true,
       labels: {
         formatter: function (val) {
@@ -156,7 +158,7 @@ export async function apexGraph(
                   value = Math.round(val).toLocaleString()
                   break;
                 default:
-                  value =  (Math.round(val * 100) / 100).toFixed(2);
+                  value =  formatNumberGraph(val);
                   break;
               }
                 return value
@@ -175,7 +177,7 @@ export async function apexGraph(
               value = "" + Math.round(val).toLocaleString() + " " + unitLabel;
               break;
             default:
-              value =  "" + val.toFixed(3) + " " + unitLabel;
+              value =  "" + formatNumberGraph(val) + " " + unitLabel;
               break;
           }
             return value

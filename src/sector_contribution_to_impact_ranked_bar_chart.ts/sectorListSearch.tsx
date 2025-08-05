@@ -123,6 +123,7 @@ const Component = (props: { widget: SectorListSearch }) => {
   
   React.useEffect(() => {
     setTitle(sectors[0].name + " (" + sectors[0].code + ")");
+    setValue(sectors[0].name)
   }, []);
 
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);

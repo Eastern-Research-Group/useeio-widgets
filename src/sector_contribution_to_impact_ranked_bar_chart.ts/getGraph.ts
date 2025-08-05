@@ -1,5 +1,6 @@
 import * as apex from "apexcharts";
 import { SortedImpactPerPurchaseTopList } from "../smartSectorChart/smartSector";
+import { formatNumberGraph } from "../util";
 
 //Impact Intensity graph
 export async function apexGraph(
@@ -18,12 +19,15 @@ export async function apexGraph(
   const data: {
     purchase_commodity: string;
     impactPerPurchase: number;
-  }[] = values.topFifteenImpactPerPurchase.map((t) => {
+  }[] = values?.topFifteenImpactPerPurchase.map((t) => {
     return {
       purchase_commodity: t.purchaseCommodity,
       impactPerPurchase: t.impactPerPurchase,
     };
   });
+  let list = data?.map( impact => impact?.impactPerPurchase)
+  let highestNumber:number = Math.max(...list)
+  let highNumberFormat = formatNumberGraph(highestNumber)
 
   const sectorGraphTitle = values.sector_code + " - " + values.sector_name;
   const sortedSectorCodesWithNamesWithArray: string[][] = data.map((t) => {
@@ -113,10 +117,10 @@ export async function apexGraph(
     annotations: {
       yaxis: [
         {
-          y: values.topFifteenImpactPerPurchase[0].impactPerPurchase,
+          y: highNumberFormat,
           borderColor: "white",
           label: {
-            text: `${totalSum.toFixed(2)} Total ${unitLabel} for sector ${sectorName}`,
+            text: `${formatNumberGraph(totalSum)} Total ${unitLabel} for sector ${sectorName}`,
             style: {
               fontWeight: "bold",
             },
@@ -137,13 +141,11 @@ export async function apexGraph(
       title: {
         text: yaxisTitle,
       },
-      max:
-        values.topFifteenImpactPerPurchase[0].impactPerPurchase +
-        values.topFifteenImpactPerPurchase[values.topFifteenImpactPerPurchase.length -1].impactPerPurchase,
+      max:parseFloat(highNumberFormat),
       forceNiceScale: true,
       labels: {
         formatter: function (val) {
-          return (Math.round(val * 100) / 100).toFixed(2);
+          return formatNumberGraph(val);
         },
       },
     },
@@ -153,7 +155,7 @@ export async function apexGraph(
     tooltip: {
       y: {
         formatter: function (val) {
-          return "" + val.toFixed(3) + " " + unitLabel;
+          return "" + formatNumberGraph(val) + " " + unitLabel;
         },
       },
     },

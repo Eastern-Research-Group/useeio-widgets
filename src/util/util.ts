@@ -76,7 +76,6 @@ export function formatNumber(x: number): string {
 
 
 export function formatNumberGraph(value: number): string {
-    console.log(value)
     if (value < 0.9) {
         return value.toExponential(2); 
     } else {
