@@ -37,7 +37,7 @@ export class SmartSectorEEIO extends Widget {
   graphName: string;
   selectorName: string;
   sectorContributionToImpact: SectorContributionToImpact[] = [];
-  fileNameTitle:string = "Top 10 Total Embodied GHG Emissions"
+  fileNameTitle:string = "Top 10 Total Embodied Impacts"
 
   constructor(private _chartConfig: SmartSectorChartConfig) {
     super();

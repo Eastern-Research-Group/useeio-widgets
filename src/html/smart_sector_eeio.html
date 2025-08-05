@@ -20,7 +20,7 @@
         <div style=" flex-grow: 1;">
             <div style=" display: flex; flex-direction: row;">
                 <div style=" margin-left: 20px;flex-grow: 1;">
-                    <label for="my-select">Select Impact Factor:</label>
+                    <label for="my-select">Select Indicator:</label>
                     <br>
                     <select id="my-select" onchange="changeGraph(this.value)"></select>
                 </div>
@@ -162,15 +162,29 @@
                 var name = ""
                 var paragraph =""
                 switch(impactSelector) {
-                    case "total_impact":
-                        name = "Top 10/25 Sectors Based on Total Embodied Impacts";
-                        paragraph = "This chart presents the top 10(25) sectors ranked on total embodied impacts from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
-                        // edit these to include only the 10 or the 25 whichever is appropriate
+                    case "total_impact_10":
+                        name = "Top 10 Sectors Based on Total Embodied Impacts";
+                        paragraph = "This chart presents the top 10 sectors ranked on total embodied impacts from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
                         break;
-                    case "impact_per_purchase":
-                        name = "Top 10/25 Sectors Based on Embodied Impact Intensity";
-                        paragraph = "This chart presents the top 10(25) sectors ranked on total embodied impact intensity from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
-                        // edit these to include only the 10 or the 25 whichever is appropriate
+                    case "total_impact_25":
+                        name = "Top 25 Sectors Based on Total Embodied Impacts";
+                        paragraph = "This chart presents the top 25 sectors ranked on total embodied impacts from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
+                        break;
+                    case "impact_per_purchase_10":
+                        name = "Top 10 Sectors Based on Embodied Impact Intensity";
+                        paragraph = "This chart presents the top 10 sectors ranked on total embodied impact intensity from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
+                        break;
+                    case "impact_per_purchase_25":
+                        name = "Top 25 Sectors Based on Embodied Impact Intensity";
+                        paragraph = "This chart presents the top 25 sectors ranked on total embodied impact intensity from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
+                        break;
+                    case "select_sectors_construction":
+                        name = "Select Sectors for Construction Materials";
+                        paragraph = "This chart presents select sectors for construction materials ranked on embodied impacts from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
+                        break;
+                    case "select_sectors_energy":
+                        name = "Select Energy Intensive Sectors";
+                        paragraph = "This chart presents select energy intensive sectors ranked on embodied impacts from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
                         break;
                 }
                 document.getElementById("graphTitle").innerHTML = `${name}`; 
@@ -186,16 +200,28 @@
                 
                 switch(n) {
                     case "Top 10 Total Embodied Impacts":
+                    changeImpactSelector("total_impact")
+                    changeTitleAndParagraph("total_impact_10")
+                    break;
                     case "Top 25 Total Embodied Impacts":
                     changeImpactSelector("total_impact")
-                    changeTitleAndParagraph("total_impact")
-
+                    changeTitleAndParagraph("total_impact_25")
                     break;
+
                     case "Top 10 Embodied Impact Intensity":
+                    changeImpactSelector("impact_per_purchase")
+                    changeTitleAndParagraph("impact_per_purchase_10")
+                    break;
                     case "Top 25 Embodied Impact Intensity":
                     changeImpactSelector("impact_per_purchase")
-                    changeTitleAndParagraph("impact_per_purchase")
-
+                    changeTitleAndParagraph("impact_per_purchase_25")
+                    break;
+                    // Other Select Sectors
+                    case "Select Construction Material Manufacturing Sectors": 
+                    changeTitleAndParagraph("select_sectors_construction")
+                    break;
+                    case "Energy Intensive Sectors": 
+                    changeTitleAndParagraph("select_sectors_energy")
                     break;
                 }
 
@@ -215,8 +241,15 @@
 
             function getLabel(file) {
                 const labels = {
-                "GWP-AR6-20": "CO2e based on 20yr GWP",
-                "GWP-AR6-100": "CO2e based on 100yr GWP"
+                // "GWP-AR6-20": "CO2e based on 20yr GWP",
+                "GWP-AR6-100": "Global Warming Potential (CO2e)",
+                "Acidification-Potential": "Acidification Potential (SO2 eq)",
+                "Eutrophication-Potential": "Eutrophication Potential (N eq)",
+                "Freshwater-withdrawals": "Freshwater Withdrawals",
+                "Human-Health---Respiratory-Effects": "Human Health Respiratory Effects (PM2.5 eq)",
+                "Jobs-Supported": "Jobs Supported",
+                "Ozone-Depletion": "Ozone Depletion Potential (CFC eq)",
+                "Smog-Formation-Potential": "Smog Formation Potential (O3 eq)"
                 };
                 return labels[file] || file.replace(/-+/g, ' ').trim();;
             }
