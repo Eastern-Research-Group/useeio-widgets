@@ -217,8 +217,10 @@
         <div class="l-constrain">
             <article  role="article" class="article" lang="en">
 
-            <h1>Prototype - Lifecycle GHG Emissions Assessment Tool</h1>
-            <p>The <b>Lifecycle Greenhouse Gas (GHG) Emissions Assessment Tool</b> provides data visualizations of the life cycle emissions (cradle-to-gate) of over 400 economic sectors of the U.S economy. Lifecycle GHG Emissions include <em>Direct</em> emissions from a sector's own operations and <em>Indirect</em> emissions embedded in the purchases made by a sector (also known as its supply chain or Scope 2 and 3 emissions). The tool provides the following charts and functions:</p>
+            <h1>Prototype - Supply Chain Life Cycle Assessment Tool</h1>
+            <p>The Supply Chain <b>Life Cycle Assessment Tool</b> provides data visualizations of the life cycle (cradle-to-gate) environmental and economic impacts of over 400 economic sectors of the U.S economy. The tool is based on EPA's United States Enviornmentally Extended Input Output (USEEIO) model and is intended to help businesses, organizations, and others intersted in understanding and managing life cycle environmental aspects.</p>
+
+            <p>Life cycle environmental impacts include <em>Direct</em> impacts from a sector's own operations and <em>Indirect</em> impacts embedded in the purchases made by a sector through its supply chain. The tool provides the following charts and functions:</p>
             
             <ul class="usa-card-group">
               <li class="usa-card   tablet:grid-col-3">
@@ -232,8 +234,7 @@
                     </div>
                     <div class="usa-card__body">
                         <a style="text-decoration: none;" href="./pie_chart.html" target="_blank">Comparison of Direct and
-                          Indirect GHG Emissions by
-                          Sector</a>
+                          Indirect Life Cycle Impacts by Sector</a>
                     </div>
                      
                </div>
@@ -247,8 +248,7 @@
                     </div>
                   </div>
                   <div class="usa-card__body">
-                      <a style="text-decoration: none;" href="./sum_of_impact_per_purchase.html" target="_blank"">Contributions to Total Sector
-                        GHG Emissions by Source</a>
+                      <a style="text-decoration: none;" href="./sum_of_impact_per_purchase.html" target="_blank"">Supplier Contributions to Total Life Cycle Impacts by Sector</a>
                   </div>
               </div>
             </li>
@@ -264,49 +264,53 @@
                     </div>
                     <div class="usa-card__body">
                         <a style="text-decoration: none;" href="./smart_sector_eeio.html" target="_blank"">Top Sectors Based on
-                          Embodied GHG Emissions
-                          or Emission Intensity and
-                          Contributions by Source</a>
+                          Selected Life Cycle Impact</a>
                     </div>
                      
                </div>
               </li>
             </ul>
-          
-                <p>Total Embodied GHG Emissions and Emission Intensity results for individual sectors can be viewed as both a <a href="./pie_chart.html" target="_blank">pie chart</a> and a <a href="./sum_of_impact_per_purchase.html" target="_blank">bar chart</a> for a selected sector.</p>
-                <p>Users may also choose from a number of curated, <a href="./smart_sector_eeio.html" target="_blank">side-by-side views of selected sectors</a>, including the top 10 or top 25 sectors by total embodied GHG emissions or emissions intensity. Additionally, users can select side-by-side comparisons of construction-related manufacturing sectors and energy-intensive sectors. Within these side-by-side comparisons, sectors are ranked based on the total magnitude of their embodied GHG emissions or by their emissions intensity, as appropriate.</p>
 
-            <h3>Using the Lifecycle GHG Emissions Assessment Tool</h3>
+            <h3>Using the Supply Chain Life Cycle Assessment Tool</h3>
             
-            <h4>Global Warming Calculation Factors</h4>
-            <p>Choose one of the following Global Warming Potential (GWP) factors for calculating results:</p>
+            <h4>Select a Sector</h4>
+            <p>Use the drop-down menu to select a sector for analysis.  
+              Data for over 400 sectors across the U.S. economy are included in the Tool and are based on statistical categories developed by the U.S. Bureau of Economic Analysis (BEA) and the U.S. Census's North American Industry Classification Systems (NAICS). The Tool draws from data pertaining to economic sectors and not the products produced by those sectors.
+              </p>
+
+            <h4>Select a Perspective</h4>
+            <p>Select one of the following supply chain perspectives to view results, where applicable:</p>
                 <ul>
-                  <li><b>100 year GWP</b>: CO<sub>2</sub> equivalent emissions (CO<sub>2</sub>e) based on the AR6 100-year Global Warming Potential (GWP) timeframe (default) </li>
-                  <li><b>20 year GWP</b>: CO<sub>2</sub> equivalent emissions (CO<sub>2</sub>e) based on the AR6 20-year Global Warming Potential timeframe </li> 
+                  <li><b>Point of Consumption</b>: Allocates a sector's impacts to its direct suppliers of final products (e.g., its Tier 1 suppliers). </li>
+                  <li><b>Supply chain</b>: Allocates a sector's impacts to all the sources within the entire supply chain wherever they occur. </li> 
                 </ul>
 
-            <h4>Metrics</h4>
-            <p>Select a metric based on either:</p>
-              <ul>
-                <li><b>Total Emissions</b> (in million metric tons (MMT) of carbon dioxide equivalent emissions (CO<sub>2</sub>e)): Provides a view of the embodied GHG emissions of a sector, or
-                <li><b>Emissions Intensity</b> (in metric tons CO<sub>2</sub>e per million dollars of sector output): Provides a view of the embodied GHG emissions of a sector on a per dollar of output basis. Emission intensities reflect total GHG emissions relative to the economic output of the sector.
-              </ul>
-            <h4>Supply Chain Perspective</h4>
-            <p>Where applicable, select one of the following supply chain perspectives to view results:</p>
-                <ul>
-                  <li><b>Point of Consumption</b>: Allocates a sector's indirect emissions (i.e., Scope 3 emissions) to its direct suppliers of final products (e.g., its Tier 1 suppliers). </li>
-                  <li><b>Supply chain</b>: Allocates a sector's indirect emissions to the actual sources of those emissions, wherever they occur in the sector's supply chain. </li> 
+            <h4>Select Indicator</h4>
+            <p>Select an indicator from the drop-down menu. The tool includes indicators commonly used in Life Cycle Assessments (LCAs) and Environmental Product Declarations (EPDs) as well as additional indicators from USEEIO.</p>
+            <ul>
+                <li><b>SO2eq Acidification Potential (AP):</b> Reflects potential air emissions that contribute to acid rain. Measured in metric tons of sulfur dioxide equivalents (SO2eq), AP is an air quality indicator and SO2 is a criteria air pollutant regulated under the Clean Air Act.
+                <li><b>Neq Eutrophication Potential (EP):</b> Reflects potential discharges of excess nitrogen and phosphorus in water that can lead to eutrophication. Measured in metric tons of nitrogen equivalents (N eq), EP is a water quality indicator and nitrogen and phosphorus discharges are regulated under the Clean Water Act.
+                <li><b>H2O Freshwater Withdrawals (FW):</b> Reflects potential water withdrawals from rivers, lakes, and groundwater. Measured in cubic meters of water (m3), FW is a water use indicator.
+                <li><b>CO2e Global Warming Potential (GWP):</b> Reflects potential greenhouse gas emissions. Measured in metric tons of carbon dioxide equivalent emissions (CO2e) based on the AR6 100-year Global Warming Potential (GWP) timeframe. GWP is an air quality indicator.
+                <li><b>PM2.5eq Human Health Respiratory Effects (PM):</b> Reflects potential air emissions of soot and particulates from smoke. Measured in metric tons of Particular Matter micron size equivalents (PM 2.5 eq), PM is an air quality indicator and a criteria air pollutant regulated under the Clean Air Act.
+                <li><b>Jobs Supported (JS):</b> Reflects the potential jobs supported within a sector's supply chain. Measured in total jobs, JS is an economic and sustainability indicator.
+                <li><b>CFCeq Ozone Depletion Potential (ODP):</b> Reflects potential emissions of ozone depleting substances that impact the stratospheric ozone layer. Measured in chlorofluorocarbon equivalents (CFC-11 eq), ODP is an air quality indicator and regulated under the Clean Air Act.
+                <li><b>O3eq Smog Formation (POCP):</b> Reflects potential air emissions of nitrogen oxides and volatile organic compounds (VOCs) that contribute to photochemical ozone creation (POCP). Measured in metric tons of ozone equivalents (O3eq), POCP is an air quality indicator and ozone is criteria pollutant regulated under the Clean Air Act.
+                <!-- <li><b>Value Added:</b> Add text. -->
                 </ul>
-            <h4>Sectors</h4>
-            <p>Use the drop-down menu to select a sector for analysis.  
-              Data for over 400 sectors across the U.S. economy are included in the Lifecycle GHG Emissions Assessment Tool and are based on statistical categories developed by the U.S. Bureau of Economic Analysis (BEA) and the U.S. Census's North American Industry Classification Systems (NAICS). The Tool draws from data pertaining to economic sectors and not the products produced by those sectors. For more information on these sectors, see the <a href="./sector-info-table.html" target="_blank">USEEIO Sectors</a>.
-              </p>
+
+            <h4>Select Results View</h4>
+            <p>Where applicable, view results as</p>
+            <ul>
+                <li><b>Total Impacts</b> Shows the total estimated potential impacts across a sector's supply chain.
+                <li><b>Impact Intensity</b> Shows the estimated potential impact per million dollar ($) of output across a sector's supply chain.
+              </ul>
 
             <h4>Downloading Results</h4>
             <p>Data visualizations and data tables can be downloaded from the Tool by clicking on the download menu shown as three small horizontal lines at the top right corner of a graph. </p>
 
-            <h3>About the Lifecycle GHG Emissions Assessment Tool</h3>
-            <p>The Lifecycle GHG Emissions Assessment Tool is based on EPA's <a href="https://www.epa.gov/land-research/us-environmentally-extended-input-output-useeio-models" target="_blank">United States Environmentally-Extended Input-Output (USEEIO)</a> model, which categorizes goods and services based on the list of sectors included in the 2017 Input-Output tables from the U.S. Bureau of Economic Analysis (BEA), often referred to as the BEA IO accounts. The USEEIO model takes advantage of the U.S. BEA having mapped the monetary flows among sectors of the U.S. economy (such as those engaged in the extraction of raw materials and resources, those that manufacture primary goods, and those that provide services to businesses and consumers). These transactions are then overlaid with environmental, resource use and socioeconomic data collected by government agencies to inform the characterization of environmental burdens embedded within all sectors. The specific primary data sources used in the Lifecycle GHG Emissions Assessment Tool are shown in the table below. This tool aligns with the data sources used in v1.3 of EPA's report titled <a href="https://cfpub.epa.gov/si/si_public_record_Report.cfm?dirEntryId=349324&Lab=CESER" target="_blank">Supply Chain GHG Emission Factors for US Industries and Commodities</a>.</p>
+            <h3>About the Supply Chain Life Cycle Assessment Tool</h3>
+            <p>The Supply Chain Life Cycle Assessment Tool is based on EPA's <a href="https://www.epa.gov/land-research/us-environmentally-extended-input-output-useeio-models" target="_blank">United States Environmentally-Extended Input-Output (USEEIO)</a> model, which categorizes goods and services based on the list of sectors included in the 2017 Input-Output tables from the U.S. Bureau of Economic Analysis (BEA), often referred to as the BEA IO accounts. The USEEIO model takes advantage of the U.S. BEA having mapped the monetary flows among sectors of the U.S. economy (such as those engaged in the extraction of raw materials and resources, those that manufacture primary goods, and those that provide services to businesses and consumers). These transactions are then overlaid with environmental, resource use and socioeconomic data collected by government agencies to inform the characterization of environmental burdens embedded within all sectors. The specific primary data sources used in the Supply Chain Life Cycle Assessment Tool are shown in the table below.</p>
 			<table><thead>
 			  <tr>
 				<th>Source</th>
@@ -315,20 +319,35 @@
 			  </tr></thead>
 			<tbody>
 			  <tr>
-				<td><a href="https://www.epa.gov/ghgemissions/inventory-us-greenhouse-gas-emissions-and-sinks" target="_blank">EPA's Greenhouse Gas Inventory</a></td>
-				<td>2022</td>
-				<td>Primary GHG emissions data</td>
-			  </tr>
-			  <tr>
 				<td><a href="https://www.bea.gov/industry/input-output-accounts-data" target="_blank">BEA Input-Output Accounts</a></td>
 				<td>2017</td>
 				<td>Economic transactions between sectors</td>
 			  </tr>
 			  <tr>
+				<td><a href="https://www.epa.gov/ghgemissions/inventory-us-greenhouse-gas-emissions-and-sinks" target="_blank">BLS</a></td>
+				<td>2022</td>
+				<td>Primary GHG emissions data</td>
+			  </tr>
+        <tr>
+				<td><a href="https://www.epa.gov/ghgemissions/inventory-us-greenhouse-gas-emissions-and-sinks" target="_blank">EPA's Greenhouse Gas Inventory</a></td>
+				<td>2022</td>
+				<td>Primary GHG emissions data</td>
+			  </tr>
+        <tr>
 				<td><a href="https://catalog.data.gov/dataset/ipcc-ar4-ar5-and-ar6-20-100-and-500-year-gwps" target="_blank">International Panel on Climate Change, AR6 GWP Characterization Factors</a></td>
 				<td>n.a.</td>
 				<td>Global Warming Potential calculations</td>
 			  </tr>
+        <tr>
+				<td><a href="https://catalog.data.gov/dataset/ipcc-ar4-ar5-and-ar6-20-100-and-500-year-gwps" target="_blank">NEI and TRI</a></td>
+				<td>n.a.</td>
+				<td>Primary criteria and hazardous air emission data</td>
+			  </tr>
+        <tr>
+				<td><a href="https://catalog.data.gov/dataset/ipcc-ar4-ar5-and-ar6-20-100-and-500-year-gwps" target="_blank">TRI and DMR</a></td>
+				<td>n.a.</td>
+				<td>Point source releases to water</td>
+			  </tr>        
 			</tbody>
 			</table>
             </article>
