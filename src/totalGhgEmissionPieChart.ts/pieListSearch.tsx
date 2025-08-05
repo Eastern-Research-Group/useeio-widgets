@@ -310,7 +310,7 @@ const Component = (props: { widget: PieListSearch }) => {
           margin: "0 auto",     
         }}
       >
-        Comparison of Direct and Indirect Suply Chain Impacts for {getLabel(graph)}
+        Comparison of Direct and Indirect Supply Chain Impacts for {getLabel(graph)}
       </h1>
       {/* Update paragraph with graph selected */}
       <p id="paragraph" className="text-center">

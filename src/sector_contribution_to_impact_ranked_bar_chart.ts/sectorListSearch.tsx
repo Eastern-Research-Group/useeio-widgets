@@ -310,7 +310,7 @@ const Component = (props: { widget: SectorListSearch }) => {
               >
                 {title}
               </div>
-                <div>Contribution to Sector Total Impacts by Source</div>
+                <div>Contribution to Total Sector Impacts by Source</div>
                 {/* Updated title of the graph */}
                 <div>From {getLabel(graph)}</div>
               </div>
