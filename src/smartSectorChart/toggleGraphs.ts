@@ -202,15 +202,8 @@ export async function calculate(
               enabled: true,
               formatter: function (val) {
               let value
-              switch (titleGraph) {
-                case "Jobs Supported":
-                  value = "" + Math.round(Number(val)).toLocaleString() + "";
-                  break;
-                default:
-                  value =  "" + Number(formatNumberGraph(Number(val))).toLocaleString() + "";
-                  break;
-              }
-                return value
+              value =  "" + Number(formatNumberGraph(Number(val))).toLocaleString() + "";
+              return value
               },
             },
           },
@@ -241,7 +234,7 @@ export async function calculate(
           max: undefined,
           labels: {
             formatter: function (val) {
-              return val.toFixed(2);
+              return Number(formatNumberGraph(val)).toLocaleString();
             },
           },
         },
@@ -257,15 +250,8 @@ export async function calculate(
         y: {
           formatter: function (val) {
             let value
-            switch (titleGraph) {
-              case "Jobs Supported":
-                value = "" + Math.round(val).toLocaleString() + " " + unitLabel
-                break;
-              default:
-                value =  "" + Number(formatNumberGraph(val)).toLocaleString() + " " + unitLabel;
-                break;
-            }
-              return value
+            value =  "" + Number(formatNumberGraph(val)).toLocaleString() + " " + unitLabel;
+            return value
           },
         },
         x: {
