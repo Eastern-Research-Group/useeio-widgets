@@ -311,7 +311,7 @@
 
             <h3>About the Supply Chain Life Cycle Assessment Tool</h3>
             <p>The Supply Chain Life Cycle Assessment Tool is based on EPA's <a href="https://www.epa.gov/land-research/us-environmentally-extended-input-output-useeio-models" target="_blank">United States Environmentally-Extended Input-Output (USEEIO)</a> model, which categorizes goods and services based on the list of sectors included in the 2017 Input-Output tables from the U.S. Bureau of Economic Analysis (BEA), often referred to as the BEA IO accounts. The USEEIO model takes advantage of the U.S. BEA having mapped the monetary flows among sectors of the U.S. economy (such as those engaged in the extraction of raw materials and resources, those that manufacture primary goods, and those that provide services to businesses and consumers). These transactions are then overlaid with environmental, resource use and socioeconomic data collected by government agencies to inform the characterization of environmental burdens embedded within all sectors. The specific primary data sources used in the Supply Chain Life Cycle Assessment Tool are shown in the table below.</p>
-			<table><thead>
+			<table style="width: 80%"><thead>
 			  <tr>
 				<th>Source</th>
 				<th>Data Year</th>
@@ -324,30 +324,40 @@
 				<td>Economic transactions between sectors</td>
 			  </tr>
 			  <tr>
-				<td><a href="https://www.epa.gov/ghgemissions/inventory-us-greenhouse-gas-emissions-and-sinks" target="_blank">BLS</a></td>
-				<td>2022</td>
-				<td>Primary GHG emissions data</td>
+				<td><a href="https://www.bls.gov/cew/" target="_blank">Bureau of Labor Statistics Quarterly Census of Employment and Wages</a></td>
+				<td>2020</td>
+				<td>Employment data</td>
 			  </tr>
         <tr>
-				<td><a href="https://www.epa.gov/ghgemissions/inventory-us-greenhouse-gas-emissions-and-sinks" target="_blank">EPA's Greenhouse Gas Inventory</a></td>
-				<td>2022</td>
-				<td>Primary GHG emissions data</td>
-			  </tr>
-        <tr>
-				<td><a href="https://catalog.data.gov/dataset/ipcc-ar4-ar5-and-ar6-20-100-and-500-year-gwps" target="_blank">International Panel on Climate Change, AR6 GWP Characterization Factors</a></td>
-				<td>n.a.</td>
-				<td>Global Warming Potential calculations</td>
-			  </tr>
-        <tr>
-				<td><a href="https://catalog.data.gov/dataset/ipcc-ar4-ar5-and-ar6-20-100-and-500-year-gwps" target="_blank">NEI and TRI</a></td>
-				<td>n.a.</td>
+				<td>EPA's <a href="https://www.epa.gov/air-emissions-inventories/national-emissions-inventory-nei" target="_blank">National Emissions Inventory (NEI)</a> and <a href="https://www.epa.gov/toxics-release-inventory-tri-program" target="_blank"></href>Toxic Release Inventory (TRI)</a></td>
+				<td>2020</td>
 				<td>Primary criteria and hazardous air emission data</td>
 			  </tr>
         <tr>
-				<td><a href="https://catalog.data.gov/dataset/ipcc-ar4-ar5-and-ar6-20-100-and-500-year-gwps" target="_blank">TRI and DMR</a></td>
+				<td>EPA's <a href="https://www.epa.gov/ghgemissions/inventory-us-greenhouse-gas-emissions-and-sinks" target="_blank">Greenhouse Gas Inventory</a></td>
+				<td>2022</td>
+				<td>Primary greenhouse gas emissions data</td>
+			  </tr>
+        <tr>
+				<td>EPA's <a href="https://www.epa.gov/toxics-release-inventory-tri-program" target="_blank"></href>Toxic Release Inventory (TRI)</a> and <a href="https://echo.epa.gov/tools/data-downloads/icis-npdes-dmr-and-limit-data-set" target="_blank"></href>Discharge Monitoring Reports (DMR)</a></td>
+				<td>2020</td>
+				<td>Point source releases to water data</td>
+			  </tr> 
+        <tr>
+				<td><a href="https://www.usgs.gov/mission-areas/water-resources/science/water-use-united-states" target="_blank"></href>USGS Water Use in the U.S.</a></td>
+				<td>2015</td>
+				<td>Freshwater withdrawal data</td>
+			  </tr> 
+        <tr>
+				<td>EPA's <a href="https://www.epa.gov/chemical-research/tool-reduction-and-assessment-chemicals-and-other-environmental-impacts-traci" target="_blank">Tool for Reduction and Assessmetn of CHemicals and Other Environmental Impacts (TRACI)</a></td>
 				<td>n.a.</td>
-				<td>Point source releases to water</td>
-			  </tr>        
+				<td>Calculations for Acidification, Eutrophication, Particulate Matter, Ozone Depletion, and Smog Formation</td>
+			  </tr>    
+        <tr>
+				<td><a href="https://catalog.data.gov/dataset/ipcc-ar4-ar5-and-ar6-20-100-and-500-year-gwps" target="_blank">International Panel on Climate Change, AR6 GWP Characterization Factors</a></td>
+				<td>n.a.</td>
+				<td>Calculations for Global Warming Potential</td>
+			  </tr>   
 			</tbody>
 			</table>
             </article>
