@@ -76,8 +76,14 @@ export function formatNumber(x: number): string {
 
 
 export function formatNumberGraph(value: number): string {
-    if (value < 0.9) {
+    if (value == 0) {
+        return "0"
+    } else if (value > 999.9) {
+        return value.toFixed(0);
+    } else if (value < 0.01) {
         return value.toExponential(2); 
+    } else if (value < 0.1) {
+        return value.toFixed(3);
     } else {
         return value.toFixed(2); 
     }

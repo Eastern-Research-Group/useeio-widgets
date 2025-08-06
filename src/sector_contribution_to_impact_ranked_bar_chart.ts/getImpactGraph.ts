@@ -84,14 +84,8 @@ export async function apexGraph(
   });
 
   let totalValue
-    switch (graphTitleName) {
-      case "Jobs Supported":
-          totalValue = Math.round(totalSum).toLocaleString() + " Total "+ unitLabel + " for sector " + sectorName;
-          break;
-          default:
-          totalValue =  `${formatNumberGraph(totalSum)} Total ${unitLabel} for sector ${sectorName}`;
-          break;
-   }
+    totalValue =  `${Number(formatNumberGraph(totalSum)).toLocaleString()} Total ${unitLabel} for sector ${sectorName}`;
+
   return {
     series: [
       {
@@ -153,15 +147,8 @@ export async function apexGraph(
       labels: {
         formatter: function (val) {
           let value
-              switch (graphTitleName) {
-                case "Jobs Supported":
-                  value = Math.round(val).toLocaleString()
-                  break;
-                default:
-                  value =  formatNumberGraph(val);
-                  break;
-              }
-                return value
+              value =  Number(formatNumberGraph(val)).toLocaleString();
+              return value
         },
       },
     },
@@ -172,14 +159,7 @@ export async function apexGraph(
       y: {
         formatter: function (val) {
           let value
-          switch (graphTitleName) {
-            case "Jobs Supported":
-              value = "" + Math.round(val).toLocaleString() + " " + unitLabel;
-              break;
-            default:
-              value =  "" + formatNumberGraph(val) + " " + unitLabel;
-              break;
-          }
+            value =  "" + Number(formatNumberGraph(val)).toLocaleString() + " " + unitLabel;
             return value
         },
       },
