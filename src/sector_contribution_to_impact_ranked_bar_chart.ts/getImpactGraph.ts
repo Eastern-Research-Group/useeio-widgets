@@ -83,8 +83,6 @@ export async function apexGraph(
     totalSum += t.totalImpact;
   });
 
-  let totalValue
-    totalValue =  `${Number(formatNumberGraph(totalSum)).toLocaleString()} Total ${unitLabel} for sector ${sectorName}`;
 
   return {
     series: [
@@ -121,7 +119,7 @@ export async function apexGraph(
           y: highNumberFormat,
           borderColor: "white",
           label: {
-            text: totalValue,
+            text: `${parseFloat(formatNumberGraph(totalSum)).toString()} Total ${unitLabel} for sector ${sectorName}`,
             style: {
               fontWeight: "bold",
             },
@@ -142,13 +140,13 @@ export async function apexGraph(
       title: {
         text: yaxisTitle,
       },
+      forceNiceScale:true,
       max:parseFloat(highNumberFormat),
-      forceNiceScale: true,
+      min:0,
       labels: {
         formatter: function (val) {
-          let value
-              value =  Number(formatNumberGraph(val)).toLocaleString();
-              return value
+            return parseFloat(formatNumberGraph(val)).toString();
+
         },
       },
     },
@@ -159,7 +157,7 @@ export async function apexGraph(
       y: {
         formatter: function (val) {
           let value
-            value =  "" + Number(formatNumberGraph(val)).toLocaleString() + " " + unitLabel;
+            value =  "" + parseFloat(formatNumberGraph(val)).toString() + " " + unitLabel;
             return value
         },
       },

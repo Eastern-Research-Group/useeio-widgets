@@ -80,9 +80,17 @@ export function formatNumberGraph(value: number): string {
         return "0"
     } else if (value > 999.9) {
         return value.toFixed(0);
-    } else if (value < 0.01) {
+    } 
+    else if (value < 0.0001) {
+        return value.toExponential(4); 
+     }
+    else if (value < 0.001) {
+        return value.toExponential(3); 
+    }
+    else if (value < 0.01) {
         return value.toExponential(2); 
-    } else if (value < 0.1) {
+    }
+     else if (value < 0.1) {
         return value.toFixed(3);
     } else {
         return value.toFixed(2); 
