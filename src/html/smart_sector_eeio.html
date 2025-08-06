@@ -163,21 +163,28 @@
                 var name = ""
                 var paragraph =""
                 switch(impactSelector) {
-                    case "total_impact_10":
-                        name = "Top 10 Sectors Based on Total Embodied Impacts";
-                        paragraph = "This chart presents the top 10 sectors ranked on total embodied impacts from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
+                    case "total_impact":
+                        if(topSectors == 10){
+                            name = "Top 10 Sectors Based on Total Embodied Impacts";
+                            paragraph = "This chart presents the top 10 sectors ranked on total embodied impacts from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."  
+                        }
+                        else
+                        {
+                            name = "Top 25 Sectors Based on Total Embodied Impacts";
+                            paragraph = "This chart presents the top 25 sectors ranked on total embodied impacts from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
+                        }
                         break;
-                    case "total_impact_25":
-                        name = "Top 25 Sectors Based on Total Embodied Impacts";
-                        paragraph = "This chart presents the top 25 sectors ranked on total embodied impacts from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
-                        break;
-                    case "impact_per_purchase_10":
-                        name = "Top 10 Sectors Based on Embodied Impact Intensity";
-                        paragraph = "This chart presents the top 10 sectors ranked on total embodied impact intensity from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
-                        break;
-                    case "impact_per_purchase_25":
-                        name = "Top 25 Sectors Based on Embodied Impact Intensity";
-                        paragraph = "This chart presents the top 25 sectors ranked on total embodied impact intensity from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
+                    case "impact_per_purchase":
+                        if(topSectors == 10)
+                        {
+                            name = "Top 10 Sectors Based on Embodied Impact Intensity";
+                            paragraph = "This chart presents the top 10 sectors ranked on total embodied impact intensity from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
+                        }
+                        else
+                        {
+                            name = "Top 25 Sectors Based on Embodied Impact Intensity";
+                            paragraph = "This chart presents the top 25 sectors ranked on total embodied impact intensity from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
+                        }
                         break;
                     case "select_sectors_construction":
                         name = "Select Sectors for Construction Materials";
@@ -206,20 +213,20 @@
                 switch(n) {
                     case "Top 10 Total Embodied Impacts":
                     changeImpactSelector("total_impact")
-                    changeTitleAndParagraph("total_impact_10")
+                    changeTitleAndParagraph("total_impact")
                     break;
                     case "Top 25 Total Embodied Impacts":
                     changeImpactSelector("total_impact")
-                    changeTitleAndParagraph("total_impact_25")
+                    changeTitleAndParagraph("total_impact")
                     break;
 
                     case "Top 10 Embodied Impact Intensity":
                     changeImpactSelector("impact_per_purchase")
-                    changeTitleAndParagraph("impact_per_purchase_10")
+                    changeTitleAndParagraph("impact_per_purchase")
                     break;
                     case "Top 25 Embodied Impact Intensity":
                     changeImpactSelector("impact_per_purchase")
-                    changeTitleAndParagraph("impact_per_purchase_25")
+                    changeTitleAndParagraph("impact_per_purchase")
                     break;
                     // Other Select Sectors
                     case "Select Construction Material Manufacturing Sectors": 

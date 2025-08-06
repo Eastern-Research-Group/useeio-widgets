@@ -5,6 +5,7 @@ import {
 } from "../smartSectorCalc/smartSectorCalculations";
 import { SumSmartSectorTotalParts } from "../smartSectorChart/smartSector";
 import { WebModel, Sector } from "useeio";
+import { formatNumberGraph } from "../util";
 
 export async function calculate(
   topSectorList: SumSmartSectorTotalParts[],
@@ -206,7 +207,7 @@ export async function calculate(
                   value = "" + Math.round(Number(val)).toLocaleString() + "";
                   break;
                 default:
-                  value =  "" + parseFloat(val).toFixed(1) + "";
+                  value =  "" + Number(formatNumberGraph(Number(val))).toLocaleString() + "";
                   break;
               }
                 return value
@@ -240,7 +241,7 @@ export async function calculate(
           max: undefined,
           labels: {
             formatter: function (val) {
-              return val.toFixed(1);
+              return val.toFixed(2);
             },
           },
         },
@@ -261,7 +262,7 @@ export async function calculate(
                 value = "" + Math.round(val).toLocaleString() + " " + unitLabel
                 break;
               default:
-                value =  "" + val.toFixed(3) + " " + unitLabel;
+                value =  "" + Number(formatNumberGraph(val)).toLocaleString() + " " + unitLabel;
                 break;
             }
               return value
