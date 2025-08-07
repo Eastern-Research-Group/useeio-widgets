@@ -115,9 +115,9 @@ export async function calculate(
 
     let titleName: string;
     if (perspective == "final") {
-      titleName = `${titleFileName}: ${titleGraph.replace(" AR6 ", "-")}, Point of Consumption`;
+      titleName = `${titleFileName} from ${titleGraph.replace(" AR6 ", "-")} (Point of Consumption)`;
     } else {
-      titleName = `${titleFileName}: ${titleGraph.replace(" AR6 ", "-")}, Supply Chain`;
+      titleName = `${titleFileName} from ${titleGraph.replace(" AR6 ", "-")} (Supply Chain)`;
     }
 
     const sortedSectorCodesWithNamesWithArray: string[][] =
