@@ -123,7 +123,7 @@ export async function apexGraph(
           y: highNumberFormat,
           borderColor: "white",
           label: {
-            text: `Total: ${parseFloat(formatNumberGraph(totalSum)).toString()} ${unitLabel} for sector ${sectorName}`,
+            text: `Total: ${parseFloat(formatNumberGraph(totalSum)).toLocaleString()} ${unitLabel} for sector ${sectorName}`,
             style: {
               fontWeight: "bold",
             },
@@ -149,7 +149,7 @@ export async function apexGraph(
       min:0,
       labels: {
         formatter: function (val) {
-            return parseFloat(formatNumberGraph(val)).toString();
+            return parseFloat(formatNumberGraph(val)).toLocaleString();
 
         },
       },
@@ -161,7 +161,7 @@ export async function apexGraph(
       y: {
         formatter: function (val) {
           let value
-            value =  "" + parseFloat(formatNumberGraph(val)).toString() + " " + unitLabel;
+            value =  "" + parseFloat(formatNumberGraph(val)).toLocaleString() + " " + unitLabel;
             return value
         },
       },
