@@ -41,28 +41,32 @@ export async function apexGraph(
       unitLabel = " Billion dollars";
       break;
     case "Acidification Potential":
-      yaxisTitle = "Million Metric Tons of SO2 eq. Emissions";
-      unitLabel = "MMT SO2 eq.";
+      yaxisTitle = "Thousand Metric Tons of SO2 eq. Emissions";
+      unitLabel = "Thousand MT SO2 eq.";
       break;
     case "Eutrophication Potential":
-      yaxisTitle = "Million Metric Tons of N eq. Releases";
-      unitLabel = "MMT N eq.";
+      yaxisTitle = "Thousand Metric Tons of N eq. Releases";
+      unitLabel = "Thousand MT N eq.";
       break;
     case "Human Health Respiratory Effects":
-      yaxisTitle = "Million Metric Tons of PM2.5 eq. Emissions";
-      unitLabel = "MMT PM2.5 eq.";
+      yaxisTitle = "Thousand Metric Tons of PM2.5 eq. Emissions";
+      unitLabel = "Thousand MT PM2.5 eq.";
       break;
     case "Ozone Depletion":
       yaxisTitle = "Metric Tons of CFC eq. Emissions";
-      unitLabel = "tons CFC eq.";
+      unitLabel = "MT CFC eq.";
       break;
     case "Smog Formation Potential":
-      yaxisTitle = "Million Metric Tons of O3 eq. Emissions";
-      unitLabel = "MMT O3 eq.";
+      yaxisTitle = "Thousand Metric Tons of O3 eq. Emissions";
+      unitLabel = "Thousand MT O3 eq.";
       break;
     case "Freshwater withdrawals":
       yaxisTitle = "Million Cubic Meters of Freshwater Used";
       unitLabel = "million m3";
+      break;
+    case "Commerical RCRA Hazardous Waste":
+      yaxisTitle = "Thousand Metric Tons of Waste Generated";
+      unitLabel = "Thousand MT";
       break;
     case "Jobs Supported":
       yaxisTitle = "Number of Jobs Supported";
@@ -119,7 +123,7 @@ export async function apexGraph(
           y: highNumberFormat,
           borderColor: "white",
           label: {
-            text: `${parseFloat(formatNumberGraph(totalSum)).toString()} Total ${unitLabel} for sector ${sectorName}`,
+            text: `Total: ${parseFloat(formatNumberGraph(totalSum)).toString()} ${unitLabel} for sector ${sectorName}`,
             style: {
               fontWeight: "bold",
             },

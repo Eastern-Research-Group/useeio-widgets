@@ -98,22 +98,25 @@ export async function apexGraph(
       unitLabel = "Billion dollars";
       break;
     case "Acidification Potential":
-      unitLabel = "MMT SO2 eq.";
+      unitLabel = "Thousand MT SO2 eq.";
       break;
     case "Eutrophication Potential":
-      unitLabel = "MMT N eq.";
+      unitLabel = "Thousand MT N eq.";
       break;
     case "Human Health Respiratory Effects":
-      unitLabel = "MMT PM2.5 eq.";
+      unitLabel = "Thousand MT PM2.5 eq.";
       break;
     case "Ozone Depletion":
       unitLabel = "MT CFC eq.";
       break;
     case "Smog Formation Potential":
-      unitLabel = "MMT O3 eq.";
+      unitLabel = "Thousand MT O3 eq.";
       break;
     case "Freshwater withdrawals":
       unitLabel = "million m3";
+      break;
+    case "Commercial RCRA Hazardous Waste":
+      unitLabel = "Thousand MT";
       break;
     case "Jobs Supported":
       unitLabel = "Jobs";

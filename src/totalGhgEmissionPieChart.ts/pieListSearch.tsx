@@ -126,6 +126,7 @@ const Component = (props: { widget: PieListSearch }) => {
     "Ozone-Depletion": "Ozone Depletion Potential (CFC eq)",
     "Smog-Formation-Potential": "Smog Formation Potential (O3 eq)",
     // "Value-Added": "Value Added ($)"
+    // "Commercial-RCRA-Hazardous-Waste': "Commercial Hazardous Waste (kg)"
   };
 
   const getLabel = (filename: string): string => {

@@ -46,16 +46,16 @@ export async function apexGraph(
       unitLabel = "kg SO2 eq. per Million $ of Output";
       break;
     case "Eutrophication Potential":
-      yaxisTitle = "Metric Tons of N eq. Release per Million $ of Output";
-      unitLabel = "tons N eq. per Million $ of Output";
+      yaxisTitle = "Kilograms of N eq. Release per Million $ of Output";
+      unitLabel = "kg N eq. per Million $ of Output";
       break;
     case "Human Health Respiratory Effects":
       yaxisTitle = "Kilograms of PM 2.5 eq. Emissions per Million $ of Output";
       unitLabel = "kg PM2.5 eq. per Million $ of Output";
       break;
     case "Ozone Depletion":
-      yaxisTitle = "Metric Tons of CFC eq. Emissions per Million $ of Output";
-      unitLabel = "tons CFC eq. per Million $ of Output";
+      yaxisTitle = "Grams of CFC eq. Emissions per Million $ of Output";
+      unitLabel = "g CFC eq. per Million $ of Output";
       break;
     case "Smog Formation Potential":
       yaxisTitle = "Metric Tons of O3 eq. Emissions per Million $ of Output";
@@ -64,6 +64,10 @@ export async function apexGraph(
     case "Freshwater withdrawals":
       yaxisTitle = "Cubic meters of Freshwater Used per Million $ of Output";
       unitLabel = "m3 per Million $ of Output";
+      break;
+    case "Commerical RCRA Hazardous Waste":
+      yaxisTitle = "Kilograms of Waste Generated per Million $ of Output";
+      unitLabel = "kg per Million $ of Output";
       break;
     case "Jobs Supported":
       yaxisTitle = "Number of jobs per Million $ of Output";
@@ -120,7 +124,7 @@ export async function apexGraph(
           y: highNumberFormat,
           borderColor: "white",
           label: {
-            text: `${parseFloat(formatNumberGraph(totalSum)).toString()} Total ${unitLabel} for sector ${sectorName}`,
+            text: `Total: ${parseFloat(formatNumberGraph(totalSum)).toString()} ${unitLabel} for sector ${sectorName}`,
             style: {
               fontWeight: "bold",
             },

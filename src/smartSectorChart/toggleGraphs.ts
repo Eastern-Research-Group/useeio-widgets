@@ -46,16 +46,16 @@ export async function calculate(
           unitLabel = "kg SO2 eq. per Million $ of Output";
           break;
         case "Eutrophication Potential":
-          yaxisTitle = "Metric Tons of N eq. Release per Million $ of Output";
-          unitLabel = "tons N eq. per Million $ of Output";
+          yaxisTitle = "Kilograms of N eq. Release per Million $ of Output";
+          unitLabel = "kg N eq. per Million $ of Output";
           break;
         case "Human Health Respiratory Effects":
           yaxisTitle = "Kilograms of PM 2.5 eq. Emissions per Million $ of Output";
           unitLabel = "kg PM2.5 eq. per Million $ of Output";
           break;
         case "Ozone Depletion":
-          yaxisTitle = "Metric Tons of CFC eq. Emissions per Million $ of Output";
-          unitLabel = "tons CFC eq. per Million $ of Output";
+          yaxisTitle = "Grams of CFC eq. Emissions per Million $ of Output";
+          unitLabel = "g CFC eq. per Million $ of Output";
           break;
         case "Smog Formation Potential":
           yaxisTitle = "Metric Tons of O3 eq. Emissions per Million $ of Output";
@@ -64,6 +64,10 @@ export async function calculate(
         case "Freshwater withdrawals":
           yaxisTitle = "Cubic meters of Freshwater Used per Million $ of Output";
           unitLabel = "m3 per Million $ of Output";
+          break;
+        case "Commerical RCRA Hazardous Waste":
+          yaxisTitle = "Kilograms of Waste Generated per Million $ of Output";
+          unitLabel = "kg per Million $ of Output";
           break;
         case "Jobs Supported":
           yaxisTitle = "Number of jobs per Million $ of Output";
@@ -80,24 +84,24 @@ export async function calculate(
           unitLabel = "Billion dollars";
           break;
         case "Acidification Potential":
-          yaxisTitle = "Million Metric Tons of SO2 eq. Emissions";
-          unitLabel = "MMT SO2 eq.";
+          yaxisTitle = "Thousand Metric Tons of SO2 eq. Emissions";
+          unitLabel = "Thousand MT SO2 eq.";
           break;
         case "Eutrophication Potential":
-          yaxisTitle = "Million Metric Tons of N eq. Releases";
-          unitLabel = "MMT N eq.";
+          yaxisTitle = "Thousand Metric Tons of N eq. Releases";
+          unitLabel = "Thousand MT N eq.";
           break;
         case "Human Health Respiratory Effects":
-          yaxisTitle = "Million Metric Tons of PM2.5 eq. Emissions";
-          unitLabel = "MMT PM2.5 eq.";
+          yaxisTitle = "Thousand Metric Tons of PM2.5 eq. Emissions";
+          unitLabel = "Thousand MT PM2.5 eq.";
           break;
         case "Ozone Depletion":
           yaxisTitle = "Metric Tons of CFC eq. Emissions";
           unitLabel = "MT CFC eq.";
           break;
         case "Smog Formation Potential":
-          yaxisTitle = "Million Metric Tons of O3 eq. Emissions";
-          unitLabel = "MMT O3 eq.";
+          yaxisTitle = "Thousand Metric Tons of O3 eq. Emissions";
+          unitLabel = "Thousand MT O3 eq.";
           break;
         case "Freshwater withdrawals":
           yaxisTitle = "Million Cubic Meters of Freshwater Used";
@@ -106,6 +110,10 @@ export async function calculate(
         case "Jobs Supported":
           yaxisTitle = "Number of Jobs Supported";
           unitLabel = "Jobs";
+          break;
+        case "Commerical RCRA Hazardous Waste":
+          yaxisTitle = "Thousand Metric Tons of Waste Generated";
+          unitLabel = "Thousand MT";
           break;
         default:
           yaxisTitle = "Million Metric Tons of CO2 eq. Emissions";
