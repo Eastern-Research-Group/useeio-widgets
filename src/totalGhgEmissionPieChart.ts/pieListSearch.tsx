@@ -5,6 +5,8 @@ import { PiePercentContribution } from "./piePercentContribution";
 import { PiePercentContributionDirectAndIndirect } from "./piePercentContributionDirectAndIndirect";
 import * as strings from "../util/strings";
 import { Widget } from "../widget";
+import { fileNames } from "../smartSectorCalc/smartSectorCalculations"
+
 import {
   modelOfSmartSector,
   WebModelSmartSector,
@@ -84,11 +86,10 @@ export class PieListSearch extends Widget {
   }
 
   async update() {
-    this.modelSmartSectorApi.init();
-    this.piePercentContribution.init("GWP-AR6-100");
-    this.piePercentContributionSectors.init("GWP-AR6-100");
-
     this.sectors = await this._chartConfig.model.sectors();
+    this.modelSmartSectorApi.init();
+    this.piePercentContribution.init("Acidification-Potential",this.sectors[0].name);
+    this.piePercentContributionSectors.init("Acidification-Potential",this.sectors[0].name);
     ReactDOM.render(
       <Component widget={this} />,
       document.querySelector(this._chartConfig.selector),
@@ -99,10 +100,8 @@ export class PieListSearch extends Widget {
 const Component = (props: { widget: PieListSearch }) => {
   const [searchTerm, setSearchTerm] = React.useState<string>("");
   const [value, setValue] = React.useState<string>("");
-  const [title, setTitle] = React.useState<string>(
-    "Fresh soybeans, canola, flaxseeds, and other oilseeds (BEA/NAICS 1111A0)",
-  );
-  const [graph, setGraph] = React.useState<string>("GWP-AR6-100");
+  const [title, setTitle] = React.useState<string>("");
+  const [graph, setGraph] = React.useState<string>("Acidification-Potential");
   const [year, setYear] = React.useState<string>("100");
   const [graphDetails, setGraphDetails] = React.useState<string>("Aggregate");
   const [aggregate, setAggregate] = React.useState<boolean>(true);
@@ -114,6 +113,28 @@ const Component = (props: { widget: PieListSearch }) => {
 
   const handleMenuClick = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
+  };
+
+  const customLabels: Record<string, string> = {
+    "GWP-AR6-100": "Global Warming Potential (CO2e)",
+    // "GWP-AR6-20": "CO2e based on 20yr GWP",
+    "Acidification-Potential": "Acidification Potential (SO2 eq)",
+    "Eutrophication-Potential": "Eutrophication Potential (N eq)",
+    "Freshwater-withdrawals": "Freshwater Withdrawals",
+    "Human-Health---Respiratory-Effects": "Human Health Respiratory Effects (PM2.5 eq)",
+    "Jobs-Supported": "Jobs Supported",
+    "Ozone-Depletion": "Ozone Depletion Potential (CFC eq)",
+    "Smog-Formation-Potential": "Smog Formation Potential (O3 eq)",
+    // "Value-Added": "Value Added ($)"
+    // "Commercial-RCRA-Hazardous-Waste': "Commercial Hazardous Waste (kg)"
+  };
+
+  const getLabel = (filename: string): string => {
+    if (customLabels[filename]) return customLabels[filename];
+
+    return filename
+      .replace(/-+/g, ' ')
+      .trim();
   };
 
   const handleMenuClose = (type?: string) => {
@@ -140,6 +161,11 @@ const Component = (props: { widget: PieListSearch }) => {
       );
     });
   }
+
+  React.useEffect(() => {
+    setTitle(sectors[0].name + " (" + sectors[0].code + ")");
+    setValue(sectors[0].name)
+  }, []);
 
   React.useEffect(() => {
     const textElements = document.querySelectorAll<SVGTextElement>(
@@ -210,7 +236,6 @@ const Component = (props: { widget: PieListSearch }) => {
   const handleChange = (event: any) => {
     setGraph(event.target.value);
     setYear(new String(event.target.value).replace("GWP-AR6-", ""));
-
     if (graphDetails === "Aggregate")
       props.widget.piePercentContribution.changeGraph(
         event.target.value,
@@ -222,6 +247,11 @@ const Component = (props: { widget: PieListSearch }) => {
         value,
       );
   };
+
+  React.useEffect(() => {
+    //Changes meta title according to the graph selected
+    document.title = getLabel(graph);
+  }, [graph]);
 
   const handleChangePerspective = (event: any) => {
     setPerspective(event.target.value);
@@ -273,6 +303,22 @@ const Component = (props: { widget: PieListSearch }) => {
         gap: "5%",
       }}
     >
+      {/* Update header with graph selected */}
+       <h1
+        id="graphTitle"
+        style={{
+          width: "100%",        
+          textAlign: "center",  
+          margin: "0 auto",     
+        }}
+      >
+        Comparison of Direct and Indirect Supply Chain Impacts for {getLabel(graph)}
+      </h1>
+      {/* Update paragraph with graph selected */}
+      <p id="paragraph" className="text-center">
+        For the sector selected below, the chart shows the total and percentage impacts attributable to <em>Direct</em> impacts from facility operations and <em>Indirect</em> impacts embedded in the purchases made by the sector for {getLabel(graph)}.
+      </p>
+
       <div>
         <div
           style={{
@@ -335,20 +381,22 @@ const Component = (props: { widget: PieListSearch }) => {
             </FormControl>
             <FormControl className={classes.margin}>
               <InputLabel id="demo-controlled-open-select-label">
-                Select GWP Factor:
+                Select Indicator:
               </InputLabel>
               <Select
                 native
                 value={graph}
                 onChange={handleChange}
-                label="Select GWP Factor"
+                label="Select Indicator"
                 inputProps={{
                   name: "graph",
                 }}
               >
-                <option value="GWP-AR6-100">CO2e based on 100yr GWP</option>
-                <option value="GWP-AR6-20">CO2e based on 20yr GWP</option>
-                {/* <option value="Social-Cost-of-Carbon">Social Cost of Carbon</option> */}
+                 {fileNames.map((file) => (
+                          <option key={file} value={file}>
+                            {getLabel(file)}
+                          </option>
+                        ))}
               </Select>
             </FormControl>
             <FormControl className={classes.margin}>
@@ -405,7 +453,8 @@ const Component = (props: { widget: PieListSearch }) => {
                 textAlign: "center",
               }}
             >
-              <div>Direct and Indirect GHG Emissions</div>
+              {/* Updated title of the graph with selected option */}
+              <div>Direct and Indirect Supply Chain Impacts for {getLabel(graph)}</div>
               <div
                 style={{
                   overflowWrap: "break-word",
@@ -417,7 +466,6 @@ const Component = (props: { widget: PieListSearch }) => {
               >
                 {title}
               </div>
-              <div>Based on {year}-year GWP factors (IPCC, 2021)</div>
             </div>
           ) : (
             <div
@@ -426,7 +474,8 @@ const Component = (props: { widget: PieListSearch }) => {
                 textAlign: "center",
               }}
             >
-              <div>Direct and Indirect GHG Emissions</div>
+              {/* Updated title of the graph with selected option */}
+              <div>Direct and Indirect Supply Chain Impacts for {getLabel(graph)}</div>
               <div
                 style={{
                   overflowWrap: "break-word",
@@ -438,7 +487,6 @@ const Component = (props: { widget: PieListSearch }) => {
               >
                 {title}
               </div>
-              <div>Based on {year}-year GWP factors (IPCC, 2021)</div>
             </div>
           )}
           <div

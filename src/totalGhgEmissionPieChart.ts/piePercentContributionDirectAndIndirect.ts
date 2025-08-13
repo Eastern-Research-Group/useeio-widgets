@@ -36,6 +36,7 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
   perspective: string;
   sectorCode: string = "1111A0";
   options: apex.ApexOptions;
+  sector_name:string;
 
   constructor(private _chartConfig: SmartSectorChartConfig) {
     super();
@@ -52,14 +53,12 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
     this.graphName = graphName;
     this.perspective = "final";
     this.sectorsList = await this._chartConfig.model.sectors();
-    const sector_name: string = sectorName
-      ? sectorName
-      : "Fresh soybeans, canola, flaxseeds, and other oilseeds";
+    this.sector_name = sectorName;
     const sectorMappingList: SectorMapping[] =
       await this.modelSmartSectorApi.sectorMapping();
     this.uniqueSortedMappingGroupNoDuplicates =
       uniqueSortedMappingGroupNoDuplicatesList(sectorMappingList);
-    const titleNameWithNoSpace = graphName.replace(/\-/g, " ");
+    const titleNameWithNoSpace = graphName.replace(/-+/g, ' ').trim();
     this.percentContributionList =
       await this.modelSmartSectorApi.percentContribution("final/" + graphName);
     this.contributionList = await this.contributionListPerSector(
@@ -67,7 +66,7 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
     );
     this.options = await apexGraph(
       this.contributionList,
-      sector_name,
+      this.sector_name,
       titleNameWithNoSpace,
     );
     this.chart = new ApexCharts(
@@ -86,6 +85,7 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
     if (this.perspective !== perspective) {
       this.perspective = perspective;
       this.graphName = graphName;
+      this.sector_name = sectorName;
       this.percentContributionList =
         await this.modelSmartSectorApi.percentContribution(
           this.perspective + "/" + graphName,
@@ -120,14 +120,13 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
     }
 
     this.sectorsList = await this._chartConfig.model.sectors();
-    const sector_name: string = sectorName
-      ? sectorName
-      : "Fresh soybeans, canola, flaxseeds, and other oilseeds";
-    const titleNameWithNoSpace = graphName.replace(/\-/g, " ");
+    this.sector_name = sectorName
+
+    const titleNameWithNoSpace = graphName.replace(/-+/g, ' ').trim();
 
     this.options = await apexGraph(
       this.contributionList,
-      sector_name,
+      this.sector_name,
       titleNameWithNoSpace,
     );
 
@@ -137,10 +136,11 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
 
   async updateGraph(sectorName?: string, sectorCode?: string) {
     this.sectorCode = sectorCode;
+    this.sector_name = sectorName;
     this.options = await apexGraph(
       this.contributionList,
       sectorName,
-      this.graphName.replace(/\-/g, " "),
+      this.graphName.replace(/-+/g, ' ').trim(),
     );
     this.chart.updateOptions(this.options);
     this.chart.resetSeries();

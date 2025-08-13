@@ -5,6 +5,7 @@ import {
 } from "../smartSectorCalc/smartSectorCalculations";
 import { SumSmartSectorTotalParts } from "../smartSectorChart/smartSector";
 import { WebModel, Sector } from "useeio";
+import { formatNumberGraph } from "../util";
 
 export async function calculate(
   topSectorList: SumSmartSectorTotalParts[],
@@ -35,29 +36,96 @@ export async function calculate(
     let yaxisTitle = "";
     let unitLabel: string = "";
     if (impactSelector == "impact_per_purchase") {
-      if (titleGraph == "Social Cost of Carbon") {
-        yaxisTitle = "Emissions Intensity (Million $ per Million $ of Output)";
-        unitLabel = "Million $ per Million $ of Output";
-      } else {
-        yaxisTitle =
-          "Emissions Intensity (Metric tons CO2e per Million $ of Output)";
-        unitLabel = "tons CO2e per Million $ of Output";
+      switch(titleGraph) {
+        case "Social Cost of Carbon":
+          yaxisTitle = "Million $ per Million $ of Output)";
+          unitLabel = "Million $ per Million $ of Output";
+          break;
+        case "Acidification Potential":
+          yaxisTitle = "Kilograms of SO2 eq. Emissions per Million $ of Output";
+          unitLabel = "kg SO2 eq. per Million $ of Output";
+          break;
+        case "Eutrophication Potential":
+          yaxisTitle = "Kilograms of N eq. Release per Million $ of Output";
+          unitLabel = "kg N eq. per Million $ of Output";
+          break;
+        case "Human Health Respiratory Effects":
+          yaxisTitle = "Kilograms of PM 2.5 eq. Emissions per Million $ of Output";
+          unitLabel = "kg PM2.5 eq. per Million $ of Output";
+          break;
+        case "Ozone Depletion":
+          yaxisTitle = "Grams of CFC eq. Emissions per Million $ of Output";
+          unitLabel = "g CFC eq. per Million $ of Output";
+          break;
+        case "Smog Formation Potential":
+          yaxisTitle = "Metric Tons of O3 eq. Emissions per Million $ of Output";
+          unitLabel = "tons O3 eq. per Million $ of Output";
+          break;
+        case "Freshwater withdrawals":
+          yaxisTitle = "Cubic meters of Freshwater Used per Million $ of Output";
+          unitLabel = "m3 per Million $ of Output";
+          break;
+        case "Commerical RCRA Hazardous Waste":
+          yaxisTitle = "Kilograms of Waste Generated per Million $ of Output";
+          unitLabel = "kg per Million $ of Output";
+          break;
+        case "Jobs Supported":
+          yaxisTitle = "Number of jobs per Million $ of Output";
+          unitLabel = "jobs per Million $ of Output";
+          break;
+        default:
+          yaxisTitle = "Metric Tons of CO2 eq. Emissions per Million $ of Output";
+          unitLabel = "tons CO2e per Million $ of Output";
       }
     } else {
-      if (titleGraph == "Social Cost of Carbon") {
-        yaxisTitle = "Total Impact (Billion dollars)";
-        unitLabel = "Billion dollars";
-      } else {
-        yaxisTitle = "Emissions (MMT CO2e)";
-        unitLabel = "MMT CO2e";
+      switch(titleGraph) {
+        case "Social Cost of Carbon":
+          yaxisTitle = "Total Impact (Billion dollars)";
+          unitLabel = "Billion dollars";
+          break;
+        case "Acidification Potential":
+          yaxisTitle = "Thousand Metric Tons of SO2 eq. Emissions";
+          unitLabel = "Thousand MT SO2 eq.";
+          break;
+        case "Eutrophication Potential":
+          yaxisTitle = "Thousand Metric Tons of N eq. Releases";
+          unitLabel = "Thousand MT N eq.";
+          break;
+        case "Human Health Respiratory Effects":
+          yaxisTitle = "Thousand Metric Tons of PM2.5 eq. Emissions";
+          unitLabel = "Thousand MT PM2.5 eq.";
+          break;
+        case "Ozone Depletion":
+          yaxisTitle = "Metric Tons of CFC eq. Emissions";
+          unitLabel = "MT CFC eq.";
+          break;
+        case "Smog Formation Potential":
+          yaxisTitle = "Thousand Metric Tons of O3 eq. Emissions";
+          unitLabel = "Thousand MT O3 eq.";
+          break;
+        case "Freshwater withdrawals":
+          yaxisTitle = "Million Cubic Meters of Freshwater Used";
+          unitLabel = "million m3";
+          break;
+        case "Jobs Supported":
+          yaxisTitle = "Number of Jobs Supported";
+          unitLabel = "Jobs";
+          break;
+        case "Commerical RCRA Hazardous Waste":
+          yaxisTitle = "Thousand Metric Tons of Waste Generated";
+          unitLabel = "Thousand MT";
+          break;
+        default:
+          yaxisTitle = "Million Metric Tons of CO2 eq. Emissions";
+          unitLabel = "MMT CO2e";
       }
     }
 
     let titleName: string;
     if (perspective == "final") {
-      titleName = `${titleFileName}: ${titleGraph.replace(" AR6 ", "-")}, Point of Consumption`;
+      titleName = `${titleFileName} from ${titleGraph.replace(" AR6 ", "-")} (Point of Consumption)`;
     } else {
-      titleName = `${titleFileName}: ${titleGraph.replace(" AR6 ", "-")}, Supply Chain`;
+      titleName = `${titleFileName} from ${titleGraph.replace(" AR6 ", "-")} (Supply Chain)`;
     }
 
     const sortedSectorCodesWithNamesWithArray: string[][] =
@@ -141,7 +209,9 @@ export async function calculate(
             total: {
               enabled: true,
               formatter: function (val) {
-                return "" + parseFloat(val).toFixed(1) + "";
+              let value
+              value =  "" + Number(formatNumberGraph(Number(val))).toLocaleString() + "";
+              return value
               },
             },
           },
@@ -172,7 +242,7 @@ export async function calculate(
           max: undefined,
           labels: {
             formatter: function (val) {
-              return val.toFixed(1);
+              return Number(formatNumberGraph(val)).toLocaleString();
             },
           },
         },
@@ -187,7 +257,9 @@ export async function calculate(
         },
         y: {
           formatter: function (val) {
-            return "" + val.toFixed(3) + " " + unitLabel;
+            let value
+            value =  "" + Number(formatNumberGraph(val)).toLocaleString() + " " + unitLabel;
+            return value
           },
         },
         x: {

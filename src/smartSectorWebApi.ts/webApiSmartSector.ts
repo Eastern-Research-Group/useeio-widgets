@@ -337,6 +337,7 @@ export interface SectorContributionToImpact {
   intensity_rank?: number;
   model?: string;
   construction_materials?: number;
+  sector_snapshots?: number;
   energy_intensive?: number;
 }
 

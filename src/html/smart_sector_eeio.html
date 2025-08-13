@@ -9,8 +9,9 @@
 
 
 <body>
-    <h1 id="graphTitle" class="text-center">Top 10/25 Sectors Based on Total Embodied GHG Emissions</h1>
-	<p id="graphParagraph">This chart presents the top 10 (25) sectors ranked on total embodied GHG emissions from contributions from Direct emissions due to the sector's operations and Indirect emissions embedded in the purchases made from all other sectors in the supply chain..</p>
+    <h1 id="graphTitle" class="text-center">Top 10 Sectors Based on Total Embodied Impacts</h1>
+	<p id="graphParagraph">This chart presents the top 10 sectors ranked on total embodied impacts from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain.</p>
+    <!-- default title is for GHGs and 10 sectors -->
     <div style=" display: flex; flex-direction: column;height: 85vh;">
         <div style=" flex-grow: 1;">
                     <div id="smart-sector-eeio">
@@ -19,13 +20,9 @@
         <div style=" flex-grow: 1;">
             <div style=" display: flex; flex-direction: row;">
                 <div style=" margin-left: 20px;flex-grow: 1;">
-                    <label for="metric-selected">Select GWP Factor:</label>
+                    <label for="my-select">Select Indicator:</label>
                     <br>
-                    <select id="my-select" onchange="changeGraph(this.value)">
-                        <option value="GWP-AR6-20" >CO2e based on 20yr GWP</option>
-                        <option value="GWP-AR6-100" selected>CO2e based on 100yr GWP</option>
-                        <!--  <option value="Social-Cost-of-Carbon">Social Cost of Carbon</option>  -->
-                    </select>
+                    <select id="my-select" onchange="changeGraph(this.value)"></select>
                 </div>
                 <div style=" margin-left: 20px;flex-grow: 1;">
                     <label for="allocation-selected">Results Perspective:</label>
@@ -37,20 +34,21 @@
                     <label for="grap-selected">Sector Filter: </label>
                     <br>
                     <select id="mySelect" onchange="toggleNumSelection(this.value)">
-                        <option data-value='{"name":"total_rank","num":"10"}'>Top 10 Total Embodied GHG Emissions</option>
-                        <option data-value='{"name":"total_rank","num":"25"}'>Top 25 Total Embodied GHG Emissions</option>
-                        <option data-value='{"name":"intensity_rank","num":"10"}'>Top 10 Embodied GHG Intensity</option>
-                        <option data-value='{"name":"intensity_rank","num":"25"}'>Top 25 Embodied GHG Intensity</option>
+                        <option data-value='{"name":"total_rank","num":"10"}'>Top 10 Total Embodied Impacts</option>
+                        <option data-value='{"name":"total_rank","num":"25"}'>Top 25 Total Embodied Impacts</opion>
+                        <option data-value='{"name":"intensity_rank","num":"10"}'>Top 10 Embodied Impact Intensity</option>
+                        <option data-value='{"name":"intensity_rank","num":"25"}'>Top 25 Embodied Impact Intensity</option>
                         <option data-value='{"name":"construction_materials"}'>Select Construction Material Manufacturing Sectors</option>
                         <option data-value='{"name":"energy_intensive"}'>Energy Intensive Sectors</option>
+                        <!-- <option data-value='{"name":"sector_snapshots"}'>Select EPA Smart Sectors</option> -->
                     </select>
                 </div>
 
                 <div style=" margin-left: 20px;flex-grow: 1;">
                     <label for="impact-selected">Select Result View:</label>
                     <br>
-                    <input type="radio" name="impactRadio" value="total_impact" checked/> Emissions
-                    <input type="radio" name="impactRadio" value="impact_per_purchase" /> Emission Intensity
+                    <input type="radio" name="impactRadio" value="total_impact" checked/> Total Impact
+                    <input type="radio" name="impactRadio" value="impact_per_purchase" /> Impact Intensity
                 </div>
                 <div style=" margin-left: 20px;flex-grow: 1;">
                     <label for="group-selected">Level of Detail:</label>
@@ -78,7 +76,7 @@
 
 <script  type="text/javascript"> 
         var perspectiveName = 'final';
-        var graphType = 'GWP-AR6-100';
+        var graphType = 'Acidification-Potential';
         var topSectors = 10;
         var groupSelector = 'group_detail';
         var impactSelector = 'total_impact';
@@ -166,12 +164,39 @@
                 var paragraph =""
                 switch(impactSelector) {
                     case "total_impact":
-                        name = "Top 10/25 Sectors Based on Total Embodied GHG Emissions";
-                        paragraph = "This chart presents the top 10(25) sectors ranked on total embodied GHG emissions from contributions from Direct emissions due to the sector's operations and Indirect emissions embedded in the purchases made from all other sectors in the supply chain."
+                        if(topSectors == 10){
+                            name = "Top 10 Sectors Based on Total Embodied Impacts";
+                            paragraph = "This chart presents the top 10 sectors ranked on total embodied impacts from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."  
+                        }
+                        else
+                        {
+                            name = "Top 25 Sectors Based on Total Embodied Impacts";
+                            paragraph = "This chart presents the top 25 sectors ranked on total embodied impacts from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
+                        }
                         break;
                     case "impact_per_purchase":
-                        name = "Top 10/25 Sectors Based on Embodied GHG Emission Intensity";
-                        paragraph = "This chart presents the top 10(25) sectors ranked on total embodied GHG emissions intensity from contributions from Direct emissions due to the sector's operations and Indirect emissions embedded in the purchases made from all other sectors in the supply chain."
+                        if(topSectors == 10)
+                        {
+                            name = "Top 10 Sectors Based on Embodied Impact Intensity";
+                            paragraph = "This chart presents the top 10 sectors ranked on total embodied impact intensity from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
+                        }
+                        else
+                        {
+                            name = "Top 25 Sectors Based on Embodied Impact Intensity";
+                            paragraph = "This chart presents the top 25 sectors ranked on total embodied impact intensity from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
+                        }
+                        break;
+                    case "select_sectors_construction":
+                        name = "Select Sectors for Construction Materials";
+                        paragraph = "This chart presents select sectors for construction materials ranked on embodied impacts from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
+                        break;
+                    case "select_sectors_energy":
+                        name = "Select Energy Intensive Sectors";
+                        paragraph = "This chart presents select energy intensive sectors ranked on embodied impacts from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
+                        break;
+                    case "select_sector_snapshots":
+                        name = "Select EPA Smart Sectors";
+                        paragraph = "This chart presents select EPA Smart Sectors ranked on embodied impacts from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
                         break;
                 }
                 document.getElementById("graphTitle").innerHTML = `${name}`; 
@@ -186,23 +211,77 @@
                 }
                 
                 switch(n) {
-                    case "Top 10 Total Embodied GHG Emissions":
-                    case "Top 25 Total Embodied GHG Emissions":
+                    case "Top 10 Total Embodied Impacts":
                     changeImpactSelector("total_impact")
                     changeTitleAndParagraph("total_impact")
-
                     break;
-                    case "Top 10 Embodied GHG Intensity":
-                    case "Top 25 Embodied GHG Intensity":
+                    case "Top 25 Total Embodied Impacts":
+                    changeImpactSelector("total_impact")
+                    changeTitleAndParagraph("total_impact")
+                    break;
+
+                    case "Top 10 Embodied Impact Intensity":
                     changeImpactSelector("impact_per_purchase")
                     changeTitleAndParagraph("impact_per_purchase")
-
+                    break;
+                    case "Top 25 Embodied Impact Intensity":
+                    changeImpactSelector("impact_per_purchase")
+                    changeTitleAndParagraph("impact_per_purchase")
+                    break;
+                    // Other Select Sectors
+                    case "Select Construction Material Manufacturing Sectors": 
+                    changeTitleAndParagraph("select_sectors_construction")
+                    break;
+                    case "Energy Intensive Sectors": 
+                    changeTitleAndParagraph("select_sectors_energy")
+                    break;
+                    case "Select EPA Smart Sectors":
+                    changeTitleAndParagraph("select_sector_snapshots")
                     break;
                 }
 
            }
 
-          
+           const fileNames = [
+                "Acidification-Potential",
+                "Eutrophication-Potential",
+                "Freshwater-withdrawals",
+                // "GWP-AR6-20",
+                "GWP-AR6-100",
+                "Human-Health---Respiratory-Effects",
+                "Jobs-Supported",
+                "Ozone-Depletion",
+                "Smog-Formation-Potential",
+                // "Value-Added",
+                // "Commercial-RCRA-Hazardous-Waste"
+            ];
+
+            function getLabel(file) {
+                const labels = {
+                // "GWP-AR6-20": "CO2e based on 20yr GWP",
+                "GWP-AR6-100": "Global Warming Potential (CO2e)",
+                "Acidification-Potential": "Acidification Potential (SO2 eq)",
+                "Eutrophication-Potential": "Eutrophication Potential (N eq)",
+                "Freshwater-withdrawals": "Freshwater Withdrawals",
+                "Human-Health---Respiratory-Effects": "Human Health Respiratory Effects (PM2.5 eq)",
+                "Jobs-Supported": "Jobs Supported",
+                "Ozone-Depletion": "Ozone Depletion Potential (CFC eq)",
+                "Smog-Formation-Potential": "Smog Formation Potential (O3 eq)",
+                // "Value-Added": "Value Added ($)"
+                // "Commercial-RCRA-Hazardous-Waste': "Commercial Hazardous Waste (kg)"
+                };
+                return labels[file] || file.replace(/-+/g, ' ').trim();;
+            }
+
+            const select = document.getElementById('my-select');
+
+            fileNames.forEach(file => {
+                const option = document.createElement('option');
+                option.value = file;
+                option.textContent = getLabel(file);
+                if (file === 'Acidification-Potential') option.selected = true;
+                select.appendChild(option);
+            });
         </script>
 </body>
 

@@ -37,7 +37,7 @@ export class SmartSectorEEIO extends Widget {
   graphName: string;
   selectorName: string;
   sectorContributionToImpact: SectorContributionToImpact[] = [];
-  fileNameTitle:string = "Top 10 Total Embodied GHG Emissions"
+  fileNameTitle:string = "Top 10 Total Embodied Impacts"
 
   constructor(private _chartConfig: SmartSectorChartConfig) {
     super();
@@ -69,7 +69,7 @@ export class SmartSectorEEIO extends Widget {
       await this.modelSmartSectorApi.sectorContributionToImpactGhgAPI(
         "final/" + graphName,
       );
-    const nameWithNoSpace = graphName.replace(/\-/g, " ");
+    const nameWithNoSpace = graphName.replace(/-+/g, ' ').trim();
     const options = await this.getValues(
       this.sectorContributionToImpact,
       this.modelSmartSectorApi,
@@ -147,7 +147,7 @@ export class SmartSectorEEIO extends Widget {
       }
     }
 
-    const nameWithNoSpace = graphName.replace(/\-/g, " ");
+    const nameWithNoSpace = graphName.replace(/-+/g, ' ').trim();
 
     const listOfStackGraph = await this.getValues(
       this.sectorContributionToImpact,
@@ -244,6 +244,7 @@ export class SmartSectorEEIO extends Widget {
           sumConstructionMaterials: t.construction_materials,
           sumIntensityRank: t.intensity_rank,
           sumTotalRank: t.total_rank,
+          sumSectorSnapshots: t.sector_snapshots,
           sumEnergyIntensive: t.energy_intensive,
           sumModel: t.model,
           sumImpactPerDollar:
@@ -276,6 +277,11 @@ export class SmartSectorEEIO extends Widget {
           (t) => t._constructionMaterials === 1,
         );
         break;
+      case "sector_snapshots":
+        listOfStackGraph = listOfStackGraph.filter(
+          (t) => t._sectorSnapshots === 1,
+        );
+        break;
       case "total_rank":
         listOfStackGraph.sort((a, b) => a._totalRank - b._totalRank);
         break;
@@ -293,7 +299,7 @@ export class SmartSectorEEIO extends Widget {
   }
 
   async selectorFilter(totalRankSelector: { name: string; num?: number, n:string },n:string) {
-    const nameWithNoSpace = this.graphName.replace(/-/g, " ");
+    const nameWithNoSpace = this.graphName.replace(/-+/g, ' ').trim();
 
     this.fileNameTitle = n;
     const filteredResults: SumSmartSectorTotalParts[] =
@@ -301,6 +307,8 @@ export class SmartSectorEEIO extends Widget {
         switch (totalRankSelector.name) {
           case "construction_materials":
             return t._constructionMaterials === 1;
+          case "sector_snapshots":
+            return t._sectorSnapshots === 1;
           case "energy_intensive":
             return t._energyIntensive === 1;
           default:
