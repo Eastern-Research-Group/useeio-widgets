@@ -17,11 +17,10 @@ import Radio from "@material-ui/core/Radio";
 import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormLabel from "@material-ui/core/FormLabel";
-import { withStyles } from "@material-ui/core/styles";
 import { SmartSectorChartConfigPie } from "../totalGhgEmissionPieChart.ts/pieListSearch";
 import { SmartSectorEEIOTotalImpactPerSector } from "./smart-sector-eeio-total-impacts";
 import { Menu, MenuItem, IconButton } from "@material-ui/core";
-import { fileNames } from "../smartSectorCalc/smartSectorCalculations"
+import { fileNames } from "../smartSectorCalc/smartSectorCalculations";
 export interface SmartSectorChartConfigNormal {
   model: WebModel;
   endpoint: "./api";
@@ -70,8 +69,16 @@ export class SectorListSearch extends Widget {
   async update() {
     this.sectors = await this._chartConfig.model.sectors();
     this.modelSmartSectorApi.init();
-    this.smartSectorImpactPurchase.init("Acidification-Potential",this.sectors[0].name,this.sectors[0].code);
-    this.smartSectorTotalImpact.init("Acidification-Potential",this.sectors[0].name, this.sectors[0].code);
+    this.smartSectorImpactPurchase.init(
+      "Acidification-Potential",
+      this.sectors[0].name,
+      this.sectors[0].code,
+    );
+    this.smartSectorTotalImpact.init(
+      "Acidification-Potential",
+      this.sectors[0].name,
+      this.sectors[0].code,
+    );
     ReactDOM.render(
       <Component widget={this} />,
       document.querySelector(this._chartConfig.selector),
@@ -80,35 +87,30 @@ export class SectorListSearch extends Widget {
 }
 
 const Component = (props: { widget: SectorListSearch }) => {
-
   const customLabels: Record<string, string> = {
     "GWP-AR6-100": "Global Warming Potential (CO2e)",
     // "GWP-AR6-20": "CO2e based on 20yr GWP",
     "Acidification-Potential": "Acidification Potential (SO2 eq)",
     "Eutrophication-Potential": "Eutrophication Potential (N eq)",
     "Freshwater-withdrawals": "Freshwater Withdrawals",
-    "Human-Health---Respiratory-Effects": "Human Health Respiratory Effects (PM2.5 eq)",
+    "Human-Health---Respiratory-Effects":
+      "Human Health Respiratory Effects (PM2.5 eq)",
     "Jobs-Supported": "Jobs Supported",
     "Ozone-Depletion": "Ozone Depletion Potential (CFC eq)",
     "Smog-Formation-Potential": "Smog Formation Potential (O3 eq)",
     // "Value-Added": "Value Added ($)"
-    // "Commercial-RCRA-Hazardous-Waste': "Commercial Hazardous Waste (kg)"
   };
 
   const getLabel = (filename: string): string => {
     if (customLabels[filename]) return customLabels[filename];
 
-    return filename
-      .replace(/-+/g, ' ')
-      .trim();
+    return filename.replace(/-+/g, " ").trim();
   };
-
 
   const [searchTerm, setSearchTerm] = React.useState<string>("");
   const [value, setValue] = React.useState<string>("");
   const [title, setTitle] = React.useState<string>("");
   const [graph, setGraph] = React.useState<string>("");
-  const [year, setYear] = React.useState<string>("100");
   const [perspective, setPerspective] = React.useState<string>("final");
   const [totalImpactGraph, setTotalImpactGraph] =
     React.useState<boolean>(false);
@@ -122,10 +124,10 @@ const Component = (props: { widget: SectorListSearch }) => {
     //Changes meta title according to the graph selected
     document.title = getLabel(graph);
   }, [graph]);
-  
+
   React.useEffect(() => {
     setTitle(sectors[0].name + " (" + sectors[0].code + ")");
-    setValue(sectors[0].name)
+    setValue(sectors[0].name);
   }, []);
 
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -197,8 +199,7 @@ const Component = (props: { widget: SectorListSearch }) => {
   };
 
   // create the sector ranking, if there is a result
-  let ranking: [Sector][];
-  ranking = sectors.map((sector) => {
+  const ranking: [Sector][] = sectors.map((sector) => {
     return [sector];
   });
 
@@ -231,11 +232,31 @@ const Component = (props: { widget: SectorListSearch }) => {
       border: "1px solid black",
       overflowY: "scroll",
     },
+    tagCcontainer: {
+      display: "flex",
+      flexWrap: "wrap",
+      width: "100%",
+      gap: "16px" 
+    },
+    right: {
+      display: "flex",
+      flexWrap: "wrap",
+      flex: 1,
+      boxSizing: "border-box",
+    },
+    left: {
+      flex: 1,
+      boxSizing: "border-box",
+    },
+    item: {
+      flex: "0 0 calc(50% - 6px)",
+      padding: "8px",
+      boxSizing: "border-box",
+    },
   }));
 
   const handleChange = (event: any) => {
     setGraph(event.target.value);
-    setYear(new String(event.target.value).replace("GWP-AR6-", ""));
 
     if (changePrespective === "impact_per_purchase") {
       props.widget.smartSectorImpactPurchase.changeGraph(
@@ -275,19 +296,22 @@ const Component = (props: { widget: SectorListSearch }) => {
       }}
     >
       {/* Update header with graph selected */}
-        <h1
+      <h1
         id="graphTitle"
         style={{
-          width: "100%",        
-          textAlign: "center",  
-          margin: "0 auto",     
+          width: "100%",
+          textAlign: "center",
+          margin: "0 auto",
         }}
       >
         Contribution to Total Sector Impacts and Intensity for {getLabel(graph)}
       </h1>
       {/* Update paragraph with graph selected */}
       <p id="paragraph" className="text-center">
-      For the sector selected below, the chart shows the contribution to total impacts and intensity from <em>Direct</em> impacts due to facility operations and <em>Indirect</em> impacts embedded in the purchases made from all other sectors for {getLabel(graph)}
+        For the sector selected below, the chart shows the contribution to total
+        impacts and intensity from <em>Direct</em> impacts due to facility
+        operations and <em>Indirect</em> impacts embedded in the purchases made
+        from all other sectors for {getLabel(graph)}
       </p>
       <div>
         <div
@@ -313,10 +337,10 @@ const Component = (props: { widget: SectorListSearch }) => {
               >
                 {title}
               </div>
-                <div>Contribution to Total Sector Impacts by Source</div>
-                {/* Updated title of the graph */}
-                <div>From {getLabel(graph)}</div>
-              </div>
+              <div>Contribution to Total Sector Impacts by Source</div>
+              {/* Updated title of the graph */}
+              <div>From {getLabel(graph)}</div>
+            </div>
           ) : (
             <div
               style={{
@@ -405,108 +429,123 @@ const Component = (props: { widget: SectorListSearch }) => {
         </div>
       </div>
 
-      <div>
-        <FormControl className={classes.margin}>
-          <TextField
-            value={searchTerm}
-            label="Search Sector"
-            variant="outlined"
-            size="small"
-            onChange={(e) => onSearch(e.target.value)}
-          />
-          {searchTerm != null ? (
-            <div className={classes.selector} id="div1">
-              <table id="sector-list-table">
-                <thead>
-                  <tr>
-                    <th className={`indicator`}>
-                      BEA/NAICS
-                      <br />
-                      Code
-                    </th>
-                    <th className={`indicator`}>Sector Name</th>
-                  </tr>
-                </thead>
-                <tbody id="sectorListSearch" className="sector-list-body">
-                  {rows}
-                </tbody>
-              </table>
-            </div>
-          ) : null}
-        </FormControl>
-        <FormControl className={classes.margin}>
-          <InputLabel id="demo-controlled-open-select-label">
-            Select perspective:
-          </InputLabel>
-          <Select
-            native
-            value={perspective}
-            onChange={handleChangePerspective}
-            label="Select perspective"
-            inputProps={{
-              name: "perspective",
-            }}
-          >
-            <option value="final">Point of Consumption</option>
-            <option value="direct">Supply Chain</option>
-          </Select>
-        </FormControl>
-        <FormControl className={classes.margin}>
-          <InputLabel id="demo-controlled-open-select-label">
-            Select Indicator:
-          </InputLabel>
-          <Select
-            native
-            value={graph}
-            onChange={handleChange}
-            label="Select Indicator"
-            inputProps={{
-              name: "graph",
-            }}
-          >
-             {fileNames.map((file) => (
-            <option key={file} value={file}>
-              {getLabel(file)}
-            </option>
-          ))}
-          </Select>
-        </FormControl>
+      <div className={classes.tagCcontainer}>
+        <div className={classes.left}>
+          <FormControl className={classes.margin}>
+            <TextField
+              value={searchTerm}
+              label="Search Sector"
+              variant="outlined"
+              size="small"
+              onChange={(e) => onSearch(e.target.value)}
+            />
+            {searchTerm != null ? (
+              <div className={classes.selector} id="div1">
+                <table id="sector-list-table">
+                  <thead>
+                    <tr>
+                      <th className={`indicator`}>
+                        BEA/NAICS
+                        <br />
+                        Code
+                      </th>
+                      <th className={`indicator`}>Sector Name</th>
+                    </tr>
+                  </thead>
+                  <tbody id="sectorListSearch" className="sector-list-body">
+                    {rows}
+                  </tbody>
+                </table>
+              </div>
+            ) : null}
+          </FormControl>
+        </div>
 
-        <FormControl component="fieldset">
-          <FormLabel component="legend">Select Result View:</FormLabel>
-          <RadioGroup
-            row
-            aria-label="Select Result View"
-            name="impactRadio"
-            value={changePrespective}
-            onChange={handleGraphChange}
+        <div className={classes.right}>
+          <div className={classes.item}>
+            <FormControl className={classes.margin}>
+              <InputLabel id="demo-controlled-open-select-label">
+                Select perspective:
+              </InputLabel>
+              <Select
+                native
+                value={perspective}
+                onChange={handleChangePerspective}
+                label="Select perspective"
+                inputProps={{
+                  name: "perspective",
+                }}
+              >
+                <option value="final">Point of Consumption</option>
+                <option value="direct">Supply Chain</option>
+              </Select>
+            </FormControl>
+          </div>
+
+          <div className={classes.item}>
+            <FormControl className={classes.margin}>
+              <InputLabel id="demo-controlled-open-select-label">
+                Select Indicator:
+              </InputLabel>
+              <Select
+                native
+                value={graph}
+                onChange={handleChange}
+                label="Select Indicator"
+                inputProps={{
+                  name: "graph",
+                }}
+              >
+                {fileNames.map((file) => (
+                  <option key={file} value={file}>
+                    {getLabel(file)}
+                  </option>
+                ))}
+              </Select>
+            </FormControl>
+          </div>
+          <div className={classes.item}>
+            <FormControl component="fieldset">
+              <FormLabel component="legend" style={{ fontSize: "0.75rem" }}>
+                Select Result View:
+              </FormLabel>
+              <RadioGroup
+                row
+                aria-label="Select Result View"
+                name="impactRadio"
+                value={changePrespective}
+                onChange={handleGraphChange}
+              >
+                <FormControlLabel
+                  value="total_impact"
+                  control={<Radio color="default" size="small" />}
+                  label="Total Impacts"
+                />
+                <FormControlLabel
+                  value="impact_per_purchase"
+                  control={<Radio color="default" size="small" />}
+                  label="Impact Intensity"
+                />
+              </RadioGroup>
+            </FormControl>
+          </div>
+
+          <div
+            className={classes.item}
+            style={{
+              overflowWrap: "break-word",
+              whiteSpace: "normal",
+              wordWrap: "break-word",
+              textAlign: "left",
+              width: "200px",
+            }}
           >
-            <FormControlLabel
-              value="total_impact"
-              control={<Radio color="default" size="small" />}
-              label="Total Impacts"
-            />
-            <FormControlLabel
-              value="impact_per_purchase"
-              control={<Radio color="default" size="small" />}
-              label="Impact Intensity"
-            />
-          </RadioGroup>
-        </FormControl>
-        <div
-          style={{
-            overflowWrap: "break-word",
-            whiteSpace: "normal",
-            wordWrap: "break-word",
-            textAlign: "center",
-            width: "200px",
-          }}
-        >
-          See more info about the{" "}
-          <a href="./sector-info-table.html" target="_blank">
-            sectors BEA/NAICS Codes
-          </a>
-          .
+            See more info about the{" "}
+            <a href="./sector-info-table.html" target="_blank">
+              sectors BEA/NAICS Codes
+            </a>
+            .
+          </div>
         </div>
       </div>
     </div>
