@@ -64,7 +64,7 @@ export async function apexGraph(
       yaxisTitle = "Million Cubic Meters of Freshwater Used";
       unitLabel = "million m3";
       break;
-    case "Commerical RCRA Hazardous Waste":
+    case "Commercial RCRA Hazardous Waste":
       yaxisTitle = "Thousand Metric Tons of Waste Generated";
       unitLabel = "Thousand MT";
       break;
@@ -72,9 +72,13 @@ export async function apexGraph(
       yaxisTitle = "Number of Jobs Supported";
       unitLabel = "Jobs";
       break;
-    default:
+    case "Global Warming Potential":
       yaxisTitle = "Million Metric Tons of CO2 eq. Emissions";
       unitLabel = "MMT CO2e";
+      break;
+    default:
+      yaxisTitle = "Metric Tons of Emissions";
+      unitLabel = "MT";
       break;
   }
 

@@ -15,7 +15,11 @@ export const fileNames: string[] = [
     "Smog-Formation-Potential",
     // "Social-Cost-of-Carbon"
     // "Value-Added"
-    // "Commercial-RCRA-Hazardous-Waste'
+    "Commercial-RCRA-Hazardous-Waste",
+    "Criteria-Air-Pollutants",
+    "Releases-to-Ground",
+    "Carbon-monoxide",
+    "Sulfur-dioxide",
   ];
 
 export function sortedSectorCodeList(sortTopTen:SumSmartSectorTotalParts[]): string[]{

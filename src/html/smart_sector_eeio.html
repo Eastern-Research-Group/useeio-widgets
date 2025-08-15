@@ -253,7 +253,11 @@
                 "Ozone-Depletion",
                 "Smog-Formation-Potential",
                 // "Value-Added",
-                // "Commercial-RCRA-Hazardous-Waste"
+                "Commercial-RCRA-Hazardous-Waste",
+                "Criteria-Air-Pollutants",
+                "Releases-to-Ground",
+                "Carbon-monoxide",
+                "Sulfur-dioxide",
             ];
 
             function getLabel(file) {
@@ -268,7 +272,7 @@
                 "Ozone-Depletion": "Ozone Depletion Potential (CFC eq)",
                 "Smog-Formation-Potential": "Smog Formation Potential (O3 eq)",
                 // "Value-Added": "Value Added ($)"
-                // "Commercial-RCRA-Hazardous-Waste': "Commercial Hazardous Waste (kg)"
+                "Commercial-RCRA-Hazardous-Waste": "Commercial Hazardous Waste",
                 };
                 return labels[file] || file.replace(/-+/g, ' ').trim();;
             }
