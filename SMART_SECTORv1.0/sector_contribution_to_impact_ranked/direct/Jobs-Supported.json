@@ -1,6 +1,76 @@
 [
   {
     "emissions_source": "Direct",
+    "sector_code": "111,112",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 2.29987491377501,
+    "total_impact": 750353.315265859
+  },
+  {
+    "emissions_source": "115000/US",
+    "sector_code": "111,112",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 1.03521674206957,
+    "total_impact": 337748.070461633
+  },
+  {
+    "emissions_source": "424A00/US",
+    "sector_code": "111,112",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.344716345886243,
+    "total_impact": 112466.574339694
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "111,112",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.147024506288198,
+    "total_impact": 47967.9677611666
+  },
+  {
+    "emissions_source": "425000/US",
+    "sector_code": "111,112",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.12365101394611,
+    "total_impact": 40342.1715219095
+  },
+  {
+    "emissions_source": "311119/US",
+    "sector_code": "111,112",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0816876389624254,
+    "total_impact": 26651.2714863643
+  },
+  {
+    "emissions_source": "493000/US",
+    "sector_code": "111,112",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0816819464630975,
+    "total_impact": 26649.4142611225
+  },
+  {
+    "emissions_source": "561300/US",
+    "sector_code": "111,112",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0750992616902587,
+    "total_impact": 24501.758615563
+  },
+  {
+    "emissions_source": "550000/US",
+    "sector_code": "111,112",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0682563246988481,
+    "total_impact": 22269.1935195629
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "111,112",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 2.05947730911823,
+    "total_impact": 671921.597716446
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "1111A0/US",
     "indicator": "Jobs Supported",
     "impact_per_purchase": 0.160529958551238,

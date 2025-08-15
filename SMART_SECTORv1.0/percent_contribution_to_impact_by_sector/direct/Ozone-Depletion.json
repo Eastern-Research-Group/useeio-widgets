@@ -1,5 +1,75 @@
 [
   {
+    "sector": "111,112",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 31.0669399030777,
+    "contribution": 0.518453883633577
+  },
+  {
+    "sector": "111,112",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 25.4032118199732,
+    "contribution": 0.423935986805277
+  },
+  {
+    "sector": "111,112",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 2.6885672146875,
+    "contribution": 0.0448675704209461
+  },
+  {
+    "sector": "111,112",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 0.301183097469559,
+    "contribution": 0.00502622875169027
+  },
+  {
+    "sector": "111,112",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 0.288325117692831,
+    "contribution": 0.00481165114695275
+  },
+  {
+    "sector": "111,112",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 0.0876474798025762,
+    "contribution": 0.00146268594319582
+  },
+  {
+    "sector": "111,112",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 0.0637846345216734,
+    "contribution": 0.00106445602904822
+  },
+  {
+    "sector": "111,112",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 0.0183763740444436,
+    "contribution": 0.00030667012973174
+  },
+  {
+    "sector": "111,112",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 0.0038663719172678,
+    "contribution": 6.45231085627685e-05
+  },
+  {
+    "sector": "111,112",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.000380148816726293,
+    "contribution": 6.34403101835369e-06
+  },
+  {
     "sector": "1111A0/US",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Manufacturing",

@@ -1,6 +1,76 @@
 [
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "111,112",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 21388.125173816,
+    "total_impact": 6978.05369125568
+  },
+  {
+    "purchased_commodity_code": "1111B0/US",
+    "sector_code": "111,112",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 2138.00100476818,
+    "total_impact": 533.902227635369
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "111,112",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 2060.77846179075,
+    "total_impact": 599.648940642802
+  },
+  {
+    "purchased_commodity_code": "112300/US",
+    "sector_code": "111,112",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 1603.70221239727,
+    "total_impact": 219.437913462104
+  },
+  {
+    "purchased_commodity_code": "311119/US",
+    "sector_code": "111,112",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 1381.01971187044,
+    "total_impact": 219.690816388394
+  },
+  {
+    "purchased_commodity_code": "111400/US",
+    "sector_code": "111,112",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 623.257779859347,
+    "total_impact": 29.8957174037612
+  },
+  {
+    "purchased_commodity_code": "112A00/US",
+    "sector_code": "111,112",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 557.909003341841,
+    "total_impact": 162.341342862398
+  },
+  {
+    "purchased_commodity_code": "1111A0/US",
+    "sector_code": "111,112",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 461.010407736146,
+    "total_impact": 55.7500311567397
+  },
+  {
+    "purchased_commodity_code": "115000/US",
+    "sector_code": "111,112",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 204.063246059984,
+    "total_impact": 66.5773309182679
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "111,112",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 1080.03883961087,
+    "total_impact": 217.795295128032
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "1111A0/US",
     "indicator": "Acidification Potential",
     "impact_per_purchase": 7503.12324583267,

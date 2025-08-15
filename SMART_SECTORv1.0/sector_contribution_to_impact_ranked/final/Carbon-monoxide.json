@@ -1,6 +1,76 @@
 [
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "111,112",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 2125.85597175807,
+    "total_impact": 693578.188375527
+  },
+  {
+    "purchased_commodity_code": "1111B0/US",
+    "sector_code": "111,112",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 471.643123126184,
+    "total_impact": 117778.85675656
+  },
+  {
+    "purchased_commodity_code": "311119/US",
+    "sector_code": "111,112",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 353.760190669111,
+    "total_impact": 56275.7102058671
+  },
+  {
+    "purchased_commodity_code": "115000/US",
+    "sector_code": "111,112",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 186.641638791452,
+    "total_impact": 60893.3866772545
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "111,112",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 162.756338150979,
+    "total_impact": 47359.1254784021
+  },
+  {
+    "purchased_commodity_code": "112300/US",
+    "sector_code": "111,112",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 127.559517004203,
+    "total_impact": 17454.2343567598
+  },
+  {
+    "purchased_commodity_code": "1111A0/US",
+    "sector_code": "111,112",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 95.1093131647176,
+    "total_impact": 11501.5780191753
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "111,112",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 92.3097624758925,
+    "total_impact": 30116.8276110715
+  },
+  {
+    "purchased_commodity_code": "111900/US",
+    "sector_code": "111,112",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 83.5794868596513,
+    "total_impact": 20399.4528768248
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "111,112",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 506.225253459888,
+    "total_impact": 113283.985282897
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "1111A0/US",
     "indicator": "Carbon monoxide",
     "impact_per_purchase": 1176.19588366697,

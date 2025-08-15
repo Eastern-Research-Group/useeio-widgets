@@ -1,6 +1,76 @@
 [
   {
     "emissions_source": "Direct",
+    "sector_code": "111,112",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 1587.01520241183,
+    "total_impact": 517.77690663725
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "111,112",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 254.942772669992,
+    "total_impact": 83.1771995643032
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "111,112",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 203.564783290833,
+    "total_impact": 66.4147032948572
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "111,112",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 108.956150578309,
+    "total_impact": 35.5478501527924
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "111,112",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 64.1435225801246,
+    "total_impact": 20.9273576282573
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "111,112",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 36.7086524388469,
+    "total_impact": 11.9765031095624
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "111,112",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 24.5124275210298,
+    "total_impact": 7.9973833122205
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "111,112",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 23.1285430531856,
+    "total_impact": 7.54587949687281
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "111,112",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 18.7564988550606,
+    "total_impact": 6.11946372143084
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "111,112",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 177.819880200022,
+    "total_impact": 58.0152145793252
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "1111A0/US",
     "indicator": "GWP-AR6-100",
     "impact_per_purchase": 1227.37194933862,

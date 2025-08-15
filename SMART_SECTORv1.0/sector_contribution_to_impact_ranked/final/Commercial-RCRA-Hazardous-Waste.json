@@ -1,6 +1,76 @@
 [
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "111,112",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "impact_per_purchase": 86.3032010216683,
+    "total_impact": 17.8079459295229
+  },
+  {
+    "purchased_commodity_code": "325320/US",
+    "sector_code": "111,112",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "impact_per_purchase": 1604.34816960265,
+    "total_impact": 523.431931315822
+  },
+  {
+    "purchased_commodity_code": "311119/US",
+    "sector_code": "111,112",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "impact_per_purchase": 1295.18463842103,
+    "total_impact": 206.036284741399
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "111,112",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "impact_per_purchase": 958.785421204079,
+    "total_impact": 68.9623423099707
+  },
+  {
+    "purchased_commodity_code": "1111B0/US",
+    "sector_code": "111,112",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "impact_per_purchase": 437.907650566951,
+    "total_impact": 109.354424817783
+  },
+  {
+    "purchased_commodity_code": "325310/US",
+    "sector_code": "111,112",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "impact_per_purchase": 417.665161507153,
+    "total_impact": 98.5566208295713
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "111,112",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "impact_per_purchase": 338.787216433446,
+    "total_impact": 110.532146551948
+  },
+  {
+    "purchased_commodity_code": "112300/US",
+    "sector_code": "111,112",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "impact_per_purchase": 286.113895900349,
+    "total_impact": 39.1495602135724
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "111,112",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "impact_per_purchase": 255.45748845351,
+    "total_impact": 74.3334692062463
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "111,112",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "impact_per_purchase": 1889.88471473832,
+    "total_impact": 410.366387366475
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "1111A0/US",
     "indicator": "Commercial RCRA Hazardous Waste",
     "impact_per_purchase": 793.880401675956,

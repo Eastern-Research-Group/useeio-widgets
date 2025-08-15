@@ -1,5 +1,75 @@
 [
   {
+    "emissions_source": "Direct",
+    "sector_code": "111,112",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 0.406474579142663,
+    "total_impact": 0.0637846345216734
+  },
+  {
+    "emissions_source": "115000/US",
+    "sector_code": "111,112",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 77.8502494295931,
+    "total_impact": 25.3992912414035
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "111,112",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 39.7181951563691,
+    "total_impact": 12.9583914470548
+  },
+  {
+    "emissions_source": "325320/US",
+    "sector_code": "111,112",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 13.4482711553998,
+    "total_impact": 4.38761029376384
+  },
+  {
+    "emissions_source": "311119/US",
+    "sector_code": "111,112",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 12.1626925012576,
+    "total_impact": 3.96817956760002
+  },
+  {
+    "emissions_source": "3252A0/US",
+    "sector_code": "111,112",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 8.42688053424896,
+    "total_impact": 2.74933984815907
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "111,112",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 5.26505396272501,
+    "total_impact": 1.71776763697977
+  },
+  {
+    "emissions_source": "425000/US",
+    "sector_code": "111,112",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 4.44937723351975,
+    "total_impact": 1.45164632130362
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "111,112",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 3.52836533890583,
+    "total_impact": 1.15115853199664
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "111,112",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 18.6205603054483,
+    "total_impact": 6.07511263922062
+  },
+  {
     "emissions_source": "115000/US",
     "sector_code": "1111A0/US",
     "indicator": "Ozone Depletion",

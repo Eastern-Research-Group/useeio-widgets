@@ -1,5 +1,75 @@
 [
   {
+    "emissions_source": "Direct",
+    "sector_code": "111,112",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "impact_per_purchase": 86.3032010216683,
+    "total_impact": 17.8079459295229
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "111,112",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "impact_per_purchase": 2142.92625976968,
+    "total_impact": 699.147511787569
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "111,112",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "impact_per_purchase": 1004.63715344872,
+    "total_impact": 327.771225389021
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "111,112",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "impact_per_purchase": 404.469705463053,
+    "total_impact": 131.961604781649
+  },
+  {
+    "emissions_source": "325320/US",
+    "sector_code": "111,112",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "impact_per_purchase": 355.044727885016,
+    "total_impact": 115.83629485262
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "111,112",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "impact_per_purchase": 222.198237195404,
+    "total_impact": 72.4940225780084
+  },
+  {
+    "emissions_source": "325110/US",
+    "sector_code": "111,112",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "impact_per_purchase": 116.629811218301,
+    "total_impact": 38.051445747038
+  },
+  {
+    "emissions_source": "312140/US",
+    "sector_code": "111,112",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "impact_per_purchase": 114.332587133983,
+    "total_impact": 37.3019572869253
+  },
+  {
+    "emissions_source": "424A00/US",
+    "sector_code": "111,112",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "impact_per_purchase": 102.083945436081,
+    "total_impact": 33.3057360792082
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "111,112",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "impact_per_purchase": 566.585923054128,
+    "total_impact": 184.853368850747
+  },
+  {
     "emissions_source": "325190/US",
     "sector_code": "1111A0/US",
     "indicator": "Commercial RCRA Hazardous Waste",

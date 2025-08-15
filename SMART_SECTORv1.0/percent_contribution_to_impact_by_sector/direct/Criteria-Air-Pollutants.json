@@ -1,5 +1,75 @@
 [
   {
+    "sector": "111,112",
+    "indicator": "Criteria Air Pollutants",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 3378648.11477085,
+    "contribution": 0.656392164525998
+  },
+  {
+    "sector": "111,112",
+    "indicator": "Criteria Air Pollutants",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 1239550.3525598,
+    "contribution": 0.240815589939255
+  },
+  {
+    "sector": "111,112",
+    "indicator": "Criteria Air Pollutants",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 150044.18673775,
+    "contribution": 0.0291500698391061
+  },
+  {
+    "sector": "111,112",
+    "indicator": "Criteria Air Pollutants",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 141794.521140962,
+    "contribution": 0.0275473531092941
+  },
+  {
+    "sector": "111,112",
+    "indicator": "Criteria Air Pollutants",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 106092.560798627,
+    "contribution": 0.0206112987375839
+  },
+  {
+    "sector": "111,112",
+    "indicator": "Criteria Air Pollutants",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 67366.0590524887,
+    "contribution": 0.0130876468383119
+  },
+  {
+    "sector": "111,112",
+    "indicator": "Criteria Air Pollutants",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 26848.6636927489,
+    "contribution": 0.00521606627185243
+  },
+  {
+    "sector": "111,112",
+    "indicator": "Criteria Air Pollutants",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 17416.7499458112,
+    "contribution": 0.00338366642739723
+  },
+  {
+    "sector": "111,112",
+    "indicator": "Criteria Air Pollutants",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 16879.6060343333,
+    "contribution": 0.00327931195106821
+  },
+  {
+    "sector": "111,112",
+    "indicator": "Criteria Air Pollutants",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 2660.29177919383,
+    "contribution": 0.000516832360132949
+  },
+  {
     "sector": "1111A0/US",
     "indicator": "Criteria Air Pollutants",
     "sector_purchased_detail": "Direct",

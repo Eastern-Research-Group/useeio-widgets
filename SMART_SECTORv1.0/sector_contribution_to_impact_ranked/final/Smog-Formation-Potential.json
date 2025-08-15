@@ -1,6 +1,76 @@
 [
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "111,112",
+    "indicator": "Smog Formation Potential",
+    "impact_per_purchase": 16.6969911765141,
+    "total_impact": 5447.53221543588
+  },
+  {
+    "purchased_commodity_code": "311119/US",
+    "sector_code": "111,112",
+    "indicator": "Smog Formation Potential",
+    "impact_per_purchase": 3.07125569424525,
+    "total_impact": 488.571354200587
+  },
+  {
+    "purchased_commodity_code": "1111B0/US",
+    "sector_code": "111,112",
+    "indicator": "Smog Formation Potential",
+    "impact_per_purchase": 2.70738625434369,
+    "total_impact": 676.089276403408
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "111,112",
+    "indicator": "Smog Formation Potential",
+    "impact_per_purchase": 2.08643860320792,
+    "total_impact": 607.115573715132
+  },
+  {
+    "purchased_commodity_code": "112300/US",
+    "sector_code": "111,112",
+    "indicator": "Smog Formation Potential",
+    "impact_per_purchase": 1.62828397807301,
+    "total_impact": 222.801487651501
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "111,112",
+    "indicator": "Smog Formation Potential",
+    "impact_per_purchase": 1.3075863755925,
+    "total_impact": 426.610928292549
+  },
+  {
+    "purchased_commodity_code": "111400/US",
+    "sector_code": "111,112",
+    "indicator": "Smog Formation Potential",
+    "impact_per_purchase": 1.26860821778067,
+    "total_impact": 60.8511501989096
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "111,112",
+    "indicator": "Smog Formation Potential",
+    "impact_per_purchase": 1.23945486879546,
+    "total_impact": 404.382457651376
+  },
+  {
+    "purchased_commodity_code": "1111A0/US",
+    "sector_code": "111,112",
+    "indicator": "Smog Formation Potential",
+    "impact_per_purchase": 1.02876430042295,
+    "total_impact": 124.408561800511
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "111,112",
+    "indicator": "Smog Formation Potential",
+    "impact_per_purchase": 6.26285870129918,
+    "total_impact": 1638.64495898674
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "1111A0/US",
     "indicator": "Smog Formation Potential",
     "impact_per_purchase": 12.1024809622919,

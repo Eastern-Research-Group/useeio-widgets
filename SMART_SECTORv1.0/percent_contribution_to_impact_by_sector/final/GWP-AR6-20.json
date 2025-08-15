@@ -1,5 +1,75 @@
 [
   {
+    "sector": "111,112",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 899.344462087328,
+    "contribution": 0.668792744491004
+  },
+  {
+    "sector": "111,112",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 313.698320622108,
+    "contribution": 0.233280094152297
+  },
+  {
+    "sector": "111,112",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 81.5655395214668,
+    "contribution": 0.0606557813297063
+  },
+  {
+    "sector": "111,112",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 14.6511273042555,
+    "contribution": 0.0108952331979208
+  },
+  {
+    "sector": "111,112",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 11.0458238181818,
+    "contribution": 0.00821416836145325
+  },
+  {
+    "sector": "111,112",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 10.0809378667294,
+    "contribution": 0.00749663603563571
+  },
+  {
+    "sector": "111,112",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 8.51596071718904,
+    "contribution": 0.00633284906965203
+  },
+  {
+    "sector": "111,112",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 4.95446853561765,
+    "contribution": 0.00368436427766462
+  },
+  {
+    "sector": "111,112",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.496283374015169,
+    "contribution": 0.000369058501769738
+  },
+  {
+    "sector": "111,112",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 0.375274082033378,
+    "contribution": 0.000279070582896494
+  },
+  {
     "sector": "1111A0/US",
     "indicator": "GWP-AR6-20",
     "sector_purchased_detail": "Direct",

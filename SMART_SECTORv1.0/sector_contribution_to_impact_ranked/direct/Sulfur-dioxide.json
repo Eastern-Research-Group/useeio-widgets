@@ -1,6 +1,76 @@
 [
   {
     "emissions_source": "Direct",
+    "sector_code": "111,112",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 25.4306215991646,
+    "total_impact": 8296.95176546956
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "111,112",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 31.8582069620075,
+    "total_impact": 10394.0049387863
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "111,112",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 24.9603993004976,
+    "total_impact": 8143.53783038837
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "111,112",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 13.6741934303636,
+    "total_impact": 4461.3193146311
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "111,112",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 10.906823555921,
+    "total_impact": 3558.44188098558
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "111,112",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 6.65323851065964,
+    "total_impact": 2170.67438921434
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "111,112",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 4.59442092426379,
+    "total_impact": 1498.968031522
+  },
+  {
+    "emissions_source": "115000/US",
+    "sector_code": "111,112",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 4.15813486144325,
+    "total_impact": 1356.62607558305
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "111,112",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 3.99351047080978,
+    "total_impact": 1302.91599920211
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "111,112",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 24.0906823871714,
+    "total_impact": 7859.78545527077
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "1111A0/US",
     "indicator": "Sulfur dioxide",
     "impact_per_purchase": 2.92484605051598,

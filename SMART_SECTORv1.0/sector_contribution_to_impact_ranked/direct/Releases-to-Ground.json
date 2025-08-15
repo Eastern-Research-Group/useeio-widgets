@@ -1,5 +1,75 @@
 [
   {
+    "emissions_source": "Direct",
+    "sector_code": "111,112",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 1.66957142394146,
+    "total_impact": 91.2674179234245
+  },
+  {
+    "emissions_source": "2122A0/US",
+    "sector_code": "111,112",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 13.291016567392,
+    "total_impact": 4336.30467677325
+  },
+  {
+    "emissions_source": "331410/US",
+    "sector_code": "111,112",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 2.0668504745679,
+    "total_impact": 674.327154256074
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "111,112",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.710045118230643,
+    "total_impact": 231.658124214325
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "111,112",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.436685100827768,
+    "total_impact": 142.472145407025
+  },
+  {
+    "emissions_source": "325320/US",
+    "sector_code": "111,112",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.357713418594334,
+    "total_impact": 116.706977388076
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "111,112",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.17977802765034,
+    "total_impact": 58.6540764679979
+  },
+  {
+    "emissions_source": "21311A/US",
+    "sector_code": "111,112",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.112929821796771,
+    "total_impact": 36.8442934309422
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "111,112",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.100513360056452,
+    "total_impact": 32.7933195388763
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "111,112",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.583626564983636,
+    "total_impact": 190.413019981981
+  },
+  {
     "emissions_source": "2122A0/US",
     "sector_code": "1111A0/US",
     "indicator": "Releases to Ground",

@@ -1,6 +1,76 @@
 [
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "111,112",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 3271.66822482167,
+    "total_impact": 1067.40896395771
+  },
+  {
+    "purchased_commodity_code": "1111B0/US",
+    "sector_code": "111,112",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 541.132058529964,
+    "total_impact": 135.131653750269
+  },
+  {
+    "purchased_commodity_code": "1111A0/US",
+    "sector_code": "111,112",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 423.983780718756,
+    "total_impact": 51.272397734134
+  },
+  {
+    "purchased_commodity_code": "311119/US",
+    "sector_code": "111,112",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 380.67163871955,
+    "total_impact": 60.5567482979211
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "111,112",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 164.938796539147,
+    "total_impact": 47.9941810579932
+  },
+  {
+    "purchased_commodity_code": "112300/US",
+    "sector_code": "111,112",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 135.599435670267,
+    "total_impact": 18.5543531711179
+  },
+  {
+    "purchased_commodity_code": "111900/US",
+    "sector_code": "111,112",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 101.816406450868,
+    "total_impact": 24.8505831217875
+  },
+  {
+    "purchased_commodity_code": "115000/US",
+    "sector_code": "111,112",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 57.4709054814487,
+    "total_impact": 18.7503608135597
+  },
+  {
+    "purchased_commodity_code": "111400/US",
+    "sector_code": "111,112",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 30.986296220639,
+    "total_impact": 1.48631526975967
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "111,112",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 199.521877673025,
+    "total_impact": 43.403746336128
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "1111A0/US",
     "indicator": "Human Health - Respiratory Effects",
     "impact_per_purchase": 7287.86804100246,

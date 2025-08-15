@@ -1,6 +1,76 @@
 [
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "111,112",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 10355.7455981674,
+    "total_impact": 3378648.11477085
+  },
+  {
+    "purchased_commodity_code": "1111B0/US",
+    "sector_code": "111,112",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 1925.88804242836,
+    "total_impact": 480933.317494074
+  },
+  {
+    "purchased_commodity_code": "311119/US",
+    "sector_code": "111,112",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 1490.06738344408,
+    "total_impact": 237037.977900536
+  },
+  {
+    "purchased_commodity_code": "1111A0/US",
+    "sector_code": "111,112",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 1252.77580108319,
+    "total_impact": 151498.293250617
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "111,112",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 605.473766092107,
+    "total_impact": 176181.821168997
+  },
+  {
+    "purchased_commodity_code": "112300/US",
+    "sector_code": "111,112",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 498.242425934386,
+    "total_impact": 68175.5487397523
+  },
+  {
+    "purchased_commodity_code": "111900/US",
+    "sector_code": "111,112",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 369.141362000349,
+    "total_impact": 90097.248762224
+  },
+  {
+    "purchased_commodity_code": "115000/US",
+    "sector_code": "111,112",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 368.693425325757,
+    "total_impact": 120289.295888625
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "111,112",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 232.957594349171,
+    "total_impact": 76004.3523190322
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "111,112",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 1644.87549955695,
+    "total_impact": 368435.136217859
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "1111A0/US",
     "indicator": "Criteria Air Pollutants",
     "impact_per_purchase": 20602.8838147313,

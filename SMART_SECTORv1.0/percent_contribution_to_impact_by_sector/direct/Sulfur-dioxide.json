@@ -1,5 +1,75 @@
 [
   {
+    "sector": "111,112",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 18264.6799363118,
+    "contribution": 0.372420037276788
+  },
+  {
+    "sector": "111,112",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 10394.0049387863,
+    "contribution": 0.21193558935912
+  },
+  {
+    "sector": "111,112",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 8296.95176546956,
+    "contribution": 0.16917630621256
+  },
+  {
+    "sector": "111,112",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 6291.41242404645,
+    "contribution": 0.128283006198693
+  },
+  {
+    "sector": "111,112",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 4001.34457801436,
+    "contribution": 0.0815881199176545
+  },
+  {
+    "sector": "111,112",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 593.847821981994,
+    "contribution": 0.0121086615681443
+  },
+  {
+    "sector": "111,112",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 533.074463126002,
+    "contribution": 0.0108694820889798
+  },
+  {
+    "sector": "111,112",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 439.538640997753,
+    "contribution": 0.00896227021966787
+  },
+  {
+    "sector": "111,112",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 227.585281025598,
+    "contribution": 0.00464050392006578
+  },
+  {
+    "sector": "111,112",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.785831293396329,
+    "contribution": 1.60232383266731e-05
+  },
+  {
     "sector": "1111A0/US",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Manufacturing",

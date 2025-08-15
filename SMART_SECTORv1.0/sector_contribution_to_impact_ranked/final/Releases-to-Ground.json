@@ -1,6 +1,76 @@
 [
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "111,112",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 1.66957142394146,
+    "total_impact": 91.2674179234245
+  },
+  {
+    "purchased_commodity_code": "311119/US",
+    "sector_code": "111,112",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 4.36779218656632,
+    "total_impact": 694.82269009903
+  },
+  {
+    "purchased_commodity_code": "335911/US",
+    "sector_code": "111,112",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 4.29061074785321,
+    "total_impact": 1163.81516675079
+  },
+  {
+    "purchased_commodity_code": "325310/US",
+    "sector_code": "111,112",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 2.61919626710877,
+    "total_impact": 618.05282596271
+  },
+  {
+    "purchased_commodity_code": "1111B0/US",
+    "sector_code": "111,112",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 1.51825406302471,
+    "total_impact": 379.138842571889
+  },
+  {
+    "purchased_commodity_code": "325320/US",
+    "sector_code": "111,112",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 1.2522307337473,
+    "total_impact": 408.550689829823
+  },
+  {
+    "purchased_commodity_code": "332600/US",
+    "sector_code": "111,112",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 1.20805880590739,
+    "total_impact": 124.403724987076
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "111,112",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 1.07642111894137,
+    "total_impact": 313.218910051028
+  },
+  {
+    "purchased_commodity_code": "112300/US",
+    "sector_code": "111,112",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.966352299596933,
+    "total_impact": 132.227997600546
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "111,112",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 8.31920631496227,
+    "total_impact": 1985.94293960565
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "1111A0/US",
     "indicator": "Releases to Ground",
     "impact_per_purchase": 2.78118601407915,
