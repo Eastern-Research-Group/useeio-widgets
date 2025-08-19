@@ -10,12 +10,14 @@
 
 <body>
     <h1 id="graphTitle" class="text-center">Top 10 Sectors Based on Total Embodied Impacts</h1>
-	<p id="graphParagraph">This chart presents the top 10 sectors ranked on total embodied impacts from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain.</p>
+    <p id="graphParagraph">This chart presents the top 10 sectors ranked on total embodied impacts from contributions
+        from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all
+        other sectors in the supply chain.</p>
     <!-- default title is for GHGs and 10 sectors -->
     <div style=" display: flex; flex-direction: column;height: 85vh;">
         <div style=" flex-grow: 1;">
-                    <div id="smart-sector-eeio">
-                    </div>
+            <div id="smart-sector-eeio">
+            </div>
         </div>
         <div style=" flex-grow: 1;">
             <div style=" display: flex; flex-direction: row;">
@@ -27,62 +29,97 @@
                 <div style=" margin-left: 20px;flex-grow: 1;">
                     <label for="allocation-selected">Results Perspective:</label>
                     <br>
-                    <input type="radio" name="myRadios" value="final" checked/> Point of Consumption
+                    <input type="radio" name="myRadios" value="final" checked /> Point of Consumption
                     <input type="radio" name="myRadios" value="direct" /> Supply Chain
                 </div>
                 <div style=" margin-left: 20px;flex-grow: 1;">
                     <label for="grap-selected">Sector Filter: </label>
                     <br>
-                    <select id="mySelect" onchange="toggleNumSelection(this.value)">
+                    <select id="mySelect" onchange="toggleNumSelection(this)">
                         <option data-value='{"name":"total_rank","num":"10"}'>Top 10 Total Embodied Impacts</option>
                         <option data-value='{"name":"total_rank","num":"25"}'>Top 25 Total Embodied Impacts</opion>
-                        <option data-value='{"name":"intensity_rank","num":"10"}'>Top 10 Embodied Impact Intensity</option>
-                        <option data-value='{"name":"intensity_rank","num":"25"}'>Top 25 Embodied Impact Intensity</option>
-                        <option data-value='{"name":"construction_materials"}'>Select Construction Material Manufacturing Sectors</option>
+                        <option data-value='{"name":"intensity_rank","num":"10"}'>Top 10 Embodied Impact Intensity
+                        </option>
+                        <option data-value='{"name":"intensity_rank","num":"25"}'>Top 25 Embodied Impact Intensity
+                        </option>
+                        <option data-value='{"name":"construction_materials"}'>Select Construction Material
+                            Manufacturing Sectors</option>
                         <option data-value='{"name":"energy_intensive"}'>Energy Intensive Sectors</option>
+                        <option data-value='{"name":"open-modal"}'>Custom Sector List</option>
                         <!-- <option data-value='{"name":"sector_snapshots"}'>Select EPA Smart Sectors</option> -->
                     </select>
+                </div>
+
+                <!-- Modal -->
+                <div id="customModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <h3 id="modalTitle">Custom Sector List</h3>
+                        <div id="scrollContainer">
+                            <div id="selectedSectorsContainer" style="margin: bottom 0.6em;"></div>
+                        </div>
+                        <!-- Custom Dropdown -->
+                        <input type="text" id="sectorFilterInput" placeholder="Filter by code or name"
+                            oninput="filterDropdown()"
+                            style="width: 50%; margin-bottom: .6em; padding: .5em; border-radius:.1em; border:1px solid #ccc;">
+                        <div class="custom-dropdown">
+                            <button id="dropdownBtn" class="dropdown-btn" onclick="toggleDropdown()"> <span
+                                    class="btn-text">Select Sector</span>
+                                <span class="btn-arrow">▼</span></button>
+                            <div id="dropdownList" class="dropdown-list"></div>
+                        </div>
+                        <br><br>
+                        <div style="display: flex; justify-content: flex-end; margin-left: 10px; gap: 10px;">
+                            <button onclick="resetList()">Reset</button>
+                            <button onclick="saveCustomSelection()">Run Calculations</button>
+                        </div>
+                    </div>
                 </div>
 
                 <div style=" margin-left: 20px;flex-grow: 1;">
                     <label for="impact-selected">Select Result View:</label>
                     <br>
-                    <input type="radio" name="impactRadio" value="total_impact" checked/> Total Impact
+                    <input type="radio" name="impactRadio" value="total_impact" checked /> Total Impact
                     <input type="radio" name="impactRadio" value="impact_per_purchase" /> Impact Intensity
                 </div>
                 <div style=" margin-left: 20px;flex-grow: 1;">
                     <label for="group-selected">Level of Detail:</label>
                     <br>
-                    <input type="radio" name="groupRadio" value="group_detail" checked/> Detailed
+                    <input type="radio" name="groupRadio" value="group_detail" checked /> Detailed
                     <input type="radio" name="groupRadio" value="group_summary" /> Simple
                     <!-- <input type="radio" name="groupRadio" value="group_direct" /> Direct vs Indirect -->
                 </div>
 
                 <div style=" margin-left: 20px;width: 200px;">
-                    See more info about the 
+                    See more info about the
                     <a href="./sector-info-table.html" target="_blank">
-                    sectors BEA/NAICS Codes</a>.
+                        sectors BEA/NAICS Codes</a>.
                 </div>
+            </div>
         </div>
-        </div>
-        
+
     </div>
-    
-   
+
+
 
     <script src="lib/apexcharts.min.js"></script>
     <script src="lib/useeio_widgets.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
-<script  type="text/javascript"> 
+    <script type="text/javascript" type="module">
         var perspectiveName = 'final';
         var graphType = 'Acidification-Potential';
         var topSectors = 10;
         var groupSelector = 'group_detail';
         var impactSelector = 'total_impact';
+        var otherSelector = ""
+        var selectorName = "total_rank";
         var config = useeio.urlConfig();
         var modelID = config.get().model || 'SMART_SECTORv1.0';
-
+        let lastSelectedIndex = null;
+        let allSectors = []
+        let selectedSectors = []
+        let modalOpen = false;
         var model = useeio.model({
             endpoint: './api',
             model: modelID,
@@ -94,98 +131,159 @@
             endpoint: './api',
             selector: '#smart-sector-eeio',
         });
-        smartSectorChart.init(graphType);
 
-    function changeGraph(t)
-            {
-                smartSectorChart.selectiveGraph(t,perspectiveName);
-                graphType = t;
+        function toggleDropdown() {
+            const list = document.getElementById("dropdownList");
+            list.style.display = list.style.display === "block" ? "none" : "block";
+        }
+
+        function updateModalTitle() {
+            const title = document.getElementById("modalTitle");
+            const count = selectedSectors.length;
+            if (count > 0) {
+                title.textContent = `Select Custom Option: (${count})`;
             }
-    
-    function changeGroup()
-            {
-                smartSectorChart.selectiveGraph(graphType,perspectiveName,topSectors,impactSelector,groupSelector);
+            else {
+                title.textContent = `Select Custom Option`;
             }
+        }
 
-    function changeImpactSelector(impactSelectorValue = null)
-            {
-                impactSelector = impactSelectorValue ?? impactSelector;
-                if(impactSelectorValue !== null)
-                {
-                    selectRadio(impactSelectorValue)
-                }
-                smartSectorChart.selectiveGraph(graphType,perspectiveName,topSectors,impactSelector,groupSelector);
+        function filterDropdown() {
+            const filterValue = document.getElementById("sectorFilterInput").value.toLowerCase();
+
+            const filtered = allSectors.filter(sec =>
+                sec?.code.toLowerCase().includes(filterValue) ||
+                sec?.name.toLowerCase().includes(filterValue)
+
+            );
+
+            populateDropdown(filtered);
+        }
+
+        async function getSectors() {
+            allSectors = await smartSectorChart.init(graphType);
+            populateDropdown(allSectors)
+        }
+
+        getSectors();
+
+        function populateDropdown(sectors) {
+
+            const list = document.getElementById("dropdownList");
+            list.innerHTML = ""; // Clear old options
+
+            sectors.forEach(sec => {
+                const item = document.createElement("div");
+                item.className = "dropdown-item";
+                item.textContent = sec?.code + " - " + sec?.name;
+                item.onclick = () => {
+                    if (!selectedSectors.includes(sec)) {
+                        selectedSectors.push(sec);
+                        displaySelectedSector(sec);
+                    }
+                };
+                list.appendChild(item);
+            });
+        }
+
+        function displaySelectedSector(sec) {
+            const container = document.getElementById("selectedSectorsContainer");
+
+            const sectorDiv = document.createElement("div");
+            sectorDiv.style.padding = "4px 8px";
+            sectorDiv.style.border = "1px solid #ccc";
+            sectorDiv.style.borderRadius = ".4em";
+            sectorDiv.style.marginBottom = ".4em";
+            sectorDiv.style.background = "#f0f0f0";
+            sectorDiv.style.display = "flex";
+            sectorDiv.style.justifyContent = "space-between";
+            sectorDiv.style.alignItems = "center";
+
+            const textSpan = document.createElement("span");
+            textSpan.textContent = sec?.code + "  " + sec?.name;
+
+            const removeBtn = document.createElement("span");
+            removeBtn.textContent = "×";
+            removeBtn.style.cursor = "pointer";
+            removeBtn.style.marginLeft = ".7em";
+            removeBtn.style.color = "red";
+            removeBtn.onclick = () => {
+                // Remove from array
+                selectedSectors = selectedSectors.filter(s => s !== sec);
+                // Remove from DOM
+                container.removeChild(sectorDiv);
+                updateModalTitle()
+            };
+
+            sectorDiv.appendChild(textSpan);
+            sectorDiv.appendChild(removeBtn);
+
+            // Add new selection
+            container.prepend(sectorDiv);
+            updateModalTitle()
+        }
+
+        function changeGraph(t) {
+            smartSectorChart.selectiveGraph(t, perspectiveName, null, null, null, selectorName, selectedSectors, modalOpen);
+            graphType = t;
+        }
+
+        function changeGroup() {
+            smartSectorChart.selectiveGraph(graphType, perspectiveName, topSectors, impactSelector, groupSelector, selectorName, selectedSectors, modalOpen);
+        }
+
+        function changeImpactSelector(impactSelectorValue = null) {
+            impactSelector = impactSelectorValue ?? impactSelector;
+            if (impactSelectorValue !== null) {
+                selectRadio(impactSelectorValue)
             }
+            smartSectorChart.selectiveGraph(graphType, perspectiveName, topSectors, impactSelector, groupSelector, selectorName, selectedSectors, modalOpen);
+        }
 
-    
 
-            document.addEventListener('input',(e)=>{
-                if(e.target.getAttribute('name')=="myRadios")
-                {
-                    perspectiveName = e.target.value
-                    changeGraph(graphType);
 
-                }
-            })
+        document.addEventListener('input', (e) => {
+            if (e.target.getAttribute('name') == "myRadios") {
+                perspectiveName = e.target.value
+                changeGraph(graphType);
 
-            document.addEventListener('input',(e)=>{
-                if(e.target.getAttribute('name')=="impactRadio")
-                {
-                    impactSelector = e.target.value
+            }
+        })
+
+        document.addEventListener('input', (e) => {
+            if (e.target.getAttribute('name') == "impactRadio") {
+                impactSelector = e.target.value
                 changeTitleAndParagraph()
                 changeImpactSelector();
 
-                }
-            })
+            }
+        })
 
-            document.addEventListener('input',(e)=>{
-                if(e.target.getAttribute('name')=="groupRadio")
-                {
-                    groupSelector = e.target.value
-                    changeGroup();
-                }
-            })
+        document.addEventListener('input', (e) => {
+            if (e.target.getAttribute('name') == "groupRadio") {
+                groupSelector = e.target.value
+                changeGroup();
+            }
+        })
 
-            function selectRadio(value) {
-                const radios = document.getElementsByName('impactRadio');
-                
-                for (const radio of radios) {
-                    if (radio.value === value) {
-                        radio.checked = true;  // Set the matching radio button as checked
-                    } else {
-                        radio.checked = false;  // Uncheck the other radio buttons
-                    }
+        function selectRadio(value) {
+            const radios = document.getElementsByName('impactRadio');
+
+            for (const radio of radios) {
+                if (radio.value === value) {
+                    radio.checked = true;  // Set the matching radio button as checked
+                } else {
+                    radio.checked = false;  // Uncheck the other radio buttons
                 }
             }
+        }
 
-            function changeTitleAndParagraph(impactSelectorValue = null){
-                impactSelector = impactSelectorValue ?? impactSelector;
-                var name = ""
-                var paragraph =""
-                switch(impactSelector) {
-                    case "total_impact":
-                        if(topSectors == 10){
-                            name = "Top 10 Sectors Based on Total Embodied Impacts";
-                            paragraph = "This chart presents the top 10 sectors ranked on total embodied impacts from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."  
-                        }
-                        else
-                        {
-                            name = "Top 25 Sectors Based on Total Embodied Impacts";
-                            paragraph = "This chart presents the top 25 sectors ranked on total embodied impacts from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
-                        }
-                        break;
-                    case "impact_per_purchase":
-                        if(topSectors == 10)
-                        {
-                            name = "Top 10 Sectors Based on Embodied Impact Intensity";
-                            paragraph = "This chart presents the top 10 sectors ranked on total embodied impact intensity from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
-                        }
-                        else
-                        {
-                            name = "Top 25 Sectors Based on Embodied Impact Intensity";
-                            paragraph = "This chart presents the top 25 sectors ranked on total embodied impact intensity from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
-                        }
-                        break;
+        function changeTitleAndParagraph(impactSelectorValue = null) {
+            impactSelector = impactSelectorValue ?? impactSelector;
+            var name = ""
+            var paragraph = ""
+            if (otherSelector !== "") {
+                switch (otherSelector) {
                     case "select_sectors_construction":
                         name = "Select Sectors for Construction Materials";
                         paragraph = "This chart presents select sectors for construction materials ranked on embodied impacts from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
@@ -198,66 +296,155 @@
                         name = "Select EPA Smart Sectors";
                         paragraph = "This chart presents select EPA Smart Sectors ranked on embodied impacts from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
                         break;
+                    case "custom_sector_list":
+                        if (impactSelector == "total_impact") {
+                            name = "Sectors Based on Total Embodied Impacts";
+                            paragraph = "This chart presents the sectors ranked on total embodied impacts from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
+                        }
+                        else if (impactSelector == "impact_per_purchase") {
+                            name = "Sectors Based on Embodied Impact Intensity";
+                            paragraph = "This chart presents the sectors ranked on total embodied impact intensity from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
+                        }
+                        break;
                 }
-                document.getElementById("graphTitle").innerHTML = `${name}`; 
-                document.getElementById("graphParagraph").innerHTML = `${paragraph}`; 
             }
+            else {
+                switch (impactSelector) {
+                    case "total_impact":
+                        if (topSectors == 10) {
+                            name = "Top 10 Sectors Based on Total Embodied Impacts";
+                            paragraph = "This chart presents the top 10 sectors ranked on total embodied impacts from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
+                        }
+                        else {
+                            name = "Top 25 Sectors Based on Total Embodied Impacts";
+                            paragraph = "This chart presents the top 25 sectors ranked on total embodied impacts from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
+                        }
+                        break;
+                    case "impact_per_purchase":
+                        if (topSectors == 10) {
+                            name = "Top 10 Sectors Based on Embodied Impact Intensity";
+                            paragraph = "This chart presents the top 10 sectors ranked on total embodied impact intensity from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
+                        }
+                        else {
+                            name = "Top 25 Sectors Based on Embodied Impact Intensity";
+                            paragraph = "This chart presents the top 25 sectors ranked on total embodied impact intensity from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
+                        }
+                        break;
+                }
+            }
+            document.getElementById("graphTitle").innerHTML = `${name}`;
+            document.getElementById("graphParagraph").innerHTML = `${paragraph}`;
+        }
 
-            function toggleNumSelection(n)
-            {
-                smartSectorChart.selectorFilter($('#mySelect').find(":selected").data("value"),n);
-                if($('#mySelect').find(":selected").data("value").num !== undefined || $('#mySelect').find(":selected").data("value").num !== null){
+        function toggleNumSelection(selectElement) {
+            const selectedOption = selectElement.options[selectElement.selectedIndex];
+            const dataValue = selectedOption.getAttribute("data-value");
+            const n = selectElement.value
+            const parsed = JSON.parse(dataValue);
+            if (parsed.name !== 'open-modal') {
+                modalOpen = false;
+                if ($('#mySelect').find(":selected").data("value").num !== undefined || $('#mySelect').find(":selected").data("value").num !== null) {
                     topSectors = $('#mySelect').find(":selected").data("value").num;
                 }
-                
-                switch(n) {
-                    case "Top 10 Total Embodied Impacts":
+
+                selectElement.selectedIndexBeforeModal = selectElement.selectedIndex;
+            }
+
+            smartSectorChart.updateFileNameTitle(n)
+
+
+            const modal = document.getElementById("customModal");
+            if (modal.style.display === "block") {
+                modal.style.display = "none";
+            }
+
+
+            switch (parsed.name) {
+                case "total_rank":
+                    selectorName = parsed.name
+                    otherSelector = ""
                     changeImpactSelector("total_impact")
                     changeTitleAndParagraph("total_impact")
                     break;
-                    case "Top 25 Total Embodied Impacts":
-                    changeImpactSelector("total_impact")
-                    changeTitleAndParagraph("total_impact")
-                    break;
-
-                    case "Top 10 Embodied Impact Intensity":
+                case "intensity_rank":
+                    selectorName = parsed.name
+                    otherSelector = ""
                     changeImpactSelector("impact_per_purchase")
                     changeTitleAndParagraph("impact_per_purchase")
                     break;
-                    case "Top 25 Embodied Impact Intensity":
-                    changeImpactSelector("impact_per_purchase")
-                    changeTitleAndParagraph("impact_per_purchase")
-                    break;
-                    // Other Select Sectors
-                    case "Select Construction Material Manufacturing Sectors": 
-                    changeTitleAndParagraph("select_sectors_construction")
-                    break;
-                    case "Energy Intensive Sectors": 
-                    changeTitleAndParagraph("select_sectors_energy")
-                    break;
-                    case "Select EPA Smart Sectors":
-                    changeTitleAndParagraph("select_sector_snapshots")
-                    break;
-                }
+                case "construction_materials":
+                case "energy_intensive":
+                case "snapshots":
+                    selectorName = parsed.name
+                    if (parsed.name == "construction_materials") {
+                        otherSelector = "select_sectors_construction"
+                        changeTitleAndParagraph("select_sectors_construction")
+                    }
+                    else if (parsed.name == "energy_intensive") {
+                        otherSelector = "select_sectors_energy"
+                        changeTitleAndParagraph("select_sectors_energy")
 
-           }
+                    }
+                    else if (parsed.name == "select_sector_snapshots") {
+                        otherSelector = "sector_snapshots"
+                        changeTitleAndParagraph("sector_snapshots")
 
-           const fileNames = [
-                "Acidification-Potential",
-                "Eutrophication-Potential",
-                "Freshwater-withdrawals",
-                // "GWP-AR6-20",
-                "GWP-AR6-100",
-                "Human-Health---Respiratory-Effects",
-                "Jobs-Supported",
-                "Ozone-Depletion",
-                "Smog-Formation-Potential",
-                // "Value-Added",
-                // "Commercial-RCRA-Hazardous-Waste"
-            ];
+                    }
+                    smartSectorChart.selectorFilter($('#mySelect').find(":selected").data("value"), n);
+                    break;
+                case "open-modal":
+                    document.getElementById("customModal").style.display = "block"
+                    lastSelectedIndex = selectElement.selectedIndexBeforeModal
+                    break;
+            }
 
-            function getLabel(file) {
-                const labels = {
+        }
+
+        function closeModal() {
+            const list = document.getElementById("dropdownList");
+            document.getElementById("customModal").style.display = "none";
+            list.style.display = "none";
+            const select = document.getElementById("mySelect");
+
+            if (lastSelectedIndex !== null && selectedSectors.length <= 0) {
+                select.selectedIndex = lastSelectedIndex;
+            }
+        }
+
+        function saveCustomSelection() {
+            modalOpen = true
+            if (selectedSectors.length > 0) {
+                otherSelector = "custom_sector_list"
+                changeTitleAndParagraph()
+                smartSectorChart.selectiveGraph(graphType, perspectiveName, null, impactSelector, groupSelector, selectorName, selectedSectors, modalOpen);
+
+            }
+            closeModal();
+        }
+
+        function resetList() {
+            const container = document.getElementById("selectedSectorsContainer");
+            container.innerHTML = ""
+            selectedSectors = []
+            updateModalTitle()
+        }
+
+        const fileNames = [
+            "Acidification-Potential",
+            "Eutrophication-Potential",
+            "Freshwater-withdrawals",
+            // "GWP-AR6-20",
+            "GWP-AR6-100",
+            "Human-Health---Respiratory-Effects",
+            "Jobs-Supported",
+            "Ozone-Depletion",
+            "Smog-Formation-Potential",
+            // "Value-Added",
+            // "Commercial-RCRA-Hazardous-Waste"
+        ];
+
+        function getLabel(file) {
+            const labels = {
                 // "GWP-AR6-20": "CO2e based on 20yr GWP",
                 "GWP-AR6-100": "Global Warming Potential (CO2e)",
                 "Acidification-Potential": "Acidification Potential (SO2 eq)",
@@ -269,20 +456,20 @@
                 "Smog-Formation-Potential": "Smog Formation Potential (O3 eq)",
                 // "Value-Added": "Value Added ($)"
                 // "Commercial-RCRA-Hazardous-Waste': "Commercial Hazardous Waste (kg)"
-                };
-                return labels[file] || file.replace(/-+/g, ' ').trim();;
-            }
+            };
+            return labels[file] || file.replace(/-+/g, ' ').trim();;
+        }
 
-            const select = document.getElementById('my-select');
+        const select = document.getElementById('my-select');
 
-            fileNames.forEach(file => {
-                const option = document.createElement('option');
-                option.value = file;
-                option.textContent = getLabel(file);
-                if (file === 'Acidification-Potential') option.selected = true;
-                select.appendChild(option);
-            });
-        </script>
+        fileNames.forEach(file => {
+            const option = document.createElement('option');
+            option.value = file;
+            option.textContent = getLabel(file);
+            if (file === 'Acidification-Potential') option.selected = true;
+            select.appendChild(option);
+        });
+    </script>
 </body>
 
 </html>

@@ -84,7 +84,7 @@ export function SumSmartSectorTotal(
 
     // Find the first group with matching sectors
         const items = groupToSmartSectors.get('Direct');
-        if (items.length > 0) {
+        if (items?.length > 0) {
             groupIndicator = "Direct";
             items.forEach((v) => {
                 const impact = impactSelector === 'impact_per_purchase' 
