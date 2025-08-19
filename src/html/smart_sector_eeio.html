@@ -378,16 +378,16 @@
                     selectorName = parsed.name
                     if (parsed.name == "construction_materials") {
                         otherSelector = "select_sectors_construction"
-                        changeTitleAndParagraph("select_sectors_construction")
+                        changeTitleAndParagraph()
                     }
                     else if (parsed.name == "energy_intensive") {
                         otherSelector = "select_sectors_energy"
-                        changeTitleAndParagraph("select_sectors_energy")
+                        changeTitleAndParagraph()
 
                     }
                     else if (parsed.name == "select_sector_snapshots") {
                         otherSelector = "sector_snapshots"
-                        changeTitleAndParagraph("sector_snapshots")
+                        changeTitleAndParagraph()
 
                     }
                     smartSectorChart.selectorFilter($('#mySelect').find(":selected").data("value"), n);
@@ -406,7 +406,7 @@
             list.style.display = "none";
             const select = document.getElementById("mySelect");
 
-            if (lastSelectedIndex !== null && selectedSectors.length <= 0) {
+            if (lastSelectedIndex !== null) {
                 select.selectedIndex = lastSelectedIndex;
             }
         }
@@ -419,7 +419,10 @@
                 smartSectorChart.selectiveGraph(graphType, perspectiveName, null, impactSelector, groupSelector, selectorName, selectedSectors, modalOpen);
 
             }
-            closeModal();
+            const list = document.getElementById("dropdownList");
+            document.getElementById("customModal").style.display = "none";
+            list.style.display = "none";
+            const select = document.getElementById("mySelect");
         }
 
         function resetList() {
