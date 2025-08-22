@@ -3,21 +3,6 @@ import {SmartSector, SumSmartSectorTotalParts} from '../smartSectorChart/smartSe
 import { Sector } from "useeio";
 import {SectorMapping} from '../smartSectorWebApi.ts/webApiSmartSector';
 
-export const fileNames: string[] = [
-    "Acidification-Potential",
-    "Eutrophication-Potential",
-    "Freshwater-withdrawals",
-    // "GWP-AR6-20",
-    "GWP-AR6-100",
-    "Human-Health---Respiratory-Effects",
-    "Jobs-Supported",
-    "Ozone-Depletion",
-    "Smog-Formation-Potential",
-    // "Social-Cost-of-Carbon"
-    // "Value-Added"
-    // "Commercial-RCRA-Hazardous-Waste'
-  ];
-
 export function sortedSectorCodeList(sortTopTen:SumSmartSectorTotalParts[]): string[]{
     return sortTopTen.map((v) => {
         return v._sectorCode;

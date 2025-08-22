@@ -441,43 +441,12 @@
             updateModalTitle()
         }
 
-        const fileNames = [
-            "Acidification-Potential",
-            "Eutrophication-Potential",
-            "Freshwater-withdrawals",
-            // "GWP-AR6-20",
-            "GWP-AR6-100",
-            "Human-Health---Respiratory-Effects",
-            "Jobs-Supported",
-            "Ozone-Depletion",
-            "Smog-Formation-Potential",
-            // "Value-Added",
-            // "Commercial-RCRA-Hazardous-Waste"
-        ];
-
-        function getLabel(file) {
-            const labels = {
-                // "GWP-AR6-20": "CO2e based on 20yr GWP",
-                "GWP-AR6-100": "Global Warming Potential (CO2e)",
-                "Acidification-Potential": "Acidification Potential (SO2 eq)",
-                "Eutrophication-Potential": "Eutrophication Potential (N eq)",
-                "Freshwater-withdrawals": "Freshwater Withdrawals",
-                "Human-Health---Respiratory-Effects": "Human Health Respiratory Effects (PM2.5 eq)",
-                "Jobs-Supported": "Jobs Supported",
-                "Ozone-Depletion": "Ozone Depletion Potential (CFC eq)",
-                "Smog-Formation-Potential": "Smog Formation Potential (O3 eq)",
-                // "Value-Added": "Value Added ($)"
-                // "Commercial-RCRA-Hazardous-Waste': "Commercial Hazardous Waste (kg)"
-            };
-            return labels[file] || file.replace(/-+/g, ' ').trim();;
-        }
-
         const select = document.getElementById('my-select');
 
-        fileNames.forEach(file => {
+        smartSectorChart.getFilesNames().forEach(file => {
             const option = document.createElement('option');
             option.value = file;
-            option.textContent = getLabel(file);
+            option.textContent = smartSectorChart.getLabelFormat(file);
             if (file === 'Acidification-Potential') option.selected = true;
             select.appendChild(option);
         });

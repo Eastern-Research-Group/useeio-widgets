@@ -99,6 +99,7 @@ export function formatNumberGraph(value: number): string {
     }
 };
 
+//Use in the creation of cvs files and graphs
   const customLabels: Record<string, string> = {
     "GWP-AR6-100": "Global Warming Potential (CO2e)",
     // "GWP-AR6-20": "CO2e based on 20yr GWP",
@@ -118,3 +119,19 @@ export function formatNumberGraph(value: number): string {
 
     return filename.replace(/-+/g, " ").trim();
   };
+
+  //Use in the creation of cvs files and graphs
+  export const fileNames: string[] = [
+      "Acidification-Potential",
+      "Eutrophication-Potential",
+      "Freshwater-withdrawals",
+      // "GWP-AR6-20",
+      "GWP-AR6-100",
+      "Human-Health---Respiratory-Effects",
+      "Jobs-Supported",
+      "Ozone-Depletion",
+      "Smog-Formation-Potential",
+      // "Social-Cost-of-Carbon"
+      // "Value-Added"
+      // "Commercial-RCRA-Hazardous-Waste'
+    ]

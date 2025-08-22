@@ -5,8 +5,7 @@ import { PiePercentContribution } from "./piePercentContribution";
 import { PiePercentContributionDirectAndIndirect } from "./piePercentContributionDirectAndIndirect";
 import * as strings from "../util/strings";
 import { Widget } from "../widget";
-import { fileNames } from "../smartSectorCalc/smartSectorCalculations"
-
+import { fileNames } from "../util/util";
 import {
   modelOfSmartSector,
   WebModelSmartSector,
@@ -287,6 +286,7 @@ const Component = (props: { widget: PieListSearch }) => {
       whiteSpace: "normal",
       wordWrap: "break-word",
       width: "300px",
+      marginBottom: '1em',
       "@media (max-width:1256px)": {
         bottom: '0',
         right: '0',

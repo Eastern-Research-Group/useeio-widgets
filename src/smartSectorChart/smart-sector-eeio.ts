@@ -22,6 +22,9 @@ import { calculate } from "./toggleGraphs";
 import React from 'react';
 import ReactDOM from 'react-dom';
 import DownloadCSVButton, { DownloadCSVButtonProps } from "../util/downloadcsvfile";
+import { getLabel } from "../util";
+import { fileNames } from "../util/util";
+
 export interface SmartSectorChartConfig {
   model: WebModel;
   endpoint: string;
@@ -111,6 +114,14 @@ export class SmartSectorEEIO extends Widget {
     );
     this.chart.render();
     return this.sectorsList;
+  }
+
+  getLabelFormat(filename: string):string {
+    return getLabel(filename)
+  }
+
+  getFilesNames():string[] {
+    return fileNames
   }
 
   async selectiveGraph(

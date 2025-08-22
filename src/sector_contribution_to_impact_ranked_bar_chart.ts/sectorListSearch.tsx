@@ -20,7 +20,7 @@ import FormLabel from "@material-ui/core/FormLabel";
 import { SmartSectorChartConfigPie } from "../totalGhgEmissionPieChart.ts/pieListSearch";
 import { SmartSectorEEIOTotalImpactPerSector } from "./smart-sector-eeio-total-impacts";
 import { Menu, MenuItem, IconButton } from "@material-ui/core";
-import { fileNames } from "../smartSectorCalc/smartSectorCalculations";
+import { fileNames } from "../util/util";
 import DownloadCSVButton from "../util/downloadcsvfile";
 import { getLabel } from "../util/util"
 export interface SmartSectorChartConfigNormal {
