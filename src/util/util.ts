@@ -98,3 +98,23 @@ export function formatNumberGraph(value: number): string {
         return value.toFixed(2); 
     }
 };
+
+  const customLabels: Record<string, string> = {
+    "GWP-AR6-100": "Global Warming Potential (CO2e)",
+    // "GWP-AR6-20": "CO2e based on 20yr GWP",
+    "Acidification-Potential": "Acidification Potential (SO2 eq)",
+    "Eutrophication-Potential": "Eutrophication Potential (N eq)",
+    "Freshwater-withdrawals": "Freshwater Withdrawals",
+    "Human-Health---Respiratory-Effects":
+      "Human Health Respiratory Effects (PM2.5 eq)",
+    "Jobs-Supported": "Jobs Supported",
+    "Ozone-Depletion": "Ozone Depletion Potential (CFC eq)",
+    "Smog-Formation-Potential": "Smog Formation Potential (O3 eq)",
+    // "Value-Added": "Value Added ($)"
+  };
+
+  export const getLabel = (filename: string): string => {
+    if (customLabels[filename]) return customLabels[filename];
+
+    return filename.replace(/-+/g, " ").trim();
+  };

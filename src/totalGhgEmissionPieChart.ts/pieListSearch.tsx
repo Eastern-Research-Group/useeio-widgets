@@ -17,6 +17,8 @@ import InputLabel from "@material-ui/core/InputLabel";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import { Menu, MenuItem, IconButton } from "@material-ui/core";
+import DownloadCSVButton from "../util/downloadcsvfile";
+import { getLabel } from "../util/util"
 
 export interface SmartSectorChartConfigPie {
   modelOne: {
@@ -88,8 +90,8 @@ export class PieListSearch extends Widget {
   async update() {
     this.sectors = await this._chartConfig.model.sectors();
     this.modelSmartSectorApi.init();
-    this.piePercentContribution.init("Acidification-Potential",this.sectors[0].name);
-    this.piePercentContributionSectors.init("Acidification-Potential",this.sectors[0].name);
+    this.piePercentContribution.init("Acidification-Potential", this.sectors[0].name);
+    this.piePercentContributionSectors.init("Acidification-Potential", this.sectors[0].name);
     ReactDOM.render(
       <Component widget={this} />,
       document.querySelector(this._chartConfig.selector),
@@ -100,6 +102,7 @@ export class PieListSearch extends Widget {
 const Component = (props: { widget: PieListSearch }) => {
   const [searchTerm, setSearchTerm] = React.useState<string>("");
   const [value, setValue] = React.useState<string>("");
+  const [sectorId, setSectorId] = React.useState<string>("");
   const [title, setTitle] = React.useState<string>("");
   const [graph, setGraph] = React.useState<string>("Acidification-Potential");
   const [year, setYear] = React.useState<string>("100");
@@ -113,28 +116,6 @@ const Component = (props: { widget: PieListSearch }) => {
 
   const handleMenuClick = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
-  };
-
-  const customLabels: Record<string, string> = {
-    "GWP-AR6-100": "Global Warming Potential (CO2e)",
-    // "GWP-AR6-20": "CO2e based on 20yr GWP",
-    "Acidification-Potential": "Acidification Potential (SO2 eq)",
-    "Eutrophication-Potential": "Eutrophication Potential (N eq)",
-    "Freshwater-withdrawals": "Freshwater Withdrawals",
-    "Human-Health---Respiratory-Effects": "Human Health Respiratory Effects (PM2.5 eq)",
-    "Jobs-Supported": "Jobs Supported",
-    "Ozone-Depletion": "Ozone Depletion Potential (CFC eq)",
-    "Smog-Formation-Potential": "Smog Formation Potential (O3 eq)",
-    // "Value-Added": "Value Added ($)"
-    // "Commercial-RCRA-Hazardous-Waste': "Commercial Hazardous Waste (kg)"
-  };
-
-  const getLabel = (filename: string): string => {
-    if (customLabels[filename]) return customLabels[filename];
-
-    return filename
-      .replace(/-+/g, ' ')
-      .trim();
   };
 
   const handleMenuClose = (type?: string) => {
@@ -165,6 +146,7 @@ const Component = (props: { widget: PieListSearch }) => {
   React.useEffect(() => {
     setTitle(sectors[0].name + " (" + sectors[0].code + ")");
     setValue(sectors[0].name)
+    setSectorId(sectors[0].id)
   }, []);
 
   React.useEffect(() => {
@@ -204,6 +186,7 @@ const Component = (props: { widget: PieListSearch }) => {
 
     setSearchTerm("");
     setValue(e);
+    setSectorId((sectors.filter(t => t.code = c))?.[0].id)
     if (graphDetails === "Aggregate")
       props.widget.piePercentContribution.updateGraph(e, c);
     else props.widget.piePercentContributionSectors.updateGraph(e, c);
@@ -291,6 +274,25 @@ const Component = (props: { widget: PieListSearch }) => {
       border: "1px solid black",
       overflowY: "scroll",
     },
+    flexContainer: {
+      display: "flex",
+      flexDirection: "row",
+      flexWrap: "wrap",
+      "@media (max-width:1256px)": {
+        flexDirection: "column",
+      }
+    },
+    linkSectors: {
+      overflowWrap: "break-word",
+      whiteSpace: "normal",
+      wordWrap: "break-word",
+      width: "300px",
+      "@media (max-width:1256px)": {
+        bottom: '0',
+        right: '0',
+        width: '300px',
+      }
+    }
   }));
 
   const classes = useStyles();
@@ -304,12 +306,12 @@ const Component = (props: { widget: PieListSearch }) => {
       }}
     >
       {/* Update header with graph selected */}
-       <h1
+      <h1
         id="graphTitle"
         style={{
-          width: "100%",        
-          textAlign: "center",  
-          margin: "0 auto",     
+          width: "100%",
+          textAlign: "center",
+          margin: "0 auto",
         }}
       >
         Comparison of Direct and Indirect Supply Chain Impacts for {getLabel(graph)}
@@ -318,16 +320,18 @@ const Component = (props: { widget: PieListSearch }) => {
       <p id="paragraph" className="text-center">
         For the sector selected below, the chart shows the total and percentage impacts attributable to <em>Direct</em> impacts from facility operations and <em>Indirect</em> impacts embedded in the purchases made by the sector for {getLabel(graph)}.
       </p>
-
-      <div>
+      <div
+        className={classes.flexContainer}
+      >
         <div
           style={{
             display: "flex",
             flexDirection: "column",
             flexWrap: "wrap",
+            width: "50%"
           }}
         >
-          <FormControl className={classes.margin}>
+          <FormControl className={classes.margin} style={{ width: "min-content" }}>
             <TextField
               value={searchTerm}
               label="Search Sector"
@@ -362,7 +366,7 @@ const Component = (props: { widget: PieListSearch }) => {
               flexWrap: "wrap",
             }}
           >
-            <FormControl className={classes.margin}>
+            <FormControl className={classes.margin}  >
               <InputLabel id="demo-controlled-open-select-label">
                 Select perspective:
               </InputLabel>
@@ -379,7 +383,7 @@ const Component = (props: { widget: PieListSearch }) => {
                 <option value="direct">Supply Chain</option>
               </Select>
             </FormControl>
-            <FormControl className={classes.margin}>
+            <FormControl className={classes.margin} >
               <InputLabel id="demo-controlled-open-select-label">
                 Select Indicator:
               </InputLabel>
@@ -392,14 +396,14 @@ const Component = (props: { widget: PieListSearch }) => {
                   name: "graph",
                 }}
               >
-                 {fileNames.map((file) => (
-                          <option key={file} value={file}>
-                            {getLabel(file)}
-                          </option>
-                        ))}
+                {fileNames.map((file) => (
+                  <option key={file} value={file}>
+                    {getLabel(file)}
+                  </option>
+                ))}
               </Select>
             </FormControl>
-            <FormControl className={classes.margin}>
+            <FormControl className={classes.margin} >
               <InputLabel id="demo-controlled-open-select-label">
                 Level of Detail:
               </InputLabel>
@@ -417,18 +421,12 @@ const Component = (props: { widget: PieListSearch }) => {
                 <option value="Detail">Detailed</option>
               </Select>
             </FormControl>
+            <div > <DownloadCSVButton fileObjects={{ filename: graph, perspective: perspective, sector: sectorId }} /> </div>
+
+
           </div>
           <div
-            style={{
-              overflowWrap: "break-word",
-              whiteSpace: "normal",
-              wordWrap: "break-word",
-              textAlign: "center",
-              alignContent: "center",
-              width: "300px",
-              paddingBottom: "30px",
-              marginBottom: "15px",
-            }}
+            className={classes.linkSectors}
           >
             See more info about the{" "}
             <a href="./sector-info-table.html" target="_blank">
@@ -437,13 +435,13 @@ const Component = (props: { widget: PieListSearch }) => {
             .
           </div>
         </div>
-      </div>
 
-      <div>
         <div
           style={{
             display: "flex",
             flexDirection: "column",
+            flexWrap: "wrap"
+
           }}
         >
           {aggregate ? (
