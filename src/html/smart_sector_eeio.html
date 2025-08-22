@@ -89,7 +89,7 @@
                     <input type="radio" name="groupRadio" value="group_summary" /> Simple
                     <!-- <input type="radio" name="groupRadio" value="group_direct" /> Direct vs Indirect -->
                 </div>
-
+                <div id="smart-sector-eeio-graph"></div>
                 <div style=" margin-left: 20px;width: 200px;">
                     See more info about the
                     <a href="./sector-info-table.html" target="_blank">
@@ -127,9 +127,15 @@
         });
 
         var smartSectorChart = useeio.smartSectorChart({
-            model: model,
-            endpoint: './api',
-            selector: '#smart-sector-eeio',
+            modelOne: {
+                model: model,
+                endpoint: './api',
+                selector: '#smart-sector-eeio',
+            }, modelTwo: {
+                model: model,
+                endpoint: './api',
+                selector: '#smart-sector-eeio-graph',
+            }
         });
 
         function toggleDropdown() {
@@ -305,6 +311,7 @@
                             name = "Sectors Based on Embodied Impact Intensity";
                             paragraph = "This chart presents the sectors ranked on total embodied impact intensity from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
                         }
+                        smartSectorChart.updateFileNameTitle(name)
                         break;
                 }
             }
@@ -319,6 +326,7 @@
                             name = "Top 25 Sectors Based on Total Embodied Impacts";
                             paragraph = "This chart presents the top 25 sectors ranked on total embodied impacts from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
                         }
+                        smartSectorChart.updateFileNameTitle(name)
                         break;
                     case "impact_per_purchase":
                         if (topSectors == 10) {
@@ -329,6 +337,7 @@
                             name = "Top 25 Sectors Based on Embodied Impact Intensity";
                             paragraph = "This chart presents the top 25 sectors ranked on total embodied impact intensity from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
                         }
+                        smartSectorChart.updateFileNameTitle(name)
                         break;
                 }
             }

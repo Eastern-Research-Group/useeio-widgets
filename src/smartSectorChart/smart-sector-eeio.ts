@@ -17,8 +17,11 @@ import {
   SmartSector,
   SumSmartSectorTotalParts,
 } from "../smartSectorChart/smartSector";
+import { SmartSectorChartConfigPie } from "../totalGhgEmissionPieChart.ts/pieListSearch";
 import { calculate } from "./toggleGraphs";
-
+import React from 'react';
+import ReactDOM from 'react-dom';
+import DownloadCSVButton, { DownloadCSVButtonProps } from "../util/downloadcsvfile";
 export interface SmartSectorChartConfig {
   model: WebModel;
   endpoint: string;
@@ -41,11 +44,11 @@ export class SmartSectorEEIO extends Widget {
   fileNameTitle: string = "Top 10 Total Embodied Impacts"
   modalOpen: boolean = false;
 
-  constructor(private _chartConfig: SmartSectorChartConfig) {
+  constructor(private _chartConfig: SmartSectorChartConfigPie) {
     super();
     this.modelSmartSectorApi = modelOfSmartSector({
-      endpoint: this._chartConfig.endpoint as string,
-      model: this._chartConfig.model.id() as string,
+      endpoint: this._chartConfig.modelOne.endpoint as string,
+      model: this._chartConfig.modelOne.model.id() as string,
       asJsonFiles: true,
     });
   }
@@ -60,7 +63,7 @@ export class SmartSectorEEIO extends Widget {
     this.graphName = graphName;
     this.perspective = "final";
     this.selectorName = "total_rank";
-    this.sectorsList = await this._chartConfig.model.sectors();
+    this.sectorsList = await this._chartConfig.modelOne.model.sectors();
     const sectorMappingList: SectorMapping[] =
       await this.modelSmartSectorApi.sectorMapping();
     this.uniqueSortedMappingGroupNoDuplicates =
@@ -83,7 +86,7 @@ export class SmartSectorEEIO extends Widget {
     );
     const option = await calculate(
       options,
-      this._chartConfig.model,
+      this._chartConfig.modelOne.model,
       this.uniqueSortedMappingGroupNoDuplicates,
       nameWithNoSpace,
       this.toggleImpactSelection,
@@ -92,10 +95,20 @@ export class SmartSectorEEIO extends Widget {
       this.fileNameTitle
     );
     this.chart = new ApexCharts(
-      document.querySelector(this._chartConfig.selector),
+      document.querySelector(this._chartConfig.modelOne.selector),
       option,
     );
 
+    let fileObjects =
+    {
+      filename: graphName,
+      perspective: this.perspective,
+    }
+
+    ReactDOM.render(
+      React.createElement(DownloadCSVButton, { fileObjects }),
+      document.querySelector(this._chartConfig.modelTwo.selector)
+    );
     this.chart.render();
     return this.sectorsList;
   }
@@ -111,7 +124,7 @@ export class SmartSectorEEIO extends Widget {
     modal?: boolean
   ) {
 
-
+    let fileObjects
     this.modalOpen = modal;
     const selectNameOfSectors =
       selectorName != undefined || selectorName != null
@@ -125,11 +138,11 @@ export class SmartSectorEEIO extends Widget {
         : this.toggleNumSelection;
     this.toggleNumSelection = selectNumOfSectors;
 
-    const selectImpactSelector =
+    this.toggleImpactSelection =
       selectImpactSelection != undefined || selectImpactSelection != null
         ? selectImpactSelection
         : this.toggleImpactSelection;
-    this.toggleImpactSelection = selectImpactSelector;
+
 
     const selectGroupSelector =
       selectGroupSelection != undefined || selectGroupSelection != null
@@ -193,7 +206,7 @@ export class SmartSectorEEIO extends Widget {
 
     const option = await calculate(
       listOfStackGraph,
-      this._chartConfig.model,
+      this._chartConfig.modelOne.model,
       this.uniqueSortedMappingGroupNoDuplicates,
       nameWithNoSpace,
       this.toggleImpactSelection,
@@ -201,6 +214,25 @@ export class SmartSectorEEIO extends Widget {
       this.perspective,
       this.fileNameTitle
     );
+
+    if (this.modalOpen) {
+      fileObjects = {
+        filename: graphName,
+        perspective: this.perspective,
+        selectorList: selectedSectors.map(s => s.id),
+      }
+    }
+    else {
+      fileObjects = {
+        filename: graphName,
+        perspective: this.perspective,
+      }
+    }
+
+    ReactDOM.render(
+      React.createElement(DownloadCSVButton, { fileObjects }),
+      document.querySelector(this._chartConfig.modelTwo.selector)
+    )
 
     this.chart.updateOptions(option);
     this.chart.resetSeries();
@@ -237,7 +269,7 @@ export class SmartSectorEEIO extends Widget {
   ): Promise<SumSmartSectorTotalParts[]> {
     const sectorMappingList: SectorMapping[] =
       await modelSmartSector.sectorMapping();
-    const sectorsList: Sector[] = await this._chartConfig.model.sectors();
+    const sectorsList: Sector[] = await this._chartConfig.modelOne.model.sectors();
 
     const smartSectorMap = new Map<string, SmartSector>();
 
@@ -305,7 +337,6 @@ export class SmartSectorEEIO extends Widget {
       this.listSumSmartSectorTotalParts;
 
     if (this.modalOpen) {
-
       if (selectImpactSelection === "impact_per_purchase") {
 
         listOfStackGraph = listOfStackGraph.sort((a, b) => a._intensityRank - b._intensityRank);
