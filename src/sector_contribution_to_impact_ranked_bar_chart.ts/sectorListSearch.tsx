@@ -176,7 +176,7 @@ const Component = (props: { widget: SectorListSearch }) => {
     setTitle(e + " (" + c + ")");
     setSearchTerm("");
     setValue(e);
-    setSectorId((sectors.filter(t => t.code = c))?.[0].id)
+    setSectorId((sectors.filter(t => t.code === c))?.[0].id)
 
     if (changePrespective === "impact_per_purchase") {
       props.widget.smartSectorImpactPurchase.updateGraph(e, c);

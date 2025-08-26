@@ -185,7 +185,7 @@ const Component = (props: { widget: PieListSearch }) => {
 
     setSearchTerm("");
     setValue(e);
-    setSectorId((sectors.filter(t => t.code = c))?.[0].id)
+    setSectorId((sectors.filter(t => t.code === c))?.[0].id)
     if (graphDetails === "Aggregate")
       props.widget.piePercentContribution.updateGraph(e, c);
     else props.widget.piePercentContributionSectors.updateGraph(e, c);
