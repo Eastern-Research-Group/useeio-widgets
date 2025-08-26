@@ -364,11 +364,13 @@ export class SmartSectorEEIO extends Widget {
             (t) => t._constructionMaterials === 1,
           );
           break;
+        /*
         case "sector_snapshots":
           listOfStackGraph = listOfStackGraph.filter(
             (t) => t._sectorSnapshots === 1,
           );
           break;
+        */
         case "total_rank":
           listOfStackGraph = listOfStackGraph.sort((a, b) => a._totalRank - b._totalRank);
           break;
