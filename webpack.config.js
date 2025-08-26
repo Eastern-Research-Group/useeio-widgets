@@ -53,6 +53,7 @@ const config = {
                     to: buildDir + '/lib/apexcharts.css', 
                     toType: 'file'
                 },
+                { from: 'downloadCsvFiles/*.csv', to:path.resolve(__dirname, 'build/downloadCsvFiles','','[name][ext]')},
                 /*
                 // We compile React into the generated library but we could
                 // also reference it as an external dependency (see below). 

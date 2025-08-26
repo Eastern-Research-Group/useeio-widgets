@@ -17,7 +17,13 @@ import {
   SmartSector,
   SumSmartSectorTotalParts,
 } from "../smartSectorChart/smartSector";
+import { SmartSectorChartConfigPie } from "../totalGhgEmissionPieChart.ts/pieListSearch";
 import { calculate } from "./toggleGraphs";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import DownloadCSVButton, { DownloadCSVButtonProps } from "../util/downloadcsvfile";
+import { getLabel } from "../util";
+import { fileNames } from "../util/util";
 
 export interface SmartSectorChartConfig {
   model: WebModel;
@@ -27,6 +33,7 @@ export interface SmartSectorChartConfig {
 
 export class SmartSectorEEIO extends Widget {
   chart: ApexCharts;
+  sectorsList: Sector[];
   modelSmartSectorApi: WebModelSmartSector;
   uniqueSortedMappingGroupNoDuplicates: string[];
   toggleNumSelection: number;
@@ -37,20 +44,21 @@ export class SmartSectorEEIO extends Widget {
   graphName: string;
   selectorName: string;
   sectorContributionToImpact: SectorContributionToImpact[] = [];
-  fileNameTitle:string = "Top 10 Total Embodied Impacts"
+  fileNameTitle: string = "Top 10 Total Embodied Impacts"
+  modalOpen: boolean = false;
 
-  constructor(private _chartConfig: SmartSectorChartConfig) {
+  constructor(private _chartConfig: SmartSectorChartConfigPie) {
     super();
     this.modelSmartSectorApi = modelOfSmartSector({
-      endpoint: this._chartConfig.endpoint as string,
-      model: this._chartConfig.model.id() as string,
+      endpoint: this._chartConfig.modelOne.endpoint as string,
+      model: this._chartConfig.modelOne.model.id() as string,
       asJsonFiles: true,
     });
   }
 
-  async update() {}
+  async update() { }
 
-  async init(graphName: string) {
+  async init(graphName: string): Promise<Sector[]> {
     this.toggleNumSelection = 10;
     this.toggleGroupSelection = "group_detail";
     this.toggleImpactSelection = "total_impact";
@@ -58,6 +66,7 @@ export class SmartSectorEEIO extends Widget {
     this.graphName = graphName;
     this.perspective = "final";
     this.selectorName = "total_rank";
+    this.sectorsList = await this._chartConfig.modelOne.model.sectors();
     const sectorMappingList: SectorMapping[] =
       await this.modelSmartSectorApi.sectorMapping();
     this.uniqueSortedMappingGroupNoDuplicates =
@@ -80,7 +89,7 @@ export class SmartSectorEEIO extends Widget {
     );
     const option = await calculate(
       options,
-      this._chartConfig.model,
+      this._chartConfig.modelOne.model,
       this.uniqueSortedMappingGroupNoDuplicates,
       nameWithNoSpace,
       this.toggleImpactSelection,
@@ -89,11 +98,30 @@ export class SmartSectorEEIO extends Widget {
       this.fileNameTitle
     );
     this.chart = new ApexCharts(
-      document.querySelector(this._chartConfig.selector),
+      document.querySelector(this._chartConfig.modelOne.selector),
       option,
     );
 
+    let fileObjects =
+    {
+      filename: graphName,
+      perspective: this.perspective,
+    }
+
+    ReactDOM.render(
+      React.createElement(DownloadCSVButton, { fileObjects }),
+      document.querySelector(this._chartConfig.modelTwo.selector)
+    );
     this.chart.render();
+    return this.sectorsList;
+  }
+
+  getLabelFormat(filename: string):string {
+    return getLabel(filename)
+  }
+
+  getFilesNames():string[] {
+    return fileNames
   }
 
   async selectiveGraph(
@@ -102,18 +130,30 @@ export class SmartSectorEEIO extends Widget {
     selectNumSectors?: number,
     selectImpactSelection?: string,
     selectGroupSelection?: string,
+    selectorName?: string,
+    selectedSectors?: Sector[],
+    modal?: boolean
   ) {
+
+    let fileObjects
+    this.modalOpen = modal;
+    const selectNameOfSectors =
+      selectorName != undefined || selectorName != null
+        ? selectorName
+        : this.selectorName;
+    this.selectorName = selectNameOfSectors;
+
     const selectNumOfSectors =
       selectNumSectors != undefined || selectNumSectors != null
         ? selectNumSectors
         : this.toggleNumSelection;
     this.toggleNumSelection = selectNumOfSectors;
 
-    const selectImpactSelector =
+    this.toggleImpactSelection =
       selectImpactSelection != undefined || selectImpactSelection != null
         ? selectImpactSelection
         : this.toggleImpactSelection;
-    this.toggleImpactSelection = selectImpactSelector;
+
 
     const selectGroupSelector =
       selectGroupSelection != undefined || selectGroupSelection != null
@@ -148,19 +188,36 @@ export class SmartSectorEEIO extends Widget {
     }
 
     const nameWithNoSpace = graphName.replace(/-+/g, ' ').trim();
+    let listOfStackGraph
+    if (modal && selectSectorName.length > 0) {
+      let filteredSectors: SectorContributionToImpact[] = []
+      selectedSectors.forEach(s => {
+        filteredSectors.push(...this.sectorContributionToImpact.filter(t => t.sector_code === s.id))
+      });
 
-    const listOfStackGraph = await this.getValues(
-      this.sectorContributionToImpact,
-      this.modelSmartSectorApi,
-      nameWithNoSpace,
-      this.toggleNumSelection,
-      this.toggleImpactSelection,
-      this.toggleGroupSelection,
-    );
+      listOfStackGraph = await this.getValues(
+        filteredSectors,
+        this.modelSmartSectorApi,
+        nameWithNoSpace,
+        filteredSectors.length,
+        this.toggleImpactSelection,
+        this.toggleGroupSelection,
+      );
+    }
+    else {
+      listOfStackGraph = await this.getValues(
+        this.sectorContributionToImpact,
+        this.modelSmartSectorApi,
+        nameWithNoSpace,
+        this.toggleNumSelection,
+        this.toggleImpactSelection,
+        this.toggleGroupSelection,
+      );
+    }
 
     const option = await calculate(
       listOfStackGraph,
-      this._chartConfig.model,
+      this._chartConfig.modelOne.model,
       this.uniqueSortedMappingGroupNoDuplicates,
       nameWithNoSpace,
       this.toggleImpactSelection,
@@ -168,6 +225,25 @@ export class SmartSectorEEIO extends Widget {
       this.perspective,
       this.fileNameTitle
     );
+
+    if (this.modalOpen) {
+      fileObjects = {
+        filename: graphName,
+        perspective: this.perspective,
+        selectorList: selectedSectors.map(s => s.id),
+      }
+    }
+    else {
+      fileObjects = {
+        filename: graphName,
+        perspective: this.perspective,
+      }
+    }
+
+    ReactDOM.render(
+      React.createElement(DownloadCSVButton, { fileObjects }),
+      document.querySelector(this._chartConfig.modelTwo.selector)
+    )
 
     this.chart.updateOptions(option);
     this.chart.resetSeries();
@@ -204,7 +280,7 @@ export class SmartSectorEEIO extends Widget {
   ): Promise<SumSmartSectorTotalParts[]> {
     const sectorMappingList: SectorMapping[] =
       await modelSmartSector.sectorMapping();
-    const sectorsList: Sector[] = await this._chartConfig.model.sectors();
+    const sectorsList: Sector[] = await this._chartConfig.modelOne.model.sectors();
 
     const smartSectorMap = new Map<string, SmartSector>();
 
@@ -271,73 +347,59 @@ export class SmartSectorEEIO extends Widget {
     let listOfStackGraph: SumSmartSectorTotalParts[] =
       this.listSumSmartSectorTotalParts;
 
-    switch (this.selectorName) {
-      case "construction_materials":
-        listOfStackGraph = listOfStackGraph.filter(
-          (t) => t._constructionMaterials === 1,
-        );
-        break;
-      case "sector_snapshots":
-        listOfStackGraph = listOfStackGraph.filter(
-          (t) => t._sectorSnapshots === 1,
-        );
-        break;
-      case "total_rank":
-        listOfStackGraph.sort((a, b) => a._totalRank - b._totalRank);
-        break;
-      case "intensity_rank":
-        listOfStackGraph.sort((a, b) => a._intensityRank - b._intensityRank);
-        break;
-      case "energy_intensive":
-        listOfStackGraph = listOfStackGraph.filter(
-          (t) => t._energyIntensive === 1,
-        );
-        break;
+    if (this.modalOpen) {
+      if (selectImpactSelection === "impact_per_purchase") {
+
+        listOfStackGraph = listOfStackGraph.sort((a, b) => a._intensityRank - b._intensityRank);
+      }
+      else {
+
+        listOfStackGraph = listOfStackGraph.sort((a, b) => a._totalRank - b._totalRank);
+      }
+    }
+    else {
+      switch (this.selectorName) {
+        case "construction_materials":
+          listOfStackGraph = listOfStackGraph.filter(
+            (t) => t._constructionMaterials === 1,
+          );
+          break;
+        case "sector_snapshots":
+          listOfStackGraph = listOfStackGraph.filter(
+            (t) => t._sectorSnapshots === 1,
+          );
+          break;
+        case "total_rank":
+          listOfStackGraph = listOfStackGraph.sort((a, b) => a._totalRank - b._totalRank);
+          break;
+        case "intensity_rank":
+          listOfStackGraph = listOfStackGraph.sort((a, b) => a._intensityRank - b._intensityRank);
+          break;
+        case "energy_intensive":
+          listOfStackGraph = listOfStackGraph.filter(
+            (t) => t._energyIntensive === 1,
+          );
+          break;
+      }
     }
 
     return listOfStackGraph.filter((t) => t._model === "Detail");
   }
 
-  async selectorFilter(totalRankSelector: { name: string; num?: number, n:string },n:string) {
-    const nameWithNoSpace = this.graphName.replace(/-+/g, ' ').trim();
-
+  async updateFileNameTitle(n: string) {
     this.fileNameTitle = n;
-    const filteredResults: SumSmartSectorTotalParts[] =
-      this.listSumSmartSectorTotalParts.filter((t) => {
-        switch (totalRankSelector.name) {
-          case "construction_materials":
-            return t._constructionMaterials === 1;
-          case "sector_snapshots":
-            return t._sectorSnapshots === 1;
-          case "energy_intensive":
-            return t._energyIntensive === 1;
-          default:
-            return true;
-        }
-      });
+  }
 
-    if (totalRankSelector.name === "total_rank") {
-      filteredResults.sort((a, b) => a._totalRank - b._totalRank);
-    } else if (totalRankSelector.name === "intensity_rank") {
-      filteredResults.sort((a, b) => a._intensityRank - b._intensityRank);
-    }
-
-    this.selectorName = totalRankSelector.name;
-
-    this.toggleNumSelection = totalRankSelector.num ?? filteredResults.length;
-    const sortTopTen = filteredResults.slice(0, this.toggleNumSelection);
-    const option = await calculate(
-      sortTopTen,
-      this._chartConfig.model,
-      this.uniqueSortedMappingGroupNoDuplicates,
-      nameWithNoSpace,
+  async selectorFilter(totalRankSelector: { name: string; num?: number, n: string }, n: string) {
+    this.fileNameTitle = n;
+    this.selectiveGraph(
+      this.graphName,
+      this.perspective,
+      totalRankSelector.num,
       this.toggleImpactSelection,
       this.toggleGroupSelection,
-      this.perspective,
-      n
-    );
-
-    this.chart.updateOptions(option);
-    this.chart.resetSeries();
+      totalRankSelector.name,
+      [],
+      false);
   }
 }

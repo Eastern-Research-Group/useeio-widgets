@@ -12,7 +12,8 @@ h1 {
     font-size: 1.7em;
 }
 
-pre, code {
+pre,
+code {
     font-family: Consolas, 'Courier New', Courier, monospace;
     background-color: rgb(248, 249, 250);
     color: rgb(232, 62, 140);
@@ -68,6 +69,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
 /* 
 .io input[type="text"], .io input[type="search"], .io select {
     height: 30px;
@@ -212,43 +214,49 @@ a:hover {
 .sector-list .noborder {
     background-color: transparent;
 }
+
 .sector-list-table tbody td {
     position: relative;
-  }
-.sector-list-table_sorted-cell-top:after{
+}
+
+.sector-list-table_sorted-cell-top:after {
     top: -4px !important;
     border-top: 1px solid #333;
 }
+
 .sector-list-table_sorted-cell-bottom:after {
     bottom: -4px !important;
     border-bottom: 1px solid #333;
 }
+
 .sector-list-table_sorted-cell-side:after {
-  content: "";
-  position: absolute;
-  border-left: 1px solid #333;
-  border-right: 1px solid #333;
-  left: -1px;
-  bottom: 0px;
-  top: -2px;
-  width: 100%;
-  z-index: 1;
+    content: "";
+    position: absolute;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    left: -1px;
+    bottom: 0px;
+    top: -2px;
+    width: 100%;
+    z-index: 1;
 }
 
 .sector-list-table thead td:first-child {
     max-width: 400px;
 }
+
 .sector-list-table tbody td:first-child {
-    width:100%;
+    width: 100%;
     max-height: 30px;
     height: 30px;
     display: block;
     overflow: hidden;
     font-size: 12px;
 }
-.sector-list-table tbody td:first-child > div {
+
+.sector-list-table tbody td:first-child>div {
     overflow-x: scroll;
-    height:44px;
+    height: 44px;
     max-width: 400px;
 }
 
@@ -304,11 +312,14 @@ a:hover {
 
 .sector-list-table {
     width: 100%;
-    display:block;
+    display: block;
 }
+
 .ioColumnInside .sector-list-table {
-   overflow: auto; /* prevents overlap of right side */
+    overflow: auto;
+    /* prevents overlap of right side */
 }
+
 .sector-list-body a {
     text-decoration: none;
     color: none;
@@ -334,18 +345,22 @@ input[type="search" i] {
 }
 */
 .indicator-row {
-  height: auto;
+    height: auto;
 }
+
 .ioColumns {
-  width:100%;
-  overflow: hidden; /* Allows bottom padding to apply after float:left columns */
+    width: 100%;
+    overflow: hidden;
+    /* Allows bottom padding to apply after float:left columns */
 }
+
 .ioColumn {
-  width:33.33%;
-  float:left;
-  margin-bottom: 0px;
-  font-size: 12px;
+    width: 33.33%;
+    float: left;
+    margin-bottom: 0px;
+    font-size: 12px;
 }
+
 /*
 .full .ioColumn {
   width:100%;
@@ -355,24 +370,29 @@ input[type="search" i] {
 }
 */
 .ioColumnInside {
-  position: relative;
-  padding-left: 22px;
-  margin-right:30px;
-  border: 1px solid rgba(255,255,255,0);
+    position: relative;
+    padding-left: 22px;
+    margin-right: 30px;
+    border: 1px solid rgba(255, 255, 255, 0);
 }
+
 .ioColumnTitle {
-  font-size: 1.27em;
-  line-height: 1.3em;
-  margin-top: 20px;
-  margin-bottom: 16px;
+    font-size: 1.27em;
+    line-height: 1.3em;
+    margin-top: 20px;
+    margin-bottom: 16px;
 }
+
 @media (max-width:1200px) {
-  .ioColumn, .two .ioColumn {
-    width:100%;
-  }
-  .ioColumnInside {
-    margin-bottom:20px;
-  }
+
+    .ioColumn,
+    .two .ioColumn {
+        width: 100%;
+    }
+
+    .ioColumnInside {
+        margin-bottom: 20px;
+    }
 }
 
 .noborder {
@@ -544,4 +564,84 @@ th.io-sector-column-header>div {
 
 .span-12 {
     grid-column-end: span 12;
+}
+
+/* Modal background */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal content box */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-height: 70vh;
+}
+
+#scrollContainer {
+    overflow-y: auto;
+    max-height: 20vh;
+    padding-right: 4px;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.custom-dropdown {
+    position: relative;
+    width: 100%;
+}
+
+.dropdown-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: .4em;
+    background: #fff;
+    cursor: pointer;
+    padding: .5em;
+    width: 65%;
+}
+
+.dropdown-list {
+    display: none;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+    width: 70%;
+    z-index: 1000;
+    border-radius: 4px;
+}
+
+.dropdown-item {
+    padding: .5em;
+    white-space: normal;
+    word-wrap: break-word;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.dropdown-item:hover {
+    background: #eee;
 }

@@ -3,25 +3,6 @@ import {SmartSector, SumSmartSectorTotalParts} from '../smartSectorChart/smartSe
 import { Sector } from "useeio";
 import {SectorMapping} from '../smartSectorWebApi.ts/webApiSmartSector';
 
-export const fileNames: string[] = [
-    "Acidification-Potential",
-    "Eutrophication-Potential",
-    "Freshwater-withdrawals",
-    // "GWP-AR6-20",
-    "GWP-AR6-100",
-    "Human-Health---Respiratory-Effects",
-    "Jobs-Supported",
-    "Ozone-Depletion",
-    "Smog-Formation-Potential",
-    // "Social-Cost-of-Carbon"
-    // "Value-Added"
-    "Commercial-RCRA-Hazardous-Waste",
-    "Criteria-Air-Pollutants",
-    "Releases-to-Ground",
-    "Carbon-monoxide",
-    "Sulfur-dioxide",
-  ];
-
 export function sortedSectorCodeList(sortTopTen:SumSmartSectorTotalParts[]): string[]{
     return sortTopTen.map((v) => {
         return v._sectorCode;
@@ -88,7 +69,7 @@ export function SumSmartSectorTotal(
 
     // Find the first group with matching sectors
         const items = groupToSmartSectors.get('Direct');
-        if (items.length > 0) {
+        if (items?.length > 0) {
             groupIndicator = "Direct";
             items.forEach((v) => {
                 const impact = impactSelector === 'impact_per_purchase' 

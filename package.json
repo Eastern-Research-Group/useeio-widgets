@@ -31,7 +31,9 @@
     "@material-ui/styles": "^4.11.4",
     "@mui/x-data-grid": "^4.0.1",
     "apexcharts": "^3.45.1",
+    "axios": "^1.11.0",
     "db64": "^0.8.7",
+    "papaparse": "^5.5.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "useeio": "github:USEPA/useeio.js"
@@ -39,6 +41,7 @@
   "devDependencies": {
     "@types/jasmine": "^5.1.4",
     "@types/node": "^20.11.0",
+    "@types/papaparse": "^5.3.16",
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.2",
     "@typescript-eslint/eslint-plugin": "^6.18.1",
