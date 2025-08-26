@@ -20,7 +20,9 @@ import FormLabel from "@material-ui/core/FormLabel";
 import { SmartSectorChartConfigPie } from "../totalGhgEmissionPieChart.ts/pieListSearch";
 import { SmartSectorEEIOTotalImpactPerSector } from "./smart-sector-eeio-total-impacts";
 import { Menu, MenuItem, IconButton } from "@material-ui/core";
-import { fileNames } from "../smartSectorCalc/smartSectorCalculations";
+import { fileNames } from "../util/util";
+import DownloadCSVButton from "../util/downloadcsvfile";
+import { getLabel } from "../util/util"
 export interface SmartSectorChartConfigNormal {
   model: WebModel;
   endpoint: "./api";
@@ -87,28 +89,11 @@ export class SectorListSearch extends Widget {
 }
 
 const Component = (props: { widget: SectorListSearch }) => {
-  const customLabels: Record<string, string> = {
-    "GWP-AR6-100": "Global Warming Potential (CO2e)",
-    // "GWP-AR6-20": "CO2e based on 20yr GWP",
-    "Acidification-Potential": "Acidification Potential (SO2 eq)",
-    "Eutrophication-Potential": "Eutrophication Potential (N eq)",
-    "Freshwater-withdrawals": "Freshwater Withdrawals",
-    "Human-Health---Respiratory-Effects":
-      "Human Health Respiratory Effects (PM2.5 eq)",
-    "Jobs-Supported": "Jobs Supported",
-    "Ozone-Depletion": "Ozone Depletion Potential (CFC eq)",
-    "Smog-Formation-Potential": "Smog Formation Potential (O3 eq)",
-    // "Value-Added": "Value Added ($)"
-  };
 
-  const getLabel = (filename: string): string => {
-    if (customLabels[filename]) return customLabels[filename];
-
-    return filename.replace(/-+/g, " ").trim();
-  };
 
   const [searchTerm, setSearchTerm] = React.useState<string>("");
   const [value, setValue] = React.useState<string>("");
+  const [sectorId, setSectorId] = React.useState<string>("");
   const [title, setTitle] = React.useState<string>("");
   const [graph, setGraph] = React.useState<string>("");
   const [perspective, setPerspective] = React.useState<string>("final");
@@ -128,6 +113,7 @@ const Component = (props: { widget: SectorListSearch }) => {
   React.useEffect(() => {
     setTitle(sectors[0].name + " (" + sectors[0].code + ")");
     setValue(sectors[0].name);
+    setSectorId(sectors[0].id)
   }, []);
 
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -190,6 +176,7 @@ const Component = (props: { widget: SectorListSearch }) => {
     setTitle(e + " (" + c + ")");
     setSearchTerm("");
     setValue(e);
+    setSectorId((sectors.filter(t => t.code = c))?.[0].id)
 
     if (changePrespective === "impact_per_purchase") {
       props.widget.smartSectorImpactPurchase.updateGraph(e, c);
@@ -236,7 +223,7 @@ const Component = (props: { widget: SectorListSearch }) => {
       display: "flex",
       flexWrap: "wrap",
       width: "100%",
-      gap: "16px" 
+      gap: "16px"
     },
     right: {
       display: "flex",
@@ -529,6 +516,7 @@ const Component = (props: { widget: SectorListSearch }) => {
               </RadioGroup>
             </FormControl>
           </div>
+          <div className={classes.item} > <DownloadCSVButton fileObjects={{ filename: graph, perspective: perspective, sector: sectorId }} /> </div>
 
           <div
             className={classes.item}

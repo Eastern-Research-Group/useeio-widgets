@@ -98,3 +98,45 @@ export function formatNumberGraph(value: number): string {
         return value.toFixed(2); 
     }
 };
+
+//Use in the creation of cvs files and graphs
+  const customLabels: Record<string, string> = {
+    "GWP-AR6-100": "Global Warming Potential (CO2e)",
+    // "GWP-AR6-20": "CO2e based on 20yr GWP",
+    "Acidification-Potential": "Acidification Potential (SO2 eq)",
+    "Eutrophication-Potential": "Eutrophication Potential (N eq)",
+    "Freshwater-withdrawals": "Freshwater Withdrawals",
+    "Human-Health---Respiratory-Effects":
+      "Human Health Respiratory Effects (PM2.5 eq)",
+    "Jobs-Supported": "Jobs Supported",
+    "Ozone-Depletion": "Ozone Depletion Potential (CFC eq)",
+    "Smog-Formation-Potential": "Smog Formation Potential (O3 eq)",
+    // "Value-Added": "Value Added ($)"
+    "Commercial-RCRA-Hazardous-Waste": "Commercial Hazardous Waste",
+  };
+
+  export const getLabel = (filename: string): string => {
+    if (customLabels[filename]) return customLabels[filename];
+
+    return filename.replace(/-+/g, " ").trim();
+  };
+
+  //Use in the creation of cvs files and graphs
+  export const fileNames: string[] = [
+      "Acidification-Potential",
+      "Eutrophication-Potential",
+      "Freshwater-withdrawals",
+      // "GWP-AR6-20",
+      "GWP-AR6-100",
+      "Human-Health---Respiratory-Effects",
+      "Jobs-Supported",
+      "Ozone-Depletion",
+      "Smog-Formation-Potential",
+      // "Social-Cost-of-Carbon"
+      // "Value-Added"
+      "Commercial-RCRA-Hazardous-Waste",
+      "Criteria-Air-Pollutants",
+      "Releases-to-Ground",
+      "Carbon-monoxide",
+      "Sulfur-dioxide",
+    ]

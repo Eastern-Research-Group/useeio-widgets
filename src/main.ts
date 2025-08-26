@@ -110,7 +110,7 @@ export function profileChart(config: ProfileChartConfig): ProfileChart {
     return new ProfileChart(config);
 }
 
-export function smartSectorChart(config: SmartSectorChartConfig): SmartSectorEEIO {
+export function smartSectorChart(config: SmartSectorChartConfigPie): SmartSectorEEIO {
     return new SmartSectorEEIO(config);
 }
 
