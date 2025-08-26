@@ -27,7 +27,7 @@ const DownloadCSVButton: React.FC<DownloadCSVButtonProps> = ({ fileObjects }) =>
   const [headers, setHeaders] = useState<string[]>([]);
   const classes = useStyles();
   let fileName = fileObjects.filename;
-  fileName += ((fileObjects.perspective == "final") ? "-Point-of-Consumption.csv" : "-Supply Chain.csv");
+  fileName += ((fileObjects.perspective == "final") ? "-Point-of-Consumption.csv" : "-Supply-Chain.csv");
   useEffect(() => {
     axios
       .get<string>(`/downloadCsvFiles/${fileName}`, { responseType: "text" })
@@ -44,10 +44,15 @@ const DownloadCSVButton: React.FC<DownloadCSVButtonProps> = ({ fileObjects }) =>
           setHeaders(parsed.meta.fields);
         }
         setRecords(parsed.data);
-      });
+      }).catch( error => {
+        console.error('Error:',error)
+        setRecords([])
+      }
+    )
   }, [fileObjects.filename, fileObjects.sector, fileObjects.perspective]);
 
   const handleDownload = () => {
+    if(records.length > 0){
     let downloadFilename:string = ''
     let filtered:RecordData[] = []
     if (fileObjects.sector) {
@@ -87,7 +92,8 @@ const DownloadCSVButton: React.FC<DownloadCSVButtonProps> = ({ fileObjects }) =>
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-  };
+  }
+};
 
   return (
     <Button variant="outlined" color="primary" onClick={handleDownload} className={classes.container}>
