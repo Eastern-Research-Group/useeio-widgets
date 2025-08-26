@@ -92,7 +92,7 @@ export async function apexGraph(
 
     
     //All groups
-    let unitLabel = "MMT CO2e";
+    let unitLabel = "MT";
   switch (graphName) {
     case "Social Cost of Carbon" :
       unitLabel = "Billion dollars";
@@ -120,6 +120,9 @@ export async function apexGraph(
       break;
     case "Jobs Supported":
       unitLabel = "Jobs";
+      break;
+    case "Global Warming Potential":
+      unitLabel = "MMT CO2e";
       break;
   }
 

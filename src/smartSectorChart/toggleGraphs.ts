@@ -65,7 +65,7 @@ export async function calculate(
           yaxisTitle = "Cubic meters of Freshwater Used per Million $ of Output";
           unitLabel = "m3 per Million $ of Output";
           break;
-        case "Commerical RCRA Hazardous Waste":
+        case "Commercial RCRA Hazardous Waste":
           yaxisTitle = "Kilograms of Waste Generated per Million $ of Output";
           unitLabel = "kg per Million $ of Output";
           break;
@@ -73,9 +73,12 @@ export async function calculate(
           yaxisTitle = "Number of jobs per Million $ of Output";
           unitLabel = "jobs per Million $ of Output";
           break;
-        default:
+        case "Global Warming Potential":
           yaxisTitle = "Metric Tons of CO2 eq. Emissions per Million $ of Output";
           unitLabel = "tons CO2e per Million $ of Output";
+        default:
+          yaxisTitle = "Kilograms of Emissions per Million $ of Output";
+          unitLabel = "kg per Million $ of Output";
       }
     } else {
       switch(titleGraph) {
@@ -111,13 +114,16 @@ export async function calculate(
           yaxisTitle = "Number of Jobs Supported";
           unitLabel = "Jobs";
           break;
-        case "Commerical RCRA Hazardous Waste":
+        case "Commercial RCRA Hazardous Waste":
           yaxisTitle = "Thousand Metric Tons of Waste Generated";
           unitLabel = "Thousand MT";
           break;
-        default:
+        case "Global Warming Potential":
           yaxisTitle = "Million Metric Tons of CO2 eq. Emissions";
           unitLabel = "MMT CO2e";
+        default:
+          yaxisTitle = "Metric Tons of Emissions";
+          unitLabel = "MT";
       }
     }
 
