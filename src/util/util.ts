@@ -112,6 +112,7 @@ export function formatNumberGraph(value: number): string {
     "Ozone-Depletion": "Ozone Depletion Potential (CFC eq)",
     "Smog-Formation-Potential": "Smog Formation Potential (O3 eq)",
     // "Value-Added": "Value Added ($)"
+    "Commercial-RCRA-Hazardous-Waste": "Commercial Hazardous Waste",
   };
 
   export const getLabel = (filename: string): string => {
@@ -133,5 +134,9 @@ export function formatNumberGraph(value: number): string {
       "Smog-Formation-Potential",
       // "Social-Cost-of-Carbon"
       // "Value-Added"
-      // "Commercial-RCRA-Hazardous-Waste'
+      "Commercial-RCRA-Hazardous-Waste",
+      "Criteria-Air-Pollutants",
+      "Releases-to-Ground",
+      "Carbon-monoxide",
+      "Sulfur-dioxide",
     ]
