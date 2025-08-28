@@ -30,7 +30,7 @@ const DownloadCSVButton: React.FC<DownloadCSVButtonProps> = ({ fileObjects }) =>
   fileName += ((fileObjects.perspective == "final") ? "-Point-of-Consumption.csv" : "-Supply-Chain.csv");
   useEffect(() => {
     axios
-      .get<string>(`/downloadCsvFiles/${fileName}`, { responseType: "text" })
+      .get<string>(`./downloadCsvFiles/${fileName}`, { responseType: "text" })
       .then((res) => {
         const parsed: ParseResult<RecordData> = Papa.parse<RecordData>(
           res.data,
