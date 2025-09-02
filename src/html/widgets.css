@@ -584,10 +584,17 @@ th.io-sector-column-header>div {
     background-color: #fff;
     margin: 15% auto;
     padding: 20px;
-    width: 600px;
+    width: 43.75em;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     max-height: 70vh;
+}
+
+@media (max-width: 730px) {
+  .modal-content {
+    width: 80%;
+    padding: 15px;
+  }
 }
 
 #scrollContainer {
@@ -621,6 +628,11 @@ th.io-sector-column-header>div {
     width: 65%;
 }
 
+@media (max-width: 730px) {
+  .dropdown-btn {
+    width: 60%;
+  }
+}
 .dropdown-list {
     display: none;
     position: absolute;
@@ -628,9 +640,16 @@ th.io-sector-column-header>div {
     border: 1px solid #ccc;
     max-height: 200px;
     overflow-y: auto;
-    width: 70%;
+    width: 65%;
     z-index: 1000;
     border-radius: 4px;
+}
+
+
+@media (max-width: 730px) {
+  .dropdown-list {
+    width: 60%;
+  }
 }
 
 .dropdown-item {

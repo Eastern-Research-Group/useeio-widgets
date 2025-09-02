@@ -2434,5 +2434,77 @@
     "name": "Rest of the world adjustment",
     "id": "S00900/US",
     "model": "Detail"
+  },
+  {
+    "code": "111/112",
+    "name": "Agriculture (Sector Snapshots)",
+    "id": "111/112",
+    "model": "Detail"
+  },
+  {
+    "code": "211/32411",
+    "name": "Oil & Gas (Sector Snapshots)",
+    "id": "211/32411",
+    "model": "Detail"
+  },
+  {
+    "code": "2121/2122",
+    "name": "Mining (Sector Snapshots)",
+    "id": "2121/2122",
+    "model": "Detail"
+  },
+  {
+    "code": "22111",
+    "name": "Utilities & Power Generation (Sector Snapshots)",
+    "id": "22111",
+    "model": "Detail"
+  },
+  {
+    "code": "23",
+    "name": "Construction (Sector Snapshots)",
+    "id": "23",
+    "model": "Detail"
+  },
+  {
+    "code": "321/322",
+    "name": "Paper & Wood Products (Sector Snapshots)",
+    "id": "321/322",
+    "model": "Detail"
+  },
+  {
+    "code": "325",
+    "name": "Chemical Manufacturing (Sector Snapshots)",
+    "id": "325",
+    "model": "Detail"
+  },
+  {
+    "code": "3273",
+    "name": "Cement & Concrete (Sector Snapshots)",
+    "id": "3273",
+    "model": "Detail"
+  },
+  {
+    "code": "3311/3312",
+    "name": "Iron & Steel (Sector Snapshots)",
+    "id": "3311/3312",
+    "model": "Detail"
+  },
+  {
+    "code": "334",
+    "name": "Electronic Products and Semiconductor Manufacturing (Sector Snapshots)",
+    "id": "334",
+    "model": "Detail"
+  },
+  {
+    "code": "3361/3362/3363",
+    "name": "Automotive Manufacturing (Sector Snapshots)",
+    "id": "3361/3362/3363",
+    "model": "Detail"
+  },
+  {
+    "code": "33641",
+    "name": "Aerospace (Sector Snapshots)",
+    "id": "33641",
+    "model": "Detail"
   }
 ]

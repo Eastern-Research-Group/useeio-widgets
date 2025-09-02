@@ -320,7 +320,7 @@ export class SmartSectorEEIO extends Widget {
           sumConstructionMaterials: t.construction_materials,
           sumIntensityRank: t.intensity_rank,
           sumTotalRank: t.total_rank,
-          sumSectorSnapshots: t.sector_snapshots,
+          // sumSectorSnapshots: t.sector_snapshots,
           sumEnergyIntensive: t.energy_intensive,
           sumModel: t.model,
           sumImpactPerDollar:
@@ -364,11 +364,13 @@ export class SmartSectorEEIO extends Widget {
             (t) => t._constructionMaterials === 1,
           );
           break;
+        /*
         case "sector_snapshots":
           listOfStackGraph = listOfStackGraph.filter(
             (t) => t._sectorSnapshots === 1,
           );
           break;
+        */
         case "total_rank":
           listOfStackGraph = listOfStackGraph.sort((a, b) => a._totalRank - b._totalRank);
           break;

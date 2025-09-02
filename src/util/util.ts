@@ -137,6 +137,12 @@ export function formatNumberGraph(value: number): string {
       "Commercial-RCRA-Hazardous-Waste",
       "Criteria-Air-Pollutants",
       "Releases-to-Ground",
+      "Carbon-dioxide",
       "Carbon-monoxide",
+      "Lead",
+      "Methane",
+      "Nitrogen-dioxide",
+      "Nitrous-oxide",
+      "Particulate-matter-2.5",
       "Sulfur-dioxide",
     ]
