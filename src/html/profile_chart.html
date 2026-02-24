@@ -1,53 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Impact chart</title>
-    <link rel="stylesheet" type="text/css" href="widgets.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="widgets.css" />
+  </head>
 
-<body>
-    <div class="io" style="margin: 25px;">
-        <div style="width: 80%; margin: auto;">
-            <div id="profile-chart">
-            </div>
-        </div>
+  <body>
+    <div class="io" style="margin: 25px">
+      <div style="width: 80%; margin: auto">
+        <div id="profile-chart"></div>
+      </div>
     </div>
 
     <script src="lib/apexcharts.min.js"></script>
     <script src="lib/useeio_widgets.js"></script>
     <script>
+      var config = useeio.urlConfig();
+      var modelID = config.get().model || "USEEIOv2.0.1-411";
 
-        var config = useeio.urlConfig();
-        var modelID = config.get().model || 'USEEIOv2.0.1-411';
+      var model = useeio.model({
+        endpoint: "./api",
+        model: modelID,
+        asJsonFiles: true,
+      });
 
-        var model = useeio.model({
-            endpoint: './api',
-            model: modelID,
-            asJsonFiles: true,
-        });
-
-        var profileChart = useeio.profileChart({
-            model: model,
-            selector: '#profile-chart',
-        });
-        profileChart.update({
-            sectors: ["1111A0"],
-            indicators: [
-                "ACID",
-                "ETOX",
-                "EUTR",
-                "GHG",
-                "HTOX",
-                "LAND",
-                "OZON",
-                "SMOG",
-                "WATR",
-            ]
-        });
-
+      var profileChart = useeio.profileChart({
+        model: model,
+        selector: "#profile-chart",
+      });
+      profileChart.update({
+        sectors: ["1111A0"],
+        indicators: [
+          "ACID",
+          "ETOX",
+          "EUTR",
+          "GHG",
+          "HTOX",
+          "LAND",
+          "OZON",
+          "SMOG",
+          "WATR",
+        ],
+      });
     </script>
-</body>
-
+  </body>
 </html>

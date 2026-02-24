@@ -1,10 +1,23 @@
 import * as ReactDOM from "react-dom";
 import React from "react";
-import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, TextField } from '@material-ui/core';
-import {modelOfSmartSector, WebModelSmartSector, DataRow } from './smartSectorWebApi.ts/webApiSmartSector';
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  Paper,
+  TextField,
+} from "@material-ui/core";
+import {
+  modelOfSmartSector,
+  WebModelSmartSector,
+  DataRow,
+} from "./smartSectorWebApi.ts/webApiSmartSector";
 
 export interface tableConfig {
-    selector: string
+  selector: string;
 }
 
 interface Filters {
@@ -14,40 +27,37 @@ interface Filters {
 }
 
 export class DataTableInfo {
+  selector: string;
+  modelSmartSectorApi: WebModelSmartSector;
 
-    
-    selector:string;
-    modelSmartSectorApi:WebModelSmartSector;
-    
+  constructor(_selector: tableConfig) {
+    this.selector = _selector.selector;
+    this.modelSmartSectorApi = modelOfSmartSector({
+      endpoint: "./api",
+      model: "SMART_TABLE_RECORDS",
+      asJsonFiles: true,
+    });
+  }
 
-    constructor(_selector:tableConfig) {
-        this.selector = _selector.selector;
-        this.modelSmartSectorApi = modelOfSmartSector({
-                    endpoint: './api',
-                    model: 'SMART_TABLE_RECORDS',
-                    asJsonFiles: true
-            });
-    }
-
-    async update() {
-      const dataTable:DataRow[] = await this.modelSmartSectorApi.sectorRecordList();
-                ReactDOM.render(
-            <DataTable dataTable={dataTable}/>,
-            document.querySelector(this.selector),
-        );
-    }
-
+  async update() {
+    const dataTable: DataRow[] =
+      await this.modelSmartSectorApi.sectorRecordList();
+    ReactDOM.render(
+      <DataTable dataTable={dataTable} />,
+      document.querySelector(this.selector),
+    );
+  }
 }
 
-const DataTable = (props: { dataTable: DataRow[] }) =>  {
-
-        const [data, setData] = React.useState<DataRow[]>([]); // Typed as an array of DataRow
-        const [filteredData, setFilteredData] = React.useState<DataRow[]>([]); // Typed as an array of DataRow
-        const [filters, setFilters] = React.useState<Filters>({ // Filters are typed as Filters
-          code: '',
-          name: '',
-          group: ''
-        });
+const DataTable = (props: { dataTable: DataRow[] }) => {
+  const [data, setData] = React.useState<DataRow[]>([]); // Typed as an array of DataRow
+  const [filteredData, setFilteredData] = React.useState<DataRow[]>([]); // Typed as an array of DataRow
+  const [filters, setFilters] = React.useState<Filters>({
+    // Filters are typed as Filters
+    code: "",
+    name: "",
+    group: "",
+  });
 
   // Fetch JSON data
   React.useEffect(() => {
@@ -55,28 +65,34 @@ const DataTable = (props: { dataTable: DataRow[] }) =>  {
   }, []);
 
   React.useEffect(() => {
-    setFilteredData(data); 
+    setFilteredData(data);
   }, [data]);
 
-  const handleFilterChange = (event:any) => {
+  const handleFilterChange = (event: any) => {
     const { name, value } = event.target;
     setFilters((prevFilters) => ({
       ...prevFilters,
-      [name]: value
+      [name]: value,
     }));
   };
 
   React.useEffect(() => {
     const filtered = data.filter((row) => {
       console.log(filters.code);
-      const matchesId = (filters.code === '' || row.Code.toLowerCase().includes(filters.code.toLowerCase()));
-      const matchesCode = (filters.name === '' || row.Name.toLowerCase().includes(filters.name.toLowerCase()));
-      const matchesGroup = (filters.group === '' || row.Group.toLowerCase().includes(filters.group.toLowerCase()));
+      const matchesId =
+        filters.code === "" ||
+        row.Code.toLowerCase().includes(filters.code.toLowerCase());
+      const matchesCode =
+        filters.name === "" ||
+        row.Name.toLowerCase().includes(filters.name.toLowerCase());
+      const matchesGroup =
+        filters.group === "" ||
+        row.Group.toLowerCase().includes(filters.group.toLowerCase());
 
       return matchesId && matchesCode && matchesGroup;
     });
     setFilteredData(filtered);
-  }, [filters]); 
+  }, [filters]);
 
   return (
     <div>
@@ -133,4 +149,3 @@ const DataTable = (props: { dataTable: DataRow[] }) =>  {
     </div>
   );
 };
-

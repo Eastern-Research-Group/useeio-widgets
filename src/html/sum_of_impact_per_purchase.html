@@ -1,45 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title></title>
     <!--- Changes dynamically according to graph-->
-    <link rel="stylesheet" type="text/css" href="widgets.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="widgets.css" />
+  </head>
 
-<body>
+  <body>
     <div class="sector-list"></div>
 
     <script src="lib/apexcharts.min.js"></script>
     <script src="lib/useeio_widgets.js"></script>
     <script>
+      var config = useeio.urlConfig();
+      var modelID = config.get().model || "SMART_SECTORv1.0";
 
-        var config = useeio.urlConfig();
-        var modelID = config.get().model || 'SMART_SECTORv1.0';
+      var model = useeio.model({
+        endpoint: "./api",
+        model: modelID,
+        asJsonFiles: true,
+      });
 
-        var model = useeio.model({
-            endpoint: './api',
-            model: modelID,
-            asJsonFiles: true,
-        });
-
-        var sectorListSearch = useeio.sectorListSearch({modelOne:{
-            model: model,
-            endpoint: './api',
-            selector: '.sector-list',
-        },modelTwo:{
-            model: model,
-            endpoint: './api',
-            selector: '#impact_per_purchase',
+      var sectorListSearch = useeio.sectorListSearch({
+        modelOne: {
+          model: model,
+          endpoint: "./api",
+          selector: ".sector-list",
         },
-          modelThree:{
-            model: model,
-            endpoint: './api',
-            selector: '#total_impacts',
-        }});
-        sectorListSearch.update();
+        modelTwo: {
+          model: model,
+          endpoint: "./api",
+          selector: "#impact_per_purchase",
+        },
+        modelThree: {
+          model: model,
+          endpoint: "./api",
+          selector: "#total_impacts",
+        },
+      });
+      sectorListSearch.update();
     </script>
-</body>
-
+  </body>
 </html>

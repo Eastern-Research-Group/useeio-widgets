@@ -17,7 +17,7 @@ import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import { Menu, MenuItem, IconButton } from "@material-ui/core";
 import DownloadCSVButton from "../util/downloadcsvfile";
-import { getLabel } from "../util/util"
+import { getLabel } from "../util/util";
 
 export interface SmartSectorChartConfigPie {
   modelOne: {
@@ -89,8 +89,14 @@ export class PieListSearch extends Widget {
   async update() {
     this.sectors = await this._chartConfig.model.sectors();
     this.modelSmartSectorApi.init();
-    this.piePercentContribution.init("Acidification-Potential", this.sectors[0].name);
-    this.piePercentContributionSectors.init("Acidification-Potential", this.sectors[0].name);
+    this.piePercentContribution.init(
+      "Acidification-Potential",
+      this.sectors[0].name,
+    );
+    this.piePercentContributionSectors.init(
+      "Acidification-Potential",
+      this.sectors[0].name,
+    );
     ReactDOM.render(
       <Component widget={this} />,
       document.querySelector(this._chartConfig.selector),
@@ -144,8 +150,8 @@ const Component = (props: { widget: PieListSearch }) => {
 
   React.useEffect(() => {
     setTitle(sectors[0].name + " (" + sectors[0].code + ")");
-    setValue(sectors[0].name)
-    setSectorId(sectors[0].id)
+    setValue(sectors[0].name);
+    setSectorId(sectors[0].id);
   }, []);
 
   React.useEffect(() => {
@@ -185,7 +191,7 @@ const Component = (props: { widget: PieListSearch }) => {
 
     setSearchTerm("");
     setValue(e);
-    setSectorId((sectors.filter(t => t.code === c))?.[0].id)
+    setSectorId(sectors.filter((t) => t.code === c)?.[0].id);
     if (graphDetails === "Aggregate")
       props.widget.piePercentContribution.updateGraph(e, c);
     else props.widget.piePercentContributionSectors.updateGraph(e, c);
@@ -279,20 +285,20 @@ const Component = (props: { widget: PieListSearch }) => {
       flexWrap: "wrap",
       "@media (max-width:1256px)": {
         flexDirection: "column",
-      }
+      },
     },
     linkSectors: {
       overflowWrap: "break-word",
       whiteSpace: "normal",
       wordWrap: "break-word",
       width: "300px",
-      marginBottom: '1em',
+      marginBottom: "1em",
       "@media (max-width:1256px)": {
-        bottom: '0',
-        right: '0',
-        width: '300px',
-      }
-    }
+        bottom: "0",
+        right: "0",
+        width: "300px",
+      },
+    },
   }));
 
   const classes = useStyles();
@@ -314,24 +320,29 @@ const Component = (props: { widget: PieListSearch }) => {
           margin: "0 auto",
         }}
       >
-        Comparison of Direct and Indirect Supply Chain Impacts for {getLabel(graph)}
+        Comparison of Direct and Indirect Supply Chain Impacts for{" "}
+        {getLabel(graph)}
       </h1>
       {/* Update paragraph with graph selected */}
       <p id="paragraph" className="text-center">
-        For the sector selected below, the chart shows the total and percentage impacts attributable to <em>Direct</em> impacts from facility operations and <em>Indirect</em> impacts embedded in the purchases made by the sector for {getLabel(graph)}.
+        For the sector selected below, the chart shows the total and percentage
+        impacts attributable to <em>Direct</em> impacts from facility operations
+        and <em>Indirect</em> impacts embedded in the purchases made by the
+        sector for {getLabel(graph)}.
       </p>
-      <div
-        className={classes.flexContainer}
-      >
+      <div className={classes.flexContainer}>
         <div
           style={{
             display: "flex",
             flexDirection: "column",
             flexWrap: "wrap",
-            width: "50%"
+            width: "50%",
           }}
         >
-          <FormControl className={classes.margin} style={{ width: "min-content" }}>
+          <FormControl
+            className={classes.margin}
+            style={{ width: "min-content" }}
+          >
             <TextField
               value={searchTerm}
               label="Search Sector"
@@ -366,7 +377,7 @@ const Component = (props: { widget: PieListSearch }) => {
               flexWrap: "wrap",
             }}
           >
-            <FormControl className={classes.margin}  >
+            <FormControl className={classes.margin}>
               <InputLabel id="demo-controlled-open-select-label">
                 Select perspective:
               </InputLabel>
@@ -383,7 +394,7 @@ const Component = (props: { widget: PieListSearch }) => {
                 <option value="direct">Supply Chain</option>
               </Select>
             </FormControl>
-            <FormControl className={classes.margin} >
+            <FormControl className={classes.margin}>
               <InputLabel id="demo-controlled-open-select-label">
                 Select Indicator:
               </InputLabel>
@@ -403,7 +414,7 @@ const Component = (props: { widget: PieListSearch }) => {
                 ))}
               </Select>
             </FormControl>
-            <FormControl className={classes.margin} >
+            <FormControl className={classes.margin}>
               <InputLabel id="demo-controlled-open-select-label">
                 Level of Detail:
               </InputLabel>
@@ -421,13 +432,18 @@ const Component = (props: { widget: PieListSearch }) => {
                 <option value="Detail">Detailed</option>
               </Select>
             </FormControl>
-            <div > <DownloadCSVButton fileObjects={{ filename: graph, perspective: perspective, sector: sectorId }} /> </div>
-
-
+            <div>
+              {" "}
+              <DownloadCSVButton
+                fileObjects={{
+                  filename: graph,
+                  perspective: perspective,
+                  sector: sectorId,
+                }}
+              />{" "}
+            </div>
           </div>
-          <div
-            className={classes.linkSectors}
-          >
+          <div className={classes.linkSectors}>
             See more info about the{" "}
             <a href="./sector-info-table.html" target="_blank">
               sectors BEA/NAICS Codes
@@ -440,8 +456,7 @@ const Component = (props: { widget: PieListSearch }) => {
           style={{
             display: "flex",
             flexDirection: "column",
-            flexWrap: "wrap"
-
+            flexWrap: "wrap",
           }}
         >
           {aggregate ? (
@@ -452,7 +467,9 @@ const Component = (props: { widget: PieListSearch }) => {
               }}
             >
               {/* Updated title of the graph with selected option */}
-              <div>Direct and Indirect Supply Chain Impacts for {getLabel(graph)}</div>
+              <div>
+                Direct and Indirect Supply Chain Impacts for {getLabel(graph)}
+              </div>
               <div
                 style={{
                   overflowWrap: "break-word",
@@ -473,7 +490,9 @@ const Component = (props: { widget: PieListSearch }) => {
               }}
             >
               {/* Updated title of the graph with selected option */}
-              <div>Direct and Indirect Supply Chain Impacts for {getLabel(graph)}</div>
+              <div>
+                Direct and Indirect Supply Chain Impacts for {getLabel(graph)}
+              </div>
               <div
                 style={{
                   overflowWrap: "break-word",

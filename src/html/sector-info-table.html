@@ -1,32 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Sector Information Table</title>
-    <link rel="stylesheet" type="text/css" href="widgets.css">
+    <link rel="stylesheet" type="text/css" href="widgets.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <h1 id="graphTitle" class="text-center">Sector Information Table</h1>
-    <p>Data for over 400 sectors across the U.S. economy are included in the Supply Chain Life Cycle Assessment Tool and are based on statistical categories developed by the U.S. Bureau of Economic Analysis (BEA) and the U.S. Census's North American Industry Classification Systems (NAICS).
-        Detailed descriptions of the NAICS industry categories can be found on the U.S. Census  <a href="https://www.census.gov/naics/" target="_blank">NAICS website</a>.
-        A full concordance between BEA and NAICS codes is <a href="https://www.bea.gov/system/files/2023-10/BEA-Industry-and-Commodity-Codes-and-NAICS-Concordance.xlsx">provided by BEA</a>.</p>
-      <div>
-         <div  class="table-list"></div>
-      </div>
+    <p>
+      Data for over 400 sectors across the U.S. economy are included in the
+      Supply Chain Life Cycle Assessment Tool and are based on statistical
+      categories developed by the U.S. Bureau of Economic Analysis (BEA) and the
+      U.S. Census's North American Industry Classification Systems (NAICS).
+      Detailed descriptions of the NAICS industry categories can be found on the
+      U.S. Census
+      <a href="https://www.census.gov/naics/" target="_blank">NAICS website</a>.
+      A full concordance between BEA and NAICS codes is
+      <a
+        href="https://www.bea.gov/system/files/2023-10/BEA-Industry-and-Commodity-Codes-and-NAICS-Concordance.xlsx"
+        >provided by BEA</a
+      >.
+    </p>
+    <div>
+      <div class="table-list"></div>
+    </div>
 
     <script src="lib/apexcharts.min.js"></script>
     <script src="lib/useeio_widgets.js"></script>
     <script>
-
-        var dataTable = useeio.dataTable({
-            selector: '.table-list',
-        });
-        dataTable.update();
-
+      var dataTable = useeio.dataTable({
+        selector: ".table-list",
+      });
+      dataTable.update();
     </script>
-</body>
-
+  </body>
 </html>

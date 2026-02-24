@@ -15,7 +15,7 @@ export async function calculate(
   impactSelector?: string,
   groupMappingSector?: string,
   perspective?: string,
-  titleFileName?:string
+  titleFileName?: string,
 ): Promise<apex.ApexOptions> {
   const sortTopTen: SumSmartSectorTotalParts[] = topSectorList.sort(
     (a: SumSmartSectorTotalParts, b: SumSmartSectorTotalParts): any => {
@@ -36,7 +36,7 @@ export async function calculate(
     let yaxisTitle = "";
     let unitLabel: string = "";
     if (impactSelector == "impact_per_purchase") {
-      switch(titleGraph) {
+      switch (titleGraph) {
         case "Social Cost of Carbon":
           yaxisTitle = "Million $ per Million $ of Output)";
           unitLabel = "Million $ per Million $ of Output";
@@ -50,7 +50,8 @@ export async function calculate(
           unitLabel = "kg N eq. per Million $ of Output";
           break;
         case "Human Health Respiratory Effects":
-          yaxisTitle = "Kilograms of PM 2.5 eq. Emissions per Million $ of Output";
+          yaxisTitle =
+            "Kilograms of PM 2.5 eq. Emissions per Million $ of Output";
           unitLabel = "kg PM2.5 eq. per Million $ of Output";
           break;
         case "Ozone Depletion":
@@ -58,11 +59,13 @@ export async function calculate(
           unitLabel = "g CFC eq. per Million $ of Output";
           break;
         case "Smog Formation Potential":
-          yaxisTitle = "Metric Tons of O3 eq. Emissions per Million $ of Output";
+          yaxisTitle =
+            "Metric Tons of O3 eq. Emissions per Million $ of Output";
           unitLabel = "tons O3 eq. per Million $ of Output";
           break;
         case "Freshwater withdrawals":
-          yaxisTitle = "Cubic meters of Freshwater Used per Million $ of Output";
+          yaxisTitle =
+            "Cubic meters of Freshwater Used per Million $ of Output";
           unitLabel = "m3 per Million $ of Output";
           break;
         case "Commercial RCRA Hazardous Waste":
@@ -74,14 +77,15 @@ export async function calculate(
           unitLabel = "jobs per Million $ of Output";
           break;
         case "Global Warming Potential":
-          yaxisTitle = "Metric Tons of CO2 eq. Emissions per Million $ of Output";
+          yaxisTitle =
+            "Metric Tons of CO2 eq. Emissions per Million $ of Output";
           unitLabel = "tons CO2e per Million $ of Output";
         default:
           yaxisTitle = "Kilograms of Emissions per Million $ of Output";
           unitLabel = "kg per Million $ of Output";
       }
     } else {
-      switch(titleGraph) {
+      switch (titleGraph) {
         case "Social Cost of Carbon":
           yaxisTitle = "Total Impact (Billion dollars)";
           unitLabel = "Billion dollars";
@@ -215,9 +219,12 @@ export async function calculate(
             total: {
               enabled: true,
               formatter: function (val) {
-              let value
-              value =  "" + Number(formatNumberGraph(Number(val))).toLocaleString() + "";
-              return value
+                let value;
+                value =
+                  "" +
+                  Number(formatNumberGraph(Number(val))).toLocaleString() +
+                  "";
+                return value;
               },
             },
           },
@@ -263,9 +270,13 @@ export async function calculate(
         },
         y: {
           formatter: function (val) {
-            let value
-            value =  "" + Number(formatNumberGraph(val)).toLocaleString() + " " + unitLabel;
-            return value
+            let value;
+            value =
+              "" +
+              Number(formatNumberGraph(val)).toLocaleString() +
+              " " +
+              unitLabel;
+            return value;
           },
         },
         x: {

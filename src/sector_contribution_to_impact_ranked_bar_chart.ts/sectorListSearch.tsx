@@ -22,7 +22,7 @@ import { SmartSectorEEIOTotalImpactPerSector } from "./smart-sector-eeio-total-i
 import { Menu, MenuItem, IconButton } from "@material-ui/core";
 import { fileNames } from "../util/util";
 import DownloadCSVButton from "../util/downloadcsvfile";
-import { getLabel } from "../util/util"
+import { getLabel } from "../util/util";
 export interface SmartSectorChartConfigNormal {
   model: WebModel;
   endpoint: "./api";
@@ -89,8 +89,6 @@ export class SectorListSearch extends Widget {
 }
 
 const Component = (props: { widget: SectorListSearch }) => {
-
-
   const [searchTerm, setSearchTerm] = React.useState<string>("");
   const [value, setValue] = React.useState<string>("");
   const [sectorId, setSectorId] = React.useState<string>("");
@@ -113,7 +111,7 @@ const Component = (props: { widget: SectorListSearch }) => {
   React.useEffect(() => {
     setTitle(sectors[0].name + " (" + sectors[0].code + ")");
     setValue(sectors[0].name);
-    setSectorId(sectors[0].id)
+    setSectorId(sectors[0].id);
   }, []);
 
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -176,7 +174,7 @@ const Component = (props: { widget: SectorListSearch }) => {
     setTitle(e + " (" + c + ")");
     setSearchTerm("");
     setValue(e);
-    setSectorId((sectors.filter(t => t.code === c))?.[0].id)
+    setSectorId(sectors.filter((t) => t.code === c)?.[0].id);
 
     if (changePrespective === "impact_per_purchase") {
       props.widget.smartSectorImpactPurchase.updateGraph(e, c);
@@ -223,7 +221,7 @@ const Component = (props: { widget: SectorListSearch }) => {
       display: "flex",
       flexWrap: "wrap",
       width: "100%",
-      gap: "16px"
+      gap: "16px",
     },
     right: {
       display: "flex",
@@ -516,7 +514,16 @@ const Component = (props: { widget: SectorListSearch }) => {
               </RadioGroup>
             </FormControl>
           </div>
-          <div className={classes.item} > <DownloadCSVButton fileObjects={{ filename: graph, perspective: perspective, sector: sectorId }} /> </div>
+          <div className={classes.item}>
+            {" "}
+            <DownloadCSVButton
+              fileObjects={{
+                filename: graph,
+                perspective: perspective,
+                sector: sectorId,
+              }}
+            />{" "}
+          </div>
 
           <div
             className={classes.item}

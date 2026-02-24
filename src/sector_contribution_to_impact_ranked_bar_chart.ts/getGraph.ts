@@ -25,9 +25,9 @@ export async function apexGraph(
       impactPerPurchase: t.impactPerPurchase,
     };
   });
-  let list = data?.map( impact => impact?.impactPerPurchase)
-  let highestNumber:number = Math.max(...list)
-  let highNumberFormat = formatNumberGraph(highestNumber)
+  let list = data?.map((impact) => impact?.impactPerPurchase);
+  let highestNumber: number = Math.max(...list);
+  let highNumberFormat = formatNumberGraph(highestNumber);
 
   const sectorGraphTitle = values.sector_code + " - " + values.sector_name;
   const sortedSectorCodesWithNamesWithArray: string[][] = data.map((t) => {
@@ -37,7 +37,7 @@ export async function apexGraph(
   unitLabel = "";
   // note this switch duplicates that in toggleGraphs.ts
   switch (graphTitleName) {
-    case "Social Cost of Carbon" :
+    case "Social Cost of Carbon":
       yaxisTitle = "Million $ per Million $ of Output";
       unitLabel = " Million $ per Million $ of Output";
       break;
@@ -111,7 +111,7 @@ export async function apexGraph(
           zoomout: false,
           pan: false,
           reset: false,
-        }
+        },
       },
     },
     colors: colors,
@@ -149,7 +149,7 @@ export async function apexGraph(
       title: {
         text: yaxisTitle,
       },
-      max:parseFloat(highNumberFormat),
+      max: parseFloat(highNumberFormat),
       forceNiceScale: true,
       labels: {
         formatter: function (val) {
@@ -163,7 +163,12 @@ export async function apexGraph(
     tooltip: {
       y: {
         formatter: function (val) {
-          return "" + parseFloat(formatNumberGraph(val)).toLocaleString() + " " + unitLabel;
+          return (
+            "" +
+            parseFloat(formatNumberGraph(val)).toLocaleString() +
+            " " +
+            unitLabel
+          );
         },
       },
     },

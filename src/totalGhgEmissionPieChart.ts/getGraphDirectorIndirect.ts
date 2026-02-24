@@ -50,11 +50,11 @@ export async function apexGraph(
             },
           },
         },
-      ],      
+      ],
       annotations: {
         texts: [
           {
-            text: '',
+            text: "",
           },
         ],
       },
@@ -74,50 +74,50 @@ export async function apexGraph(
     });
     let pointSelection: number = 0;
 
-        //Direct and Indirect only
-        let unitLabel = "MT";
-        switch (graphName) {
-          case "Social Cost of Carbon" :
-            unitLabel = "Billion dollars";
-            break;
-          case "Acidification Potential":
-            unitLabel = "Thousand MT SO2 eq.";
-            break;
-          case "Eutrophication Potential":
-            unitLabel = "Thousand MT N eq.";
-            break;
-          case "Human Health Respiratory Effects":
-            unitLabel = "Thousand MT PM2.5 eq.";
-            break;
-          case "Ozone Depletion":
-            unitLabel = "MT CFC eq.";
-            break;
-          case "Smog Formation Potential":
-            unitLabel = "Thousand MT O3 eq.";
-            break;
-          case "Freshwater withdrawals":
-            unitLabel = "million m3";
-            break;
-          case "Commercial RCRA Hazardous Waste":
-            unitLabel = "Thousand MT";
-            break;
-          case "Jobs Supported":
-            unitLabel = "Jobs";
-            break;
-          case "Global Warming Potential":
-            unitLabel = "MMT CO2e";
-            break;
-        }
+    //Direct and Indirect only
+    let unitLabel = "MT";
+    switch (graphName) {
+      case "Social Cost of Carbon":
+        unitLabel = "Billion dollars";
+        break;
+      case "Acidification Potential":
+        unitLabel = "Thousand MT SO2 eq.";
+        break;
+      case "Eutrophication Potential":
+        unitLabel = "Thousand MT N eq.";
+        break;
+      case "Human Health Respiratory Effects":
+        unitLabel = "Thousand MT PM2.5 eq.";
+        break;
+      case "Ozone Depletion":
+        unitLabel = "MT CFC eq.";
+        break;
+      case "Smog Formation Potential":
+        unitLabel = "Thousand MT O3 eq.";
+        break;
+      case "Freshwater withdrawals":
+        unitLabel = "million m3";
+        break;
+      case "Commercial RCRA Hazardous Waste":
+        unitLabel = "Thousand MT";
+        break;
+      case "Jobs Supported":
+        unitLabel = "Jobs";
+        break;
+      case "Global Warming Potential":
+        unitLabel = "MMT CO2e";
+        break;
+    }
 
-        let totalValue
-        switch (graphName) {
-          case "Jobs Supported":
-            totalValue = `${totalSum.toLocaleString(undefined, {maximumFractionDigits: 0})} ${unitLabel} (100%)`;
-            break;
-          default:
-            totalValue = `${formatNumberGraph(totalSum)} ${unitLabel} (100%)`;
-            break;
-        }
+    let totalValue;
+    switch (graphName) {
+      case "Jobs Supported":
+        totalValue = `${totalSum.toLocaleString(undefined, { maximumFractionDigits: 0 })} ${unitLabel} (100%)`;
+        break;
+      default:
+        totalValue = `${formatNumberGraph(totalSum)} ${unitLabel} (100%)`;
+        break;
+    }
 
     return {
       series: contrubutionList,
@@ -202,18 +202,18 @@ export async function apexGraph(
                       if (t.contribution.toString() == val) return true;
                     });
 
-                    let value
-                    switch (graphName) {
-                      case "Jobs Supported":
-                        value = `${uniqueValue.totalImpactSum.toLocaleString(undefined, {maximumFractionDigits: 0})} ${unitLabel}  (${(uniqueValue.contribution * 100).toFixed(2)}%)`;
-                        break;
-                      default:
-                        value = `${formatNumberGraph(uniqueValue.totalImpactSum)} ${unitLabel} (${(uniqueValue.contribution * 100).toFixed(2)}%)`;
-                        break;
-                    }
-                      return value
+                  let value;
+                  switch (graphName) {
+                    case "Jobs Supported":
+                      value = `${uniqueValue.totalImpactSum.toLocaleString(undefined, { maximumFractionDigits: 0 })} ${unitLabel}  (${(uniqueValue.contribution * 100).toFixed(2)}%)`;
+                      break;
+                    default:
+                      value = `${formatNumberGraph(uniqueValue.totalImpactSum)} ${unitLabel} (${(uniqueValue.contribution * 100).toFixed(2)}%)`;
+                      break;
+                  }
+                  return value;
                 },
-                fontSize: '15px',
+                fontSize: "15px",
               },
             },
           },
@@ -242,17 +242,17 @@ export async function apexGraph(
                 if (t.contribution == val) return true;
               });
 
-              let value
-              switch (graphName) {
-                case "Jobs Supported":
-                  value = `${uniqueValue.totalImpactSum.toLocaleString(undefined, {maximumFractionDigits: 0})} ${unitLabel}  (${(uniqueValue.contribution * 100).toFixed(2)}%)`;
-                  break;
-                default:
-                  value = `${formatNumberGraph(uniqueValue.totalImpactSum)} ${unitLabel} (${(uniqueValue.contribution * 100).toFixed(2)}%)`;
-                  break;
-              }
-                return value          
-              },
+            let value;
+            switch (graphName) {
+              case "Jobs Supported":
+                value = `${uniqueValue.totalImpactSum.toLocaleString(undefined, { maximumFractionDigits: 0 })} ${unitLabel}  (${(uniqueValue.contribution * 100).toFixed(2)}%)`;
+                break;
+              default:
+                value = `${formatNumberGraph(uniqueValue.totalImpactSum)} ${unitLabel} (${(uniqueValue.contribution * 100).toFixed(2)}%)`;
+                break;
+            }
+            return value;
+          },
         },
       },
       annotations: {

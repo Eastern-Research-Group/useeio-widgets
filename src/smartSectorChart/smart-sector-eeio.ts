@@ -19,9 +19,11 @@ import {
 } from "../smartSectorChart/smartSector";
 import { SmartSectorChartConfigPie } from "../totalGhgEmissionPieChart.ts/pieListSearch";
 import { calculate } from "./toggleGraphs";
-import React from 'react';
-import ReactDOM from 'react-dom';
-import DownloadCSVButton, { DownloadCSVButtonProps } from "../util/downloadcsvfile";
+import React from "react";
+import ReactDOM from "react-dom";
+import DownloadCSVButton, {
+  DownloadCSVButtonProps,
+} from "../util/downloadcsvfile";
 import { getLabel } from "../util";
 import { fileNames } from "../util/util";
 
@@ -44,7 +46,7 @@ export class SmartSectorEEIO extends Widget {
   graphName: string;
   selectorName: string;
   sectorContributionToImpact: SectorContributionToImpact[] = [];
-  fileNameTitle: string = "Top 10 Total Embodied Impacts"
+  fileNameTitle: string = "Top 10 Total Embodied Impacts";
   modalOpen: boolean = false;
 
   constructor(private _chartConfig: SmartSectorChartConfigPie) {
@@ -56,7 +58,7 @@ export class SmartSectorEEIO extends Widget {
     });
   }
 
-  async update() { }
+  async update() {}
 
   async init(graphName: string): Promise<Sector[]> {
     this.toggleNumSelection = 10;
@@ -78,7 +80,7 @@ export class SmartSectorEEIO extends Widget {
       await this.modelSmartSectorApi.sectorContributionToImpactGhgAPI(
         "final/" + graphName,
       );
-    const nameWithNoSpace = graphName.replace(/-+/g, ' ').trim();
+    const nameWithNoSpace = graphName.replace(/-+/g, " ").trim();
     const options = await this.getValues(
       this.sectorContributionToImpact,
       this.modelSmartSectorApi,
@@ -95,33 +97,32 @@ export class SmartSectorEEIO extends Widget {
       this.toggleImpactSelection,
       this.toggleGroupSelection,
       this.perspective,
-      this.fileNameTitle
+      this.fileNameTitle,
     );
     this.chart = new ApexCharts(
       document.querySelector(this._chartConfig.modelOne.selector),
       option,
     );
 
-    let fileObjects =
-    {
+    let fileObjects = {
       filename: graphName,
       perspective: this.perspective,
-    }
+    };
 
     ReactDOM.render(
       React.createElement(DownloadCSVButton, { fileObjects }),
-      document.querySelector(this._chartConfig.modelTwo.selector)
+      document.querySelector(this._chartConfig.modelTwo.selector),
     );
     this.chart.render();
     return this.sectorsList;
   }
 
-  getLabelFormat(filename: string):string {
-    return getLabel(filename)
+  getLabelFormat(filename: string): string {
+    return getLabel(filename);
   }
 
-  getFilesNames():string[] {
-    return fileNames
+  getFilesNames(): string[] {
+    return fileNames;
   }
 
   async selectiveGraph(
@@ -132,10 +133,9 @@ export class SmartSectorEEIO extends Widget {
     selectGroupSelection?: string,
     selectorName?: string,
     selectedSectors?: Sector[],
-    modal?: boolean
+    modal?: boolean,
   ) {
-
-    let fileObjects
+    let fileObjects;
     this.modalOpen = modal;
     const selectNameOfSectors =
       selectorName != undefined || selectorName != null
@@ -153,7 +153,6 @@ export class SmartSectorEEIO extends Widget {
       selectImpactSelection != undefined || selectImpactSelection != null
         ? selectImpactSelection
         : this.toggleImpactSelection;
-
 
     const selectGroupSelector =
       selectGroupSelection != undefined || selectGroupSelection != null
@@ -187,12 +186,16 @@ export class SmartSectorEEIO extends Widget {
       }
     }
 
-    const nameWithNoSpace = graphName.replace(/-+/g, ' ').trim();
-    let listOfStackGraph
+    const nameWithNoSpace = graphName.replace(/-+/g, " ").trim();
+    let listOfStackGraph;
     if (modal && selectSectorName.length > 0) {
-      let filteredSectors: SectorContributionToImpact[] = []
-      selectedSectors.forEach(s => {
-        filteredSectors.push(...this.sectorContributionToImpact.filter(t => t.sector_code === s.id))
+      let filteredSectors: SectorContributionToImpact[] = [];
+      selectedSectors.forEach((s) => {
+        filteredSectors.push(
+          ...this.sectorContributionToImpact.filter(
+            (t) => t.sector_code === s.id,
+          ),
+        );
       });
 
       listOfStackGraph = await this.getValues(
@@ -203,8 +206,7 @@ export class SmartSectorEEIO extends Widget {
         this.toggleImpactSelection,
         this.toggleGroupSelection,
       );
-    }
-    else {
+    } else {
       listOfStackGraph = await this.getValues(
         this.sectorContributionToImpact,
         this.modelSmartSectorApi,
@@ -223,27 +225,26 @@ export class SmartSectorEEIO extends Widget {
       this.toggleImpactSelection,
       this.toggleGroupSelection,
       this.perspective,
-      this.fileNameTitle
+      this.fileNameTitle,
     );
 
     if (this.modalOpen) {
       fileObjects = {
         filename: graphName,
         perspective: this.perspective,
-        selectorList: selectedSectors.map(s => s.id),
-      }
-    }
-    else {
+        selectorList: selectedSectors.map((s) => s.id),
+      };
+    } else {
       fileObjects = {
         filename: graphName,
         perspective: this.perspective,
-      }
+      };
     }
 
     ReactDOM.render(
       React.createElement(DownloadCSVButton, { fileObjects }),
-      document.querySelector(this._chartConfig.modelTwo.selector)
-    )
+      document.querySelector(this._chartConfig.modelTwo.selector),
+    );
 
     this.chart.updateOptions(option);
     this.chart.resetSeries();
@@ -280,7 +281,8 @@ export class SmartSectorEEIO extends Widget {
   ): Promise<SumSmartSectorTotalParts[]> {
     const sectorMappingList: SectorMapping[] =
       await modelSmartSector.sectorMapping();
-    const sectorsList: Sector[] = await this._chartConfig.modelOne.model.sectors();
+    const sectorsList: Sector[] =
+      await this._chartConfig.modelOne.model.sectors();
 
     const smartSectorMap = new Map<string, SmartSector>();
 
@@ -349,15 +351,15 @@ export class SmartSectorEEIO extends Widget {
 
     if (this.modalOpen) {
       if (selectImpactSelection === "impact_per_purchase") {
-
-        listOfStackGraph = listOfStackGraph.sort((a, b) => a._intensityRank - b._intensityRank);
+        listOfStackGraph = listOfStackGraph.sort(
+          (a, b) => a._intensityRank - b._intensityRank,
+        );
+      } else {
+        listOfStackGraph = listOfStackGraph.sort(
+          (a, b) => a._totalRank - b._totalRank,
+        );
       }
-      else {
-
-        listOfStackGraph = listOfStackGraph.sort((a, b) => a._totalRank - b._totalRank);
-      }
-    }
-    else {
+    } else {
       switch (this.selectorName) {
         case "construction_materials":
           listOfStackGraph = listOfStackGraph.filter(
@@ -372,10 +374,14 @@ export class SmartSectorEEIO extends Widget {
           break;
         */
         case "total_rank":
-          listOfStackGraph = listOfStackGraph.sort((a, b) => a._totalRank - b._totalRank);
+          listOfStackGraph = listOfStackGraph.sort(
+            (a, b) => a._totalRank - b._totalRank,
+          );
           break;
         case "intensity_rank":
-          listOfStackGraph = listOfStackGraph.sort((a, b) => a._intensityRank - b._intensityRank);
+          listOfStackGraph = listOfStackGraph.sort(
+            (a, b) => a._intensityRank - b._intensityRank,
+          );
           break;
         case "energy_intensive":
           listOfStackGraph = listOfStackGraph.filter(
@@ -392,7 +398,10 @@ export class SmartSectorEEIO extends Widget {
     this.fileNameTitle = n;
   }
 
-  async selectorFilter(totalRankSelector: { name: string; num?: number, n: string }, n: string) {
+  async selectorFilter(
+    totalRankSelector: { name: string; num?: number; n: string },
+    n: string,
+  ) {
     this.fileNameTitle = n;
     this.selectiveGraph(
       this.graphName,
@@ -402,6 +411,7 @@ export class SmartSectorEEIO extends Widget {
       this.toggleGroupSelection,
       totalRankSelector.name,
       [],
-      false);
+      false,
+    );
   }
 }

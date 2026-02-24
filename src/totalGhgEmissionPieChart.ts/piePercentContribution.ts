@@ -54,7 +54,7 @@ export class PiePercentContribution extends Widget {
       await this.modelSmartSectorApi.sectorMapping();
     this.uniqueSortedMappingGroupNoDuplicates =
       uniqueSortedMappingGroupNoDuplicatesList(sectorMappingList);
-    const titleNameWithNoSpace = graphName.replace(/-+/g, ' ').trim();
+    const titleNameWithNoSpace = graphName.replace(/-+/g, " ").trim();
     this.percentContributionList =
       await this.modelSmartSectorApi.percentContribution("final/" + graphName);
     this.contributionList = await this.contributionListPerSector(
@@ -117,7 +117,7 @@ export class PiePercentContribution extends Widget {
 
     this.sectorsList = await this._chartConfig.model.sectors();
     this.sector_name = sectorName;
-    const titleNameWithNoSpace = graphName.replace(/-+/g, ' ').trim();
+    const titleNameWithNoSpace = graphName.replace(/-+/g, " ").trim();
 
     this.options = await apexGraph(
       this.contributionList,
@@ -135,7 +135,7 @@ export class PiePercentContribution extends Widget {
     this.options = await apexGraph(
       this.contributionList,
       sectorName,
-      this.graphName.replace(/-+/g, ' ').trim(),
+      this.graphName.replace(/-+/g, " ").trim(),
     );
     this.chart.updateOptions(this.options);
     this.chart.resetSeries();
@@ -275,17 +275,17 @@ export class PiePercentContribution extends Widget {
                 pan: false,
                 reset: false,
               },
-            export: {
-              csv: {
-                filename: '',
+              export: {
+                csv: {
+                  filename: "",
+                },
+                svg: {
+                  filename: "",
+                },
+                png: {
+                  filename: "",
+                },
               },
-              svg: {
-                filename: '',
-              },
-              png: {
-                filename: '',
-              },
-            },
             },
           },
         });

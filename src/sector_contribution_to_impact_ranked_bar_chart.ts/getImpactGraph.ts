@@ -25,9 +25,9 @@ export async function apexGraph(
     };
   });
 
-  let list = data?.map( impact => (parseFloat((impact?.totalImpact.toString()))))
-  let highestNumber:number = Math.max(...list)
-  let highNumberFormat = formatNumberGraph(highestNumber)
+  let list = data?.map((impact) => parseFloat(impact?.totalImpact.toString()));
+  let highestNumber: number = Math.max(...list);
+  let highNumberFormat = formatNumberGraph(highestNumber);
   const sortedSectorCodesWithNamesWithArray: string[][] = data.map((t) => {
     return t.purchase_commodity.split(" ");
   });
@@ -35,7 +35,7 @@ export async function apexGraph(
   let unitLabel: string = "";
   let yaxisTitle = "";
   // Note this switch duplicates that in toggleGraphs.ts
-  switch(graphTitleName) {
+  switch (graphTitleName) {
     case "Social Cost of Carbon":
       yaxisTitle = "Total Impact (Billion dollars)";
       unitLabel = " Billion dollars";
@@ -90,7 +90,6 @@ export async function apexGraph(
   values.topFifteenTotalImpact.forEach((t) => {
     totalSum += t.totalImpact;
   });
-
 
   return {
     series: [
@@ -148,13 +147,12 @@ export async function apexGraph(
       title: {
         text: yaxisTitle,
       },
-      forceNiceScale:true,
-      max:parseFloat(highNumberFormat),
-      min:0,
+      forceNiceScale: true,
+      max: parseFloat(highNumberFormat),
+      min: 0,
       labels: {
         formatter: function (val) {
-            return parseFloat(formatNumberGraph(val)).toLocaleString();
-
+          return parseFloat(formatNumberGraph(val)).toLocaleString();
         },
       },
     },
@@ -164,9 +162,13 @@ export async function apexGraph(
     tooltip: {
       y: {
         formatter: function (val) {
-          let value
-            value =  "" + parseFloat(formatNumberGraph(val)).toLocaleString() + " " + unitLabel;
-            return value
+          let value;
+          value =
+            "" +
+            parseFloat(formatNumberGraph(val)).toLocaleString() +
+            " " +
+            unitLabel;
+          return value;
         },
       },
     },

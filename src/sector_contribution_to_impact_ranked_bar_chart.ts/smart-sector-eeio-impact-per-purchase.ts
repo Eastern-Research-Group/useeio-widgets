@@ -55,13 +55,11 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
     this.sectorCode = sectorCode;
     this.perspective = "final";
     this.sectorsList = await this._chartConfig.model.sectors();
-    const sector_name: string = sectorName
-      ? sectorName
-      : "";
+    const sector_name: string = sectorName ? sectorName : "";
     this.sectorMappingList = await this.modelSmartSectorApi.sectorMapping();
     this.uniqueSortedMappingGroupNoDuplicates =
       uniqueSortedMappingGroupNoDuplicatesList(this.sectorMappingList);
-    const titleNameWithNoSpace = graphName.replace(/-+/g, ' ').trim();
+    const titleNameWithNoSpace = graphName.replace(/-+/g, " ").trim();
     this.sectorContributionToImpact =
       await this.modelSmartSectorApi.sectorContributionToImpactRankedGhgAPI(
         "final/" + graphName,
@@ -105,14 +103,12 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
     this.perspective = perspective;
     this.graphName = graphName;
     this.sectorsList = await this._chartConfig.model.sectors();
-    const sector_name: string = sectorName
-      ? sectorName
-      : "";
+    const sector_name: string = sectorName ? sectorName : "";
     const sectorMappingList: SectorMapping[] =
       await this.modelSmartSectorApi.sectorMapping();
     this.uniqueSortedMappingGroupNoDuplicates =
       uniqueSortedMappingGroupNoDuplicatesList(sectorMappingList);
-    const titleNameWithNoSpace = graphName.replace(/-+/g, ' ').trim();
+    const titleNameWithNoSpace = graphName.replace(/-+/g, " ").trim();
     this.sectorContributionToImpact = [];
     this.getTopValuesFromSectors = [];
     this.sectorContributionToImpact =
@@ -403,16 +399,16 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
             },
             export: {
               csv: {
-                filename: '',
+                filename: "",
               },
               svg: {
-                filename: '',
+                filename: "",
               },
               png: {
-                filename: '',
+                filename: "",
               },
             },
-          }
+          },
         });
       }, 2000);
     }

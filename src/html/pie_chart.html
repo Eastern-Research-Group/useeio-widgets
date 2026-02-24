@@ -1,14 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title></title>
     <!--- changes dynamically according to graph -->
-    <link rel="stylesheet" type="text/css" href="widgets.css">
-
-</head>
-<style>
+    <link rel="stylesheet" type="text/css" href="widgets.css" />
+  </head>
+  <style>
     .apexcharts-datalabel-value {
       white-space: normal !important;
       text-align: center;
@@ -17,42 +15,41 @@
       margin: 0 auto;
     }
   </style>
-<body>
-      <div>
-         <div  class="pie-list"></div>
-      </div>
+  <body>
+    <div>
+      <div class="pie-list"></div>
+    </div>
 
     <script src="lib/apexcharts.min.js"></script>
     <script src="lib/useeio_widgets.js"></script>
     <script>
+      var config = useeio.urlConfig();
+      var modelID = config.get().model || "SMART_SECTORv1.0";
 
-        var config = useeio.urlConfig();
-        var modelID = config.get().model || 'SMART_SECTORv1.0';
+      var model = useeio.model({
+        endpoint: "./api",
+        model: modelID,
+        asJsonFiles: true,
+      });
 
-        var model = useeio.model({
-            endpoint: './api',
-            model: modelID,
-            asJsonFiles: true,
-        });
-
-        var pieListSearch = useeio.pieListSearch({modelOne:{
-            model: model,
-            endpoint: './api',
-            selector: '.pie-list',
-        },modelTwo:{
-            model: model,
-            endpoint: './api',
-            selector: '#profile-chart',
+      var pieListSearch = useeio.pieListSearch({
+        modelOne: {
+          model: model,
+          endpoint: "./api",
+          selector: ".pie-list",
         },
-          modelThree:{
-            model: model,
-            endpoint: './api',
-            selector: '#profile-chart-details',
-        }});
-        pieListSearch.update();
-
+        modelTwo: {
+          model: model,
+          endpoint: "./api",
+          selector: "#profile-chart",
+        },
+        modelThree: {
+          model: model,
+          endpoint: "./api",
+          selector: "#profile-chart-details",
+        },
+      });
+      pieListSearch.update();
     </script>
-    
-</body>
-
+  </body>
 </html>

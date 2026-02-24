@@ -36,7 +36,7 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
   perspective: string;
   sectorCode: string = "1111A0";
   options: apex.ApexOptions;
-  sector_name:string;
+  sector_name: string;
 
   constructor(private _chartConfig: SmartSectorChartConfig) {
     super();
@@ -58,7 +58,7 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
       await this.modelSmartSectorApi.sectorMapping();
     this.uniqueSortedMappingGroupNoDuplicates =
       uniqueSortedMappingGroupNoDuplicatesList(sectorMappingList);
-    const titleNameWithNoSpace = graphName.replace(/-+/g, ' ').trim();
+    const titleNameWithNoSpace = graphName.replace(/-+/g, " ").trim();
     this.percentContributionList =
       await this.modelSmartSectorApi.percentContribution("final/" + graphName);
     this.contributionList = await this.contributionListPerSector(
@@ -120,9 +120,9 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
     }
 
     this.sectorsList = await this._chartConfig.model.sectors();
-    this.sector_name = sectorName
+    this.sector_name = sectorName;
 
-    const titleNameWithNoSpace = graphName.replace(/-+/g, ' ').trim();
+    const titleNameWithNoSpace = graphName.replace(/-+/g, " ").trim();
 
     this.options = await apexGraph(
       this.contributionList,
@@ -140,7 +140,7 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
     this.options = await apexGraph(
       this.contributionList,
       sectorName,
-      this.graphName.replace(/-+/g, ' ').trim(),
+      this.graphName.replace(/-+/g, " ").trim(),
     );
     this.chart.updateOptions(this.options);
     this.chart.resetSeries();
@@ -281,7 +281,6 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
               },
               png: {
                 filename: `${titleName}-DirectVsIndirect`,
-                
               },
             },
           },
@@ -327,16 +326,16 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
             },
             export: {
               csv: {
-                filename: '',
+                filename: "",
               },
               svg: {
-                filename: '',
+                filename: "",
               },
               png: {
-                filename: '',
+                filename: "",
               },
             },
-          }
+          },
         });
       }, 2000);
     }
