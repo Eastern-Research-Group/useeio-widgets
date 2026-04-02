@@ -448,6 +448,10 @@ const Component = (props: { widget: PieListSearch }) => {
             <a href="./sector-info-table.html" target="_blank">
               sectors BEA/NAICS Codes
             </a>
+            .{" "}
+            <a href="./glossary.html" target="_blank">
+              Glossary
+            </a>
             .
           </div>
         </div>
