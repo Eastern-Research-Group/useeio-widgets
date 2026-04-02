@@ -448,7 +448,11 @@ const Component = (props: { widget: PieListSearch }) => {
             <a href="./sector-info-table.html" target="_blank">
               sectors BEA/NAICS Codes
             </a>
-            .
+            . Open the{" "}
+            <a href="./sector-dashboard.html" target="_blank">
+              multi-indicator sector dashboard
+            </a>{" "}
+            for several indicators on one page.
           </div>
         </div>
 

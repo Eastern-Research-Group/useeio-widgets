@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sector dashboard</title>
+    <link rel="stylesheet" type="text/css" href="widgets.css" />
+  </head>
+  <body>
+    <div class="sector-dashboard-root"></div>
+
+    <script src="lib/apexcharts.min.js"></script>
+    <script src="lib/useeio_widgets.js"></script>
+    <script>
+      var config = useeio.urlConfig();
+      var modelID = config.get().model || "SMART_SECTORv1.0";
+      var params = new URLSearchParams(window.location.search);
+      var initialSector =
+        params.get("sector") || params.get("code") || "";
+
+      var model = useeio.model({
+        endpoint: "./api",
+        model: modelID,
+        asJsonFiles: true,
+      });
+
+      var dashboard = useeio.sectorDashboard({
+        model: model,
+        endpoint: "./api",
+        selector: ".sector-dashboard-root",
+        initialSectorCode: initialSector,
+      });
+      dashboard.update();
+    </script>
+  </body>
+</html>
