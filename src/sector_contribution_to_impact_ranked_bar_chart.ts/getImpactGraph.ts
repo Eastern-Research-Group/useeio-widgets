@@ -38,7 +38,7 @@ export async function apexGraph(
   switch (graphTitleName) {
     case "Social Cost of Carbon":
       yaxisTitle = "Total Impact (Billion dollars)";
-      unitLabel = " Billion dollars";
+      unitLabel = "Billion dollars";
       break;
     case "Acidification Potential":
       yaxisTitle = "Thousand Metric Tons of SO2 eq. Emissions";

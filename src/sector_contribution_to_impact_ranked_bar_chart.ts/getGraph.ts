@@ -39,7 +39,7 @@ export async function apexGraph(
   switch (graphTitleName) {
     case "Social Cost of Carbon":
       yaxisTitle = "Million $ per Million $ of Output";
-      unitLabel = " Million $ per Million $ of Output";
+      unitLabel = "Million $ per Million $ of Output";
       break;
     case "Acidification Potential":
       yaxisTitle = "Kilograms of SO2 eq. Emissions per Million $ of Output";

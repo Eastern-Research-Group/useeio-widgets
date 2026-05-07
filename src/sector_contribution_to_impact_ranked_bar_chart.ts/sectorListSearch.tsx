@@ -296,7 +296,7 @@ const Component = (props: { widget: SectorListSearch }) => {
         For the sector selected below, the chart shows the contribution to total
         impacts and intensity from <em>Direct</em> impacts due to facility
         operations and <em>Indirect</em> impacts embedded in the purchases made
-        from all other sectors for {getLabel(graph)}
+        from all other sectors for {getLabel(graph)}.
       </p>
       <div>
         <div

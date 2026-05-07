@@ -38,7 +38,7 @@ export async function calculate(
     if (impactSelector == "impact_per_purchase") {
       switch (titleGraph) {
         case "Social Cost of Carbon":
-          yaxisTitle = "Million $ per Million $ of Output)";
+          yaxisTitle = "Million $ per Million $ of Output";
           unitLabel = "Million $ per Million $ of Output";
           break;
         case "Acidification Potential":
