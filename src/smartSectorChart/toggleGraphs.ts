@@ -6,6 +6,7 @@ import {
 import { SumSmartSectorTotalParts } from "../smartSectorChart/smartSector";
 import { WebModel, Sector } from "useeio";
 import { formatNumberGraph } from "../util";
+import { chartTypography } from "../util/chartTypography";
 
 export async function calculate(
   topSectorList: SumSmartSectorTotalParts[],
@@ -217,6 +218,10 @@ export async function calculate(
       title: {
         text: titleName,
         align: "center",
+        style: {
+          fontSize: chartTypography.chartTitle,
+          fontWeight: 600,
+        },
       },
       plotOptions: {
         bar: {
@@ -224,6 +229,10 @@ export async function calculate(
           dataLabels: {
             total: {
               enabled: true,
+              style: {
+                fontSize: chartTypography.stackedBarTotal,
+                fontWeight: 600,
+              },
               formatter: function (val) {
                 let value;
                 value =
@@ -249,17 +258,27 @@ export async function calculate(
           hideOverlappingLabels: false,
           trim: true,
           minHeight: -100,
+          style: {
+            fontSize: chartTypography.axisLabel,
+          },
         },
       },
       yaxis: [
         {
           title: {
             text: yaxisTitle,
+            style: {
+              fontSize: chartTypography.axisTitle,
+              fontWeight: 600,
+            },
           },
           forceNiceScale: true,
           min: 0,
           max: undefined,
           labels: {
+            style: {
+              fontSize: chartTypography.axisLabel,
+            },
             formatter: function (val) {
               return Number(formatNumberGraph(val)).toLocaleString();
             },
@@ -268,6 +287,8 @@ export async function calculate(
       ],
       legend: {
         position: "bottom",
+        fontSize: chartTypography.axisLabel,
+        fontWeight: 500,
       },
       tooltip: {
         enabled: true,

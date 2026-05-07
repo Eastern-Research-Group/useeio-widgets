@@ -1,6 +1,7 @@
 import * as apex from "apexcharts";
 import { SortedImpactPerPurchaseTopList } from "../smartSectorChart/smartSector";
 import { formatNumberGraph } from "../util";
+import { chartTypography } from "../util/chartTypography";
 
 //Impact Intensity graph
 export async function apexGraph(
@@ -133,6 +134,7 @@ export async function apexGraph(
             text: `Total: ${parseFloat(formatNumberGraph(totalSum)).toLocaleString()} ${unitLabel} for sector ${sectorName}`,
             style: {
               fontWeight: "bold",
+              fontSize: chartTypography.annotationLabel,
             },
           },
         },
@@ -146,14 +148,26 @@ export async function apexGraph(
     },
     xaxis: {
       categories: sortedSectorCodesWithNamesWithArray,
+      labels: {
+        style: {
+          fontSize: chartTypography.axisLabel,
+        },
+      },
     },
     yaxis: {
       title: {
         text: yaxisTitle,
+        style: {
+          fontSize: chartTypography.axisTitle,
+          fontWeight: 600,
+        },
       },
       max: parseFloat(highNumberFormat),
       forceNiceScale: true,
       labels: {
+        style: {
+          fontSize: chartTypography.axisLabel,
+        },
         formatter: function (val) {
           return parseFloat(formatNumberGraph(val)).toLocaleString();
         },
