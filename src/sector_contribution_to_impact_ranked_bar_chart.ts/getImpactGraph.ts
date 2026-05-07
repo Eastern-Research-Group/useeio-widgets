@@ -73,6 +73,8 @@ export async function apexGraph(
       unitLabel = "Jobs";
       break;
     case "Global Warming Potential":
+    case "GWP AR6 100":
+    case "GWP AR6 20":
       yaxisTitle = "Million Metric Tons of CO2 eq. Emissions";
       unitLabel = "MMT CO2e";
       break;

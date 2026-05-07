@@ -77,9 +77,12 @@ export async function calculate(
           unitLabel = "jobs per Million $ of Output";
           break;
         case "Global Warming Potential":
+        case "GWP AR6 100":
+        case "GWP AR6 20":
           yaxisTitle =
             "Metric Tons of CO2 eq. Emissions per Million $ of Output";
           unitLabel = "tons CO2e per Million $ of Output";
+          break;
         default:
           yaxisTitle = "Kilograms of Emissions per Million $ of Output";
           unitLabel = "kg per Million $ of Output";
@@ -123,8 +126,11 @@ export async function calculate(
           unitLabel = "Thousand MT";
           break;
         case "Global Warming Potential":
+        case "GWP AR6 100":
+        case "GWP AR6 20":
           yaxisTitle = "Million Metric Tons of CO2 eq. Emissions";
           unitLabel = "MMT CO2e";
+          break;
         default:
           yaxisTitle = "Metric Tons of Emissions";
           unitLabel = "MT";
