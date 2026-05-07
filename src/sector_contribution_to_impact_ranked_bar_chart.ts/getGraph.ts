@@ -73,6 +73,10 @@ export async function apexGraph(
       yaxisTitle = "Number of jobs per Million $ of Output";
       unitLabel = "jobs per Million $ of Output";
       break;
+    case "sector purchases":
+      yaxisTitle = "Million USD of Purchases per Million $ of Output";
+      unitLabel = "million USD per Million $ of Output";
+      break;
     case "Global Warming Potential":
       yaxisTitle = "Metric Tons of CO2 eq. Emissions per Million $ of Output";
       unitLabel = "tons CO2e per Million $ of Output";

@@ -104,6 +104,9 @@ export async function apexGraph(
       case "Jobs Supported":
         unitLabel = "Jobs";
         break;
+      case "sector purchases":
+        unitLabel = "million USD";
+        break;
       case "Global Warming Potential":
         unitLabel = "MMT CO2e";
         break;

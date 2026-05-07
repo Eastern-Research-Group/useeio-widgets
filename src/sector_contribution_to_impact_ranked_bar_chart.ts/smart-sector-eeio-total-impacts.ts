@@ -156,13 +156,19 @@ export class SmartSectorEEIOTotalImpactPerSector extends Widget {
     sectorContributionToImpactGhg.forEach((t, i) => {
       //All records in (sector_contribution_to_impact_ranked/final) of "total_impact"
       if (this.perspective == "final") {
+        const isDirectRow = t.purchased_commodity_code === "Direct";
         const purchasedGroup = modelSmartSector.findPurchasedGroup(
           t.purchased_commodity_code,
           sectorMappingList,
         );
         const sectorName = selectSectorName(t.sector_code, sectorsList);
         let purchaseCommodity;
-        if (purchasedGroup == "All Others" || purchasedGroup == undefined) {
+        if (isDirectRow) {
+          purchaseCommodity = "Direct";
+        } else if (
+          purchasedGroup == "All Others" ||
+          purchasedGroup == undefined
+        ) {
           purchaseCommodity = "All Others";
         } else
           purchaseCommodity = selectSectorName(
@@ -211,6 +217,7 @@ export class SmartSectorEEIOTotalImpactPerSector extends Widget {
           }
         }
       } else {
+        const isDirectRow = t.emissions_source === "Direct";
         const purchasedGroup = modelSmartSector.findPurchasedGroup(
           t.emissions_source,
           sectorMappingList,
@@ -218,7 +225,12 @@ export class SmartSectorEEIOTotalImpactPerSector extends Widget {
 
         const sectorName = selectSectorName(t.sector_code, sectorsList);
         let purchaseCommodity;
-        if (purchasedGroup == "All Others" || purchasedGroup == undefined) {
+        if (isDirectRow) {
+          purchaseCommodity = "Direct";
+        } else if (
+          purchasedGroup == "All Others" ||
+          purchasedGroup == undefined
+        ) {
           purchaseCommodity = "All Others";
         } else
           purchaseCommodity = selectSectorName(t.emissions_source, sectorsList);
@@ -268,31 +280,37 @@ export class SmartSectorEEIOTotalImpactPerSector extends Widget {
 
     const sortedImpactPerPurchaseTopList: SortedImpactPerPurchaseTopList[] =
       sortListWithTop15OfEachSector.map((t) => {
-        const topFifteen: ImpactPerPurchaseSector[] = t._smartSectors
-          .sort(
-            (a: ImpactPerPurchaseSector, b: ImpactPerPurchaseSector): any => {
-              return b.totalImpact - a.totalImpact;
-            },
-          )
-          .slice(0, 15);
+        const directBars = t._smartSectors.filter(
+          (s) => s.purchaseCommodity === "Direct",
+        );
+        const nonDirect = t._smartSectors.filter(
+          (s) => s.purchaseCommodity !== "Direct",
+        );
+        nonDirect.sort(
+          (a: ImpactPerPurchaseSector, b: ImpactPerPurchaseSector): number =>
+            (Number(b.totalImpact) || 0) - (Number(a.totalImpact) || 0),
+        );
+        const cap = Math.max(0, 15 - directBars.length);
+        const topFifteen: ImpactPerPurchaseSector[] = [
+          ...directBars,
+          ...nonDirect.slice(0, cap),
+        ];
 
-        const index = topFifteen.findIndex(
-          (t) => t.purchaseCommodity === "All Others",
+        const allOtherIndex = topFifteen.findIndex(
+          (t) => t.purchaseCommodity.toLowerCase() === "all others",
         );
-        const allOtherobject = topFifteen.filter(
-          (t) => t.purchaseCommodity === "All Others",
-        );
-        topFifteen.splice(index, 1);
-        topFifteen.push(...allOtherobject);
+        if (allOtherIndex >= 0) {
+          const [allOthersItem] = topFifteen.splice(allOtherIndex, 1);
+          topFifteen.push(allOthersItem);
+        }
 
         const directIndex = topFifteen.findIndex(
           (t) => t.purchaseCommodity === "Direct",
         );
-        const directObject = topFifteen.filter(
-          (t) => t.purchaseCommodity === "Direct",
-        );
-        topFifteen.splice(directIndex, 1);
-        topFifteen.splice(0, 0, ...directObject);
+        if (directIndex >= 0) {
+          const [directItem] = topFifteen.splice(directIndex, 1);
+          topFifteen.unshift(directItem);
+        }
 
         return {
           sector_code: t._sectorCode,

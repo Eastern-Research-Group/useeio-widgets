@@ -20,9 +20,12 @@ import FormLabel from "@material-ui/core/FormLabel";
 import { SmartSectorChartConfigPie } from "../totalGhgEmissionPieChart.ts/pieListSearch";
 import { SmartSectorEEIOTotalImpactPerSector } from "./smart-sector-eeio-total-impacts";
 import { Menu, MenuItem, IconButton } from "@material-ui/core";
-import { fileNames } from "../util/util";
+import {
+  fileNames,
+  getLabel,
+  sectorPurchasesPointOfConsumptionOnly,
+} from "../util/util";
 import DownloadCSVButton from "../util/downloadcsvfile";
-import { getLabel } from "../util/util";
 export interface SmartSectorChartConfigNormal {
   model: WebModel;
   endpoint: "./api";
@@ -140,17 +143,21 @@ const Component = (props: { widget: SectorListSearch }) => {
     setImpactPerPurchaseGraph(!impactPerPurchaseGraph);
     setTotalImpactGraph(!totalImpactGraph);
 
+    const viewPerspective = sectorPurchasesPointOfConsumptionOnly(graph)
+      ? "final"
+      : perspective;
+
     if (event.target.value === "impact_per_purchase") {
       props.widget.smartSectorImpactPurchase.changeGraph(
         graph,
         value,
-        perspective,
+        viewPerspective,
       );
     } else {
       props.widget.smartSectorTotalImpact.changeGraph(
         graph,
         value,
-        perspective,
+        viewPerspective,
       );
     }
   };
@@ -241,32 +248,42 @@ const Component = (props: { widget: SectorListSearch }) => {
   }));
 
   const handleChange = (event: any) => {
-    setGraph(event.target.value);
+    const newGraph = event.target.value;
+    let nextPerspective = perspective;
+    if (sectorPurchasesPointOfConsumptionOnly(newGraph)) {
+      nextPerspective = "final";
+      setPerspective("final");
+    }
+    setGraph(newGraph);
 
     if (changePrespective === "impact_per_purchase") {
       props.widget.smartSectorImpactPurchase.changeGraph(
-        event.target.value,
+        newGraph,
         value,
-        perspective,
+        nextPerspective,
       );
     } else {
       props.widget.smartSectorTotalImpact.changeGraph(
-        event.target.value,
+        newGraph,
         value,
-        perspective,
+        nextPerspective,
       );
     }
   };
 
   const handleChangePerspective = (event: any) => {
-    setPerspective(event.target.value);
+    const next =
+      sectorPurchasesPointOfConsumptionOnly(graph)
+        ? "final"
+        : event.target.value;
+    setPerspective(next);
     props.widget.smartSectorImpactPurchase.changePerspectiveGraph(
-      event.target.value,
+      next,
       graph,
       value,
     );
     props.widget.smartSectorTotalImpact.changePerspectiveGraph(
-      event.target.value,
+      next,
       graph,
       value,
     );
@@ -454,15 +471,22 @@ const Component = (props: { widget: SectorListSearch }) => {
               </InputLabel>
               <Select
                 native
-                value={perspective}
+                value={
+                  sectorPurchasesPointOfConsumptionOnly(graph)
+                    ? "final"
+                    : perspective
+                }
                 onChange={handleChangePerspective}
                 label="Select perspective"
+                disabled={sectorPurchasesPointOfConsumptionOnly(graph)}
                 inputProps={{
                   name: "perspective",
                 }}
               >
                 <option value="final">Point of Consumption</option>
-                <option value="direct">Supply Chain</option>
+                {!sectorPurchasesPointOfConsumptionOnly(graph) ? (
+                  <option value="direct">Supply Chain</option>
+                ) : null}
               </Select>
             </FormControl>
           </div>
