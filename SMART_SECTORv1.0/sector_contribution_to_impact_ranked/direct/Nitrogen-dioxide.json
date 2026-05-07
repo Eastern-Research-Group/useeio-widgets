@@ -1,6 +1,76 @@
 [
   {
     "emissions_source": "Direct",
+    "sector_code": "11",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 587.648725724346,
+    "total_impact": 221854.783983636
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "11",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 114.31060237935,
+    "total_impact": 43155.6351401092
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "11",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 93.751958519777,
+    "total_impact": 35394.1387004802
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "11",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 67.9633823979742,
+    "total_impact": 25658.1880648416
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "11",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 54.7164892325232,
+    "total_impact": 20657.0938855717
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "11",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 31.0150365479953,
+    "total_impact": 11709.0941108034
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "11",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 27.3886834656647,
+    "total_impact": 10340.0385091986
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "11",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 22.7647786498856,
+    "total_impact": 8594.37760812015
+  },
+  {
+    "emissions_source": "115000/US",
+    "sector_code": "11",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 16.1932637135753,
+    "total_impact": 6113.43625179662
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "11",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 170.244049169488,
+    "total_impact": 64272.1665165544
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "111/112",
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 660.163854083715,
@@ -981,6 +1051,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 1035.01252013915,
+    "total_impact": 942480.636073351
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 728.043143590328,
+    "total_impact": 662954.845191251
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 111.496980778709,
+    "total_impact": 101528.960587306
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 45.1909039964672,
+    "total_impact": 41150.7601256787
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 36.5684650839083,
+    "total_impact": 33299.1819537357
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 29.5856936492539,
+    "total_impact": 26940.6821914304
+  },
+  {
+    "emissions_source": "327310/US",
+    "sector_code": "211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 20.3636913069617,
+    "total_impact": 18543.142582668
+  },
+  {
+    "emissions_source": "325110/US",
+    "sector_code": "211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 17.1056329951694,
+    "total_impact": 15576.3602391565
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 11.0085204736656,
+    "total_impact": 10024.3399730585
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 80.6794536111597,
+    "total_impact": 73466.5728944744
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "211/32411",
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 1162.25907941608,
@@ -1118,6 +1258,76 @@
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 44.7651979496896,
     "total_impact": 13495.0290667183
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "212",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 316.020573412783,
+    "total_impact": 72362.6712380347
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "212",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 63.7181561348645,
+    "total_impact": 14590.2399153563
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "212",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 43.6810608756204,
+    "total_impact": 10002.128068233
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "212",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 36.5489505469999,
+    "total_impact": 8369.01111837789
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "212",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 28.0856700819052,
+    "total_impact": 6431.0816498082
+  },
+  {
+    "emissions_source": "327310/US",
+    "sector_code": "212",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 27.6159157157337,
+    "total_impact": 6323.5168783289
+  },
+  {
+    "emissions_source": "2122A0/US",
+    "sector_code": "212",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 26.7463795738207,
+    "total_impact": 6124.40972119881
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "212",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 16.1177618193079,
+    "total_impact": 3690.65939925399
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "212",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 12.742258697585,
+    "total_impact": 2917.73370007446
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "212",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 98.8215542251872,
+    "total_impact": 22628.2471498724
   },
   {
     "emissions_source": "Direct",
@@ -1678,6 +1888,76 @@
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 77.1140154075312,
     "total_impact": 7133.03564298408
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "2211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 1517.52948969992,
+    "total_impact": 695554.025449928
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "2211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 152.196213612032,
+    "total_impact": 69758.5712532145
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "2211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 66.5917330878222,
+    "total_impact": 30522.0744145678
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "2211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 47.8847055624658,
+    "total_impact": 21947.7775802853
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "2211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 46.7383177123832,
+    "total_impact": 21422.3349518132
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "2211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 22.6036702249294,
+    "total_impact": 10360.3085947287
+  },
+  {
+    "emissions_source": "48A000/US",
+    "sector_code": "2211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 14.3943141919539,
+    "total_impact": 6597.5806386368
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "2211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 11.9558287008074,
+    "total_impact": 5479.90983824692
+  },
+  {
+    "emissions_source": "327310/US",
+    "sector_code": "2211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 3.25064007981368,
+    "total_impact": 1489.91885044052
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "2211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 38.4460115772494,
+    "total_impact": 17621.5871233832
   },
   {
     "emissions_source": "Direct",
@@ -2868,6 +3148,76 @@
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 134.007849208659,
     "total_impact": 35613.507306461
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "31",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 62.4141888294248,
+    "total_impact": 56981.0829043347
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "31",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 166.66752310916,
+    "total_impact": 152159.246636975
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "31",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 80.807058932718,
+    "total_impact": 73772.8681675971
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "31",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 77.9813794967739,
+    "total_impact": 71193.1618985524
+  },
+  {
+    "emissions_source": "112120/US",
+    "sector_code": "31",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 38.3774252266531,
+    "total_impact": 35036.7006206108
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "31",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 37.7617626774699,
+    "total_impact": 34474.6310108947
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "31",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 35.4749289703797,
+    "total_impact": 32386.8643748778
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "31",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 26.957949408146,
+    "total_impact": 24611.281168045
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "31",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 22.5088526669385,
+    "total_impact": 20549.4747901236
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "31",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 234.981184461175,
+    "total_impact": 214526.25763244
   },
   {
     "emissions_source": "Direct",
@@ -5461,6 +5811,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "321",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 333.625663908369,
+    "total_impact": 37668.9401747937
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "321",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 117.806816352922,
+    "total_impact": 13301.3086145553
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "321",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 73.9201307330569,
+    "total_impact": 8346.1594341292
+  },
+  {
+    "emissions_source": "321100/US",
+    "sector_code": "321",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 67.5990803368216,
+    "total_impact": 7632.46353187678
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "321",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 46.6463569151724,
+    "total_impact": 5266.73759873671
+  },
+  {
+    "emissions_source": "113000/US",
+    "sector_code": "321",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 39.8468799041494,
+    "total_impact": 4499.02359931711
+  },
+  {
+    "emissions_source": "321200/US",
+    "sector_code": "321",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 38.3261100947957,
+    "total_impact": 4327.31682383383
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "321",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 36.0476638462758,
+    "total_impact": 4070.06246749465
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "321",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 12.6888983855345,
+    "total_impact": 1432.6756178446
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "321",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 131.003119761633,
+    "total_impact": 14791.2742179439
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "321/322",
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 678.003485147493,
@@ -5808,6 +6228,76 @@
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 143.796054772674,
     "total_impact": 4169.51724489091
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "322-323",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 695.297976339714,
+    "total_impact": 144015.405317285
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "322-323",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 201.40941774554,
+    "total_impact": 41717.4505296854
+  },
+  {
+    "emissions_source": "322120/US",
+    "sector_code": "322-323",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 105.545705875981,
+    "total_impact": 21861.4293849199
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "322-323",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 100.611743582267,
+    "total_impact": 20839.4695867767
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "322-323",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 94.3374503184592,
+    "total_impact": 19539.8902435093
+  },
+  {
+    "emissions_source": "322110/US",
+    "sector_code": "322-323",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 88.7608921568936,
+    "total_impact": 18384.8311016129
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "322-323",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 72.9634846167813,
+    "total_impact": 15112.7518963369
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "322-323",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 46.7361751065453,
+    "total_impact": 9680.35206485368
+  },
+  {
+    "emissions_source": "327400/US",
+    "sector_code": "322-323",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 14.678346454842,
+    "total_impact": 3040.29076168169
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "322-323",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 170.898225304142,
+    "total_impact": 35397.7402821543
   },
   {
     "emissions_source": "Direct",
@@ -6858,6 +7348,76 @@
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 133.454222335078,
     "total_impact": 96054.5369684
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "325-326",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 186.491151862805,
+    "total_impact": 173432.012779187
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "325-326",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 139.091799823063,
+    "total_impact": 129351.824810112
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "325-326",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 66.7974950061144,
+    "total_impact": 62119.9659705069
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "325-326",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 65.3597601578904,
+    "total_impact": 60782.9092464769
+  },
+  {
+    "emissions_source": "325110/US",
+    "sector_code": "325-326",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 50.9211316604623,
+    "total_impact": 47355.3531556546
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "325-326",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 49.7060151761481,
+    "total_impact": 46225.3258297962
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "325-326",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 44.5999519744871,
+    "total_impact": 41476.817337054
+  },
+  {
+    "emissions_source": "325211/US",
+    "sector_code": "325-326",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 23.1823561194699,
+    "total_impact": 21558.9996769463
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "325-326",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 19.9927403464621,
+    "total_impact": 18592.7383933443
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "325-326",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 152.732218551975,
+    "total_impact": 142037.066183099
   },
   {
     "emissions_source": "Direct",
@@ -8891,6 +9451,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "327",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 1474.26386022384,
+    "total_impact": 165118.855379991
+  },
+  {
+    "emissions_source": "327310/US",
+    "sector_code": "327",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 643.186108386407,
+    "total_impact": 72037.4126222899
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "327",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 148.271934437379,
+    "total_impact": 16606.5877078205
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "327",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 113.376994709682,
+    "total_impact": 12698.3236162648
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "327",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 68.4173681250496,
+    "total_impact": 7662.80570101234
+  },
+  {
+    "emissions_source": "327200/US",
+    "sector_code": "327",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 37.5285234514405,
+    "total_impact": 4203.22779632011
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "327",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 37.0082073800814,
+    "total_impact": 4144.95193644413
+  },
+  {
+    "emissions_source": "2123A0/US",
+    "sector_code": "327",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 32.6130214279844,
+    "total_impact": 3652.68722510386
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "327",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 15.089922609837,
+    "total_impact": 1690.08466959953
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "327",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 159.345785601213,
+    "total_impact": 17846.8688258444
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "327100/US",
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 848.669859524395,
@@ -9798,6 +10428,76 @@
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 103.18872923207,
     "total_impact": 433.623010297099
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "331-332",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 133.137494451135,
+    "total_impact": 64000.7123307869
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "331-332",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 125.196262274157,
+    "total_impact": 60183.2714347717
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "331-332",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 79.9897678407588,
+    "total_impact": 38451.9938736101
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "331-332",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 56.7509484923855,
+    "total_impact": 27280.8283191295
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "331-332",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 54.9391423422636,
+    "total_impact": 26409.8724348301
+  },
+  {
+    "emissions_source": "2122A0/US",
+    "sector_code": "331-332",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 41.8927965332553,
+    "total_impact": 20138.3451799983
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "331-332",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 34.6719234938257,
+    "total_impact": 16667.1891388029
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "331-332",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 29.8265543771477,
+    "total_impact": 14337.964931517
+  },
+  {
+    "emissions_source": "331410/US",
+    "sector_code": "331-332",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 13.8462690152359,
+    "total_impact": 6656.05946508215
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "331-332",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 139.546144523274,
+    "total_impact": 67081.4235262812
   },
   {
     "emissions_source": "Direct",
@@ -11898,6 +12598,76 @@
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 96.4728051553677,
     "total_impact": 1822.65255542511
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "333",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 18.9692890987011,
+    "total_impact": 5999.97229116622
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "333",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 81.7794624951395,
+    "total_impact": 25866.7842745305
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "333",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 39.0047603781263,
+    "total_impact": 12337.1772276042
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "333",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 38.317336006128,
+    "total_impact": 12119.7454006759
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "333",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 33.5253924111083,
+    "total_impact": 10604.0571404912
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "333",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 20.2577576074142,
+    "total_impact": 6407.51393967472
+  },
+  {
+    "emissions_source": "2122A0/US",
+    "sector_code": "333",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 10.1503271085219,
+    "total_impact": 3210.54105298943
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "333",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 8.75978235256558,
+    "total_impact": 2770.71276201063
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "333",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 7.50333465979175,
+    "total_impact": 2373.29927420318
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "333",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 102.65067113311,
+    "total_impact": 32468.3323272482
   },
   {
     "emissions_source": "Direct",
@@ -15331,6 +16101,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "335",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 19.2451259373694,
+    "total_impact": 2163.99108704824
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "335",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 79.0035305472551,
+    "total_impact": 8883.44074785373
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "335",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 37.1031581532214,
+    "total_impact": 4172.01237374119
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "335",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 31.4020746031979,
+    "total_impact": 3530.96206163008
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "335",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 21.5536489188448,
+    "total_impact": 2423.56970307894
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "335",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 21.4187591505172,
+    "total_impact": 2408.40221301705
+  },
+  {
+    "emissions_source": "2122A0/US",
+    "sector_code": "335",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 16.9371968769607,
+    "total_impact": 1904.4792536356
+  },
+  {
+    "emissions_source": "331410/US",
+    "sector_code": "335",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 13.5882678671487,
+    "total_impact": 1527.91364673986
+  },
+  {
+    "emissions_source": "327200/US",
+    "sector_code": "335",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 11.773669128928,
+    "total_impact": 1323.87364674932
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "335",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 119.166907832156,
+    "total_impact": 13399.5551527752
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "335110/US",
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 27.7279750852414,
@@ -16308,6 +17148,76 @@
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 65.5971032261263,
     "total_impact": 766.856716181282
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "336",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 10.7891966938366,
+    "total_impact": 10054.8735274921
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "336",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 80.0785366604681,
+    "total_impact": 74628.313973329
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "336",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 39.4402624972224,
+    "total_impact": 36755.9200702309
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "336",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 33.3468361941432,
+    "total_impact": 31077.2182571891
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "336",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 27.2083501878048,
+    "total_impact": 25356.5235478906
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "336",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 20.5626517173673,
+    "total_impact": 19163.1377455659
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "336",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 9.02053227788676,
+    "total_impact": 8406.58612300804
+  },
+  {
+    "emissions_source": "327200/US",
+    "sector_code": "336",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 8.68097192355471,
+    "total_impact": 8090.1365749421
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "336",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 8.47173417401086,
+    "total_impact": 7895.13974908551
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "336",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 115.411629296402,
+    "total_impact": 107556.602137028
   },
   {
     "emissions_source": "Direct",
@@ -18201,6 +19111,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "337-339",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 15.3105599744537,
+    "total_impact": 3107.85829233909
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "337-339",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 66.9954928278027,
+    "total_impact": 13599.2738529252
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "337-339",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 35.127120856924,
+    "total_impact": 7130.38020969471
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "337-339",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 28.6023269201449,
+    "total_impact": 5805.92604367743
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "337-339",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 25.3859751786243,
+    "total_impact": 5153.04558420092
+  },
+  {
+    "emissions_source": "321200/US",
+    "sector_code": "337-339",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 14.3656351358683,
+    "total_impact": 2916.0499913929
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "337-339",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 13.9730219458251,
+    "total_impact": 2836.35426763142
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "337-339",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 11.056489802077,
+    "total_impact": 2244.33355624367
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "337-339",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 8.33825383576744,
+    "total_impact": 1692.56456787713
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "337-339",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 126.617337960433,
+    "total_impact": 25701.7865049233
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "337110/US",
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 30.6530093426433,
@@ -19531,6 +20511,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "42-44",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 43.8128408700605,
+    "total_impact": 182210.341982072
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "42-44",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 30.6830884641417,
+    "total_impact": 127605.878347366
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "42-44",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 27.2753479559725,
+    "total_impact": 113433.650501625
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "42-44",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 18.9320950756917,
+    "total_impact": 78735.4448986709
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "42-44",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 8.5961199076315,
+    "total_impact": 35749.8376499654
+  },
+  {
+    "emissions_source": "48A000/US",
+    "sector_code": "42-44",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 7.68309361163725,
+    "total_impact": 31952.7126444189
+  },
+  {
+    "emissions_source": "492000/US",
+    "sector_code": "42-44",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 6.76046922039994,
+    "total_impact": 28115.6707519076
+  },
+  {
+    "emissions_source": "493000/US",
+    "sector_code": "42-44",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 4.30310515681172,
+    "total_impact": 17895.9009878603
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "42-44",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 3.73985785231296,
+    "total_impact": 15553.4488223507
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "42-44",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 43.7605611753986,
+    "total_impact": 181992.919398786
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "423100/US",
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 37.9521958732763,
@@ -20791,6 +21841,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "48",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 1703.31436245645,
+    "total_impact": 2267935.30949846
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "48",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 105.511351505818,
+    "total_impact": 140486.644689504
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "48",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 70.73292274314,
+    "total_impact": 94179.7336821877
+  },
+  {
+    "emissions_source": "48A000/US",
+    "sector_code": "48",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 50.8194617574885,
+    "total_impact": 67665.2849702379
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "48",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 32.811862474178,
+    "total_impact": 43688.4600493107
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "48",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 31.0705773706644,
+    "total_impact": 41369.9673170197
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "48",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 21.7082697773201,
+    "total_impact": 28904.2073625803
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "48",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 17.4460640558561,
+    "total_impact": 23229.1499186249
+  },
+  {
+    "emissions_source": "492000/US",
+    "sector_code": "48",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 7.85779254112393,
+    "total_impact": 10462.5226860812
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "48",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 56.6989216929796,
+    "total_impact": 75493.6900388429
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "481000/US",
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 245.993996867455,
@@ -21558,6 +22678,76 @@
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 35.3613177246646,
     "total_impact": 8707.34600383474
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "5",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 7.40667492606394,
+    "total_impact": 108628.612063991
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "5",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 16.6590930502443,
+    "total_impact": 244327.471417001
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "5",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 12.2999827547385,
+    "total_impact": 180395.395828221
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "5",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 12.1131271122305,
+    "total_impact": 177654.912506813
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "5",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 6.36131398431511,
+    "total_impact": 93297.0213918416
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "5",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 3.05641903477717,
+    "total_impact": 44826.3979380887
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "5",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 2.87538823746671,
+    "total_impact": 42171.343618981
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "5",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 2.80002854599225,
+    "total_impact": 41066.0948032629
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "5",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 2.60721960446057,
+    "total_impact": 38238.2985355463
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "5",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 36.7260245728038,
+    "total_impact": 538635.368204526
   },
   {
     "emissions_source": "Direct",
@@ -25271,6 +26461,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "562",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 513.489248151394,
+    "total_impact": 66595.5006463585
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "562",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 48.117513554458,
+    "total_impact": 6240.46154141147
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "562",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 39.9335791869457,
+    "total_impact": 5179.06987951493
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "562",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 37.8759766198931,
+    "total_impact": 4912.21507471149
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "562",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 22.2754024644742,
+    "total_impact": 2888.94379884545
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "562",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 17.8627565675211,
+    "total_impact": 2316.65847107935
+  },
+  {
+    "emissions_source": "48A000/US",
+    "sector_code": "562",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 12.5883573197177,
+    "total_impact": 1632.6105386625
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "562",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 10.4195158472392,
+    "total_impact": 1351.32892623874
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "562",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 7.00324577678766,
+    "total_impact": 908.265675150346
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "562",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 72.9742365106405,
+    "total_impact": 9464.18222427716
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "562000/US",
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 561.606761705852,
@@ -25338,6 +26598,76 @@
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 66.5832102177218,
     "total_impact": 8635.31658170879
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "6",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 4.4096592919047,
+    "total_impact": 15378.9428118026
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "6",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 21.1633357888149,
+    "total_impact": 73808.3623378023
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "6",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 19.6492039018319,
+    "total_impact": 68527.7394692313
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "6",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 15.4899272719079,
+    "total_impact": 54022.0207286712
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "6",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 10.0552714586868,
+    "total_impact": 35068.3430359764
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "6",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 4.52846960354162,
+    "total_impact": 15793.3006719372
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "6",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 3.16326871881872,
+    "total_impact": 11032.0833209008
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "6",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 3.03316398666982,
+    "total_impact": 10578.33551346
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "6",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 2.73160694970081,
+    "total_impact": 9526.63783818677
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "6",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 49.6752614802026,
+    "total_impact": 173245.358630733
   },
   {
     "emissions_source": "Direct",
@@ -26461,6 +27791,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "7",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 5.61692353908862,
+    "total_impact": 10292.5500907404
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "7",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 41.0616902180433,
+    "total_impact": 75242.1677878584
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "7",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 29.7241198372115,
+    "total_impact": 54467.003191094
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "7",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 19.8332305833908,
+    "total_impact": 36342.7626920976
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "7",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 14.8537153077763,
+    "total_impact": 27218.2107829959
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "7",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 4.52533840372227,
+    "total_impact": 8292.31017188107
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "7",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 4.30536476528064,
+    "total_impact": 7889.22658412223
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "7",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 4.0136798090015,
+    "total_impact": 7354.73790854636
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "7",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 3.95111117153876,
+    "total_impact": 7240.08603003794
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "7",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 65.1300350655076,
+    "total_impact": 119345.428802505
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "711100/US",
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 0.650023739492371,
@@ -27301,6 +28701,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "8",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 8.66174978824144,
+    "total_impact": 8025.10424731499
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "8",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 24.1503581285227,
+    "total_impact": 21910.7550439083
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "8",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 22.9280148243124,
+    "total_impact": 20801.7667392387
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "8",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 14.7394702996845,
+    "total_impact": 13372.5935447693
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "8",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 8.52246519018833,
+    "total_impact": 7732.12745577924
+  },
+  {
+    "emissions_source": "48A000/US",
+    "sector_code": "8",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 3.35397916954847,
+    "total_impact": 3042.94518595791
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "8",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 3.29481714015711,
+    "total_impact": 2989.26959543473
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "8",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 3.07736899272971,
+    "total_impact": 2791.98667864823
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "8",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 3.02109049316616,
+    "total_impact": 2740.92721147125
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "8",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 44.6666682154325,
+    "total_impact": 40524.4684442173
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "811100/US",
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 14.6643394190807,
@@ -28075,6 +29545,76 @@
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 0.0769901993798183,
     "total_impact": 1.48090743332627
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "G",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 15.2944545422365,
+    "total_impact": 48988.6978341644
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "G",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 42.2550183153316,
+    "total_impact": 135344.370635147
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "G",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 25.4162788049412,
+    "total_impact": 81409.2715111677
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "G",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 14.5368488923209,
+    "total_impact": 46562.0592012743
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "G",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 11.9023396160266,
+    "total_impact": 38123.629538989
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "G",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 11.1159084197206,
+    "total_impact": 35604.6616256972
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "G",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 7.38309340144695,
+    "total_impact": 23648.3184624908
+  },
+  {
+    "emissions_source": "483000/US",
+    "sector_code": "G",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 4.93158142306918,
+    "total_impact": 15796.0358450277
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "G",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 4.6968790748161,
+    "total_impact": 15044.2756310373
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "G",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 55.8450058658953,
+    "total_impact": 178873.598293845
   },
   {
     "emissions_source": "Direct",

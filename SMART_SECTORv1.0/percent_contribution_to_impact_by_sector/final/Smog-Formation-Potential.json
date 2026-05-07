@@ -1,5 +1,75 @@
 [
   {
+    "sector": "11",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 5528.0456506538,
+    "contribution": 0.52855043666881
+  },
+  {
+    "sector": "11",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 2253.63740848364,
+    "contribution": 0.215475976795943
+  },
+  {
+    "sector": "11",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 1068.23771883539,
+    "contribution": 0.102136912109212
+  },
+  {
+    "sector": "11",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 745.763237345788,
+    "contribution": 0.0713043107203796
+  },
+  {
+    "sector": "11",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 441.305580932514,
+    "contribution": 0.0421943435793944
+  },
+  {
+    "sector": "11",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 258.884667110137,
+    "contribution": 0.0247526182841379
+  },
+  {
+    "sector": "11",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 98.9530438342273,
+    "contribution": 0.00946115098056455
+  },
+  {
+    "sector": "11",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 37.0126094441227,
+    "contribution": 0.0035388692713906
+  },
+  {
+    "sector": "11",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 14.2609870518942,
+    "contribution": 0.00136352906794745
+  },
+  {
+    "sector": "11",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 12.7792090453508,
+    "contribution": 0.00122185252222063
+  },
+  {
     "sector": "111/112",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Direct",
@@ -690,7 +760,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0456069797909043,
-    "contribution": 4.15933883269187e-5
+    "contribution": 4.15933883269187e-05
   },
   {
     "sector": "112A00/US",
@@ -973,6 +1043,76 @@
     "contribution": 0.000357325427911647
   },
   {
+    "sector": "211",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 26779.1657078641,
+    "contribution": 0.498823313244419
+  },
+  {
+    "sector": "211",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 21474.0085046452,
+    "contribution": 0.400002606047591
+  },
+  {
+    "sector": "211",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 2473.51468171284,
+    "contribution": 0.0460748778491024
+  },
+  {
+    "sector": "211",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 1854.61013077593,
+    "contribution": 0.034546362657543
+  },
+  {
+    "sector": "211",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 392.006767641497,
+    "contribution": 0.00730202414751637
+  },
+  {
+    "sector": "211",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 287.831474850263,
+    "contribution": 0.00536152065031183
+  },
+  {
+    "sector": "211",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 282.561400606197,
+    "contribution": 0.00526335344360541
+  },
+  {
+    "sector": "211",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 109.093567791517,
+    "contribution": 0.00203211763701205
+  },
+  {
+    "sector": "211",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 17.7663575847316,
+    "contribution": 0.000330939113315929
+  },
+  {
+    "sector": "211",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 14.112906118563,
+    "contribution": 0.000262885209582973
+  },
+  {
     "sector": "211/32411",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Direct",
@@ -1103,14 +1243,84 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Construction",
     "total_impacts_sum": 2.30948157336181,
-    "contribution": 9.59187230962548e-5
+    "contribution": 9.59187230962548e-05
   },
   {
     "sector": "211000/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00197031781494698,
-    "contribution": 8.18323779169248e-8
+    "contribution": 8.18323779169248e-08
+  },
+  {
+    "sector": "212",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 1619.4471512726,
+    "contribution": 0.488344796193002
+  },
+  {
+    "sector": "212",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 408.27871137613,
+    "contribution": 0.123116573418428
+  },
+  {
+    "sector": "212",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 404.358587508279,
+    "contribution": 0.121934458837046
+  },
+  {
+    "sector": "212",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 236.763134788343,
+    "contribution": 0.0713959975250635
+  },
+  {
+    "sector": "212",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 195.352089793432,
+    "contribution": 0.0589084839237167
+  },
+  {
+    "sector": "212",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 170.539803239604,
+    "contribution": 0.0514263311342972
+  },
+  {
+    "sector": "212",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 161.524679064403,
+    "contribution": 0.0487078176128564
+  },
+  {
+    "sector": "212",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 115.849307644226,
+    "contribution": 0.0349343950410253
+  },
+  {
+    "sector": "212",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 2.81619979203607,
+    "contribution": 0.0008492259302194
+  },
+  {
+    "sector": "212",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 1.26652292245607,
+    "contribution": 0.000381920384345079
   },
   {
     "sector": "2121/2122",
@@ -1180,7 +1390,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 0.0760029607751075,
-    "contribution": 7.89370012973072e-5
+    "contribution": 7.89370012973072e-05
   },
   {
     "sector": "212100/US",
@@ -1383,7 +1593,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 0.0391194613437849,
-    "contribution": 7.22506053102184e-5
+    "contribution": 7.22506053102184e-05
   },
   {
     "sector": "212310/US",
@@ -1664,6 +1874,69 @@
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 0.528609984393914,
     "contribution": 0.000387362929628229
+  },
+  {
+    "sector": "2211",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 11841.4298345168,
+    "contribution": 0.729742217093392
+  },
+  {
+    "sector": "2211",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 2381.61454754591,
+    "contribution": 0.146769833075564
+  },
+  {
+    "sector": "2211",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 1153.94436921333,
+    "contribution": 0.0711131961393357
+  },
+  {
+    "sector": "2211",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 395.735837754762,
+    "contribution": 0.0243876923363331
+  },
+  {
+    "sector": "2211",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 265.316945619138,
+    "contribution": 0.0163504727751872
+  },
+  {
+    "sector": "2211",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 84.4205110584415,
+    "contribution": 0.00520251454164515
+  },
+  {
+    "sector": "2211",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 76.8433355426458,
+    "contribution": 0.0047355620758133
+  },
+  {
+    "sector": "2211",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 18.8207142853241,
+    "contribution": 0.00115984893393697
+  },
+  {
+    "sector": "2211",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 8.74081327692248,
+    "contribution": 0.000538663028793014
   },
   {
     "sector": "221100/US",
@@ -2814,6 +3087,76 @@
     "contribution": 0.000192020710474771
   },
   {
+    "sector": "31",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 5738.16531138182,
+    "contribution": 0.376440088715728
+  },
+  {
+    "sector": "31",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 4977.10950144428,
+    "contribution": 0.326512646569326
+  },
+  {
+    "sector": "31",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 2333.98716929317,
+    "contribution": 0.153116246987056
+  },
+  {
+    "sector": "31",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 1275.20783538959,
+    "contribution": 0.0836572884599328
+  },
+  {
+    "sector": "31",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 563.627806052633,
+    "contribution": 0.0369755993073701
+  },
+  {
+    "sector": "31",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 242.483763510496,
+    "contribution": 0.0159076297901277
+  },
+  {
+    "sector": "31",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 85.6674543027649,
+    "contribution": 0.00562003050588614
+  },
+  {
+    "sector": "31",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 16.4180513612519,
+    "contribution": 0.00107707121973465
+  },
+  {
+    "sector": "31",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 6.39931036822807,
+    "contribution": 0.000419813099137632
+  },
+  {
+    "sector": "31",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 4.1703261354518,
+    "contribution": 0.000273585345700846
+  },
+  {
     "sector": "311111/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Manufacturing",
@@ -3021,7 +3364,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0251387726382323,
-    "contribution": 5.49488466764845e-5
+    "contribution": 5.49488466764845e-05
   },
   {
     "sector": "311221/US",
@@ -3154,14 +3497,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 0.0465331672393195,
-    "contribution": 7.30571970746716e-5
+    "contribution": 7.30571970746716e-05
   },
   {
     "sector": "311224/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0316411967485841,
-    "contribution": 4.96767635577254e-5
+    "contribution": 4.96767635577254e-05
   },
   {
     "sector": "311225/US",
@@ -3861,7 +4204,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000750748493256105,
-    "contribution": 3.06900825872507e-7
+    "contribution": 3.06900825872507e-07
   },
   {
     "sector": "311700/US",
@@ -4120,7 +4463,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.021914232667882,
-    "contribution": 4.32128883263891e-5
+    "contribution": 4.32128883263891e-05
   },
   {
     "sector": "311920/US",
@@ -4252,8 +4595,8 @@
     "sector": "311930/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 7.9750269289413e-5,
-    "contribution": 1.2806810075349e-6
+    "total_impacts_sum": 7.9750269289413e-05,
+    "contribution": 1.2806810075349e-06
   },
   {
     "sector": "311940/US",
@@ -4323,7 +4666,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00665194075724569,
-    "contribution": 2.087989666018e-5
+    "contribution": 2.087989666018e-05
   },
   {
     "sector": "311990/US",
@@ -4393,7 +4736,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000840995261352085,
-    "contribution": 1.57575900027518e-6
+    "contribution": 1.57575900027518e-06
   },
   {
     "sector": "312110/US",
@@ -4463,7 +4806,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000645744003447757,
-    "contribution": 1.98960668252758e-6
+    "contribution": 1.98960668252758e-06
   },
   {
     "sector": "312120/US",
@@ -4533,7 +4876,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000650201811614002,
-    "contribution": 1.58816541742774e-6
+    "contribution": 1.58816541742774e-06
   },
   {
     "sector": "312130/US",
@@ -4736,7 +5079,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0149338198620327,
-    "contribution": 4.87190663495873e-5
+    "contribution": 4.87190663495873e-05
   },
   {
     "sector": "313100/US",
@@ -4869,7 +5212,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00406159446716779,
-    "contribution": 3.54102178772808e-5
+    "contribution": 3.54102178772808e-05
   },
   {
     "sector": "313300/US",
@@ -4939,7 +5282,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000751906396360273,
-    "contribution": 8.96943555764534e-6
+    "contribution": 8.96943555764534e-06
   },
   {
     "sector": "314110/US",
@@ -5002,14 +5345,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00445653214230211,
-    "contribution": 3.85800596027195e-5
+    "contribution": 3.85800596027195e-05
   },
   {
     "sector": "314110/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 1.29947589548863e-5,
-    "contribution": 1.12495222517011e-7
+    "total_impacts_sum": 1.29947589548863e-05,
+    "contribution": 1.12495222517011e-07
   },
   {
     "sector": "314120/US",
@@ -5078,8 +5421,8 @@
     "sector": "314120/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 5.09979796797279e-5,
-    "contribution": 1.2750199581057e-6
+    "total_impacts_sum": 5.09979796797279e-05,
+    "contribution": 1.2750199581057e-06
   },
   {
     "sector": "314900/US",
@@ -5292,6 +5635,76 @@
     "contribution": 0.000371492628991846
   },
   {
+    "sector": "321",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 873.769670685553,
+    "contribution": 0.39791075404443
+  },
+  {
+    "sector": "321",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 745.694863616726,
+    "contribution": 0.33958606646988
+  },
+  {
+    "sector": "321",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 252.217330590233,
+    "contribution": 0.114858631015988
+  },
+  {
+    "sector": "321",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 138.81743623815,
+    "contribution": 0.0632168322856735
+  },
+  {
+    "sector": "321",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 77.6144729672607,
+    "contribution": 0.0353452797679881
+  },
+  {
+    "sector": "321",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 60.8142915448055,
+    "contribution": 0.0276945531724456
+  },
+  {
+    "sector": "321",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 42.9738467451541,
+    "contribution": 0.0195700953423317
+  },
+  {
+    "sector": "321",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 3.40926847311323,
+    "contribution": 0.00155256543502136
+  },
+  {
+    "sector": "321",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 0.485833947847733,
+    "contribution": 0.000221246581352266
+  },
+  {
+    "sector": "321",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 0.0965663633552627,
+    "contribution": 4.39758848895192e-05
+  },
+  {
     "sector": "321/322",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Direct",
@@ -5429,7 +5842,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0473488042433959,
-    "contribution": 5.57685860289578e-5
+    "contribution": 5.57685860289578e-05
   },
   {
     "sector": "321200/US",
@@ -5499,7 +5912,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00277297875092743,
-    "contribution": 4.37054604696016e-6
+    "contribution": 4.37054604696016e-06
   },
   {
     "sector": "321910/US",
@@ -5569,7 +5982,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00461622519908566,
-    "contribution": 1.60098479805585e-5
+    "contribution": 1.60098479805585e-05
   },
   {
     "sector": "3219A0/US",
@@ -5639,7 +6052,77 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0418283551618537,
-    "contribution": 9.86367794142586e-5
+    "contribution": 9.86367794142586e-05
+  },
+  {
+    "sector": "322-323",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 2649.38546402761,
+    "contribution": 0.427603151871755
+  },
+  {
+    "sector": "322-323",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 2576.30109089478,
+    "contribution": 0.41580754540811
+  },
+  {
+    "sector": "322-323",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 455.017982234662,
+    "contribution": 0.0734385864207489
+  },
+  {
+    "sector": "322-323",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 179.737028334682,
+    "contribution": 0.029009036573763
+  },
+  {
+    "sector": "322-323",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 174.074325060744,
+    "contribution": 0.0280950926418862
+  },
+  {
+    "sector": "322-323",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 118.022579056061,
+    "contribution": 0.0190485029383702
+  },
+  {
+    "sector": "322-323",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 26.9274990575882,
+    "contribution": 0.00434602047357215
+  },
+  {
+    "sector": "322-323",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 9.83890617086571,
+    "contribution": 0.00158797100186279
+  },
+  {
+    "sector": "322-323",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 5.00113797294394,
+    "contribution": 0.000807169205543003
+  },
+  {
+    "sector": "322-323",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 1.59187154944303,
+    "contribution": 0.00025692346438786
   },
   {
     "sector": "322110/US",
@@ -5912,7 +6395,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.000832960006869002,
-    "contribution": 5.34756165076088e-7
+    "contribution": 5.34756165076088e-07
   },
   {
     "sector": "322220/US",
@@ -5975,14 +6458,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.0151895691672905,
-    "contribution": 4.72438873580471e-5
+    "contribution": 4.72438873580471e-05
   },
   {
     "sector": "322220/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0120372985019081,
-    "contribution": 3.74394275608527e-5
+    "contribution": 3.74394275608527e-05
   },
   {
     "sector": "322230/US",
@@ -6045,7 +6528,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00489291031728134,
-    "contribution": 5.9732534206593e-5
+    "contribution": 5.9732534206593e-05
   },
   {
     "sector": "322291/US",
@@ -6185,7 +6668,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00137203201639677,
-    "contribution": 1.2811904941651e-5
+    "contribution": 1.2811904941651e-05
   },
   {
     "sector": "323110/US",
@@ -6255,7 +6738,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0416671475750804,
-    "contribution": 8.76932766412675e-5
+    "contribution": 8.76932766412675e-05
   },
   {
     "sector": "323120/US",
@@ -6324,8 +6807,8 @@
     "sector": "323120/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 2.84976343745272e-5,
-    "contribution": 1.11904898608969e-6
+    "total_impacts_sum": 2.84976343745272e-05,
+    "contribution": 1.11904898608969e-06
   },
   {
     "sector": "324110/US",
@@ -6669,6 +7152,76 @@
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 8.38201654076099,
     "contribution": 0.000657736837624718
+  },
+  {
+    "sector": "325-326",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 7328.30664000965,
+    "contribution": 0.461030932095517
+  },
+  {
+    "sector": "325-326",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 3479.21514243089,
+    "contribution": 0.218880824571178
+  },
+  {
+    "sector": "325-326",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 2016.04474733416,
+    "contribution": 0.126831345175331
+  },
+  {
+    "sector": "325-326",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 1371.86729744132,
+    "contribution": 0.0863055122990725
+  },
+  {
+    "sector": "325-326",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 554.96496606617,
+    "contribution": 0.0349133883384424
+  },
+  {
+    "sector": "325-326",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 531.243038465143,
+    "contribution": 0.0334210186915045
+  },
+  {
+    "sector": "325-326",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 472.069561414508,
+    "contribution": 0.0296983574247059
+  },
+  {
+    "sector": "325-326",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 103.050000249255,
+    "contribution": 0.00648297621826787
+  },
+  {
+    "sector": "325-326",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 29.0088307020955,
+    "contribution": 0.00182497388749695
+  },
+  {
+    "sector": "325-326",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 9.70691166252784,
+    "contribution": 0.00061067129848406
   },
   {
     "sector": "325110/US",
@@ -7158,7 +7711,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0392410558446972,
-    "contribution": 9.50311226928725e-5
+    "contribution": 9.50311226928725e-05
   },
   {
     "sector": "325310/US",
@@ -7298,7 +7851,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0208770680638043,
-    "contribution": 6.76937193871072e-5
+    "contribution": 6.76937193871072e-05
   },
   {
     "sector": "325411/US",
@@ -7368,7 +7921,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0024486025517939,
-    "contribution": 3.32154525160985e-5
+    "contribution": 3.32154525160985e-05
   },
   {
     "sector": "325412/US",
@@ -7438,7 +7991,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0180974265894747,
-    "contribution": 4.61469991284224e-5
+    "contribution": 4.61469991284224e-05
   },
   {
     "sector": "325413/US",
@@ -7564,7 +8117,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00182122518339415,
-    "contribution": 1.22822380984472e-5
+    "contribution": 1.22822380984472e-05
   },
   {
     "sector": "325510/US",
@@ -7914,7 +8467,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.000206230871238645,
-    "contribution": 4.16009750229642e-6
+    "contribution": 4.16009750229642e-06
   },
   {
     "sector": "3259A0/US",
@@ -8054,7 +8607,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00568798631716567,
-    "contribution": 9.02648886572319e-6
+    "contribution": 9.02648886572319e-06
   },
   {
     "sector": "326120/US",
@@ -8117,14 +8670,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00180550439703584,
-    "contribution": 7.11976723756205e-6
+    "contribution": 7.11976723756205e-06
   },
   {
     "sector": "326120/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 8.88894808585015e-5,
-    "contribution": 3.50523883862741e-7
+    "total_impacts_sum": 8.88894808585015e-05,
+    "contribution": 3.50523883862741e-07
   },
   {
     "sector": "326130/US",
@@ -8257,14 +8810,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00757137230037649,
-    "contribution": 5.81929096781253e-5
+    "contribution": 5.81929096781253e-05
   },
   {
     "sector": "326140/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000569587832311741,
-    "contribution": 4.37780259172147e-6
+    "contribution": 4.37780259172147e-06
   },
   {
     "sector": "326150/US",
@@ -8327,14 +8880,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00258718250390567,
-    "contribution": 1.46993202542353e-5
+    "contribution": 1.46993202542353e-05
   },
   {
     "sector": "326150/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000229476687511061,
-    "contribution": 1.30379334102406e-6
+    "contribution": 1.30379334102406e-06
   },
   {
     "sector": "326160/US",
@@ -8397,14 +8950,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.000934314572115334,
-    "contribution": 4.25738596986321e-6
+    "contribution": 4.25738596986321e-06
   },
   {
     "sector": "326160/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 1.5858789530744e-5,
-    "contribution": 7.22636572972861e-8
+    "total_impacts_sum": 1.5858789530744e-05,
+    "contribution": 7.22636572972861e-08
   },
   {
     "sector": "326190/US",
@@ -8467,14 +9020,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0981496051510634,
-    "contribution": 7.81061264765452e-5
+    "contribution": 7.81061264765452e-05
   },
   {
     "sector": "326190/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.0877848495628722,
-    "contribution": 6.98579943559549e-5
+    "contribution": 6.98579943559549e-05
   },
   {
     "sector": "326210/US",
@@ -8677,7 +9230,77 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00241878995034255,
-    "contribution": 1.64507544970016e-5
+    "contribution": 1.64507544970016e-05
+  },
+  {
+    "sector": "327",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 2839.07782963465,
+    "contribution": 0.529464930717185
+  },
+  {
+    "sector": "327",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 1699.29051039306,
+    "contribution": 0.316903863276412
+  },
+  {
+    "sector": "327",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 463.35788551586,
+    "contribution": 0.0864124780909886
+  },
+  {
+    "sector": "327",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 131.031790310645,
+    "contribution": 0.0244363634749323
+  },
+  {
+    "sector": "327",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 102.926784782982,
+    "contribution": 0.0191950084655047
+  },
+  {
+    "sector": "327",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 72.6873545738982,
+    "contribution": 0.0135556006079752
+  },
+  {
+    "sector": "327",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 45.1675424946247,
+    "contribution": 0.00842337941847104
+  },
+  {
+    "sector": "327",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 7.50575667381248,
+    "contribution": 0.00139976259044352
+  },
+  {
+    "sector": "327",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 1.07804182091867,
+    "contribution": 0.000201046034055496
+  },
+  {
+    "sector": "327",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 0.0405772330568177,
+    "contribution": 7.56732403207408e-06
   },
   {
     "sector": "327100/US",
@@ -8747,7 +9370,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00533464817260473,
-    "contribution": 2.82098401466795e-5
+    "contribution": 2.82098401466795e-05
   },
   {
     "sector": "327200/US",
@@ -8817,7 +9440,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00109581699230653,
-    "contribution": 1.37837865401165e-6
+    "contribution": 1.37837865401165e-06
   },
   {
     "sector": "3273",
@@ -8880,14 +9503,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 0.299844974566419,
-    "contribution": 9.141614872047e-5
+    "contribution": 9.141614872047e-05
   },
   {
     "sector": "3273",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.0191952725178878,
-    "contribution": 5.85221709906126e-6
+    "contribution": 5.85221709906126e-06
   },
   {
     "sector": "327310/US",
@@ -8950,7 +9573,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 0.0164888567759695,
-    "contribution": 1.04579105452259e-5
+    "contribution": 1.04579105452259e-05
   },
   {
     "sector": "327320/US",
@@ -9020,7 +9643,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.000471377875916844,
-    "contribution": 3.45530913092468e-7
+    "contribution": 3.45530913092468e-07
   },
   {
     "sector": "327330/US",
@@ -9153,7 +9776,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.018723894641971,
-    "contribution": 9.54077235856134e-5
+    "contribution": 9.54077235856134e-05
   },
   {
     "sector": "327400/US",
@@ -9216,14 +9839,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 0.0397315325869819,
-    "contribution": 6.44046541949518e-5
+    "contribution": 6.44046541949518e-05
   },
   {
     "sector": "327400/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00216791800834484,
-    "contribution": 3.51418635424615e-6
+    "contribution": 3.51418635424615e-06
   },
   {
     "sector": "327910/US",
@@ -9356,7 +9979,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.000139100322877562,
-    "contribution": 2.04443791263759e-6
+    "contribution": 2.04443791263759e-06
   },
   {
     "sector": "327992/US",
@@ -9426,7 +10049,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00390107845046206,
-    "contribution": 3.91159224679926e-5
+    "contribution": 3.91159224679926e-05
   },
   {
     "sector": "327993/US",
@@ -9559,7 +10182,77 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.0087433985923341,
-    "contribution": 5.35954954694505e-5
+    "contribution": 5.35954954694505e-05
+  },
+  {
+    "sector": "331-332",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 3113.0651855787,
+    "contribution": 0.474762451426983
+  },
+  {
+    "sector": "331-332",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 1270.61088952346,
+    "contribution": 0.193776328075135
+  },
+  {
+    "sector": "331-332",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 1031.62151218035,
+    "contribution": 0.157328911818629
+  },
+  {
+    "sector": "331-332",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 537.235953939239,
+    "contribution": 0.0819319363013894
+  },
+  {
+    "sector": "331-332",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 266.580149573454,
+    "contribution": 0.0406551863737275
+  },
+  {
+    "sector": "331-332",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 233.899055295283,
+    "contribution": 0.0356711094238784
+  },
+  {
+    "sector": "331-332",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 82.2250574722805,
+    "contribution": 0.0125398498030512
+  },
+  {
+    "sector": "331-332",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 18.8845129014362,
+    "contribution": 0.00288000960616688
+  },
+  {
+    "sector": "331-332",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 2.85567912747374,
+    "contribution": 0.000435509423101358
+  },
+  {
+    "sector": "331-332",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 0.122668586436746,
+    "contribution": 1.87077479390995e-05
   },
   {
     "sector": "3311/3312",
@@ -9629,7 +10322,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.000318341000499105,
-    "contribution": 1.31170302224898e-7
+    "contribution": 1.31170302224898e-07
   },
   {
     "sector": "331110/US",
@@ -9762,7 +10455,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.000318341000499105,
-    "contribution": 2.72632440960019e-6
+    "contribution": 2.72632440960019e-06
   },
   {
     "sector": "331313/US",
@@ -9958,7 +10651,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.000715959767362231,
-    "contribution": 3.08011446809957e-6
+    "contribution": 3.08011446809957e-06
   },
   {
     "sector": "331420/US",
@@ -10272,8 +10965,8 @@
     "sector": "332114/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 5.72607159376726e-5,
-    "contribution": 7.21288491845894e-7
+    "total_impacts_sum": 5.72607159376726e-05,
+    "contribution": 7.21288491845894e-07
   },
   {
     "sector": "332119/US",
@@ -10343,7 +11036,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00549018395832063,
-    "contribution": 5.32961485748327e-5
+    "contribution": 5.32961485748327e-05
   },
   {
     "sector": "33211A/US",
@@ -10476,7 +11169,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00339431609026563,
-    "contribution": 5.54899056254416e-5
+    "contribution": 5.54899056254416e-05
   },
   {
     "sector": "332310/US",
@@ -10539,14 +11232,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00737528614529649,
-    "contribution": 2.03106264179504e-5
+    "contribution": 2.03106264179504e-05
   },
   {
     "sector": "332310/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00399216218300637,
-    "contribution": 1.09939211986536e-5
+    "contribution": 1.09939211986536e-05
   },
   {
     "sector": "332320/US",
@@ -10616,7 +11309,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00322041280072011,
-    "contribution": 9.1080729806186e-6
+    "contribution": 9.1080729806186e-06
   },
   {
     "sector": "332410/US",
@@ -10678,8 +11371,8 @@
     "sector": "332410/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 2.63716411056086e-6,
-    "contribution": 7.8207022707371e-8
+    "total_impacts_sum": 2.63716411056086e-06,
+    "contribution": 7.8207022707371e-08
   },
   {
     "sector": "332420/US",
@@ -10742,7 +11435,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000112044350736394,
-    "contribution": 2.69017643483334e-6
+    "contribution": 2.69017643483334e-06
   },
   {
     "sector": "332430/US",
@@ -10805,14 +11498,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00322003222877372,
-    "contribution": 2.04763192565816e-5
+    "contribution": 2.04763192565816e-05
   },
   {
     "sector": "332430/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0012558006864415,
-    "contribution": 7.98568894697157e-6
+    "contribution": 7.98568894697157e-06
   },
   {
     "sector": "332500/US",
@@ -10882,7 +11575,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0052418472592079,
-    "contribution": 8.08273527992878e-5
+    "contribution": 8.08273527992878e-05
   },
   {
     "sector": "332600/US",
@@ -11078,14 +11771,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00422821799248886,
-    "contribution": 2.64337344745469e-5
+    "contribution": 2.64337344745469e-05
   },
   {
     "sector": "332720/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00269963002065098,
-    "contribution": 1.68773945128118e-5
+    "contribution": 1.68773945128118e-05
   },
   {
     "sector": "332800/US",
@@ -11154,8 +11847,8 @@
     "sector": "332800/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 7.19379952754136e-5,
-    "contribution": 3.09517899602573e-7
+    "total_impacts_sum": 7.19379952754136e-05,
+    "contribution": 3.09517899602573e-07
   },
   {
     "sector": "332913/US",
@@ -11225,7 +11918,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00019525030905742,
-    "contribution": 5.41924231120179e-6
+    "contribution": 5.41924231120179e-06
   },
   {
     "sector": "33291A/US",
@@ -11351,7 +12044,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00054146380442697,
-    "contribution": 2.21167123350297e-5
+    "contribution": 2.21167123350297e-05
   },
   {
     "sector": "332996/US",
@@ -11414,14 +12107,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000334571214487885,
-    "contribution": 8.70333960821054e-6
+    "contribution": 8.70333960821054e-06
   },
   {
     "sector": "332996/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.000171157488827786,
-    "contribution": 4.45239066378398e-6
+    "contribution": 4.45239066378398e-06
   },
   {
     "sector": "332999/US",
@@ -11491,7 +12184,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00283499395805912,
-    "contribution": 1.97179659596964e-5
+    "contribution": 1.97179659596964e-05
   },
   {
     "sector": "33299A/US",
@@ -11554,14 +12247,84 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000143169680015354,
-    "contribution": 1.23491569787568e-6
+    "contribution": 1.23491569787568e-06
   },
   {
     "sector": "33299A/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.000125211779230423,
-    "contribution": 1.08001911936948e-6
+    "contribution": 1.08001911936948e-06
+  },
+  {
+    "sector": "333",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 1494.29780619286,
+    "contribution": 0.67647804873542
+  },
+  {
+    "sector": "333",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 290.09313980671,
+    "contribution": 0.131326995432025
+  },
+  {
+    "sector": "333",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 184.014559328202,
+    "contribution": 0.0833045524910477
+  },
+  {
+    "sector": "333",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 126.384786467956,
+    "contribution": 0.0572151905633268
+  },
+  {
+    "sector": "333",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 70.8078402025876,
+    "contribution": 0.032055156192362
+  },
+  {
+    "sector": "333",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 32.7047267715341,
+    "contribution": 0.0148056362387359
+  },
+  {
+    "sector": "333",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 7.73579162809231,
+    "contribution": 0.00350204169765093
+  },
+  {
+    "sector": "333",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 2.02586819559997,
+    "contribution": 0.000917123319243998
+  },
+  {
+    "sector": "333",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 0.801944243788919,
+    "contribution": 0.00036304522096241
+  },
+  {
+    "sector": "333",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 0.0711501217847717,
+    "contribution": 3.2210109225067e-05
   },
   {
     "sector": "333111/US",
@@ -11757,7 +12520,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0138206427204181,
-    "contribution": 5.33891060082015e-5
+    "contribution": 5.33891060082015e-05
   },
   {
     "sector": "333130/US",
@@ -12008,15 +12771,15 @@
     "sector": "333314/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 9.84707569734504e-5,
-    "contribution": 3.87017628255471e-6
+    "total_impacts_sum": 9.84707569734504e-05,
+    "contribution": 3.87017628255471e-06
   },
   {
     "sector": "333314/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 2.52929555104332e-6,
-    "contribution": 9.94083924414055e-8
+    "total_impacts_sum": 2.52929555104332e-06,
+    "contribution": 9.94083924414055e-08
   },
   {
     "sector": "333316/US",
@@ -12079,14 +12842,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 0.000290391230984426,
-    "contribution": 7.01556771760804e-5
+    "contribution": 7.01556771760804e-05
   },
   {
     "sector": "333316/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 1.21624370048293e-5,
-    "contribution": 2.93832565567718e-6
+    "total_impacts_sum": 1.21624370048293e-05,
+    "contribution": 2.93832565567718e-06
   },
   {
     "sector": "333318/US",
@@ -12149,14 +12912,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00311554585648625,
-    "contribution": 3.02577433578268e-5
+    "contribution": 3.02577433578268e-05
   },
   {
     "sector": "333318/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.000378113888034361,
-    "contribution": 3.6721889232845e-6
+    "contribution": 3.6721889232845e-06
   },
   {
     "sector": "333413/US",
@@ -12219,14 +12982,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.000100631164107603,
-    "contribution": 2.25253599852172e-6
+    "contribution": 2.25253599852172e-06
   },
   {
     "sector": "333413/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 9.67698126575267e-6,
-    "contribution": 2.16610319988151e-7
+    "total_impacts_sum": 9.67698126575267e-06,
+    "contribution": 2.16610319988151e-07
   },
   {
     "sector": "333414/US",
@@ -12352,7 +13115,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00131700822981258,
-    "contribution": 7.75704170395292e-6
+    "contribution": 7.75704170395292e-06
   },
   {
     "sector": "333511/US",
@@ -12415,14 +13178,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00322834509744302,
-    "contribution": 9.5934120181073e-5
+    "contribution": 9.5934120181073e-05
   },
   {
     "sector": "333511/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000539990671048799,
-    "contribution": 1.60464660280849e-5
+    "contribution": 1.60464660280849e-05
   },
   {
     "sector": "333514/US",
@@ -12618,7 +13381,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00125280079941151,
-    "contribution": 3.58697922101702e-5
+    "contribution": 3.58697922101702e-05
   },
   {
     "sector": "333611/US",
@@ -12681,7 +13444,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000269014257841362,
-    "contribution": 5.91307787249393e-6
+    "contribution": 5.91307787249393e-06
   },
   {
     "sector": "333612/US",
@@ -12743,8 +13506,8 @@
     "sector": "333612/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 2.02816977595442e-5,
-    "contribution": 1.43833810600642e-6
+    "total_impacts_sum": 2.02816977595442e-05,
+    "contribution": 1.43833810600642e-06
   },
   {
     "sector": "333613/US",
@@ -12807,7 +13570,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000537755838977214,
-    "contribution": 2.96213764267464e-5
+    "contribution": 2.96213764267464e-05
   },
   {
     "sector": "333618/US",
@@ -12870,14 +13633,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0111135224003272,
-    "contribution": 4.85163634262733e-5
+    "contribution": 4.85163634262733e-05
   },
   {
     "sector": "333618/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.000113688258666289,
-    "contribution": 4.96308971725422e-7
+    "contribution": 4.96308971725422e-07
   },
   {
     "sector": "333912/US",
@@ -13010,7 +13773,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000634225530226602,
-    "contribution": 8.1153693447152e-6
+    "contribution": 8.1153693447152e-06
   },
   {
     "sector": "333920/US",
@@ -13073,14 +13836,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00219578746168359,
-    "contribution": 9.09514087670977e-6
+    "contribution": 9.09514087670977e-06
   },
   {
     "sector": "333920/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.000101067297795559,
-    "contribution": 4.18629456411135e-7
+    "contribution": 4.18629456411135e-07
   },
   {
     "sector": "333991/US",
@@ -13143,7 +13906,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000177245358351016,
-    "contribution": 1.03147569830715e-5
+    "contribution": 1.03147569830715e-05
   },
   {
     "sector": "333993/US",
@@ -13206,7 +13969,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000190238863112584,
-    "contribution": 1.00140710657225e-5
+    "contribution": 1.00140710657225e-05
   },
   {
     "sector": "333994/US",
@@ -13268,8 +14031,8 @@
     "sector": "333994/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 1.91035680595732e-5,
-    "contribution": 2.14173247428715e-6
+    "total_impacts_sum": 1.91035680595732e-05,
+    "contribution": 2.14173247428715e-06
   },
   {
     "sector": "33399A/US",
@@ -13332,14 +14095,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00316744559380181,
-    "contribution": 2.37180857927712e-5
+    "contribution": 2.37180857927712e-05
   },
   {
     "sector": "33399A/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00152697741930607,
-    "contribution": 1.14341289730743e-5
+    "contribution": 1.14341289730743e-05
   },
   {
     "sector": "33399B/US",
@@ -13401,8 +14164,8 @@
     "sector": "33399B/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 1.39025431176314e-5,
-    "contribution": 2.9043916821515e-7
+    "total_impacts_sum": 1.39025431176314e-05,
+    "contribution": 2.9043916821515e-07
   },
   {
     "sector": "334",
@@ -13472,7 +14235,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.0221241470799806,
-    "contribution": 2.98294019374504e-5
+    "contribution": 2.98294019374504e-05
   },
   {
     "sector": "334111/US",
@@ -13514,28 +14277,28 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000665158120249699,
-    "contribution": 6.9183203148411e-5
+    "contribution": 6.9183203148411e-05
   },
   {
     "sector": "334111/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Construction",
     "total_impacts_sum": 0.000308427946477542,
-    "contribution": 3.20796403564806e-5
+    "contribution": 3.20796403564806e-05
   },
   {
     "sector": "334111/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Fuels",
     "total_impacts_sum": 0.000211910014190153,
-    "contribution": 2.20407946841217e-5
+    "contribution": 2.20407946841217e-05
   },
   {
     "sector": "334111/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 8.78336076646347e-5,
-    "contribution": 9.13558767055133e-6
+    "total_impacts_sum": 8.78336076646347e-05,
+    "contribution": 9.13558767055133e-06
   },
   {
     "sector": "334112/US",
@@ -13591,14 +14354,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000405692746196473,
-    "contribution": 6.71185017037189e-5
+    "contribution": 6.71185017037189e-05
   },
   {
     "sector": "334112/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 0.000243550570035593,
-    "contribution": 4.02934228012031e-5
+    "contribution": 4.02934228012031e-05
   },
   {
     "sector": "334118/US",
@@ -13668,7 +14431,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.000766937350129334,
-    "contribution": 1.8629216099799e-5
+    "contribution": 1.8629216099799e-05
   },
   {
     "sector": "334210/US",
@@ -13717,21 +14480,21 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Construction",
     "total_impacts_sum": 0.000221939679674255,
-    "contribution": 3.15854634411635e-5
+    "contribution": 3.15854634411635e-05
   },
   {
     "sector": "334210/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Fuels",
     "total_impacts_sum": 0.000151658067489669,
-    "contribution": 2.15832984587664e-5
+    "contribution": 2.15832984587664e-05
   },
   {
     "sector": "334210/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 4.00309090327488e-5,
-    "contribution": 5.69702008954058e-6
+    "total_impacts_sum": 4.00309090327488e-05,
+    "contribution": 5.69702008954058e-06
   },
   {
     "sector": "334220/US",
@@ -13794,14 +14557,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000123447686473158,
-    "contribution": 2.04321039042756e-6
+    "contribution": 2.04321039042756e-06
   },
   {
     "sector": "334220/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 5.5187200443336e-5,
-    "contribution": 9.13415751934328e-7
+    "total_impacts_sum": 5.5187200443336e-05,
+    "contribution": 9.13415751934328e-07
   },
   {
     "sector": "334290/US",
@@ -13864,7 +14627,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 0.000667833474205375,
-    "contribution": 8.33771000875373e-5
+    "contribution": 8.33771000875373e-05
   },
   {
     "sector": "334300/US",
@@ -13934,7 +14697,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 0.0007959369201012,
-    "contribution": 6.60132618292762e-5
+    "contribution": 6.60132618292762e-05
   },
   {
     "sector": "334413/US",
@@ -14004,7 +14767,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.000140309347282773,
-    "contribution": 8.17942119737219e-7
+    "contribution": 8.17942119737219e-07
   },
   {
     "sector": "334418/US",
@@ -14067,7 +14830,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000310016888559127,
-    "contribution": 5.75519683221057e-6
+    "contribution": 5.75519683221057e-06
   },
   {
     "sector": "33441A/US",
@@ -14130,14 +14893,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000459373790399418,
-    "contribution": 6.8613455133073e-6
+    "contribution": 6.8613455133073e-06
   },
   {
     "sector": "33441A/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.000206726997497059,
-    "contribution": 3.08773679822403e-6
+    "contribution": 3.08773679822403e-06
   },
   {
     "sector": "334510/US",
@@ -14200,14 +14963,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000621495850560314,
-    "contribution": 5.87476361705787e-6
+    "contribution": 5.87476361705787e-06
   },
   {
     "sector": "334510/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.000323103767101805,
-    "contribution": 3.05417687631016e-6
+    "contribution": 3.05417687631016e-06
   },
   {
     "sector": "334511/US",
@@ -14270,7 +15033,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00559590831082429,
-    "contribution": 8.34718251557733e-5
+    "contribution": 8.34718251557733e-05
   },
   {
     "sector": "334512/US",
@@ -14326,7 +15089,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 0.000145159925232943,
-    "contribution": 4.39254498107831e-5
+    "contribution": 4.39254498107831e-05
   },
   {
     "sector": "334513/US",
@@ -14389,7 +15152,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 0.000413586167960152,
-    "contribution": 2.65467192022812e-5
+    "contribution": 2.65467192022812e-05
   },
   {
     "sector": "334514/US",
@@ -14438,14 +15201,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Fuels",
     "total_impacts_sum": 0.000337442185205534,
-    "contribution": 4.45756274241131e-5
+    "contribution": 4.45756274241131e-05
   },
   {
     "sector": "334514/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 4.20419955970033e-5,
-    "contribution": 5.55368716201487e-6
+    "total_impacts_sum": 4.20419955970033e-05,
+    "contribution": 5.55368716201487e-06
   },
   {
     "sector": "334515/US",
@@ -14613,28 +15376,28 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Fuels",
     "total_impacts_sum": 0.00160638325081159,
-    "contribution": 7.38844465537354e-5
+    "contribution": 7.38844465537354e-05
   },
   {
     "sector": "334517/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000159838880168924,
-    "contribution": 7.35167475948419e-6
+    "contribution": 7.35167475948419e-06
   },
   {
     "sector": "334517/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 0.000118614996962398,
-    "contribution": 5.45561179071808e-6
+    "contribution": 5.45561179071808e-06
   },
   {
     "sector": "334517/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 1.15955698528239e-6,
-    "contribution": 5.33329926478148e-8
+    "total_impacts_sum": 1.15955698528239e-06,
+    "contribution": 5.33329926478148e-08
   },
   {
     "sector": "33451A/US",
@@ -14697,14 +15460,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00159512403362846,
-    "contribution": 6.58270059214195e-5
+    "contribution": 6.58270059214195e-05
   },
   {
     "sector": "33451A/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000250530723579453,
-    "contribution": 1.03388119524776e-5
+    "contribution": 1.03388119524776e-05
   },
   {
     "sector": "334610/US",
@@ -14766,8 +15529,78 @@
     "sector": "334610/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 3.18228951463537e-5,
-    "contribution": 1.39408876628891e-5
+    "total_impacts_sum": 3.18228951463537e-05,
+    "contribution": 1.39408876628891e-05
+  },
+  {
+    "sector": "335",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 580.295867954558,
+    "contribution": 0.712441858386551
+  },
+  {
+    "sector": "335",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 107.147353180854,
+    "contribution": 0.131547135929883
+  },
+  {
+    "sector": "335",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 52.367058334723,
+    "contribution": 0.0642921764887504
+  },
+  {
+    "sector": "335",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 44.680040836391,
+    "contribution": 0.0548546579152243
+  },
+  {
+    "sector": "335",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 21.6783387039034,
+    "contribution": 0.0266149679255539
+  },
+  {
+    "sector": "335",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 4.95650078438404,
+    "contribution": 0.00608520381571542
+  },
+  {
+    "sector": "335",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 1.66017025113386,
+    "contribution": 0.00203822712562981
+  },
+  {
+    "sector": "335",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 1.39116076300739,
+    "contribution": 0.00170795832616381
+  },
+  {
+    "sector": "335",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 0.267546418995573,
+    "contribution": 0.000328472557672597
+  },
+  {
+    "sector": "335",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 0.0727701768519174,
+    "contribution": 8.93415288553424e-05
   },
   {
     "sector": "335110/US",
@@ -14822,8 +15655,8 @@
     "sector": "335110/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 6.40086625826274e-5,
-    "contribution": 1.82886644570363e-5
+    "total_impacts_sum": 6.40086625826274e-05,
+    "contribution": 1.82886644570363e-05
   },
   {
     "sector": "335120/US",
@@ -14886,14 +15719,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00577437286023644,
-    "contribution": 9.62051083792487e-5
+    "contribution": 9.62051083792487e-05
   },
   {
     "sector": "335120/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000839802101462603,
-    "contribution": 1.39916929758191e-5
+    "contribution": 1.39916929758191e-05
   },
   {
     "sector": "335210/US",
@@ -14948,15 +15781,15 @@
     "sector": "335210/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 8.54442767236205e-5,
-    "contribution": 5.60540143166025e-6
+    "total_impacts_sum": 8.54442767236205e-05,
+    "contribution": 5.60540143166025e-06
   },
   {
     "sector": "335210/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 2.27182397192186e-5,
-    "contribution": 1.49038482540873e-6
+    "total_impacts_sum": 2.27182397192186e-05,
+    "contribution": 1.49038482540873e-06
   },
   {
     "sector": "335220/US",
@@ -15075,14 +15908,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 0.000324013861024444,
-    "contribution": 9.9825269782117e-6
+    "contribution": 9.9825269782117e-06
   },
   {
     "sector": "335311/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 2.79853077849553e-5,
-    "contribution": 8.62197959907026e-7
+    "total_impacts_sum": 2.79853077849553e-05,
+    "contribution": 8.62197959907026e-07
   },
   {
     "sector": "335312/US",
@@ -15214,8 +16047,8 @@
     "sector": "335313/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 5.61229050347283e-6,
-    "contribution": 6.94058661785191e-8
+    "total_impacts_sum": 5.61229050347283e-06,
+    "contribution": 6.94058661785191e-08
   },
   {
     "sector": "335314/US",
@@ -15348,7 +16181,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000640106449999085,
-    "contribution": 6.12443245923685e-6
+    "contribution": 6.12443245923685e-06
   },
   {
     "sector": "335912/US",
@@ -15397,28 +16230,28 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000751689786727759,
-    "contribution": 4.97876904045141e-5
+    "contribution": 4.97876904045141e-05
   },
   {
     "sector": "335912/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Construction",
     "total_impacts_sum": 0.00051299122141932,
-    "contribution": 3.39776441867618e-5
+    "contribution": 3.39776441867618e-05
   },
   {
     "sector": "335912/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 0.000138133994419231,
-    "contribution": 9.14921643198317e-6
+    "contribution": 9.14921643198317e-06
   },
   {
     "sector": "335912/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 5.45316097087541e-6,
-    "contribution": 3.61186615725902e-7
+    "total_impacts_sum": 5.45316097087541e-06,
+    "contribution": 3.61186615725902e-07
   },
   {
     "sector": "335920/US",
@@ -15481,7 +16314,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 0.0109356003389252,
-    "contribution": 8.68752789374605e-5
+    "contribution": 8.68752789374605e-05
   },
   {
     "sector": "335930/US",
@@ -15550,8 +16383,8 @@
     "sector": "335930/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 3.42132572102656e-5,
-    "contribution": 6.6013209361286e-7
+    "total_impacts_sum": 3.42132572102656e-05,
+    "contribution": 6.6013209361286e-07
   },
   {
     "sector": "335991/US",
@@ -15673,6 +16506,76 @@
     "contribution": 0.000725909997233658
   },
   {
+    "sector": "336",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 4792.88604396615,
+    "contribution": 0.733550397695503
+  },
+  {
+    "sector": "336",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 707.019835540866,
+    "contribution": 0.108209266146131
+  },
+  {
+    "sector": "336",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 492.475360726952,
+    "contribution": 0.0753732705936714
+  },
+  {
+    "sector": "336",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 347.109935648447,
+    "contribution": 0.0531251168926764
+  },
+  {
+    "sector": "336",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 149.314847457252,
+    "contribution": 0.0228526121275093
+  },
+  {
+    "sector": "336",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 24.6610672645068,
+    "contribution": 0.00377437217023938
+  },
+  {
+    "sector": "336",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 12.0716468559722,
+    "contribution": 0.00184756350783386
+  },
+  {
+    "sector": "336",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 4.54103181958961,
+    "contribution": 0.000695004151288229
+  },
+  {
+    "sector": "336",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 3.59910094801537,
+    "contribution": 0.000550841790842626
+  },
+  {
+    "sector": "336",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 0.14083598918353,
+    "contribution": 2.15549243040062e-05
+  },
+  {
     "sector": "3361/3362/3363",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Manufacturing",
@@ -15740,7 +16643,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.118458928440558,
-    "contribution": 2.26040224340187e-5
+    "contribution": 2.26040224340187e-05
   },
   {
     "sector": "336111/US",
@@ -15796,7 +16699,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 0.0197934223189557,
-    "contribution": 6.70778349837633e-5
+    "contribution": 6.70778349837633e-05
   },
   {
     "sector": "336112/US",
@@ -15859,7 +16762,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000133636059098172,
-    "contribution": 5.45183142403895e-8
+    "contribution": 5.45183142403895e-08
   },
   {
     "sector": "336120/US",
@@ -15921,8 +16824,8 @@
     "sector": "336120/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 9.86171451156205e-5,
-    "contribution": 3.99462052553702e-7
+    "total_impacts_sum": 9.86171451156205e-05,
+    "contribution": 3.99462052553702e-07
   },
   {
     "sector": "336211/US",
@@ -15985,7 +16888,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000155330226086012,
-    "contribution": 1.51760098791587e-6
+    "contribution": 1.51760098791587e-06
   },
   {
     "sector": "336212/US",
@@ -16047,8 +16950,8 @@
     "sector": "336212/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 4.54672313914477e-6,
-    "contribution": 5.23703788663527e-8
+    "total_impacts_sum": 4.54672313914477e-06,
+    "contribution": 5.23703788663527e-08
   },
   {
     "sector": "336213/US",
@@ -16166,8 +17069,8 @@
     "sector": "336214/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 2.25284002547269e-5,
-    "contribution": 1.61968350527482e-7
+    "total_impacts_sum": 2.25284002547269e-05,
+    "contribution": 1.61968350527482e-07
   },
   {
     "sector": "336310/US",
@@ -16237,7 +17140,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00235006857228984,
-    "contribution": 9.18148582234569e-6
+    "contribution": 9.18148582234569e-06
   },
   {
     "sector": "336320/US",
@@ -16300,7 +17203,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0131170787077474,
-    "contribution": 9.05867812000384e-5
+    "contribution": 9.05867812000384e-05
   },
   {
     "sector": "336350/US",
@@ -16426,14 +17329,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00319887912042513,
-    "contribution": 1.83492315762298e-5
+    "contribution": 1.83492315762298e-05
   },
   {
     "sector": "336360/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0018267368669775,
-    "contribution": 1.04784258920518e-5
+    "contribution": 1.04784258920518e-05
   },
   {
     "sector": "336370/US",
@@ -16496,7 +17399,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00310381742905372,
-    "contribution": 7.90329737511169e-6
+    "contribution": 7.90329737511169e-06
   },
   {
     "sector": "336390/US",
@@ -16699,7 +17602,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00935786453276333,
-    "contribution": 1.1212182422232e-5
+    "contribution": 1.1212182422232e-05
   },
   {
     "sector": "336411/US",
@@ -16832,7 +17735,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00476131023602433,
-    "contribution": 3.32656422732195e-5
+    "contribution": 3.32656422732195e-05
   },
   {
     "sector": "336413/US",
@@ -16902,7 +17805,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.004596554296739,
-    "contribution": 3.50694863234861e-5
+    "contribution": 3.50694863234861e-05
   },
   {
     "sector": "336414/US",
@@ -16965,7 +17868,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00448962070678323,
-    "contribution": 5.08291626812774e-5
+    "contribution": 5.08291626812774e-05
   },
   {
     "sector": "33641A/US",
@@ -17090,8 +17993,8 @@
     "sector": "336500/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 6.51209657311607e-5,
-    "contribution": 9.72319179865936e-7
+    "total_impacts_sum": 6.51209657311607e-05,
+    "contribution": 9.72319179865936e-07
   },
   {
     "sector": "336611/US",
@@ -17272,8 +18175,8 @@
     "sector": "336991/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 5.03929717103563e-5,
-    "contribution": 1.75877442267692e-6
+    "total_impacts_sum": 5.03929717103563e-05,
+    "contribution": 1.75877442267692e-06
   },
   {
     "sector": "336992/US",
@@ -17336,7 +18239,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00371092796973634,
-    "contribution": 6.98800654288171e-5
+    "contribution": 6.98800654288171e-05
   },
   {
     "sector": "336999/US",
@@ -17393,6 +18296,76 @@
     "sector_purchased_detail": "Construction",
     "total_impacts_sum": 0.0651701722144278,
     "contribution": 0.000942222092208957
+  },
+  {
+    "sector": "337-339",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 939.264206002822,
+    "contribution": 0.644765040259036
+  },
+  {
+    "sector": "337-339",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 208.290821459562,
+    "contribution": 0.142982814660307
+  },
+  {
+    "sector": "337-339",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 119.693475459794,
+    "contribution": 0.0821644943247694
+  },
+  {
+    "sector": "337-339",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 118.151292669488,
+    "contribution": 0.0811058512480682
+  },
+  {
+    "sector": "337-339",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 44.2072085977127,
+    "contribution": 0.0303463737349725
+  },
+  {
+    "sector": "337-339",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 12.853336174468,
+    "contribution": 0.00882327013318431
+  },
+  {
+    "sector": "337-339",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 7.88847942704336,
+    "contribution": 0.00541510655133484
+  },
+  {
+    "sector": "337-339",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 3.91618933964847,
+    "contribution": 0.00268829788370842
+  },
+  {
+    "sector": "337-339",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 1.69746614276065,
+    "contribution": 0.00116523851210416
+  },
+  {
+    "sector": "337-339",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 0.791764419147144,
+    "contribution": 0.000543512692514492
   },
   {
     "sector": "337110/US",
@@ -17531,8 +18504,8 @@
     "sector": "337121/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 8.28196146611656e-5,
-    "contribution": 9.65106672811691e-7
+    "total_impacts_sum": 8.28196146611656e-05,
+    "contribution": 9.65106672811691e-07
   },
   {
     "sector": "337122/US",
@@ -17665,7 +18638,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.000675132369432089,
-    "contribution": 2.15782535977386e-5
+    "contribution": 2.15782535977386e-05
   },
   {
     "sector": "33712N/US",
@@ -17734,8 +18707,8 @@
     "sector": "33712N/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 1.57054715636931e-5,
-    "contribution": 4.91398804206172e-7
+    "total_impacts_sum": 1.57054715636931e-05,
+    "contribution": 4.91398804206172e-07
   },
   {
     "sector": "337215/US",
@@ -17805,7 +18778,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000354089218727223,
-    "contribution": 5.62076311729556e-6
+    "contribution": 5.62076311729556e-06
   },
   {
     "sector": "33721A/US",
@@ -17875,7 +18848,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00181563985866067,
-    "contribution": 1.26824991141164e-5
+    "contribution": 1.26824991141164e-05
   },
   {
     "sector": "337900/US",
@@ -18344,7 +19317,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00133197174548552,
-    "contribution": 4.09477725395969e-5
+    "contribution": 4.09477725395969e-05
   },
   {
     "sector": "339920/US",
@@ -18414,7 +19387,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00492862889060366,
-    "contribution": 7.65168208533611e-5
+    "contribution": 7.65168208533611e-05
   },
   {
     "sector": "339930/US",
@@ -18554,7 +19527,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00049418528238159,
-    "contribution": 1.81701142845044e-5
+    "contribution": 1.81701142845044e-05
   },
   {
     "sector": "339950/US",
@@ -18624,7 +19597,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000779128734252235,
-    "contribution": 1.16744509256382e-5
+    "contribution": 1.16744509256382e-05
   },
   {
     "sector": "339990/US",
@@ -18694,7 +19667,77 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0133764038245365,
-    "contribution": 5.93211263979633e-5
+    "contribution": 5.93211263979633e-05
+  },
+  {
+    "sector": "42-44",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 5269.18103839988,
+    "contribution": 0.297420983021883
+  },
+  {
+    "sector": "42-44",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 4795.94949578404,
+    "contribution": 0.270709243649856
+  },
+  {
+    "sector": "42-44",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 2315.0508317794,
+    "contribution": 0.1306739489715
+  },
+  {
+    "sector": "42-44",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 2142.39525709804,
+    "contribution": 0.120928337581094
+  },
+  {
+    "sector": "42-44",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 1886.00712368392,
+    "contribution": 0.106456409188531
+  },
+  {
+    "sector": "42-44",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 998.639171601998,
+    "contribution": 0.056368578330765
+  },
+  {
+    "sector": "42-44",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 149.477835955502,
+    "contribution": 0.00843733486966503
+  },
+  {
+    "sector": "42-44",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 126.296947049589,
+    "contribution": 0.00712888053578032
+  },
+  {
+    "sector": "42-44",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 25.306815694079,
+    "contribution": 0.00142845310230075
+  },
+  {
+    "sector": "42-44",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 7.93387630253326,
+    "contribution": 0.000447830748626176
   },
   {
     "sector": "423100/US",
@@ -18764,7 +19807,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0286964784011141,
-    "contribution": 4.35421088031753e-5
+    "contribution": 4.35421088031753e-05
   },
   {
     "sector": "423400/US",
@@ -18834,7 +19877,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.0263823874145856,
-    "contribution": 4.32401742354565e-5
+    "contribution": 4.32401742354565e-05
   },
   {
     "sector": "423600/US",
@@ -18897,7 +19940,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0306478267004158,
-    "contribution": 4.08636852345516e-5
+    "contribution": 4.08636852345516e-05
   },
   {
     "sector": "423800/US",
@@ -18967,7 +20010,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.056528292999157,
-    "contribution": 8.39279105326479e-5
+    "contribution": 8.39279105326479e-05
   },
   {
     "sector": "423A00/US",
@@ -19100,7 +20143,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00185855989991877,
-    "contribution": 2.33198729128971e-6
+    "contribution": 2.33198729128971e-06
   },
   {
     "sector": "424400/US",
@@ -19169,8 +20212,8 @@
     "sector": "424400/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 1.42229259309258e-5,
-    "contribution": 1.64785225937537e-8
+    "total_impacts_sum": 1.42229259309258e-05,
+    "contribution": 1.64785225937537e-08
   },
   {
     "sector": "424700/US",
@@ -19240,7 +20283,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.0334158971620687,
-    "contribution": 2.0729318679853e-5
+    "contribution": 2.0729318679853e-05
   },
   {
     "sector": "424A00/US",
@@ -19436,7 +20479,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0133250995594041,
-    "contribution": 1.34459471191964e-5
+    "contribution": 1.34459471191964e-05
   },
   {
     "sector": "444000/US",
@@ -19499,14 +20542,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.032844962805741,
-    "contribution": 7.62281416210921e-5
+    "contribution": 7.62281416210921e-05
   },
   {
     "sector": "444000/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.0278648413503435,
-    "contribution": 6.46700404340837e-5
+    "contribution": 6.46700404340837e-05
   },
   {
     "sector": "445000/US",
@@ -19576,7 +20619,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0481304513526052,
-    "contribution": 4.37000705135702e-5
+    "contribution": 4.37000705135702e-05
   },
   {
     "sector": "446000/US",
@@ -19646,7 +20689,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.000491333229939326,
-    "contribution": 1.07240844946417e-6
+    "contribution": 1.07240844946417e-06
   },
   {
     "sector": "447000/US",
@@ -19716,7 +20759,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000355387515437891,
-    "contribution": 2.23153567119287e-7
+    "contribution": 2.23153567119287e-07
   },
   {
     "sector": "448000/US",
@@ -19779,14 +20822,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0491607736705051,
-    "contribution": 8.85603614249901e-5
+    "contribution": 8.85603614249901e-05
   },
   {
     "sector": "448000/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00861731648392084,
-    "contribution": 1.55236096861393e-5
+    "contribution": 1.55236096861393e-05
   },
   {
     "sector": "452000/US",
@@ -19856,7 +20899,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0206685079141877,
-    "contribution": 2.29268996322158e-5
+    "contribution": 2.29268996322158e-05
   },
   {
     "sector": "454000/US",
@@ -19919,14 +20962,84 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00985054677992523,
-    "contribution": 5.48119526523746e-6
+    "contribution": 5.48119526523746e-06
   },
   {
     "sector": "454000/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00134668489240068,
-    "contribution": 7.4934346497763e-7
+    "contribution": 7.4934346497763e-07
+  },
+  {
+    "sector": "48",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 39998.6440351476,
+    "contribution": 0.770811418849621
+  },
+  {
+    "sector": "48",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 5302.84521337556,
+    "contribution": 0.102190805250052
+  },
+  {
+    "sector": "48",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 3796.9092371226,
+    "contribution": 0.0731700053066288
+  },
+  {
+    "sector": "48",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 1669.06154648291,
+    "contribution": 0.0321643828141108
+  },
+  {
+    "sector": "48",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 726.541034797991,
+    "contribution": 0.0140011277730566
+  },
+  {
+    "sector": "48",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 298.819909757662,
+    "contribution": 0.00575854017497243
+  },
+  {
+    "sector": "48",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 93.4488028785129,
+    "contribution": 0.00180084615551691
+  },
+  {
+    "sector": "48",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 3.29886801137923,
+    "contribution": 6.35722833557667e-05
+  },
+  {
+    "sector": "48",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 1.23021966127378,
+    "contribution": 2.3707487728081e-05
+  },
+  {
+    "sector": "48",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 0.809192804178352,
+    "contribution": 1.55939049574663e-05
   },
   {
     "sector": "481000/US",
@@ -19982,21 +21095,21 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 0.0195546098578111,
-    "contribution": 5.56717923734615e-6
+    "contribution": 5.56717923734615e-06
   },
   {
     "sector": "481000/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.000174745733005704,
-    "contribution": 4.97499476429382e-8
+    "contribution": 4.97499476429382e-08
   },
   {
     "sector": "481000/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 5.20271419914925e-6,
-    "contribution": 1.48120789307283e-9
+    "total_impacts_sum": 5.20271419914925e-06,
+    "contribution": 1.48120789307283e-09
   },
   {
     "sector": "482000/US",
@@ -20059,7 +21172,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 0.115411658333229,
-    "contribution": 1.54124460456662e-5
+    "contribution": 1.54124460456662e-05
   },
   {
     "sector": "483000/US",
@@ -20115,21 +21228,21 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 0.0472574199508647,
-    "contribution": 9.90076321977311e-6
+    "contribution": 9.90076321977311e-06
   },
   {
     "sector": "483000/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00333765401772957,
-    "contribution": 6.99262087803847e-7
+    "contribution": 6.99262087803847e-07
   },
   {
     "sector": "483000/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00196526762551498,
-    "contribution": 4.11737446605006e-7
+    "contribution": 4.11737446605006e-07
   },
   {
     "sector": "484000/US",
@@ -20185,21 +21298,21 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 0.80245007278151,
-    "contribution": 3.58449153357645e-5
+    "contribution": 3.58449153357645e-05
   },
   {
     "sector": "484000/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0535407050950841,
-    "contribution": 2.39162797318728e-6
+    "contribution": 2.39162797318728e-06
   },
   {
     "sector": "484000/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00296426531574826,
-    "contribution": 1.32411775984311e-7
+    "contribution": 1.32411775984311e-07
   },
   {
     "sector": "485000/US",
@@ -20262,14 +21375,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0182503342781384,
-    "contribution": 4.63198708375716e-6
+    "contribution": 4.63198708375716e-06
   },
   {
     "sector": "485000/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00402743465481568,
-    "contribution": 1.02217444444996e-6
+    "contribution": 1.02217444444996e-06
   },
   {
     "sector": "486000/US",
@@ -20325,21 +21438,21 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 0.109696643889377,
-    "contribution": 3.29735439305534e-5
+    "contribution": 3.29735439305534e-05
   },
   {
     "sector": "486000/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0292758423999664,
-    "contribution": 8.79998002904015e-6
+    "contribution": 8.79998002904015e-06
   },
   {
     "sector": "486000/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 1.18645508141645e-5,
-    "contribution": 3.56634691469373e-9
+    "total_impacts_sum": 1.18645508141645e-05,
+    "contribution": 3.56634691469373e-09
   },
   {
     "sector": "48A000/US",
@@ -20409,7 +21522,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.155547986668149,
-    "contribution": 4.8913796098088e-5
+    "contribution": 4.8913796098088e-05
   },
   {
     "sector": "491000/US",
@@ -20528,7 +21641,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0026022007629412,
-    "contribution": 1.37645191495561e-6
+    "contribution": 1.37645191495561e-06
   },
   {
     "sector": "493000/US",
@@ -20591,14 +21704,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00757358518190991,
-    "contribution": 5.43432578413236e-6
+    "contribution": 5.43432578413236e-06
   },
   {
     "sector": "493000/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00113368398493258,
-    "contribution": 8.13459935077064e-7
+    "contribution": 8.13459935077064e-07
   },
   {
     "sector": "4B0000/US",
@@ -20669,6 +21782,76 @@
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.219788694845122,
     "contribution": 0.000293219611968932
+  },
+  {
+    "sector": "5",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 13129.6099492654,
+    "contribution": 0.400377211631877
+  },
+  {
+    "sector": "5",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 5734.89176577255,
+    "contribution": 0.17488105001315
+  },
+  {
+    "sector": "5",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 3633.89065109334,
+    "contribution": 0.110812660229964
+  },
+  {
+    "sector": "5",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 3473.6900217837,
+    "contribution": 0.105927467028299
+  },
+  {
+    "sector": "5",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 2860.73303641415,
+    "contribution": 0.0872358219907954
+  },
+  {
+    "sector": "5",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 2214.47630190317,
+    "contribution": 0.0675287270838132
+  },
+  {
+    "sector": "5",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 1491.07588575513,
+    "contribution": 0.045469195793099
+  },
+  {
+    "sector": "5",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 123.529395515754,
+    "contribution": 0.00376693253815482
+  },
+  {
+    "sector": "5",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 71.8593928685265,
+    "contribution": 0.00219129612055764
+  },
+  {
+    "sector": "5",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 59.3436258537717,
+    "contribution": 0.0018096375702911
   },
   {
     "sector": "511110/US",
@@ -20794,7 +21977,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000106322122778368,
-    "contribution": 3.30438132124088e-6
+    "contribution": 3.30438132124088e-06
   },
   {
     "sector": "511130/US",
@@ -20997,7 +22180,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0362929526430042,
-    "contribution": 8.26456780791532e-5
+    "contribution": 8.26456780791532e-05
   },
   {
     "sector": "512100/US",
@@ -21067,7 +22250,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.000188377610961235,
-    "contribution": 1.28363425882201e-6
+    "contribution": 1.28363425882201e-06
   },
   {
     "sector": "512200/US",
@@ -21136,8 +22319,8 @@
     "sector": "512200/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 1.82061585316384e-5,
-    "contribution": 8.74848027980209e-7
+    "total_impacts_sum": 1.82061585316384e-05,
+    "contribution": 8.74848027980209e-07
   },
   {
     "sector": "515100/US",
@@ -21333,7 +22516,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00110468107780023,
-    "contribution": 2.1959269405734e-6
+    "contribution": 2.1959269405734e-06
   },
   {
     "sector": "517210/US",
@@ -21529,7 +22712,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.0813787453340997,
-    "contribution": 8.08777802448947e-5
+    "contribution": 8.08777802448947e-05
   },
   {
     "sector": "519130/US",
@@ -21788,7 +22971,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00178182785060215,
-    "contribution": 1.93438290348354e-6
+    "contribution": 1.93438290348354e-06
   },
   {
     "sector": "523A00/US",
@@ -21851,7 +23034,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.000324608682125432,
-    "contribution": 1.35316013601385e-6
+    "contribution": 1.35316013601385e-06
   },
   {
     "sector": "524113/US",
@@ -21970,14 +23153,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.0184864469650398,
-    "contribution": 4.62654380505635e-5
+    "contribution": 4.62654380505635e-05
   },
   {
     "sector": "5241XX/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00331389161037876,
-    "contribution": 8.29357027319558e-6
+    "contribution": 8.29357027319558e-06
   },
   {
     "sector": "524200/US",
@@ -22039,8 +23222,8 @@
     "sector": "524200/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 7.4404992475946e-5,
-    "contribution": 4.12812465482996e-7
+    "total_impacts_sum": 7.4404992475946e-05,
+    "contribution": 4.12812465482996e-07
   },
   {
     "sector": "525000/US",
@@ -22173,14 +23356,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.0239038457942197,
-    "contribution": 2.51385963032687e-5
+    "contribution": 2.51385963032687e-05
   },
   {
     "sector": "52A000/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000164116179739489,
-    "contribution": 1.72593582841106e-7
+    "contribution": 1.72593582841106e-07
   },
   {
     "sector": "531HSO/US",
@@ -22229,14 +23412,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0391613157819714,
-    "contribution": 3.40563862424244e-5
+    "contribution": 3.40563862424244e-05
   },
   {
     "sector": "531HSO/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 0.0102253569675558,
-    "contribution": 8.89241588031789e-6
+    "contribution": 8.89241588031789e-06
   },
   {
     "sector": "531HST/US",
@@ -22362,14 +23545,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.27499417233119,
-    "contribution": 3.78064107864096e-5
+    "contribution": 3.78064107864096e-05
   },
   {
     "sector": "531ORE/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.17356716437265,
-    "contribution": 2.38621475490826e-5
+    "contribution": 2.38621475490826e-05
   },
   {
     "sector": "532100/US",
@@ -22432,14 +23615,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00653104613745611,
-    "contribution": 1.72303097655418e-5
+    "contribution": 1.72303097655418e-05
   },
   {
     "sector": "532100/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 5.63731462703719e-5,
-    "contribution": 1.48724530841401e-7
+    "total_impacts_sum": 5.63731462703719e-05,
+    "contribution": 1.48724530841401e-07
   },
   {
     "sector": "532400/US",
@@ -22509,7 +23692,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.000724635190361108,
-    "contribution": 1.63237172669978e-6
+    "contribution": 1.63237172669978e-06
   },
   {
     "sector": "532A00/US",
@@ -22635,14 +23818,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Construction",
     "total_impacts_sum": 0.0137545479709625,
-    "contribution": 2.68909905249065e-5
+    "contribution": 2.68909905249065e-05
   },
   {
     "sector": "533000/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00632551144104848,
-    "contribution": 1.23667654208282e-5
+    "contribution": 1.23667654208282e-05
   },
   {
     "sector": "541100/US",
@@ -22705,7 +23888,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.0262219663381451,
-    "contribution": 7.28439270157525e-5
+    "contribution": 7.28439270157525e-05
   },
   {
     "sector": "541200/US",
@@ -22908,7 +24091,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00279277810108055,
-    "contribution": 2.00966990872438e-5
+    "contribution": 2.00966990872438e-05
   },
   {
     "sector": "541511/US",
@@ -23041,14 +24224,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0254359012156444,
-    "contribution": 4.471306339755e-5
+    "contribution": 4.471306339755e-05
   },
   {
     "sector": "541512/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00348050641326867,
-    "contribution": 6.11828543414629e-6
+    "contribution": 6.11828543414629e-06
   },
   {
     "sector": "54151A/US",
@@ -23111,14 +24294,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00854906401590194,
-    "contribution": 4.79473629112871e-5
+    "contribution": 4.79473629112871e-05
   },
   {
     "sector": "54151A/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00267680344112002,
-    "contribution": 1.50128324919348e-5
+    "contribution": 1.50128324919348e-05
   },
   {
     "sector": "541610/US",
@@ -23188,7 +24371,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0062688623738236,
-    "contribution": 9.72737952441961e-6
+    "contribution": 9.72737952441961e-06
   },
   {
     "sector": "5416A0/US",
@@ -23461,7 +24644,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000108081988022578,
-    "contribution": 2.37134598403239e-6
+    "contribution": 2.37134598403239e-06
   },
   {
     "sector": "541940/US",
@@ -23524,7 +24707,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000198784120947023,
-    "contribution": 1.2731873177123e-6
+    "contribution": 1.2731873177123e-06
   },
   {
     "sector": "5419A0/US",
@@ -23587,7 +24770,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00204099902011772,
-    "contribution": 7.88573087938266e-6
+    "contribution": 7.88573087938266e-06
   },
   {
     "sector": "550000/US",
@@ -23783,7 +24966,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.0019699953888251,
-    "contribution": 1.08795222457575e-5
+    "contribution": 1.08795222457575e-05
   },
   {
     "sector": "561300/US",
@@ -23846,14 +25029,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.000721414892933059,
-    "contribution": 1.29491837569009e-6
+    "contribution": 1.29491837569009e-06
   },
   {
     "sector": "561300/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000135622349559409,
-    "contribution": 2.43438102427751e-7
+    "contribution": 2.43438102427751e-07
   },
   {
     "sector": "561400/US",
@@ -24192,6 +25375,76 @@
     "contribution": 0.000888476272706473
   },
   {
+    "sector": "562",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 1464.9331849231,
+    "contribution": 0.662269508779003
+  },
+  {
+    "sector": "562",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 298.331048313818,
+    "contribution": 0.134870012403117
+  },
+  {
+    "sector": "562",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 174.39377252494,
+    "contribution": 0.0788402360277419
+  },
+  {
+    "sector": "562",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 131.340576694614,
+    "contribution": 0.0593766733565116
+  },
+  {
+    "sector": "562",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 104.374702840715,
+    "contribution": 0.0471858948180653
+  },
+  {
+    "sector": "562",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 25.6857689636546,
+    "contribution": 0.011612066522381
+  },
+  {
+    "sector": "562",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 6.12913920120435,
+    "contribution": 0.00277087177066906
+  },
+  {
+    "sector": "562",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 4.08886855553818,
+    "contribution": 0.00184850271507798
+  },
+  {
+    "sector": "562",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 1.48201685372606,
+    "contribution": 0.000669992723095343
+  },
+  {
+    "sector": "562",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 1.23039898330687,
+    "contribution": 0.000556240884337398
+  },
+  {
     "sector": "562000/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Direct",
@@ -24260,6 +25513,76 @@
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 1.23039898330687,
     "contribution": 0.000556240884337398
+  },
+  {
+    "sector": "6",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 3532.62055590064,
+    "contribution": 0.366789492976981
+  },
+  {
+    "sector": "6",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 3120.23134240611,
+    "contribution": 0.323971412706747
+  },
+  {
+    "sector": "6",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 1056.37667307141,
+    "contribution": 0.10968284257458
+  },
+  {
+    "sector": "6",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 811.160019834453,
+    "contribution": 0.0842221709606803
+  },
+  {
+    "sector": "6",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 645.733610995924,
+    "contribution": 0.0670460639707754
+  },
+  {
+    "sector": "6",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 289.480837593587,
+    "contribution": 0.0300565905585729
+  },
+  {
+    "sector": "6",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 103.317925239698,
+    "contribution": 0.0107274270798215
+  },
+  {
+    "sector": "6",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 48.5202219548025,
+    "contribution": 0.00503782031732965
+  },
+  {
+    "sector": "6",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 11.9979184812627,
+    "contribution": 0.00124573538733755
+  },
+  {
+    "sector": "6",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 11.7543271058945,
+    "contribution": 0.00122044346717488
   },
   {
     "sector": "611100/US",
@@ -24623,7 +25946,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 0.0247929100169822,
-    "contribution": 8.74037007403216e-5
+    "contribution": 8.74037007403216e-05
   },
   {
     "sector": "621400/US",
@@ -24692,8 +26015,8 @@
     "sector": "621400/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 3.40780334463835e-5,
-    "contribution": 8.32697177400879e-8
+    "total_impacts_sum": 3.40780334463835e-05,
+    "contribution": 8.32697177400879e-08
   },
   {
     "sector": "621500/US",
@@ -24819,7 +26142,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000486370155004947,
-    "contribution": 1.48742591275998e-6
+    "contribution": 1.48742591275998e-06
   },
   {
     "sector": "621900/US",
@@ -24952,7 +26275,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.103504589207156,
-    "contribution": 2.66522952851088e-5
+    "contribution": 2.66522952851088e-05
   },
   {
     "sector": "623A00/US",
@@ -25148,7 +26471,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0136599832097088,
-    "contribution": 3.37945981798787e-5
+    "contribution": 3.37945981798787e-05
   },
   {
     "sector": "624400/US",
@@ -25281,14 +26604,84 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00203548824046011,
-    "contribution": 6.49459279180061e-6
+    "contribution": 6.49459279180061e-06
   },
   {
     "sector": "624A00/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000470953933605121,
-    "contribution": 1.50266356821132e-6
+    "contribution": 1.50266356821132e-06
+  },
+  {
+    "sector": "7",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 2582.79716450238,
+    "contribution": 0.332500115280713
+  },
+  {
+    "sector": "7",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 1720.58267815231,
+    "contribution": 0.221501690763187
+  },
+  {
+    "sector": "7",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 1220.30058586183,
+    "contribution": 0.157097154609257
+  },
+  {
+    "sector": "7",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 746.55185133214,
+    "contribution": 0.0961084285063445
+  },
+  {
+    "sector": "7",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 641.780474103678,
+    "contribution": 0.0826205342630912
+  },
+  {
+    "sector": "7",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 527.940753112229,
+    "contribution": 0.0679652137162786
+  },
+  {
+    "sector": "7",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 160.991247957763,
+    "contribution": 0.0207254403252589
+  },
+  {
+    "sector": "7",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 114.878770975697,
+    "contribution": 0.0147890841440061
+  },
+  {
+    "sector": "7",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 28.3483193448956,
+    "contribution": 0.00364946174625691
+  },
+  {
+    "sector": "7",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 23.6364825484942,
+    "contribution": 0.00304287664560724
   },
   {
     "sector": "711100/US",
@@ -25358,7 +26751,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.0114620057202164,
-    "contribution": 9.2889545639851e-5
+    "contribution": 9.2889545639851e-05
   },
   {
     "sector": "711200/US",
@@ -25497,8 +26890,8 @@
     "sector": "711500/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 6.4867347532724e-6,
-    "contribution": 1.72633614560452e-7
+    "total_impacts_sum": 6.4867347532724e-06,
+    "contribution": 1.72633614560452e-07
   },
   {
     "sector": "711A00/US",
@@ -26131,6 +27524,76 @@
     "contribution": 0.000659845470133648
   },
   {
+    "sector": "8",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 891.472996640736,
+    "contribution": 0.347424170899021
+  },
+  {
+    "sector": "8",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 681.897175574848,
+    "contribution": 0.265748443032145
+  },
+  {
+    "sector": "8",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 285.754844719869,
+    "contribution": 0.111364158399952
+  },
+  {
+    "sector": "8",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 263.061389793393,
+    "contribution": 0.102520082592413
+  },
+  {
+    "sector": "8",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 194.153259602758,
+    "contribution": 0.0756652590701121
+  },
+  {
+    "sector": "8",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 167.474327289133,
+    "contribution": 0.0652679660792315
+  },
+  {
+    "sector": "8",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 48.3711039523788,
+    "contribution": 0.0188511494453019
+  },
+  {
+    "sector": "8",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 20.4927278296073,
+    "contribution": 0.00798641013523582
+  },
+  {
+    "sector": "8",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 9.42596057353935,
+    "contribution": 0.00367347810817485
+  },
+  {
+    "sector": "8",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 3.84605664376102,
+    "contribution": 0.0014988822384127
+  },
+  {
     "sector": "811100/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Manufacturing",
@@ -26268,7 +27731,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00645087424418964,
-    "contribution": 4.78825175962258e-5
+    "contribution": 4.78825175962258e-05
   },
   {
     "sector": "811300/US",
@@ -26338,7 +27801,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.00475701213246287,
-    "contribution": 2.28375069509895e-5
+    "contribution": 2.28375069509895e-05
   },
   {
     "sector": "811400/US",
@@ -26478,7 +27941,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.000201357084822595,
-    "contribution": 8.12541528197278e-7
+    "contribution": 8.12541528197278e-07
   },
   {
     "sector": "812200/US",
@@ -26597,14 +28060,14 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.000997688366926328,
-    "contribution": 9.64993101212126e-6
+    "contribution": 9.64993101212126e-06
   },
   {
     "sector": "812300/US",
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000880058196204227,
-    "contribution": 8.51217791201305e-6
+    "contribution": 8.51217791201305e-06
   },
   {
     "sector": "812900/US",
@@ -26878,6 +28341,76 @@
     "sector_purchased_detail": "Direct",
     "total_impacts_sum": 0.0254019547004935,
     "contribution": 1
+  },
+  {
+    "sector": "G",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 4626.43127445042,
+    "contribution": 0.336057684486071
+  },
+  {
+    "sector": "G",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 2698.86076458377,
+    "contribution": 0.19604158053857
+  },
+  {
+    "sector": "G",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 2151.39246763322,
+    "contribution": 0.156274226980596
+  },
+  {
+    "sector": "G",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 2091.23552535367,
+    "contribution": 0.151904508394292
+  },
+  {
+    "sector": "G",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 1122.46235310144,
+    "contribution": 0.0815341408807301
+  },
+  {
+    "sector": "G",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 594.245886878699,
+    "contribution": 0.0431652141603573
+  },
+  {
+    "sector": "G",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 255.06401014539,
+    "contribution": 0.0185275032871582
+  },
+  {
+    "sector": "G",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 109.004438554263,
+    "contribution": 0.00791793437450368
+  },
+  {
+    "sector": "G",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 91.1610525362573,
+    "contribution": 0.00662181504777392
+  },
+  {
+    "sector": "G",
+    "indicator": "Smog Formation Potential",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 26.9194439705925,
+    "contribution": 0.00195539184994906
   },
   {
     "sector": "GSLGE/US",
@@ -27339,7 +28872,7 @@
     "indicator": "Smog Formation Potential",
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.20071936890701,
-    "contribution": 8.66693216632358e-5
+    "contribution": 8.66693216632358e-05
   },
   {
     "sector": "S00600/US",

@@ -1,6 +1,76 @@
 [
   {
     "emissions_source": "Direct",
+    "sector_code": "11",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 2.98380235150227,
+    "total_impact": 1126473.68600424
+  },
+  {
+    "emissions_source": "115000/US",
+    "sector_code": "11",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.968736207031896,
+    "total_impact": 365726.585526541
+  },
+  {
+    "emissions_source": "424A00/US",
+    "sector_code": "11",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.310893787167845,
+    "total_impact": 117371.604794955
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "11",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.13889928274478,
+    "total_impact": 52438.5896197453
+  },
+  {
+    "emissions_source": "425000/US",
+    "sector_code": "11",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.114230351738648,
+    "total_impact": 43125.3381484233
+  },
+  {
+    "emissions_source": "311119/US",
+    "sector_code": "11",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0744206393366992,
+    "total_impact": 28095.9936458916
+  },
+  {
+    "emissions_source": "493000/US",
+    "sector_code": "11",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0732255653762161,
+    "total_impact": 27644.8178605265
+  },
+  {
+    "emissions_source": "561300/US",
+    "sector_code": "11",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0703204943635291,
+    "total_impact": 26548.0675847859
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "11",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0647826685475776,
+    "total_impact": 24457.374460892
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "11",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 1.92447722714465,
+    "total_impact": 726547.103430425
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "111/112",
     "indicator": "Jobs Supported",
     "impact_per_purchase": 2.12387619722521,
@@ -981,6 +1051,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "211",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.355557108047878,
+    "total_impact": 323769.696339822
+  },
+  {
+    "emissions_source": "550000/US",
+    "sector_code": "211",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.190553415046574,
+    "total_impact": 173517.614835133
+  },
+  {
+    "emissions_source": "21311A/US",
+    "sector_code": "211",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0990285547607015,
+    "total_impact": 90175.2331148062
+  },
+  {
+    "emissions_source": "561300/US",
+    "sector_code": "211",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0883154878242415,
+    "total_impact": 80419.9326289592
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "211",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0799136780463392,
+    "total_impact": 72769.2589708472
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "211",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0549116531716523,
+    "total_impact": 50002.4577500768
+  },
+  {
+    "emissions_source": "425000/US",
+    "sector_code": "211",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0488169235550548,
+    "total_impact": 44452.6073531235
+  },
+  {
+    "emissions_source": "541300/US",
+    "sector_code": "211",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0460956793800379,
+    "total_impact": 41974.6470472558
+  },
+  {
+    "emissions_source": "52A000/US",
+    "sector_code": "211",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0456001346564199,
+    "total_impact": 41523.404866866
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "211",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 1.28409889674267,
+    "total_impact": 1169298.26589964
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "211/32411",
     "indicator": "Jobs Supported",
     "impact_per_purchase": 0.101821888604831,
@@ -1118,6 +1258,76 @@
     "indicator": "Jobs Supported",
     "impact_per_purchase": 1.0421373379586,
     "total_impact": 314165.340742368
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "212",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 2.61191366498042,
+    "total_impact": 571315.861108407
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "212",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.315486513057493,
+    "total_impact": 72240.381624122
+  },
+  {
+    "emissions_source": "550000/US",
+    "sector_code": "212",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.152633489075326,
+    "total_impact": 34950.1517277646
+  },
+  {
+    "emissions_source": "561300/US",
+    "sector_code": "212",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.13374815450397,
+    "total_impact": 30625.7710646669
+  },
+  {
+    "emissions_source": "541300/US",
+    "sector_code": "212",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.130225954910751,
+    "total_impact": 29819.2546773115
+  },
+  {
+    "emissions_source": "524200/US",
+    "sector_code": "212",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.086865265866217,
+    "total_impact": 19890.4856351586
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "212",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0806090862734113,
+    "total_impact": 18457.9400822177
+  },
+  {
+    "emissions_source": "230302/US",
+    "sector_code": "212",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0610626053989155,
+    "total_impact": 13982.1695521322
+  },
+  {
+    "emissions_source": "423800/US",
+    "sector_code": "212",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0555594794736355,
+    "total_impact": 12722.058896006
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "212",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 1.93122232468546,
+    "total_impact": 442213.001070119
   },
   {
     "emissions_source": "Direct",
@@ -1678,6 +1888,76 @@
     "indicator": "Jobs Supported",
     "impact_per_purchase": 1.74312896700025,
     "total_impact": 161239.185720272
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "2211",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 1.01045423156853,
+    "total_impact": 463137.957496551
+  },
+  {
+    "emissions_source": "561300/US",
+    "sector_code": "2211",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.24841887493124,
+    "total_impact": 113861.871962919
+  },
+  {
+    "emissions_source": "48A000/US",
+    "sector_code": "2211",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.107200064731311,
+    "total_impact": 49134.7529378823
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "2211",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.10173925990657,
+    "total_impact": 46631.8132560999
+  },
+  {
+    "emissions_source": "722110/US",
+    "sector_code": "2211",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0889361079771066,
+    "total_impact": 40763.5359518176
+  },
+  {
+    "emissions_source": "52A000/US",
+    "sector_code": "2211",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0639324107485842,
+    "total_impact": 29303.1838621399
+  },
+  {
+    "emissions_source": "541100/US",
+    "sector_code": "2211",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0605381768903743,
+    "total_impact": 27747.449334791
+  },
+  {
+    "emissions_source": "447000/US",
+    "sector_code": "2211",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0537301280475246,
+    "total_impact": 24627.0053432609
+  },
+  {
+    "emissions_source": "541200/US",
+    "sector_code": "2211",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0465200992834801,
+    "total_impact": 21322.3153425199
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "2211",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 1.10344171581787,
+    "total_impact": 505758.4267692
   },
   {
     "emissions_source": "Direct",
@@ -2868,6 +3148,76 @@
     "indicator": "Jobs Supported",
     "impact_per_purchase": 2.41465014599922,
     "total_impact": 641709.878375794
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "31",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 2.17961109562936,
+    "total_impact": 1989877.66834058
+  },
+  {
+    "emissions_source": "115000/US",
+    "sector_code": "31",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.242706933128892,
+    "total_impact": 221579.485970252
+  },
+  {
+    "emissions_source": "424A00/US",
+    "sector_code": "31",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.234407672219133,
+    "total_impact": 214002.669178864
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "31",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.202518392300008,
+    "total_impact": 184889.325932552
+  },
+  {
+    "emissions_source": "424400/US",
+    "sector_code": "31",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.199404793399693,
+    "total_impact": 182046.76336149
+  },
+  {
+    "emissions_source": "550000/US",
+    "sector_code": "31",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.159379800614471,
+    "total_impact": 145505.914639205
+  },
+  {
+    "emissions_source": "111300/US",
+    "sector_code": "31",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.131313789244101,
+    "total_impact": 119883.02742906
+  },
+  {
+    "emissions_source": "112120/US",
+    "sector_code": "31",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.126003221500087,
+    "total_impact": 115034.740419871
+  },
+  {
+    "emissions_source": "493000/US",
+    "sector_code": "31",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.121764753087734,
+    "total_impact": 111165.227340855
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "31",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 2.75769356224094,
+    "total_impact": 2517638.51204167
   },
   {
     "emissions_source": "Direct",
@@ -5461,6 +5811,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "321",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 3.4091929435766,
+    "total_impact": 384924.479524414
+  },
+  {
+    "emissions_source": "113000/US",
+    "sector_code": "321",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.550386935163642,
+    "total_impact": 62142.9787228884
+  },
+  {
+    "emissions_source": "321100/US",
+    "sector_code": "321",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.457216296286984,
+    "total_impact": 51623.2867400316
+  },
+  {
+    "emissions_source": "423A00/US",
+    "sector_code": "321",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.381167286040036,
+    "total_impact": 43036.7602007204
+  },
+  {
+    "emissions_source": "115000/US",
+    "sector_code": "321",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.372221095585615,
+    "total_impact": 42026.6655063492
+  },
+  {
+    "emissions_source": "493000/US",
+    "sector_code": "321",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.179972278889821,
+    "total_impact": 20320.2743074464
+  },
+  {
+    "emissions_source": "321200/US",
+    "sector_code": "321",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.173318467992133,
+    "total_impact": 19569.0071486097
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "321",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.143147546712806,
+    "total_impact": 16162.4747632549
+  },
+  {
+    "emissions_source": "561300/US",
+    "sector_code": "321",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0966402214119403,
+    "total_impact": 10911.4349184031
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "321",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 2.32124389255771,
+    "total_impact": 262086.544229034
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "321/322",
     "indicator": "Jobs Supported",
     "impact_per_purchase": 2.58564123385211,
@@ -5808,6 +6228,76 @@
     "indicator": "Jobs Supported",
     "impact_per_purchase": 2.7514323028755,
     "total_impact": 79780.6619460149
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "322-323",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 2.84499856539663,
+    "total_impact": 589277.742011584
+  },
+  {
+    "emissions_source": "493000/US",
+    "sector_code": "322-323",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.229541948349479,
+    "total_impact": 47544.4742452667
+  },
+  {
+    "emissions_source": "561300/US",
+    "sector_code": "322-323",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.147833322910138,
+    "total_impact": 30620.362265951
+  },
+  {
+    "emissions_source": "423A00/US",
+    "sector_code": "322-323",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.12831946683469,
+    "total_impact": 26578.5039726143
+  },
+  {
+    "emissions_source": "550000/US",
+    "sector_code": "322-323",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.119437710242863,
+    "total_impact": 24738.8469924013
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "322-323",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.114629823589946,
+    "total_impact": 23743.0009399152
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "322-323",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.114512534500002,
+    "total_impact": 23718.7071315015
+  },
+  {
+    "emissions_source": "424A00/US",
+    "sector_code": "322-323",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.113642730342442,
+    "total_impact": 23538.5466786306
+  },
+  {
+    "emissions_source": "332710/US",
+    "sector_code": "322-323",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.109785814068797,
+    "total_impact": 22739.6728442093
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "322-323",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 2.89893563798944,
+    "total_impact": 600449.598734041
   },
   {
     "emissions_source": "Direct",
@@ -6858,6 +7348,76 @@
     "indicator": "Jobs Supported",
     "impact_per_purchase": 1.71262533489463,
     "total_impact": 1232673.126899
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "325-326",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 1.54709580642027,
+    "total_impact": 1438759.62473059
+  },
+  {
+    "emissions_source": "550000/US",
+    "sector_code": "325-326",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.15928324458758,
+    "total_impact": 148129.353242164
+  },
+  {
+    "emissions_source": "424A00/US",
+    "sector_code": "325-326",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.128990696908881,
+    "total_impact": 119958.056836685
+  },
+  {
+    "emissions_source": "493000/US",
+    "sector_code": "325-326",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.113057592338901,
+    "total_impact": 105140.676131
+  },
+  {
+    "emissions_source": "561300/US",
+    "sector_code": "325-326",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0946965152253218,
+    "total_impact": 88065.3429111992
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "325-326",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.081165910706227,
+    "total_impact": 75482.2259513549
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "325-326",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0714316444927101,
+    "total_impact": 66429.6067494496
+  },
+  {
+    "emissions_source": "325211/US",
+    "sector_code": "325-326",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0577852789229907,
+    "total_impact": 53738.8349662492
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "325-326",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.05130413589988,
+    "total_impact": 47711.5373256898
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "325-326",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 1.9695370164098,
+    "total_impact": 1831619.17113556
   },
   {
     "emissions_source": "Direct",
@@ -8891,6 +9451,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "327",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 3.20111464292715,
+    "total_impact": 358527.669327802
+  },
+  {
+    "emissions_source": "493000/US",
+    "sector_code": "327",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.214253697967007,
+    "total_impact": 23996.6035414252
+  },
+  {
+    "emissions_source": "2123A0/US",
+    "sector_code": "327",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.142014903799953,
+    "total_impact": 15905.7947461234
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "327",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.137764852228427,
+    "total_impact": 15429.7852136847
+  },
+  {
+    "emissions_source": "550000/US",
+    "sector_code": "327",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.133410930422627,
+    "total_impact": 14942.1421232013
+  },
+  {
+    "emissions_source": "423A00/US",
+    "sector_code": "327",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.12956616756639,
+    "total_impact": 14511.5252850913
+  },
+  {
+    "emissions_source": "561300/US",
+    "sector_code": "327",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.117694911279551,
+    "total_impact": 13181.9340885006
+  },
+  {
+    "emissions_source": "327310/US",
+    "sector_code": "327",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0876025826341513,
+    "total_impact": 9811.56668297218
+  },
+  {
+    "emissions_source": "327200/US",
+    "sector_code": "327",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0832168546591619,
+    "total_impact": 9320.36127342744
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "327",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 2.09866285079401,
+    "total_impact": 235052.094201782
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "327100/US",
     "indicator": "Jobs Supported",
     "impact_per_purchase": 4.84220122017941,
@@ -9798,6 +10428,76 @@
     "indicator": "Jobs Supported",
     "impact_per_purchase": 1.77940844636928,
     "total_impact": 7477.48763653665
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "331-332",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 3.24602502752759,
+    "total_impact": 1560401.25932802
+  },
+  {
+    "emissions_source": "S00401/US",
+    "sector_code": "331-332",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.370951177435061,
+    "total_impact": 178320.46256888
+  },
+  {
+    "emissions_source": "423A00/US",
+    "sector_code": "331-332",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.324302787649856,
+    "total_impact": 155896.049463877
+  },
+  {
+    "emissions_source": "561300/US",
+    "sector_code": "331-332",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.199936540807868,
+    "total_impact": 96111.7759156384
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "331-332",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.170134884982871,
+    "total_impact": 81785.7800021671
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "331-332",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.152126492820837,
+    "total_impact": 73128.9404615571
+  },
+  {
+    "emissions_source": "332710/US",
+    "sector_code": "331-332",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.11361137977303,
+    "total_impact": 54614.2862634852
+  },
+  {
+    "emissions_source": "550000/US",
+    "sector_code": "331-332",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.110828902105717,
+    "total_impact": 53276.717508067
+  },
+  {
+    "emissions_source": "331410/US",
+    "sector_code": "331-332",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0900772539850551,
+    "total_impact": 43301.1635348197
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "331-332",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 2.61387526065446,
+    "total_impact": 1256519.65522835
   },
   {
     "emissions_source": "Direct",
@@ -11898,6 +12598,76 @@
     "indicator": "Jobs Supported",
     "impact_per_purchase": 2.13956870470707,
     "total_impact": 40422.6907350891
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "333",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 3.09010793137112,
+    "total_impact": 977398.88239719
+  },
+  {
+    "emissions_source": "550000/US",
+    "sector_code": "333",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.223129715859524,
+    "total_impact": 70575.7662043648
+  },
+  {
+    "emissions_source": "423A00/US",
+    "sector_code": "333",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.182169988631174,
+    "total_impact": 57620.2343894875
+  },
+  {
+    "emissions_source": "561300/US",
+    "sector_code": "333",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.145528471762242,
+    "total_impact": 46030.5493582787
+  },
+  {
+    "emissions_source": "423800/US",
+    "sector_code": "333",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.12473727672237,
+    "total_impact": 39454.309548216
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "333",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.11866067208766,
+    "total_impact": 37532.2839391947
+  },
+  {
+    "emissions_source": "332710/US",
+    "sector_code": "333",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.104162233180406,
+    "total_impact": 32946.4382991148
+  },
+  {
+    "emissions_source": "S00401/US",
+    "sector_code": "333",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.101574941439656,
+    "total_impact": 32128.0798106715
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "333",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0993705609750207,
+    "total_impact": 31430.8358792735
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "333",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 3.02348422131166,
+    "total_impact": 956325.851551832
   },
   {
     "emissions_source": "Direct",
@@ -15331,6 +16101,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "335",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 2.84912814700781,
+    "total_impact": 320366.202645174
+  },
+  {
+    "emissions_source": "423A00/US",
+    "sector_code": "335",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.16348633452854,
+    "total_impact": 18382.9906816555
+  },
+  {
+    "emissions_source": "550000/US",
+    "sector_code": "335",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.134425871451276,
+    "total_impact": 15115.327830846
+  },
+  {
+    "emissions_source": "561300/US",
+    "sector_code": "335",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.102123161336323,
+    "total_impact": 11483.0950772775
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "335",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0959975146566233,
+    "total_impact": 10794.3053618755
+  },
+  {
+    "emissions_source": "332710/US",
+    "sector_code": "335",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0916762559750276,
+    "total_impact": 10308.4075141693
+  },
+  {
+    "emissions_source": "331410/US",
+    "sector_code": "335",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0883988209776428,
+    "total_impact": 9939.88095083053
+  },
+  {
+    "emissions_source": "335312/US",
+    "sector_code": "335",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0806328415016922,
+    "total_impact": 9066.64632389965
+  },
+  {
+    "emissions_source": "335314/US",
+    "sector_code": "335",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0795272314699197,
+    "total_impact": 8942.32756068173
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "335",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 2.60875521338029,
+    "total_impact": 293337.806591525
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "335110/US",
     "indicator": "Jobs Supported",
     "impact_per_purchase": 5.27747773643896,
@@ -16308,6 +17148,76 @@
     "indicator": "Jobs Supported",
     "impact_per_purchase": 2.27276416854576,
     "total_impact": 26569.5340377671
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "336",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 1.91422982575385,
+    "total_impact": 1783945.49165122
+  },
+  {
+    "emissions_source": "561300/US",
+    "sector_code": "336",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.166766526141451,
+    "total_impact": 155416.235013064
+  },
+  {
+    "emissions_source": "336360/US",
+    "sector_code": "336",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.159394494872224,
+    "total_impact": 148545.951325017
+  },
+  {
+    "emissions_source": "423A00/US",
+    "sector_code": "336",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.150657258217996,
+    "total_impact": 140403.379451412
+  },
+  {
+    "emissions_source": "550000/US",
+    "sector_code": "336",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.146017189215611,
+    "total_impact": 136079.118034946
+  },
+  {
+    "emissions_source": "336390/US",
+    "sector_code": "336",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.12963688089394,
+    "total_impact": 120813.669346833
+  },
+  {
+    "emissions_source": "336370/US",
+    "sector_code": "336",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.123059902839491,
+    "total_impact": 114684.326782492
+  },
+  {
+    "emissions_source": "423100/US",
+    "sector_code": "336",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.122515589929628,
+    "total_impact": 114177.060335938
+  },
+  {
+    "emissions_source": "336413/US",
+    "sector_code": "336",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.112181460883182,
+    "total_impact": 104546.282111443
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "336",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 3.44628790010438,
+    "total_impact": 3211730.21107964
   },
   {
     "emissions_source": "Direct",
@@ -18201,6 +19111,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "337-339",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 4.29321670619679,
+    "total_impact": 871471.00846901
+  },
+  {
+    "emissions_source": "423A00/US",
+    "sector_code": "337-339",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.137246010407845,
+    "total_impact": 27859.2783182444
+  },
+  {
+    "emissions_source": "550000/US",
+    "sector_code": "337-339",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.132580604411912,
+    "total_impact": 26912.2573904808
+  },
+  {
+    "emissions_source": "561300/US",
+    "sector_code": "337-339",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.109882941095953,
+    "total_impact": 22304.9065639319
+  },
+  {
+    "emissions_source": "493000/US",
+    "sector_code": "337-339",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0874109949989183,
+    "total_impact": 17743.373599808
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "337-339",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0814064986730918,
+    "total_impact": 16524.5335489754
+  },
+  {
+    "emissions_source": "332710/US",
+    "sector_code": "337-339",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0726434571035198,
+    "total_impact": 14745.7422145272
+  },
+  {
+    "emissions_source": "321200/US",
+    "sector_code": "337-339",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0649643250338818,
+    "total_impact": 13186.9713844327
+  },
+  {
+    "emissions_source": "424A00/US",
+    "sector_code": "337-339",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0626008326608576,
+    "total_impact": 12707.2110502164
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "337-339",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 2.52618256631957,
+    "total_impact": 512784.473578919
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "337110/US",
     "indicator": "Jobs Supported",
     "impact_per_purchase": 7.66766680667122,
@@ -19531,6 +20511,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "42-44",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 4.31618681246106,
+    "total_impact": 17950305.4250577
+  },
+  {
+    "emissions_source": "493000/US",
+    "sector_code": "42-44",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.219894434988739,
+    "total_impact": 914504.501501804
+  },
+  {
+    "emissions_source": "561300/US",
+    "sector_code": "42-44",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.158403765939785,
+    "total_impact": 658775.002715235
+  },
+  {
+    "emissions_source": "550000/US",
+    "sector_code": "42-44",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.153460918550403,
+    "total_impact": 638218.519837176
+  },
+  {
+    "emissions_source": "492000/US",
+    "sector_code": "42-44",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.118756412653182,
+    "total_impact": 493888.233047382
+  },
+  {
+    "emissions_source": "541800/US",
+    "sector_code": "42-44",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0991562920838663,
+    "total_impact": 412374.580864529
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "42-44",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0988210971313793,
+    "total_impact": 410980.560625018
+  },
+  {
+    "emissions_source": "425000/US",
+    "sector_code": "42-44",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0895939032276833,
+    "total_impact": 372606.190843481
+  },
+  {
+    "emissions_source": "531ORE/US",
+    "sector_code": "42-44",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0852026569576986,
+    "total_impact": 354343.725577774
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "42-44",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 1.67575890745968,
+    "total_impact": 6969203.4924945
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "423100/US",
     "indicator": "Jobs Supported",
     "impact_per_purchase": 2.56153282676632,
@@ -20791,6 +21841,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "48",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 4.82828543377003,
+    "total_impact": 6428783.35376222
+  },
+  {
+    "emissions_source": "48A000/US",
+    "sector_code": "48",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.378472327153896,
+    "total_impact": 503929.734486882
+  },
+  {
+    "emissions_source": "561300/US",
+    "sector_code": "48",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.225341085730757,
+    "total_impact": 300037.982579137
+  },
+  {
+    "emissions_source": "493000/US",
+    "sector_code": "48",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.160712185779505,
+    "total_impact": 213985.655748461
+  },
+  {
+    "emissions_source": "492000/US",
+    "sector_code": "48",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.138032320410684,
+    "total_impact": 183787.784692855
+  },
+  {
+    "emissions_source": "722A00/US",
+    "sector_code": "48",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.125005582890633,
+    "total_impact": 166442.896021404
+  },
+  {
+    "emissions_source": "550000/US",
+    "sector_code": "48",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.105441255303475,
+    "total_impact": 140393.312738656
+  },
+  {
+    "emissions_source": "561600/US",
+    "sector_code": "48",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0884381079059233,
+    "total_impact": 117753.899130999
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "48",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0880891519802504,
+    "total_impact": 117289.270003965
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "48",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 1.80618334003392,
+    "total_impact": 2404903.67637319
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "481000/US",
     "indicator": "Jobs Supported",
     "impact_per_purchase": 3.46366092635062,
@@ -21558,6 +22678,76 @@
     "indicator": "Jobs Supported",
     "impact_per_purchase": 1.2495044119784,
     "total_impact": 307677.087520562
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "5",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 2.44976603685294,
+    "total_impact": 35929035.2447338
+  },
+  {
+    "emissions_source": "561300/US",
+    "sector_code": "5",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.228307717567708,
+    "total_impact": 3348432.42486643
+  },
+  {
+    "emissions_source": "524200/US",
+    "sector_code": "5",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.122539477055568,
+    "total_impact": 1797202.31392245
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "5",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.112677561445824,
+    "total_impact": 1652564.37373032
+  },
+  {
+    "emissions_source": "722110/US",
+    "sector_code": "5",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.110401172487364,
+    "total_impact": 1619178.14096814
+  },
+  {
+    "emissions_source": "52A000/US",
+    "sector_code": "5",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0802590262661385,
+    "total_impact": 1177103.99280762
+  },
+  {
+    "emissions_source": "550000/US",
+    "sector_code": "5",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0651304026333085,
+    "total_impact": 955222.864760583
+  },
+  {
+    "emissions_source": "541300/US",
+    "sector_code": "5",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0629689687372019,
+    "total_impact": 923522.598913098
+  },
+  {
+    "emissions_source": "531ORE/US",
+    "sector_code": "5",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.060556776438143,
+    "total_impact": 888144.631863927
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "5",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 1.52355688395406,
+    "total_impact": 22344961.9912533
   },
   {
     "emissions_source": "Direct",
@@ -25271,6 +26461,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "562",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 4.09025539665071,
+    "total_impact": 530473.825678065
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "562",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.383285375882901,
+    "total_impact": 49709.086586023
+  },
+  {
+    "emissions_source": "561300/US",
+    "sector_code": "562",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.312570881010394,
+    "total_impact": 40537.9750078492
+  },
+  {
+    "emissions_source": "550000/US",
+    "sector_code": "562",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.14612333261269,
+    "total_impact": 18951.0423567571
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "562",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0958740991018335,
+    "total_impact": 12434.1135704223
+  },
+  {
+    "emissions_source": "48A000/US",
+    "sector_code": "562",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0937504004385935,
+    "total_impact": 12158.6866238803
+  },
+  {
+    "emissions_source": "722110/US",
+    "sector_code": "562",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0859909486292792,
+    "total_impact": 11152.3469977968
+  },
+  {
+    "emissions_source": "811300/US",
+    "sector_code": "562",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0808343206432271,
+    "total_impact": 10483.573068032
+  },
+  {
+    "emissions_source": "493000/US",
+    "sector_code": "562",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0747503869306571,
+    "total_impact": 9694.53490813584
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "562",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 2.27828730695778,
+    "total_impact": 295475.872901557
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "562000/US",
     "indicator": "Jobs Supported",
     "impact_per_purchase": 4.47354077253361,
@@ -25338,6 +26598,76 @@
     "indicator": "Jobs Supported",
     "impact_per_purchase": 2.20498025243162,
     "total_impact": 285968.526808809
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "6",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 10.6982351570085,
+    "total_impact": 37310716.2652887
+  },
+  {
+    "emissions_source": "561300/US",
+    "sector_code": "6",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.206721125796372,
+    "total_impact": 720951.928746553
+  },
+  {
+    "emissions_source": "722A00/US",
+    "sector_code": "6",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.141050909955976,
+    "total_impact": 491923.238094138
+  },
+  {
+    "emissions_source": "550000/US",
+    "sector_code": "6",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.13901797159387,
+    "total_impact": 484833.247520911
+  },
+  {
+    "emissions_source": "722110/US",
+    "sector_code": "6",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.118698101551283,
+    "total_impact": 413966.520945937
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "6",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0885956571239388,
+    "total_impact": 308982.498213508
+  },
+  {
+    "emissions_source": "531ORE/US",
+    "sector_code": "6",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0880663722457376,
+    "total_impact": 307136.586469725
+  },
+  {
+    "emissions_source": "541200/US",
+    "sector_code": "6",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0623802984735563,
+    "total_impact": 217554.912818133
+  },
+  {
+    "emissions_source": "541610/US",
+    "sector_code": "6",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0530848851273925,
+    "total_impact": 185136.619068057
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "6",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 1.58511247063335,
+    "total_impact": 5528171.77528831
   },
   {
     "emissions_source": "Direct",
@@ -26461,6 +27791,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "7",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 10.8070660322727,
+    "total_impact": 19803059.0405997
+  },
+  {
+    "emissions_source": "550000/US",
+    "sector_code": "7",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.197909994989407,
+    "total_impact": 362653.777056253
+  },
+  {
+    "emissions_source": "561300/US",
+    "sector_code": "7",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.135378775903882,
+    "total_impact": 248070.464644408
+  },
+  {
+    "emissions_source": "722A00/US",
+    "sector_code": "7",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.118462677926357,
+    "total_impact": 217073.107361207
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "7",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.10685622931841,
+    "total_impact": 195805.245542978
+  },
+  {
+    "emissions_source": "531ORE/US",
+    "sector_code": "7",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0841348803103163,
+    "total_impact": 154170.243540985
+  },
+  {
+    "emissions_source": "722110/US",
+    "sector_code": "7",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0688226492377029,
+    "total_impact": 126111.840356554
+  },
+  {
+    "emissions_source": "541800/US",
+    "sector_code": "7",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0662412889011482,
+    "total_impact": 121381.709995807
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "7",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0644639936684451,
+    "total_impact": 118124.962760184
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "7",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 1.77012642794626,
+    "total_impact": 3243610.99092626
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "711100/US",
     "indicator": "Jobs Supported",
     "impact_per_purchase": 3.6752625670277,
@@ -27301,6 +28701,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "8",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 5.80843626645714,
+    "total_impact": 5381511.55272142
+  },
+  {
+    "emissions_source": "561300/US",
+    "sector_code": "8",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.186192330596265,
+    "total_impact": 168925.633526359
+  },
+  {
+    "emissions_source": "531ORE/US",
+    "sector_code": "8",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0977350987630148,
+    "total_impact": 88671.5549637936
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "8",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0976757852250546,
+    "total_impact": 88617.7419149718
+  },
+  {
+    "emissions_source": "550000/US",
+    "sector_code": "8",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0894677093654481,
+    "total_impact": 81170.8486397433
+  },
+  {
+    "emissions_source": "541200/US",
+    "sector_code": "8",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0756915711766914,
+    "total_impact": 68672.2518198318
+  },
+  {
+    "emissions_source": "493000/US",
+    "sector_code": "8",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0703268783049626,
+    "total_impact": 63805.0581006868
+  },
+  {
+    "emissions_source": "541800/US",
+    "sector_code": "8",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0696526687271037,
+    "total_impact": 63193.371895865
+  },
+  {
+    "emissions_source": "722110/US",
+    "sector_code": "8",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0680961381020479,
+    "total_impact": 61781.187403095
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "8",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 1.69434711895388,
+    "total_impact": 1537220.46212245
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "811100/US",
     "indicator": "Jobs Supported",
     "impact_per_purchase": 6.3593986463623,
@@ -28075,6 +29545,76 @@
     "indicator": "Jobs Supported",
     "impact_per_purchase": 10.4608364267902,
     "total_impact": 201214.317510972
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "G",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 2.31038507916942,
+    "total_impact": 7400247.99259314
+  },
+  {
+    "emissions_source": "541300/US",
+    "sector_code": "G",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.122946884314224,
+    "total_impact": 393803.371587303
+  },
+  {
+    "emissions_source": "561300/US",
+    "sector_code": "G",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0923673349278618,
+    "total_impact": 295855.955374686
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "G",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0918043984834396,
+    "total_impact": 294052.8493339
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "G",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0640231256199442,
+    "total_impact": 205068.415269916
+  },
+  {
+    "emissions_source": "541512/US",
+    "sector_code": "G",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.045402565369098,
+    "total_impact": 145426.07908117
+  },
+  {
+    "emissions_source": "493000/US",
+    "sector_code": "G",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.042724475963503,
+    "total_impact": 136848.06066925
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "G",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0374135097323754,
+    "total_impact": 119836.8413946
+  },
+  {
+    "emissions_source": "561600/US",
+    "sector_code": "G",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0372294512817151,
+    "total_impact": 119247.29543869
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "G",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 1.38554195421642,
+    "total_impact": 4437941.60453533
   },
   {
     "emissions_source": "Direct",

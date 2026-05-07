@@ -1,6 +1,76 @@
 [
   {
     "emissions_source": "Direct",
+    "sector_code": "11",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 2485.52896107677,
+    "total_impact": 938.360735939757
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "11",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 547.801649948311,
+    "total_impact": 206.811333701709
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "11",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 230.873042067135,
+    "total_impact": 87.1614055017546
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "11",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 101.697078272346,
+    "total_impact": 38.3936565234067
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "11",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 57.3182226416661,
+    "total_impact": 21.639325239442
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "11",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 39.4717800186098,
+    "total_impact": 14.9017650275413
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "11",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 33.8438974152646,
+    "total_impact": 12.7770728013965
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "11",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 33.1543921462761,
+    "total_impact": 12.5167641581361
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "11",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 23.4971113329051,
+    "total_impact": 8.87085486754955
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "11",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 205.985638931249,
+    "total_impact": 77.765674336304
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "111/112",
     "indicator": "GWP-AR6-20",
     "impact_per_purchase": 2901.01845143845,
@@ -981,6 +1051,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "211",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 909.582686722434,
+    "total_impact": 828.264443630322
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "211",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 450.317953713157,
+    "total_impact": 410.058760829065
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "211",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 126.874412262513,
+    "total_impact": 115.531623476912
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "211",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 61.9160602488239,
+    "total_impact": 56.3806588915681
+  },
+  {
+    "emissions_source": "325110/US",
+    "sector_code": "211",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 30.6033054222987,
+    "total_impact": 27.867317736869
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "211",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 22.1041468762888,
+    "total_impact": 20.1279984565044
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "211",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 22.0726713696484,
+    "total_impact": 20.0993369138254
+  },
+  {
+    "emissions_source": "21311A/US",
+    "sector_code": "211",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 17.8010590609405,
+    "total_impact": 16.2096140288998
+  },
+  {
+    "emissions_source": "327310/US",
+    "sector_code": "211",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 11.122704810991,
+    "total_impact": 10.1283160359351
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "211",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 96.4115360356325,
+    "total_impact": 87.7921803259499
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "211/32411",
     "indicator": "GWP-AR6-20",
     "impact_per_purchase": 781.813282996656,
@@ -1118,6 +1258,76 @@
     "indicator": "GWP-AR6-20",
     "impact_per_purchase": 58.0695869850052,
     "total_impact": 17.5058036185989
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "212",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 557.550065561612,
+    "total_impact": 127.668308608124
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "212",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 76.4885573050066,
+    "total_impact": 17.5144177037617
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "212",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 39.4117161017775,
+    "total_impact": 9.02452971463508
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "212",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 18.340689976803,
+    "total_impact": 4.19966746068953
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "212",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 17.589573717969,
+    "total_impact": 4.0276761934357
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "212",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 17.5722147509346,
+    "total_impact": 4.02370132176523
+  },
+  {
+    "emissions_source": "327310/US",
+    "sector_code": "212",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 15.0838899471189,
+    "total_impact": 3.45392250082511
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "212",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 11.6774495889496,
+    "total_impact": 2.67391276580002
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "212",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 11.2294424980221,
+    "total_impact": 2.57132770469784
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "212",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 108.19865183271,
+    "total_impact": 24.7754232783512
   },
   {
     "emissions_source": "Direct",
@@ -1678,6 +1888,76 @@
     "indicator": "GWP-AR6-20",
     "impact_per_purchase": 84.9319997205237,
     "total_impact": 7.85619809881204
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "2211",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 3175.84060821898,
+    "total_impact": 1455.63478945696
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "2211",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 97.8125620347446,
+    "total_impact": 44.8320258186816
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "2211",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 94.1382225491108,
+    "total_impact": 43.1479059136328
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "2211",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 92.8561799134721,
+    "total_impact": 42.5602864162395
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "2211",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 75.7759262901309,
+    "total_impact": 34.7316153794942
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "2211",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 11.6612213562487,
+    "total_impact": 5.34487765216697
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "2211",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 10.5363808802096,
+    "total_impact": 4.82931118284406
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "2211",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 4.89235205709074,
+    "total_impact": 2.24239145949026
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "2211",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 4.64629653551178,
+    "total_impact": 2.12961282178993
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "2211",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 45.4220848610317,
+    "total_impact": 20.819044495581
   },
   {
     "emissions_source": "Direct",
@@ -2868,6 +3148,76 @@
     "indicator": "GWP-AR6-20",
     "impact_per_purchase": 127.716148647274,
     "total_impact": 33.9414446232964
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "31",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 77.561852572237,
+    "total_impact": 70.8101544620067
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "31",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 476.143535802475,
+    "total_impact": 434.695616441834
+  },
+  {
+    "emissions_source": "112120/US",
+    "sector_code": "31",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 295.007464389071,
+    "total_impact": 269.3272972223
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "31",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 192.036503485034,
+    "total_impact": 175.319877274132
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "31",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 94.9739867328711,
+    "total_impact": 86.706576073125
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "31",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 74.2408768742243,
+    "total_impact": 67.7782670799739
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "31",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 46.280722808767,
+    "total_impact": 42.2520223798155
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "31",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 34.25933609447,
+    "total_impact": 31.277087900342
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "31",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 26.4723305262125,
+    "total_impact": 24.1679350268817
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "31",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 279.47422170284,
+    "total_impact": 255.146211064211
   },
   {
     "emissions_source": "Direct",
@@ -5461,6 +5811,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "321",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 73.6654265218,
+    "total_impact": 8.31740134165002
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "321",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 97.6201092118315,
+    "total_impact": 11.0220718954261
+  },
+  {
+    "emissions_source": "113000/US",
+    "sector_code": "321",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 29.3401230123542,
+    "total_impact": 3.31272877969306
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "321",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 24.2157754574109,
+    "total_impact": 2.73414996408065
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "321",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 22.2966322288847,
+    "total_impact": 2.51746372173549
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "321",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 13.1833786941331,
+    "total_impact": 1.48850630228298
+  },
+  {
+    "emissions_source": "321100/US",
+    "sector_code": "321",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 11.7836204444174,
+    "total_impact": 1.33046267593235
+  },
+  {
+    "emissions_source": "325211/US",
+    "sector_code": "321",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 11.1376028901151,
+    "total_impact": 1.25752225426394
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "321",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 10.9740681209372,
+    "total_impact": 1.2390579030372
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "321",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 146.390158151888,
+    "total_impact": 16.5285908913667
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "321/322",
     "indicator": "GWP-AR6-20",
     "impact_per_purchase": 235.108993333065,
@@ -5808,6 +6228,76 @@
     "indicator": "GWP-AR6-20",
     "impact_per_purchase": 151.482886536878,
     "total_impact": 4.39240498440569
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "322-323",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 274.298589791167,
+    "total_impact": 56.814810241061
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "322-323",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 152.695811801955,
+    "total_impact": 31.6275179494641
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "322-323",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 86.6772518144405,
+    "total_impact": 17.9532516656514
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "322-323",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 53.6918721040831,
+    "total_impact": 11.1210689322291
+  },
+  {
+    "emissions_source": "322120/US",
+    "sector_code": "322-323",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 39.1220316263758,
+    "total_impact": 8.10325275383135
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "322-323",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 29.610717420221,
+    "total_impact": 6.13319701210404
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "322-323",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 28.9078180649717,
+    "total_impact": 5.98760715137068
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "322-323",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 23.1146443882808,
+    "total_impact": 4.78768095639722
+  },
+  {
+    "emissions_source": "322110/US",
+    "sector_code": "322-323",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 22.1863428735706,
+    "total_impact": 4.59540408598055
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "322-323",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 204.130483418455,
+    "total_impact": 42.2810583483688
   },
   {
     "emissions_source": "Direct",
@@ -6858,6 +7348,76 @@
     "indicator": "GWP-AR6-20",
     "impact_per_purchase": 161.895528061396,
     "total_impact": 116.525350139518
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "325-326",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 401.769936014485,
+    "total_impact": 373.635789050293
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "325-326",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 103.57661886813,
+    "total_impact": 96.3236127169061
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "325-326",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 93.3374537803555,
+    "total_impact": 86.8014504447916
+  },
+  {
+    "emissions_source": "325110/US",
+    "sector_code": "325-326",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 91.1018577970362,
+    "total_impact": 84.7224032231123
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "325-326",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 86.0327237829838,
+    "total_impact": 80.0082379325719
+  },
+  {
+    "emissions_source": "325211/US",
+    "sector_code": "325-326",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 52.5050263777634,
+    "total_impact": 48.8283348285542
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "325-326",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 49.2340091441646,
+    "total_impact": 45.7863722636182
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "325-326",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 24.7125949046616,
+    "total_impact": 22.9820827020532
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "325-326",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 22.8155189442995,
+    "total_impact": 21.217850464147
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "325-326",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 170.750804320868,
+    "total_impact": 158.793891191251
   },
   {
     "emissions_source": "Direct",
@@ -8891,6 +9451,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "327",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 782.455337156126,
+    "total_impact": 87.6356893382495
+  },
+  {
+    "emissions_source": "327310/US",
+    "sector_code": "327",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 351.310040712823,
+    "total_impact": 39.3470350668381
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "327",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 143.181834339157,
+    "total_impact": 16.0364919979111
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "327",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 75.0807789786765,
+    "total_impact": 8.40911360610502
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "327",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 23.3052036454393,
+    "total_impact": 2.61020340670108
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "327",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 22.8907591050238,
+    "total_impact": 2.56378525186581
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "327",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 18.3184640426426,
+    "total_impact": 2.05168416363501
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "327",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 14.3405017230478,
+    "total_impact": 1.60614886790003
+  },
+  {
+    "emissions_source": "327200/US",
+    "sector_code": "327",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 14.049582228106,
+    "total_impact": 1.57356562733601
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "327",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 162.458918816738,
+    "total_impact": 18.1955424975403
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "327100/US",
     "indicator": "GWP-AR6-20",
     "impact_per_purchase": 446.187912429622,
@@ -9798,6 +10428,76 @@
     "indicator": "GWP-AR6-20",
     "impact_per_purchase": 119.838019541392,
     "total_impact": 0.503587195697639
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "331-332",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 256.59272656558,
+    "total_impact": 123.347050707217
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "331-332",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 125.640728580926,
+    "total_impact": 60.3969314586254
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "331-332",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 118.76669811056,
+    "total_impact": 57.0925065969389
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "331-332",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 40.7376872381916,
+    "total_impact": 19.5830709651067
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "331-332",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 36.3768015800831,
+    "total_impact": 17.4867434830352
+  },
+  {
+    "emissions_source": "S00401/US",
+    "sector_code": "331-332",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 30.3737883086383,
+    "total_impact": 14.6010265248822
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "331-332",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 25.7347127203213,
+    "total_impact": 12.3709699699451
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "331-332",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 18.4486771857978,
+    "total_impact": 8.8684895740257
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "331-332",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 14.9604727397939,
+    "total_impact": 7.19166990560686
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "331-332",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 146.831640346832,
+    "total_impact": 70.5836444769829
   },
   {
     "emissions_source": "Direct",
@@ -11901,6 +12601,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "333",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 29.8406236853324,
+    "total_impact": 9.43856748302562
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "333",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 87.6281974534317,
+    "total_impact": 27.7167348712838
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "333",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 70.1609447120057,
+    "total_impact": 22.191855583186
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "333",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 16.8101741657917,
+    "total_impact": 5.31704581440189
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "333",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 13.1438789110077,
+    "total_impact": 4.15739930232232
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "333",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 12.5300705499414,
+    "total_impact": 3.96325216589977
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "333",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 10.1057451085216,
+    "total_impact": 3.19643979894165
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "333",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 8.94863360793419,
+    "total_impact": 2.83044627619073
+  },
+  {
+    "emissions_source": "S00401/US",
+    "sector_code": "333",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 8.3170399675859,
+    "total_impact": 2.63067366891753
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "333",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 107.543629051479,
+    "total_impact": 34.0159713441509
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "333111/US",
     "indicator": "GWP-AR6-20",
     "impact_per_purchase": 14.5012941753828,
@@ -13934,7 +14704,7 @@
     "sector_code": "334111/US",
     "indicator": "GWP-AR6-20",
     "impact_per_purchase": 0.00988216880362818,
-    "total_impact": 9.35345402251502e-5
+    "total_impact": 9.35345402251502e-05
   },
   {
     "emissions_source": "221100/US",
@@ -15331,6 +16101,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "335",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 32.4267278282302,
+    "total_impact": 3.64617775070903
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "335",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 65.7173283181986,
+    "total_impact": 7.38949244645182
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "335",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 48.9827177899019,
+    "total_impact": 5.50779272953078
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "335",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 16.2395675844743,
+    "total_impact": 1.82603531017078
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "335",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 13.3316207447832,
+    "total_impact": 1.49905532244918
+  },
+  {
+    "emissions_source": "325211/US",
+    "sector_code": "335",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 13.1819861606802,
+    "total_impact": 1.48222987233954
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "335",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 11.8877918732013,
+    "total_impact": 1.33670601803339
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "335",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 11.7910826386143,
+    "total_impact": 1.32583168432611
+  },
+  {
+    "emissions_source": "331410/US",
+    "sector_code": "335",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 9.0744279926163,
+    "total_impact": 1.02036127796662
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "335",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 119.561610442623,
+    "total_impact": 13.4439369320301
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "335110/US",
     "indicator": "GWP-AR6-20",
     "impact_per_purchase": 44.3564592369046,
@@ -16308,6 +17148,76 @@
     "indicator": "GWP-AR6-20",
     "impact_per_purchase": 68.2009005032465,
     "total_impact": 0.797296161390486
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "336",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 17.4215683560052,
+    "total_impact": 16.2358395570133
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "336",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 69.7872675686378,
+    "total_impact": 65.0374786134682
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "336",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 62.2229761029778,
+    "total_impact": 57.9880201439839
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "336",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 16.4605404233882,
+    "total_impact": 15.3402201153573
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "336",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 12.7186573018421,
+    "total_impact": 11.8530131796179
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "336",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 12.1375811631349,
+    "total_impact": 11.3114856451462
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "336",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 11.6014237630069,
+    "total_impact": 10.8118196364436
+  },
+  {
+    "emissions_source": "325211/US",
+    "sector_code": "336",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 10.7274565785149,
+    "total_impact": 9.99733550415734
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "336",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 9.65531754311471,
+    "total_impact": 8.99816728888193
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "336",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 119.556862847641,
+    "total_impact": 111.419707081943
   },
   {
     "emissions_source": "Direct",
@@ -18201,6 +19111,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "337-339",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 23.3346224230028,
+    "total_impact": 4.73664581288566
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "337-339",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 59.8580995882416,
+    "total_impact": 12.1504694458841
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "337-339",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 25.285167824906,
+    "total_impact": 5.13258291198612
+  },
+  {
+    "emissions_source": "325211/US",
+    "sector_code": "337-339",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 18.5353617977882,
+    "total_impact": 3.76245401610901
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "337-339",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 17.3751232423765,
+    "total_impact": 3.52693963769671
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "337-339",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 15.7020370236242,
+    "total_impact": 3.18732339325996
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "337-339",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 13.7712558678818,
+    "total_impact": 2.7953981968218
+  },
+  {
+    "emissions_source": "325110/US",
+    "sector_code": "337-339",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 12.7202104194176,
+    "total_impact": 2.58204869699391
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "337-339",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 9.88483334948934,
+    "total_impact": 2.00650148295419
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "337-339",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 116.843786988691,
+    "total_impact": 23.7178739972287
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "337110/US",
     "indicator": "GWP-AR6-20",
     "impact_per_purchase": 27.8180891882647,
@@ -19531,6 +20511,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "42-44",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 10.9051300041564,
+    "total_impact": 45.3526278587911
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "42-44",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 64.2126554978947,
+    "total_impact": 267.04978918278
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "42-44",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 12.4735909175287,
+    "total_impact": 51.8755967815019
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "42-44",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 11.710105903814,
+    "total_impact": 48.700389178331
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "42-44",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 5.60658306600778,
+    "total_impact": 23.3168495245024
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "42-44",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 4.25565126197712,
+    "total_impact": 17.6985481060456
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "42-44",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 4.16786594517262,
+    "total_impact": 17.3334635263127
+  },
+  {
+    "emissions_source": "492000/US",
+    "sector_code": "42-44",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 3.88690474661605,
+    "total_impact": 16.1649924786462
+  },
+  {
+    "emissions_source": "481000/US",
+    "sector_code": "42-44",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 3.63899943104015,
+    "total_impact": 15.1339953683646
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "42-44",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 51.6015022651355,
+    "total_impact": 214.602093537013
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "423100/US",
     "indicator": "GWP-AR6-20",
     "impact_per_purchase": 6.04741360663758,
@@ -20791,6 +21841,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "48",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 551.262949188708,
+    "total_impact": 733.997631230149
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "48",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 65.2621432148884,
+    "total_impact": 86.8954799143101
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "48",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 45.4304217222288,
+    "total_impact": 60.4898660049212
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "48",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 27.3817437116034,
+    "total_impact": 36.4583454281596
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "48",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 19.8521888926661,
+    "total_impact": 26.4328659188781
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "48",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 14.5395031257186,
+    "total_impact": 19.3591114172406
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "48",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 10.6553274707889,
+    "total_impact": 14.187394844966
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "48",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 6.70519077687122,
+    "total_impact": 8.92785222444718
+  },
+  {
+    "emissions_source": "325110/US",
+    "sector_code": "48",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 5.31043979323978,
+    "total_impact": 7.07076402425516
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "48",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 63.3475164195623,
+    "total_impact": 84.3461855448495
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "481000/US",
     "indicator": "GWP-AR6-20",
     "impact_per_purchase": 617.471428392065,
@@ -21558,6 +22678,76 @@
     "indicator": "GWP-AR6-20",
     "impact_per_purchase": 38.1092571599431,
     "total_impact": 9.38399667751319
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "5",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 12.4119460975684,
+    "total_impact": 182.037485248246
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "5",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 34.8636547521237,
+    "total_impact": 511.321269666406
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "5",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 15.486672382488,
+    "total_impact": 227.132383045385
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "5",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 7.49235627348536,
+    "total_impact": 109.885241515542
+  },
+  {
+    "emissions_source": "481000/US",
+    "sector_code": "5",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 4.29878165343167,
+    "total_impact": 63.0472768468842
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "5",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 4.20714492098931,
+    "total_impact": 61.7033038551354
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "5",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 2.77419754405302,
+    "total_impact": 40.6872492461281
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "5",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 2.52832246672784,
+    "total_impact": 37.0811684261137
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "5",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 2.46759701684597,
+    "total_impact": 36.190549976745
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "5",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 36.9390429337652,
+    "total_impact": 541.759562141263
   },
   {
     "emissions_source": "Direct",
@@ -25271,6 +26461,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "562",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 2601.81593805264,
+    "total_impact": 337.434981565971
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "562",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 243.808247429051,
+    "total_impact": 31.6200044259969
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "562",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 46.617300152162,
+    "total_impact": 6.04589570977633
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "562",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 24.7001950670477,
+    "total_impact": 3.20342025168904
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "562",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 13.3746462293843,
+    "total_impact": 1.73458600120712
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "562",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 13.3175208709042,
+    "total_impact": 1.72717729331055
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "562",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 9.18246574965377,
+    "total_impact": 1.19089329711912
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "562",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 7.96911885554422,
+    "total_impact": 1.0335317863147
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "562",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 7.78559487007752,
+    "total_impact": 1.00973017462221
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "562",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 82.4816491020709,
+    "total_impact": 10.697218560787
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "562000/US",
     "indicator": "GWP-AR6-20",
     "impact_per_purchase": 2845.62418548169,
@@ -25338,6 +26598,76 @@
     "indicator": "GWP-AR6-20",
     "impact_per_purchase": 77.0173463637539,
     "total_impact": 9.98854164524976
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "6",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 12.6229278726433,
+    "total_impact": 44.0231938615463
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "6",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 44.2900000689826,
+    "total_impact": 154.463946782929
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "6",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 15.1369276847201,
+    "total_impact": 52.7909141726798
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "6",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 13.8408711064803,
+    "total_impact": 48.270841605123
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "6",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 9.58101510008352,
+    "total_impact": 33.4143464493278
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "6",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 9.43635430278906,
+    "total_impact": 32.9098335195454
+  },
+  {
+    "emissions_source": "112120/US",
+    "sector_code": "6",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 6.46602646824276,
+    "total_impact": 22.5506427349753
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "6",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 4.77117857088627,
+    "total_impact": 16.6397622875903
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "6",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 4.03899132778695,
+    "total_impact": 14.0862167654164
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "6",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 59.9555080323978,
+    "total_impact": 209.098315367704
   },
   {
     "emissions_source": "Direct",
@@ -26461,6 +27791,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "7",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 17.4526956152312,
+    "total_impact": 31.9806282902258
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "7",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 85.9326847495775,
+    "total_impact": 157.464572209638
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "7",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 30.0924943344181,
+    "total_impact": 55.1420191385721
+  },
+  {
+    "emissions_source": "112120/US",
+    "sector_code": "7",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 19.6443035529484,
+    "total_impact": 35.9965694582408
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "7",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 16.5992950016013,
+    "total_impact": 30.4168419039366
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "7",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 12.3739048618418,
+    "total_impact": 22.6741622388594
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "7",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 12.2674870170323,
+    "total_impact": 22.4791602968482
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "7",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 9.72998399309347,
+    "total_impact": 17.8293948518421
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "7",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 7.65623005515882,
+    "total_impact": 14.0294114385863
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "7",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 77.1782861052449,
+    "total_impact": 141.422857214934
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "711100/US",
     "indicator": "GWP-AR6-20",
     "impact_per_purchase": 2.8186599829879,
@@ -27301,6 +28701,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "8",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 12.9660125850059,
+    "total_impact": 11.7635988722986
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "8",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 50.5411516337389,
+    "total_impact": 45.8541768693688
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "8",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 15.3076650070413,
+    "total_impact": 13.8880962542482
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "8",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 9.11683347697961,
+    "total_impact": 8.27137651653625
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "8",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 4.7129671767585,
+    "total_impact": 4.27590633606277
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "8",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 4.59131117270225,
+    "total_impact": 4.16553220039524
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "8",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 4.5085986601036,
+    "total_impact": 4.09049009986114
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "8",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 3.50179331799468,
+    "total_impact": 3.17705166924039
+  },
+  {
+    "emissions_source": "481000/US",
+    "sector_code": "8",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 3.19477791154325,
+    "total_impact": 2.89850758597405
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "8",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 46.851256372708,
+    "total_impact": 42.5064670436234
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "811100/US",
     "indicator": "GWP-AR6-20",
     "impact_per_purchase": 8.7333459655805,
@@ -28068,6 +29538,76 @@
     "indicator": "GWP-AR6-20",
     "impact_per_purchase": 53.8595472880272,
     "total_impact": 5.68843808492342
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "G",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 81.0458070786221,
+    "total_impact": 259.59268718844
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "G",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 26.1360793647956,
+    "total_impact": 83.7148190565339
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "G",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 23.7987745214861,
+    "total_impact": 76.2283460738581
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "G",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 23.2630427258273,
+    "total_impact": 74.5123775190328
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "G",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 11.3645422171274,
+    "total_impact": 36.4010447813622
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "G",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 10.4892422514881,
+    "total_impact": 33.5974269463788
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "G",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 9.02416424848456,
+    "total_impact": 28.9047284657354
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "G",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 8.40135427386115,
+    "total_impact": 26.9098453157236
+  },
+  {
+    "emissions_source": "112120/US",
+    "sector_code": "G",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 6.06512837778552,
+    "total_impact": 19.4268282405384
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "G",
+    "indicator": "GWP-AR6-20",
+    "impact_per_purchase": 71.6780726901871,
+    "total_impact": 229.587490986219
   },
   {
     "emissions_source": "Direct",

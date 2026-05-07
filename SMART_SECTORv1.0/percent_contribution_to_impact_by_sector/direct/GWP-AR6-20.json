@@ -1,5 +1,75 @@
 [
   {
+    "sector": "11",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 938.360735939757,
+    "contribution": 0.661190578830835
+  },
+  {
+    "sector": "11",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 340.839977191661,
+    "contribution": 0.240163695236403
+  },
+  {
+    "sector": "11",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 64.593162762821,
+    "contribution": 0.0455138296391867
+  },
+  {
+    "sector": "11",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 23.8865537032495,
+    "contribution": 0.0168310156898331
+  },
+  {
+    "sector": "11",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 21.639325239442,
+    "contribution": 0.0152475667753152
+  },
+  {
+    "sector": "11",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 17.2197259892442,
+    "contribution": 0.0121334153892685
+  },
+  {
+    "sector": "11",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 6.92344495274235,
+    "contribution": 0.00487841871518911
+  },
+  {
+    "sector": "11",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 4.78920102172225,
+    "contribution": 0.00337458130376531
+  },
+  {
+    "sector": "11",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 0.656460521305956,
+    "contribution": 0.000462557197288509
+  },
+  {
+    "sector": "11",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.290000775052061,
+    "contribution": 0.000204341222915761
+  },
+  {
     "sector": "111/112",
     "indicator": "GWP-AR6-20",
     "sector_purchased_detail": "Direct",
@@ -557,7 +627,7 @@
     "indicator": "GWP-AR6-20",
     "sector_purchased_detail": "Construction",
     "total_impacts_sum": 0.0307706321987943,
-    "contribution": 9.87905681001676e-5
+    "contribution": 9.87905681001676e-05
   },
   {
     "sector": "1121A0/US",
@@ -627,7 +697,7 @@
     "indicator": "GWP-AR6-20",
     "sector_purchased_detail": "Construction",
     "total_impacts_sum": 0.0268181823296529,
-    "contribution": 5.23475836587963e-5
+    "contribution": 5.23475836587963e-05
   },
   {
     "sector": "112300/US",
@@ -980,6 +1050,76 @@
     "contribution": 0.000481703402216028
   },
   {
+    "sector": "211",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 828.264443630322,
+    "contribution": 0.520116243693268
+  },
+  {
+    "sector": "211",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 442.149090888758,
+    "contribution": 0.277651571396074
+  },
+  {
+    "sector": "211",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 129.129040791267,
+    "contribution": 0.0810877638954219
+  },
+  {
+    "sector": "211",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 92.6422201362843,
+    "contribution": 0.0581755306716935
+  },
+  {
+    "sector": "211",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 56.3806588915681,
+    "contribution": 0.0354047511578587
+  },
+  {
+    "sector": "211",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 16.945430962345,
+    "contribution": 0.0106410385809489
+  },
+  {
+    "sector": "211",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 14.0629117152813,
+    "contribution": 0.00883093421792081
+  },
+  {
+    "sector": "211",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 8.52879160139031,
+    "contribution": 0.00535573280378279
+  },
+  {
+    "sector": "211",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 3.35920554554887,
+    "contribution": 0.00210944389027073
+  },
+  {
+    "sector": "211",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.998456163085953,
+    "contribution": 0.000626989692761026
+  },
+  {
     "sector": "211/32411",
     "indicator": "GWP-AR6-20",
     "sector_purchased_detail": "Direct",
@@ -1118,6 +1258,76 @@
     "sector_purchased_detail": "Construction",
     "total_impacts_sum": 0.11051483078938,
     "contribution": 0.000207114448322423
+  },
+  {
+    "sector": "212",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 127.668308608124,
+    "contribution": 0.638555819219244
+  },
+  {
+    "sector": "212",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 18.3408511505422,
+    "contribution": 0.0917350387053487
+  },
+  {
+    "sector": "212",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 17.5144177037617,
+    "contribution": 0.0876014844005058
+  },
+  {
+    "sector": "212",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 16.1603347543426,
+    "contribution": 0.0808287969850944
+  },
+  {
+    "sector": "212",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 7.7984712503405,
+    "contribution": 0.039005445064712
+  },
+  {
+    "sector": "212",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 5.8742924003684,
+    "contribution": 0.0293813213078936
+  },
+  {
+    "sector": "212",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 3.66013505149229,
+    "contribution": 0.0183068183618906
+  },
+  {
+    "sector": "212",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 1.36369877456835,
+    "contribution": 0.0068207826801847
+  },
+  {
+    "sector": "212",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 1.12746722568408,
+    "contribution": 0.00563922844900707
+  },
+  {
+    "sector": "212",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 0.424910332861308,
+    "contribution": 0.00212526482611917
   },
   {
     "sector": "2121/2122",
@@ -1680,6 +1890,76 @@
     "contribution": 0.0014152551164217
   },
   {
+    "sector": "2211",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 1455.63478945696,
+    "contribution": 0.87886223517218
+  },
+  {
+    "sector": "2211",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 91.059291089892,
+    "contribution": 0.0549784689676951
+  },
+  {
+    "sector": "2211",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 44.8320258186816,
+    "contribution": 0.0270680356801602
+  },
+  {
+    "sector": "2211",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 40.8422352359376,
+    "contribution": 0.0246591373116846
+  },
+  {
+    "sector": "2211",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 10.9763075226711,
+    "contribution": 0.00662711707165966
+  },
+  {
+    "sector": "2211",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 7.40360340641253,
+    "contribution": 0.00447004117050233
+  },
+  {
+    "sector": "2211",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 2.06736403845668,
+    "contribution": 0.00124820332195444
+  },
+  {
+    "sector": "2211",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 1.83576404920779,
+    "contribution": 0.0011083712118047
+  },
+  {
+    "sector": "2211",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 0.990375166269319,
+    "contribution": 0.000597954472228016
+  },
+  {
+    "sector": "2211",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.630104812391711,
+    "contribution": 0.000380435620131008
+  },
+  {
     "sector": "221100/US",
     "indicator": "GWP-AR6-20",
     "sector_purchased_detail": "Direct",
@@ -2083,7 +2363,7 @@
     "indicator": "GWP-AR6-20",
     "sector_purchased_detail": "Construction",
     "total_impacts_sum": 0.00167980870897143,
-    "contribution": 2.19286076830338e-5
+    "contribution": 2.19286076830338e-05
   },
   {
     "sector": "230302/US",
@@ -2854,6 +3134,76 @@
     "sector_purchased_detail": "Construction",
     "total_impacts_sum": 0.114453426268585,
     "contribution": 0.00114692371660583
+  },
+  {
+    "sector": "31",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 1068.07282279422,
+    "contribution": 0.732821072708672
+  },
+  {
+    "sector": "31",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 127.403672365392,
+    "contribution": 0.0874136050064244
+  },
+  {
+    "sector": "31",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 70.8101544620067,
+    "contribution": 0.0485839282154567
+  },
+  {
+    "sector": "31",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 67.7782670799739,
+    "contribution": 0.0465037039870932
+  },
+  {
+    "sector": "31",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 49.6281025398711,
+    "contribution": 0.0340505989513145
+  },
+  {
+    "sector": "31",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 46.8970363917367,
+    "contribution": 0.032176772764933
+  },
+  {
+    "sector": "31",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 20.7843370239651,
+    "contribution": 0.0142604509995806
+  },
+  {
+    "sector": "31",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 4.46259498867986,
+    "contribution": 0.00306185456354299
+  },
+  {
+    "sector": "31",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 1.08248124104187,
+    "contribution": 0.000742706908478427
+  },
+  {
+    "sector": "31",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.561576037737675,
+    "contribution": 0.000385305894504253
   },
   {
     "sector": "311111/US",
@@ -5446,6 +5796,76 @@
     "contribution": 0.000439971204731984
   },
   {
+    "sector": "321",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 12.6535702921535,
+    "contribution": 0.254353573058642
+  },
+  {
+    "sector": "321",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 11.0220718954261,
+    "contribution": 0.221558287849346
+  },
+  {
+    "sector": "321",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 8.31740134165002,
+    "contribution": 0.167190816581095
+  },
+  {
+    "sector": "321",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 5.59187555984178,
+    "contribution": 0.112404127523363
+  },
+  {
+    "sector": "321",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 4.80514108809951,
+    "contribution": 0.0965897194696817
+  },
+  {
+    "sector": "321",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 4.58672235979984,
+    "contribution": 0.0921992128629894
+  },
+  {
+    "sector": "321",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 2.36910312548906,
+    "contribution": 0.0476221201605217
+  },
+  {
+    "sector": "321",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 0.202133068210069,
+    "contribution": 0.00406314320349719
+  },
+  {
+    "sector": "321",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 0.129446675343195,
+    "contribution": 0.00260205014346984
+  },
+  {
+    "sector": "321",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.0704903234554558,
+    "contribution": 0.00141694914739382
+  },
+  {
     "sector": "321/322",
     "indicator": "GWP-AR6-20",
     "sector_purchased_detail": "Manufacturing",
@@ -5794,6 +6214,76 @@
     "sector_purchased_detail": "Construction",
     "total_impacts_sum": 0.0172065505511463,
     "contribution": 0.00150233489452883
+  },
+  {
+    "sector": "322-323",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 59.2908846657678,
+    "contribution": 0.313037839044832
+  },
+  {
+    "sector": "322-323",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 56.814810241061,
+    "contribution": 0.299964919124784
+  },
+  {
+    "sector": "322-323",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 31.6275179494641,
+    "contribution": 0.166983675974194
+  },
+  {
+    "sector": "322-323",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 20.4713401238512,
+    "contribution": 0.108082449955786
+  },
+  {
+    "sector": "322-323",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 8.88660347824307,
+    "contribution": 0.0469185637043399
+  },
+  {
+    "sector": "322-323",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 5.99293415369074,
+    "contribution": 0.0316408697152137
+  },
+  {
+    "sector": "322-323",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 5.29757046204738,
+    "contribution": 0.0279695609025801
+  },
+  {
+    "sector": "322-323",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 0.447067230892454,
+    "contribution": 0.0023603790136586
+  },
+  {
+    "sector": "322-323",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 0.398081214060508,
+    "contribution": 0.00210174774278233
+  },
+  {
+    "sector": "322-323",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.178039577380052,
+    "contribution": 0.00093999482182941
   },
   {
     "sector": "322110/US",
@@ -6844,6 +7334,76 @@
     "sector_purchased_detail": "Construction",
     "total_impacts_sum": 0.459792217612826,
     "contribution": 0.000544998265382987
+  },
+  {
+    "sector": "325-326",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 373.635789050293,
+    "contribution": 0.3666330879712
+  },
+  {
+    "sector": "325-326",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 313.566927968717,
+    "contribution": 0.307690040558023
+  },
+  {
+    "sector": "325-326",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 104.100118326769,
+    "contribution": 0.102149068581793
+  },
+  {
+    "sector": "325-326",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 86.8014504447916,
+    "contribution": 0.0851746132185142
+  },
+  {
+    "sector": "325-326",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 72.498954115853,
+    "contribution": 0.071140175007699
+  },
+  {
+    "sector": "325-326",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 40.928721054145,
+    "contribution": 0.0401616328696318
+  },
+  {
+    "sector": "325-326",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 20.6663407248578,
+    "contribution": 0.0202790111093981
+  },
+  {
+    "sector": "325-326",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 3.52630485529113,
+    "contribution": 0.00346021466923555
+  },
+  {
+    "sector": "325-326",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 2.75723822036324,
+    "contribution": 0.00270556192053626
+  },
+  {
+    "sector": "325-326",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.618180056217573,
+    "contribution": 0.000606594093968744
   },
   {
     "sector": "325110/US",
@@ -8876,6 +9436,76 @@
     "contribution": 0.00101442976771276
   },
   {
+    "sector": "327",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 87.6356893382495,
+    "contribution": 0.486785811505773
+  },
+  {
+    "sector": "327",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 52.7333930454804,
+    "contribution": 0.292915679912307
+  },
+  {
+    "sector": "327",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 16.0364919979111,
+    "contribution": 0.0890771423133185
+  },
+  {
+    "sector": "327",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 12.5194625692446,
+    "contribution": 0.069541265578041
+  },
+  {
+    "sector": "327",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 5.71517644022977,
+    "contribution": 0.0317458197951512
+  },
+  {
+    "sector": "327",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 2.52208046246522,
+    "contribution": 0.0140092808520665
+  },
+  {
+    "sector": "327",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 1.34702565131356,
+    "contribution": 0.00748225956508304
+  },
+  {
+    "sector": "327",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 1.19611037534783,
+    "contribution": 0.00664397763183957
+  },
+  {
+    "sector": "327",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 0.210480825508388,
+    "contribution": 0.00116914786915228
+  },
+  {
+    "sector": "327",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.113349118331574,
+    "contribution": 0.000629614977267223
+  },
+  {
     "sector": "327100/US",
     "indicator": "GWP-AR6-20",
     "sector_purchased_detail": "Direct",
@@ -9784,6 +10414,76 @@
     "sector_purchased_detail": "Construction",
     "total_impacts_sum": 0.00422244370741223,
     "contribution": 0.000825206704064249
+  },
+  {
+    "sector": "331-332",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 123.347050707217,
+    "contribution": 0.315044922249363
+  },
+  {
+    "sector": "331-332",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 120.288134487738,
+    "contribution": 0.30723203967935
+  },
+  {
+    "sector": "331-332",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 57.0925065969389,
+    "contribution": 0.145821924389161
+  },
+  {
+    "sector": "331-332",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 32.8842193496493,
+    "contribution": 0.0839907096995153
+  },
+  {
+    "sector": "331-332",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 25.707063437454,
+    "contribution": 0.0656592902341544
+  },
+  {
+    "sector": "331-332",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 21.4414848435353,
+    "contribution": 0.0547644300103825
+  },
+  {
+    "sector": "331-332",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 6.32775948783798,
+    "contribution": 0.0161619469977481
+  },
+  {
+    "sector": "331-332",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 3.22747742847373,
+    "contribution": 0.00824341052084504
+  },
+  {
+    "sector": "331-332",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 0.828556110842708,
+    "contribution": 0.00211624350986126
+  },
+  {
+    "sector": "331-332",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.37785121267859,
+    "contribution": 0.000965082709619977
   },
   {
     "sector": "3311/3312",
@@ -11886,6 +12586,76 @@
     "contribution": 0.00164534617711208
   },
   {
+    "sector": "333",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 52.9427553434889,
+    "contribution": 0.45854404375712
+  },
+  {
+    "sector": "333",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 22.191855583186,
+    "contribution": 0.192206528193845
+  },
+  {
+    "sector": "333",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 9.99548968808402,
+    "contribution": 0.0865722275157393
+  },
+  {
+    "sector": "333",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 9.43856748302562,
+    "contribution": 0.0817486523483955
+  },
+  {
+    "sector": "333",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 9.1123493221876,
+    "contribution": 0.0789232347129291
+  },
+  {
+    "sector": "333",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 8.30694727127481,
+    "contribution": 0.0719475434992823
+  },
+  {
+    "sector": "333",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 1.85685229741092,
+    "contribution": 0.0160824376364691
+  },
+  {
+    "sector": "333",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 1.0957418546304,
+    "contribution": 0.00949036176293279
+  },
+  {
+    "sector": "333",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 0.343923475587395,
+    "contribution": 0.00297876565387794
+  },
+  {
+    "sector": "333",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.173903989444602,
+    "contribution": 0.00150620491940887
+  },
+  {
     "sector": "333111/US",
     "indicator": "GWP-AR6-20",
     "sector_purchased_detail": "Manufacturing",
@@ -13982,7 +14752,7 @@
     "sector": "334111/US",
     "indicator": "GWP-AR6-20",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 9.35345402251502e-5,
+    "total_impacts_sum": 9.35345402251502e-05,
     "contribution": 0.000185164454007642
   },
   {
@@ -15316,6 +16086,76 @@
     "contribution": 0.00182815165991037
   },
   {
+    "sector": "335",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 17.1333070054811,
+    "contribution": 0.445279809343234
+  },
+  {
+    "sector": "335",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 7.38949244645182,
+    "contribution": 0.192046508397165
+  },
+  {
+    "sector": "335",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 3.64617775070903,
+    "contribution": 0.0947610016646443
+  },
+  {
+    "sector": "335",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 3.45725284542171,
+    "contribution": 0.0898510070103948
+  },
+  {
+    "sector": "335",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 3.0868040248121,
+    "contribution": 0.0802233630208426
+  },
+  {
+    "sector": "335",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 2.30320633013349,
+    "contribution": 0.0598583376362707
+  },
+  {
+    "sector": "335",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 0.673200620119855,
+    "contribution": 0.017495901035382
+  },
+  {
+    "sector": "335",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 0.622873824347851,
+    "contribution": 0.0161879512029857
+  },
+  {
+    "sector": "335",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 0.116104739522466,
+    "contribution": 0.00301746161799765
+  },
+  {
+    "sector": "335",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.0491997570079144,
+    "contribution": 0.00127865907108354
+  },
+  {
     "sector": "335110/US",
     "indicator": "GWP-AR6-20",
     "sector_purchased_detail": "Manufacturing",
@@ -16294,6 +17134,76 @@
     "sector_purchased_detail": "Construction",
     "total_impacts_sum": 0.00436834554132229,
     "contribution": 0.00173960673537419
+  },
+  {
+    "sector": "336",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 147.65135056843,
+    "contribution": 0.462866929391278
+  },
+  {
+    "sector": "336",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 65.0374786134682,
+    "contribution": 0.203883661783475
+  },
+  {
+    "sector": "336",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 27.9914084038006,
+    "contribution": 0.0877492634325737
+  },
+  {
+    "sector": "336",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 26.7812225826488,
+    "contribution": 0.0839554952559
+  },
+  {
+    "sector": "336",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 22.0347991184653,
+    "contribution": 0.0690761023753104
+  },
+  {
+    "sector": "336",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 16.2358395570133,
+    "contribution": 0.0508971517897584
+  },
+  {
+    "sector": "336",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 8.77585382234505,
+    "contribution": 0.0275111097588842
+  },
+  {
+    "sector": "336",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 2.64079669978382,
+    "contribution": 0.00827853896946958
+  },
+  {
+    "sector": "336",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 1.36841275905477,
+    "contribution": 0.00428978813593703
+  },
+  {
+    "sector": "336",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.475924641002604,
+    "contribution": 0.00149195910741384
   },
   {
     "sector": "3361/3362/3363",
@@ -18186,6 +19096,76 @@
     "contribution": 0.00131416028860841
   },
   {
+    "sector": "337-339",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 27.7552950479767,
+    "contribution": 0.436416103636596
+  },
+  {
+    "sector": "337-339",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 12.1504694458841,
+    "contribution": 0.19105041123729
+  },
+  {
+    "sector": "337-339",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 5.9677343241645,
+    "contribution": 0.093834900936501
+  },
+  {
+    "sector": "337-339",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 5.30103504945357,
+    "contribution": 0.0833519174458282
+  },
+  {
+    "sector": "337-339",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 4.73664581288566,
+    "contribution": 0.074477626931833
+  },
+  {
+    "sector": "337-339",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 3.89530714670569,
+    "contribution": 0.0612486649662552
+  },
+  {
+    "sector": "337-339",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 3.03892295672904,
+    "contribution": 0.0477831316055195
+  },
+  {
+    "sector": "337-339",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 0.413817970208435,
+    "contribution": 0.00650675216606409
+  },
+  {
+    "sector": "337-339",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 0.245299739210549,
+    "contribution": 0.00385702101974755
+  },
+  {
+    "sector": "337-339",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.0937100986019578,
+    "contribution": 0.00147347005436532
+  },
+  {
     "sector": "337110/US",
     "indicator": "GWP-AR6-20",
     "sector_purchased_detail": "Manufacturing",
@@ -19516,6 +20496,76 @@
     "contribution": 0.00132488359735041
   },
   {
+    "sector": "42-44",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 267.04978918278,
+    "contribution": 0.372335799111323
+  },
+  {
+    "sector": "42-44",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 103.035414706756,
+    "contribution": 0.143657756064914
+  },
+  {
+    "sector": "42-44",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 101.09474113754,
+    "contribution": 0.140951960091739
+  },
+  {
+    "sector": "42-44",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 78.9234592128419,
+    "contribution": 0.110039514895593
+  },
+  {
+    "sector": "42-44",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 64.8079668319119,
+    "contribution": 0.0903589034576029
+  },
+  {
+    "sector": "42-44",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 48.1380853606401,
+    "contribution": 0.0671168194339048
+  },
+  {
+    "sector": "42-44",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 45.3526278587911,
+    "contribution": 0.0632331783046032
+  },
+  {
+    "sector": "42-44",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 4.51240341786258,
+    "contribution": 0.00629144601702935
+  },
+  {
+    "sector": "42-44",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 2.27988605801093,
+    "contribution": 0.00317874505683002
+  },
+  {
+    "sector": "42-44",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 2.03397177515353,
+    "contribution": 0.0028358775664613
+  },
+  {
     "sector": "423100/US",
     "indicator": "GWP-AR6-20",
     "sector_purchased_detail": "Purchased Electricity",
@@ -20776,6 +21826,76 @@
     "contribution": 0.00273569654281535
   },
   {
+    "sector": "48",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 733.997631230149,
+    "contribution": 0.68078382546777
+  },
+  {
+    "sector": "48",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 132.896065535726,
+    "contribution": 0.12326128591641
+  },
+  {
+    "sector": "48",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 64.1997971725574,
+    "contribution": 0.0595454013116348
+  },
+  {
+    "sector": "48",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 60.4898660049212,
+    "contribution": 0.0561044349855003
+  },
+  {
+    "sector": "48",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 44.4865193229783,
+    "contribution": 0.0412613086443964
+  },
+  {
+    "sector": "48",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 31.1106456151682,
+    "contribution": 0.0288551671470249
+  },
+  {
+    "sector": "48",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 6.41659795914977,
+    "contribution": 0.00595140354580921
+  },
+  {
+    "sector": "48",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 2.14126268821138,
+    "contribution": 0.00198602412622074
+  },
+  {
+    "sector": "48",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 1.23275888682175,
+    "contribution": 0.0011433855848327
+  },
+  {
+    "sector": "48",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 1.19435213649391,
+    "contribution": 0.00110776327040077
+  },
+  {
     "sector": "481000/US",
     "indicator": "GWP-AR6-20",
     "sector_purchased_detail": "Direct",
@@ -21544,6 +22664,76 @@
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0888267281339162,
     "contribution": 0.00241850937800476
+  },
+  {
+    "sector": "5",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 511.321269666406,
+    "contribution": 0.282366039785915
+  },
+  {
+    "sector": "5",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 328.036835453562,
+    "contribution": 0.181151201066518
+  },
+  {
+    "sector": "5",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 305.408567771537,
+    "contribution": 0.168655232853113
+  },
+  {
+    "sector": "5",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 199.110039227543,
+    "contribution": 0.109954184567717
+  },
+  {
+    "sector": "5",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 182.037485248246,
+    "contribution": 0.10052623829959
+  },
+  {
+    "sector": "5",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 167.660963296349,
+    "contribution": 0.0925871170263819
+  },
+  {
+    "sector": "5",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 85.5828411321061,
+    "contribution": 0.047261260889589
+  },
+  {
+    "sector": "5",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 13.8125036043305,
+    "contribution": 0.00762765441935953
+  },
+  {
+    "sector": "5",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 11.6088170411947,
+    "contribution": 0.00641071648879377
+  },
+  {
+    "sector": "5",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 6.26616752657379,
+    "contribution": 0.00346035460302306
   },
   {
     "sector": "511110/US",
@@ -25256,6 +26446,76 @@
     "contribution": 0.00291503279511615
   },
   {
+    "sector": "562",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 337.434981565971,
+    "contribution": 0.852760084477099
+  },
+  {
+    "sector": "562",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 33.1664465241603,
+    "contribution": 0.0838176931404446
+  },
+  {
+    "sector": "562",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 8.06316872113835,
+    "contribution": 0.0203771061550319
+  },
+  {
+    "sector": "562",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 6.04589570977633,
+    "contribution": 0.0152790872845547
+  },
+  {
+    "sector": "562",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 5.49268065426142,
+    "contribution": 0.0138810113788334
+  },
+  {
+    "sector": "562",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 3.24108526851753,
+    "contribution": 0.0081908168932335
+  },
+  {
+    "sector": "562",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 1.29013723356085,
+    "contribution": 0.00326041340222845
+  },
+  {
+    "sector": "562",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 0.708676915537271,
+    "contribution": 0.00179095653792605
+  },
+  {
+    "sector": "562",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 0.167327884354936,
+    "contribution": 0.000422868251939055
+  },
+  {
+    "sector": "562",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.0870385895159544,
+    "contribution": 0.000219962478709048
+  },
+  {
     "sector": "562000/US",
     "indicator": "GWP-AR6-20",
     "sector_purchased_detail": "Direct",
@@ -25324,6 +26584,76 @@
     "sector_purchased_detail": "Construction",
     "total_impacts_sum": 0.0870385895159544,
     "contribution": 0.000219962478709048
+  },
+  {
+    "sector": "6",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 154.463946782929,
+    "contribution": 0.245864600368391
+  },
+  {
+    "sector": "6",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 128.584398092148,
+    "contribution": 0.204671396199428
+  },
+  {
+    "sector": "6",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 112.6935341272,
+    "contribution": 0.179377461921412
+  },
+  {
+    "sector": "6",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 72.3123295192875,
+    "contribution": 0.115101564923446
+  },
+  {
+    "sector": "6",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 61.5728126796297,
+    "contribution": 0.0980071744787766
+  },
+  {
+    "sector": "6",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 44.4765350596886,
+    "contribution": 0.0707945494464708
+  },
+  {
+    "sector": "6",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 44.0231938615463,
+    "contribution": 0.0700729535347179
+  },
+  {
+    "sector": "6",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 6.48023840512893,
+    "contribution": 0.0103147773894964
+  },
+  {
+    "sector": "6",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 1.8850269405972,
+    "contribution": 0.00300045029980293
+  },
+  {
+    "sector": "6",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 1.75599807868174,
+    "contribution": 0.00279507143805848
   },
   {
     "sector": "611100/US",
@@ -26446,6 +27776,76 @@
     "contribution": 0.0014244280552283
   },
   {
+    "sector": "7",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 157.464572209638,
+    "contribution": 0.297419680771572
+  },
+  {
+    "sector": "7",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 146.881174581443,
+    "contribution": 0.277429719220947
+  },
+  {
+    "sector": "7",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 63.5779321221072,
+    "contribution": 0.120086239149078
+  },
+  {
+    "sector": "7",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 46.6960193154869,
+    "contribution": 0.088199618258419
+  },
+  {
+    "sector": "7",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 44.5413325490652,
+    "contribution": 0.0841298377278582
+  },
+  {
+    "sector": "7",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 31.9806282902258,
+    "contribution": 0.0604051319193887
+  },
+  {
+    "sector": "7",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 31.287588268328,
+    "contribution": 0.0590961152994449
+  },
+  {
+    "sector": "7",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 4.06249574898702,
+    "contribution": 0.0076732573673206
+  },
+  {
+    "sector": "7",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 1.71096848730863,
+    "contribution": 0.00323168376330436
+  },
+  {
+    "sector": "7",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 1.23290546909323,
+    "contribution": 0.00232871652266674
+  },
+  {
     "sector": "711100/US",
     "indicator": "GWP-AR6-20",
     "sector_purchased_detail": "Purchased Electricity",
@@ -27286,6 +28686,76 @@
     "contribution": 0.00200329176923223
   },
   {
+    "sector": "8",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 45.8541768693688,
+    "contribution": 0.325458053784173
+  },
+  {
+    "sector": "8",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 25.6736951068111,
+    "contribution": 0.182223548941138
+  },
+  {
+    "sector": "8",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 21.6212192887581,
+    "contribution": 0.153460391846238
+  },
+  {
+    "sector": "8",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 14.937723544912,
+    "contribution": 0.10602310988469
+  },
+  {
+    "sector": "8",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 11.8807002659077,
+    "contribution": 0.084325351584676
+  },
+  {
+    "sector": "8",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 11.7635988722986,
+    "contribution": 0.0834942039278767
+  },
+  {
+    "sector": "8",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 6.41649265773024,
+    "contribution": 0.0455421807800531
+  },
+  {
+    "sector": "8",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 1.32876946823591,
+    "contribution": 0.00943117409547875
+  },
+  {
+    "sector": "8",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 0.761680574189192,
+    "contribution": 0.00540616131845611
+  },
+  {
+    "sector": "8",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.653146799396991,
+    "contribution": 0.00463582383721967
+  },
+  {
     "sector": "811100/US",
     "indicator": "GWP-AR6-20",
     "sector_purchased_detail": "Purchased Electricity",
@@ -28054,6 +29524,76 @@
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0888289625193479,
     "contribution": 0.00459620006082257
+  },
+  {
+    "sector": "G",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 259.59268718844,
+    "contribution": 0.298768533504233
+  },
+  {
+    "sector": "G",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 156.775209532398,
+    "contribution": 0.180434587542185
+  },
+  {
+    "sector": "G",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 115.157336744879,
+    "contribution": 0.13253604712118
+  },
+  {
+    "sector": "G",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 94.2580457988626,
+    "contribution": 0.10848278670446
+  },
+  {
+    "sector": "G",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 82.9750709379822,
+    "contribution": 0.0954970670786087
+  },
+  {
+    "sector": "G",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 74.5123775190328,
+    "contribution": 0.0857572453229978
+  },
+  {
+    "sector": "G",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 68.0818930158613,
+    "contribution": 0.0783563187193158
+  },
+  {
+    "sector": "G",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 10.1501238927373,
+    "contribution": 0.0116819070027118
+  },
+  {
+    "sector": "G",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 4.46008496716504,
+    "contribution": 0.00513316865500484
+  },
+  {
+    "sector": "G",
+    "indicator": "GWP-AR6-20",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 2.91276497646338,
+    "contribution": 0.00335233834930313
   },
   {
     "sector": "GSLGE/US",
