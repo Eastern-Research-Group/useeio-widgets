@@ -13,6 +13,12 @@ export type SectorDashboardConfig = {
    * Optional BEA/NAICS code from the page query string (`?sector=` or `?code=`).
    */
   initialSectorCode?: string;
+  /** Optional initial perspective from the page query string (`?perspective=`). */
+  initialPerspective?: "final" | "direct";
+  /** Optional initial bar-chart mode (`?bar=intensity` or `?bar=total`). */
+  initialBarMode?: "impact_per_purchase" | "total_impact";
+  /** Optional initial pie-chart mode (`?pie=simple` or `?pie=detailed`). */
+  initialPieMode?: "aggregate" | "detail";
 };
 
 /**
@@ -40,6 +46,9 @@ export class SectorDashboard extends Widget {
         endpoint: this._config.endpoint,
         sectors,
         initialSectorCode: this._config.initialSectorCode,
+        initialPerspective: this._config.initialPerspective,
+        initialBarMode: this._config.initialBarMode,
+        initialPieMode: this._config.initialPieMode,
       }),
       root,
     );

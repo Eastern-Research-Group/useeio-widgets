@@ -17,6 +17,31 @@
       var initialSector =
         params.get("sector") || params.get("code") || "";
 
+      var perspectiveParam = (params.get("perspective") || "").toLowerCase();
+      var initialPerspective =
+        perspectiveParam === "direct" || perspectiveParam === "final"
+          ? perspectiveParam
+          : undefined;
+
+      var barParam = (params.get("bar") || "").toLowerCase();
+      var initialBarMode;
+      if (barParam === "total" || barParam === "total_impact") {
+        initialBarMode = "total_impact";
+      } else if (
+        barParam === "intensity" ||
+        barParam === "impact_per_purchase"
+      ) {
+        initialBarMode = "impact_per_purchase";
+      }
+
+      var pieParam = (params.get("pie") || "").toLowerCase();
+      var initialPieMode;
+      if (pieParam === "simple" || pieParam === "aggregate") {
+        initialPieMode = "aggregate";
+      } else if (pieParam === "detailed" || pieParam === "detail") {
+        initialPieMode = "detail";
+      }
+
       var model = useeio.model({
         endpoint: "./api",
         model: modelID,
@@ -28,6 +53,9 @@
         endpoint: "./api",
         selector: ".sector-dashboard-root",
         initialSectorCode: initialSector,
+        initialPerspective: initialPerspective,
+        initialBarMode: initialBarMode,
+        initialPieMode: initialPieMode,
       });
       dashboard.update();
     </script>

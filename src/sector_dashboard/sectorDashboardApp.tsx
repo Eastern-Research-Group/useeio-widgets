@@ -30,7 +30,29 @@ export type SectorDashboardAppProps = {
   endpoint: "./api";
   sectors: Sector[];
   initialSectorCode?: string;
+  initialPerspective?: "final" | "direct";
+  initialBarMode?: "impact_per_purchase" | "total_impact";
+  initialPieMode?: "aggregate" | "detail";
 };
+
+function buildShareUrl(input: {
+  sectorCode: string;
+  perspective: "final" | "direct";
+  barMode: "impact_per_purchase" | "total_impact";
+  pieMode: "aggregate" | "detail";
+}): string {
+  const params = new URLSearchParams();
+  if (input.sectorCode) {
+    params.set("sector", input.sectorCode);
+  }
+  params.set("perspective", input.perspective);
+  params.set("bar", input.barMode === "total_impact" ? "total" : "intensity");
+  params.set("pie", input.pieMode === "detail" ? "detailed" : "simple");
+  const url = new URL(window.location.href);
+  url.search = params.toString();
+  url.hash = "";
+  return url.toString();
+}
 
 function renderSectorNarrative(
   text: string,
@@ -155,6 +177,9 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
   endpoint,
   sectors,
   initialSectorCode,
+  initialPerspective,
+  initialBarMode,
+  initialPieMode,
 }) => {
   const classes = useStyles();
   const bootSectorRef = React.useRef(
@@ -165,14 +190,18 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
     bootSectorRef.current,
   );
   const [perspective, setPerspective] = React.useState<"final" | "direct">(
-    "final",
+    initialPerspective ?? "final",
   );
   const [barMode, setBarMode] = React.useState<
     "impact_per_purchase" | "total_impact"
-  >("impact_per_purchase");
+  >(initialBarMode ?? "impact_per_purchase");
   const [pieMode, setPieMode] = React.useState<"aggregate" | "detail">(
-    "detail",
+    initialPieMode ?? "detail",
   );
+  const [shareStatus, setShareStatus] = React.useState<
+    "idle" | "copied" | "manual"
+  >("idle");
+  const [shareUrlForFallback, setShareUrlForFallback] = React.useState("");
   const [snapshotDate, setSnapshotDate] = React.useState(() =>
     new Date().toLocaleString(),
   );
@@ -351,6 +380,28 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
     }
   };
 
+  const handleCopyShareLink = async () => {
+    const url = buildShareUrl({
+      sectorCode: activeSector.code,
+      perspective,
+      barMode,
+      pieMode,
+    });
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(url);
+        setShareStatus("copied");
+        setShareUrlForFallback("");
+        window.setTimeout(() => setShareStatus("idle"), 2000);
+        return;
+      }
+    } catch (e) {
+      console.warn("clipboard write failed", e);
+    }
+    setShareUrlForFallback(url);
+    setShareStatus("manual");
+  };
+
   const totalBarVis = barMode === "total_impact" ? "visible" : "hidden";
   const intBarVis = barMode === "impact_per_purchase" ? "visible" : "hidden";
   const pieAggVis = pieMode === "aggregate" ? "visible" : "hidden";
@@ -523,6 +574,34 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
               <button type="button" onClick={() => window.print()}>
                 Print / Save as PDF
               </button>
+              <button
+                type="button"
+                style={{ marginLeft: 8 }}
+                onClick={handleCopyShareLink}
+                title="Copy a URL that opens this dashboard with the current sector and toggles preselected"
+              >
+                {shareStatus === "copied"
+                  ? "Link copied!"
+                  : "Copy share link"}
+              </button>
+              {shareStatus === "manual" && shareUrlForFallback ? (
+                <div style={{ marginTop: 6, fontSize: 12 }}>
+                  <label
+                    htmlFor="sector-dashboard-share-url"
+                    style={{ display: "block", marginBottom: 2 }}
+                  >
+                    Copy this URL:
+                  </label>
+                  <input
+                    id="sector-dashboard-share-url"
+                    type="text"
+                    readOnly
+                    value={shareUrlForFallback}
+                    style={{ width: "100%", boxSizing: "border-box" }}
+                    onFocus={(e) => e.currentTarget.select()}
+                  />
+                </div>
+              ) : null}
             </div>
           </div>
         </div>
