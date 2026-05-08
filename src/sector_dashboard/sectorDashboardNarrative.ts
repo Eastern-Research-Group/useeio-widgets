@@ -1,6 +1,13 @@
 import { getLabel } from "../util/util";
 import { SECTOR_DASHBOARD_INDICATORS } from "./curatedIndicators";
 
+/**
+ * Marker token emitted in narrative strings wherever the active sector name
+ * should appear. Render-time consumers replace this with bold+italic JSX
+ * (see `sectorDashboardApp.tsx` `renderSectorNarrative`).
+ */
+export const SECTOR_NAME_TOKEN = "\u0001SECTOR_NAME\u0001";
+
 export type SectorDashboardNarrativeInput = {
   sectorName: string;
   sectorCode: string;

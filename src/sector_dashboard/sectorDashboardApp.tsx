@@ -13,8 +13,14 @@ import * as strings from "../util/strings";
 import { getLabel } from "../util/util";
 import { SECTOR_DASHBOARD_INDICATORS } from "./curatedIndicators";
 import {
+  buildIndustryOutputCaption,
+  buildIndustryOutputSeriesMillionsUSD,
+  getIndustryOutputChartOptions,
+} from "./industryOutputChart";
+import {
   buildSectorDashboardIntro,
   buildSectorDashboardSectionBlurb,
+  SECTOR_NAME_TOKEN,
 } from "./sectorDashboardNarrative";
 import { SectorDashboardOrchestrator } from "./sectorDashboardOrchestrator";
 
@@ -24,6 +30,33 @@ export type SectorDashboardAppProps = {
   sectors: Sector[];
   initialSectorCode?: string;
 };
+
+function renderSectorNarrative(
+  text: string,
+  sectorName: string,
+): React.ReactNode {
+  if (!text) {
+    return null;
+  }
+  if (!text.includes(SECTOR_NAME_TOKEN)) {
+    return text;
+  }
+  const parts = text.split(SECTOR_NAME_TOKEN);
+  const nodes: React.ReactNode[] = [];
+  parts.forEach((segment, idx) => {
+    nodes.push(
+      <React.Fragment key={`seg-${idx}`}>{segment}</React.Fragment>,
+    );
+    if (idx < parts.length - 1) {
+      nodes.push(
+        <strong key={`name-${idx}`}>
+          <em>{sectorName}</em>
+        </strong>,
+      );
+    }
+  });
+  return nodes;
+}
 
 function resolveInitialSector(
   sectors: Sector[],
@@ -92,6 +125,20 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(2),
     backgroundColor: "#f9f9f9",
   },
+  proxyDataNotice: {
+    border: "1px solid #e65100",
+    backgroundColor: "#fff8e1",
+    padding: theme.spacing(1, 1.5),
+    marginBottom: theme.spacing(1.5),
+    fontSize: 13,
+    lineHeight: 1.45,
+  },
+  outputChartHost: {
+    width: "100%",
+    maxWidth: 560,
+    margin: "0 auto",
+    height: 240,
+  },
 }));
 
 export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
@@ -129,12 +176,42 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
   const sectorNameRef = React.useRef(activeSector.name);
   const perspectiveRef = React.useRef(perspective);
   const [chartsReady, setChartsReady] = React.useState(false);
+  const outputLineRef = React.useRef<HTMLDivElement | null>(null);
+  const outputLineChartRef = React.useRef<ApexCharts | null>(null);
   sectorNameRef.current = activeSector.name;
   perspectiveRef.current = perspective;
 
   React.useEffect(() => {
+    const el = outputLineRef.current;
+    if (!el) {
+      return;
+    }
+    if (outputLineChartRef.current) {
+      outputLineChartRef.current.destroy();
+      outputLineChartRef.current = null;
+    }
+    const chart = new ApexCharts(
+      el,
+      getIndustryOutputChartOptions(activeSector.name, activeSector.code),
+    );
+    chart.render();
+    outputLineChartRef.current = chart;
+    return () => {
+      chart.destroy();
+      outputLineChartRef.current = null;
+    };
+  }, [activeSector.name, activeSector.code]);
+
+  React.useEffect(() => {
     document.title = "Sector dashboard (multi-indicator)";
   }, []);
+
+  const industryOutputSeries = React.useMemo(
+    () => buildIndustryOutputSeriesMillionsUSD(activeSector.code),
+    [activeSector.code],
+  );
+  const industryOutputCaption = buildIndustryOutputCaption(industryOutputSeries);
+
 
   React.useEffect(() => {
     const onBeforePrint = () =>
@@ -438,6 +515,35 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
           {activeSector.name} ({activeSector.code})
         </h2>
       </div>
+
+      <section
+        className={`sector-dashboard-section sector-dashboard-industry-output ${classes.section}`}
+      >
+        <h3>Industry output over time (2017–2023)</h3>
+        <div className={classes.proxyDataNotice}>
+          <strong>Proxy data:</strong> this line is not yet loaded from BEA.
+        </div>
+        <p
+          style={{
+            textAlign: "center",
+            margin: "0 0 4px",
+            fontSize: 13,
+          }}
+        >
+          <strong>
+            <em>{activeSector.name}</em>
+          </strong>{" "}
+          ({activeSector.code})
+        </p>
+        <div
+          ref={outputLineRef}
+          id="sector-dashboard-industry-output"
+          className={classes.outputChartHost}
+        />
+        <p style={{ fontSize: 14, lineHeight: 1.55, marginTop: 8 }}>
+          {renderSectorNarrative(industryOutputCaption, activeSector.name)}
+        </p>
+      </section>
 
       {SECTOR_DASHBOARD_INDICATORS.map((slug, i) => (
         <section
