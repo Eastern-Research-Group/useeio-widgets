@@ -4,6 +4,12 @@ import { SmartSectorEEIOImpactPurchasePerSector } from "../sector_contribution_t
 import { SmartSectorEEIOTotalImpactPerSector } from "../sector_contribution_to_impact_ranked_bar_chart.ts/smart-sector-eeio-total-impacts";
 import { PiePercentContributionDirectAndIndirect } from "../totalGhgEmissionPieChart.ts/piePercentContributionDirectAndIndirect";
 import { PiePercentContribution } from "../totalGhgEmissionPieChart.ts/piePercentContribution";
+import { SectorDashboardInterpretation } from "./sectorDashboardNarrative";
+
+/** Align model sector codes (e.g. `1111A0`) with JSON keys (e.g. `1111A0/US`). */
+function normalizeSectorKey(code: string): string {
+  return code.replace(/\/US$/i, "").replace(/\s/g, "").trim();
+}
 
 /**
  * Owns ranked-bar and pie widget instances for each curated indicator; keeps them
@@ -100,15 +106,19 @@ export class SectorDashboardOrchestrator {
     mode: "impact_per_purchase" | "total_impact",
     sectorName: string,
     perspective: string,
-  ): void {
+  ): Promise<void> {
+    const tasks: Promise<void>[] = [];
     for (let i = 0; i < this.indicators.length; i++) {
       const slug = this.indicators[i];
       if (mode === "impact_per_purchase") {
-        void this.barIntensity[i].changeGraph(slug, sectorName, perspective);
+        tasks.push(
+          this.barIntensity[i].changeGraph(slug, sectorName, perspective),
+        );
       } else {
-        void this.barTotal[i].changeGraph(slug, sectorName, perspective);
+        tasks.push(this.barTotal[i].changeGraph(slug, sectorName, perspective));
       }
     }
+    return Promise.all(tasks).then(() => undefined);
   }
 
   refreshPieMode(mode: "aggregate" | "detail", sectorName: string): void {
@@ -120,5 +130,56 @@ export class SectorDashboardOrchestrator {
         void this.pieDetail[i].changeGraph(slug, sectorName);
       }
     }
+  }
+
+  /**
+   * Read the loaded chart data for indicator `i` and return the figures used
+   * by the interpretation paragraph. Returns null if data isn't loaded yet
+   * or doesn't contain an entry for this sector.
+   */
+  getInterpretation(
+    i: number,
+    sectorCode: string,
+    barMode: "impact_per_purchase" | "total_impact",
+  ): SectorDashboardInterpretation | null {
+    const needle = normalizeSectorKey(sectorCode);
+    const pieEntry = this.pieAgg[i]?.contributionList?.find(
+      (c) => normalizeSectorKey(c._sectorCode) === needle,
+    );
+    if (!pieEntry) {
+      return null;
+    }
+
+    let direct = 0;
+    let indirect = 0;
+    for (const c of pieEntry._contributionList) {
+      if (c.directOrIndirect === "Direct") {
+        direct += c.contribution;
+      } else {
+        indirect += c.contribution;
+      }
+    }
+    const total = direct + indirect;
+    const directPercent = total > 0 ? (direct / total) * 100 : 0;
+    const indirectPercent = total > 0 ? (indirect / total) * 100 : 0;
+
+    const barSource =
+      barMode === "total_impact" ? this.barTotal[i] : this.barIntensity[i];
+    const barEntry = barSource?.getTopValuesFromSectors?.find(
+      (s) => normalizeSectorKey(s.sector_code) === needle,
+    );
+    const topRows =
+      barMode === "total_impact"
+        ? (barEntry?.topFifteenTotalImpact ?? [])
+        : (barEntry?.topFifteenImpactPerPurchase ?? []);
+    const topPurchases: string[] = topRows
+      .map((t) => t.purchaseCommodity)
+      .filter(
+        (name): name is string =>
+          !!name && name !== "Direct" && name !== "All Others",
+      )
+      .slice(0, 3);
+
+    return { directPercent, indirectPercent, topPurchases };
   }
 }

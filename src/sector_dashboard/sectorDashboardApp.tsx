@@ -19,6 +19,7 @@ import {
 } from "./industryOutputChart";
 import {
   buildSectorDashboardIntro,
+  buildSectorDashboardInterpretation,
   buildSectorDashboardSectionBlurb,
   SECTOR_NAME_TOKEN,
 } from "./sectorDashboardNarrative";
@@ -125,6 +126,14 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(2),
     backgroundColor: "#f9f9f9",
   },
+  interpretation: {
+    borderLeft: "4px solid #2E93fA",
+    backgroundColor: "#f5fafe",
+    padding: theme.spacing(1.25, 2),
+    margin: theme.spacing(1, 0, 2, 0),
+    fontSize: 14,
+    lineHeight: 1.5,
+  },
   proxyDataNotice: {
     border: "1px solid #e65100",
     backgroundColor: "#fff8e1",
@@ -176,6 +185,7 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
   const sectorNameRef = React.useRef(activeSector.name);
   const perspectiveRef = React.useRef(perspective);
   const [chartsReady, setChartsReady] = React.useState(false);
+  const [, bumpNarrative] = React.useReducer((n: number) => n + 1, 0);
   const outputLineRef = React.useRef<HTMLDivElement | null>(null);
   const outputLineChartRef = React.useRef<ApexCharts | null>(null);
   sectorNameRef.current = activeSector.name;
@@ -236,6 +246,7 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
         );
         if (alive) {
           setChartsReady(true);
+          bumpNarrative();
         }
       } catch (e) {
         console.error("SectorDashboard chart error", e);
@@ -257,6 +268,7 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
     sectorSyncNeededRef.current = false;
     void orchRef.current
       .setSector(activeSector.name, activeSector.code)
+      .then(() => bumpNarrative())
       .catch((e) => console.error(e));
   }, [activeSector, chartsReady]);
 
@@ -270,6 +282,7 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
     }
     void orchRef.current
       .setPerspective(perspective, sectorNameRef.current)
+      .then(() => bumpNarrative())
       .catch((e) => console.error(e));
   }, [perspective, chartsReady]);
 
@@ -281,11 +294,14 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
       barModeInitSkipRef.current = false;
       return;
     }
-    orchRef.current.refreshBarMode(
-      barMode,
-      sectorNameRef.current,
-      perspectiveRef.current,
-    );
+    orchRef.current
+      .refreshBarMode(
+        barMode,
+        sectorNameRef.current,
+        perspectiveRef.current,
+      )
+      .then(() => bumpNarrative())
+      .catch((e) => console.error(e));
   }, [barMode, chartsReady]);
 
   React.useEffect(() => {
@@ -347,7 +363,9 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
       </h1>
 
       <div id="sector-dashboard-snapshot" className={classes.snapshot}>
-        <p style={{ marginTop: 0 }}>{introText}</p>
+        <p style={{ marginTop: 0 }}>
+          {renderSectorNarrative(introText, activeSector.name)}
+        </p>
         <p style={{ marginBottom: 0 }} className="sector-dashboard-snapshot-meta">
           Snapshot as of: {snapshotDate}. Perspective:{" "}
           {perspective === "final" ? "Point of consumption" : "Supply chain"}.
@@ -512,7 +530,7 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
 
       <div className="sector-dashboard-sector-heading">
         <h2 style={{ textAlign: "center" }}>
-          {activeSector.name} ({activeSector.code})
+          <em>{activeSector.name}</em> ({activeSector.code})
         </h2>
       </div>
 
@@ -545,13 +563,36 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
         </p>
       </section>
 
-      {SECTOR_DASHBOARD_INDICATORS.map((slug, i) => (
+      {SECTOR_DASHBOARD_INDICATORS.map((slug, i) => {
+        const interpretation = chartsReady
+          ? orchRef.current?.getInterpretation(
+              i,
+              activeSector.code,
+              barMode,
+            ) ?? null
+          : null;
+        const interpretationText = buildSectorDashboardInterpretation(
+          narrativeInput,
+          slug,
+          interpretation,
+        );
+        return (
         <section
           key={slug}
           className={`sector-dashboard-section ${classes.section}`}
         >
           <h3>{getLabel(slug)}</h3>
-          <p>{buildSectorDashboardSectionBlurb(narrativeInput, slug)}</p>
+          <p>
+            {renderSectorNarrative(
+              buildSectorDashboardSectionBlurb(narrativeInput, slug),
+              activeSector.name,
+            )}
+          </p>
+          <p
+            className={`sector-dashboard-interpretation ${classes.interpretation}`}
+          >
+            {renderSectorNarrative(interpretationText, activeSector.name)}
+          </p>
           <div
             style={{ fontWeight: "bold", textAlign: "center", marginBottom: 8 }}
           >
@@ -591,7 +632,8 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
             />
           </div>
         </section>
-      ))}
+        );
+      })}
 
       <div className="sector-dashboard-no-print" style={{ marginTop: 24 }}>
         <p style={{ fontSize: 13 }}>
