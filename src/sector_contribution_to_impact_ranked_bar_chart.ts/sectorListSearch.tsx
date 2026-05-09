@@ -23,6 +23,7 @@ import { Menu, MenuItem, IconButton } from "@material-ui/core";
 import {
   fileNames,
   getLabel,
+  pickPreferredBootSector,
   sectorPurchasesPointOfConsumptionOnly,
 } from "../util/util";
 import DownloadCSVButton from "../util/downloadcsvfile";
@@ -74,15 +75,16 @@ export class SectorListSearch extends Widget {
   async update() {
     this.sectors = await this._chartConfig.model.sectors();
     this.modelSmartSectorApi.init();
+    const boot = pickPreferredBootSector(this.sectors) ?? this.sectors[0];
     this.smartSectorImpactPurchase.init(
       "Acidification-Potential",
-      this.sectors[0].name,
-      this.sectors[0].code,
+      boot.name,
+      boot.code,
     );
     this.smartSectorTotalImpact.init(
       "Acidification-Potential",
-      this.sectors[0].name,
-      this.sectors[0].code,
+      boot.name,
+      boot.code,
     );
     ReactDOM.render(
       <Component widget={this} />,
@@ -112,9 +114,11 @@ const Component = (props: { widget: SectorListSearch }) => {
   }, [graph]);
 
   React.useEffect(() => {
-    setTitle(sectors[0].name + " (" + sectors[0].code + ")");
-    setValue(sectors[0].name);
-    setSectorId(sectors[0].id);
+    const list = props.widget.sectors;
+    const boot = pickPreferredBootSector(list) ?? list[0];
+    setTitle(boot.name + " (" + boot.code + ")");
+    setValue(boot.name);
+    setSectorId(boot.id);
   }, []);
 
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -467,7 +471,15 @@ const Component = (props: { widget: SectorListSearch }) => {
           <div className={classes.item}>
             <FormControl className={classes.margin}>
               <InputLabel id="demo-controlled-open-select-label">
-                Select perspective:
+                Select perspective:{" "}
+                <a
+                  href="./glossary.html#perspectives-help"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ fontSize: "0.75rem", fontWeight: 400 }}
+                >
+                  What is this?
+                </a>
               </InputLabel>
               <Select
                 native
@@ -483,9 +495,9 @@ const Component = (props: { widget: SectorListSearch }) => {
                   name: "perspective",
                 }}
               >
-                <option value="final">Point of Consumption</option>
+                <option value="final">Point of consumption</option>
                 {!sectorPurchasesPointOfConsumptionOnly(graph) ? (
-                  <option value="direct">Supply Chain</option>
+                  <option value="direct">Supply chain</option>
                 ) : null}
               </Select>
             </FormControl>
@@ -528,12 +540,12 @@ const Component = (props: { widget: SectorListSearch }) => {
                 <FormControlLabel
                   value="total_impact"
                   control={<Radio color="default" size="small" />}
-                  label="Total Impacts"
+                  label="Total impacts"
                 />
                 <FormControlLabel
                   value="impact_per_purchase"
                   control={<Radio color="default" size="small" />}
-                  label="Impact Intensity"
+                  label="Impact intensity"
                 />
               </RadioGroup>
             </FormControl>
@@ -549,30 +561,27 @@ const Component = (props: { widget: SectorListSearch }) => {
             />{" "}
           </div>
 
-          <div
-            className={classes.item}
-            style={{
-              overflowWrap: "break-word",
-              whiteSpace: "normal",
-              wordWrap: "break-word",
-              textAlign: "left",
-              width: "200px",
-            }}
-          >
-            See more info about the{" "}
-            <a href="./sector-info-table.html" target="_blank">
-              sectors BEA/NAICS Codes
-            </a>
-            . Open the{" "}
-            <a href="./sector-dashboard.html" target="_blank">
-              multi-indicator sector dashboard
-            </a>{" "}
-            for several indicators on one page.
-            .{" "}
-            <a href="./glossary.html" target="_blank">
-              Glossary
-            </a>
-            .
+          <div className={`${classes.item} smart-sector-resource-links`}>
+            <span className="smart-sector-resource-intro">
+              See more info about the{" "}
+              <a href="./sector-info-table.html" target="_blank">
+                sectors BEA/NAICS Codes
+              </a>
+              .
+            </span>
+            <span className="smart-sector-resource-line">
+              Open the{" "}
+              <a href="./sector-dashboard.html" target="_blank">
+                multi-indicator sector dashboard
+              </a>{" "}
+              for several indicators on one page.
+            </span>
+            <span className="smart-sector-resource-line">
+              <a href="./glossary.html" target="_blank">
+                Glossary
+              </a>
+              .
+            </span>
           </div>
         </div>
       </div>

@@ -10,7 +10,7 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormLabel from "@material-ui/core/FormLabel";
 import { makeStyles } from "@material-ui/core/styles";
 import * as strings from "../util/strings";
-import { getLabel } from "../util/util";
+import { getLabel, pickPreferredBootSector } from "../util/util";
 import { SECTOR_DASHBOARD_INDICATORS } from "./curatedIndicators";
 import {
   buildIndustryOutputCaption,
@@ -94,7 +94,10 @@ function resolveInitialSector(
       return hit;
     }
   }
-  return sectors[0];
+  return (
+    pickPreferredBootSector(sectors) ??
+    sectors[0]
+  );
 }
 
 const useStyles = makeStyles((theme) => ({
@@ -217,8 +220,10 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
   const [, bumpNarrative] = React.useReducer((n: number) => n + 1, 0);
   const outputLineRef = React.useRef<HTMLDivElement | null>(null);
   const outputLineChartRef = React.useRef<ApexCharts | null>(null);
+  const pieModeRef = React.useRef(pieMode);
   sectorNameRef.current = activeSector.name;
   perspectiveRef.current = perspective;
+  pieModeRef.current = pieMode;
 
   React.useEffect(() => {
     const el = outputLineRef.current;
@@ -244,6 +249,11 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
   React.useEffect(() => {
     document.title = "Sector dashboard (multi-indicator)";
   }, []);
+
+  React.useEffect(() => {
+    setShareStatus("idle");
+    setShareUrlForFallback("");
+  }, [activeSector.code, perspective, barMode, pieMode]);
 
   const industryOutputSeries = React.useMemo(
     () => buildIndustryOutputSeriesMillionsUSD(activeSector.code),
@@ -329,7 +339,13 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
         sectorNameRef.current,
         perspectiveRef.current,
       )
-      .then(() => bumpNarrative())
+      .then(() => {
+        orchRef.current?.refreshPieMode(
+          pieModeRef.current,
+          sectorNameRef.current,
+        );
+        bumpNarrative();
+      })
       .catch((e) => console.error(e));
   }, [barMode, chartsReady]);
 
@@ -501,7 +517,22 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
           <div className={classes.right}>
             <div className={classes.item}>
               <FormControl className={classes.margin}>
-                <InputLabel htmlFor="sd-perspective">Perspective</InputLabel>
+                <InputLabel htmlFor="sd-perspective">
+                  Perspective{" "}
+                  <a
+                    href="./glossary.html#perspectives-help"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="sector-dashboard-no-print"
+                    style={{
+                      fontSize: "0.75rem",
+                      fontWeight: 400,
+                      marginLeft: 4,
+                    }}
+                  >
+                    What is this?
+                  </a>
+                </InputLabel>
                 <Select
                   native
                   id="sd-perspective"
@@ -532,14 +563,14 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
                   }
                 >
                   <FormControlLabel
-                    value="impact_per_purchase"
-                    control={<Radio color="default" size="small" />}
-                    label="Impact intensity"
-                  />
-                  <FormControlLabel
                     value="total_impact"
                     control={<Radio color="default" size="small" />}
                     label="Total impacts"
+                  />
+                  <FormControlLabel
+                    value="impact_per_purchase"
+                    control={<Radio color="default" size="small" />}
+                    label="Impact intensity"
                   />
                 </RadioGroup>
               </FormControl>
@@ -673,27 +704,10 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
             {renderSectorNarrative(interpretationText, activeSector.name)}
           </p>
           <div
-            style={{ fontWeight: "bold", textAlign: "center", marginBottom: 8 }}
-          >
-            Supplier contributions (ranked)
-          </div>
-          <div className={classes.chartGrid}>
-            <div
-              className={classes.chartCell}
-              id={`sector-dash-bar-total-${i}`}
-              style={{ visibility: totalBarVis }}
-            />
-            <div
-              className={classes.chartCell}
-              id={`sector-dash-bar-intensity-${i}`}
-              style={{ visibility: intBarVis }}
-            />
-          </div>
-          <div
             style={{
               fontWeight: "bold",
               textAlign: "center",
-              margin: "16px 0 8px",
+              marginBottom: 8,
             }}
           >
             Direct vs indirect shares
@@ -708,6 +722,27 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
               className={classes.chartCell}
               id={`sector-dash-pie-detail-${i}`}
               style={{ visibility: pieDetVis }}
+            />
+          </div>
+          <div
+            style={{
+              fontWeight: "bold",
+              textAlign: "center",
+              margin: "16px 0 8px",
+            }}
+          >
+            Supplier contributions (ranked)
+          </div>
+          <div className={classes.chartGrid}>
+            <div
+              className={classes.chartCell}
+              id={`sector-dash-bar-total-${i}`}
+              style={{ visibility: totalBarVis }}
+            />
+            <div
+              className={classes.chartCell}
+              id={`sector-dash-bar-intensity-${i}`}
+              style={{ visibility: intBarVis }}
             />
           </div>
         </section>

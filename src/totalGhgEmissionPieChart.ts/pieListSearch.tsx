@@ -5,7 +5,7 @@ import { PiePercentContribution } from "./piePercentContribution";
 import { PiePercentContributionDirectAndIndirect } from "./piePercentContributionDirectAndIndirect";
 import * as strings from "../util/strings";
 import { Widget } from "../widget";
-import { fileNames } from "../util/util";
+import { fileNames, pickPreferredBootSector } from "../util/util";
 import {
   modelOfSmartSector,
   WebModelSmartSector,
@@ -92,13 +92,14 @@ export class PieListSearch extends Widget {
   async update() {
     this.sectors = await this._chartConfig.model.sectors();
     this.modelSmartSectorApi.init();
+    const boot = pickPreferredBootSector(this.sectors) ?? this.sectors[0];
     this.piePercentContribution.init(
       "Acidification-Potential",
-      this.sectors[0].name,
+      boot.name,
     );
     this.piePercentContributionSectors.init(
       "Acidification-Potential",
-      this.sectors[0].name,
+      boot.name,
     );
     ReactDOM.render(
       <Component widget={this} />,
@@ -152,9 +153,11 @@ const Component = (props: { widget: PieListSearch }) => {
   }
 
   React.useEffect(() => {
-    setTitle(sectors[0].name + " (" + sectors[0].code + ")");
-    setValue(sectors[0].name);
-    setSectorId(sectors[0].id);
+    const list = props.widget.sectors;
+    const boot = pickPreferredBootSector(list) ?? list[0];
+    setTitle(boot.name + " (" + boot.code + ")");
+    setValue(boot.name);
+    setSectorId(boot.id);
   }, []);
 
   React.useEffect(() => {
@@ -314,12 +317,13 @@ const Component = (props: { widget: PieListSearch }) => {
       overflowWrap: "break-word",
       whiteSpace: "normal",
       wordWrap: "break-word",
-      width: "300px",
       marginBottom: "1em",
+      flex: "1 1 220px",
+      minWidth: 200,
+      maxWidth: "28rem",
       "@media (max-width:1256px)": {
         bottom: "0",
         right: "0",
-        width: "300px",
       },
     },
   }));
@@ -402,7 +406,15 @@ const Component = (props: { widget: PieListSearch }) => {
           >
             <FormControl className={classes.margin}>
               <InputLabel id="demo-controlled-open-select-label">
-                Select perspective:
+                Select perspective:{" "}
+                <a
+                  href="./glossary.html#perspectives-help"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ fontSize: "0.75rem", fontWeight: 400 }}
+                >
+                  What is this?
+                </a>
               </InputLabel>
               <Select
                 native
@@ -418,9 +430,9 @@ const Component = (props: { widget: PieListSearch }) => {
                   name: "perspective",
                 }}
               >
-                <option value="final">Point of Consumption</option>
+                <option value="final">Point of consumption</option>
                 {!sectorPurchasesPointOfConsumptionOnly(graph) ? (
-                  <option value="direct">Supply Chain</option>
+                  <option value="direct">Supply chain</option>
                 ) : null}
               </Select>
             </FormControl>
@@ -473,21 +485,27 @@ const Component = (props: { widget: PieListSearch }) => {
               />{" "}
             </div>
           </div>
-          <div className={classes.linkSectors}>
-            See more info about the{" "}
-            <a href="./sector-info-table.html" target="_blank">
-              sectors BEA/NAICS Codes
-            </a>
-            . Open the{" "}
-            <a href="./sector-dashboard.html" target="_blank">
-              multi-indicator sector dashboard
-            </a>{" "}
-            for several indicators on one page.
-            .{" "}
-            <a href="./glossary.html" target="_blank">
-              Glossary
-            </a>
-            .
+          <div className={`${classes.linkSectors} smart-sector-resource-links`}>
+            <span className="smart-sector-resource-intro">
+              See more info about the{" "}
+              <a href="./sector-info-table.html" target="_blank">
+                sectors BEA/NAICS Codes
+              </a>
+              .
+            </span>
+            <span className="smart-sector-resource-line">
+              Open the{" "}
+              <a href="./sector-dashboard.html" target="_blank">
+                multi-indicator sector dashboard
+              </a>{" "}
+              for several indicators on one page.
+            </span>
+            <span className="smart-sector-resource-line">
+              <a href="./glossary.html" target="_blank">
+                Glossary
+              </a>
+              .
+            </span>
           </div>
         </div>
 
