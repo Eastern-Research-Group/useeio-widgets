@@ -113,7 +113,17 @@ export function formatNumberGraph(value: number): string {
     "Smog-Formation-Potential": "Smog Formation Potential (O3 eq)",
     // "Value-Added": "Value Added ($)"
     "Commercial-RCRA-Hazardous-Waste": "Commercial Hazardous Waste",
+    "sector-purchases": "Sector Purchases",
   };
+
+  /** File slug for sector purchases; supply-chain (`direct`) JSON/UI not shipped yet. */
+  export const SECTOR_PURCHASES_FILE_SLUG = "sector-purchases";
+
+  export function sectorPurchasesPointOfConsumptionOnly(
+    indicatorSlug: string,
+  ): boolean {
+    return indicatorSlug === SECTOR_PURCHASES_FILE_SLUG;
+  }
 
   export const getLabel = (filename: string): string => {
     if (customLabels[filename]) return customLabels[filename];
@@ -145,4 +155,5 @@ export function formatNumberGraph(value: number): string {
       "Nitrous-oxide",
       "Particulate-matter-2.5",
       "Sulfur-dioxide",
-    ]
+      "sector-purchases",
+    ];

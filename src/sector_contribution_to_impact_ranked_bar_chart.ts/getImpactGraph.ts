@@ -73,6 +73,10 @@ export async function apexGraph(
       yaxisTitle = "Number of Jobs Supported";
       unitLabel = "Jobs";
       break;
+    case "sector purchases":
+      yaxisTitle = "Million USD of Purchases";
+      unitLabel = "million USD";
+      break;
     case "Global Warming Potential":
     case "GWP AR6 100":
     case "GWP AR6 20":

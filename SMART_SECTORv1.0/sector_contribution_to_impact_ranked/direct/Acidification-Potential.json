@@ -1,6 +1,76 @@
 [
   {
     "emissions_source": "Direct",
+    "sector_code": "11",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 18354.9280804883,
+    "total_impact": 6929.52851946122
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "11",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 2352.66115987847,
+    "total_impact": 888.199209090712
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "11",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 1449.76591876174,
+    "total_impact": 547.329536599042
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "11",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 581.573462144357,
+    "total_impact": 219.561192199665
+  },
+  {
+    "emissions_source": "112300/US",
+    "sector_code": "11",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 465.781408626265,
+    "total_impact": 175.846265414768
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "11",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 198.290943378632,
+    "total_impact": 74.8606990595491
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "11",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 133.432443760461,
+    "total_impact": 50.3746961254737
+  },
+  {
+    "emissions_source": "115000/US",
+    "sector_code": "11",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 132.095341709932,
+    "total_impact": 49.8699005331435
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "11",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 90.7392810627411,
+    "total_impact": 34.2567638076491
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "11",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 531.258790583508,
+    "total_impact": 200.565914746148
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "111/112",
     "indicator": "Acidification Potential",
     "impact_per_purchase": 21405.6183732649,
@@ -981,6 +1051,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "211",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 1086.91148099027,
+    "total_impact": 989.739741333198
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "211",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 675.599635946772,
+    "total_impact": 615.199876550706
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "211",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 81.1602656365036,
+    "total_impact": 73.904399504936
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "211",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 58.6594184401194,
+    "total_impact": 53.4151664133532
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "211",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 53.7672903373007,
+    "total_impact": 48.9604029043311
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "211",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 32.606840064871,
+    "total_impact": 29.6917329662352
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "211",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 25.6759480061866,
+    "total_impact": 23.3804744752303
+  },
+  {
+    "emissions_source": "327310/US",
+    "sector_code": "211",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 22.7659765701225,
+    "total_impact": 20.7306594472456
+  },
+  {
+    "emissions_source": "324190/US",
+    "sector_code": "211",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 17.0875198527078,
+    "total_impact": 15.5598664425151
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "211",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 143.370658531262,
+    "total_impact": 130.553077202035
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "211/32411",
     "indicator": "Acidification Potential",
     "impact_per_purchase": 1099.18587253358,
@@ -1118,6 +1258,76 @@
     "indicator": "Acidification Potential",
     "impact_per_purchase": 75.7717005794569,
     "total_impact": 22.8423272673485
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "212",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 322.129608193916,
+    "total_impact": 73.7615234414684
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "212",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 66.421901709705,
+    "total_impact": 15.2093459755428
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "212",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 59.128313296962,
+    "total_impact": 13.53925363074
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "212",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 31.5174347020496,
+    "total_impact": 7.21689015680518
+  },
+  {
+    "emissions_source": "327310/US",
+    "sector_code": "212",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 30.8737389832627,
+    "total_impact": 7.06949614010275
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "212",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 28.2905278309797,
+    "total_impact": 6.47799015891806
+  },
+  {
+    "emissions_source": "2122A0/US",
+    "sector_code": "212",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 22.8422892662931,
+    "total_impact": 5.2304476593105
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "212",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 19.7198926202467,
+    "total_impact": 4.51547850545902
+  },
+  {
+    "emissions_source": "324190/US",
+    "sector_code": "212",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 14.7923358761893,
+    "total_impact": 3.38716219102959
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "212",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 159.355462170679,
+    "total_impact": 36.4893550901185
   },
   {
     "emissions_source": "Direct",
@@ -1678,6 +1888,76 @@
     "indicator": "Acidification Potential",
     "impact_per_purchase": 127.877058667592,
     "total_impact": 11.8286100467648
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "2211",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 2757.86836825334,
+    "total_impact": 1264.05876012265
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "2211",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 141.23298517955,
+    "total_impact": 64.7336160744866
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "2211",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 84.9394551336502,
+    "total_impact": 38.9316849120452
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "2211",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 48.4730860769177,
+    "total_impact": 22.2174596115744
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "2211",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 33.621460662686,
+    "total_impact": 15.4102720666483
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "2211",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 16.3093497744807,
+    "total_impact": 7.47533011062219
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "2211",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 14.1844981556305,
+    "total_impact": 6.50141223488637
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "2211",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 12.1255102428846,
+    "total_impact": 5.55768274509148
+  },
+  {
+    "emissions_source": "48A000/US",
+    "sector_code": "2211",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 11.0059891118439,
+    "total_impact": 5.04455437786247
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "2211",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 64.0124676826179,
+    "total_impact": 29.3398776615753
   },
   {
     "emissions_source": "Direct",
@@ -2868,6 +3148,76 @@
     "indicator": "Acidification Potential",
     "impact_per_purchase": 214.906423551135,
     "total_impact": 57.1128596611279
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "31",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 102.086802056608,
+    "total_impact": 93.2002264312627
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "31",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 1956.90592103312,
+    "total_impact": 1786.55880359375
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "31",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 1399.33771043127,
+    "total_impact": 1277.52646609187
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "31",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 1260.12156171905,
+    "total_impact": 1150.42897335552
+  },
+  {
+    "emissions_source": "112120/US",
+    "sector_code": "31",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 1182.10808222409,
+    "total_impact": 1079.20650573832
+  },
+  {
+    "emissions_source": "112300/US",
+    "sector_code": "31",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 852.414980348003,
+    "total_impact": 778.212928423219
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "31",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 276.79735901978,
+    "total_impact": 252.702367167052
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "31",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 262.207234657789,
+    "total_impact": 239.382301626711
+  },
+  {
+    "emissions_source": "111300/US",
+    "sector_code": "31",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 198.209843100527,
+    "total_impact": 180.955832543669
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "31",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 682.20121093998,
+    "total_impact": 622.816133431542
   },
   {
     "emissions_source": "Direct",
@@ -5461,6 +5811,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "321",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 280.733319636382,
+    "total_impact": 31.6969818765458
+  },
+  {
+    "emissions_source": "113000/US",
+    "sector_code": "321",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 308.257919112427,
+    "total_impact": 34.804723885515
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "321",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 85.001796371935,
+    "total_impact": 9.59736593634425
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "321",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 84.7723310181262,
+    "total_impact": 9.57145750776729
+  },
+  {
+    "emissions_source": "321100/US",
+    "sector_code": "321",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 58.8896623139188,
+    "total_impact": 6.64910229216082
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "321",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 55.0282542541245,
+    "total_impact": 6.21311919814199
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "321",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 51.9018074441325,
+    "total_impact": 5.86011896289147
+  },
+  {
+    "emissions_source": "115000/US",
+    "sector_code": "321",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 50.7554816844048,
+    "total_impact": 5.73068984176767
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "321",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 33.4510238653926,
+    "total_impact": 3.77688155644151
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "321",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 266.450015958014,
+    "total_impact": 30.0842854626792
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "321/322",
     "indicator": "Acidification Potential",
     "impact_per_purchase": 759.68452927552,
@@ -5808,6 +6228,76 @@
     "indicator": "Acidification Potential",
     "impact_per_purchase": 272.049436065816,
     "total_impact": 7.88835839016931
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "322-323",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 826.084807448588,
+    "total_impact": 171.104968545217
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "322-323",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 224.921616745373,
+    "total_impact": 46.5874760210398
+  },
+  {
+    "emissions_source": "322120/US",
+    "sector_code": "322-323",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 135.595662287758,
+    "total_impact": 28.0856049178202
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "322-323",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 132.5995228613,
+    "total_impact": 27.4650217310836
+  },
+  {
+    "emissions_source": "322110/US",
+    "sector_code": "322-323",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 110.774390836535,
+    "total_impact": 22.9444343834885
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "322-323",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 103.93443270136,
+    "total_impact": 21.5276902295991
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "322-323",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 70.642885642111,
+    "total_impact": 14.632091786156
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "322-323",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 68.0678163663685,
+    "total_impact": 14.0987238517081
+  },
+  {
+    "emissions_source": "113000/US",
+    "sector_code": "322-323",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 53.9107778433981,
+    "total_impact": 11.1664103539598
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "322-323",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 352.087301071266,
+    "total_impact": 72.9269997847268
   },
   {
     "emissions_source": "Direct",
@@ -6858,6 +7348,76 @@
     "indicator": "Acidification Potential",
     "impact_per_purchase": 330.227727681645,
     "total_impact": 237.683536133797
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "325-326",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 289.847020845602,
+    "total_impact": 269.550333735321
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "325-326",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 501.708384926532,
+    "total_impact": 466.575996538513
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "325-326",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 129.072528394719,
+    "total_impact": 120.034158030526
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "325-326",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 112.234586475939,
+    "total_impact": 104.37530167802
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "325-326",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 81.0533156758482,
+    "total_impact": 75.3775154460442
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "325-326",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 61.9269696839081,
+    "total_impact": 57.5905016957426
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "325-326",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 48.1967618211103,
+    "total_impact": 44.8217587192745
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "325-326",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 45.8912836417981,
+    "total_impact": 42.6777228384153
+  },
+  {
+    "emissions_source": "325110/US",
+    "sector_code": "325-326",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 45.421070419965,
+    "total_impact": 42.2404365399324
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "325-326",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 343.835736227853,
+    "total_impact": 319.758461480679
   },
   {
     "emissions_source": "Direct",
@@ -8891,6 +9451,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "327",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 1908.40625885219,
+    "total_impact": 213.74318774513
+  },
+  {
+    "emissions_source": "327310/US",
+    "sector_code": "327",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 719.062160834628,
+    "total_impact": 80.53559755989
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "327",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 124.337679545542,
+    "total_impact": 13.925930005533
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "327",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 104.106706985252,
+    "total_impact": 11.660043197542
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "327",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 81.8055229393803,
+    "total_impact": 9.16229087339985
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "327",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 78.2831802682007,
+    "total_impact": 8.76778538098889
+  },
+  {
+    "emissions_source": "327200/US",
+    "sector_code": "327",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 41.7500813171027,
+    "total_impact": 4.67604600851769
+  },
+  {
+    "emissions_source": "2123A0/US",
+    "sector_code": "327",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 39.9679786213485,
+    "total_impact": 4.47644893147352
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "327",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 34.3423760709087,
+    "total_impact": 3.84637647360947
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "327",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 264.011398307679,
+    "total_impact": 29.5695099581537
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "327100/US",
     "indicator": "Acidification Potential",
     "impact_per_purchase": 1976.97479030922,
@@ -9798,6 +10428,76 @@
     "indicator": "Acidification Potential",
     "impact_per_purchase": 152.927631165095,
     "total_impact": 0.64263743023985
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "331-332",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 196.320612092368,
+    "total_impact": 94.373557733875
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "331-332",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 118.527027145593,
+    "total_impact": 56.9772940300649
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "331-332",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 103.135818300621,
+    "total_impact": 49.5785643651346
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "331-332",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 90.3335436930452,
+    "total_impact": 43.424364921041
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "331-332",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 71.8941354392275,
+    "total_impact": 34.5603310283522
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "331-332",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 56.1635035923351,
+    "total_impact": 26.9984368544763
+  },
+  {
+    "emissions_source": "2122A0/US",
+    "sector_code": "331-332",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 35.777828320481,
+    "total_impact": 17.1988102044373
+  },
+  {
+    "emissions_source": "331410/US",
+    "sector_code": "331-332",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 35.6062065967918,
+    "total_impact": 17.116309684108
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "331-332",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 28.3393070384792,
+    "total_impact": 13.6230281702443
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "331-332",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 233.603097515067,
+    "total_impact": 112.295673771523
   },
   {
     "emissions_source": "Direct",
@@ -11898,6 +12598,76 @@
     "indicator": "Acidification Potential",
     "impact_per_purchase": 155.249838537566,
     "total_impact": 2.93312208019781
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "333",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 14.8684246994268,
+    "total_impact": 4.70287187599248
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "333",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 60.9270659261847,
+    "total_impact": 19.2711864655063
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "333",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 59.0067827450097,
+    "total_impact": 18.6638022974285
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "333",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 50.1426055640433,
+    "total_impact": 15.8600695274204
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "333",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 27.3865527898035,
+    "total_impact": 8.66234665065194
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "333",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 25.6503782105419,
+    "total_impact": 8.11319589892925
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "333",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 24.7479505925295,
+    "total_impact": 7.827758702275
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "333",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 18.7985200948039,
+    "total_impact": 5.94595817992346
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "333",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 9.78238471234674,
+    "total_impact": 3.0941611417387
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "333",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 159.680989862633,
+    "total_impact": 50.5069804997275
   },
   {
     "emissions_source": "Direct",
@@ -15331,6 +16101,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "335",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 19.2162777305184,
+    "total_impact": 2.16074729104992
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "335",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 57.0682736866065,
+    "total_impact": 6.41696167709916
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "335",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 57.00384938783,
+    "total_impact": 6.40971757753882
+  },
+  {
+    "emissions_source": "331410/US",
+    "sector_code": "335",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 34.9427468466677,
+    "total_impact": 3.92908796644165
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "335",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 31.8019925834458,
+    "total_impact": 3.57593027579626
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "335",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 28.4776091980625,
+    "total_impact": 3.20212466707682
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "335",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 28.0288898890013,
+    "total_impact": 3.15166905620916
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "335",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 26.051373975405,
+    "total_impact": 2.9293100638365
+  },
+  {
+    "emissions_source": "324190/US",
+    "sector_code": "335",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 20.4612165259788,
+    "total_impact": 2.30073268091249
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "335",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 191.654912148414,
+    "total_impact": 21.5503667280689
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "335110/US",
     "indicator": "Acidification Potential",
     "impact_per_purchase": 46.6505572546751,
@@ -16308,6 +17148,76 @@
     "indicator": "Acidification Potential",
     "impact_per_purchase": 101.353709687301,
     "total_impact": 1.1848659340286
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "336",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 9.28394104841582,
+    "total_impact": 8.65206703774703
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "336",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 60.6025684148906,
+    "total_impact": 56.4778989710146
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "336",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 57.7795044268404,
+    "total_impact": 53.8469754495185
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "336",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 35.6052302617612,
+    "total_impact": 33.1819038393984
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "336",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 34.3051152348981,
+    "total_impact": 31.970275899223
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "336",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 28.9608814634135,
+    "total_impact": 26.9897758491752
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "336",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 27.6923334601389,
+    "total_impact": 25.8075664504193
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "336",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 19.081451609921,
+    "total_impact": 17.7827495506053
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "336",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 14.0866566509783,
+    "total_impact": 13.1279051694093
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "336",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 181.584206207922,
+    "total_impact": 169.225409436987
   },
   {
     "emissions_source": "Direct",
@@ -18201,6 +19111,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "337-339",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 13.6501206662886,
+    "total_impact": 2.77080921762092
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "337-339",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 51.9801777869285,
+    "total_impact": 10.5513467072344
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "337-339",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 51.4795938851031,
+    "total_impact": 10.4497342363061
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "337-339",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 48.3396242720471,
+    "total_impact": 9.81235842406203
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "337-339",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 34.2885765188342,
+    "total_impact": 6.96016586227864
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "337-339",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 24.6639317964237,
+    "total_impact": 5.00647952021991
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "337-339",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 23.5573341220601,
+    "total_impact": 4.78185359116883
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "337-339",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 18.5827840535003,
+    "total_impact": 3.77208015982303
+  },
+  {
+    "emissions_source": "324190/US",
+    "sector_code": "337-339",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 18.3121831671066,
+    "total_impact": 3.7171514563598
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "337-339",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 235.509307739055,
+    "total_impact": 47.805537890261
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "337110/US",
     "indicator": "Acidification Potential",
     "impact_per_purchase": 25.0287276577385,
@@ -19531,6 +20511,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "42-44",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 35.4480009586585,
+    "total_impact": 147.422359495335
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "42-44",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 55.7616307886766,
+    "total_impact": 231.903378409453
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "42-44",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 30.6106383521015,
+    "total_impact": 127.304570342011
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "42-44",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 19.6801309525392,
+    "total_impact": 81.8464021027354
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "42-44",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 17.5683496966551,
+    "total_impact": 73.0638539459708
+  },
+  {
+    "emissions_source": "112120/US",
+    "sector_code": "42-44",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 11.8005987604744,
+    "total_impact": 49.0767339674744
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "42-44",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 11.230917915576,
+    "total_impact": 46.7075257739812
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "42-44",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 8.22472345259081,
+    "total_impact": 34.2052613627396
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "42-44",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 6.03562460980666,
+    "total_impact": 25.1011621795974
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "42-44",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 83.9540804252208,
+    "total_impact": 349.151102765474
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "423100/US",
     "indicator": "Acidification Potential",
     "impact_per_purchase": 28.3245146482275,
@@ -20791,6 +21841,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "48",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 1231.76100740865,
+    "total_impact": 1640.06970359642
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "48",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 97.9109978483553,
+    "total_impact": 130.36689768075
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "48",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 51.0363125151635,
+    "total_impact": 67.9540182194035
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "48",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 39.4513259575732,
+    "total_impact": 52.5287974538528
+  },
+  {
+    "emissions_source": "48A000/US",
+    "sector_code": "48",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 38.856901087051,
+    "total_impact": 51.7373304279087
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "48",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 31.5115424943221,
+    "total_impact": 41.9571051914155
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "48",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 23.0383110950935,
+    "total_impact": 30.6751356974532
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "48",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 18.7766478372962,
+    "total_impact": 25.0008005350279
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "48",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 12.6992424655423,
+    "total_impact": 16.9088343445598
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "48",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 91.6046327264947,
+    "total_impact": 121.970075315071
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "481000/US",
     "indicator": "Acidification Potential",
     "impact_per_purchase": 200.069060916024,
@@ -21558,6 +22678,76 @@
     "indicator": "Acidification Potential",
     "impact_per_purchase": 62.965663536472,
     "total_impact": 15.5046206999998
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "5",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 5.94136254508295,
+    "total_impact": 87.1378821784365
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "5",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 30.2752507143323,
+    "total_impact": 444.026300305713
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "5",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 16.2146493564745,
+    "total_impact": 237.809121134756
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "5",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 11.2405759730701,
+    "total_impact": 164.857804472774
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "5",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 9.54744198991992,
+    "total_impact": 140.025771682897
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "5",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 8.87487381345111,
+    "total_impact": 130.161676355705
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "5",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 4.5627031531047,
+    "total_impact": 66.9180321438989
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "5",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 4.46649228337933,
+    "total_impact": 65.5069734234793
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "5",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 3.89752658722409,
+    "total_impact": 57.1623444904784
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "5",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 63.1758262448751,
+    "total_impact": 926.556435847738
   },
   {
     "emissions_source": "Direct",
@@ -25271,6 +26461,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "562",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 654.798302900138,
+    "total_impact": 84.9221691807729
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "562",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 61.3591547021918,
+    "total_impact": 7.95779783382155
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "562",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 40.4819993705914,
+    "total_impact": 5.25019564665792
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "562",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 37.0570230600693,
+    "total_impact": 4.80600326498241
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "562",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 35.5504305016909,
+    "total_impact": 4.61061010717727
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "562",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 27.3288605167579,
+    "total_impact": 3.54433740289611
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "562",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 12.5420415601929,
+    "total_impact": 1.62660375039094
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "562",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 10.5673934691841,
+    "total_impact": 1.3705074860689
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "562",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 10.2699264792374,
+    "total_impact": 1.33192836646204
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "562",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 135.663014876507,
+    "total_impact": 17.5944217477202
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "562000/US",
     "indicator": "Acidification Potential",
     "impact_per_purchase": 716.15745760233,
@@ -25338,6 +26598,76 @@
     "indicator": "Acidification Potential",
     "impact_per_purchase": 126.03787249395,
     "total_impact": 16.3461167869708
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "6",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 4.19689087887554,
+    "total_impact": 14.6369006177173
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "6",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 48.6196500469055,
+    "total_impact": 169.563852466762
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "6",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 47.267908246357,
+    "total_impact": 164.849574453238
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "6",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 40.0601237220423,
+    "total_impact": 139.712007430151
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "6",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 38.4609951469464,
+    "total_impact": 134.134953676754
+  },
+  {
+    "emissions_source": "112120/US",
+    "sector_code": "6",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 25.9096567736468,
+    "total_impact": 90.36143235076
+  },
+  {
+    "emissions_source": "112300/US",
+    "sector_code": "6",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 23.8268441604926,
+    "total_impact": 83.0975024312303
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "6",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 14.3741333434378,
+    "total_impact": 50.1306246184997
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "6",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 14.1775975333257,
+    "total_impact": 49.4451945695766
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "6",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 98.0728977256362,
+    "total_impact": 342.034925074415
   },
   {
     "emissions_source": "Direct",
@@ -26461,6 +27791,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "7",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 22.8294113974165,
+    "total_impact": 41.833017436473
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "7",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 182.315940333914,
+    "total_impact": 334.078955351371
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "7",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 99.1512704204493,
+    "total_impact": 181.686542510531
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "7",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 79.6402725342041,
+    "total_impact": 145.934244714949
+  },
+  {
+    "emissions_source": "112120/US",
+    "sector_code": "7",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 78.715601477045,
+    "total_impact": 144.239861106727
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "7",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 74.6230879650006,
+    "total_impact": 136.740666925675
+  },
+  {
+    "emissions_source": "112300/US",
+    "sector_code": "7",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 59.2857515956289,
+    "total_impact": 108.636260351198
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "7",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 21.4470067179179,
+    "total_impact": 39.2998746385702
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "7",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 18.4045732450809,
+    "total_impact": 33.7248657036967
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "7",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 155.497643501894,
+    "total_impact": 284.936633656764
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "711100/US",
     "indicator": "Acidification Potential",
     "impact_per_purchase": 0.465112069370497,
@@ -27301,6 +28701,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "8",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 7.51426275784054,
+    "total_impact": 6.96195843191517
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "8",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 43.889432934719,
+    "total_impact": 39.8193107088095
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "8",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 18.0616951490922,
+    "total_impact": 16.3867291732669
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "8",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 16.5433759067929,
+    "total_impact": 15.0092124996246
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "8",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 13.6777344257478,
+    "total_impact": 12.4093186098241
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "8",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 8.5896698401854,
+    "total_impact": 7.79309982795116
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "8",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 5.98390915795103,
+    "total_impact": 5.42898647991539
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "8",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 5.44812318403604,
+    "total_impact": 4.94288705364856
+  },
+  {
+    "emissions_source": "112120/US",
+    "sector_code": "8",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 5.3964454700866,
+    "total_impact": 4.89600171449336
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "8",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 77.6186580546145,
+    "total_impact": 70.4206287302609
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "811100/US",
     "indicator": "Acidification Potential",
     "impact_per_purchase": 11.0019178319669,
@@ -28075,6 +29545,76 @@
     "indicator": "Acidification Potential",
     "impact_per_purchase": 0.0583417934725018,
     "total_impact": 0.00112220511601457
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "G",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 12.0053664496482,
+    "total_impact": 38.4536282589276
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "G",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 39.2112407651846,
+    "total_impact": 125.595039708255
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "G",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 36.1039923605705,
+    "total_impact": 115.642409310815
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "G",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 34.5435245260545,
+    "total_impact": 110.644173707582
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "G",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 30.0764446223828,
+    "total_impact": 96.3359532347491
+  },
+  {
+    "emissions_source": "112120/US",
+    "sector_code": "G",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 24.3032402246312,
+    "total_impact": 77.8441681896995
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "G",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 20.2013947163627,
+    "total_impact": 64.7058068567031
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "G",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 18.3387466225875,
+    "total_impact": 58.7396768201367
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "G",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 12.0712620212327,
+    "total_impact": 38.6646941871732
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "G",
+    "indicator": "Acidification Potential",
+    "impact_per_purchase": 124.236666176138,
+    "total_impact": 397.934590110386
   },
   {
     "emissions_source": "Direct",

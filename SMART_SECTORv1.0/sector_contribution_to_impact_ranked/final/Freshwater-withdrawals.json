@@ -1,6 +1,76 @@
 [
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "11",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 415950.028464884,
+    "total_impact": 157.033444766374
+  },
+  {
+    "purchased_commodity_code": "1111B0/US",
+    "sector_code": "11",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 46938.3333503456,
+    "total_impact": 14.5229672763707
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "11",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 34318.3680403464,
+    "total_impact": 11.756385850585
+  },
+  {
+    "purchased_commodity_code": "311119/US",
+    "sector_code": "11",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 28072.1702035673,
+    "total_impact": 6.35708487963797
+  },
+  {
+    "purchased_commodity_code": "1111A0/US",
+    "sector_code": "11",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 21581.1105300989,
+    "total_impact": 3.6749905102966
+  },
+  {
+    "purchased_commodity_code": "111900/US",
+    "sector_code": "11",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 18346.6189665516,
+    "total_impact": 5.60236781454623
+  },
+  {
+    "purchased_commodity_code": "113000/US",
+    "sector_code": "11",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 8990.52883747123,
+    "total_impact": 0.945144539885675
+  },
+  {
+    "purchased_commodity_code": "112300/US",
+    "sector_code": "11",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 6700.15066280766,
+    "total_impact": 1.27162652741118
+  },
+  {
+    "purchased_commodity_code": "112A00/US",
+    "sector_code": "11",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 5242.75103116433,
+    "total_impact": 1.79600043826264
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "11",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 21343.589819227,
+    "total_impact": 5.93841047319471
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "111/112",
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 474483.609429075,
@@ -981,6 +1051,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "211",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 4294.26958433736,
+    "total_impact": 3.91035456148164
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "211",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 2507.66262998117,
+    "total_impact": 2.28347331512887
+  },
+  {
+    "purchased_commodity_code": "211000/US",
+    "sector_code": "211",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 2302.27730561017,
+    "total_impact": 2.04726633177874
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "211",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 2006.16665729863,
+    "total_impact": 1.82681193748822
+  },
+  {
+    "purchased_commodity_code": "325110/US",
+    "sector_code": "211",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 501.816406191712,
+    "total_impact": 0.456953163847742
+  },
+  {
+    "purchased_commodity_code": "221300/US",
+    "sector_code": "211",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 399.175026272785,
+    "total_impact": 0.363488098303964
+  },
+  {
+    "purchased_commodity_code": "1111B0/US",
+    "sector_code": "211",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 394.025163244552,
+    "total_impact": 0.18229943354123
+  },
+  {
+    "purchased_commodity_code": "486000/US",
+    "sector_code": "211",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 289.907233015419,
+    "total_impact": 0.263989032072679
+  },
+  {
+    "purchased_commodity_code": "21311A/US",
+    "sector_code": "211",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 287.392939333935,
+    "total_impact": 0.225068185137883
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "211",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 2907.2450293024,
+    "total_impact": 2.4481367393512
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "211/32411",
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 174.526672868718,
@@ -1118,6 +1258,76 @@
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 1695.59758580229,
     "total_impact": 0.511159109171724
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "212",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 73995.2359606964,
+    "total_impact": 16.1853175001946
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "212",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 4013.76430930317,
+    "total_impact": 0.91907531210534
+  },
+  {
+    "purchased_commodity_code": "230301/US",
+    "sector_code": "212",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 947.355443585181,
+    "total_impact": 0.216926289859532
+  },
+  {
+    "purchased_commodity_code": "2122A0/US",
+    "sector_code": "212",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 710.747149752421,
+    "total_impact": 0.151584223030886
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "212",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 671.469105524971,
+    "total_impact": 0.153753591435118
+  },
+  {
+    "purchased_commodity_code": "230302/US",
+    "sector_code": "212",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 540.879662904259,
+    "total_impact": 0.0451406355621093
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "212",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 303.440306114547,
+    "total_impact": 0.0694820304722837
+  },
+  {
+    "purchased_commodity_code": "21311A/US",
+    "sector_code": "212",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 270.203766396304,
+    "total_impact": 0.0393208818168895
+  },
+  {
+    "purchased_commodity_code": "221300/US",
+    "sector_code": "212",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 263.413357962776,
+    "total_impact": 0.0576176124998712
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "212",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 4843.54962409733,
+    "total_impact": 0.94322482383645
   },
   {
     "purchased_commodity_code": "Direct",
@@ -1678,6 +1888,76 @@
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 3510.28542736724,
     "total_impact": 0.324700911217402
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "2211",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 269776.147003664,
+    "total_impact": 123.650898577184
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "2211",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 6849.66466261672,
+    "total_impact": 3.13951844850626
+  },
+  {
+    "purchased_commodity_code": "221300/US",
+    "sector_code": "2211",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 840.106159944416,
+    "total_impact": 0.385059549300864
+  },
+  {
+    "purchased_commodity_code": "211000/US",
+    "sector_code": "2211",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 361.650870461132,
+    "total_impact": 0.16576133805904
+  },
+  {
+    "purchased_commodity_code": "212100/US",
+    "sector_code": "2211",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 357.214987239416,
+    "total_impact": 0.16372816740092
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "2211",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 323.029641403068,
+    "total_impact": 0.14805944065178
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "2211",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 280.165198637452,
+    "total_impact": 0.128412681945175
+  },
+  {
+    "purchased_commodity_code": "230301/US",
+    "sector_code": "2211",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 249.543891872799,
+    "total_impact": 0.11437751931456
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "2211",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 212.158630598092,
+    "total_impact": 0.0972421231666661
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "2211",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1615.95265733102,
+    "total_impact": 0.740665920083937
   },
   {
     "purchased_commodity_code": "Direct",
@@ -2868,6 +3148,76 @@
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 6012.40756645169,
     "total_impact": 1.59783864946482
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "31",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1820.22986036935,
+    "total_impact": 1.66178028624405
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "31",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 47919.8085149836,
+    "total_impact": 18.7203411017819
+  },
+  {
+    "purchased_commodity_code": "111900/US",
+    "sector_code": "31",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 30957.1125120171,
+    "total_impact": 25.2109338166458
+  },
+  {
+    "purchased_commodity_code": "1111B0/US",
+    "sector_code": "31",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 29661.9691507164,
+    "total_impact": 25.766075027672
+  },
+  {
+    "purchased_commodity_code": "1111A0/US",
+    "sector_code": "31",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 12785.8832435123,
+    "total_impact": 8.9719575576044
+  },
+  {
+    "purchased_commodity_code": "111300/US",
+    "sector_code": "31",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 11939.0785019161,
+    "total_impact": 10.142945410042
+  },
+  {
+    "purchased_commodity_code": "112A00/US",
+    "sector_code": "31",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 11552.9926572169,
+    "total_impact": 9.70997386950783
+  },
+  {
+    "purchased_commodity_code": "112120/US",
+    "sector_code": "31",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 11116.2755958319,
+    "total_impact": 6.15622934371637
+  },
+  {
+    "purchased_commodity_code": "31161A/US",
+    "sector_code": "31",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 7977.03197207937,
+    "total_impact": 7.02679177651883
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "31",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 56838.7042630927,
+    "total_impact": 39.8377346398758
   },
   {
     "purchased_commodity_code": "Direct",
@@ -5461,6 +5811,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "321",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 4851.52625587846,
+    "total_impact": 0.547775162582576
+  },
+  {
+    "purchased_commodity_code": "113000/US",
+    "sector_code": "321",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 29755.4699080788,
+    "total_impact": 3.35962468447314
+  },
+  {
+    "purchased_commodity_code": "321100/US",
+    "sector_code": "321",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 13528.0238784981,
+    "total_impact": 1.5274194322841
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "321",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 4273.06362279379,
+    "total_impact": 0.482462218536986
+  },
+  {
+    "purchased_commodity_code": "321200/US",
+    "sector_code": "321",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1983.54108551127,
+    "total_impact": 0.223957262786867
+  },
+  {
+    "purchased_commodity_code": "3219A0/US",
+    "sector_code": "321",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 722.372754246246,
+    "total_impact": 0.0815615194131959
+  },
+  {
+    "purchased_commodity_code": "321910/US",
+    "sector_code": "321",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 667.696584542019,
+    "total_impact": 0.0753881533074605
+  },
+  {
+    "purchased_commodity_code": "423A00/US",
+    "sector_code": "321",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 512.099079612752,
+    "total_impact": 0.0578199811354974
+  },
+  {
+    "purchased_commodity_code": "325520/US",
+    "sector_code": "321",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 442.344381688615,
+    "total_impact": 0.0499441315613568
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "321",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 4802.85993659506,
+    "total_impact": 0.53845312199607
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "321/322",
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 3333.8743508615,
@@ -5808,6 +6228,76 @@
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 5917.81075595184,
     "total_impact": 0.171593122203177
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "322-323",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 2802.551284964,
+    "total_impact": 0.580485738433056
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "322-323",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 6884.25944585074,
+    "total_impact": 1.42592017831379
+  },
+  {
+    "purchased_commodity_code": "322130/US",
+    "sector_code": "322-323",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 4749.37201087049,
+    "total_impact": 0.983726054761156
+  },
+  {
+    "purchased_commodity_code": "113000/US",
+    "sector_code": "322-323",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 3211.32362167856,
+    "total_impact": 0.648968118515068
+  },
+  {
+    "purchased_commodity_code": "322120/US",
+    "sector_code": "322-323",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 2116.57213914812,
+    "total_impact": 0.43840052017318
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "322-323",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1622.78833261464,
+    "total_impact": 0.336124262429138
+  },
+  {
+    "purchased_commodity_code": "321100/US",
+    "sector_code": "322-323",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1410.07147005586,
+    "total_impact": 0.292064727924962
+  },
+  {
+    "purchased_commodity_code": "313200/US",
+    "sector_code": "322-323",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1276.66680044996,
+    "total_impact": 0.264432938076164
+  },
+  {
+    "purchased_commodity_code": "322110/US",
+    "sector_code": "322-323",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1196.81479734066,
+    "total_impact": 0.247893383835374
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "322-323",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 9191.71453615227,
+    "total_impact": 1.84766563402777
   },
   {
     "purchased_commodity_code": "Direct",
@@ -6858,6 +7348,76 @@
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 7462.02505259502,
     "total_impact": 5.06089991709788
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "325-326",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1632.0499628451,
+    "total_impact": 1.51776482254049
+  },
+  {
+    "purchased_commodity_code": "111900/US",
+    "sector_code": "325-326",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 12436.1882965494,
+    "total_impact": 8.53990882889988
+  },
+  {
+    "purchased_commodity_code": "1111B0/US",
+    "sector_code": "325-326",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 9734.58580073252,
+    "total_impact": 6.55686666788803
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "325-326",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 9286.68995390795,
+    "total_impact": 8.63638470069281
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "325-326",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 4027.10193962708,
+    "total_impact": 3.74510204950796
+  },
+  {
+    "purchased_commodity_code": "325211/US",
+    "sector_code": "325-326",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 3745.64946551882,
+    "total_impact": 3.48335843004559
+  },
+  {
+    "purchased_commodity_code": "325110/US",
+    "sector_code": "325-326",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1212.90884201857,
+    "total_impact": 1.12797427485303
+  },
+  {
+    "purchased_commodity_code": "3252A0/US",
+    "sector_code": "325-326",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1005.37699041442,
+    "total_impact": 0.916610330410025
+  },
+  {
+    "purchased_commodity_code": "1111A0/US",
+    "sector_code": "325-326",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 758.615717025385,
+    "total_impact": 0.545599067537204
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "325-326",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 8867.65463427488,
+    "total_impact": 7.55492190783917
   },
   {
     "purchased_commodity_code": "Direct",
@@ -8891,6 +9451,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "327",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 3188.78103507475,
+    "total_impact": 0.357146294347216
+  },
+  {
+    "purchased_commodity_code": "311221/US",
+    "sector_code": "327",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 9240.67344788617,
+    "total_impact": 0.136348680170206
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "327",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 7290.62254729997,
+    "total_impact": 0.816556169148005
+  },
+  {
+    "purchased_commodity_code": "2123A0/US",
+    "sector_code": "327",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1790.16145388929,
+    "total_impact": 0.200499665078069
+  },
+  {
+    "purchased_commodity_code": "327310/US",
+    "sector_code": "327",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1698.27399890412,
+    "total_impact": 0.185370448722302
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "327",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1135.36794880569,
+    "total_impact": 0.127162213766442
+  },
+  {
+    "purchased_commodity_code": "212310/US",
+    "sector_code": "327",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 723.888883600064,
+    "total_impact": 0.0729809287995278
+  },
+  {
+    "purchased_commodity_code": "327200/US",
+    "sector_code": "327",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 659.423045441002,
+    "total_impact": 0.0719775171203845
+  },
+  {
+    "purchased_commodity_code": "325211/US",
+    "sector_code": "327",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 582.070845803162,
+    "total_impact": 0.0651924491959593
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "327",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 5874.38182444325,
+    "total_impact": 0.61603345591021
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "327100/US",
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 6116.86739715464,
@@ -9798,6 +10428,76 @@
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 3545.91734843825,
     "total_impact": 0.014900768391444
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "331-332",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 3351.04433856266,
+    "total_impact": 1.6108852401363
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "331-332",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 4399.47685124742,
+    "total_impact": 2.11487870883725
+  },
+  {
+    "purchased_commodity_code": "331110/US",
+    "sector_code": "331-332",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 2142.02296552825,
+    "total_impact": 1.02969487436936
+  },
+  {
+    "purchased_commodity_code": "S00401/US",
+    "sector_code": "331-332",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 908.711228948009,
+    "total_impact": 0.419659649298448
+  },
+  {
+    "purchased_commodity_code": "331313/US",
+    "sector_code": "331-332",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 792.741121709121,
+    "total_impact": 0.381079700293686
+  },
+  {
+    "purchased_commodity_code": "331410/US",
+    "sector_code": "331-332",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 743.807075853746,
+    "total_impact": 0.357556546242437
+  },
+  {
+    "purchased_commodity_code": "2122A0/US",
+    "sector_code": "331-332",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 537.665269610654,
+    "total_impact": 0.239955364152075
+  },
+  {
+    "purchased_commodity_code": "33131B/US",
+    "sector_code": "331-332",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 532.25029294941,
+    "total_impact": 0.249666156769882
+  },
+  {
+    "purchased_commodity_code": "423A00/US",
+    "sector_code": "331-332",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 379.196655517297,
+    "total_impact": 0.182284157942197
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "331-332",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 5630.26053423897,
+    "total_impact": 2.56310439208174
   },
   {
     "purchased_commodity_code": "Direct",
@@ -11898,6 +12598,76 @@
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 3661.0742695759,
     "total_impact": 0.0691683667982609
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "333",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 2746.97505071248,
+    "total_impact": 0.868866202789241
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "333",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1775.99122656138,
+    "total_impact": 0.5617447281908
+  },
+  {
+    "purchased_commodity_code": "331110/US",
+    "sector_code": "333",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1335.35605513515,
+    "total_impact": 0.42237214520604
+  },
+  {
+    "purchased_commodity_code": "313200/US",
+    "sector_code": "333",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 362.713942112265,
+    "total_impact": 0.0799420611279714
+  },
+  {
+    "purchased_commodity_code": "331510/US",
+    "sector_code": "333",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 304.596206238982,
+    "total_impact": 0.0963435576272272
+  },
+  {
+    "purchased_commodity_code": "333618/US",
+    "sector_code": "333",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 300.094044318151,
+    "total_impact": 0.0847271674307246
+  },
+  {
+    "purchased_commodity_code": "326190/US",
+    "sector_code": "333",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 296.824808447436,
+    "total_impact": 0.0938854701801811
+  },
+  {
+    "purchased_commodity_code": "326220/US",
+    "sector_code": "333",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 256.377163462311,
+    "total_impact": 0.0810919096049302
+  },
+  {
+    "purchased_commodity_code": "336390/US",
+    "sector_code": "333",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 212.036343759569,
+    "total_impact": 0.0670669407091658
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "333",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 7090.03336176292,
+    "total_impact": 2.08357698168144
   },
   {
     "purchased_commodity_code": "Direct",
@@ -15320,7 +16090,7 @@
     "sector_code": "334610/US",
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 54.3046502140938,
-    "total_impact": 9.47181523463973e-5
+    "total_impact": 9.47181523463973e-05
   },
   {
     "purchased_commodity_code": "All others",
@@ -15328,6 +16098,76 @@
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 555.772237486884,
     "total_impact": 0.000969377746705724
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "335",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 2174.75278237082,
+    "total_impact": 0.244537014353626
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "335",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1529.49811089139,
+    "total_impact": 0.171982261399455
+  },
+  {
+    "purchased_commodity_code": "331410/US",
+    "sector_code": "335",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 694.007536069199,
+    "total_impact": 0.0741592392250625
+  },
+  {
+    "purchased_commodity_code": "331110/US",
+    "sector_code": "335",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 614.277061051616,
+    "total_impact": 0.0673453072874493
+  },
+  {
+    "purchased_commodity_code": "325211/US",
+    "sector_code": "335",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 585.173387055693,
+    "total_impact": 0.0641545713919988
+  },
+  {
+    "purchased_commodity_code": "331420/US",
+    "sector_code": "335",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 571.533781747874,
+    "total_impact": 0.0610702427545976
+  },
+  {
+    "purchased_commodity_code": "326110/US",
+    "sector_code": "335",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 327.340247857458,
+    "total_impact": 0.0368073132439335
+  },
+  {
+    "purchased_commodity_code": "332119/US",
+    "sector_code": "335",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 277.612489365778,
+    "total_impact": 0.0304356121831499
+  },
+  {
+    "purchased_commodity_code": "335312/US",
+    "sector_code": "335",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 259.797786369746,
+    "total_impact": 0.0277602381300823
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "335",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 6154.83188850049,
+    "total_impact": 0.645043517905367
   },
   {
     "purchased_commodity_code": "Direct",
@@ -15390,7 +16230,7 @@
     "sector_code": "335110/US",
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 110.31012713566,
-    "total_impact": 9.42457878015963e-5
+    "total_impact": 9.42457878015963e-05
   },
   {
     "purchased_commodity_code": "All others",
@@ -16308,6 +17148,76 @@
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 3016.2625657967,
     "total_impact": 0.0352613315617592
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "336",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1985.21090409242,
+    "total_impact": 1.85009552911852
+  },
+  {
+    "purchased_commodity_code": "336991/US",
+    "sector_code": "336",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 2101.12752565087,
+    "total_impact": 0.011973420381344
+  },
+  {
+    "purchased_commodity_code": "336360/US",
+    "sector_code": "336",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1627.08357738237,
+    "total_impact": 1.26270651382919
+  },
+  {
+    "purchased_commodity_code": "336500/US",
+    "sector_code": "336",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1375.83639784412,
+    "total_impact": 0.0236800467580973
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "336",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1271.08077759828,
+    "total_impact": 1.18456979000836
+  },
+  {
+    "purchased_commodity_code": "336370/US",
+    "sector_code": "336",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1191.57642429956,
+    "total_impact": 0.803952149835358
+  },
+  {
+    "purchased_commodity_code": "336413/US",
+    "sector_code": "336",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 759.188556371118,
+    "total_impact": 0.203126768197714
+  },
+  {
+    "purchased_commodity_code": "336310/US",
+    "sector_code": "336",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 610.032952781638,
+    "total_impact": 0.474576180836231
+  },
+  {
+    "purchased_commodity_code": "336390/US",
+    "sector_code": "336",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 591.660983281513,
+    "total_impact": 0.55139196428272
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "336",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 10445.9458073079,
+    "total_impact": 7.77784196554248
   },
   {
     "purchased_commodity_code": "Direct",
@@ -18201,6 +19111,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "337-339",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 3600.44209032424,
+    "total_impact": 0.730846149662149
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "337-339",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1727.74886922651,
+    "total_impact": 0.350712100619736
+  },
+  {
+    "purchased_commodity_code": "3252A0/US",
+    "sector_code": "337-339",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1556.39129804618,
+    "total_impact": 0.315928588492389
+  },
+  {
+    "purchased_commodity_code": "313300/US",
+    "sector_code": "337-339",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1164.29977568726,
+    "total_impact": 0.230068256204067
+  },
+  {
+    "purchased_commodity_code": "313200/US",
+    "sector_code": "337-339",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1153.18989141396,
+    "total_impact": 0.227872918066276
+  },
+  {
+    "purchased_commodity_code": "313100/US",
+    "sector_code": "337-339",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1149.02868674275,
+    "total_impact": 0.154732397276295
+  },
+  {
+    "purchased_commodity_code": "321100/US",
+    "sector_code": "337-339",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1137.45005007689,
+    "total_impact": 0.224762689991887
+  },
+  {
+    "purchased_commodity_code": "321200/US",
+    "sector_code": "337-339",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 756.970669727147,
+    "total_impact": 0.14957910807717
+  },
+  {
+    "purchased_commodity_code": "325211/US",
+    "sector_code": "337-339",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 750.154523586111,
+    "total_impact": 0.148232222258374
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "337-339",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 8330.89686827083,
+    "total_impact": 1.49356668105964
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "337110/US",
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 8595.78966165952,
@@ -19531,6 +20511,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "42-44",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 271.216386997301,
+    "total_impact": 0.910554913526709
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "42-44",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 3597.7367093374,
+    "total_impact": 14.9623905492462
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "42-44",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 855.903103784143,
+    "total_impact": 3.55955911890198
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "42-44",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 665.450732985263,
+    "total_impact": 0.290468347323131
+  },
+  {
+    "purchased_commodity_code": "1111B0/US",
+    "sector_code": "42-44",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 420.517134846424,
+    "total_impact": 0.92732396024671
+  },
+  {
+    "purchased_commodity_code": "1111A0/US",
+    "sector_code": "42-44",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 334.000470411221,
+    "total_impact": 0.334869482121345
+  },
+  {
+    "purchased_commodity_code": "111900/US",
+    "sector_code": "42-44",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 196.914176989627,
+    "total_impact": 0.568390644914942
+  },
+  {
+    "purchased_commodity_code": "550000/US",
+    "sector_code": "42-44",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 164.339658504716,
+    "total_impact": 0.683461395853556
+  },
+  {
+    "purchased_commodity_code": "493000/US",
+    "sector_code": "42-44",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 161.313073778365,
+    "total_impact": 0.670874331717228
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "42-44",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 3832.29611664523,
+    "total_impact": 13.2917024454373
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "423100/US",
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 121.520738140486,
@@ -20164,7 +21214,7 @@
     "sector_code": "425000/US",
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 1.81452283908671,
-    "total_impact": 6.73922402404384e-5
+    "total_impact": 6.73922402404384e-05
   },
   {
     "purchased_commodity_code": "221100/US",
@@ -20444,7 +21494,7 @@
     "sector_code": "446000/US",
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 0.00162248118920889,
-    "total_impact": 2.54054573053087e-7
+    "total_impact": 2.54054573053087e-07
   },
   {
     "purchased_commodity_code": "221100/US",
@@ -20514,7 +21564,7 @@
     "sector_code": "447000/US",
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 0.356838138811778,
-    "total_impact": 3.18005949544369e-5
+    "total_impact": 3.18005949544369e-05
   },
   {
     "purchased_commodity_code": "221100/US",
@@ -20584,7 +21634,7 @@
     "sector_code": "448000/US",
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 0.0218599880787191,
-    "total_impact": 3.30271228445966e-6
+    "total_impact": 3.30271228445966e-06
   },
   {
     "purchased_commodity_code": "221100/US",
@@ -20791,6 +21841,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "48",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 310.535174934914,
+    "total_impact": 0.35502714965548
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "48",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1780.45636207119,
+    "total_impact": 2.3706486245669
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "48",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 933.596647198841,
+    "total_impact": 1.24306871807157
+  },
+  {
+    "purchased_commodity_code": "48A000/US",
+    "sector_code": "48",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 426.362380821527,
+    "total_impact": 0.567694560334978
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "48",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 299.443123355574,
+    "total_impact": 0.398703637809531
+  },
+  {
+    "purchased_commodity_code": "321100/US",
+    "sector_code": "48",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 229.993589115783,
+    "total_impact": 0.14489033859289
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "48",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 206.243486093459,
+    "total_impact": 0.274609839953939
+  },
+  {
+    "purchased_commodity_code": "447000/US",
+    "sector_code": "48",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 118.502774219986,
+    "total_impact": 0.157784512272555
+  },
+  {
+    "purchased_commodity_code": "532400/US",
+    "sector_code": "48",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 114.280597259844,
+    "total_impact": 0.15216275247183
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "48",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 2693.77422649372,
+    "total_impact": 3.30469575575471
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "481000/US",
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 5.5992797699066,
@@ -20934,7 +22054,7 @@
     "sector_code": "483000/US",
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 1.4400383642483,
-    "total_impact": 7.3126593062759e-5
+    "total_impact": 7.3126593062759e-05
   },
   {
     "purchased_commodity_code": "324110/US",
@@ -21558,6 +22678,76 @@
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 1511.84344460555,
     "total_impact": 0.372275266388839
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "5",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 235.390699571468,
+    "total_impact": 1.22879571783975
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "5",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1756.25674429925,
+    "total_impact": 22.6952509407028
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "5",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 562.306451059815,
+    "total_impact": 8.24696236070893
+  },
+  {
+    "purchased_commodity_code": "311111/US",
+    "sector_code": "5",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 343.14603626663,
+    "total_impact": 0.877340873055666
+  },
+  {
+    "purchased_commodity_code": "230302/US",
+    "sector_code": "5",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 296.61172316143,
+    "total_impact": 2.16227614401264
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "5",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 272.189352565982,
+    "total_impact": 3.33601477517075
+  },
+  {
+    "purchased_commodity_code": "722110/US",
+    "sector_code": "5",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 126.792312136808,
+    "total_impact": 1.6384753257958
+  },
+  {
+    "purchased_commodity_code": "111900/US",
+    "sector_code": "5",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 109.165073400082,
+    "total_impact": 0.672372857822088
+  },
+  {
+    "purchased_commodity_code": "230301/US",
+    "sector_code": "5",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 87.636947579243,
+    "total_impact": 1.13248961089783
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "5",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 2900.60640528117,
+    "total_impact": 32.4586892919105
   },
   {
     "purchased_commodity_code": "Direct",
@@ -22544,7 +23734,7 @@
     "sector_code": "5191A0/US",
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 0.599327406222494,
-    "total_impact": 8.05185343933443e-6
+    "total_impact": 8.05185343933443e-06
   },
   {
     "purchased_commodity_code": "221100/US",
@@ -24434,7 +25624,7 @@
     "sector_code": "541920/US",
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 4.34626199533493,
-    "total_impact": 7.08775037570005e-5
+    "total_impact": 7.08775037570005e-05
   },
   {
     "purchased_commodity_code": "221100/US",
@@ -25271,6 +26461,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "562",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 788.615524395801,
+    "total_impact": 0.10227720610256
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "562",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1571.21890480073,
+    "total_impact": 0.203774684605231
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "562",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1035.6716282693,
+    "total_impact": 0.134318431862254
+  },
+  {
+    "purchased_commodity_code": "221300/US",
+    "sector_code": "562",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 966.891511537125,
+    "total_impact": 0.125398193853797
+  },
+  {
+    "purchased_commodity_code": "562000/US",
+    "sector_code": "562",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 845.007181146132,
+    "total_impact": 0.10959075867856
+  },
+  {
+    "purchased_commodity_code": "S00203/US",
+    "sector_code": "562",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 336.585437917098,
+    "total_impact": 0.0436524734043783
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "562",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 307.959116093519,
+    "total_impact": 0.0399398655155702
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "562",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 233.422162101327,
+    "total_impact": 0.0302730111741505
+  },
+  {
+    "purchased_commodity_code": "332320/US",
+    "sector_code": "562",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 220.109875077914,
+    "total_impact": 0.0285465126695298
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "562",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 3824.83746654197,
+    "total_impact": 0.496051216052362
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "562000/US",
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 1633.62270554193,
@@ -25338,6 +26598,76 @@
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 3675.19192412945,
     "total_impact": 0.476643370898183
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "6",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 445.129402052141,
+    "total_impact": 0.0831141233762173
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "6",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1845.19703619897,
+    "total_impact": 6.43523179858969
+  },
+  {
+    "purchased_commodity_code": "31161A/US",
+    "sector_code": "6",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1491.55044599142,
+    "total_impact": 3.97779881190136
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "6",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 921.739319660396,
+    "total_impact": 3.21461939485219
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "6",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 684.080345490167,
+    "total_impact": 2.38576992360497
+  },
+  {
+    "purchased_commodity_code": "311920/US",
+    "sector_code": "6",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 400.059197386209,
+    "total_impact": 1.06691329437089
+  },
+  {
+    "purchased_commodity_code": "339116/US",
+    "sector_code": "6",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 317.305885044191,
+    "total_impact": 0.0681166924743656
+  },
+  {
+    "purchased_commodity_code": "221300/US",
+    "sector_code": "6",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 284.638163527361,
+    "total_impact": 0.992692121810848
+  },
+  {
+    "purchased_commodity_code": "311615/US",
+    "sector_code": "6",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 248.041732766641,
+    "total_impact": 0.626371272235859
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "6",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 4755.82977096271,
+    "total_impact": 13.2110236074112
   },
   {
     "purchased_commodity_code": "221100/US",
@@ -25974,7 +27304,7 @@
     "sector_code": "621900/US",
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 0.22695078722592,
-    "total_impact": 1.02848303436565e-5
+    "total_impact": 1.02848303436565e-05
   },
   {
     "purchased_commodity_code": "325190/US",
@@ -26461,10 +27791,80 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "7",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1976.46609292193,
+    "total_impact": 2.49852913826275
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "7",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 5283.23587142625,
+    "total_impact": 9.68109490354118
+  },
+  {
+    "purchased_commodity_code": "31161A/US",
+    "sector_code": "7",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 2246.76846867768,
+    "total_impact": 4.117018301074
+  },
+  {
+    "purchased_commodity_code": "311910/US",
+    "sector_code": "7",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 973.105859501016,
+    "total_impact": 1.78313639714105
+  },
+  {
+    "purchased_commodity_code": "112A00/US",
+    "sector_code": "7",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 925.0103037782,
+    "total_impact": 1.69500524973016
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "7",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 836.312341702234,
+    "total_impact": 1.53247353441299
+  },
+  {
+    "purchased_commodity_code": "311224/US",
+    "sector_code": "7",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 774.158656547438,
+    "total_impact": 1.36599991232856
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "7",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 526.367520727787,
+    "total_impact": 0.0536082119947041
+  },
+  {
+    "purchased_commodity_code": "311615/US",
+    "sector_code": "7",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 475.27682373304,
+    "total_impact": 0.870905662360869
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "7",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 7995.74919586979,
+    "total_impact": 13.9428186095771
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "711100/US",
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 0.921460046379795,
-    "total_impact": 5.27962609441345e-5
+    "total_impact": 5.27962609441345e-05
   },
   {
     "purchased_commodity_code": "531ORE/US",
@@ -26604,7 +28004,7 @@
     "sector_code": "711500/US",
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 0.440235502913642,
-    "total_impact": 2.00124654824847e-5
+    "total_impact": 2.00124654824847e-05
   },
   {
     "purchased_commodity_code": "711A00/US",
@@ -27298,6 +28698,76 @@
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 5847.85253241893,
     "total_impact": 1.25563900333083
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "8",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 195.241285241329,
+    "total_impact": 0.0750782582886572
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "8",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 2300.28156933685,
+    "total_impact": 2.08696308889229
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "8",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1048.17878824286,
+    "total_impact": 0.950975076609135
+  },
+  {
+    "purchased_commodity_code": "311111/US",
+    "sector_code": "8",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 384.300708769848,
+    "total_impact": 0.0422946897404224
+  },
+  {
+    "purchased_commodity_code": "325620/US",
+    "sector_code": "8",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 339.659853096433,
+    "total_impact": 0.065810919939571
+  },
+  {
+    "purchased_commodity_code": "221300/US",
+    "sector_code": "8",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 212.561030565473,
+    "total_impact": 0.192849010677825
+  },
+  {
+    "purchased_commodity_code": "336310/US",
+    "sector_code": "8",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 128.033461104227,
+    "total_impact": 0.113465626720934
+  },
+  {
+    "purchased_commodity_code": "3363A0/US",
+    "sector_code": "8",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 114.812301235881,
+    "total_impact": 0.101748789751117
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "8",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 108.348175691642,
+    "total_impact": 0.0774919186343033
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "8",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 3644.88340147265,
+    "total_impact": 2.71809269954173
   },
   {
     "purchased_commodity_code": "Direct",
@@ -28068,6 +29538,76 @@
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 3716.58987961921,
     "total_impact": 0.39253191832837
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "G",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 52063.1484292622,
+    "total_impact": 5.73782735183226
+  },
+  {
+    "purchased_commodity_code": "31161A/US",
+    "sector_code": "G",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1099.55948480756,
+    "total_impact": 2.82862313672628
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "G",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 631.749546085475,
+    "total_impact": 2.02351692468572
+  },
+  {
+    "purchased_commodity_code": "221300/US",
+    "sector_code": "G",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 582.289856301703,
+    "total_impact": 1.86509572757159
+  },
+  {
+    "purchased_commodity_code": "111900/US",
+    "sector_code": "G",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 556.17595780079,
+    "total_impact": 1.28493205413303
+  },
+  {
+    "purchased_commodity_code": "336411/US",
+    "sector_code": "G",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 335.563378221941,
+    "total_impact": 0.21565104287154
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "G",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 325.815004627371,
+    "total_impact": 1.04359738802383
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "G",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 275.093956588235,
+    "total_impact": 0.881136014238999
+  },
+  {
+    "purchased_commodity_code": "230301/US",
+    "sector_code": "G",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 240.130447598271,
+    "total_impact": 0.769146614917735
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "G",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 5366.93758337781,
+    "total_impact": 11.9415236850574
   },
   {
     "purchased_commodity_code": "31161A/US",

@@ -1,6 +1,76 @@
 [
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "11",
+    "indicator": "Methane",
+    "impact_per_purchase": 20458.2299510719,
+    "total_impact": 7723587.21766659
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "11",
+    "indicator": "Methane",
+    "impact_per_purchase": 6265.14236681784,
+    "total_impact": 2146239.32544127
+  },
+  {
+    "purchased_commodity_code": "1111B0/US",
+    "sector_code": "11",
+    "indicator": "Methane",
+    "impact_per_purchase": 750.719146598307,
+    "total_impact": 232276.453414209
+  },
+  {
+    "purchased_commodity_code": "311119/US",
+    "sector_code": "11",
+    "indicator": "Methane",
+    "impact_per_purchase": 519.74292357221,
+    "total_impact": 117698.412939939
+  },
+  {
+    "purchased_commodity_code": "112A00/US",
+    "sector_code": "11",
+    "indicator": "Methane",
+    "impact_per_purchase": 381.273708607583,
+    "total_impact": 130612.295660579
+  },
+  {
+    "purchased_commodity_code": "112300/US",
+    "sector_code": "11",
+    "indicator": "Methane",
+    "impact_per_purchase": 278.502185428893,
+    "total_impact": 52857.1348252284
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "11",
+    "indicator": "Methane",
+    "impact_per_purchase": 223.350814262243,
+    "total_impact": 84321.5419035261
+  },
+  {
+    "purchased_commodity_code": "115000/US",
+    "sector_code": "11",
+    "indicator": "Methane",
+    "impact_per_purchase": 175.169363260837,
+    "total_impact": 66131.6183386289
+  },
+  {
+    "purchased_commodity_code": "212100/US",
+    "sector_code": "11",
+    "indicator": "Methane",
+    "impact_per_purchase": 150.863059260776,
+    "total_impact": 21134.097897454
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "11",
+    "indicator": "Methane",
+    "impact_per_purchase": 655.284004194886,
+    "total_impact": 186840.62805696
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "111/112",
     "indicator": "Methane",
     "impact_per_purchase": 24004.8612341334,
@@ -981,6 +1051,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "211",
+    "indicator": "Methane",
+    "impact_per_purchase": 7814.18270775228,
+    "total_impact": 7115581.44997671
+  },
+  {
+    "purchased_commodity_code": "211000/US",
+    "sector_code": "211",
+    "indicator": "Methane",
+    "impact_per_purchase": 4988.85974892347,
+    "total_impact": 4436270.37153558
+  },
+  {
+    "purchased_commodity_code": "486000/US",
+    "sector_code": "211",
+    "indicator": "Methane",
+    "impact_per_purchase": 712.361683910082,
+    "total_impact": 648675.334744353
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "211",
+    "indicator": "Methane",
+    "impact_per_purchase": 203.892986205309,
+    "total_impact": 185664.605587419
+  },
+  {
+    "purchased_commodity_code": "212100/US",
+    "sector_code": "211",
+    "indicator": "Methane",
+    "impact_per_purchase": 191.811792836894,
+    "total_impact": 174663.49150538
+  },
+  {
+    "purchased_commodity_code": "21311A/US",
+    "sector_code": "211",
+    "indicator": "Methane",
+    "impact_per_purchase": 133.104199795541,
+    "total_impact": 104238.888929013
+  },
+  {
+    "purchased_commodity_code": "325110/US",
+    "sector_code": "211",
+    "indicator": "Methane",
+    "impact_per_purchase": 103.441376434035,
+    "total_impact": 94193.5410063881
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "211",
+    "indicator": "Methane",
+    "impact_per_purchase": 53.586158412164,
+    "total_impact": 48795.4644821437
+  },
+  {
+    "purchased_commodity_code": "562000/US",
+    "sector_code": "211",
+    "indicator": "Methane",
+    "impact_per_purchase": 41.6481472192926,
+    "total_impact": 37924.73184502
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "211",
+    "indicator": "Methane",
+    "impact_per_purchase": 228.219869983532,
+    "total_impact": 197995.169182025
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "211/32411",
     "indicator": "Methane",
     "impact_per_purchase": 6663.56023654883,
@@ -1118,6 +1258,76 @@
     "indicator": "Methane",
     "impact_per_purchase": 164.060455024612,
     "total_impact": 49458.0770478091
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "212",
+    "indicator": "Methane",
+    "impact_per_purchase": 4402.39827880944,
+    "total_impact": 1008065.06319532
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "212",
+    "indicator": "Methane",
+    "impact_per_purchase": 254.722624131371,
+    "total_impact": 58326.6124349177
+  },
+  {
+    "purchased_commodity_code": "562000/US",
+    "sector_code": "212",
+    "indicator": "Methane",
+    "impact_per_purchase": 139.241080270829,
+    "total_impact": 31883.5460794692
+  },
+  {
+    "purchased_commodity_code": "212100/US",
+    "sector_code": "212",
+    "indicator": "Methane",
+    "impact_per_purchase": 136.098828182036,
+    "total_impact": 31164.0304087242
+  },
+  {
+    "purchased_commodity_code": "21311A/US",
+    "sector_code": "212",
+    "indicator": "Methane",
+    "impact_per_purchase": 125.143144404573,
+    "total_impact": 18211.2146583071
+  },
+  {
+    "purchased_commodity_code": "211000/US",
+    "sector_code": "212",
+    "indicator": "Methane",
+    "impact_per_purchase": 120.000628619767,
+    "total_impact": 22880.2076262237
+  },
+  {
+    "purchased_commodity_code": "486000/US",
+    "sector_code": "212",
+    "indicator": "Methane",
+    "impact_per_purchase": 69.0990608389965,
+    "total_impact": 15822.364247843
+  },
+  {
+    "purchased_commodity_code": "230301/US",
+    "sector_code": "212",
+    "indicator": "Methane",
+    "impact_per_purchase": 45.4856958295926,
+    "total_impact": 10415.3549808631
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "212",
+    "indicator": "Methane",
+    "impact_per_purchase": 44.4952237436143,
+    "total_impact": 10188.5558039802
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "212",
+    "indicator": "Methane",
+    "impact_per_purchase": 338.973882748015,
+    "total_impact": 67946.7821919318
   },
   {
     "purchased_commodity_code": "Direct",
@@ -1678,6 +1888,76 @@
     "indicator": "Methane",
     "impact_per_purchase": 261.072377571623,
     "total_impact": 24149.1584217921
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "2211",
+    "indicator": "Methane",
+    "impact_per_purchase": 165.650852746132,
+    "total_impact": 75925.4553066834
+  },
+  {
+    "purchased_commodity_code": "212100/US",
+    "sector_code": "2211",
+    "indicator": "Methane",
+    "impact_per_purchase": 1060.54410009014,
+    "total_impact": 486096.463358179
+  },
+  {
+    "purchased_commodity_code": "211000/US",
+    "sector_code": "2211",
+    "indicator": "Methane",
+    "impact_per_purchase": 783.669919522792,
+    "total_impact": 359192.20736586
+  },
+  {
+    "purchased_commodity_code": "486000/US",
+    "sector_code": "2211",
+    "indicator": "Methane",
+    "impact_per_purchase": 486.448751540662,
+    "total_impact": 222961.984993192
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "2211",
+    "indicator": "Methane",
+    "impact_per_purchase": 271.166869635782,
+    "total_impact": 124288.331148755
+  },
+  {
+    "purchased_commodity_code": "562000/US",
+    "sector_code": "2211",
+    "indicator": "Methane",
+    "impact_per_purchase": 82.7652183180617,
+    "total_impact": 37935.1315141518
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "2211",
+    "indicator": "Methane",
+    "impact_per_purchase": 75.9330489399791,
+    "total_impact": 34803.6319645643
+  },
+  {
+    "purchased_commodity_code": "221300/US",
+    "sector_code": "2211",
+    "indicator": "Methane",
+    "impact_per_purchase": 34.7408528204465,
+    "total_impact": 15923.3413194516
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "2211",
+    "indicator": "Methane",
+    "impact_per_purchase": 19.9937151431533,
+    "total_impact": 9164.04534205752
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "2211",
+    "indicator": "Methane",
+    "impact_per_purchase": 132.667402571539,
+    "total_impact": 60807.6129860694
   },
   {
     "purchased_commodity_code": "Direct",
@@ -2868,6 +3148,76 @@
     "indicator": "Methane",
     "impact_per_purchase": 316.386111577592,
     "total_impact": 84081.7844840338
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "31",
+    "indicator": "Methane",
+    "impact_per_purchase": 1.88062008891495,
+    "total_impact": 1716.9135930114
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "31",
+    "indicator": "Methane",
+    "impact_per_purchase": 8748.21384816618,
+    "total_impact": 3417575.16033886
+  },
+  {
+    "purchased_commodity_code": "112120/US",
+    "sector_code": "31",
+    "indicator": "Methane",
+    "impact_per_purchase": 4787.52547754389,
+    "total_impact": 2651347.07884503
+  },
+  {
+    "purchased_commodity_code": "31161A/US",
+    "sector_code": "31",
+    "indicator": "Methane",
+    "impact_per_purchase": 1130.72472644289,
+    "total_impact": 996030.508224765
+  },
+  {
+    "purchased_commodity_code": "112A00/US",
+    "sector_code": "31",
+    "indicator": "Methane",
+    "impact_per_purchase": 840.179579337191,
+    "total_impact": 706147.922284187
+  },
+  {
+    "purchased_commodity_code": "311513/US",
+    "sector_code": "31",
+    "indicator": "Methane",
+    "impact_per_purchase": 593.700529715822,
+    "total_impact": 427274.439968525
+  },
+  {
+    "purchased_commodity_code": "1111B0/US",
+    "sector_code": "31",
+    "indicator": "Methane",
+    "impact_per_purchase": 474.405599386012,
+    "total_impact": 412095.711016963
+  },
+  {
+    "purchased_commodity_code": "31151A/US",
+    "sector_code": "31",
+    "indicator": "Methane",
+    "impact_per_purchase": 284.070842521211,
+    "total_impact": 226171.167878189
+  },
+  {
+    "purchased_commodity_code": "112300/US",
+    "sector_code": "31",
+    "indicator": "Methane",
+    "impact_per_purchase": 242.88646280969,
+    "total_impact": 190656.616924066
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "31",
+    "indicator": "Methane",
+    "impact_per_purchase": 1233.53234282675,
+    "total_impact": 974628.536819201
   },
   {
     "purchased_commodity_code": "Direct",
@@ -5461,6 +5811,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "321",
+    "indicator": "Methane",
+    "impact_per_purchase": 1.71350467030114,
+    "total_impact": 193.468044869986
+  },
+  {
+    "purchased_commodity_code": "113000/US",
+    "sector_code": "321",
+    "indicator": "Methane",
+    "impact_per_purchase": 124.959327456869,
+    "total_impact": 14108.8829171969
+  },
+  {
+    "purchased_commodity_code": "321100/US",
+    "sector_code": "321",
+    "indicator": "Methane",
+    "impact_per_purchase": 118.473139981244,
+    "total_impact": 13376.5417503947
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "321",
+    "indicator": "Methane",
+    "impact_per_purchase": 71.1399035322332,
+    "total_impact": 8032.25009372268
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "321",
+    "indicator": "Methane",
+    "impact_per_purchase": 47.3697275961671,
+    "total_impact": 5348.41179186495
+  },
+  {
+    "purchased_commodity_code": "321200/US",
+    "sector_code": "321",
+    "indicator": "Methane",
+    "impact_per_purchase": 34.9289758920607,
+    "total_impact": 3943.7538702245
+  },
+  {
+    "purchased_commodity_code": "562000/US",
+    "sector_code": "321",
+    "indicator": "Methane",
+    "impact_per_purchase": 34.4868424472707,
+    "total_impact": 3893.83355508458
+  },
+  {
+    "purchased_commodity_code": "423A00/US",
+    "sector_code": "321",
+    "indicator": "Methane",
+    "impact_per_purchase": 32.6848481047457,
+    "total_impact": 3690.37433588454
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "321",
+    "indicator": "Methane",
+    "impact_per_purchase": 21.9215795679984,
+    "total_impact": 2475.11735041675
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "321",
+    "indicator": "Methane",
+    "impact_per_purchase": 277.972251301047,
+    "total_impact": 31257.0804456083
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "321/322",
     "indicator": "Methane",
     "impact_per_purchase": 6.3984471272636,
@@ -5808,6 +6228,76 @@
     "indicator": "Methane",
     "impact_per_purchase": 322.92318558369,
     "total_impact": 9363.49605136854
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "322-323",
+    "indicator": "Methane",
+    "impact_per_purchase": 7.59896174970174,
+    "total_impact": 1573.95475553513
+  },
+  {
+    "purchased_commodity_code": "212100/US",
+    "sector_code": "322-323",
+    "indicator": "Methane",
+    "impact_per_purchase": 361.204423969195,
+    "total_impact": 74815.4076244632
+  },
+  {
+    "purchased_commodity_code": "322130/US",
+    "sector_code": "322-323",
+    "indicator": "Methane",
+    "impact_per_purchase": 204.254707734964,
+    "total_impact": 42306.788633658
+  },
+  {
+    "purchased_commodity_code": "322120/US",
+    "sector_code": "322-323",
+    "indicator": "Methane",
+    "impact_per_purchase": 106.189267822878,
+    "total_impact": 21994.7288303131
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "322-323",
+    "indicator": "Methane",
+    "impact_per_purchase": 89.4862055843815,
+    "total_impact": 18535.0635354704
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "322-323",
+    "indicator": "Methane",
+    "impact_per_purchase": 76.3165549213323,
+    "total_impact": 15807.2653213715
+  },
+  {
+    "purchased_commodity_code": "562000/US",
+    "sector_code": "322-323",
+    "indicator": "Methane",
+    "impact_per_purchase": 51.0043371931275,
+    "total_impact": 10564.4062599987
+  },
+  {
+    "purchased_commodity_code": "322110/US",
+    "sector_code": "322-323",
+    "indicator": "Methane",
+    "impact_per_purchase": 47.164110497767,
+    "total_impact": 9768.98929797327
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "322-323",
+    "indicator": "Methane",
+    "impact_per_purchase": 43.3458468390621,
+    "total_impact": 8978.12148715143
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "322-323",
+    "indicator": "Methane",
+    "impact_per_purchase": 501.507608234986,
+    "total_impact": 100594.444661907
   },
   {
     "purchased_commodity_code": "Direct",
@@ -6858,6 +7348,76 @@
     "indicator": "Methane",
     "impact_per_purchase": 484.75783556768,
     "total_impact": 331881.741315181
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "325-326",
+    "indicator": "Methane",
+    "impact_per_purchase": 10.1816103702761,
+    "total_impact": 9468.63785338984
+  },
+  {
+    "purchased_commodity_code": "211000/US",
+    "sector_code": "325-326",
+    "indicator": "Methane",
+    "impact_per_purchase": 354.051382116633,
+    "total_impact": 318696.231395397
+  },
+  {
+    "purchased_commodity_code": "325110/US",
+    "sector_code": "325-326",
+    "indicator": "Methane",
+    "impact_per_purchase": 250.021638510319,
+    "total_impact": 232513.744336217
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "325-326",
+    "indicator": "Methane",
+    "impact_per_purchase": 248.054186916281,
+    "total_impact": 230684.064554676
+  },
+  {
+    "purchased_commodity_code": "325211/US",
+    "sector_code": "325-326",
+    "indicator": "Methane",
+    "impact_per_purchase": 170.52793581472,
+    "total_impact": 158586.62916718
+  },
+  {
+    "purchased_commodity_code": "1111B0/US",
+    "sector_code": "325-326",
+    "indicator": "Methane",
+    "impact_per_purchase": 155.692361087212,
+    "total_impact": 104868.771384264
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "325-326",
+    "indicator": "Methane",
+    "impact_per_purchase": 107.580925566911,
+    "total_impact": 100047.515774063
+  },
+  {
+    "purchased_commodity_code": "562000/US",
+    "sector_code": "325-326",
+    "indicator": "Methane",
+    "impact_per_purchase": 64.6666488852725,
+    "total_impact": 60138.3334481651
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "325-326",
+    "indicator": "Methane",
+    "impact_per_purchase": 44.6430801695874,
+    "total_impact": 41516.9254580509
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "325-326",
+    "indicator": "Methane",
+    "impact_per_purchase": 515.895619678826,
+    "total_impact": 440205.037555498
   },
   {
     "purchased_commodity_code": "Direct",
@@ -8891,6 +9451,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "327",
+    "indicator": "Methane",
+    "impact_per_purchase": 17.6536313217026,
+    "total_impact": 1977.22231127426
+  },
+  {
+    "purchased_commodity_code": "212100/US",
+    "sector_code": "327",
+    "indicator": "Methane",
+    "impact_per_purchase": 631.225169563469,
+    "total_impact": 70697.7769023898
+  },
+  {
+    "purchased_commodity_code": "327310/US",
+    "sector_code": "327",
+    "indicator": "Methane",
+    "impact_per_purchase": 182.400946442924,
+    "total_impact": 19909.4759216214
+  },
+  {
+    "purchased_commodity_code": "311221/US",
+    "sector_code": "327",
+    "indicator": "Methane",
+    "impact_per_purchase": 149.801596153677,
+    "total_impact": 2210.36378334703
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "327",
+    "indicator": "Methane",
+    "impact_per_purchase": 80.8213578262322,
+    "total_impact": 9052.06351086838
+  },
+  {
+    "purchased_commodity_code": "562000/US",
+    "sector_code": "327",
+    "indicator": "Methane",
+    "impact_per_purchase": 66.1680939753009,
+    "total_impact": 7410.88500820915
+  },
+  {
+    "purchased_commodity_code": "2123A0/US",
+    "sector_code": "327",
+    "indicator": "Methane",
+    "impact_per_purchase": 54.3068061133596,
+    "total_impact": 6082.41028401766
+  },
+  {
+    "purchased_commodity_code": "221200/US",
+    "sector_code": "327",
+    "indicator": "Methane",
+    "impact_per_purchase": 45.4387489522483,
+    "total_impact": 5089.18004389991
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "327",
+    "indicator": "Methane",
+    "impact_per_purchase": 45.1867246383577,
+    "total_impact": 5060.95309799132
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "327",
+    "indicator": "Methane",
+    "impact_per_purchase": 445.236873233849,
+    "total_impact": 47431.8725702058
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "327100/US",
     "indicator": "Methane",
     "impact_per_purchase": 114.65875960749,
@@ -9798,6 +10428,76 @@
     "indicator": "Methane",
     "impact_per_purchase": 256.67428518689,
     "total_impact": 1078.60497010564
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "331-332",
+    "indicator": "Methane",
+    "impact_per_purchase": 3.10873216203244,
+    "total_impact": 1494.40301273454
+  },
+  {
+    "purchased_commodity_code": "331110/US",
+    "sector_code": "331-332",
+    "indicator": "Methane",
+    "impact_per_purchase": 259.125039913253,
+    "total_impact": 124564.362620468
+  },
+  {
+    "purchased_commodity_code": "S00401/US",
+    "sector_code": "331-332",
+    "indicator": "Methane",
+    "impact_per_purchase": 234.285454615347,
+    "total_impact": 108197.355317625
+  },
+  {
+    "purchased_commodity_code": "212100/US",
+    "sector_code": "331-332",
+    "indicator": "Methane",
+    "impact_per_purchase": 231.575311527455,
+    "total_impact": 111320.893915581
+  },
+  {
+    "purchased_commodity_code": "331313/US",
+    "sector_code": "331-332",
+    "indicator": "Methane",
+    "impact_per_purchase": 56.4656945162674,
+    "total_impact": 27143.703478813
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "331-332",
+    "indicator": "Methane",
+    "impact_per_purchase": 48.7711015809722,
+    "total_impact": 23444.8248797789
+  },
+  {
+    "purchased_commodity_code": "562000/US",
+    "sector_code": "331-332",
+    "indicator": "Methane",
+    "impact_per_purchase": 37.9379685964296,
+    "total_impact": 18237.2142765965
+  },
+  {
+    "purchased_commodity_code": "33131B/US",
+    "sector_code": "331-332",
+    "indicator": "Methane",
+    "impact_per_purchase": 34.2892487267902,
+    "total_impact": 16084.2841451624
+  },
+  {
+    "purchased_commodity_code": "331410/US",
+    "sector_code": "331-332",
+    "indicator": "Methane",
+    "impact_per_purchase": 33.5215282171934,
+    "total_impact": 16114.1810063458
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "331-332",
+    "indicator": "Methane",
+    "impact_per_purchase": 373.580930520814,
+    "total_impact": 172706.969440264
   },
   {
     "purchased_commodity_code": "Direct",
@@ -11898,6 +12598,76 @@
     "indicator": "Methane",
     "impact_per_purchase": 223.067926091406,
     "total_impact": 4214.40347742661
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "333",
+    "indicator": "Methane",
+    "impact_per_purchase": 6.03213395512666,
+    "total_impact": 1907.95956554013
+  },
+  {
+    "purchased_commodity_code": "331110/US",
+    "sector_code": "333",
+    "indicator": "Methane",
+    "impact_per_purchase": 161.540840903153,
+    "total_impact": 51095.2500258419
+  },
+  {
+    "purchased_commodity_code": "562000/US",
+    "sector_code": "333",
+    "indicator": "Methane",
+    "impact_per_purchase": 24.2498379452325,
+    "total_impact": 7670.20603564046
+  },
+  {
+    "purchased_commodity_code": "331510/US",
+    "sector_code": "333",
+    "indicator": "Methane",
+    "impact_per_purchase": 20.2254353120274,
+    "total_impact": 6397.29042124455
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "333",
+    "indicator": "Methane",
+    "impact_per_purchase": 19.6880337017755,
+    "total_impact": 6227.3106843149
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "333",
+    "indicator": "Methane",
+    "impact_per_purchase": 18.4140086174693,
+    "total_impact": 5824.33748040021
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "333",
+    "indicator": "Methane",
+    "impact_per_purchase": 11.9321783152267,
+    "total_impact": 3774.13928862084
+  },
+  {
+    "purchased_commodity_code": "550000/US",
+    "sector_code": "333",
+    "indicator": "Methane",
+    "impact_per_purchase": 11.6412254094184,
+    "total_impact": 3682.11109695795
+  },
+  {
+    "purchased_commodity_code": "423A00/US",
+    "sector_code": "333",
+    "indicator": "Methane",
+    "impact_per_purchase": 11.4087336730663,
+    "total_impact": 3608.5741305076
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "333",
+    "indicator": "Methane",
+    "impact_per_purchase": 339.486065267797,
+    "total_impact": 99747.5785552523
   },
   {
     "purchased_commodity_code": "Direct",
@@ -15331,6 +16101,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "335",
+    "indicator": "Methane",
+    "impact_per_purchase": 0.642282792140227,
+    "total_impact": 72.2205841665641
+  },
+  {
+    "purchased_commodity_code": "331110/US",
+    "sector_code": "335",
+    "indicator": "Methane",
+    "impact_per_purchase": 74.3103928036275,
+    "total_impact": 8146.90398733747
+  },
+  {
+    "purchased_commodity_code": "331410/US",
+    "sector_code": "335",
+    "indicator": "Methane",
+    "impact_per_purchase": 31.277187268736,
+    "total_impact": 3342.17179554949
+  },
+  {
+    "purchased_commodity_code": "331420/US",
+    "sector_code": "335",
+    "indicator": "Methane",
+    "impact_per_purchase": 28.4993516212595,
+    "total_impact": 3045.2483780333
+  },
+  {
+    "purchased_commodity_code": "325211/US",
+    "sector_code": "335",
+    "indicator": "Methane",
+    "impact_per_purchase": 26.6411501414999,
+    "total_impact": 2920.76093432313
+  },
+  {
+    "purchased_commodity_code": "324190/US",
+    "sector_code": "335",
+    "indicator": "Methane",
+    "impact_per_purchase": 22.9898846085566,
+    "total_impact": 2585.06520285128
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "335",
+    "indicator": "Methane",
+    "impact_per_purchase": 16.9554949955103,
+    "total_impact": 1906.53675981041
+  },
+  {
+    "purchased_commodity_code": "562000/US",
+    "sector_code": "335",
+    "indicator": "Methane",
+    "impact_per_purchase": 16.947742456221,
+    "total_impact": 1905.66503644634
+  },
+  {
+    "purchased_commodity_code": "33131B/US",
+    "sector_code": "335",
+    "indicator": "Methane",
+    "impact_per_purchase": 16.5903898957584,
+    "total_impact": 1772.73709915951
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "335",
+    "indicator": "Methane",
+    "impact_per_purchase": 325.322357219867,
+    "total_impact": 35369.6204488069
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "335110/US",
     "indicator": "Methane",
     "impact_per_purchase": 38.2743854152687,
@@ -16308,6 +17148,76 @@
     "indicator": "Methane",
     "impact_per_purchase": 182.940026117095,
     "total_impact": 2138.64303127335
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "336",
+    "indicator": "Methane",
+    "impact_per_purchase": 0.303785203407719,
+    "total_impact": 283.109288528679
+  },
+  {
+    "purchased_commodity_code": "336991/US",
+    "sector_code": "336",
+    "indicator": "Methane",
+    "impact_per_purchase": 90.8472325363635,
+    "total_impact": 517.69923165546
+  },
+  {
+    "purchased_commodity_code": "336370/US",
+    "sector_code": "336",
+    "indicator": "Methane",
+    "impact_per_purchase": 76.9515014265932,
+    "total_impact": 51918.8897525681
+  },
+  {
+    "purchased_commodity_code": "336500/US",
+    "sector_code": "336",
+    "indicator": "Methane",
+    "impact_per_purchase": 65.3541638043318,
+    "total_impact": 1124.83552342992
+  },
+  {
+    "purchased_commodity_code": "331110/US",
+    "sector_code": "336",
+    "indicator": "Methane",
+    "impact_per_purchase": 63.5787116746938,
+    "total_impact": 59251.4830409124
+  },
+  {
+    "purchased_commodity_code": "336360/US",
+    "sector_code": "336",
+    "indicator": "Methane",
+    "impact_per_purchase": 50.5459992480421,
+    "total_impact": 39226.4806711333
+  },
+  {
+    "purchased_commodity_code": "336413/US",
+    "sector_code": "336",
+    "indicator": "Methane",
+    "impact_per_purchase": 29.303837273277,
+    "total_impact": 7840.46823567072
+  },
+  {
+    "purchased_commodity_code": "33641A/US",
+    "sector_code": "336",
+    "indicator": "Methane",
+    "impact_per_purchase": 24.5652857536781,
+    "total_impact": 5872.07894105139
+  },
+  {
+    "purchased_commodity_code": "336310/US",
+    "sector_code": "336",
+    "indicator": "Methane",
+    "impact_per_purchase": 22.5985396453384,
+    "total_impact": 17580.5726370323
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "336",
+    "indicator": "Methane",
+    "impact_per_purchase": 430.009746973441,
+    "total_impact": 356921.17294047
   },
   {
     "purchased_commodity_code": "Direct",
@@ -18201,6 +19111,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "337-339",
+    "indicator": "Methane",
+    "impact_per_purchase": 0.417831027937408,
+    "total_impact": 84.8146395127638
+  },
+  {
+    "purchased_commodity_code": "331110/US",
+    "sector_code": "337-339",
+    "indicator": "Methane",
+    "impact_per_purchase": 38.0525451083802,
+    "total_impact": 7724.2059112803
+  },
+  {
+    "purchased_commodity_code": "562000/US",
+    "sector_code": "337-339",
+    "indicator": "Methane",
+    "impact_per_purchase": 34.9924525179562,
+    "total_impact": 7103.04416746799
+  },
+  {
+    "purchased_commodity_code": "325211/US",
+    "sector_code": "337-339",
+    "indicator": "Methane",
+    "impact_per_purchase": 34.1522354472366,
+    "total_impact": 6748.55859194718
+  },
+  {
+    "purchased_commodity_code": "324190/US",
+    "sector_code": "337-339",
+    "indicator": "Methane",
+    "impact_per_purchase": 22.3469563265002,
+    "total_impact": 4536.16155409961
+  },
+  {
+    "purchased_commodity_code": "3252A0/US",
+    "sector_code": "337-339",
+    "indicator": "Methane",
+    "impact_per_purchase": 20.9656585782786,
+    "total_impact": 4255.77483616359
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "337-339",
+    "indicator": "Methane",
+    "impact_per_purchase": 19.1532353633283,
+    "total_impact": 3887.87486861114
+  },
+  {
+    "purchased_commodity_code": "322210/US",
+    "sector_code": "337-339",
+    "indicator": "Methane",
+    "impact_per_purchase": 17.3666698516457,
+    "total_impact": 3525.22370173325
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "337-339",
+    "indicator": "Methane",
+    "impact_per_purchase": 16.6124345701941,
+    "total_impact": 3372.12307198846
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "337-339",
+    "indicator": "Methane",
+    "impact_per_purchase": 382.687091512813,
+    "total_impact": 70336.1061256215
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "337110/US",
     "indicator": "Methane",
     "impact_per_purchase": 5.93717035407086,
@@ -19531,6 +20511,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "42-44",
+    "indicator": "Methane",
+    "impact_per_purchase": 8.21004873189825,
+    "total_impact": 34144.2316321222
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "42-44",
+    "indicator": "Methane",
+    "impact_per_purchase": 121.484319282155,
+    "total_impact": 53027.7414967469
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "42-44",
+    "indicator": "Methane",
+    "impact_per_purchase": 80.6598477703165,
+    "total_impact": 335450.935264379
+  },
+  {
+    "purchased_commodity_code": "562000/US",
+    "sector_code": "42-44",
+    "indicator": "Methane",
+    "impact_per_purchase": 48.9506982268279,
+    "total_impact": 203577.838986162
+  },
+  {
+    "purchased_commodity_code": "112120/US",
+    "sector_code": "42-44",
+    "indicator": "Methane",
+    "impact_per_purchase": 47.4802932481126,
+    "total_impact": 45352.7109246623
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "42-44",
+    "indicator": "Methane",
+    "impact_per_purchase": 39.8832835006135,
+    "total_impact": 165867.96431593
+  },
+  {
+    "purchased_commodity_code": "211000/US",
+    "sector_code": "42-44",
+    "indicator": "Methane",
+    "impact_per_purchase": 32.6659417289282,
+    "total_impact": 115720.341567
+  },
+  {
+    "purchased_commodity_code": "311513/US",
+    "sector_code": "42-44",
+    "indicator": "Methane",
+    "impact_per_purchase": 23.5024949495676,
+    "total_impact": 53309.6105337946
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "42-44",
+    "indicator": "Methane",
+    "impact_per_purchase": 21.6708141176259,
+    "total_impact": 90125.323375249
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "42-44",
+    "indicator": "Methane",
+    "impact_per_purchase": 237.062288910593,
+    "total_impact": 885487.819436988
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "423100/US",
     "indicator": "Methane",
     "impact_per_purchase": 1.66499301404971,
@@ -20791,6 +21841,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "48",
+    "indicator": "Methane",
+    "impact_per_purchase": 1105.0369932279,
+    "total_impact": 1471338.74432273
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "48",
+    "indicator": "Methane",
+    "impact_per_purchase": 783.706656837364,
+    "total_impact": 1043492.63911986
+  },
+  {
+    "purchased_commodity_code": "48A000/US",
+    "sector_code": "48",
+    "indicator": "Methane",
+    "impact_per_purchase": 53.3503303128876,
+    "total_impact": 71035.0951984633
+  },
+  {
+    "purchased_commodity_code": "562000/US",
+    "sector_code": "48",
+    "indicator": "Methane",
+    "impact_per_purchase": 47.0999615132705,
+    "total_impact": 62712.8310231081
+  },
+  {
+    "purchased_commodity_code": "486000/US",
+    "sector_code": "48",
+    "indicator": "Methane",
+    "impact_per_purchase": 31.8539943678218,
+    "total_impact": 42413.0742789972
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "48",
+    "indicator": "Methane",
+    "impact_per_purchase": 28.2193587556146,
+    "total_impact": 37573.6162060919
+  },
+  {
+    "purchased_commodity_code": "424700/US",
+    "sector_code": "48",
+    "indicator": "Methane",
+    "impact_per_purchase": 20.2867418733501,
+    "total_impact": 27011.4661294226
+  },
+  {
+    "purchased_commodity_code": "221200/US",
+    "sector_code": "48",
+    "indicator": "Methane",
+    "impact_per_purchase": 19.7668104356121,
+    "total_impact": 26319.1858949839
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "48",
+    "indicator": "Methane",
+    "impact_per_purchase": 19.7375326728771,
+    "total_impact": 26280.2030311313
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "48",
+    "indicator": "Methane",
+    "impact_per_purchase": 200.242525950644,
+    "total_impact": 250285.756356085
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "481000/US",
     "indicator": "Methane",
     "impact_per_purchase": 1.97943686567859,
@@ -21558,6 +22678,76 @@
     "indicator": "Methane",
     "impact_per_purchase": 103.884199558209,
     "total_impact": 25580.3722284311
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "5",
+    "indicator": "Methane",
+    "impact_per_purchase": 4.39735592329872,
+    "total_impact": 64492.9979333055
+  },
+  {
+    "purchased_commodity_code": "562000/US",
+    "sector_code": "5",
+    "indicator": "Methane",
+    "impact_per_purchase": 108.397016029411,
+    "total_impact": 1589784.55524179
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "5",
+    "indicator": "Methane",
+    "impact_per_purchase": 52.9914572598514,
+    "total_impact": 777189.293555914
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "5",
+    "indicator": "Methane",
+    "impact_per_purchase": 27.7842107132211,
+    "total_impact": 404343.244188221
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "5",
+    "indicator": "Methane",
+    "impact_per_purchase": 19.4692639544631,
+    "total_impact": 251591.820223086
+  },
+  {
+    "purchased_commodity_code": "311111/US",
+    "sector_code": "5",
+    "indicator": "Methane",
+    "impact_per_purchase": 14.7749338585751,
+    "total_impact": 37775.9087992198
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "5",
+    "indicator": "Methane",
+    "impact_per_purchase": 14.4634879889433,
+    "total_impact": 36125.7127268647
+  },
+  {
+    "purchased_commodity_code": "31161A/US",
+    "sector_code": "5",
+    "indicator": "Methane",
+    "impact_per_purchase": 9.23994911013192,
+    "total_impact": 75581.6617955863
+  },
+  {
+    "purchased_commodity_code": "722110/US",
+    "sector_code": "5",
+    "indicator": "Methane",
+    "impact_per_purchase": 8.73049056426412,
+    "total_impact": 112819.879459293
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "5",
+    "indicator": "Methane",
+    "impact_per_purchase": 196.990645521064,
+    "total_impact": 2312641.61644929
   },
   {
     "purchased_commodity_code": "Direct",
@@ -25271,6 +26461,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "562",
+    "indicator": "Methane",
+    "impact_per_purchase": 29808.5792803946,
+    "total_impact": 3865937.34509756
+  },
+  {
+    "purchased_commodity_code": "562000/US",
+    "sector_code": "562",
+    "indicator": "Methane",
+    "impact_per_purchase": 2768.00436956677,
+    "total_impact": 358988.308803416
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "562",
+    "indicator": "Methane",
+    "impact_per_purchase": 195.945971786698,
+    "total_impact": 25412.6452262639
+  },
+  {
+    "purchased_commodity_code": "221300/US",
+    "sector_code": "562",
+    "indicator": "Methane",
+    "impact_per_purchase": 39.983798830701,
+    "total_impact": 5185.58297074362
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "562",
+    "indicator": "Methane",
+    "impact_per_purchase": 29.0219013271028,
+    "total_impact": 3763.9114266669
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "562",
+    "indicator": "Methane",
+    "impact_per_purchase": 27.6635361940229,
+    "total_impact": 3587.74219542461
+  },
+  {
+    "purchased_commodity_code": "221200/US",
+    "sector_code": "562",
+    "indicator": "Methane",
+    "impact_per_purchase": 21.8446362923294,
+    "total_impact": 2833.07682792294
+  },
+  {
+    "purchased_commodity_code": "S00203/US",
+    "sector_code": "562",
+    "indicator": "Methane",
+    "impact_per_purchase": 17.6220064533729,
+    "total_impact": 2285.43508239091
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "562",
+    "indicator": "Methane",
+    "impact_per_purchase": 17.417997503556,
+    "total_impact": 2258.97673258455
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "562",
+    "indicator": "Methane",
+    "impact_per_purchase": 257.973810235488,
+    "total_impact": 33457.1660616655
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "562000/US",
     "indicator": "Methane",
     "impact_per_purchase": 32576.5836499613,
@@ -25338,6 +26598,76 @@
     "indicator": "Methane",
     "impact_per_purchase": 241.669653538206,
     "total_impact": 31342.6456860568
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "6",
+    "indicator": "Methane",
+    "impact_per_purchase": 1.07001696315748,
+    "total_impact": 3731.74628576571
+  },
+  {
+    "purchased_commodity_code": "31161A/US",
+    "sector_code": "6",
+    "indicator": "Methane",
+    "impact_per_purchase": 211.42361920104,
+    "total_impact": 563843.230060365
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "6",
+    "indicator": "Methane",
+    "impact_per_purchase": 86.8642173150395,
+    "total_impact": 302944.001350038
+  },
+  {
+    "purchased_commodity_code": "562000/US",
+    "sector_code": "6",
+    "indicator": "Methane",
+    "impact_per_purchase": 63.0517327568423,
+    "total_impact": 219896.578865552
+  },
+  {
+    "purchased_commodity_code": "311513/US",
+    "sector_code": "6",
+    "indicator": "Methane",
+    "impact_per_purchase": 34.8169271832452,
+    "total_impact": 113951.83529488
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "6",
+    "indicator": "Methane",
+    "impact_per_purchase": 33.2660569190863,
+    "total_impact": 116017.30498136
+  },
+  {
+    "purchased_commodity_code": "31151A/US",
+    "sector_code": "6",
+    "indicator": "Methane",
+    "impact_per_purchase": 32.2991208602735,
+    "total_impact": 81563.8610474592
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "6",
+    "indicator": "Methane",
+    "impact_per_purchase": 20.4552257307259,
+    "total_impact": 71338.7873963084
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "6",
+    "indicator": "Methane",
+    "impact_per_purchase": 18.2722794373645,
+    "total_impact": 63725.6354531478
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "6",
+    "indicator": "Methane",
+    "impact_per_purchase": 284.974720382339,
+    "total_impact": 788425.227321011
   },
   {
     "purchased_commodity_code": "Direct",
@@ -26461,6 +27791,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "7",
+    "indicator": "Methane",
+    "impact_per_purchase": 21.5481734694653,
+    "total_impact": 39485.2543843638
+  },
+  {
+    "purchased_commodity_code": "31161A/US",
+    "sector_code": "7",
+    "indicator": "Methane",
+    "impact_per_purchase": 318.473922508782,
+    "total_impact": 583577.251355657
+  },
+  {
+    "purchased_commodity_code": "311513/US",
+    "sector_code": "7",
+    "indicator": "Methane",
+    "impact_per_purchase": 136.666659373426,
+    "total_impact": 250430.405104532
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "7",
+    "indicator": "Methane",
+    "impact_per_purchase": 96.0933646597502,
+    "total_impact": 9786.6856542396
+  },
+  {
+    "purchased_commodity_code": "562000/US",
+    "sector_code": "7",
+    "indicator": "Methane",
+    "impact_per_purchase": 93.3501031677892,
+    "total_impact": 171056.380978644
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "7",
+    "indicator": "Methane",
+    "impact_per_purchase": 78.8136248973711,
+    "total_impact": 144419.480956766
+  },
+  {
+    "purchased_commodity_code": "112A00/US",
+    "sector_code": "7",
+    "indicator": "Methane",
+    "impact_per_purchase": 67.2704286214057,
+    "total_impact": 123267.52383098
+  },
+  {
+    "purchased_commodity_code": "31151A/US",
+    "sector_code": "7",
+    "indicator": "Methane",
+    "impact_per_purchase": 63.5713166702592,
+    "total_impact": 113599.346063179
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "7",
+    "indicator": "Methane",
+    "impact_per_purchase": 58.5681530040342,
+    "total_impact": 107321.319993254
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "7",
+    "indicator": "Methane",
+    "impact_per_purchase": 411.420610717948,
+    "total_impact": 738246.667693905
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "711100/US",
     "indicator": "Methane",
     "impact_per_purchase": 0.354419783555158,
@@ -27301,6 +28701,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "8",
+    "indicator": "Methane",
+    "impact_per_purchase": 1.87713117319671,
+    "total_impact": 1703.05388857242
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "8",
+    "indicator": "Methane",
+    "impact_per_purchase": 98.7798047722307,
+    "total_impact": 89619.3793123606
+  },
+  {
+    "purchased_commodity_code": "562000/US",
+    "sector_code": "8",
+    "indicator": "Methane",
+    "impact_per_purchase": 73.6011202172093,
+    "total_impact": 66775.6605286899
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "8",
+    "indicator": "Methane",
+    "impact_per_purchase": 34.9769112019557,
+    "total_impact": 31733.2989208745
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "8",
+    "indicator": "Methane",
+    "impact_per_purchase": 25.5001378291504,
+    "total_impact": 23135.361827224
+  },
+  {
+    "purchased_commodity_code": "311111/US",
+    "sector_code": "8",
+    "indicator": "Methane",
+    "impact_per_purchase": 16.5469419832264,
+    "total_impact": 1821.09416236455
+  },
+  {
+    "purchased_commodity_code": "31161A/US",
+    "sector_code": "8",
+    "indicator": "Methane",
+    "impact_per_purchase": 13.9470654791986,
+    "total_impact": 11264.0295848134
+  },
+  {
+    "purchased_commodity_code": "325620/US",
+    "sector_code": "8",
+    "indicator": "Methane",
+    "impact_per_purchase": 12.5181714582881,
+    "total_impact": 2425.46292156973
+  },
+  {
+    "purchased_commodity_code": "221300/US",
+    "sector_code": "8",
+    "indicator": "Methane",
+    "impact_per_purchase": 8.79002182143993,
+    "total_impact": 7974.87200542645
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "8",
+    "indicator": "Methane",
+    "impact_per_purchase": 204.41255591905,
+    "total_impact": 159429.548643356
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "811100/US",
     "indicator": "Methane",
     "impact_per_purchase": 4.32282966695893,
@@ -28068,6 +29538,76 @@
     "indicator": "Methane",
     "impact_per_purchase": 196.399800330572,
     "total_impact": 20742.9909890856
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "G",
+    "indicator": "Methane",
+    "impact_per_purchase": 87.3634521392602,
+    "total_impact": 223683.890817206
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "G",
+    "indicator": "Methane",
+    "impact_per_purchase": 273.50503966579,
+    "total_impact": 876046.655165596
+  },
+  {
+    "purchased_commodity_code": "562000/US",
+    "sector_code": "G",
+    "indicator": "Methane",
+    "impact_per_purchase": 231.802685453163,
+    "total_impact": 742472.487884642
+  },
+  {
+    "purchased_commodity_code": "31161A/US",
+    "sector_code": "G",
+    "indicator": "Methane",
+    "impact_per_purchase": 155.859861414423,
+    "total_impact": 400950.395294847
+  },
+  {
+    "purchased_commodity_code": "211000/US",
+    "sector_code": "G",
+    "indicator": "Methane",
+    "impact_per_purchase": 155.066114371434,
+    "total_impact": 17089.680882278
+  },
+  {
+    "purchased_commodity_code": "212100/US",
+    "sector_code": "G",
+    "indicator": "Methane",
+    "impact_per_purchase": 106.397246111815,
+    "total_impact": 254288.517864929
+  },
+  {
+    "purchased_commodity_code": "31151A/US",
+    "sector_code": "G",
+    "indicator": "Methane",
+    "impact_per_purchase": 46.1581727255237,
+    "total_impact": 110317.642219721
+  },
+  {
+    "purchased_commodity_code": "221200/US",
+    "sector_code": "G",
+    "indicator": "Methane",
+    "impact_per_purchase": 25.3933061242342,
+    "total_impact": 81335.6891738253
+  },
+  {
+    "purchased_commodity_code": "221300/US",
+    "sector_code": "G",
+    "indicator": "Methane",
+    "impact_per_purchase": 24.0793927733548,
+    "total_impact": 77127.1766081267
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "G",
+    "indicator": "Methane",
+    "impact_per_purchase": 352.383964470663,
+    "total_impact": 809626.392495797
   },
   {
     "purchased_commodity_code": "Direct",

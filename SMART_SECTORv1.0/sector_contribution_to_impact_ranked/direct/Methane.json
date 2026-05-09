@@ -1,6 +1,76 @@
 [
   {
     "emissions_source": "Direct",
+    "sector_code": "11",
+    "indicator": "Methane",
+    "impact_per_purchase": 20458.2299510719,
+    "total_impact": 7723587.21766659
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "11",
+    "indicator": "Methane",
+    "impact_per_purchase": 5637.4405383261,
+    "total_impact": 2128300.62944373
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "11",
+    "indicator": "Methane",
+    "impact_per_purchase": 905.676478050262,
+    "total_impact": 341919.671737964
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "11",
+    "indicator": "Methane",
+    "impact_per_purchase": 398.584956448123,
+    "total_impact": 150477.616203332
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "11",
+    "indicator": "Methane",
+    "impact_per_purchase": 365.712541317387,
+    "total_impact": 138067.306712981
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "11",
+    "indicator": "Methane",
+    "impact_per_purchase": 120.363491122094,
+    "total_impact": 45440.7797608914
+  },
+  {
+    "emissions_source": "115000/US",
+    "sector_code": "11",
+    "indicator": "Methane",
+    "impact_per_purchase": 116.655443775038,
+    "total_impact": 44040.8821568113
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "11",
+    "indicator": "Methane",
+    "impact_per_purchase": 112.489947731724,
+    "total_impact": 42468.2841328215
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "11",
+    "indicator": "Methane",
+    "impact_per_purchase": 97.117773094729,
+    "total_impact": 36664.8333055515
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "11",
+    "indicator": "Methane",
+    "impact_per_purchase": 293.305497660685,
+    "total_impact": 110731.505023713
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "111/112",
     "indicator": "Methane",
     "impact_per_purchase": 24004.8612341334,
@@ -981,6 +1051,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "211",
+    "indicator": "Methane",
+    "impact_per_purchase": 7814.18270775228,
+    "total_impact": 7115581.44997671
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "211",
+    "indicator": "Methane",
+    "impact_per_purchase": 4866.07441313793,
+    "total_impact": 4431039.06362209
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "211",
+    "indicator": "Methane",
+    "impact_per_purchase": 957.785924701286,
+    "total_impact": 872158.22994413
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "211",
+    "indicator": "Methane",
+    "impact_per_purchase": 260.810386389082,
+    "total_impact": 237493.4931468
+  },
+  {
+    "emissions_source": "21311A/US",
+    "sector_code": "211",
+    "indicator": "Methane",
+    "impact_per_purchase": 178.663373851698,
+    "total_impact": 162690.563596392
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "211",
+    "indicator": "Methane",
+    "impact_per_purchase": 106.261360586758,
+    "total_impact": 96761.4137675976
+  },
+  {
+    "emissions_source": "221200/US",
+    "sector_code": "211",
+    "indicator": "Methane",
+    "impact_per_purchase": 29.8779263697627,
+    "total_impact": 27206.7888084494
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "211",
+    "indicator": "Methane",
+    "impact_per_purchase": 28.2420614845647,
+    "total_impact": 25717.1730332468
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "211",
+    "indicator": "Methane",
+    "impact_per_purchase": 22.7940509823365,
+    "total_impact": 20756.2239591389
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "211",
+    "indicator": "Methane",
+    "impact_per_purchase": 59.9590941947357,
+    "total_impact": 54598.648939473
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "211/32411",
     "indicator": "Methane",
     "impact_per_purchase": 6663.56023654883,
@@ -1118,6 +1258,76 @@
     "indicator": "Methane",
     "impact_per_purchase": 23.7563428708915,
     "total_impact": 7161.64682041419
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "212",
+    "indicator": "Methane",
+    "impact_per_purchase": 4402.39827880944,
+    "total_impact": 1008065.06319532
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "212",
+    "indicator": "Methane",
+    "impact_per_purchase": 425.877630948012,
+    "total_impact": 97517.8377252999
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "212",
+    "indicator": "Methane",
+    "impact_per_purchase": 207.542211127986,
+    "total_impact": 47523.1996122367
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "212",
+    "indicator": "Methane",
+    "impact_per_purchase": 201.321987798798,
+    "total_impact": 46098.8873564356
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "212",
+    "indicator": "Methane",
+    "impact_per_purchase": 138.455456824072,
+    "total_impact": 31703.653325714
+  },
+  {
+    "emissions_source": "21311A/US",
+    "sector_code": "212",
+    "indicator": "Methane",
+    "impact_per_purchase": 75.6498881849321,
+    "total_impact": 17322.3785046739
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "212",
+    "indicator": "Methane",
+    "impact_per_purchase": 26.3838991876952,
+    "total_impact": 6041.40864083189
+  },
+  {
+    "emissions_source": "221200/US",
+    "sector_code": "212",
+    "indicator": "Methane",
+    "impact_per_purchase": 20.5618922844778,
+    "total_impact": 4708.28033550225
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "212",
+    "indicator": "Methane",
+    "impact_per_purchase": 14.206421866665,
+    "total_impact": 3252.99908137159
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "212",
+    "indicator": "Methane",
+    "impact_per_purchase": 55.3322332328128,
+    "total_impact": 12670.0238501951
   },
   {
     "emissions_source": "Direct",
@@ -1678,6 +1888,76 @@
     "indicator": "Methane",
     "impact_per_purchase": 38.5432642994523,
     "total_impact": 3565.24655851469
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "2211",
+    "indicator": "Methane",
+    "impact_per_purchase": 165.650852746132,
+    "total_impact": 75925.4553066834
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "2211",
+    "indicator": "Methane",
+    "impact_per_purchase": 1095.62501088089,
+    "total_impact": 502175.668989813
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "2211",
+    "indicator": "Methane",
+    "impact_per_purchase": 1017.24479840815,
+    "total_impact": 466250.388676603
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "2211",
+    "indicator": "Methane",
+    "impact_per_purchase": 572.039029286077,
+    "total_impact": 262191.972040741
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "2211",
+    "indicator": "Methane",
+    "impact_per_purchase": 133.600704115964,
+    "total_impact": 61235.3882949444
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "2211",
+    "indicator": "Methane",
+    "impact_per_purchase": 34.5310573539362,
+    "total_impact": 15827.1823437989
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "2211",
+    "indicator": "Methane",
+    "impact_per_purchase": 24.7555309175477,
+    "total_impact": 11346.6059794696
+  },
+  {
+    "emissions_source": "21311A/US",
+    "sector_code": "2211",
+    "indicator": "Methane",
+    "impact_per_purchase": 18.2445610920222,
+    "total_impact": 8362.32705608413
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "2211",
+    "indicator": "Methane",
+    "impact_per_purchase": 10.1296542579678,
+    "total_impact": 4642.88954077508
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "2211",
+    "indicator": "Methane",
+    "impact_per_purchase": 41.759532270003,
+    "total_impact": 19140.3270700528
   },
   {
     "emissions_source": "Direct",
@@ -2868,6 +3148,76 @@
     "indicator": "Methane",
     "impact_per_purchase": 52.564899685988,
     "total_impact": 13969.4835047719
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "31",
+    "indicator": "Methane",
+    "impact_per_purchase": 1.88062008891495,
+    "total_impact": 1716.9135930114
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "31",
+    "indicator": "Methane",
+    "impact_per_purchase": 4900.00508587017,
+    "total_impact": 4473463.50671466
+  },
+  {
+    "emissions_source": "112120/US",
+    "sector_code": "31",
+    "indicator": "Methane",
+    "impact_per_purchase": 3428.5964595431,
+    "total_impact": 3130139.84112905
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "31",
+    "indicator": "Methane",
+    "impact_per_purchase": 959.044723794528,
+    "total_impact": 875560.636778438
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "31",
+    "indicator": "Methane",
+    "impact_per_purchase": 753.327207785644,
+    "total_impact": 687750.668333413
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "31",
+    "indicator": "Methane",
+    "impact_per_purchase": 252.391013880931,
+    "total_impact": 230420.575128557
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "31",
+    "indicator": "Methane",
+    "impact_per_purchase": 194.83144688235,
+    "total_impact": 177871.523052477
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "31",
+    "indicator": "Methane",
+    "impact_per_purchase": 141.950780836795,
+    "total_impact": 129594.077290694
+  },
+  {
+    "emissions_source": "112300/US",
+    "sector_code": "31",
+    "indicator": "Methane",
+    "impact_per_purchase": 110.598869930034,
+    "total_impact": 100971.325507925
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "31",
+    "indicator": "Methane",
+    "impact_per_purchase": 214.85822767136,
+    "total_impact": 196154.988364575
   },
   {
     "emissions_source": "Direct",
@@ -5461,6 +5811,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "321",
+    "indicator": "Methane",
+    "impact_per_purchase": 1.71350467030114,
+    "total_impact": 193.468044869986
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "321",
+    "indicator": "Methane",
+    "impact_per_purchase": 240.934368024849,
+    "total_impact": 27203.3697553688
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "321",
+    "indicator": "Methane",
+    "impact_per_purchase": 125.728101987202,
+    "total_impact": 14195.6835591252
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "321",
+    "indicator": "Methane",
+    "impact_per_purchase": 91.5158592545776,
+    "total_impact": 10332.8544540636
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "321",
+    "indicator": "Methane",
+    "impact_per_purchase": 59.417626976248,
+    "total_impact": 6708.71362135744
+  },
+  {
+    "emissions_source": "115000/US",
+    "sector_code": "321",
+    "indicator": "Methane",
+    "impact_per_purchase": 44.8229525982206,
+    "total_impact": 5060.86102639789
+  },
+  {
+    "emissions_source": "113000/US",
+    "sector_code": "321",
+    "indicator": "Methane",
+    "impact_per_purchase": 32.7972325619573,
+    "total_impact": 3703.0634178505
+  },
+  {
+    "emissions_source": "221200/US",
+    "sector_code": "321",
+    "indicator": "Methane",
+    "impact_per_purchase": 32.6451966033145,
+    "total_impact": 3685.89737203902
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "321",
+    "indicator": "Methane",
+    "impact_per_purchase": 26.7559147237763,
+    "total_impact": 3020.95150368475
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "321",
+    "indicator": "Methane",
+    "impact_per_purchase": 108.184299561588,
+    "total_impact": 12214.8514005106
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "321/322",
     "indicator": "Methane",
     "impact_per_purchase": 6.3984471272636,
@@ -5808,6 +6228,76 @@
     "indicator": "Methane",
     "impact_per_purchase": 97.4256769895628,
     "total_impact": 2824.95956474843
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "322-323",
+    "indicator": "Methane",
+    "impact_per_purchase": 7.59896174970174,
+    "total_impact": 1573.95475553513
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "322-323",
+    "indicator": "Methane",
+    "impact_per_purchase": 633.519040015092,
+    "total_impact": 131219.282133239
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "322-323",
+    "indicator": "Methane",
+    "impact_per_purchase": 312.373940824948,
+    "total_impact": 64701.2665494694
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "322-323",
+    "indicator": "Methane",
+    "impact_per_purchase": 162.839109802798,
+    "total_impact": 33728.4749816355
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "322-323",
+    "indicator": "Methane",
+    "impact_per_purchase": 79.8184150090605,
+    "total_impact": 16532.5972179973
+  },
+  {
+    "emissions_source": "221200/US",
+    "sector_code": "322-323",
+    "indicator": "Methane",
+    "impact_per_purchase": 71.9795144582973,
+    "total_impact": 14908.9445130044
+  },
+  {
+    "emissions_source": "S00401/US",
+    "sector_code": "322-323",
+    "indicator": "Methane",
+    "impact_per_purchase": 40.9228689770099,
+    "total_impact": 8476.255883119
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "322-323",
+    "indicator": "Methane",
+    "impact_per_purchase": 40.0104241793927,
+    "total_impact": 8287.26337655332
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "322-323",
+    "indicator": "Methane",
+    "impact_per_purchase": 18.8873559570506,
+    "total_impact": 3912.09282363493
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "322-323",
+    "indicator": "Methane",
+    "impact_per_purchase": 104.278896413479,
+    "total_impact": 21599.0381736547
   },
   {
     "emissions_source": "Direct",
@@ -6858,6 +7348,76 @@
     "indicator": "Methane",
     "impact_per_purchase": 106.259651190044,
     "total_impact": 76481.0690504513
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "325-326",
+    "indicator": "Methane",
+    "impact_per_purchase": 10.1816103702761,
+    "total_impact": 9468.63785338984
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "325-326",
+    "indicator": "Methane",
+    "impact_per_purchase": 929.657883815148,
+    "total_impact": 864558.111071744
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "325-326",
+    "indicator": "Methane",
+    "impact_per_purchase": 193.136814947044,
+    "total_impact": 179612.30987875
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "325-326",
+    "indicator": "Methane",
+    "impact_per_purchase": 161.896270327425,
+    "total_impact": 150559.400507026
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "325-326",
+    "indicator": "Methane",
+    "impact_per_purchase": 160.624547062248,
+    "total_impact": 149376.730319327
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "325-326",
+    "indicator": "Methane",
+    "impact_per_purchase": 131.972611177351,
+    "total_impact": 122731.161020717
+  },
+  {
+    "emissions_source": "221200/US",
+    "sector_code": "325-326",
+    "indicator": "Methane",
+    "impact_per_purchase": 56.6806494347184,
+    "total_impact": 52711.5577275561
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "325-326",
+    "indicator": "Methane",
+    "impact_per_purchase": 53.9536449660379,
+    "total_impact": 50175.5131531249
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "325-326",
+    "indicator": "Methane",
+    "impact_per_purchase": 22.6981209226762,
+    "total_impact": 21108.6732995307
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "325-326",
+    "indicator": "Methane",
+    "impact_per_purchase": 103.684345887013,
+    "total_impact": 96423.7960957357
   },
   {
     "emissions_source": "Direct",
@@ -8891,6 +9451,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "327",
+    "indicator": "Methane",
+    "impact_per_purchase": 17.6536313217026,
+    "total_impact": 1977.22231127426
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "327",
+    "indicator": "Methane",
+    "impact_per_purchase": 885.890194514921,
+    "total_impact": 99220.4847838109
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "327",
+    "indicator": "Methane",
+    "impact_per_purchase": 247.354422047343,
+    "total_impact": 27703.9138946507
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "327",
+    "indicator": "Methane",
+    "impact_per_purchase": 146.598762641554,
+    "total_impact": 16419.1909878475
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "327",
+    "indicator": "Methane",
+    "impact_per_purchase": 66.4697795217957,
+    "total_impact": 7444.67405606272
+  },
+  {
+    "emissions_source": "221200/US",
+    "sector_code": "327",
+    "indicator": "Methane",
+    "impact_per_purchase": 64.3390640510281,
+    "total_impact": 7206.03204009405
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "327",
+    "indicator": "Methane",
+    "impact_per_purchase": 30.1357612413426,
+    "total_impact": 3375.23189466212
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "327",
+    "indicator": "Methane",
+    "impact_per_purchase": 15.2310838737111,
+    "total_impact": 1705.89485591947
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "327",
+    "indicator": "Methane",
+    "impact_per_purchase": 14.3872482324367,
+    "total_impact": 1611.38451826871
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "327",
+    "indicator": "Methane",
+    "impact_per_purchase": 73.7331153739273,
+    "total_impact": 8258.1740912344
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "327100/US",
     "indicator": "Methane",
     "impact_per_purchase": 13.2262284629963,
@@ -9798,6 +10428,76 @@
     "indicator": "Methane",
     "impact_per_purchase": 66.0436054752469,
     "total_impact": 277.530571702691
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "331-332",
+    "indicator": "Methane",
+    "impact_per_purchase": 3.10873216203244,
+    "total_impact": 1494.40301273454
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "331-332",
+    "indicator": "Methane",
+    "impact_per_purchase": 480.670527962677,
+    "total_impact": 231063.805976293
+  },
+  {
+    "emissions_source": "S00401/US",
+    "sector_code": "331-332",
+    "indicator": "Methane",
+    "impact_per_purchase": 256.357019888432,
+    "total_impact": 123233.74381872
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "331-332",
+    "indicator": "Methane",
+    "impact_per_purchase": 199.353890445228,
+    "total_impact": 95831.6892398113
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "331-332",
+    "indicator": "Methane",
+    "impact_per_purchase": 171.39968712395,
+    "total_impact": 82393.7848194444
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "331-332",
+    "indicator": "Methane",
+    "impact_per_purchase": 53.7658115538109,
+    "total_impact": 25845.8389402071
+  },
+  {
+    "emissions_source": "221200/US",
+    "sector_code": "331-332",
+    "indicator": "Methane",
+    "impact_per_purchase": 35.1110519181242,
+    "total_impact": 16878.2831816619
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "331-332",
+    "indicator": "Methane",
+    "impact_per_purchase": 13.1954481625829,
+    "total_impact": 6343.20245706023
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "331-332",
+    "indicator": "Methane",
+    "impact_per_purchase": 12.2714601759553,
+    "total_impact": 5899.03089161917
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "331-332",
+    "indicator": "Methane",
+    "impact_per_purchase": 63.0823593764463,
+    "total_impact": 30324.4097558187
   },
   {
     "emissions_source": "Direct",
@@ -11898,6 +12598,76 @@
     "indicator": "Methane",
     "impact_per_purchase": 35.8808547644714,
     "total_impact": 677.893956975525
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "333",
+    "indicator": "Methane",
+    "impact_per_purchase": 6.03213395512666,
+    "total_impact": 1907.95956554013
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "333",
+    "indicator": "Methane",
+    "impact_per_purchase": 155.086742619708,
+    "total_impact": 49053.8234513591
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "333",
+    "indicator": "Methane",
+    "impact_per_purchase": 135.398234059131,
+    "total_impact": 42826.362569552
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "333",
+    "indicator": "Methane",
+    "impact_per_purchase": 115.77986737997,
+    "total_impact": 36621.0875136214
+  },
+  {
+    "emissions_source": "S00401/US",
+    "sector_code": "333",
+    "indicator": "Methane",
+    "impact_per_purchase": 70.1964324870509,
+    "total_impact": 22203.0803405208
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "333",
+    "indicator": "Methane",
+    "impact_per_purchase": 35.1315528260092,
+    "total_impact": 11112.0845069587
+  },
+  {
+    "emissions_source": "221200/US",
+    "sector_code": "333",
+    "indicator": "Methane",
+    "impact_per_purchase": 21.5326494588583,
+    "total_impact": 6810.76130140225
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "333",
+    "indicator": "Methane",
+    "impact_per_purchase": 9.52692938270883,
+    "total_impact": 3013.36080749933
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "333",
+    "indicator": "Methane",
+    "impact_per_purchase": 8.32434900333491,
+    "total_impact": 2632.98551158813
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "333",
+    "indicator": "Methane",
+    "impact_per_purchase": 43.4817687804008,
+    "total_impact": 13753.2517162789
   },
   {
     "emissions_source": "Direct",
@@ -15331,6 +16101,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "335",
+    "indicator": "Methane",
+    "impact_per_purchase": 0.642282792140227,
+    "total_impact": 72.2205841665641
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "335",
+    "indicator": "Methane",
+    "impact_per_purchase": 144.059676184199,
+    "total_impact": 16198.5874387203
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "335",
+    "indicator": "Methane",
+    "impact_per_purchase": 139.1248816855,
+    "total_impact": 15643.7014199771
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "335",
+    "indicator": "Methane",
+    "impact_per_purchase": 96.753251314902,
+    "total_impact": 10879.2831062661
+  },
+  {
+    "emissions_source": "S00401/US",
+    "sector_code": "335",
+    "indicator": "Methane",
+    "impact_per_purchase": 46.9825317537611,
+    "total_impact": 5282.8846271503
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "335",
+    "indicator": "Methane",
+    "impact_per_purchase": 35.8119830464703,
+    "total_impact": 4026.82800696069
+  },
+  {
+    "emissions_source": "221200/US",
+    "sector_code": "335",
+    "indicator": "Methane",
+    "impact_per_purchase": 22.2112687496949,
+    "total_impact": 2497.51483896722
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "335",
+    "indicator": "Methane",
+    "impact_per_purchase": 12.242441508,
+    "total_impact": 1376.58409683771
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "335",
+    "indicator": "Methane",
+    "impact_per_purchase": 7.90500022357735,
+    "total_impact": 888.866619143259
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "335",
+    "indicator": "Methane",
+    "impact_per_purchase": 37.3561482442719,
+    "total_impact": 4200.45948829511
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "335110/US",
     "indicator": "Methane",
     "impact_per_purchase": 0.895416446780681,
@@ -16308,6 +17148,76 @@
     "indicator": "Methane",
     "impact_per_purchase": 27.7961071779897,
     "total_impact": 324.947755690627
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "336",
+    "indicator": "Methane",
+    "impact_per_purchase": 0.303785203407719,
+    "total_impact": 283.109288528679
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "336",
+    "indicator": "Methane",
+    "impact_per_purchase": 137.436076788949,
+    "total_impact": 128082.044422916
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "336",
+    "indicator": "Methane",
+    "impact_per_purchase": 136.8870660889,
+    "total_impact": 127570.399922322
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "336",
+    "indicator": "Methane",
+    "impact_per_purchase": 110.619392498893,
+    "total_impact": 103090.529612807
+  },
+  {
+    "emissions_source": "S00401/US",
+    "sector_code": "336",
+    "indicator": "Methane",
+    "impact_per_purchase": 51.6923233627246,
+    "total_impact": 48174.0938184335
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "336",
+    "indicator": "Methane",
+    "impact_per_purchase": 35.0129552435183,
+    "total_impact": 32629.9396319679
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "336",
+    "indicator": "Methane",
+    "impact_per_purchase": 22.8394721606478,
+    "total_impact": 21284.9955864812
+  },
+  {
+    "emissions_source": "221200/US",
+    "sector_code": "336",
+    "indicator": "Methane",
+    "impact_per_purchase": 22.1499088948584,
+    "total_impact": 20642.3646637659
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "336",
+    "indicator": "Methane",
+    "impact_per_purchase": 13.2060393884582,
+    "total_impact": 12307.22356984
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "336",
+    "indicator": "Methane",
+    "impact_per_purchase": 49.8660192657533,
+    "total_impact": 46472.0897453892
   },
   {
     "emissions_source": "Direct",
@@ -18201,6 +19111,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "337-339",
+    "indicator": "Methane",
+    "impact_per_purchase": 0.417831027937408,
+    "total_impact": 84.8146395127638
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "337-339",
+    "indicator": "Methane",
+    "impact_per_purchase": 169.674071319555,
+    "total_impact": 34441.7820396689
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "337-339",
+    "indicator": "Methane",
+    "impact_per_purchase": 113.248917520383,
+    "total_impact": 22988.1590223617
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "337-339",
+    "indicator": "Methane",
+    "impact_per_purchase": 93.2042239722443,
+    "total_impact": 18919.3289361387
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "337-339",
+    "indicator": "Methane",
+    "impact_per_purchase": 40.1511287524052,
+    "total_impact": 8150.19298106303
+  },
+  {
+    "emissions_source": "S00401/US",
+    "sector_code": "337-339",
+    "indicator": "Methane",
+    "impact_per_purchase": 22.0804531620597,
+    "total_impact": 4482.06463857705
+  },
+  {
+    "emissions_source": "221200/US",
+    "sector_code": "337-339",
+    "indicator": "Methane",
+    "impact_per_purchase": 21.0100898301062,
+    "total_impact": 4264.79384230457
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "337-339",
+    "indicator": "Methane",
+    "impact_per_purchase": 19.8174977665404,
+    "total_impact": 4022.71209347793
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "337-339",
+    "indicator": "Methane",
+    "impact_per_purchase": 12.7358255745355,
+    "total_impact": 2585.21838441228
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "337-339",
+    "indicator": "Methane",
+    "impact_per_purchase": 57.3178074049871,
+    "total_impact": 11634.8208909087
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "337110/US",
     "indicator": "Methane",
     "impact_per_purchase": 0.680915330858105,
@@ -19531,6 +20511,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "42-44",
+    "indicator": "Methane",
+    "impact_per_purchase": 8.21004873189825,
+    "total_impact": 34144.2316321222
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "42-44",
+    "indicator": "Methane",
+    "impact_per_purchase": 142.907889193214,
+    "total_impact": 594330.22019865
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "42-44",
+    "indicator": "Methane",
+    "impact_per_purchase": 126.53780788403,
+    "total_impact": 526249.765829872
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "42-44",
+    "indicator": "Methane",
+    "impact_per_purchase": 36.8473759174893,
+    "total_impact": 153242.127963806
+  },
+  {
+    "emissions_source": "112120/US",
+    "sector_code": "42-44",
+    "indicator": "Methane",
+    "impact_per_purchase": 34.2265582471344,
+    "total_impact": 142342.581746196
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "42-44",
+    "indicator": "Methane",
+    "impact_per_purchase": 32.1262798894815,
+    "total_impact": 133607.87223625
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "42-44",
+    "indicator": "Methane",
+    "impact_per_purchase": 31.9819833037314,
+    "total_impact": 133007.766657286
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "42-44",
+    "indicator": "Methane",
+    "impact_per_purchase": 11.783819789431,
+    "total_impact": 49006.9530084859
+  },
+  {
+    "emissions_source": "221200/US",
+    "sector_code": "42-44",
+    "indicator": "Methane",
+    "impact_per_purchase": 10.7668944775372,
+    "total_impact": 44777.7292199639
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "42-44",
+    "indicator": "Methane",
+    "impact_per_purchase": 41.2027168877838,
+    "total_impact": 171355.269040403
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "423100/US",
     "indicator": "Methane",
     "impact_per_purchase": 0.595119343105877,
@@ -20791,6 +21841,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "48",
+    "indicator": "Methane",
+    "impact_per_purchase": 1105.0369932279,
+    "total_impact": 1471338.74432273
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "48",
+    "indicator": "Methane",
+    "impact_per_purchase": 705.213821980541,
+    "total_impact": 938980.708945276
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "48",
+    "indicator": "Methane",
+    "impact_per_purchase": 149.865893026287,
+    "total_impact": 199543.993742685
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "48",
+    "indicator": "Methane",
+    "impact_per_purchase": 122.076342536861,
+    "total_impact": 162542.660237126
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "48",
+    "indicator": "Methane",
+    "impact_per_purchase": 64.334196982397,
+    "total_impact": 85659.9346313195
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "48",
+    "indicator": "Methane",
+    "impact_per_purchase": 44.7832124016861,
+    "total_impact": 59628.117344164
+  },
+  {
+    "emissions_source": "221200/US",
+    "sector_code": "48",
+    "indicator": "Methane",
+    "impact_per_purchase": 29.5884109546507,
+    "total_impact": 39396.4868934868
+  },
+  {
+    "emissions_source": "21311A/US",
+    "sector_code": "48",
+    "indicator": "Methane",
+    "impact_per_purchase": 13.1060575410546,
+    "total_impact": 17450.5019864976
+  },
+  {
+    "emissions_source": "48A000/US",
+    "sector_code": "48",
+    "indicator": "Methane",
+    "impact_per_purchase": 10.347680632707,
+    "total_impact": 13777.7680947193
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "48",
+    "indicator": "Methane",
+    "impact_per_purchase": 52.6808517187249,
+    "total_impact": 70143.6953628714
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "481000/US",
     "indicator": "Methane",
     "impact_per_purchase": 0.00244465037461713,
@@ -21558,6 +22678,76 @@
     "indicator": "Methane",
     "impact_per_purchase": 32.2103175920376,
     "total_impact": 7931.44594754879
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "5",
+    "indicator": "Methane",
+    "impact_per_purchase": 4.39735592329872,
+    "total_impact": 64492.9979333055
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "5",
+    "indicator": "Methane",
+    "impact_per_purchase": 177.428270290483,
+    "total_impact": 2602218.53057782
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "5",
+    "indicator": "Methane",
+    "impact_per_purchase": 80.9613804111035,
+    "total_impact": 1187404.93846901
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "5",
+    "indicator": "Methane",
+    "impact_per_purchase": 25.8926377998777,
+    "total_impact": 379749.527953302
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "5",
+    "indicator": "Methane",
+    "impact_per_purchase": 20.9426574882344,
+    "total_impact": 307151.567820651
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "5",
+    "indicator": "Methane",
+    "impact_per_purchase": 17.7421522928543,
+    "total_impact": 260211.957165633
+  },
+  {
+    "emissions_source": "221200/US",
+    "sector_code": "5",
+    "indicator": "Methane",
+    "impact_per_purchase": 12.4841504719586,
+    "total_impact": 183096.457196287
+  },
+  {
+    "emissions_source": "112120/US",
+    "sector_code": "5",
+    "indicator": "Methane",
+    "impact_per_purchase": 9.33999554457221,
+    "total_impact": 136983.297204041
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "5",
+    "indicator": "Methane",
+    "impact_per_purchase": 6.5433982075314,
+    "total_impact": 95967.5255849082
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "5",
+    "indicator": "Methane",
+    "impact_per_purchase": 30.3464063052802,
+    "total_impact": 445069.890467617
   },
   {
     "emissions_source": "Direct",
@@ -25271,6 +26461,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "562",
+    "indicator": "Methane",
+    "impact_per_purchase": 29808.5792803946,
+    "total_impact": 3865937.34509756
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "562",
+    "indicator": "Methane",
+    "impact_per_purchase": 2793.27117895298,
+    "total_impact": 362265.214457952
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "562",
+    "indicator": "Methane",
+    "impact_per_purchase": 266.906940361159,
+    "total_impact": 34615.7224972673
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "562",
+    "indicator": "Methane",
+    "impact_per_purchase": 60.1595683164168,
+    "total_impact": 7802.22095228636
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "562",
+    "indicator": "Methane",
+    "impact_per_purchase": 58.0941938605138,
+    "total_impact": 7534.35819487084
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "562",
+    "indicator": "Methane",
+    "impact_per_purchase": 41.8332302450339,
+    "total_impact": 5425.4396208916
+  },
+  {
+    "emissions_source": "221200/US",
+    "sector_code": "562",
+    "indicator": "Methane",
+    "impact_per_purchase": 31.1330705214282,
+    "total_impact": 4037.71340003132
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "562",
+    "indicator": "Methane",
+    "impact_per_purchase": 24.769593013941,
+    "total_impact": 3212.42061739062
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "562",
+    "indicator": "Methane",
+    "impact_per_purchase": 21.5744682495148,
+    "total_impact": 2798.03816618921
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "562",
+    "indicator": "Methane",
+    "impact_per_purchase": 77.7357846690863,
+    "total_impact": 10081.7174202039
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "562000/US",
     "indicator": "Methane",
     "impact_per_purchase": 32601.8504593475,
@@ -25338,6 +26598,76 @@
     "indicator": "Methane",
     "impact_per_purchase": 63.0790177653362,
     "total_impact": 8180.85049197479
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "6",
+    "indicator": "Methane",
+    "impact_per_purchase": 1.07001696315748,
+    "total_impact": 3731.74628576571
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "6",
+    "indicator": "Methane",
+    "impact_per_purchase": 158.572594491845,
+    "total_impact": 553031.13024768
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "6",
+    "indicator": "Methane",
+    "impact_per_purchase": 155.774502985895,
+    "total_impact": 543272.623659385
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "6",
+    "indicator": "Methane",
+    "impact_per_purchase": 103.531142931294,
+    "total_impact": 361070.872142867
+  },
+  {
+    "emissions_source": "112120/US",
+    "sector_code": "6",
+    "indicator": "Methane",
+    "impact_per_purchase": 75.1485915864521,
+    "total_impact": 262085.076395179
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "6",
+    "indicator": "Methane",
+    "impact_per_purchase": 40.1075967942936,
+    "total_impact": 139877.572525984
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "6",
+    "indicator": "Methane",
+    "impact_per_purchase": 32.3953522230895,
+    "total_impact": 112980.67179968
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "6",
+    "indicator": "Methane",
+    "impact_per_purchase": 26.0556093398535,
+    "total_impact": 90870.4503996261
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "6",
+    "indicator": "Methane",
+    "impact_per_purchase": 18.7165386029462,
+    "total_impact": 65275.0150874527
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "6",
+    "indicator": "Methane",
+    "impact_per_purchase": 55.4092709301055,
+    "total_impact": 193243.049512267
   },
   {
     "emissions_source": "Direct",
@@ -26461,6 +27791,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "7",
+    "indicator": "Methane",
+    "impact_per_purchase": 21.5481734694653,
+    "total_impact": 39485.2543843638
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "7",
+    "indicator": "Methane",
+    "impact_per_purchase": 309.682615005274,
+    "total_impact": 567467.903914258
+  },
+  {
+    "emissions_source": "112120/US",
+    "sector_code": "7",
+    "indicator": "Methane",
+    "impact_per_purchase": 228.307408259341,
+    "total_impact": 418354.535048144
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "7",
+    "indicator": "Methane",
+    "impact_per_purchase": 190.175405499372,
+    "total_impact": 348480.778402541
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "7",
+    "indicator": "Methane",
+    "impact_per_purchase": 132.560792202184,
+    "total_impact": 242906.741442059
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "7",
+    "indicator": "Methane",
+    "impact_per_purchase": 124.95135329912,
+    "total_impact": 228963.070938592
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "7",
+    "indicator": "Methane",
+    "impact_per_purchase": 90.3370905986728,
+    "total_impact": 165535.283428384
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "7",
+    "indicator": "Methane",
+    "impact_per_purchase": 38.8737470496873,
+    "total_impact": 71232.942008073
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "7",
+    "indicator": "Methane",
+    "impact_per_purchase": 38.1691060829347,
+    "total_impact": 69941.7454311893
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "7",
+    "indicator": "Methane",
+    "impact_per_purchase": 70.3016901065571,
+    "total_impact": 128822.061017917
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "711100/US",
     "indicator": "Methane",
     "impact_per_purchase": 0.282424148379655,
@@ -27301,6 +28701,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "8",
+    "indicator": "Methane",
+    "impact_per_purchase": 1.87713117319671,
+    "total_impact": 1703.05388857242
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "8",
+    "indicator": "Methane",
+    "impact_per_purchase": 175.377412093814,
+    "total_impact": 159113.645278981
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "8",
+    "indicator": "Methane",
+    "impact_per_purchase": 98.5152595968409,
+    "total_impact": 89379.366948769
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "8",
+    "indicator": "Methane",
+    "impact_per_purchase": 35.9371226246744,
+    "total_impact": 32604.46435708
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "8",
+    "indicator": "Methane",
+    "impact_per_purchase": 26.435340990969,
+    "total_impact": 23983.8381639246
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "8",
+    "indicator": "Methane",
+    "impact_per_purchase": 21.1851238175827,
+    "total_impact": 19220.504146218
+  },
+  {
+    "emissions_source": "112120/US",
+    "sector_code": "8",
+    "indicator": "Methane",
+    "impact_per_purchase": 15.6518969044227,
+    "total_impact": 14200.4055269176
+  },
+  {
+    "emissions_source": "221200/US",
+    "sector_code": "8",
+    "indicator": "Methane",
+    "impact_per_purchase": 12.2795082017615,
+    "total_impact": 11140.7580308589
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "8",
+    "indicator": "Methane",
+    "impact_per_purchase": 11.212501668408,
+    "total_impact": 10172.7012153806
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "8",
+    "indicator": "Methane",
+    "impact_per_purchase": 37.8754333238187,
+    "total_impact": 34363.0242385493
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "811100/US",
     "indicator": "Methane",
     "impact_per_purchase": 3.99633495270384,
@@ -28068,6 +29538,76 @@
     "indicator": "Methane",
     "impact_per_purchase": 55.1429463766226,
     "total_impact": 5823.98575699501
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "G",
+    "indicator": "Methane",
+    "impact_per_purchase": 87.3634521392602,
+    "total_impact": 223683.890817206
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "G",
+    "indicator": "Methane",
+    "impact_per_purchase": 282.422910319461,
+    "total_impact": 904610.921355699
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "G",
+    "indicator": "Methane",
+    "impact_per_purchase": 272.658663791151,
+    "total_impact": 873335.682253008
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "G",
+    "indicator": "Methane",
+    "impact_per_purchase": 116.952789390827,
+    "total_impact": 374604.066101732
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "G",
+    "indicator": "Methane",
+    "impact_per_purchase": 106.477566298227,
+    "total_impact": 341051.543034519
+  },
+  {
+    "emissions_source": "112120/US",
+    "sector_code": "G",
+    "indicator": "Methane",
+    "impact_per_purchase": 70.4893271965636,
+    "total_impact": 225779.89564975
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "G",
+    "indicator": "Methane",
+    "impact_per_purchase": 63.4225509181785,
+    "total_impact": 203144.752512908
+  },
+  {
+    "emissions_source": "221200/US",
+    "sector_code": "G",
+    "indicator": "Methane",
+    "impact_per_purchase": 28.9443402076206,
+    "total_impact": 92709.7813475236
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "G",
+    "indicator": "Methane",
+    "impact_per_purchase": 24.7440936688913,
+    "total_impact": 79256.2379114648
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "G",
+    "indicator": "Methane",
+    "impact_per_purchase": 85.7816474950847,
+    "total_impact": 274761.757423159
   },
   {
     "emissions_source": "Direct",

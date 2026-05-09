@@ -1,6 +1,76 @@
 [
   {
     "emissions_source": "Direct",
+    "sector_code": "11",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 1981.6246717884,
+    "total_impact": 748121.954921898
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "11",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 462.876920121555,
+    "total_impact": 174749.735053027
+  },
+  {
+    "emissions_source": "115000/US",
+    "sector_code": "11",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 196.483862518551,
+    "total_impact": 74178.4725587426
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "11",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 142.120377861254,
+    "total_impact": 53654.6483466235
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "11",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 94.0454384050293,
+    "total_impact": 35504.9360419803
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "11",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 65.2138646961418,
+    "total_impact": 24620.1637671673
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "11",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 54.2622931823146,
+    "total_impact": 20485.6214357999
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "11",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 31.8241193236417,
+    "total_impact": 12014.5468014302
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "11",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 28.063773260355,
+    "total_impact": 10594.9048843209
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "11",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 271.026641201608,
+    "total_impact": 102320.577422299
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "111/112",
     "indicator": "Carbon monoxide",
     "impact_per_purchase": 1983.1611904084,
@@ -981,6 +1051,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "211",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 1259.97372938662,
+    "total_impact": 1147329.92964024
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "211",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 721.999730994996,
+    "total_impact": 657451.723986363
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "211",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 72.8964721704842,
+    "total_impact": 66379.4032650975
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "211",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 56.1850626117407,
+    "total_impact": 51162.0222149732
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "211",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 35.7161224983811,
+    "total_impact": 32523.0402486557
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "211",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 21.4386812388416,
+    "total_impact": 19522.0265817083
+  },
+  {
+    "emissions_source": "324190/US",
+    "sector_code": "211",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 18.9766755471368,
+    "total_impact": 17280.1283967257
+  },
+  {
+    "emissions_source": "327310/US",
+    "sector_code": "211",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 18.5509541513602,
+    "total_impact": 16892.4672196149
+  },
+  {
+    "emissions_source": "325110/US",
+    "sector_code": "211",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 17.7035760390669,
+    "total_impact": 16120.8461553968
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "211",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 172.30240876726,
+    "total_impact": 156898.279636372
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "211/32411",
     "indicator": "Carbon monoxide",
     "impact_per_purchase": 1272.37284273688,
@@ -1118,6 +1258,76 @@
     "indicator": "Carbon monoxide",
     "impact_per_purchase": 94.2143979696467,
     "total_impact": 28402.109168213
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "212",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 289.738305997179,
+    "total_impact": 66344.5343305325
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "212",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 129.163310822527,
+    "total_impact": 29575.9294913314
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "212",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 63.1892381569576,
+    "total_impact": 14469.1278075785
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "212",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 54.3079009978611,
+    "total_impact": 12435.4713463633
+  },
+  {
+    "emissions_source": "327310/US",
+    "sector_code": "212",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 25.1575993059403,
+    "total_impact": 5760.60940607207
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "212",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 23.3532917196651,
+    "total_impact": 5347.45745438763
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "212",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 19.0090634394074,
+    "total_impact": 4352.71220906259
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "212",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 18.4972016213745,
+    "total_impact": 4235.50563590308
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "212",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 17.2736645040196,
+    "total_impact": 3955.33902138637
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "212",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 197.731465839877,
+    "total_impact": 45276.7264531738
   },
   {
     "emissions_source": "Direct",
@@ -1678,6 +1888,76 @@
     "indicator": "Carbon monoxide",
     "impact_per_purchase": 156.532338577199,
     "total_impact": 14479.2194317735
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "2211",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 717.210614469589,
+    "total_impact": 328730.830850863
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "2211",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 150.932848216172,
+    "total_impact": 69179.5123995522
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "2211",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 65.9727693170268,
+    "total_impact": 30238.3746609178
+  },
+  {
+    "emissions_source": "48A000/US",
+    "sector_code": "2211",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 36.4845810746204,
+    "total_impact": 16722.5727114698
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "2211",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 28.1027488837594,
+    "total_impact": 12880.79094672
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "2211",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 22.0893351946668,
+    "total_impact": 10124.5650370864
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "2211",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 21.3315058374956,
+    "total_impact": 9777.2167558422
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "2211",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 17.8358571771432,
+    "total_impact": 8174.99912925259
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "2211",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 10.9341462722337,
+    "total_impact": 5011.62547820693
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "2211",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 84.8836339521301,
+    "total_impact": 38906.0994800815
   },
   {
     "emissions_source": "Direct",
@@ -2868,6 +3148,76 @@
     "indicator": "Carbon monoxide",
     "impact_per_purchase": 276.701449622314,
     "total_impact": 73535.3127150696
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "31",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 81.4624629407968,
+    "total_impact": 74371.2197735474
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "31",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 385.013618256119,
+    "total_impact": 351498.486363521
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "31",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 207.214824070878,
+    "total_impact": 189176.937020823
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "31",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 128.151344915932,
+    "total_impact": 116995.871386125
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "31",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 115.25934200507,
+    "total_impact": 105226.107163532
+  },
+  {
+    "emissions_source": "115000/US",
+    "sector_code": "31",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 49.2270190120251,
+    "total_impact": 44941.8458216837
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "31",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 46.9754489334134,
+    "total_impact": 42886.273143091
+  },
+  {
+    "emissions_source": "112120/US",
+    "sector_code": "31",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 39.4733302316607,
+    "total_impact": 36037.2079590347
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "31",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 39.1746500885995,
+    "total_impact": 35764.5276869228
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "31",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 401.131510433007,
+    "total_impact": 366213.328735091
   },
   {
     "emissions_source": "Direct",
@@ -5461,6 +5811,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "321",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 716.486260872507,
+    "total_impact": 80896.8883889004
+  },
+  {
+    "emissions_source": "113000/US",
+    "sector_code": "321",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 335.363035306413,
+    "total_impact": 37865.1029594178
+  },
+  {
+    "emissions_source": "321100/US",
+    "sector_code": "321",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 156.571922833656,
+    "total_impact": 17678.1915551115
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "321",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 146.467159705329,
+    "total_impact": 16537.2849674638
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "321",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 139.388340372653,
+    "total_impact": 15738.0310406916
+  },
+  {
+    "emissions_source": "321200/US",
+    "sector_code": "321",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 79.0882772430935,
+    "total_impact": 8929.68349346117
+  },
+  {
+    "emissions_source": "115000/US",
+    "sector_code": "321",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 75.4957211681262,
+    "total_impact": 8524.05588592885
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "321",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 35.7484358298611,
+    "total_impact": 4036.27729006884
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "321",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 27.6978467245676,
+    "total_impact": 3127.30297488415
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "321",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 292.749079314284,
+    "total_impact": 33053.6548829302
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "321/322",
     "indicator": "Carbon monoxide",
     "impact_per_purchase": 1130.56979815551,
@@ -5808,6 +6228,76 @@
     "indicator": "Carbon monoxide",
     "impact_per_purchase": 332.382398713295,
     "total_impact": 9637.77584527064
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "322-323",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 1085.47948508188,
+    "total_impact": 224832.767140524
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "322-323",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 326.143665406497,
+    "total_impact": 67553.3566377488
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "322-323",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 183.488224100832,
+    "total_impact": 38005.4765928431
+  },
+  {
+    "emissions_source": "322120/US",
+    "sector_code": "322-323",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 160.531005673073,
+    "total_impact": 33250.4028987757
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "322-323",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 117.288106323099,
+    "total_impact": 24293.6046785861
+  },
+  {
+    "emissions_source": "322110/US",
+    "sector_code": "322-323",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 95.9293691680747,
+    "total_impact": 19869.6205838254
+  },
+  {
+    "emissions_source": "113000/US",
+    "sector_code": "322-323",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 58.6511520785871,
+    "total_impact": 12148.2727209845
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "322-323",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 46.3482228378052,
+    "total_impact": 9599.99644017533
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "322-323",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 43.147322552465,
+    "total_impact": 8937.00162692961
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "322-323",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 417.904166227642,
+    "total_impact": 86559.4895010171
   },
   {
     "emissions_source": "Direct",
@@ -6858,6 +7348,76 @@
     "indicator": "Carbon monoxide",
     "impact_per_purchase": 247.431096883549,
     "total_impact": 178090.127287682
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "325-326",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 298.514613988551,
+    "total_impact": 277610.974198514
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "325-326",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 137.93721284239,
+    "total_impact": 128278.088378187
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "325-326",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 114.457911963945,
+    "total_impact": 106442.937652148
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "325-326",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 98.7091706933049,
+    "total_impact": 91797.0101106903
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "325-326",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 83.0481603005632,
+    "total_impact": 77232.6700471622
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "325-326",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 59.8435090391754,
+    "total_impact": 55652.9364571085
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "325-326",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 54.8536092901728,
+    "total_impact": 51012.4570113461
+  },
+  {
+    "emissions_source": "325110/US",
+    "sector_code": "325-326",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 52.7011263833914,
+    "total_impact": 49010.7028301584
+  },
+  {
+    "emissions_source": "325130/US",
+    "sector_code": "325-326",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 38.3985684347477,
+    "total_impact": 35709.6888777695
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "325-326",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 301.400431298752,
+    "total_impact": 280294.710663338
   },
   {
     "emissions_source": "Direct",
@@ -8891,6 +9451,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "327",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 1127.74890274594,
+    "total_impact": 126308.873873622
+  },
+  {
+    "emissions_source": "327310/US",
+    "sector_code": "327",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 585.930901603726,
+    "total_impact": 65624.7788573507
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "327",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 140.959639731758,
+    "total_impact": 15787.6042377855
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "327",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 101.424658237184,
+    "total_impact": 11359.6513672172
+  },
+  {
+    "emissions_source": "2123A0/US",
+    "sector_code": "327",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 44.3678712246424,
+    "total_impact": 4969.24079190783
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "327",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 36.701005988817,
+    "total_impact": 4110.54510910115
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "327",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 33.8568860382873,
+    "total_impact": 3792.00116085326
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "327",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 32.3352283869371,
+    "total_impact": 3621.5741589779
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "327",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 24.4352162166041,
+    "total_impact": 2736.76581343836
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "327",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 290.94059948176,
+    "total_impact": 32585.6042911496
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "327100/US",
     "indicator": "Carbon monoxide",
     "impact_per_purchase": 1047.85271408663,
@@ -9798,6 +10428,76 @@
     "indicator": "Carbon monoxide",
     "impact_per_purchase": 218.095439908979,
     "total_impact": 916.487700635528
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "331-332",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 718.384707118567,
+    "total_impact": 345335.723589172
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "331-332",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 648.147590851063,
+    "total_impact": 311571.940578891
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "331-332",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 251.264162099076,
+    "total_impact": 120785.548983283
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "331-332",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 155.654328914936,
+    "total_impact": 74824.8115153079
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "331-332",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 111.82092491301,
+    "total_impact": 53753.5941879
+  },
+  {
+    "emissions_source": "331410/US",
+    "sector_code": "331-332",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 59.6605846230384,
+    "total_impact": 28679.5235984186
+  },
+  {
+    "emissions_source": "S00401/US",
+    "sector_code": "331-332",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 33.0686748009322,
+    "total_impact": 15896.4892032844
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "331-332",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 29.5789671620422,
+    "total_impact": 14218.9469328977
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "331-332",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 26.8214772208509,
+    "total_impact": 12893.3900624701
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "331-332",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 280.494170684092,
+    "total_impact": 134836.747547506
   },
   {
     "emissions_source": "Direct",
@@ -11898,6 +12598,76 @@
     "indicator": "Carbon monoxide",
     "impact_per_purchase": 196.899845766579,
     "total_impact": 3720.01214716724
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "333",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 29.7778594853254,
+    "total_impact": 9418.71521239177
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "333",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 175.244332455515,
+    "total_impact": 55429.6543980138
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "333",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 140.265315362712,
+    "total_impact": 44365.8168320917
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "333",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 101.674979128612,
+    "total_impact": 32159.7216586439
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "333",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 93.7334900550469,
+    "total_impact": 29647.8344632902
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "333",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 20.0896000077504,
+    "total_impact": 6354.32581368422
+  },
+  {
+    "emissions_source": "331510/US",
+    "sector_code": "333",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 18.2462113039895,
+    "total_impact": 5771.26331266662
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "333",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 15.8446787721139,
+    "total_impact": 5011.66032635469
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "333",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 14.1847762463538,
+    "total_impact": 4486.63436946317
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "333",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 211.354100402797,
+    "total_impact": 66851.1476335705
   },
   {
     "emissions_source": "Direct",
@@ -15331,6 +16101,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "335",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 61.146571223796,
+    "total_impact": 6875.54010103518
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "335",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 155.725611613036,
+    "total_impact": 17510.3471212623
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "335",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 98.2237113622047,
+    "total_impact": 11044.6269157366
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "335",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 97.9586928683545,
+    "total_impact": 11014.827284367
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "335",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 85.2108087536457,
+    "total_impact": 9581.40940532951
+  },
+  {
+    "emissions_source": "331410/US",
+    "sector_code": "335",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 58.5489133626175,
+    "total_impact": 6583.45012058584
+  },
+  {
+    "emissions_source": "331490/US",
+    "sector_code": "335",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 23.1343839697706,
+    "total_impact": 2601.31323005406
+  },
+  {
+    "emissions_source": "324190/US",
+    "sector_code": "335",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 22.7233601283384,
+    "total_impact": 2555.09623296512
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "335",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 21.3747342563027,
+    "total_impact": 2403.45189577837
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "335",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 221.534015506749,
+    "total_impact": 24910.0804325597
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "335110/US",
     "indicator": "Carbon monoxide",
     "impact_per_purchase": 25.5358512851735,
@@ -16308,6 +17148,76 @@
     "indicator": "Carbon monoxide",
     "impact_per_purchase": 118.38610403045,
     "total_impact": 1383.98152530199
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "336",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 14.8122802028376,
+    "total_impact": 13804.1420802335
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "336",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 158.368314817999,
+    "total_impact": 147589.614078189
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "336",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 124.437386907983,
+    "total_impact": 115968.057952463
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "336",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 105.964207531535,
+    "total_impact": 98752.181038571
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "336",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 99.5602477099528,
+    "total_impact": 92784.0809187601
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "336",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 20.3919632224941,
+    "total_impact": 19004.0664748078
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "336",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 15.7602900238516,
+    "total_impact": 14687.6294355582
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "336",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 14.6070104067552,
+    "total_impact": 13612.8431450865
+  },
+  {
+    "emissions_source": "331410/US",
+    "sector_code": "336",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 13.5396915962793,
+    "total_impact": 12618.1670855631
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "336",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 226.196846670438,
+    "total_impact": 210801.670423528
   },
   {
     "emissions_source": "Direct",
@@ -18201,6 +19111,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "337-339",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 35.3741564549043,
+    "total_impact": 7180.52544494195
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "337-339",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 94.4811521788988,
+    "total_impact": 19178.5299008581
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "337-339",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 91.8326602530425,
+    "total_impact": 18640.9181082327
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "337-339",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 83.2943275383201,
+    "total_impact": 16907.7399505117
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "337-339",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 50.5668550223931,
+    "total_impact": 10264.4592987502
+  },
+  {
+    "emissions_source": "321200/US",
+    "sector_code": "337-339",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 29.6443685933302,
+    "total_impact": 6017.44788614273
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "337-339",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 25.175248762903,
+    "total_impact": 5110.27067331541
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "337-339",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 22.6266112341101,
+    "total_impact": 4592.92811424234
+  },
+  {
+    "emissions_source": "324190/US",
+    "sector_code": "337-339",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 20.3367347349038,
+    "total_impact": 4128.11091105938
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "337-339",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 272.750780208696,
+    "total_impact": 55365.1058764622
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "337110/US",
     "indicator": "Carbon monoxide",
     "impact_per_purchase": 81.7934230227272,
@@ -19531,6 +20511,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "42-44",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 63.9471568366375,
+    "total_impact": 265945.624264396
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "42-44",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 158.345177630597,
+    "total_impact": 658531.343649965
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "42-44",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 33.910964312268,
+    "total_impact": 141030.078889556
+  },
+  {
+    "emissions_source": "48A000/US",
+    "sector_code": "42-44",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 19.473970627539,
+    "total_impact": 80989.0154878652
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "42-44",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 18.7749416667986,
+    "total_impact": 78081.8699236314
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "42-44",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 14.5013568965592,
+    "total_impact": 60308.7393297005
+  },
+  {
+    "emissions_source": "493000/US",
+    "sector_code": "42-44",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 12.4850402212743,
+    "total_impact": 51923.2125377394
+  },
+  {
+    "emissions_source": "492000/US",
+    "sector_code": "42-44",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 8.39055506416509,
+    "total_impact": 34894.9275440767
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "42-44",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 6.99027993288752,
+    "total_impact": 29071.4154076284
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "42-44",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 93.0166474929745,
+    "total_impact": 386840.816827802
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "423100/US",
     "indicator": "Carbon monoxide",
     "impact_per_purchase": 76.6014773006067,
@@ -20791,6 +21841,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "48",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 1636.81177686977,
+    "total_impact": 2179388.20078538
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "48",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 141.148932996538,
+    "total_impact": 187937.503549974
+  },
+  {
+    "emissions_source": "48A000/US",
+    "sector_code": "48",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 128.809663866868,
+    "total_impact": 171507.967834544
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "48",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 104.635512434666,
+    "total_impact": 139320.479242487
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "48",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 87.9410089549308,
+    "total_impact": 117092.019980491
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "48",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 46.3514821316503,
+    "total_impact": 61716.2429267335
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "48",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 10.2597027680445,
+    "total_impact": 13660.6270019649
+  },
+  {
+    "emissions_source": "492000/US",
+    "sector_code": "48",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 9.75246522832119,
+    "total_impact": 12985.2484858215
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "48",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 9.63868468902021,
+    "total_impact": 12833.7515523709
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "48",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 125.482689802587,
+    "total_impact": 167078.156097803
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "481000/US",
     "indicator": "Carbon monoxide",
     "impact_per_purchase": 351.049830422713,
@@ -21558,6 +22678,76 @@
     "indicator": "Carbon monoxide",
     "impact_per_purchase": 73.1805206628447,
     "total_impact": 18019.9199338014
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "5",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 296.161496420578,
+    "total_impact": 4343597.17742582
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "5",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 180.547970019006,
+    "total_impact": 2647973.02297135
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "5",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 15.2923539934571,
+    "total_impact": 224282.448748329
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "5",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 12.0125772676184,
+    "total_impact": 176180.21702301
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "5",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 7.87337474768575,
+    "total_impact": 115473.377681405
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "5",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 6.51042908859564,
+    "total_impact": 95483.9901703377
+  },
+  {
+    "emissions_source": "48A000/US",
+    "sector_code": "5",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 5.8265258495743,
+    "total_impact": 85453.6512689332
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "5",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 5.47456920819716,
+    "total_impact": 80291.7450368989
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "5",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 4.73509293733273,
+    "total_impact": 69446.3546613087
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "5",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 80.7321810460951,
+    "total_impact": 1184043.42886378
   },
   {
     "emissions_source": "Direct",
@@ -25271,6 +26461,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "562",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 919.747061735886,
+    "total_impact": 119283.930997246
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "562",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 153.623079414615,
+    "total_impact": 19923.7002941788
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "562",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 86.1866959611612,
+    "total_impact": 11177.733880996
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "562",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 47.0905410087809,
+    "total_impact": 6107.27131186792
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "562",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 39.6020945798043,
+    "total_impact": 5136.07894358273
+  },
+  {
+    "emissions_source": "48A000/US",
+    "sector_code": "562",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 31.9071083973046,
+    "total_impact": 4138.10000023533
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "562",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 31.2338243320606,
+    "total_impact": 4050.78037365394
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "562",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 26.7474513730892,
+    "total_impact": 3468.93322814001
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "562",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 15.5439661404472,
+    "total_impact": 2015.92966333723
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "562",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 145.914571806241,
+    "total_impact": 18923.9677286693
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "562000/US",
     "indicator": "Carbon monoxide",
     "impact_per_purchase": 1005.93375769705,
@@ -25338,6 +26598,76 @@
     "indicator": "Carbon monoxide",
     "impact_per_purchase": 135.386832347114,
     "total_impact": 17558.6030545714
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "6",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 32.5536184324207,
+    "total_impact": 113532.634393891
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "6",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 141.960527375434,
+    "total_impact": 495095.581658219
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "6",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 24.4295124430701,
+    "total_impact": 85199.3430585236
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "6",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 15.3613469502608,
+    "total_impact": 53573.5893913648
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "6",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 10.0021575648745,
+    "total_impact": 34883.1052474355
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "6",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 9.56572678415874,
+    "total_impact": 33361.0275598781
+  },
+  {
+    "emissions_source": "325130/US",
+    "sector_code": "6",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 7.05490795073281,
+    "total_impact": 24604.4010964818
+  },
+  {
+    "emissions_source": "48A000/US",
+    "sector_code": "6",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 5.89660601561056,
+    "total_impact": 20564.755845034
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "6",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 5.4520466123226,
+    "total_impact": 19014.3291142964
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "6",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 100.281322757539,
+    "total_impact": 349736.935597572
   },
   {
     "emissions_source": "Direct",
@@ -26461,6 +27791,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "7",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 106.976795851692,
+    "total_impact": 196026.173792123
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "7",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 171.220206044309,
+    "total_impact": 313746.93548773
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "7",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 36.955479674918,
+    "total_impact": 67717.8749246691
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "7",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 19.6685969396719,
+    "total_impact": 36041.0850899716
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "7",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 19.5076262833904,
+    "total_impact": 35746.1196108464
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "7",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 19.4064631180685,
+    "total_impact": 35560.7464365158
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "7",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 8.37685903989103,
+    "total_impact": 15349.9047425417
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "7",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 8.11025267218414,
+    "total_impact": 14861.3705164591
+  },
+  {
+    "emissions_source": "48A000/US",
+    "sector_code": "7",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 7.65324303882285,
+    "total_impact": 14023.9379769937
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "7",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 123.342177079234,
+    "total_impact": 226014.38795711
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "711100/US",
     "indicator": "Carbon monoxide",
     "impact_per_purchase": 15.2962138673863,
@@ -27301,6 +28701,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "8",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 38.8755178386605,
+    "total_impact": 36018.1361677205
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "8",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 156.509996454574,
+    "total_impact": 141995.914759915
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "8",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 28.5060008661836,
+    "total_impact": 25862.47371308
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "8",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 14.6171194455602,
+    "total_impact": 13261.5889965193
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "8",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 11.4138758492552,
+    "total_impact": 10355.4007979388
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "8",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 11.1032570140798,
+    "total_impact": 10073.5874528392
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "8",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 9.1819903288932,
+    "total_impact": 8330.49099484391
+  },
+  {
+    "emissions_source": "48A000/US",
+    "sector_code": "8",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 8.50117089999194,
+    "total_impact": 7712.80790888706
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "8",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 5.41128974819071,
+    "total_impact": 4909.46939640566
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "8",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 92.833447639177,
+    "total_impact": 84224.4624398006
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "811100/US",
     "indicator": "Carbon monoxide",
     "impact_per_purchase": 47.7806272855998,
@@ -28075,6 +29545,76 @@
     "indicator": "Carbon monoxide",
     "impact_per_purchase": 0.020416775681227,
     "total_impact": 0.392716931693123
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "G",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 360.309443057098,
+    "total_impact": 1154084.33716781
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "G",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 102.586932274981,
+    "total_impact": 328589.699820575
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "G",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 41.9042636764739,
+    "total_impact": 134220.890685635
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "G",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 31.5996160670898,
+    "total_impact": 101214.72713599
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "G",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 17.7560614807877,
+    "total_impact": 56873.3149786432
+  },
+  {
+    "emissions_source": "541300/US",
+    "sector_code": "G",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 9.01788111107064,
+    "total_impact": 28884.6033465708
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "G",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 8.4129136957454,
+    "total_impact": 26946.8705672134
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "G",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 8.14386906160915,
+    "total_impact": 26085.1107542559
+  },
+  {
+    "emissions_source": "324121/US",
+    "sector_code": "G",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 7.69007766410375,
+    "total_impact": 24631.6002945828
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "G",
+    "indicator": "Carbon monoxide",
+    "impact_per_purchase": 118.342839654477,
+    "total_impact": 379056.447986434
   },
   {
     "emissions_source": "Direct",

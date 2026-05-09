@@ -1,6 +1,76 @@
 [
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "11",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 1394.99477682621,
+    "total_impact": 526.651809700773
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "11",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 312.046800515001,
+    "total_impact": 106.897349721932
+  },
+  {
+    "purchased_commodity_code": "1111B0/US",
+    "sector_code": "11",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 161.257624728483,
+    "total_impact": 49.8939574508728
+  },
+  {
+    "purchased_commodity_code": "311119/US",
+    "sector_code": "11",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 122.650311151796,
+    "total_impact": 27.7747830984188
+  },
+  {
+    "purchased_commodity_code": "325310/US",
+    "sector_code": "11",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 102.905889346446,
+    "total_impact": 28.8638690806111
+  },
+  {
+    "purchased_commodity_code": "1111A0/US",
+    "sector_code": "11",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 63.581727839277,
+    "total_impact": 10.8271650854908
+  },
+  {
+    "purchased_commodity_code": "112300/US",
+    "sector_code": "11",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 41.819389585175,
+    "total_impact": 7.93693273971353
+  },
+  {
+    "purchased_commodity_code": "325320/US",
+    "sector_code": "11",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 29.0248605508971,
+    "total_impact": 10.9577437775216
+  },
+  {
+    "purchased_commodity_code": "111400/US",
+    "sector_code": "11",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 26.4406218070312,
+    "total_impact": 2.77961505756391
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "11",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 237.432102974043,
+    "total_impact": 72.3830113464917
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "111/112",
     "indicator": "GWP-AR6-100",
     "impact_per_purchase": 1621.54573881888,
@@ -981,6 +1051,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "211",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 493.07111174928,
+    "total_impact": 448.989713639774
+  },
+  {
+    "purchased_commodity_code": "211000/US",
+    "sector_code": "211",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 244.393623280131,
+    "total_impact": 217.3234455396
+  },
+  {
+    "purchased_commodity_code": "486000/US",
+    "sector_code": "211",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 58.0234996408995,
+    "total_impact": 52.8360998390675
+  },
+  {
+    "purchased_commodity_code": "325110/US",
+    "sector_code": "211",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 32.8646295173391,
+    "total_impact": 29.9264756021044
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "211",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 30.8017245077651,
+    "total_impact": 28.0479978177769
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "211",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 26.0448513734596,
+    "total_impact": 23.7163972524642
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "211",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 17.9852715471527,
+    "total_impact": 16.3773576047501
+  },
+  {
+    "purchased_commodity_code": "21311A/US",
+    "sector_code": "211",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 9.84974410288984,
+    "total_impact": 7.71370387333735
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "211",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 7.19125027435364,
+    "total_impact": 6.54834023826524
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "211",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 75.4501709021477,
+    "total_impact": 64.7800802925779
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "211/32411",
     "indicator": "GWP-AR6-100",
     "impact_per_purchase": 426.593945793742,
@@ -1118,6 +1258,76 @@
     "indicator": "GWP-AR6-100",
     "impact_per_purchase": 56.1529764328884,
     "total_impact": 16.928017385207
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "212",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 322.838972744288,
+    "total_impact": 73.923954365481
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "212",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 49.3012341517345,
+    "total_impact": 11.2890403305844
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "212",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 22.4689218078004,
+    "total_impact": 5.14495364745514
+  },
+  {
+    "purchased_commodity_code": "230301/US",
+    "sector_code": "212",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 19.2262754131095,
+    "total_impact": 4.40244959948697
+  },
+  {
+    "purchased_commodity_code": "2122A0/US",
+    "sector_code": "212",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 14.6266153085387,
+    "total_impact": 3.11948365588075
+  },
+  {
+    "purchased_commodity_code": "327310/US",
+    "sector_code": "212",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 10.9068899607298,
+    "total_impact": 2.49746933857625
+  },
+  {
+    "purchased_commodity_code": "21311A/US",
+    "sector_code": "212",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 9.26062401118415,
+    "total_impact": 1.34763444326067
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "212",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 8.71727829372676,
+    "total_impact": 1.99609011668823
+  },
+  {
+    "purchased_commodity_code": "230302/US",
+    "sector_code": "212",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 5.99851396545579,
+    "total_impact": 0.500622876768789
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "212",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 133.218733028719,
+    "total_impact": 27.3881875774332
   },
   {
     "purchased_commodity_code": "Direct",
@@ -1678,6 +1888,76 @@
     "indicator": "GWP-AR6-100",
     "impact_per_purchase": 103.020107756155,
     "total_impact": 9.52934556299792
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "2211",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 3170.02057262089,
+    "total_impact": 1452.96719767967
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "2211",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 84.1347162836166,
+    "total_impact": 38.5628358383528
+  },
+  {
+    "purchased_commodity_code": "486000/US",
+    "sector_code": "2211",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 39.6223710481015,
+    "total_impact": 18.1607671333144
+  },
+  {
+    "purchased_commodity_code": "211000/US",
+    "sector_code": "2211",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 38.3903217822773,
+    "total_impact": 17.5960619119575
+  },
+  {
+    "purchased_commodity_code": "212100/US",
+    "sector_code": "2211",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 37.5713904823741,
+    "total_impact": 17.2207077813915
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "2211",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 23.9194583185907,
+    "total_impact": 10.9633951979197
+  },
+  {
+    "purchased_commodity_code": "230301/US",
+    "sector_code": "2211",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 5.0644133891803,
+    "total_impact": 2.32125513427976
+  },
+  {
+    "purchased_commodity_code": "48A000/US",
+    "sector_code": "2211",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 3.9332299919946,
+    "total_impact": 1.80278141052351
+  },
+  {
+    "purchased_commodity_code": "482000/US",
+    "sector_code": "2211",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 3.91307898729819,
+    "total_impact": 1.79354527209682
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "2211",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 43.3147216431205,
+    "total_impact": 19.8531423636935
   },
   {
     "purchased_commodity_code": "Direct",
@@ -2868,6 +3148,76 @@
     "indicator": "GWP-AR6-100",
     "impact_per_purchase": 144.611169418212,
     "total_impact": 38.4314125559339
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "31",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 76.3391071916581,
+    "total_impact": 69.6938481026936
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "31",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 435.72068784892,
+    "total_impact": 170.218541234035
+  },
+  {
+    "purchased_commodity_code": "112120/US",
+    "sector_code": "31",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 199.530040592619,
+    "total_impact": 110.500381198697
+  },
+  {
+    "purchased_commodity_code": "1111B0/US",
+    "sector_code": "31",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 101.904314631547,
+    "total_impact": 88.5198889897884
+  },
+  {
+    "purchased_commodity_code": "31161A/US",
+    "sector_code": "31",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 61.9615792770166,
+    "total_impact": 54.5805905313887
+  },
+  {
+    "purchased_commodity_code": "112A00/US",
+    "sector_code": "31",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 41.7419780566283,
+    "total_impact": 35.0829891628329
+  },
+  {
+    "purchased_commodity_code": "1111A0/US",
+    "sector_code": "31",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 37.6694492825085,
+    "total_impact": 26.4329568590803
+  },
+  {
+    "purchased_commodity_code": "112300/US",
+    "sector_code": "31",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 36.4713964364812,
+    "total_impact": 28.6286562809565
+  },
+  {
+    "purchased_commodity_code": "311513/US",
+    "sector_code": "31",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 27.940289877207,
+    "total_impact": 20.1080698303506
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "31",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 405.468680425341,
+    "total_impact": 317.550500139595
   },
   {
     "purchased_commodity_code": "Direct",
@@ -5461,6 +5811,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "321",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 72.7764073238598,
+    "total_impact": 8.21702413868206
+  },
+  {
+    "purchased_commodity_code": "321100/US",
+    "sector_code": "321",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 57.4327153107966,
+    "total_impact": 6.484601609403
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "321",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 52.4862184170425,
+    "total_impact": 5.92610352090822
+  },
+  {
+    "purchased_commodity_code": "113000/US",
+    "sector_code": "321",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 38.4053064330323,
+    "total_impact": 4.33625870825648
+  },
+  {
+    "purchased_commodity_code": "321200/US",
+    "sector_code": "321",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 21.8867667178873,
+    "total_impact": 2.47118670805313
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "321",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 17.1865752746163,
+    "total_impact": 1.94049842642478
+  },
+  {
+    "purchased_commodity_code": "325211/US",
+    "sector_code": "321",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 11.4096269823743,
+    "total_impact": 1.28823589642615
+  },
+  {
+    "purchased_commodity_code": "423A00/US",
+    "sector_code": "321",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 10.3841238827125,
+    "total_impact": 1.17244859619965
+  },
+  {
+    "purchased_commodity_code": "325520/US",
+    "sector_code": "321",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 8.88388169570416,
+    "total_impact": 1.00305954942164
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "321",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 106.916043908964,
+    "total_impact": 12.0352114599254
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "321/322",
     "indicator": "GWP-AR6-100",
     "impact_per_purchase": 234.215397406214,
@@ -5808,6 +6228,76 @@
     "indicator": "GWP-AR6-100",
     "impact_per_purchase": 130.339588255258,
     "total_impact": 3.77933290159749
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "322-323",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 273.607789922698,
+    "total_impact": 56.6717265180586
+  },
+  {
+    "purchased_commodity_code": "322130/US",
+    "sector_code": "322-323",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 131.603616402367,
+    "total_impact": 27.2587420104142
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "322-323",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 84.5596454466709,
+    "total_impact": 17.5146369281798
+  },
+  {
+    "purchased_commodity_code": "322120/US",
+    "sector_code": "322-323",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 63.7912142627924,
+    "total_impact": 13.2129214960482
+  },
+  {
+    "purchased_commodity_code": "322110/US",
+    "sector_code": "322-323",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 29.4878942932683,
+    "total_impact": 6.10775695185311
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "322-323",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 21.0676818796521,
+    "total_impact": 4.36369851235021
+  },
+  {
+    "purchased_commodity_code": "322210/US",
+    "sector_code": "322-323",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 17.6200596674921,
+    "total_impact": 3.649600777047
+  },
+  {
+    "purchased_commodity_code": "325180/US",
+    "sector_code": "322-323",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 16.9242161654726,
+    "total_impact": 3.50547237830162
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "322-323",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 13.3317305541221,
+    "total_impact": 2.76136943392261
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "322-323",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 185.937594461469,
+    "total_impact": 37.6836754667923
   },
   {
     "purchased_commodity_code": "Direct",
@@ -6858,6 +7348,76 @@
     "indicator": "GWP-AR6-100",
     "impact_per_purchase": 151.143341794183,
     "total_impact": 102.71264047853
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "325-326",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 398.822123925487,
+    "total_impact": 370.894399023029
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "325-326",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 120.563492928658,
+    "total_impact": 112.120972161129
+  },
+  {
+    "purchased_commodity_code": "325211/US",
+    "sector_code": "325-326",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 105.548585632735,
+    "total_impact": 98.1574914918663
+  },
+  {
+    "purchased_commodity_code": "325110/US",
+    "sector_code": "325-326",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 79.4350269130426,
+    "total_impact": 73.8725481884138
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "325-326",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 49.4650608204067,
+    "total_impact": 46.0012444270769
+  },
+  {
+    "purchased_commodity_code": "1111B0/US",
+    "sector_code": "325-326",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 33.4433728659474,
+    "total_impact": 22.526252405108
+  },
+  {
+    "purchased_commodity_code": "325180/US",
+    "sector_code": "325-326",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 23.2011442975462,
+    "total_impact": 21.5764722031637
+  },
+  {
+    "purchased_commodity_code": "211000/US",
+    "sector_code": "325-326",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 17.3442238221857,
+    "total_impact": 15.6122502207546
+  },
+  {
+    "purchased_commodity_code": "325310/US",
+    "sector_code": "325-326",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 16.7816500789868,
+    "total_impact": 15.6065063778243
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "325-326",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 172.440725862529,
+    "total_impact": 148.049276046692
   },
   {
     "purchased_commodity_code": "Direct",
@@ -8891,6 +9451,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "327",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 781.384205296857,
+    "total_impact": 87.5157216232864
+  },
+  {
+    "purchased_commodity_code": "327310/US",
+    "sector_code": "327",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 377.346314038115,
+    "total_impact": 41.1882037893115
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "327",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 89.5510203434823,
+    "total_impact": 10.0297934285529
+  },
+  {
+    "purchased_commodity_code": "311221/US",
+    "sector_code": "327",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 58.5844549527879,
+    "total_impact": 0.864429757890727
+  },
+  {
+    "purchased_commodity_code": "327200/US",
+    "sector_code": "327",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 25.7744662694118,
+    "total_impact": 2.8133412988845
+  },
+  {
+    "purchased_commodity_code": "212100/US",
+    "sector_code": "327",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 22.3621133019891,
+    "total_impact": 2.5045764546799
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "327",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 22.1051296121697,
+    "total_impact": 2.4757940542839
+  },
+  {
+    "purchased_commodity_code": "2123A0/US",
+    "sector_code": "327",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 19.5965972733882,
+    "total_impact": 2.19483621516248
+  },
+  {
+    "purchased_commodity_code": "325211/US",
+    "sector_code": "327",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 16.4021633839844,
+    "total_impact": 1.83705679613411
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "327",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 180.516176682465,
+    "total_impact": 19.0924192944293
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "327100/US",
     "indicator": "GWP-AR6-100",
     "impact_per_purchase": 466.839300930652,
@@ -9798,6 +10428,76 @@
     "indicator": "GWP-AR6-100",
     "impact_per_purchase": 99.7251829225443,
     "total_impact": 0.419068384145418
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "331-332",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 257.315057024776,
+    "total_impact": 123.694283198841
+  },
+  {
+    "purchased_commodity_code": "331110/US",
+    "sector_code": "331-332",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 152.738473257296,
+    "total_impact": 73.4231264384474
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "331-332",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 54.0389573662189,
+    "total_impact": 25.9771432481059
+  },
+  {
+    "purchased_commodity_code": "331313/US",
+    "sector_code": "331-332",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 39.6655734122854,
+    "total_impact": 19.0676936189988
+  },
+  {
+    "purchased_commodity_code": "S00401/US",
+    "sector_code": "331-332",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 30.2158264147617,
+    "total_impact": 13.9542273854824
+  },
+  {
+    "purchased_commodity_code": "33131B/US",
+    "sector_code": "331-332",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 22.3608469596294,
+    "total_impact": 10.4889500231065
+  },
+  {
+    "purchased_commodity_code": "331410/US",
+    "sector_code": "331-332",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 20.1808336766879,
+    "total_impact": 9.70115695853963
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "331-332",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 17.0157416602954,
+    "total_impact": 8.17966112089674
+  },
+  {
+    "purchased_commodity_code": "2122A0/US",
+    "sector_code": "331-332",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 11.064726838646,
+    "total_impact": 4.93809198376004
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "331-332",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 151.159781347608,
+    "total_impact": 69.6269358097833
   },
   {
     "purchased_commodity_code": "Direct",
@@ -11898,6 +12598,76 @@
     "indicator": "GWP-AR6-100",
     "impact_per_purchase": 90.6569907658166,
     "total_impact": 1.71277486562515
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "333",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 24.6134467538734,
+    "total_impact": 7.78521523631834
+  },
+  {
+    "purchased_commodity_code": "331110/US",
+    "sector_code": "333",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 95.2185146464704,
+    "total_impact": 30.1175466572412
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "333",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 21.8145741914103,
+    "total_impact": 6.89993388845625
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "333",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 9.35485876684541,
+    "total_impact": 2.95893499734206
+  },
+  {
+    "purchased_commodity_code": "331510/US",
+    "sector_code": "333",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 8.02420249186245,
+    "total_impact": 2.53804938916653
+  },
+  {
+    "purchased_commodity_code": "326190/US",
+    "sector_code": "333",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 6.48571591247539,
+    "total_impact": 2.05142720745886
+  },
+  {
+    "purchased_commodity_code": "333618/US",
+    "sector_code": "333",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 6.21017923509865,
+    "total_impact": 1.75335334302464
+  },
+  {
+    "purchased_commodity_code": "33211A/US",
+    "sector_code": "333",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 6.0006099955427,
+    "total_impact": 1.89798856014148
+  },
+  {
+    "purchased_commodity_code": "33131B/US",
+    "sector_code": "333",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 5.46958562780967,
+    "total_impact": 1.73002594036411
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "333",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 154.916626358219,
+    "total_impact": 45.6714424872177
   },
   {
     "purchased_commodity_code": "Direct",
@@ -15331,6 +16101,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "335",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 31.6938339147165,
+    "total_impact": 3.56376852658876
+  },
+  {
+    "purchased_commodity_code": "331110/US",
+    "sector_code": "335",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 43.8014633698683,
+    "total_impact": 4.80210510422408
+  },
+  {
+    "purchased_commodity_code": "331410/US",
+    "sector_code": "335",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 18.82968193023,
+    "total_impact": 2.01207452977359
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "335",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 18.786888987207,
+    "total_impact": 2.11246527842872
+  },
+  {
+    "purchased_commodity_code": "325211/US",
+    "sector_code": "335",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 16.4895898354147,
+    "total_impact": 1.80781045707434
+  },
+  {
+    "purchased_commodity_code": "331420/US",
+    "sector_code": "335",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 15.669780417231,
+    "total_impact": 1.67436698328654
+  },
+  {
+    "purchased_commodity_code": "33131B/US",
+    "sector_code": "335",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 10.8189938022699,
+    "total_impact": 1.15604466256481
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "335",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 9.18572574305296,
+    "total_impact": 1.03287599679659
+  },
+  {
+    "purchased_commodity_code": "332119/US",
+    "sector_code": "335",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 8.79642848482702,
+    "total_impact": 0.96438271409417
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "335",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 147.040657396036,
+    "total_impact": 15.9540576798938
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "335110/US",
     "indicator": "GWP-AR6-100",
     "impact_per_purchase": 61.4743154707995,
@@ -16308,6 +17148,76 @@
     "indicator": "GWP-AR6-100",
     "impact_per_purchase": 72.5595180813054,
     "total_impact": 0.848250166958052
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "336",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 15.8002146754043,
+    "total_impact": 14.7248367766961
+  },
+  {
+    "purchased_commodity_code": "336991/US",
+    "sector_code": "336",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 71.2929725841174,
+    "total_impact": 0.40626793022515
+  },
+  {
+    "purchased_commodity_code": "336500/US",
+    "sector_code": "336",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 46.9302616263015,
+    "total_impact": 0.807734692454668
+  },
+  {
+    "purchased_commodity_code": "336370/US",
+    "sector_code": "336",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 44.0846761169337,
+    "total_impact": 29.7437658351104
+  },
+  {
+    "purchased_commodity_code": "331110/US",
+    "sector_code": "336",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 37.4757891252403,
+    "total_impact": 34.9251506567222
+  },
+  {
+    "purchased_commodity_code": "336360/US",
+    "sector_code": "336",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 20.4688519815996,
+    "total_impact": 15.8849570403459
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "336",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 15.6127381213924,
+    "total_impact": 14.550120058348
+  },
+  {
+    "purchased_commodity_code": "336413/US",
+    "sector_code": "336",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 15.2404105201107,
+    "total_impact": 4.07768967139596
+  },
+  {
+    "purchased_commodity_code": "336310/US",
+    "sector_code": "336",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 12.1181032565543,
+    "total_impact": 9.42729919138192
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "336",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 202.948747784111,
+    "total_impact": 162.711775253135
   },
   {
     "purchased_commodity_code": "Direct",
@@ -18201,6 +19111,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "337-339",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 20.6866463290055,
+    "total_impact": 4.19913872788181
+  },
+  {
+    "purchased_commodity_code": "331110/US",
+    "sector_code": "337-339",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 22.4296642476315,
+    "total_impact": 4.55295026064978
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "337-339",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 21.2220113073653,
+    "total_impact": 4.30781133621225
+  },
+  {
+    "purchased_commodity_code": "325211/US",
+    "sector_code": "337-339",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 21.138590169581,
+    "total_impact": 4.17703299483779
+  },
+  {
+    "purchased_commodity_code": "3252A0/US",
+    "sector_code": "337-339",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 13.2121436141189,
+    "total_impact": 2.68190517911997
+  },
+  {
+    "purchased_commodity_code": "322210/US",
+    "sector_code": "337-339",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 9.2922288918517,
+    "total_impact": 1.88620995339425
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "337-339",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 9.28493372183072,
+    "total_impact": 1.88472912221097
+  },
+  {
+    "purchased_commodity_code": "321200/US",
+    "sector_code": "337-339",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 8.35255724301296,
+    "total_impact": 1.650484110598
+  },
+  {
+    "purchased_commodity_code": "326190/US",
+    "sector_code": "337-339",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 7.35100920116871,
+    "total_impact": 1.49216586075444
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "337-339",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 162.866774527684,
+    "total_impact": 30.046924905176
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "337110/US",
     "indicator": "GWP-AR6-100",
     "impact_per_purchase": 30.0490358250055,
@@ -19531,6 +20511,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "42-44",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 9.32974921751551,
+    "total_impact": 38.8008803303177
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "42-44",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 44.1911498171969,
+    "total_impact": 183.783666177986
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "42-44",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 15.7848582344812,
+    "total_impact": 65.6466086180858
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "42-44",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 6.05074728158074,
+    "total_impact": 2.64114302657115
+  },
+  {
+    "purchased_commodity_code": "492000/US",
+    "sector_code": "42-44",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 5.31591618189087,
+    "total_impact": 22.1080141395777
+  },
+  {
+    "purchased_commodity_code": "493000/US",
+    "sector_code": "42-44",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 5.26889056787929,
+    "total_impact": 21.9124424067065
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "42-44",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 4.06601467767794,
+    "total_impact": 16.9098809894817
+  },
+  {
+    "purchased_commodity_code": "326190/US",
+    "sector_code": "42-44",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 2.89468490841973,
+    "total_impact": 12.0385146596127
+  },
+  {
+    "purchased_commodity_code": "541800/US",
+    "sector_code": "42-44",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 2.78760911009394,
+    "total_impact": 11.5932041651664
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "42-44",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 62.883776343717,
+    "total_impact": 227.889905105797
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "423100/US",
     "indicator": "GWP-AR6-100",
     "impact_per_purchase": 5.62861827558907,
@@ -20791,6 +21841,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "48",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 487.396562218096,
+    "total_impact": 648.960578004193
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "48",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 69.13026925967,
+    "total_impact": 92.0458266922821
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "48",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 21.8694196368139,
+    "total_impact": 29.1187757737452
+  },
+  {
+    "purchased_commodity_code": "48A000/US",
+    "sector_code": "48",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 14.6680271528225,
+    "total_impact": 19.5302390643811
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "48",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 12.9340991100331,
+    "total_impact": 17.2215421385238
+  },
+  {
+    "purchased_commodity_code": "492000/US",
+    "sector_code": "48",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 6.07987677114165,
+    "total_impact": 8.09525681846891
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "48",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 5.52243265687474,
+    "total_impact": 7.35302906669046
+  },
+  {
+    "purchased_commodity_code": "481000/US",
+    "sector_code": "48",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 3.7768446436094,
+    "total_impact": 5.02880708020266
+  },
+  {
+    "purchased_commodity_code": "493000/US",
+    "sector_code": "48",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 3.33766365676161,
+    "total_impact": 4.44404475488766
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "48",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 60.6672610360099,
+    "total_impact": 75.174834099531
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "481000/US",
     "indicator": "GWP-AR6-100",
     "impact_per_purchase": 615.860198808304,
@@ -21558,6 +22678,76 @@
     "indicator": "GWP-AR6-100",
     "impact_per_purchase": 30.1611760570873,
     "total_impact": 7.42686677732188
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "5",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 11.2863240313674,
+    "total_impact": 165.528759810637
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "5",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 21.5721747240042,
+    "total_impact": 278.766712376845
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "5",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 10.3702481917298,
+    "total_impact": 152.093304900227
+  },
+  {
+    "purchased_commodity_code": "562000/US",
+    "sector_code": "5",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 4.14420944254511,
+    "total_impact": 60.7802724353388
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "5",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 3.53367015009857,
+    "total_impact": 43.3094671785555
+  },
+  {
+    "purchased_commodity_code": "230302/US",
+    "sector_code": "5",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 3.28951093141154,
+    "total_impact": 23.9802760883757
+  },
+  {
+    "purchased_commodity_code": "481000/US",
+    "sector_code": "5",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 3.28752447212429,
+    "total_impact": 48.2158625966654
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "5",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 2.45082768024896,
+    "total_impact": 35.6668622120189
+  },
+  {
+    "purchased_commodity_code": "311111/US",
+    "sector_code": "5",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 1.9854669040029,
+    "total_impact": 5.07635549555794
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "5",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 56.7078682541406,
+    "total_impact": 668.365801618907
   },
   {
     "purchased_commodity_code": "Direct",
@@ -25271,6 +26461,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "562",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 1001.92363237428,
+    "total_impact": 129.941583290388
+  },
+  {
+    "purchased_commodity_code": "562000/US",
+    "sector_code": "562",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 105.825697658063,
+    "total_impact": 13.7247573189907
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "562",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 19.2993472361263,
+    "total_impact": 2.50297293656051
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "562",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 17.2842704241227,
+    "total_impact": 2.24163338637643
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "562",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 13.4454999198841,
+    "total_impact": 1.74377516535897
+  },
+  {
+    "purchased_commodity_code": "332320/US",
+    "sector_code": "562",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 6.52217717938704,
+    "total_impact": 0.84587487689221
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "562",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 5.67948751214984,
+    "total_impact": 0.736584681467068
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "562",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 4.25701511891499,
+    "total_impact": 0.552101244814528
+  },
+  {
+    "purchased_commodity_code": "481000/US",
+    "sector_code": "562",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 3.95686951556777,
+    "total_impact": 0.513174730201669
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "562",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 90.49114475286,
+    "total_impact": 11.735986898604
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "562000/US",
     "indicator": "GWP-AR6-100",
     "impact_per_purchase": 1107.74933003235,
@@ -25338,6 +26598,76 @@
     "indicator": "GWP-AR6-100",
     "impact_per_purchase": 86.7594417206903,
     "total_impact": 11.2520144832408
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "6",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 11.0194849743213,
+    "total_impact": 38.4310936554023
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "6",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 22.6646320330467,
+    "total_impact": 79.0442201570223
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "6",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 16.9990322802426,
+    "total_impact": 59.2851120660881
+  },
+  {
+    "purchased_commodity_code": "31161A/US",
+    "sector_code": "6",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 11.5856149916968,
+    "total_impact": 30.8975440106456
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "6",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 8.88100241372129,
+    "total_impact": 30.9730115618765
+  },
+  {
+    "purchased_commodity_code": "339116/US",
+    "sector_code": "6",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 4.51584404665043,
+    "total_impact": 0.969425323280852
+  },
+  {
+    "purchased_commodity_code": "325120/US",
+    "sector_code": "6",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 2.94541569545188,
+    "total_impact": 9.51994992721171
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "6",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 2.9343778720782,
+    "total_impact": 10.233813203155
+  },
+  {
+    "purchased_commodity_code": "326190/US",
+    "sector_code": "6",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 2.47551926130827,
+    "total_impact": 8.63351715609108
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "6",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 76.297673826247,
+    "total_impact": 227.374801519495
   },
   {
     "purchased_commodity_code": "Direct",
@@ -26461,6 +27791,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "7",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 14.5059171464496,
+    "total_impact": 26.5808992775053
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "7",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 64.8942062124343,
+    "total_impact": 118.91329183888
+  },
+  {
+    "purchased_commodity_code": "31161A/US",
+    "sector_code": "7",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 17.4517694145313,
+    "total_impact": 31.9789311036732
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "7",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 15.4235586892392,
+    "total_impact": 28.2624018792015
+  },
+  {
+    "purchased_commodity_code": "311513/US",
+    "sector_code": "7",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 6.43170401291503,
+    "total_impact": 11.7855682494274
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "7",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 4.78610464649767,
+    "total_impact": 0.487443663247935
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "7",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 4.45888035684832,
+    "total_impact": 8.17053127074014
+  },
+  {
+    "purchased_commodity_code": "550000/US",
+    "sector_code": "7",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 3.64940889420327,
+    "total_impact": 6.68724143809076
+  },
+  {
+    "purchased_commodity_code": "562000/US",
+    "sector_code": "7",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 3.56893937841927,
+    "total_impact": 6.53978767337051
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "7",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 92.6284807029827,
+    "total_impact": 163.106200494416
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "711100/US",
     "indicator": "GWP-AR6-100",
     "impact_per_purchase": 2.57399771592232,
@@ -27301,6 +28701,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "8",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 9.92548773976846,
+    "total_impact": 9.00503956918691
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "8",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 28.2544543041403,
+    "total_impact": 25.6342545258639
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "8",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 19.3308722724021,
+    "total_impact": 17.5382081247667
+  },
+  {
+    "purchased_commodity_code": "325620/US",
+    "sector_code": "8",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 5.74011978511973,
+    "total_impact": 1.11217902315588
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "8",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 3.08529124790188,
+    "total_impact": 2.79917425704972
+  },
+  {
+    "purchased_commodity_code": "562000/US",
+    "sector_code": "8",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 2.8139008670063,
+    "total_impact": 2.5529514836469
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "8",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 2.7208593826675,
+    "total_impact": 2.46853827695986
+  },
+  {
+    "purchased_commodity_code": "336310/US",
+    "sector_code": "8",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 2.54334244548659,
+    "total_impact": 2.25395722379297
+  },
+  {
+    "purchased_commodity_code": "3363A0/US",
+    "sector_code": "8",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 2.36311796048762,
+    "total_impact": 2.09423894417683
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "8",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 69.4364687954224,
+    "total_impact": 50.8668347050629
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "811100/US",
     "indicator": "GWP-AR6-100",
     "impact_per_purchase": 8.1244793013748,
@@ -28068,6 +29538,76 @@
     "indicator": "GWP-AR6-100",
     "impact_per_purchase": 55.4248010514002,
     "total_impact": 5.85375416291652
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "G",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 76.7061940553907,
+    "total_impact": 245.692747800264
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "G",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 24.1257068202962,
+    "total_impact": 77.2755221960538
+  },
+  {
+    "purchased_commodity_code": "562000/US",
+    "sector_code": "G",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 8.86222622218366,
+    "total_impact": 28.3860350388853
+  },
+  {
+    "purchased_commodity_code": "31161A/US",
+    "sector_code": "G",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 8.5408260147589,
+    "total_impact": 21.9713243402461
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "G",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 7.75980598178653,
+    "total_impact": 24.8549426488991
+  },
+  {
+    "purchased_commodity_code": "324121/US",
+    "sector_code": "G",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 7.75969302523272,
+    "total_impact": 7.94377754734453
+  },
+  {
+    "purchased_commodity_code": "211000/US",
+    "sector_code": "G",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 7.59635897709565,
+    "total_impact": 0.837187101205313
+  },
+  {
+    "purchased_commodity_code": "336411/US",
+    "sector_code": "G",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 6.7605160424607,
+    "total_impact": 4.34467057350389
+  },
+  {
+    "purchased_commodity_code": "230301/US",
+    "sector_code": "G",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 4.87337055152784,
+    "total_impact": 15.6095842923603
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "G",
+    "indicator": "GWP-AR6-100",
+    "impact_per_purchase": 101.051736706097,
+    "total_impact": 245.156488533613
   },
   {
     "purchased_commodity_code": "Direct",

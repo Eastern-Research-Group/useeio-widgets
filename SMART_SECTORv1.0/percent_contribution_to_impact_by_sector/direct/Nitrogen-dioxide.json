@@ -1,5 +1,75 @@
 [
   {
+    "sector": "11",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 221854.783983636,
+    "contribution": 0.495489230316631
+  },
+  {
+    "sector": "11",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 81141.9061797511,
+    "contribution": 0.181221878192154
+  },
+  {
+    "sector": "11",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 71485.5412401317,
+    "contribution": 0.159655406891984
+  },
+  {
+    "sector": "11",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 26966.4737596262,
+    "contribution": 0.0602267712581595
+  },
+  {
+    "sector": "11",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 26370.2098278415,
+    "contribution": 0.0588950787369498
+  },
+  {
+    "sector": "11",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 10340.0385091986,
+    "contribution": 0.0230933840162088
+  },
+  {
+    "sector": "11",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 6514.37826457161,
+    "contribution": 0.0145491758813822
+  },
+  {
+    "sector": "11",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 1731.22569043316,
+    "contribution": 0.00386650974774733
+  },
+  {
+    "sector": "11",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 700.739214510186,
+    "contribution": 0.00156502703171793
+  },
+  {
+    "sector": "11",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 643.65610141193,
+    "contribution": 0.0014375379270646
+  },
+  {
     "sector": "111/112",
     "indicator": "Nitrogen dioxide",
     "sector_purchased_detail": "Direct",
@@ -980,6 +1050,76 @@
     "contribution": 0.000678660918431257
   },
   {
+    "sector": "211",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 942480.636073351,
+    "contribution": 0.489354894972773
+  },
+  {
+    "sector": "211",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 674654.42421949,
+    "contribution": 0.350294141089547
+  },
+  {
+    "sector": "211",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 184073.387816287,
+    "contribution": 0.0955746037790331
+  },
+  {
+    "sector": "211",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 69769.4938032079,
+    "contribution": 0.0362257239094248
+  },
+  {
+    "sector": "211",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 26940.6821914304,
+    "contribution": 0.0139881438405024
+  },
+  {
+    "sector": "211",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 11956.8854196111,
+    "contribution": 0.00620825530495026
+  },
+  {
+    "sector": "211",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 9395.87426635299,
+    "contribution": 0.00487852682464099
+  },
+  {
+    "sector": "211",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 3979.78247543146,
+    "contribution": 0.00206638307540535
+  },
+  {
+    "sector": "211",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 2222.80829037556,
+    "contribution": 0.00115412675427815
+  },
+  {
+    "sector": "211",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 491.507256573597,
+    "contribution": 0.000255200449444788
+  },
+  {
     "sector": "211/32411",
     "indicator": "Nitrogen dioxide",
     "sector_purchased_detail": "Direct",
@@ -1118,6 +1258,76 @@
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 210.847344291328,
     "contribution": 0.000264480090931115
+  },
+  {
+    "sector": "212",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 72362.6712380347,
+    "contribution": 0.471603318996216
+  },
+  {
+    "sector": "212",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 23062.0552198027,
+    "contribution": 0.150300446327586
+  },
+  {
+    "sector": "212",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 17809.9022734071,
+    "contribution": 0.116071019483348
+  },
+  {
+    "sector": "212",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 17703.6692067456,
+    "contribution": 0.115378675406388
+  },
+  {
+    "sector": "212",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 8369.01111837789,
+    "contribution": 0.0545426716927047
+  },
+  {
+    "sector": "212",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 7865.93561962722,
+    "contribution": 0.0512640188892992
+  },
+  {
+    "sector": "212",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 3101.24657660144,
+    "contribution": 0.0202115006747036
+  },
+  {
+    "sector": "212",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 2459.81865902221,
+    "contribution": 0.0160311749673768
+  },
+  {
+    "sector": "212",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 643.217526818495,
+    "contribution": 0.00419198898125666
+  },
+  {
+    "sector": "212",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 62.1714001011838,
+    "contribution": 0.000405184581120727
   },
   {
     "sector": "2121/2122",
@@ -1397,7 +1607,7 @@
     "indicator": "Nitrogen dioxide",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 2.56677363511143,
-    "contribution": 8.45654490496431e-5
+    "contribution": 8.45654490496431e-05
   },
   {
     "sector": "212310/US",
@@ -1678,6 +1888,76 @@
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 15.7442710224198,
     "contribution": 0.000291554618040921
+  },
+  {
+    "sector": "2211",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 695554.025449928,
+    "contribution": 0.789725570823437
+  },
+  {
+    "sector": "2211",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 76781.7227650122,
+    "contribution": 0.0871772538447788
+  },
+  {
+    "sector": "2211",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 71799.0998659233,
+    "contribution": 0.0815200301508529
+  },
+  {
+    "sector": "2211",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 21422.3349518132,
+    "contribution": 0.0243227198451595
+  },
+  {
+    "sector": "2211",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 8141.52215592698,
+    "contribution": 0.00924380852774455
+  },
+  {
+    "sector": "2211",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 3647.59292799805,
+    "contribution": 0.00414144308248584
+  },
+  {
+    "sector": "2211",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 1406.35044209969,
+    "contribution": 0.00159675721083858
+  },
+  {
+    "sector": "2211",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 1082.59082694045,
+    "contribution": 0.00122916355522596
+  },
+  {
+    "sector": "2211",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 616.359803348456,
+    "contribution": 0.000699809187671822
+  },
+  {
+    "sector": "2211",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 302.48950625459,
+    "contribution": 0.000343443771805476
   },
   {
     "sector": "221100/US",
@@ -2083,7 +2363,7 @@
     "indicator": "Nitrogen dioxide",
     "sector_purchased_detail": "Construction",
     "total_impacts_sum": 3.1216891191951,
-    "contribution": 2.78225586490811e-5
+    "contribution": 2.78225586490811e-05
   },
   {
     "sector": "230302/US",
@@ -2854,6 +3134,76 @@
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 64.5287028847035,
     "contribution": 0.000440627995284751
+  },
+  {
+    "sector": "31",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 253586.602465598,
+    "contribution": 0.354323864325354
+  },
+  {
+    "sector": "31",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 204937.636979742,
+    "contribution": 0.286349100363928
+  },
+  {
+    "sector": "31",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 101777.834995095,
+    "contribution": 0.142209073537403
+  },
+  {
+    "sector": "31",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 56981.0829043347,
+    "contribution": 0.0796168144996786
+  },
+  {
+    "sector": "31",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 43469.6917427095,
+    "contribution": 0.0607380240499823
+  },
+  {
+    "sector": "31",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 32386.8643748778,
+    "contribution": 0.0452525442082242
+  },
+  {
+    "sector": "31",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 17994.0059703699,
+    "contribution": 0.0251421237089207
+  },
+  {
+    "sector": "31",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 2655.72088645167,
+    "contribution": 0.00371070584134968
+  },
+  {
+    "sector": "31",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 1249.17752807074,
+    "contribution": 0.00174541322242946
+  },
+  {
+    "sector": "31",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 652.951357201556,
+    "contribution": 0.00091233624273004
   },
   {
     "sector": "311111/US",
@@ -5446,6 +5796,76 @@
     "contribution": 0.000547821220563072
   },
   {
+    "sector": "321",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 37668.9401747937,
+    "contribution": 0.371723319159494
+  },
+  {
+    "sector": "321",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 23975.8978332599,
+    "contribution": 0.236598117203522
+  },
+  {
+    "sector": "321",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 20801.4891927426,
+    "contribution": 0.205272528781173
+  },
+  {
+    "sector": "321",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 5784.47158900242,
+    "contribution": 0.0570821204066315
+  },
+  {
+    "sector": "321",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 5266.73759873671,
+    "contribution": 0.0519730359351751
+  },
+  {
+    "sector": "321",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 5110.24852441504,
+    "contribution": 0.0504287759201834
+  },
+  {
+    "sector": "321",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 2231.15170937195,
+    "contribution": 0.0220173733348382
+  },
+  {
+    "sector": "321",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 310.302760289476,
+    "contribution": 0.00306211885611641
+  },
+  {
+    "sector": "321",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 157.147291327175,
+    "contribution": 0.0015507554090452
+  },
+  {
+    "sector": "321",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 29.575406586947,
+    "contribution": 0.000291854993821889
+  },
+  {
     "sector": "321/322",
     "indicator": "Nitrogen dioxide",
     "sector_purchased_detail": "Direct",
@@ -5794,6 +6214,76 @@
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 6.7123246503217,
     "contribution": 0.00034024927189966
+  },
+  {
+    "sector": "322-323",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 144015.405317285,
+    "contribution": 0.436953715884935
+  },
+  {
+    "sector": "322-323",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 103076.27975955,
+    "contribution": 0.312741288762147
+  },
+  {
+    "sector": "322-323",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 45498.9152322574,
+    "contribution": 0.138047176520236
+  },
+  {
+    "sector": "322-323",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 15112.7518963369,
+    "contribution": 0.0458532410737794
+  },
+  {
+    "sector": "322-323",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 12470.3272414135,
+    "contribution": 0.0378359232780131
+  },
+  {
+    "sector": "322-323",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 4425.56224998587,
+    "contribution": 0.0134274931612426
+  },
+  {
+    "sector": "322-323",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 3441.37245916566,
+    "contribution": 0.0104413863257449
+  },
+  {
+    "sector": "322-323",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 1086.54776488068,
+    "contribution": 0.00329666873002303
+  },
+  {
+    "sector": "322-323",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 397.03592768343,
+    "contribution": 0.00120463726473487
+  },
+  {
+    "sector": "322-323",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 65.4133202569484,
+    "contribution": 0.000198468999144041
   },
   {
     "sector": "322110/US",
@@ -6844,6 +7334,76 @@
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 324.527575251846,
     "contribution": 0.000544910754373926
+  },
+  {
+    "sector": "325-326",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 176289.733172297,
+    "contribution": 0.237288867228748
+  },
+  {
+    "sector": "325-326",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 173432.012779187,
+    "contribution": 0.233442328790375
+  },
+  {
+    "sector": "325-326",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 152225.058897752,
+    "contribution": 0.204897421646068
+  },
+  {
+    "sector": "325-326",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 140325.494200099,
+    "contribution": 0.18888041273233
+  },
+  {
+    "sector": "325-326",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 41476.817337054,
+    "contribution": 0.0558284752325545
+  },
+  {
+    "sector": "325-326",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 34637.2870377592,
+    "contribution": 0.0466223554665772
+  },
+  {
+    "sector": "325-326",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 14826.0935678701,
+    "contribution": 0.0199561646888927
+  },
+  {
+    "sector": "325-326",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 7940.14570618816,
+    "contribution": 0.010687566123951
+  },
+  {
+    "sector": "325-326",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 1376.9411899928,
+    "contribution": 0.00185338538628714
+  },
+  {
+    "sector": "325-326",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 403.429493978515,
+    "contribution": 0.000543022704216516
   },
   {
     "sector": "325110/US",
@@ -8876,6 +9436,76 @@
     "contribution": 0.000603291124805393
   },
   {
+    "sector": "327",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 165118.855379991,
+    "contribution": 0.540201138707277
+  },
+  {
+    "sector": "327",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 86823.207722977,
+    "contribution": 0.284049907990424
+  },
+  {
+    "sector": "327",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 33083.0264112766,
+    "contribution": 0.108234086883212
+  },
+  {
+    "sector": "327",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 7662.80570101234,
+    "contribution": 0.0250695558411743
+  },
+  {
+    "sector": "327",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 5502.16147167883,
+    "contribution": 0.0180008145375769
+  },
+  {
+    "sector": "327",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 4749.89890957794,
+    "contribution": 0.0155397201233832
+  },
+  {
+    "sector": "327",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 1815.39539310149,
+    "contribution": 0.00593922878341494
+  },
+  {
+    "sector": "327",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 622.725259207906,
+    "contribution": 0.0020373015144257
+  },
+  {
+    "sector": "327",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 252.932410504673,
+    "contribution": 0.000827491057009579
+  },
+  {
+    "sector": "327",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 30.796821362734,
+    "contribution": 0.000100754562102721
+  },
+  {
     "sector": "327100/US",
     "indicator": "Nitrogen dioxide",
     "sector_purchased_detail": "Direct",
@@ -9083,7 +9713,7 @@
     "indicator": "Nitrogen dioxide",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 10.5835276861021,
-    "contribution": 5.61219188293531e-5
+    "contribution": 5.61219188293531e-05
   },
   {
     "sector": "327310/US",
@@ -9153,7 +9783,7 @@
     "indicator": "Nitrogen dioxide",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 1.14770200587744,
-    "contribution": 1.25119580289645e-5
+    "contribution": 1.25119580289645e-05
   },
   {
     "sector": "327320/US",
@@ -9223,7 +9853,7 @@
     "indicator": "Nitrogen dioxide",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 6.41182072848968,
-    "contribution": 8.23967280052755e-5
+    "contribution": 8.23967280052755e-05
   },
   {
     "sector": "327330/US",
@@ -9433,7 +10063,7 @@
     "indicator": "Nitrogen dioxide",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 2.08213767007184,
-    "contribution": 5.86399140049053e-5
+    "contribution": 5.86399140049053e-05
   },
   {
     "sector": "327910/US",
@@ -9784,6 +10414,76 @@
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 1.0859059308158,
     "contribution": 0.000117686551529612
+  },
+  {
+    "sector": "331-332",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 109820.430244258,
+    "contribution": 0.321858043983945
+  },
+  {
+    "sector": "331-332",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 86440.5065793989,
+    "contribution": 0.253336945655259
+  },
+  {
+    "sector": "331-332",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 64000.7123307869,
+    "contribution": 0.18757114717681
+  },
+  {
+    "sector": "331-332",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 27280.8283191295,
+    "contribution": 0.0799537392225429
+  },
+  {
+    "sector": "331-332",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 21278.8567874214,
+    "contribution": 0.0623633617950796
+  },
+  {
+    "sector": "331-332",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 18432.6170950833,
+    "contribution": 0.0540216976980815
+  },
+  {
+    "sector": "331-332",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 11589.781482167,
+    "contribution": 0.0339669439443549
+  },
+  {
+    "sector": "331-332",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 1399.74345194133,
+    "contribution": 0.00410232129412668
+  },
+  {
+    "sector": "331-332",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 842.952900035118,
+    "contribution": 0.00247049816662035
+  },
+  {
+    "sector": "331-332",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 121.231444588798,
+    "contribution": 0.000355301063180261
   },
   {
     "sector": "3311/3312",
@@ -11884,6 +12584,76 @@
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 3.805464180732,
     "contribution": 0.000641048275199099
+  },
+  {
+    "sector": "333",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 42727.9321620908,
+    "contribution": 0.374287228007099
+  },
+  {
+    "sector": "333",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 36471.6222778841,
+    "contribution": 0.319483338241736
+  },
+  {
+    "sector": "333",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 10604.0571404912,
+    "contribution": 0.0928891933662239
+  },
+  {
+    "sector": "333",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 8036.53726579533,
+    "contribution": 0.0703982875787055
+  },
+  {
+    "sector": "333",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 5999.97229116622,
+    "contribution": 0.0525584291900851
+  },
+  {
+    "sector": "333",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 5427.38422091787,
+    "contribution": 0.0475426844358063
+  },
+  {
+    "sector": "333",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 3560.88800927179,
+    "contribution": 0.0311925907665745
+  },
+  {
+    "sector": "333",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 891.515957227529,
+    "contribution": 0.00780948245023752
+  },
+  {
+    "sector": "333",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 387.904680557572,
+    "contribution": 0.00339795913984545
+  },
+  {
+    "sector": "333",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 50.3216851916685,
+    "contribution": 0.000440806823685845
   },
   {
     "sector": "333111/US",
@@ -15316,6 +16086,76 @@
     "contribution": 0.000535857404059771
   },
   {
+    "sector": "335",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 14731.7273681654,
+    "contribution": 0.352955503790468
+  },
+  {
+    "sector": "335",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 14227.8494250547,
+    "contribution": 0.340883158924526
+  },
+  {
+    "sector": "335",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 3530.96206163008,
+    "contribution": 0.0845978521175197
+  },
+  {
+    "sector": "335",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 2951.94478949662,
+    "contribution": 0.0707252540248563
+  },
+  {
+    "sector": "335",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 2163.99108704824,
+    "contribution": 0.0518467756861776
+  },
+  {
+    "sector": "335",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 2046.03717900479,
+    "contribution": 0.0490207336344153
+  },
+  {
+    "sector": "335",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 1636.81635555563,
+    "contribution": 0.0392162661546432
+  },
+  {
+    "sector": "335",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 322.175294542636,
+    "contribution": 0.007718955187826
+  },
+  {
+    "sector": "335",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 109.70828463334,
+    "contribution": 0.00262848625317527
+  },
+  {
+    "sector": "335",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 16.9880411377314,
+    "contribution": 0.000407014226392643
+  },
+  {
     "sector": "335110/US",
     "indicator": "Nitrogen dioxide",
     "sector_purchased_detail": "Manufacturing",
@@ -16294,6 +17134,76 @@
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 1.60095798741337,
     "contribution": 0.00057716339215004
+  },
+  {
+    "sector": "336",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 124624.488550799,
+    "contribution": 0.378815740089326
+  },
+  {
+    "sector": "336",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 109816.930725436,
+    "contribution": 0.333805838409818
+  },
+  {
+    "sector": "336",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 31077.2182571891,
+    "contribution": 0.094464094263592
+  },
+  {
+    "sector": "336",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 23638.9475109162,
+    "contribution": 0.0718543000690455
+  },
+  {
+    "sector": "336",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 16223.8731039015,
+    "contribution": 0.0493150147971488
+  },
+  {
+    "sector": "336",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 10054.8735274921,
+    "contribution": 0.0305633700175138
+  },
+  {
+    "sector": "336",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 8524.87719185128,
+    "contribution": 0.0259127054413982
+  },
+  {
+    "sector": "336",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 3762.02015049409,
+    "contribution": 0.0114352521251028
+  },
+  {
+    "sector": "336",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 1061.00129844495,
+    "contribution": 0.00322508037368857
+  },
+  {
+    "sector": "336",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 200.221389237265,
+    "contribution": 0.000608604413367048
   },
   {
     "sector": "3361/3362/3363",
@@ -18186,6 +19096,76 @@
     "contribution": 0.00139846752763079
   },
   {
+    "sector": "337-339",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 25101.1007430867,
+    "contribution": 0.357628846765431
+  },
+  {
+    "sector": "337-339",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 23844.7388561495,
+    "contribution": 0.339728785037296
+  },
+  {
+    "sector": "337-339",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 6144.17103123221,
+    "contribution": 0.0875393004760691
+  },
+  {
+    "sector": "337-339",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 5805.92604367743,
+    "contribution": 0.0827201427004197
+  },
+  {
+    "sector": "337-339",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 3107.85829233909,
+    "contribution": 0.0442793241768781
+  },
+  {
+    "sector": "337-339",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 2844.87427032375,
+    "contribution": 0.0405324497479954
+  },
+  {
+    "sector": "337-339",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 1851.88673585381,
+    "contribution": 0.0263848236960686
+  },
+  {
+    "sector": "337-339",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 1242.25302360962,
+    "contribution": 0.0176990451841734
+  },
+  {
+    "sector": "337-339",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 208.872471079183,
+    "contribution": 0.00297591813672425
+  },
+  {
+    "sector": "337-339",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 35.8914035544367,
+    "contribution": 0.000511364078943873
+  },
+  {
     "sector": "337110/US",
     "indicator": "Nitrogen dioxide",
     "sector_purchased_detail": "Manufacturing",
@@ -19516,6 +20496,76 @@
     "contribution": 0.000460658418878363
   },
   {
+    "sector": "42-44",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 213000.802604882,
+    "contribution": 0.2619144187862
+  },
+  {
+    "sector": "42-44",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 182210.341982072,
+    "contribution": 0.224053220614368
+  },
+  {
+    "sector": "42-44",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 127605.878347366,
+    "contribution": 0.156909359271526
+  },
+  {
+    "sector": "42-44",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 94552.6596377558,
+    "contribution": 0.116265782057408
+  },
+  {
+    "sector": "42-44",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 91172.08166975,
+    "contribution": 0.1121088863893
+  },
+  {
+    "sector": "42-44",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 81610.1236999391,
+    "contribution": 0.100351115369222
+  },
+  {
+    "sector": "42-44",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 13339.1765446673,
+    "contribution": 0.0164023920523151
+  },
+  {
+    "sector": "42-44",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 5075.99131557807,
+    "contribution": 0.00624164462727221
+  },
+  {
+    "sector": "42-44",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 4018.51102991669,
+    "contribution": 0.00494132401340745
+  },
+  {
+    "sector": "42-44",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 660.239153095521,
+    "contribution": 0.000811856818979625
+  },
+  {
     "sector": "423100/US",
     "indicator": "Nitrogen dioxide",
     "sector_purchased_detail": "Transport",
@@ -20776,6 +21826,76 @@
     "contribution": 0.000519980200977869
   },
   {
+    "sector": "48",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 2267935.30949846,
+    "contribution": 0.811886287458985
+  },
+  {
+    "sector": "48",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 236071.728336044,
+    "contribution": 0.0845100820513094
+  },
+  {
+    "sector": "48",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 183453.381296694,
+    "contribution": 0.0656735154829916
+  },
+  {
+    "sector": "48",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 40008.3700567022,
+    "contribution": 0.0143223869290189
+  },
+  {
+    "sector": "48",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 29295.8750277356,
+    "contribution": 0.0104874769198732
+  },
+  {
+    "sector": "48",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 28904.2073625803,
+    "contribution": 0.0103472658630371
+  },
+  {
+    "sector": "48",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 2646.35487724438,
+    "contribution": 0.000947354727265148
+  },
+  {
+    "sector": "48",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 2584.17898809306,
+    "contribution": 0.000925096706235576
+  },
+  {
+    "sector": "48",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 2335.19178221147,
+    "contribution": 0.000835963079997935
+  },
+  {
+    "sector": "48",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 180.372987083611,
+    "contribution": 6.45707812863431e-05
+  },
+  {
     "sector": "481000/US",
     "indicator": "Nitrogen dioxide",
     "sector_purchased_detail": "Direct",
@@ -20913,7 +22033,7 @@
     "indicator": "Nitrogen dioxide",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 7.74516311526856,
-    "contribution": 1.80563965341326e-5
+    "contribution": 1.80563965341326e-05
   },
   {
     "sector": "483000/US",
@@ -20983,7 +22103,7 @@
     "indicator": "Nitrogen dioxide",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 7.80393479809492,
-    "contribution": 2.86190396989048e-5
+    "contribution": 2.86190396989048e-05
   },
   {
     "sector": "484000/US",
@@ -21053,7 +22173,7 @@
     "indicator": "Nitrogen dioxide",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 45.3352059239277,
-    "contribution": 3.6297443589376e-5
+    "contribution": 3.6297443589376e-05
   },
   {
     "sector": "485000/US",
@@ -21193,7 +22313,7 @@
     "indicator": "Nitrogen dioxide",
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 3.11229470834519,
-    "contribution": 1.85042557960321e-5
+    "contribution": 1.85042557960321e-05
   },
   {
     "sector": "48A000/US",
@@ -21544,6 +22664,76 @@
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 39.4507273044478,
     "contribution": 0.00103136557396912
+  },
+  {
+    "sector": "5",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 422221.058212603,
+    "contribution": 0.2797572300421
+  },
+  {
+    "sector": "5",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 281433.506454526,
+    "contribution": 0.186473546677316
+  },
+  {
+    "sector": "5",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 244327.471417001,
+    "contribution": 0.16188765410273
+  },
+  {
+    "sector": "5",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 226409.201201478,
+    "contribution": 0.150015281692266
+  },
+  {
+    "sector": "5",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 155897.503008753,
+    "contribution": 0.103295306484329
+  },
+  {
+    "sector": "5",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 108628.612063991,
+    "contribution": 0.0719756606716608
+  },
+  {
+    "sector": "5",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 28305.7541559416,
+    "contribution": 0.0187549607554901
+  },
+  {
+    "sector": "5",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 26403.5740468756,
+    "contribution": 0.0174946052426547
+  },
+  {
+    "sector": "5",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 13915.6740667853,
+    "contribution": 0.00922031328227186
+  },
+  {
+    "sector": "5",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 1698.56168031842,
+    "contribution": 0.00112544104918202
   },
   {
     "sector": "511110/US",
@@ -22313,7 +23503,7 @@
     "indicator": "Nitrogen dioxide",
     "sector_purchased_detail": "Direct",
     "total_impacts_sum": 0.308648727627282,
-    "contribution": 1.06035258737497e-5
+    "contribution": 1.06035258737497e-05
   },
   {
     "sector": "517A00/US",
@@ -25256,6 +26446,76 @@
     "contribution": 0.00148771159890066
   },
   {
+    "sector": "562",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 66595.5006463585,
+    "contribution": 0.656182889552904
+  },
+  {
+    "sector": "562",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 10625.3540233143,
+    "contribution": 0.104694392832411
+  },
+  {
+    "sector": "562",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 7878.88902576459,
+    "contribution": 0.077632754723882
+  },
+  {
+    "sector": "562",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 6697.67656346893,
+    "contribution": 0.0659939593223574
+  },
+  {
+    "sector": "562",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 5672.13667742515,
+    "contribution": 0.055889046539293
+  },
+  {
+    "sector": "562",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 2888.94379884545,
+    "contribution": 0.0284655190107954
+  },
+  {
+    "sector": "562",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 457.954709229708,
+    "contribution": 0.00451234755306463
+  },
+  {
+    "sector": "562",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 376.086142343179,
+    "contribution": 0.00370567514634408
+  },
+  {
+    "sector": "562",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 193.004051274243,
+    "contribution": 0.00190171940793833
+  },
+  {
+    "sector": "562",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 103.691138225914,
+    "contribution": 0.00102169591101092
+  },
+  {
     "sector": "562000/US",
     "indicator": "Nitrogen dioxide",
     "sector_purchased_detail": "Direct",
@@ -25324,6 +26584,76 @@
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 103.691138225914,
     "contribution": 0.00102169591101092
+  },
+  {
+    "sector": "6",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 141257.944146465,
+    "contribution": 0.302491764180946
+  },
+  {
+    "sector": "6",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 102356.116302233,
+    "contribution": 0.219186838531851
+  },
+  {
+    "sector": "6",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 73808.3623378023,
+    "contribution": 0.158054273476604
+  },
+  {
+    "sector": "6",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 67535.634814019,
+    "contribution": 0.144621765829967
+  },
+  {
+    "sector": "6",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 36637.1406684195,
+    "contribution": 0.0784552924247907
+  },
+  {
+    "sector": "6",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 21008.707977241,
+    "contribution": 0.0449883450987273
+  },
+  {
+    "sector": "6",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 15378.9428118026,
+    "contribution": 0.0329326861613994
+  },
+  {
+    "sector": "6",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 4198.98179525644,
+    "contribution": 0.00899175914448971
+  },
+  {
+    "sector": "6",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 3851.12759026047,
+    "contribution": 0.00824685921845164
+  },
+  {
+    "sector": "6",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 948.165915202242,
+    "contribution": 0.00203041593277318
   },
   {
     "sector": "611100/US",
@@ -26446,6 +27776,76 @@
     "contribution": 0.000775902641797304
   },
   {
+    "sector": "7",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 106729.320372098,
+    "contribution": 0.301764214116502
+  },
+  {
+    "sector": "7",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 75242.1677878584,
+    "contribution": 0.212738107501909
+  },
+  {
+    "sector": "7",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 60100.9887442891,
+    "contribution": 0.169928259383786
+  },
+  {
+    "sector": "7",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 45717.0336528843,
+    "contribution": 0.129259370189027
+  },
+  {
+    "sector": "7",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 26566.9850340357,
+    "contribution": 0.0751149293585917
+  },
+  {
+    "sector": "7",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 22219.2329433664,
+    "contribution": 0.0628221874181379
+  },
+  {
+    "sector": "7",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 10292.5500907404,
+    "contribution": 0.0291009375732799
+  },
+  {
+    "sector": "7",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 3775.81032311321,
+    "contribution": 0.0106756459315476
+  },
+  {
+    "sector": "7",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 2445.9848636486,
+    "contribution": 0.00691572566513541
+  },
+  {
+    "sector": "7",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 594.410229845063,
+    "contribution": 0.00168062286208371
+  },
+  {
     "sector": "711100/US",
     "indicator": "Nitrogen dioxide",
     "sector_purchased_detail": "Transport",
@@ -27286,6 +28686,76 @@
     "contribution": 0.00198300991907127
   },
   {
+    "sector": "8",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 37798.8746302759,
+    "contribution": 0.304997027929463
+  },
+  {
+    "sector": "8",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 22471.6079268579,
+    "contribution": 0.181322160977727
+  },
+  {
+    "sector": "8",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 21910.7550439083,
+    "contribution": 0.176796670097947
+  },
+  {
+    "sector": "8",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 16855.7463367759,
+    "contribution": 0.136008084540481
+  },
+  {
+    "sector": "8",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 11581.4934085265,
+    "contribution": 0.0934504294938972
+  },
+  {
+    "sector": "8",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 8025.10424731499,
+    "contribution": 0.0647541221318449
+  },
+  {
+    "sector": "8",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 1941.66456791948,
+    "contribution": 0.0156671839636476
+  },
+  {
+    "sector": "8",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 1699.65236883963,
+    "contribution": 0.0137144009201306
+  },
+  {
+    "sector": "8",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 1452.62469533398,
+    "contribution": 0.0117211482909848
+  },
+  {
+    "sector": "8",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 194.42092098734,
+    "contribution": 0.00156877165387754
+  },
+  {
     "sector": "811100/US",
     "indicator": "Nitrogen dioxide",
     "sector_purchased_detail": "Transport",
@@ -28061,6 +29531,76 @@
     "sector_purchased_detail": "Direct",
     "total_impacts_sum": 1.48090743332627,
     "contribution": 1
+  },
+  {
+    "sector": "G",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 192783.699035752,
+    "contribution": 0.311245206011831
+  },
+  {
+    "sector": "G",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 177769.68045803,
+    "contribution": 0.287005390463826
+  },
+  {
+    "sector": "G",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 95135.9535406198,
+    "contribution": 0.153594985504406
+  },
+  {
+    "sector": "G",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 48988.6978341644,
+    "contribution": 0.0790912168710806
+  },
+  {
+    "sector": "G",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 35604.6616256972,
+    "contribution": 0.057482973395051
+  },
+  {
+    "sector": "G",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 35553.7981323522,
+    "contribution": 0.0574008553604669
+  },
+  {
+    "sector": "G",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 16838.3229914273,
+    "contribution": 0.0271851164521363
+  },
+  {
+    "sector": "G",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 9791.56680882956,
+    "contribution": 0.0158082775869322
+  },
+  {
+    "sector": "G",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 5443.40737305113,
+    "contribution": 0.00878826611225785
+  },
+  {
+    "sector": "G",
+    "indicator": "Nitrogen dioxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 1485.13077891645,
+    "contribution": 0.0023977122420119
   },
   {
     "sector": "GSLGE/US",

@@ -1,6 +1,76 @@
 [
   {
     "emissions_source": "Direct",
+    "sector_code": "11",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 2643.39095573706,
+    "total_impact": 997958.310462557
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "11",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 521.635582126073,
+    "total_impact": 196932.868778215
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "11",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 315.380610053234,
+    "total_impact": 119065.513210708
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "11",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 102.45324568002,
+    "total_impact": 38679.1320967237
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "11",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 60.6257470846105,
+    "total_impact": 22888.013594727
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "11",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 40.2959780062887,
+    "total_impact": 15212.924158008
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "11",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 24.5787730332882,
+    "total_impact": 9279.21416856918
+  },
+  {
+    "emissions_source": "111400/US",
+    "sector_code": "11",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 16.8709940221921,
+    "total_impact": 6369.29949906565
+  },
+  {
+    "emissions_source": "115000/US",
+    "sector_code": "11",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 16.7320152805657,
+    "total_impact": 6316.83091136668
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "11",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 41.7582278445575,
+    "total_impact": 15764.9667436519
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "111/112",
     "indicator": "Nitrous oxide",
     "impact_per_purchase": 3074.05154712175,
@@ -981,6 +1051,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "211",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 8.31640889125522,
+    "total_impact": 7572.90775634536
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "211",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 13.0060547634361,
+    "total_impact": 11843.2912913944
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "211",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 3.51104007839289,
+    "total_impact": 3197.14710882714
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "211",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 3.30254635923466,
+    "total_impact": 3007.29308365734
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "211",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 3.15894887920121,
+    "total_impact": 2876.53346318217
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "211",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 2.53716818993048,
+    "total_impact": 2310.34102770977
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "211",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 2.11396283424929,
+    "total_impact": 1924.97095241982
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "211",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.78366792787827,
+    "total_impact": 1624.20497385321
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "211",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.3568401458428,
+    "total_impact": 1235.53632330154
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "211",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 4.73038456328693,
+    "total_impact": 4307.480117708
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "211/32411",
     "indicator": "Nitrous oxide",
     "impact_per_purchase": 2.46148930647366,
@@ -1118,6 +1258,76 @@
     "indicator": "Nitrous oxide",
     "impact_per_purchase": 2.06200671835982,
     "total_impact": 621.617727041173
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "212",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 281.851119787074,
+    "total_impact": 64538.5194355165
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "212",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 6.27261851618669,
+    "total_impact": 1436.3097521994
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "212",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 4.07983010281342,
+    "total_impact": 934.203116109473
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "212",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 2.68774220114752,
+    "total_impact": 615.441593481909
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "212",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 2.57983617809562,
+    "total_impact": 590.733176601373
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "212",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.58902566151866,
+    "total_impact": 363.856505579722
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "212",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.15303355761548,
+    "total_impact": 264.022646864722
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "212",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.03452871936426,
+    "total_impact": 236.88730387777
+  },
+  {
+    "emissions_source": "2122A0/US",
+    "sector_code": "212",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.760689055508543,
+    "total_impact": 174.18325472828
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "212",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 5.17789399689537,
+    "total_impact": 1185.63876065537
   },
   {
     "emissions_source": "Direct",
@@ -1678,6 +1888,76 @@
     "indicator": "Nitrous oxide",
     "impact_per_purchase": 3.45652016531476,
     "total_impact": 319.727631995098
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "2211",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 169.396450549878,
+    "total_impact": 77642.2361981227
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "2211",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 5.21723312719005,
+    "total_impact": 2391.2994956331
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "2211",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 3.86238961293483,
+    "total_impact": 1770.31198495131
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "2211",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 3.14500833301501,
+    "total_impact": 1441.50293022294
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "2211",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.908284819581909,
+    "total_impact": 416.308985626491
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "2211",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.764848132679018,
+    "total_impact": 350.565311022688
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "2211",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.575695386653953,
+    "total_impact": 263.867849908664
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "2211",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.566692724790105,
+    "total_impact": 259.741513160901
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "2211",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.543672135427048,
+    "total_impact": 249.190111222168
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "2211",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 3.24214661732639,
+    "total_impact": 1486.02590334253
   },
   {
     "emissions_source": "Direct",
@@ -2868,6 +3148,76 @@
     "indicator": "Nitrous oxide",
     "impact_per_purchase": 4.92311152928355,
     "total_impact": 1308.35073806507
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "31",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.25497217491383,
+    "total_impact": 1145.72783661149
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "31",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 433.888133443237,
+    "total_impact": 396118.513540313
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "31",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 274.125568640506,
+    "total_impact": 250263.154033633
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "31",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 143.016051787519,
+    "total_impact": 130566.617245105
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "31",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 79.1853664902372,
+    "total_impact": 72292.3427735577
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "31",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 59.1395691522699,
+    "total_impact": 53991.516288095
+  },
+  {
+    "emissions_source": "112120/US",
+    "sector_code": "31",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 40.6693034138681,
+    "total_impact": 37129.0726187352
+  },
+  {
+    "emissions_source": "111300/US",
+    "sector_code": "31",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 38.7311816133879,
+    "total_impact": 35359.6627928112
+  },
+  {
+    "emissions_source": "111200/US",
+    "sector_code": "31",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 21.393413075881,
+    "total_impact": 19531.1333359627
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "31",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 52.2002681894449,
+    "total_impact": 47656.2760025648
   },
   {
     "emissions_source": "Direct",
@@ -5461,6 +5811,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "321",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.03195930729588,
+    "total_impact": 116.516256435316
+  },
+  {
+    "emissions_source": "113000/US",
+    "sector_code": "321",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 76.9155012669622,
+    "total_impact": 8684.36013524196
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "321",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 12.2009475613201,
+    "total_impact": 1377.58216313177
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "321",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 6.51421737745799,
+    "total_impact": 735.505961389295
+  },
+  {
+    "emissions_source": "115000/US",
+    "sector_code": "321",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 6.42900411265658,
+    "total_impact": 725.88471901753
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "321",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 5.20696786859509,
+    "total_impact": 587.907293570953
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "321",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 4.3064137552899,
+    "total_impact": 486.22770867075
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "321",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 2.226837739812,
+    "total_impact": 251.427353091726
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "321",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.53301452575574,
+    "total_impact": 173.089299489991
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "321",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 8.2958418437948,
+    "total_impact": 936.665262655826
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "321/322",
     "indicator": "Nitrous oxide",
     "impact_per_purchase": 1.10844012453162,
@@ -5808,6 +6228,76 @@
     "indicator": "Nitrous oxide",
     "impact_per_purchase": 7.19322190239947,
     "total_impact": 208.575004479755
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "322-323",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.904624214409058,
+    "total_impact": 187.372647888016
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "322-323",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 23.0444992375858,
+    "total_impact": 4773.15195925909
+  },
+  {
+    "emissions_source": "113000/US",
+    "sector_code": "322-323",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 13.451639826338,
+    "total_impact": 2786.20595441758
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "322-323",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 9.61327578123461,
+    "total_impact": 1991.17479868072
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "322-323",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 8.14465576960712,
+    "total_impact": 1686.98305150344
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "322-323",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 4.76133488634811,
+    "total_impact": 986.203896520081
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "322-323",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 3.01165453852894,
+    "total_impact": 623.796794757208
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "322-323",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 2.83590305285292,
+    "total_impact": 587.393810272783
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "322-323",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.84827974643825,
+    "total_impact": 382.829759154916
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "322-323",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 9.4085941465167,
+    "total_impact": 1948.77958168314
   },
   {
     "emissions_source": "Direct",
@@ -6858,6 +7348,76 @@
     "indicator": "Nitrous oxide",
     "impact_per_purchase": 9.53753894551019,
     "total_impact": 6864.70514907241
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "325-326",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 48.9227527368073,
+    "total_impact": 45496.9117467026
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "325-326",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 111.239540096884,
+    "total_impact": 103449.933934809
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "325-326",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 33.8943236046725,
+    "total_impact": 31520.8561147821
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "325-326",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 17.8075338157769,
+    "total_impact": 16560.5520768923
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "325-326",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 14.7321786814977,
+    "total_impact": 13700.5502718672
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "325-326",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 9.91982887424828,
+    "total_impact": 9225.18774162338
+  },
+  {
+    "emissions_source": "111400/US",
+    "sector_code": "325-326",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 7.62865996071098,
+    "total_impact": 7094.45911282386
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "325-326",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 4.97853492169508,
+    "total_impact": 4629.91044634787
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "325-326",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 3.0183792358078,
+    "total_impact": 2807.015673227
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "325-326",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 10.5979664664875,
+    "total_impact": 9855.83839924704
   },
   {
     "emissions_source": "Direct",
@@ -8891,6 +9451,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "327",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 3.75433951779933,
+    "total_impact": 420.489344283847
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "327",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 17.3570648448128,
+    "total_impact": 1944.00660374096
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "327",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 7.63718886190446,
+    "total_impact": 855.371902697946
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "327",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 3.70826865629796,
+    "total_impact": 415.32936707575
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "327",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 2.90980480116641,
+    "total_impact": 325.90070957505
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "327",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 2.28709497297805,
+    "total_impact": 256.156658432996
+  },
+  {
+    "emissions_source": "2123A0/US",
+    "sector_code": "327",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.86956956140463,
+    "total_impact": 209.393443305009
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "327",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.75441166672411,
+    "total_impact": 196.495657317955
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "327",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.60925156626704,
+    "total_impact": 180.237597766337
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "327",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 8.56101408743218,
+    "total_impact": 958.841144484242
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "327100/US",
     "indicator": "Nitrous oxide",
     "impact_per_purchase": 1.61370718215253,
@@ -9798,6 +10428,76 @@
     "indicator": "Nitrous oxide",
     "impact_per_purchase": 6.51329884938646,
     "total_impact": 27.370394761658
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "331-332",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.313387376875692,
+    "total_impact": 150.64888698865
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "331-332",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 6.33490769385315,
+    "total_impact": 3045.2623930458
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "331-332",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 6.28343391567286,
+    "total_impact": 3020.5183606943
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "331-332",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 2.27573355331161,
+    "total_impact": 1093.97107920243
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "331-332",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.47594559294231,
+    "total_impact": 709.503883178932
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "331-332",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.32951871769175,
+    "total_impact": 639.114813901027
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "331-332",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.29729337735639,
+    "total_impact": 623.623725195568
+  },
+  {
+    "emissions_source": "2122A0/US",
+    "sector_code": "331-332",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.19146562395627,
+    "total_impact": 572.751116920219
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "331-332",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.960934120824955,
+    "total_impact": 461.931993607766
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "331-332",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 6.64174306074883,
+    "total_impact": 3192.76165409588
   },
   {
     "emissions_source": "Direct",
@@ -11901,6 +12601,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "333",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.0490778696686742,
+    "total_impact": 15.5232943411504
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "333",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 5.48715294574264,
+    "total_impact": 1735.58247019923
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "333",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 3.74232100020447,
+    "total_impact": 1183.69339984458
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "333",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 2.68277407596904,
+    "total_impact": 848.559481355338
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "333",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.1272942753887,
+    "total_impact": 356.562356192129
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "333",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.931100336586138,
+    "total_impact": 294.506356603258
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "333",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.861571380982277,
+    "total_impact": 272.514398713521
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "333",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.857036221293062,
+    "total_impact": 271.079931015247
+  },
+  {
+    "emissions_source": "113000/US",
+    "sector_code": "333",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.784492740931784,
+    "total_impact": 248.134481145846
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "333",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 4.48882072067812,
+    "total_impact": 1419.81071636078
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "333111/US",
     "indicator": "Nitrous oxide",
     "impact_per_purchase": 0.0285592181501306,
@@ -13933,7 +14703,7 @@
     "emissions_source": "Direct",
     "sector_code": "334111/US",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 1.74715727602228e-5,
+    "impact_per_purchase": 1.74715727602228e-05,
     "total_impact": 0.000165368104675333
   },
   {
@@ -14143,7 +14913,7 @@
     "emissions_source": "Direct",
     "sector_code": "334210/US",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 3.51646179843691e-5,
+    "impact_per_purchase": 3.51646179843691e-05,
     "total_impact": 0.000154103233866917
   },
   {
@@ -15331,6 +16101,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "335",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.0843562258454649,
+    "total_impact": 9.48531703355365
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "335",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 7.05118577929501,
+    "total_impact": 792.860656208388
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "335",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 3.50530254192034,
+    "total_impact": 394.148808524764
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "335",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 2.19269151344009,
+    "total_impact": 246.554109709259
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "335",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.43051639879579,
+    "total_impact": 160.852402158589
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "335",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.13852781026742,
+    "total_impact": 128.020156469396
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "335",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.968682301205062,
+    "total_impact": 108.922117361611
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "335",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.88419507230387,
+    "total_impact": 99.4220698739213
+  },
+  {
+    "emissions_source": "111400/US",
+    "sector_code": "335",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.639655909580493,
+    "total_impact": 71.9252080560369
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "335",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 4.29929538182216,
+    "total_impact": 483.428215389613
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "335110/US",
     "indicator": "Nitrous oxide",
     "impact_per_purchase": 0.343246773499453,
@@ -16308,6 +17148,76 @@
     "indicator": "Nitrous oxide",
     "impact_per_purchase": 3.24801521006833,
     "total_impact": 37.970613877776
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "336",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.0244318966505624,
+    "total_impact": 22.7690381248213
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "336",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 7.60618191035314,
+    "total_impact": 7088.49780997948
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "336",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 4.25410485330678,
+    "total_impact": 3964.56636082322
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "336",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 3.72238940112662,
+    "total_impact": 3469.03997679328
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "336",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.51246652828856,
+    "total_impact": 1409.52659294773
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "336",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.27772995818733,
+    "total_impact": 1190.76642093294
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "336",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.2573681791043,
+    "total_impact": 1171.79048423586
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "336",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.16245084461475,
+    "total_impact": 1083.33331537135
+  },
+  {
+    "emissions_source": "113000/US",
+    "sector_code": "336",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.09091772996938,
+    "total_impact": 1016.66881372243
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "336",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 5.42671773183242,
+    "total_impact": 5057.37007224495
   },
   {
     "emissions_source": "Direct",
@@ -18201,6 +19111,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "337-339",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.089231625801219,
+    "total_impact": 18.1129396082139
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "337-339",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 11.4141332299874,
+    "total_impact": 2316.93084171112
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "337-339",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 10.3549907828288,
+    "total_impact": 2101.93774918788
+  },
+  {
+    "emissions_source": "113000/US",
+    "sector_code": "337-339",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 3.8643925293283,
+    "total_impact": 784.424892829873
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "337-339",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 3.19277660870885,
+    "total_impact": 648.094992966848
+  },
+  {
+    "emissions_source": "111400/US",
+    "sector_code": "337-339",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 2.80208310900842,
+    "total_impact": 568.788943101074
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "337-339",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 2.18751214632173,
+    "total_impact": 444.038478989797
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "337-339",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.66406522163837,
+    "total_impact": 337.785091250161
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "337-339",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.47092662302835,
+    "total_impact": 298.580294282419
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "337-339",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 5.85975641975064,
+    "total_impact": 1189.45960243097
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "337110/US",
     "indicator": "Nitrous oxide",
     "impact_per_purchase": 0.0730705243013762,
@@ -19531,6 +20511,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "42-44",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.337119606726482,
+    "total_impact": 1402.02455742763
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "42-44",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 6.78703692157437,
+    "total_impact": 28226.161416757
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "42-44",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 3.4250446617425,
+    "total_impact": 14244.1929518073
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "42-44",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.78919801219546,
+    "total_impact": 7440.97792340502
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "42-44",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.73896168539928,
+    "total_impact": 7232.05336832763
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "42-44",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.48079459104683,
+    "total_impact": 6158.37922128951
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "42-44",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.982232494375973,
+    "total_impact": 4084.94211176456
+  },
+  {
+    "emissions_source": "111400/US",
+    "sector_code": "42-44",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.936818254375565,
+    "total_impact": 3896.0718162758
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "42-44",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.929114338800478,
+    "total_impact": 3864.03250853721
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "42-44",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 4.41997683748582,
+    "total_impact": 18381.9509330534
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "423100/US",
     "indicator": "Nitrous oxide",
     "impact_per_purchase": 0.0256970798074976,
@@ -20791,6 +21841,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "48",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 18.3940990146304,
+    "total_impact": 24491.443013214
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "48",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 4.16318668919167,
+    "total_impact": 5543.2152165001
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "48",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 2.42321738906332,
+    "total_impact": 3226.47445496889
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "48",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.32331287740339,
+    "total_impact": 1761.9695261942
+  },
+  {
+    "emissions_source": "492000/US",
+    "sector_code": "48",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.869974238778696,
+    "total_impact": 1158.35651830869
+  },
+  {
+    "emissions_source": "48A000/US",
+    "sector_code": "48",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.86268172309737,
+    "total_impact": 1148.64665254739
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "48",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.793414022057811,
+    "total_impact": 1056.41783768033
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "48",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.792820990441899,
+    "total_impact": 1055.62822575019
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "48",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.642175288232123,
+    "total_impact": 855.045928790622
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "48",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 4.84108844417478,
+    "total_impact": 6445.83035342641
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "481000/US",
     "indicator": "Nitrous oxide",
     "impact_per_purchase": 20.9381522502625,
@@ -21558,6 +22678,76 @@
     "indicator": "Nitrous oxide",
     "impact_per_purchase": 3.08328120785521,
     "total_impact": 759.224995882743
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "5",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.261582999518883,
+    "total_impact": 3836.4581220216
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "5",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 3.59513652041233,
+    "total_impact": 52727.3971507339
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "5",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.85959564624313,
+    "total_impact": 27273.4116277708
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "5",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.09100881344171,
+    "total_impact": 16001.0766419224
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "5",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.992565824106989,
+    "total_impact": 14557.2809568668
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "5",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.941671000140273,
+    "total_impact": 13810.8415432386
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "5",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.745478335781717,
+    "total_impact": 10933.4185377535
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "5",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.677797358826107,
+    "total_impact": 9940.7881518902
+  },
+  {
+    "emissions_source": "111400/US",
+    "sector_code": "5",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.612085604018999,
+    "total_impact": 8977.03899423966
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "5",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 2.9176147022649,
+    "total_impact": 42790.6501646557
   },
   {
     "emissions_source": "Direct",
@@ -25271,6 +26461,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "562",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 55.214189196567,
+    "total_impact": 7160.84433231214
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "562",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 7.88229509027129,
+    "total_impact": 1022.27142957467
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "562",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 5.17395350852782,
+    "total_impact": 671.020913216482
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "562",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 4.67915686212001,
+    "total_impact": 606.84969540755
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "562",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 2.48652440539926,
+    "total_impact": 322.482580196364
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "562",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 2.48641358345278,
+    "total_impact": 322.468207465027
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "562",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.73343055702921,
+    "total_impact": 224.812254972515
+  },
+  {
+    "emissions_source": "S00203/US",
+    "sector_code": "562",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.53813180648552,
+    "total_impact": 199.483549230597
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "562",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.48569031195315,
+    "total_impact": 192.682301501264
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "562",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 6.95245443303487,
+    "total_impact": 901.67843894648
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "562000/US",
     "indicator": "Nitrous oxide",
     "impact_per_purchase": 60.3881427050948,
@@ -25338,6 +26598,76 @@
     "indicator": "Nitrous oxide",
     "impact_per_purchase": 5.56674591825795,
     "total_impact": 721.962987018882
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "6",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 4.40575878754227,
+    "total_impact": 15365.3395763696
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "6",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 10.7800221670228,
+    "total_impact": 37595.9532113872
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "6",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 8.71463875289377,
+    "total_impact": 30392.8086354224
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "6",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 2.71914918203162,
+    "total_impact": 9483.19065012421
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "6",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 2.36238833495708,
+    "total_impact": 8238.96648189381
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "6",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.99766197078835,
+    "total_impact": 6966.96211030782
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "6",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.71286004035183,
+    "total_impact": 5973.69884189272
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "6",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.5911180010496,
+    "total_impact": 5549.11641130489
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "6",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.05867479337851,
+    "total_impact": 3692.18981011853
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "6",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 6.25160295643974,
+    "total_impact": 21802.8282878188
   },
   {
     "emissions_source": "Direct",
@@ -26461,6 +27791,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "7",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 3.234725813589,
+    "total_impact": 5927.36882289446
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "7",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 21.9839692796996,
+    "total_impact": 40283.8143389292
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "7",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 17.3248642498754,
+    "total_impact": 31746.3878342296
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "7",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 8.50892255496001,
+    "total_impact": 15591.900264565
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "7",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 7.70513513683245,
+    "total_impact": 14119.0259756749
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "7",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 5.0113662919154,
+    "total_impact": 9182.91627501067
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "7",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 4.58357127405191,
+    "total_impact": 8399.01711396857
+  },
+  {
+    "emissions_source": "111300/US",
+    "sector_code": "7",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 3.51447561669806,
+    "total_impact": 6439.98731259567
+  },
+  {
+    "emissions_source": "112120/US",
+    "sector_code": "7",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 2.70813534567155,
+    "total_impact": 4962.43513087803
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "7",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 10.3077974965534,
+    "total_impact": 18888.1905406352
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "711100/US",
     "indicator": "Nitrous oxide",
     "impact_per_purchase": 0.00918244042351916,
@@ -27301,6 +28701,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "8",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.524253188239252,
+    "total_impact": 475.636142841781
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "8",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 4.00466630042342,
+    "total_impact": 3633.29031703015
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "8",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 2.69581907583827,
+    "total_impact": 2445.82010333114
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "8",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.30210056851844,
+    "total_impact": 1181.3492142647
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "8",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.25414781062697,
+    "total_impact": 1137.84339434069
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "8",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.18517920113201,
+    "total_impact": 1075.27064488823
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "8",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.874015280479908,
+    "total_impact": 792.962763256526
+  },
+  {
+    "emissions_source": "111400/US",
+    "sector_code": "8",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.678741838116063,
+    "total_impact": 615.798162241283
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "8",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.614343240958455,
+    "total_impact": 557.371621318679
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "8",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 3.70629027720819,
+    "total_impact": 3362.5844367756
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "811100/US",
     "indicator": "Nitrous oxide",
     "impact_per_purchase": 1.38731209339632,
@@ -28068,6 +29538,76 @@
     "indicator": "Nitrous oxide",
     "impact_per_purchase": 5.30467482877349,
     "total_impact": 560.259338288898
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "G",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 11.0140153588649,
+    "total_impact": 28200.0968215428
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "G",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 7.65904237810664,
+    "total_impact": 24532.1931373213
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "G",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 6.54279931020938,
+    "total_impact": 20956.8257247935
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "G",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 3.1190138117902,
+    "total_impact": 9990.31542736092
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "G",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 2.72655163840376,
+    "total_impact": 8733.2447178254
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "G",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 2.71357789431389,
+    "total_impact": 8691.68934053221
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "G",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.5258465036456,
+    "total_impact": 4887.3422129561
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "G",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.24082954810356,
+    "total_impact": 3974.42246978359
+  },
+  {
+    "emissions_source": "111400/US",
+    "sector_code": "G",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.15458640131971,
+    "total_impact": 3698.18251324283
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "G",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 6.63624870759089,
+    "total_impact": 21256.1475658219
   },
   {
     "emissions_source": "Direct",

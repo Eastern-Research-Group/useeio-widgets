@@ -1,6 +1,76 @@
 [
   {
     "emissions_source": "Direct",
+    "sector_code": "11",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 24.1447694650622,
+    "total_impact": 9115.36497829274
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "11",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 28.4161097197315,
+    "total_impact": 10727.9223242688
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "11",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 23.281421890743,
+    "total_impact": 8789.42572033334
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "11",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 12.3753283148699,
+    "total_impact": 4672.05265635154
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "11",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 9.72355204393819,
+    "total_impact": 3670.92864126018
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "11",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 5.96804891525807,
+    "total_impact": 2253.11507527957
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "11",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 3.94624225112793,
+    "total_impact": 1489.82322916116
+  },
+  {
+    "emissions_source": "115000/US",
+    "sector_code": "11",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 3.89110379527741,
+    "total_impact": 1469.00683039023
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "11",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 3.62996043943732,
+    "total_impact": 1370.41748566349
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "11",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 22.4935233788948,
+    "total_impact": 8491.9707161867
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "111/112",
     "indicator": "Sulfur dioxide",
     "impact_per_purchase": 23.0441040898848,
@@ -981,6 +1051,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "211",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 331.056538622761,
+    "total_impact": 301459.519596415
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "211",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 164.662847629575,
+    "total_impact": 149941.708290357
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "211",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 30.6955359108627,
+    "total_impact": 27951.3026624962
+  },
+  {
+    "emissions_source": "324190/US",
+    "sector_code": "211",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 13.2611251216478,
+    "total_impact": 12075.5579246699
+  },
+  {
+    "emissions_source": "327310/US",
+    "sector_code": "211",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 7.78767566424831,
+    "total_impact": 7091.44418135827
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "211",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 5.78331970025837,
+    "total_impact": 5266.28105810958
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "211",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 4.36270725878398,
+    "total_impact": 3972.67379114193
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "211",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 2.80242163647925,
+    "total_impact": 2551.88036386226
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "211",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 2.62372190150376,
+    "total_impact": 2389.15668988855
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "211",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 20.1976585122532,
+    "total_impact": 18391.9534029033
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "211/32411",
     "indicator": "Sulfur dioxide",
     "impact_per_purchase": 269.670353890014,
@@ -1118,6 +1258,76 @@
     "indicator": "Sulfur dioxide",
     "impact_per_purchase": 11.5378377468405,
     "total_impact": 3478.22556119784
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "212",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 74.0283731210772,
+    "total_impact": 16951.0825469263
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "212",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 37.9200040844089,
+    "total_impact": 8682.95617361858
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "212",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 14.411251760619,
+    "total_impact": 3299.90121219125
+  },
+  {
+    "emissions_source": "324190/US",
+    "sector_code": "212",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 11.479899867651,
+    "total_impact": 2628.67765537314
+  },
+  {
+    "emissions_source": "327310/US",
+    "sector_code": "212",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 10.5611399978268,
+    "total_impact": 2418.29920536017
+  },
+  {
+    "emissions_source": "327400/US",
+    "sector_code": "212",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 4.84592031541967,
+    "total_impact": 1109.62313258129
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "212",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 4.28579796786168,
+    "total_impact": 981.365820559792
+  },
+  {
+    "emissions_source": "2122A0/US",
+    "sector_code": "212",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 3.4096788188607,
+    "total_impact": 780.751280626992
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "212",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 3.24377663257755,
+    "total_impact": 742.762850842082
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "212",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 24.1541415278101,
+    "total_impact": 5530.83675388073
   },
   {
     "emissions_source": "Direct",
@@ -1678,6 +1888,76 @@
     "indicator": "Sulfur dioxide",
     "impact_per_purchase": 17.660862848972,
     "total_impact": 1633.62734415808
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "2211",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 1574.45627265364,
+    "total_impact": 721646.205739096
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "2211",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 48.4916029606071,
+    "total_impact": 22225.9467566851
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "2211",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 34.4224956342672,
+    "total_impact": 15777.4234813596
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "2211",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 3.04357639278893,
+    "total_impact": 1395.01197580505
+  },
+  {
+    "emissions_source": "324190/US",
+    "sector_code": "2211",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 2.0151597133424,
+    "total_impact": 923.640996800003
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "2211",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 1.5670217017659,
+    "total_impact": 718.238597686954
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "2211",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 1.35996850841732,
+    "total_impact": 623.33653278913
+  },
+  {
+    "emissions_source": "327310/US",
+    "sector_code": "2211",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 1.24314056136476,
+    "total_impact": 569.788875620684
+  },
+  {
+    "emissions_source": "325120/US",
+    "sector_code": "2211",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 1.06470768697586,
+    "total_impact": 488.004827998422
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "2211",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 8.96203736226176,
+    "total_impact": 4107.71665780708
   },
   {
     "emissions_source": "Direct",
@@ -2868,6 +3148,76 @@
     "indicator": "Sulfur dioxide",
     "impact_per_purchase": 31.8535815680868,
     "total_impact": 8465.30831299029
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "31",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 42.0962753911942,
+    "total_impact": 38431.8278105778
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "31",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 36.8056929492695,
+    "total_impact": 33601.7863986897
+  },
+  {
+    "emissions_source": "311221/US",
+    "sector_code": "31",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 10.2983316169737,
+    "total_impact": 9401.86996977302
+  },
+  {
+    "emissions_source": "311300/US",
+    "sector_code": "31",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 9.13537290417268,
+    "total_impact": 8340.14589594842
+  },
+  {
+    "emissions_source": "324190/US",
+    "sector_code": "31",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 8.58326898013365,
+    "total_impact": 7836.10218317256
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "31",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 8.54064684040658,
+    "total_impact": 7797.19026710191
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "31",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 7.97499975339596,
+    "total_impact": 7280.78231301259
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "31",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 6.06028713786108,
+    "total_impact": 5532.74392094215
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "31",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 6.0526425235462,
+    "total_impact": 5525.76476427573
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "31",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 42.0413151367188,
+    "total_impact": 38381.6518029193
   },
   {
     "emissions_source": "Direct",
@@ -5461,6 +5811,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "321",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 32.3859894081532,
+    "total_impact": 3656.63085754784
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "321",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 48.396192456238,
+    "total_impact": 5464.30768234464
+  },
+  {
+    "emissions_source": "324190/US",
+    "sector_code": "321",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 11.0911749866386,
+    "total_impact": 1252.28018176265
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "321",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 8.15296597678213,
+    "total_impact": 920.533462650176
+  },
+  {
+    "emissions_source": "321100/US",
+    "sector_code": "321",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 8.10753548416132,
+    "total_impact": 915.404005615615
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "321",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 7.54302753781096,
+    "total_impact": 851.666654567262
+  },
+  {
+    "emissions_source": "327400/US",
+    "sector_code": "321",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 4.2483281691489,
+    "total_impact": 479.669392851365
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "321",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 3.56878260244869,
+    "total_impact": 402.943397020579
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "321",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 3.51536648745293,
+    "total_impact": 396.912300921516
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "321",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 30.9031888847992,
+    "total_impact": 3489.21111066435
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "321/322",
     "indicator": "Sulfur dioxide",
     "impact_per_purchase": 202.360487484215,
@@ -5808,6 +6228,76 @@
     "indicator": "Sulfur dioxide",
     "impact_per_purchase": 29.8013911483932,
     "total_impact": 864.122555458163
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "322-323",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 241.367170774266,
+    "total_impact": 49993.8042568941
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "322-323",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 75.7005493529324,
+    "total_impact": 15679.6735626872
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "322-323",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 55.7990060198795,
+    "total_impact": 11557.5145357943
+  },
+  {
+    "emissions_source": "322120/US",
+    "sector_code": "322-323",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 46.6818205518629,
+    "total_impact": 9669.09373606544
+  },
+  {
+    "emissions_source": "322110/US",
+    "sector_code": "322-323",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 32.5800737633586,
+    "total_impact": 6748.23268291041
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "322-323",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 26.9973849711163,
+    "total_impact": 5591.90371815845
+  },
+  {
+    "emissions_source": "327400/US",
+    "sector_code": "322-323",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 12.5565110008451,
+    "total_impact": 2600.80006370408
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "322-323",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 10.5704060921541,
+    "total_impact": 2189.42290864096
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "322-323",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 5.85261700605192,
+    "total_impact": 1212.23854947852
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "322-323",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 38.3368088845662,
+    "total_impact": 7940.61144711942
   },
   {
     "emissions_source": "Direct",
@@ -6858,6 +7348,76 @@
     "indicator": "Sulfur dioxide",
     "impact_per_purchase": 27.3789304317844,
     "total_impact": 19706.1617032393
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "325-326",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 100.813868412199,
+    "total_impact": 93754.3252864155
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "325-326",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 46.2730211326359,
+    "total_impact": 43032.7289645933
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "325-326",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 31.4586464310914,
+    "total_impact": 29255.738491372
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "325-326",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 26.6480131776262,
+    "total_impact": 24781.9723123485
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "325-326",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 20.472124076366,
+    "total_impact": 19038.5530303411
+  },
+  {
+    "emissions_source": "324190/US",
+    "sector_code": "325-326",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 8.98598851454081,
+    "total_impact": 8356.7400346906
+  },
+  {
+    "emissions_source": "325110/US",
+    "sector_code": "325-326",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 6.56477831853245,
+    "total_impact": 6105.07633128801
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "325-326",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 5.65743242347314,
+    "total_impact": 5261.26780045306
+  },
+  {
+    "emissions_source": "325211/US",
+    "sector_code": "325-326",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 3.81474750039322,
+    "total_impact": 3547.6178393937
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "325-326",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 31.5907962061507,
+    "total_impact": 29378.6344102825
   },
   {
     "emissions_source": "Direct",
@@ -8891,6 +9451,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "327",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 736.029053056282,
+    "total_impact": 82435.9044849813
+  },
+  {
+    "emissions_source": "327310/US",
+    "sector_code": "327",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 245.973322240992,
+    "total_impact": 27549.229495648
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "327",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 70.9838952943437,
+    "total_impact": 7950.25901241017
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "327",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 16.74938360256,
+    "total_impact": 1875.94576750678
+  },
+  {
+    "emissions_source": "2123A0/US",
+    "sector_code": "327",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 14.1934115599853,
+    "total_impact": 1589.67463963071
+  },
+  {
+    "emissions_source": "327992/US",
+    "sector_code": "327",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 11.2295149630459,
+    "total_impact": 1257.7156011198
+  },
+  {
+    "emissions_source": "327200/US",
+    "sector_code": "327",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 10.0185320015367,
+    "total_impact": 1122.08443909789
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "327",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 8.37021386235197,
+    "total_impact": 937.471350635598
+  },
+  {
+    "emissions_source": "327100/US",
+    "sector_code": "327",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 8.26400039255569,
+    "total_impact": 925.57534814115
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "327",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 48.9124905618692,
+    "total_impact": 5478.24217446002
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "327100/US",
     "indicator": "Sulfur dioxide",
     "impact_per_purchase": 1113.3028525724,
@@ -9798,6 +10428,76 @@
     "indicator": "Sulfur dioxide",
     "impact_per_purchase": 24.5484554038356,
     "total_impact": 103.158312051846
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "331-332",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 83.5687016451503,
+    "total_impact": 40172.4281795889
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "331-332",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 83.5118292425461,
+    "total_impact": 40145.0889668927
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "331-332",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 58.8798355744302,
+    "total_impact": 28304.2086244625
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "331-332",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 30.0686706215478,
+    "total_impact": 14454.3529721087
+  },
+  {
+    "emissions_source": "324190/US",
+    "sector_code": "331-332",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 14.9084465890386,
+    "total_impact": 7166.66034145744
+  },
+  {
+    "emissions_source": "331410/US",
+    "sector_code": "331-332",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 10.8078550663341,
+    "total_impact": 5195.45921954514
+  },
+  {
+    "emissions_source": "327400/US",
+    "sector_code": "331-332",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 7.07667362238004,
+    "total_impact": 3401.8377364841
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "331-332",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 6.74592628466965,
+    "total_impact": 3242.84371829078
+  },
+  {
+    "emissions_source": "2122A0/US",
+    "sector_code": "331-332",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 5.34057256639302,
+    "total_impact": 2567.27415453099
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "331-332",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 41.3029424620808,
+    "total_impact": 19854.7955993034
   },
   {
     "emissions_source": "Direct",
@@ -11898,6 +12598,76 @@
     "indicator": "Sulfur dioxide",
     "impact_per_purchase": 26.5848968617445,
     "total_impact": 502.266209868529
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "333",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 0.870645521472633,
+    "total_impact": 275.38454272498
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "333",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 34.7830238114727,
+    "total_impact": 11001.8450341453
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "333",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 20.9714113898191,
+    "total_impact": 6633.24210996278
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "333",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 18.0727556972659,
+    "total_impact": 5716.39943091156
+  },
+  {
+    "emissions_source": "324190/US",
+    "sector_code": "333",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 6.79286710653615,
+    "total_impact": 2148.57890586855
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "333",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 4.58173404089294,
+    "total_impact": 1449.19913170247
+  },
+  {
+    "emissions_source": "327400/US",
+    "sector_code": "333",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 3.61653179201509,
+    "total_impact": 1143.90636514144
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "333",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 3.08249844071902,
+    "total_impact": 974.992006060134
+  },
+  {
+    "emissions_source": "331410/US",
+    "sector_code": "333",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 2.51309955231998,
+    "total_impact": 794.891553415917
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "333",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 26.2474867983569,
+    "total_impact": 8302.06090926601
   },
   {
     "emissions_source": "Direct",
@@ -15331,6 +16101,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "335",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 4.44479680101747,
+    "total_impact": 499.788917591106
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "335",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 32.5800544035024,
+    "total_impact": 3663.41834156702
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "335",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 20.0647674531082,
+    "total_impact": 2256.1545231518
+  },
+  {
+    "emissions_source": "324190/US",
+    "sector_code": "335",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 15.8793525819449,
+    "total_impact": 1785.53144142856
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "335",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 11.7226732446408,
+    "total_impact": 1318.13948634774
+  },
+  {
+    "emissions_source": "331410/US",
+    "sector_code": "335",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 10.6064694791839,
+    "total_impact": 1192.62952566267
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "335",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 5.64924439480714,
+    "total_impact": 635.221331297297
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "335",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 4.87482814587452,
+    "total_impact": 548.143186638266
+  },
+  {
+    "emissions_source": "331490/US",
+    "sector_code": "335",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 3.64469121569813,
+    "total_impact": 409.822171675114
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "335",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 32.2666751874772,
+    "total_impact": 3628.18085688899
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "335110/US",
     "indicator": "Sulfur dioxide",
     "impact_per_purchase": 25.7038373064371,
@@ -16308,6 +17148,76 @@
     "indicator": "Sulfur dioxide",
     "impact_per_purchase": 13.9018126130208,
     "total_impact": 162.517822359306
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "336",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 0.812096563380459,
+    "total_impact": 756.824485512072
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "336",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 34.5977694505327,
+    "total_impact": 32243.0117857765
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "336",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 20.4052716560195,
+    "total_impact": 19016.4691234705
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "336",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 14.8913667937526,
+    "total_impact": 13877.8459612486
+  },
+  {
+    "emissions_source": "324190/US",
+    "sector_code": "336",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 5.82985129772869,
+    "total_impact": 5433.06597758417
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "336",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 4.65069249866068,
+    "total_impact": 4334.16186730586
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "336",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 4.33316030718107,
+    "total_impact": 4038.24122401471
+  },
+  {
+    "emissions_source": "327400/US",
+    "sector_code": "336",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 2.88539649165173,
+    "total_impact": 2689.01361459105
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "336",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 2.49907248881596,
+    "total_impact": 2328.98319718591
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "336",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 27.3146856752571,
+    "total_impact": 25455.6217391793
   },
   {
     "emissions_source": "Direct",
@@ -18201,6 +19111,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "337-339",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 1.03149379804832,
+    "total_impact": 209.380751527686
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "337-339",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 29.6752803405602,
+    "total_impact": 6023.7225965465
+  },
+  {
+    "emissions_source": "324190/US",
+    "sector_code": "337-339",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 14.2115505540174,
+    "total_impact": 2884.77268695556
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "337-339",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 12.1736066889375,
+    "total_impact": 2471.09475806347
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "337-339",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 6.0513130696146,
+    "total_impact": 1228.34328295773
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "337-339",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 5.74159237617676,
+    "total_impact": 1165.47373233281
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "337-339",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 5.54390050529082,
+    "total_impact": 1125.34467622473
+  },
+  {
+    "emissions_source": "327400/US",
+    "sector_code": "337-339",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 4.49153572098558,
+    "total_impact": 911.727367195813
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "337-339",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 3.87112352738165,
+    "total_impact": 785.791203934807
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "337-339",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 28.7425474248929,
+    "total_impact": 5834.38910833111
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "337110/US",
     "indicator": "Sulfur dioxide",
     "impact_per_purchase": 2.3607689379737,
@@ -19531,6 +20511,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "42-44",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 3.77305646475233,
+    "total_impact": 15691.516347893
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "42-44",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 31.8340970799239,
+    "total_impact": 132392.732368724
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "42-44",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 4.28190652463782,
+    "total_impact": 17807.7393909117
+  },
+  {
+    "emissions_source": "324190/US",
+    "sector_code": "42-44",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 2.25446299570374,
+    "total_impact": 9375.9378592091
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "42-44",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 1.2439499125873,
+    "total_impact": 5173.38146716682
+  },
+  {
+    "emissions_source": "322120/US",
+    "sector_code": "42-44",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 1.02765466971726,
+    "total_impact": 4273.84540902053
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "42-44",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 0.9378639551829,
+    "total_impact": 3900.42071257953
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "42-44",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 0.900676130488068,
+    "total_impact": 3745.7627145896
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "42-44",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 0.842917999898254,
+    "total_impact": 3505.55622448257
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "42-44",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 8.13816711017918,
+    "total_impact": 33845.2878837699
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "423100/US",
     "indicator": "Sulfur dioxide",
     "impact_per_purchase": 1.32868279193957,
@@ -20791,6 +21841,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "48",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 19.0843494388163,
+    "total_impact": 25410.5002018999
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "48",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 23.8636950971264,
+    "total_impact": 31774.1210423581
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "48",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 22.5226077986252,
+    "total_impact": 29988.4851641962
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "48",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 7.9095877134213,
+    "total_impact": 10531.4871137312
+  },
+  {
+    "emissions_source": "48A000/US",
+    "sector_code": "48",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 3.1212824017258,
+    "total_impact": 4155.93664083314
+  },
+  {
+    "emissions_source": "324190/US",
+    "sector_code": "48",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 2.98737184812338,
+    "total_impact": 3977.63692146047
+  },
+  {
+    "emissions_source": "322120/US",
+    "sector_code": "48",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 1.95490713307723,
+    "total_impact": 2602.92698260483
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "48",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 1.39643627520693,
+    "total_impact": 1859.33213845443
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "48",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 1.32529425115314,
+    "total_impact": 1764.60769304549
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "48",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 11.4875089602725,
+    "total_impact": 15295.4309336119
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "481000/US",
     "indicator": "Sulfur dioxide",
     "impact_per_purchase": 27.8455759029505,
@@ -21561,6 +22681,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "5",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 0.528275833125547,
+    "total_impact": 7747.85866967602
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "5",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 17.2840223057968,
+    "total_impact": 253492.879423497
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "5",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 2.73964808481356,
+    "total_impact": 40180.5360661643
+  },
+  {
+    "emissions_source": "324190/US",
+    "sector_code": "5",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 2.06197450696518,
+    "total_impact": 30241.5633248254
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "5",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 1.02372384284687,
+    "total_impact": 15014.2542092592
+  },
+  {
+    "emissions_source": "327400/US",
+    "sector_code": "5",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 1.02356448352181,
+    "total_impact": 15011.9169955332
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "5",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 0.948571896428313,
+    "total_impact": 13912.0522475358
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "5",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 0.838848820881354,
+    "total_impact": 12302.8192884767
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "5",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 0.831550534965835,
+    "total_impact": 12195.7803435571
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "5",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 7.3340883207959,
+    "total_impact": 107564.034198293
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "511110/US",
     "indicator": "Sulfur dioxide",
     "impact_per_purchase": 0.0178120503588379,
@@ -22263,7 +23453,7 @@
     "emissions_source": "Direct",
     "sector_code": "517210/US",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 3.49690307739887e-6,
+    "impact_per_purchase": 3.49690307739887e-06,
     "total_impact": 0.000947141035196065
   },
   {
@@ -25271,6 +26461,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "562",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 159.363446036786,
+    "total_impact": 20668.1805154753
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "562",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 23.1110152218597,
+    "total_impact": 2997.31617494663
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "562",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 14.9334631686375,
+    "total_impact": 1936.75224881467
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "562",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 9.03185054739519,
+    "total_impact": 1171.35969473996
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "562",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 4.02438247249476,
+    "total_impact": 521.930627589696
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "562",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 3.2008556197766,
+    "total_impact": 415.12569788586
+  },
+  {
+    "emissions_source": "324190/US",
+    "sector_code": "562",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 2.90667811316208,
+    "total_impact": 376.97319829133
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "562",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 2.65247966080391,
+    "total_impact": 344.005666333716
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "562",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 2.63223440423227,
+    "total_impact": 341.380016425844
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "562",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 16.6997896508911,
+    "total_impact": 2165.83084552157
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "562000/US",
     "indicator": "Sulfur dioxide",
     "impact_per_purchase": 174.296909205423,
@@ -25338,6 +26598,76 @@
     "indicator": "Sulfur dioxide",
     "impact_per_purchase": 14.0998307082018,
     "total_impact": 1828.6367015902
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "6",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 0.988529537756847,
+    "total_impact": 3447.55415840157
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "6",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 21.957231809422,
+    "total_impact": 76577.1208044368
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "6",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 3.50338514499165,
+    "total_impact": 12218.2591048374
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "6",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 3.4882867621517,
+    "total_impact": 12165.6026180488
+  },
+  {
+    "emissions_source": "324190/US",
+    "sector_code": "6",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 2.5189039664259,
+    "total_impact": 8784.82383416839
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "6",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 1.86511413701581,
+    "total_impact": 6504.69384410448
+  },
+  {
+    "emissions_source": "322120/US",
+    "sector_code": "6",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 0.865781537631922,
+    "total_impact": 3019.46338103701
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "6",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 0.847765164099419,
+    "total_impact": 2956.63023228534
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "6",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 0.805268312015389,
+    "total_impact": 2808.41999321273
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "6",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 10.2116606799251,
+    "total_impact": 35613.7595252324
   },
   {
     "emissions_source": "Direct",
@@ -25623,7 +26953,7 @@
     "emissions_source": "Direct",
     "sector_code": "621200/US",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 6.78359247277989e-5,
+    "impact_per_purchase": 6.78359247277989e-05,
     "total_impact": 0.00964669275367659
   },
   {
@@ -26458,6 +27788,76 @@
     "indicator": "Sulfur dioxide",
     "impact_per_purchase": 17.5426838606674,
     "total_impact": 1020.58750901371
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "7",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 0.383388668548854,
+    "total_impact": 702.528180738176
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "7",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 42.6020292642506,
+    "total_impact": 78064.7123141426
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "7",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 4.48571798842841,
+    "total_impact": 8219.70902176925
+  },
+  {
+    "emissions_source": "324190/US",
+    "sector_code": "7",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 2.9357213467864,
+    "total_impact": 5379.4677467085
+  },
+  {
+    "emissions_source": "322120/US",
+    "sector_code": "7",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 1.50627058224792,
+    "total_impact": 2760.11687004574
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "7",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 1.48653949989925,
+    "total_impact": 2723.96128558657
+  },
+  {
+    "emissions_source": "327400/US",
+    "sector_code": "7",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 1.33582329872048,
+    "total_impact": 2447.78625145563
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "7",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 1.1119606338731,
+    "total_impact": 2037.57634289025
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "7",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 1.09600989524619,
+    "total_impact": 2008.34792716424
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "7",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 12.9481521515141,
+    "total_impact": 23726.4231343998
   },
   {
     "emissions_source": "Direct",
@@ -27301,6 +28701,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "8",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 0.608698362700037,
+    "total_impact": 563.958545935959
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "8",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 25.056305726094,
+    "total_impact": 22732.6888548839
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "8",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 3.33365292079902,
+    "total_impact": 3024.50390840249
+  },
+  {
+    "emissions_source": "324190/US",
+    "sector_code": "8",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 3.12838741056419,
+    "total_impact": 2838.27386204941
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "8",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 1.43062061308966,
+    "total_impact": 1297.95084807262
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "8",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 1.17263973785239,
+    "total_impact": 1063.89403892489
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "8",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 1.09880470236286,
+    "total_impact": 996.906155446722
+  },
+  {
+    "emissions_source": "327400/US",
+    "sector_code": "8",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 0.946282406777608,
+    "total_impact": 858.528138875779
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "8",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 0.937607541955745,
+    "total_impact": 850.657744692002
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "8",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 9.0603835258533,
+    "total_impact": 8220.16149749649
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "811100/US",
     "indicator": "Sulfur dioxide",
     "impact_per_purchase": 0.584699209338442,
@@ -28075,6 +29545,76 @@
     "indicator": "Sulfur dioxide",
     "impact_per_purchase": 0.00444865390662901,
     "total_impact": 0.0855699126861828
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "G",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 0.620870771027584,
+    "total_impact": 1988.6718098995
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "G",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 11.5328972889571,
+    "total_impact": 36940.2922399713
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "G",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 9.55689467540339,
+    "total_impact": 30611.0835266055
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "G",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 3.02995976112041,
+    "total_impact": 9705.07204276533
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "G",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 2.44838164430697,
+    "total_impact": 7842.25604283169
+  },
+  {
+    "emissions_source": "324190/US",
+    "sector_code": "G",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 2.28215181710186,
+    "total_impact": 7309.81582056105
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "G",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 1.45769524420515,
+    "total_impact": 4669.05123392666
+  },
+  {
+    "emissions_source": "322120/US",
+    "sector_code": "G",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 1.41609475621963,
+    "total_impact": 4535.80334790049
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "G",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 1.19775969661865,
+    "total_impact": 3836.46815867493
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "G",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 11.9057558119151,
+    "total_impact": 38134.571739488
   },
   {
     "emissions_source": "Direct",
