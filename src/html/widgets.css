@@ -664,3 +664,9 @@ th.io-sector-column-header>div {
 .dropdown-item:hover {
     background: #eee;
 }
+
+abbr.term-help,
+.term-help {
+    cursor: help;
+    text-decoration: underline dotted;
+}
