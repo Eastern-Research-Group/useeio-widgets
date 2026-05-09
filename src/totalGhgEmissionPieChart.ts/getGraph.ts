@@ -121,6 +121,8 @@ export async function apexGraph(
         unitLabel = "Jobs";
         break;
       case "Global Warming Potential":
+      case "GWP AR6 100":
+      case "GWP AR6 20":
         unitLabel = "MMT CO2e";
         break;
     }

@@ -1,6 +1,7 @@
 import * as apex from "apexcharts";
 import { SortedImpactPerPurchaseTopList } from "../smartSectorChart/smartSector";
 import { formatNumberGraph } from "../util";
+import { chartTypography } from "../util/chartTypography";
 
 //Total Impacts graph
 export async function apexGraph(
@@ -38,7 +39,7 @@ export async function apexGraph(
   switch (graphTitleName) {
     case "Social Cost of Carbon":
       yaxisTitle = "Total Impact (Billion dollars)";
-      unitLabel = " Billion dollars";
+      unitLabel = "Billion dollars";
       break;
     case "Acidification Potential":
       yaxisTitle = "Thousand Metric Tons of SO2 eq. Emissions";
@@ -73,6 +74,8 @@ export async function apexGraph(
       unitLabel = "Jobs";
       break;
     case "Global Warming Potential":
+    case "GWP AR6 100":
+    case "GWP AR6 20":
       yaxisTitle = "Million Metric Tons of CO2 eq. Emissions";
       unitLabel = "MMT CO2e";
       break;
@@ -129,6 +132,7 @@ export async function apexGraph(
             text: `Total: ${parseFloat(formatNumberGraph(totalSum)).toLocaleString()} ${unitLabel} for sector ${sectorName}`,
             style: {
               fontWeight: "bold",
+              fontSize: chartTypography.annotationLabel,
             },
           },
         },
@@ -142,15 +146,27 @@ export async function apexGraph(
     },
     xaxis: {
       categories: sortedSectorCodesWithNamesWithArray,
+      labels: {
+        style: {
+          fontSize: chartTypography.axisLabel,
+        },
+      },
     },
     yaxis: {
       title: {
         text: yaxisTitle,
+        style: {
+          fontSize: chartTypography.axisTitle,
+          fontWeight: 600,
+        },
       },
       forceNiceScale: true,
       max: parseFloat(highNumberFormat),
       min: 0,
       labels: {
+        style: {
+          fontSize: chartTypography.axisLabel,
+        },
         formatter: function (val) {
           return parseFloat(formatNumberGraph(val)).toLocaleString();
         },

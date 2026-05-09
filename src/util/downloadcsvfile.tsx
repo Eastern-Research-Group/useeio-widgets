@@ -132,7 +132,7 @@ const DownloadCSVButton: React.FC<DownloadCSVButtonProps> = ({ fileObjects }) =>
         : ""
       }
       <Button variant="outlined" color="primary" onClick={handleDownload} className={classes.container}>
-        Download Data (CSV)
+        Download Full Dataset (CSV)
       </Button>
     </div>
   );
