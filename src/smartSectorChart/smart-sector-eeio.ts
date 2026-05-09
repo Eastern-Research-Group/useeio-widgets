@@ -25,7 +25,7 @@ import DownloadCSVButton, {
   DownloadCSVButtonProps,
 } from "../util/downloadcsvfile";
 import { getLabel } from "../util";
-import { fileNames } from "../util/util";
+import { fileNames, SECTOR_PURCHASES_FILE_SLUG } from "../util/util";
 
 export interface SmartSectorChartConfig {
   model: WebModel;
@@ -122,7 +122,7 @@ export class SmartSectorEEIO extends Widget {
   }
 
   getFilesNames(): string[] {
-    return fileNames;
+    return fileNames.filter((slug) => slug !== SECTOR_PURCHASES_FILE_SLUG);
   }
 
   async selectiveGraph(

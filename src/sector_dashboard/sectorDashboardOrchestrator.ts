@@ -1,15 +1,11 @@
 import { WebModel } from "useeio";
+import { normalizeSectorCodeBase } from "../util/util";
 import { modelOfSmartSector } from "../smartSectorWebApi.ts/webApiSmartSector";
 import { SmartSectorEEIOImpactPurchasePerSector } from "../sector_contribution_to_impact_ranked_bar_chart.ts/smart-sector-eeio-impact-per-purchase";
 import { SmartSectorEEIOTotalImpactPerSector } from "../sector_contribution_to_impact_ranked_bar_chart.ts/smart-sector-eeio-total-impacts";
 import { PiePercentContributionDirectAndIndirect } from "../totalGhgEmissionPieChart.ts/piePercentContributionDirectAndIndirect";
 import { PiePercentContribution } from "../totalGhgEmissionPieChart.ts/piePercentContribution";
 import { SectorDashboardInterpretation } from "./sectorDashboardNarrative";
-
-/** Align model sector codes (e.g. `1111A0`) with JSON keys (e.g. `1111A0/US`). */
-function normalizeSectorKey(code: string): string {
-  return code.replace(/\/US$/i, "").replace(/\s/g, "").trim();
-}
 
 /**
  * Owns ranked-bar and pie widget instances for each curated indicator; keeps them
@@ -142,9 +138,9 @@ export class SectorDashboardOrchestrator {
     sectorCode: string,
     barMode: "impact_per_purchase" | "total_impact",
   ): SectorDashboardInterpretation | null {
-    const needle = normalizeSectorKey(sectorCode);
+    const needle = normalizeSectorCodeBase(sectorCode);
     const pieEntry = this.pieAgg[i]?.contributionList?.find(
-      (c) => normalizeSectorKey(c._sectorCode) === needle,
+      (c) => normalizeSectorCodeBase(c._sectorCode) === needle,
     );
     if (!pieEntry) {
       return null;
@@ -166,7 +162,7 @@ export class SectorDashboardOrchestrator {
     const barSource =
       barMode === "total_impact" ? this.barTotal[i] : this.barIntensity[i];
     const barEntry = barSource?.getTopValuesFromSectors?.find(
-      (s) => normalizeSectorKey(s.sector_code) === needle,
+      (s) => normalizeSectorCodeBase(s.sector_code) === needle,
     );
     const topRows =
       barMode === "total_impact"
