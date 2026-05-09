@@ -665,6 +665,28 @@ th.io-sector-column-header>div {
     background: #eee;
 }
 
+/* Stacked sector EEIO footer links — avoids narrow-column wraps like "Codes. · Multi-" */
+.smart-sector-resource-links {
+    flex: 1 1 220px;
+    min-width: 200px;
+    max-width: 28rem;
+    line-height: 1.45;
+    font-size: 0.95rem;
+}
+
+.smart-sector-resource-intro {
+    display: block;
+    margin-bottom: 0.35em;
+}
+
+.smart-sector-resource-line {
+    display: block;
+}
+
+.smart-sector-resource-line:not(:last-child) {
+    margin-bottom: 0.25em;
+}
+
 /* --- Multi-indicator sector dashboard (print / PDF snapshot) --- */
 .sector-dashboard-page .apexcharts-datalabel-value {
     white-space: normal !important;
@@ -696,8 +718,17 @@ th.io-sector-column-header>div {
     body {
         background: white;
     }
+}
+
 abbr.term-help,
 .term-help {
     cursor: help;
     text-decoration: underline dotted;
+    pointer-events: auto;
+}
+
+abbr.term-help:focus-visible,
+.term-help:focus-visible {
+    outline: 2px solid #1565c0;
+    outline-offset: 2px;
 }
