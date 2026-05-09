@@ -17,7 +17,10 @@ import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import { Menu, MenuItem, IconButton } from "@material-ui/core";
 import DownloadCSVButton from "../util/downloadcsvfile";
-import { getLabel } from "../util/util";
+import {
+  getLabel,
+  sectorPurchasesPointOfConsumptionOnly,
+} from "../util/util";
 
 export interface SmartSectorChartConfigPie {
   modelOne: {
@@ -221,19 +224,36 @@ const Component = (props: { widget: PieListSearch }) => {
     setSearchTerm(term.length === 0 ? "" : term);
   };
 
-  const handleChange = (event: any) => {
-    setGraph(event.target.value);
+  const handleChange = async (event: any) => {
+    const newGraph = event.target.value;
+    const forceFinal = sectorPurchasesPointOfConsumptionOnly(newGraph);
+    if (forceFinal) {
+      setPerspective("final");
+    }
+    setGraph(newGraph);
     setYear(new String(event.target.value).replace("GWP-AR6-", ""));
-    if (graphDetails === "Aggregate")
-      props.widget.piePercentContribution.changeGraph(
-        event.target.value,
+    if (graphDetails === "Aggregate") {
+      if (forceFinal) {
+        await props.widget.piePercentContribution.changePerspectiveGraph(
+          "final",
+          newGraph,
+          value,
+        );
+      }
+      await props.widget.piePercentContribution.changeGraph(newGraph, value);
+    } else {
+      if (forceFinal) {
+        await props.widget.piePercentContributionSectors.changePerspectiveGraph(
+          "final",
+          newGraph,
+          value,
+        );
+      }
+      await props.widget.piePercentContributionSectors.changeGraph(
+        newGraph,
         value,
       );
-    else
-      props.widget.piePercentContributionSectors.changeGraph(
-        event.target.value,
-        value,
-      );
+    }
   };
 
   React.useEffect(() => {
@@ -242,14 +262,17 @@ const Component = (props: { widget: PieListSearch }) => {
   }, [graph]);
 
   const handleChangePerspective = (event: any) => {
-    setPerspective(event.target.value);
+    const next = sectorPurchasesPointOfConsumptionOnly(graph)
+      ? "final"
+      : event.target.value;
+    setPerspective(next);
     props.widget.piePercentContribution.changePerspectiveGraph(
-      event.target.value,
+      next,
       graph,
       value,
     );
     props.widget.piePercentContributionSectors.changePerspectiveGraph(
-      event.target.value,
+      next,
       graph,
       value,
     );
@@ -383,15 +406,22 @@ const Component = (props: { widget: PieListSearch }) => {
               </InputLabel>
               <Select
                 native
-                value={perspective}
+                value={
+                  sectorPurchasesPointOfConsumptionOnly(graph)
+                    ? "final"
+                    : perspective
+                }
                 onChange={handleChangePerspective}
                 label="Select perspective"
+                disabled={sectorPurchasesPointOfConsumptionOnly(graph)}
                 inputProps={{
                   name: "perspective",
                 }}
               >
                 <option value="final">Point of Consumption</option>
-                <option value="direct">Supply Chain</option>
+                {!sectorPurchasesPointOfConsumptionOnly(graph) ? (
+                  <option value="direct">Supply Chain</option>
+                ) : null}
               </Select>
             </FormControl>
             <FormControl className={classes.margin}>
@@ -453,6 +483,11 @@ const Component = (props: { widget: PieListSearch }) => {
               multi-indicator sector dashboard
             </a>{" "}
             for several indicators on one page.
+            .{" "}
+            <a href="./glossary.html" target="_blank">
+              Glossary
+            </a>
+            .
           </div>
         </div>
 

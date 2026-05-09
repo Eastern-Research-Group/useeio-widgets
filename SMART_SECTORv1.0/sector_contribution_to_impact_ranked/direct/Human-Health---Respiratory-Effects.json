@@ -1,6 +1,76 @@
 [
   {
     "emissions_source": "Direct",
+    "sector_code": "11",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 2746.24506513509,
+    "total_impact": 1036.78878047541
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "11",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 592.733325648193,
+    "total_impact": 223.774370921152
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "11",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 195.749640166733,
+    "total_impact": 73.9012818934217
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "11",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 85.7945311011097,
+    "total_impact": 32.3899743693862
+  },
+  {
+    "emissions_source": "115000/US",
+    "sector_code": "11",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 54.6084028104469,
+    "total_impact": 20.6162880626853
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "11",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 53.1007120870271,
+    "total_impact": 20.0470901981854
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "11",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 20.781041547215,
+    "total_impact": 7.84545814802802
+  },
+  {
+    "emissions_source": "112300/US",
+    "sector_code": "11",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 17.0705690819445,
+    "total_impact": 6.44464499005659
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "11",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 12.3043630467073,
+    "total_impact": 4.64526116757712
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "11",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 86.5680527103233,
+    "total_impact": 32.6820016673392
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "111/112",
     "indicator": "Human Health - Respiratory Effects",
     "impact_per_purchase": 3118.68395366443,
@@ -981,6 +1051,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "211",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 133.89716382111,
+    "total_impact": 121.926529071911
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "211",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 32.0594784609591,
+    "total_impact": 29.1933064230011
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "211",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 17.8913101861216,
+    "total_impact": 16.2917965496056
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "211",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 14.7787504488734,
+    "total_impact": 13.4575049599892
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "211",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 7.47538717526377,
+    "total_impact": 6.80707481576164
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "211",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 5.71816982294322,
+    "total_impact": 5.2069556909113
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "211",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 4.8475746856522,
+    "total_impact": 4.41419324331685
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "211",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 4.4311539034474,
+    "total_impact": 4.03500118906635
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "211",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 4.17856862013211,
+    "total_impact": 3.8049974607542
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "211",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 43.4085200020458,
+    "total_impact": 39.5277242994421
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "211/32411",
     "indicator": "Human Health - Respiratory Effects",
     "impact_per_purchase": 126.777308465583,
@@ -1118,6 +1258,76 @@
     "indicator": "Human Health - Respiratory Effects",
     "impact_per_purchase": 23.609281547112,
     "total_impact": 7.11731334418955
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "212",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 456.76095085936,
+    "total_impact": 104.589527714815
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "212",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 70.6320520171337,
+    "total_impact": 16.1733899277105
+  },
+  {
+    "emissions_source": "2122A0/US",
+    "sector_code": "212",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 32.9250043869984,
+    "total_impact": 7.53919671190255
+  },
+  {
+    "emissions_source": "212310/US",
+    "sector_code": "212",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 8.17789346650892,
+    "total_impact": 1.87258130047023
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "212",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 7.12756215453718,
+    "total_impact": 1.63207550491891
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "212",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 7.0639920954961,
+    "total_impact": 1.61751917640746
+  },
+  {
+    "emissions_source": "2123A0/US",
+    "sector_code": "212",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 5.90331090318646,
+    "total_impact": 1.35174536736635
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "212",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 5.72249622113971,
+    "total_impact": 1.3103422610728
+  },
+  {
+    "emissions_source": "327310/US",
+    "sector_code": "212",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 4.90400292624874,
+    "total_impact": 1.1229229403333
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "212",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 47.1975905890779,
+    "total_impact": 10.8073461614909
   },
   {
     "emissions_source": "Direct",
@@ -1678,6 +1888,76 @@
     "indicator": "Human Health - Respiratory Effects",
     "impact_per_purchase": 41.4265395258732,
     "total_impact": 3.83194911381418
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "2211",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 293.300249651146,
+    "total_impact": 134.433083966404
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "2211",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 22.777685893013,
+    "total_impact": 10.4400680321884
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "2211",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 9.03334027204128,
+    "total_impact": 4.14039808262292
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "2211",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 6.70198088546258,
+    "total_impact": 3.07182813580366
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "2211",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 5.04747540463583,
+    "total_impact": 2.3134916717488
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "2211",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 4.30077197516221,
+    "total_impact": 1.97124291828942
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "2211",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 3.57366581631834,
+    "total_impact": 1.63797650129656
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "2211",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 2.49565615407339,
+    "total_impact": 1.14387476216221
+  },
+  {
+    "emissions_source": "2123A0/US",
+    "sector_code": "2211",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 2.11704575753858,
+    "total_impact": 0.970340088092017
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "2211",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 21.0474783263479,
+    "total_impact": 9.6470337972518
   },
   {
     "emissions_source": "Direct",
@@ -2868,6 +3148,76 @@
     "indicator": "Human Health - Respiratory Effects",
     "impact_per_purchase": 73.8928199932337,
     "total_impact": 19.6375249678583
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "31",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 28.6620293024942,
+    "total_impact": 26.1670222512278
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "31",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 493.026099268166,
+    "total_impact": 450.108566069448
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "31",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 273.249915018876,
+    "total_impact": 249.463725369328
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "31",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 168.594279732811,
+    "total_impact": 153.918280615751
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "31",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 50.0017572876095,
+    "total_impact": 45.6491437412462
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "31",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 46.1545904601273,
+    "total_impact": 42.1368697526717
+  },
+  {
+    "emissions_source": "112120/US",
+    "sector_code": "31",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 44.0557084717053,
+    "total_impact": 40.2206937864096
+  },
+  {
+    "emissions_source": "112300/US",
+    "sector_code": "31",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 31.2404242398405,
+    "total_impact": 28.520969942298
+  },
+  {
+    "emissions_source": "115000/US",
+    "sector_code": "31",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 13.6815759264321,
+    "total_impact": 12.4906055297228
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "31",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 120.353055624963,
+    "total_impact": 109.876417029118
   },
   {
     "emissions_source": "Direct",
@@ -5461,6 +5811,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "321",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 322.022344518535,
+    "total_impact": 36.3588348945095
+  },
+  {
+    "emissions_source": "113000/US",
+    "sector_code": "321",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 164.662549351197,
+    "total_impact": 18.5916864064835
+  },
+  {
+    "emissions_source": "321100/US",
+    "sector_code": "321",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 71.5381270730381,
+    "total_impact": 8.07721263814761
+  },
+  {
+    "emissions_source": "321200/US",
+    "sector_code": "321",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 31.6139332760885,
+    "total_impact": 3.56945969718316
+  },
+  {
+    "emissions_source": "115000/US",
+    "sector_code": "321",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 20.9823885746596,
+    "total_impact": 2.36907536034221
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "321",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 13.8694791153223,
+    "total_impact": 1.56597239232207
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "321",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 13.8639089661116,
+    "total_impact": 1.56534347902168
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "321",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 10.4822027744203,
+    "total_impact": 1.18352246821798
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "321",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 10.2725673711828,
+    "total_impact": 1.15985299576024
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "321",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 69.3953323822204,
+    "total_impact": 7.8352744009338
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "321/322",
     "indicator": "Human Health - Respiratory Effects",
     "impact_per_purchase": 508.149209834229,
@@ -5808,6 +6228,76 @@
     "indicator": "Human Health - Respiratory Effects",
     "impact_per_purchase": 75.7643144510243,
     "total_impact": 2.19686566610112
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "322-323",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 475.415364927152,
+    "total_impact": 98.4716464076067
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "322-323",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 166.382793315886,
+    "total_impact": 34.4624696642322
+  },
+  {
+    "emissions_source": "322120/US",
+    "sector_code": "322-323",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 66.7595432347309,
+    "total_impact": 13.8277443699176
+  },
+  {
+    "emissions_source": "113000/US",
+    "sector_code": "322-323",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 28.7975930764728,
+    "total_impact": 5.96477651337814
+  },
+  {
+    "emissions_source": "322110/US",
+    "sector_code": "322-323",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 27.3612970393629,
+    "total_impact": 5.66727995366008
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "322-323",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 26.1854120750724,
+    "total_impact": 5.423721716039
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "322-323",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 20.4677123823117,
+    "total_impact": 4.23942826667461
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "322-323",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 14.1700566187744,
+    "total_impact": 2.93500990476723
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "322-323",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 14.1020048696064,
+    "total_impact": 2.92091450887585
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "322-323",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 101.147799871848,
+    "total_impact": 20.9505016427356
   },
   {
     "emissions_source": "Direct",
@@ -6858,6 +7348,76 @@
     "indicator": "Human Health - Respiratory Effects",
     "impact_per_purchase": 70.9992458915708,
     "total_impact": 51.1021649963027
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "325-326",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 70.5023367260969,
+    "total_impact": 65.5653742384422
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "325-326",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 126.401236427284,
+    "total_impact": 117.54992466071
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "325-326",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 72.1647108353675,
+    "total_impact": 67.1113397434164
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "325-326",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 34.0235032434411,
+    "total_impact": 31.6409898827274
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "325-326",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 20.7933118432828,
+    "total_impact": 19.3372494582414
+  },
+  {
+    "emissions_source": "325110/US",
+    "sector_code": "325-326",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 11.4223948809562,
+    "total_impact": 10.6225357888307
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "325-326",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 10.8806599854691,
+    "total_impact": 10.1187361587755
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "325-326",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 8.62004800389935,
+    "total_impact": 8.01642469702417
+  },
+  {
+    "emissions_source": "325211/US",
+    "sector_code": "325-326",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 8.23900504793067,
+    "total_impact": 7.66206447055297
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "325-326",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 80.1623323150288,
+    "total_impact": 74.5489236545508
   },
   {
     "emissions_source": "Direct",
@@ -8891,6 +9451,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "327",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 347.251468556075,
+    "total_impact": 38.8924713980945
+  },
+  {
+    "emissions_source": "327310/US",
+    "sector_code": "327",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 114.216258121487,
+    "total_impact": 12.7923218601738
+  },
+  {
+    "emissions_source": "2123A0/US",
+    "sector_code": "327",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 93.5169928259742,
+    "total_impact": 10.4739858519351
+  },
+  {
+    "emissions_source": "212310/US",
+    "sector_code": "327",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 43.2600025924116,
+    "total_impact": 4.84515852590318
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "327",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 19.7227933091242,
+    "total_impact": 2.20897028270387
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "327",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 16.7465524763611,
+    "total_impact": 1.87562867887019
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "327",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 13.2233549909593,
+    "total_impact": 1.48102744651082
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "327",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 12.4656706863491,
+    "total_impact": 1.39616613471171
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "327",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 7.89530832368367,
+    "total_impact": 0.884281510557296
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "327",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 81.3901086310356,
+    "total_impact": 9.11576410369938
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "327100/US",
     "indicator": "Human Health - Respiratory Effects",
     "impact_per_purchase": 482.702207574848,
@@ -9798,6 +10428,76 @@
     "indicator": "Human Health - Respiratory Effects",
     "impact_per_purchase": 55.7764598851671,
     "total_impact": 0.234385640942701
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "331-332",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 71.9891274754032,
+    "total_impact": 34.6059947837508
+  },
+  {
+    "emissions_source": "2122A0/US",
+    "sector_code": "331-332",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 51.5703632274455,
+    "total_impact": 24.7904618854407
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "331-332",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 26.8823606555822,
+    "total_impact": 12.9226574240651
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "331-332",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 21.0300659446369,
+    "total_impact": 10.109392597246
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "331-332",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 12.9880169217987,
+    "total_impact": 6.24348789337118
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "331-332",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 10.9685297542702,
+    "total_impact": 5.27269737491096
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "331-332",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 10.2980810175675,
+    "total_impact": 4.95040501912387
+  },
+  {
+    "emissions_source": "212230/US",
+    "sector_code": "331-332",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 9.13888686020879,
+    "total_impact": 4.39316716432953
+  },
+  {
+    "emissions_source": "331410/US",
+    "sector_code": "331-332",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 8.15765034409434,
+    "total_impact": 3.92147557770925
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "331-332",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 73.0549480068201,
+    "total_impact": 35.1183468714078
   },
   {
     "emissions_source": "Direct",
@@ -11898,6 +12598,76 @@
     "indicator": "Human Health - Respiratory Effects",
     "impact_per_purchase": 52.0899938130918,
     "total_impact": 0.984131851277754
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "333",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 2.90971819421746,
+    "total_impact": 0.920341740250161
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "333",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 18.7491176957354,
+    "total_impact": 5.93033223717009
+  },
+  {
+    "emissions_source": "2122A0/US",
+    "sector_code": "333",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 12.4951327956426,
+    "total_impact": 3.95220137972547
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "333",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 9.07641115963111,
+    "total_impact": 2.87086222249348
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "333",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 7.23638980229036,
+    "total_impact": 2.28886481068987
+  },
+  {
+    "emissions_source": "331510/US",
+    "sector_code": "333",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 6.61651115246034,
+    "total_impact": 2.0927976463637
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "333",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 6.47961441973369,
+    "total_impact": 2.04949730975977
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "333",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 6.23503941317454,
+    "total_impact": 1.97213841376576
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "333",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 5.7119185409039,
+    "total_impact": 1.80667566383226
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "333",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 51.5363743386301,
+    "total_impact": 16.3009175731379
   },
   {
     "emissions_source": "Direct",
@@ -15331,6 +16101,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "335",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 4.80746276042793,
+    "total_impact": 0.540568380728634
+  },
+  {
+    "emissions_source": "2122A0/US",
+    "sector_code": "335",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 20.8498230550508,
+    "total_impact": 2.34442899487881
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "335",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 10.4804477050657,
+    "total_impact": 1.17845918472267
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "335",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 9.00262151492661,
+    "total_impact": 1.0122870996932
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "335",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 8.0122463649626,
+    "total_impact": 0.900925760498492
+  },
+  {
+    "emissions_source": "331410/US",
+    "sector_code": "335",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 8.00564671393564,
+    "total_impact": 0.900183672031706
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "335",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 7.20941615003636,
+    "total_impact": 0.810652647442892
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "335",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 6.06923053765704,
+    "total_impact": 0.682446081749368
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "335",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 5.05273787593789,
+    "total_impact": 0.568147995721313
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "335",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 58.4838697789664,
+    "total_impact": 6.57613638640979
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "335110/US",
     "indicator": "Human Health - Respiratory Effects",
     "impact_per_purchase": 7.49401900805557,
@@ -16308,6 +17148,76 @@
     "indicator": "Human Health - Respiratory Effects",
     "impact_per_purchase": 30.644276080777,
     "total_impact": 0.35824400422148
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "336",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 3.9065277411155,
+    "total_impact": 3.64064568319477
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "336",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 13.313361865667,
+    "total_impact": 12.4072415754074
+  },
+  {
+    "emissions_source": "2122A0/US",
+    "sector_code": "336",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 9.94722351210184,
+    "total_impact": 9.27020585517874
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "336",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 9.05745310580253,
+    "total_impact": 8.44099408365217
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "336",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 8.64288720649258,
+    "total_impact": 8.05464394057305
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "336",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 8.40289715260532,
+    "total_impact": 7.83098784196185
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "336",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 7.45179333911334,
+    "total_impact": 6.94461707428085
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "336",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 6.44510399778269,
+    "total_impact": 6.00644398356908
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "336",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 5.13848412178831,
+    "total_impact": 4.78875392058821
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "336",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 57.0365925481774,
+    "total_impact": 53.1546268721406
   },
   {
     "emissions_source": "Direct",
@@ -18201,6 +19111,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "337-339",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 7.62439552894496,
+    "total_impact": 1.54765997509181
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "337-339",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 22.0469044982717,
+    "total_impact": 4.47525466604018
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "337-339",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 12.9698536308185,
+    "total_impact": 2.63272324619217
+  },
+  {
+    "emissions_source": "321200/US",
+    "sector_code": "337-339",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 11.8497345420829,
+    "total_impact": 2.40535263374281
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "337-339",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 11.5430075139177,
+    "total_impact": 2.34309076092049
+  },
+  {
+    "emissions_source": "113000/US",
+    "sector_code": "337-339",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 8.27298418512989,
+    "total_impact": 1.67931561909208
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "337-339",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 7.5873937122389,
+    "total_impact": 1.54014905432383
+  },
+  {
+    "emissions_source": "321100/US",
+    "sector_code": "337-339",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 7.26429794251048,
+    "total_impact": 1.47456452515928
+  },
+  {
+    "emissions_source": "2122A0/US",
+    "sector_code": "337-339",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 6.36227747602268,
+    "total_impact": 1.29146529225655
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "337-339",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 67.4159943815615,
+    "total_impact": 13.6846305768446
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "337110/US",
     "indicator": "Human Health - Respiratory Effects",
     "impact_per_purchase": 36.450132998093,
@@ -19531,6 +20511,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "42-44",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 7.386095939974,
+    "total_impact": 30.717548563593
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "42-44",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 8.94930369598914,
+    "total_impact": 37.2186704757123
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "42-44",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 7.7120946186711,
+    "total_impact": 32.0733230249494
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "42-44",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 5.93026861598619,
+    "total_impact": 24.6630040669832
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "42-44",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 3.32250210250808,
+    "total_impact": 13.8177354472315
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "42-44",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 3.15277315210205,
+    "total_impact": 13.1118608797854
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "42-44",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 2.79654488035185,
+    "total_impact": 11.6303665523167
+  },
+  {
+    "emissions_source": "322120/US",
+    "sector_code": "42-44",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 1.46964611796026,
+    "total_impact": 6.11201456989184
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "42-44",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 1.19994165877434,
+    "total_impact": 4.99035843515036
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "42-44",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 19.588519198704,
+    "total_impact": 81.4654040057298
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "423100/US",
     "indicator": "Human Health - Respiratory Effects",
     "impact_per_purchase": 5.01771614578958,
@@ -20791,6 +21841,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "48",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 72.5666828951783,
+    "total_impact": 96.6213554342412
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "48",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 14.2184728259648,
+    "total_impact": 18.9316648059289
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "48",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 11.176763380596,
+    "total_impact": 14.8816782594417
+  },
+  {
+    "emissions_source": "48A000/US",
+    "sector_code": "48",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 4.73349838870338,
+    "total_impact": 6.30257594828972
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "48",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 4.73061956686548,
+    "total_impact": 6.2987428439375
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "48",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 4.64620665789949,
+    "total_impact": 6.18634843158407
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "48",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 4.19566208656772,
+    "total_impact": 5.58645567875566
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "48",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 3.11179827232141,
+    "total_impact": 4.14330867712299
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "48",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 2.81747741174482,
+    "total_impact": 3.75142524871052
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "48",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 28.0346774572551,
+    "total_impact": 37.3277160676409
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "481000/US",
     "indicator": "Human Health - Respiratory Effects",
     "impact_per_purchase": 7.35024571152162,
@@ -21561,6 +22681,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "5",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 1.93024340012875,
+    "total_impact": 28.3095536924141
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "5",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 9.68533907631758,
+    "total_impact": 142.04821350093
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "5",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 4.08514545196084,
+    "total_impact": 59.9140214679105
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "5",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 3.21978332794344,
+    "total_impact": 47.2223497794499
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "5",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 2.37533642752387,
+    "total_impact": 34.837427304789
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "5",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 2.32287672883386,
+    "total_impact": 34.0680369488092
+  },
+  {
+    "emissions_source": "722110/US",
+    "sector_code": "5",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 1.82917359360399,
+    "total_impact": 26.8272322845006
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "5",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 1.4243288732611,
+    "total_impact": 20.8896529373192
+  },
+  {
+    "emissions_source": "322120/US",
+    "sector_code": "5",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 1.09048229137657,
+    "total_impact": 15.9933545045628
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "5",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 16.5917317583149,
+    "total_impact": 243.339529631764
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "511110/US",
     "indicator": "Human Health - Respiratory Effects",
     "impact_per_purchase": 1.09940545311945,
@@ -22264,7 +23454,7 @@
     "sector_code": "517210/US",
     "indicator": "Human Health - Respiratory Effects",
     "impact_per_purchase": 0.00010035903367675,
-    "total_impact": 2.71823830812546e-5
+    "total_impact": 2.71823830812546e-05
   },
   {
     "emissions_source": "230301/US",
@@ -25271,6 +26461,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "562",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 128.425616894992,
+    "total_impact": 16.655788380632
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "562",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 12.0343734244315,
+    "total_impact": 1.56076320205434
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "562",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 10.6892087680623,
+    "total_impact": 1.38630596840204
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "562",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 8.95663398488743,
+    "total_impact": 1.16160470054069
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "562",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 5.29384564093394,
+    "total_impact": 0.686569976044747
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "562",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 4.30527455858664,
+    "total_impact": 0.5583601130526
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "562",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 3.7481267816708,
+    "total_impact": 0.486102445981105
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "562",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 3.71828288325954,
+    "total_impact": 0.482231928023637
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "562",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 2.86166808836633,
+    "total_impact": 0.371135753503208
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "562",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 35.4322710420225,
+    "total_impact": 4.5952857583208
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "562000/US",
     "indicator": "Human Health - Respiratory Effects",
     "impact_per_purchase": 140.459990319424,
@@ -25338,6 +26598,76 @@
     "indicator": "Human Health - Respiratory Effects",
     "impact_per_purchase": 32.5936753290832,
     "total_impact": 4.22714230971627
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "6",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 0.664115623015206,
+    "total_impact": 2.31614179479248
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "6",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 12.2493146720891,
+    "total_impact": 42.7201961320835
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "6",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 8.84965929638346,
+    "total_impact": 30.8637006203334
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "6",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 5.78936510809989,
+    "total_impact": 20.1907469535262
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "6",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 4.0903400641907,
+    "total_impact": 14.2652984650074
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "6",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 3.27263167046968,
+    "total_impact": 11.4134929645569
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "6",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 1.99751982532792,
+    "total_impact": 6.96646636976139
+  },
+  {
+    "emissions_source": "722110/US",
+    "sector_code": "6",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 1.96664064408721,
+    "total_impact": 6.85877343229386
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "6",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 1.8943759684935,
+    "total_impact": 6.60674618036778
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "6",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 26.4583209015465,
+    "total_impact": 92.2749303530543
   },
   {
     "emissions_source": "Direct",
@@ -26461,6 +27791,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "7",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 131.544763092066,
+    "total_impact": 241.044951720913
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "7",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 24.9803342958201,
+    "total_impact": 45.7744066184828
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "7",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 16.2573524858552,
+    "total_impact": 29.7902603870301
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "7",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 14.4323892324108,
+    "total_impact": 26.4461654266623
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "7",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 10.66974528137,
+    "total_impact": 19.5514300666021
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "7",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 7.93619107489742,
+    "total_impact": 14.5424169653772
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "7",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 6.51459424718078,
+    "total_impact": 11.9374577815309
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "7",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 3.31567046651685,
+    "total_impact": 6.07569323732518
+  },
+  {
+    "emissions_source": "112120/US",
+    "sector_code": "7",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 2.9336332633163,
+    "total_impact": 5.37564150560693
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "7",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 35.4838933669576,
+    "total_impact": 65.0213141326047
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "711100/US",
     "indicator": "Human Health - Respiratory Effects",
     "impact_per_purchase": 0.0773309827054645,
@@ -27301,6 +28701,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "8",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 1.85427405115965,
+    "total_impact": 1.71798342453257
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "8",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 11.6763864727523,
+    "total_impact": 10.5935672854608
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "8",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 4.6676562902649,
+    "total_impact": 4.23479739144588
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "8",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 4.55049320962067,
+    "total_impact": 4.12849952428699
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "8",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 2.77231409311107,
+    "total_impact": 2.51522129302052
+  },
+  {
+    "emissions_source": "212230/US",
+    "sector_code": "8",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 2.45055778456446,
+    "total_impact": 2.22330331719263
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "8",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 2.41604801357385,
+    "total_impact": 2.19199383785602
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "8",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 1.66991465735021,
+    "total_impact": 1.51505376469838
+  },
+  {
+    "emissions_source": "2122A0/US",
+    "sector_code": "8",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 1.65564700472146,
+    "total_impact": 1.50210923442945
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "8",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 20.8298003600102,
+    "total_impact": 18.8981318982045
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "811100/US",
     "indicator": "Human Health - Respiratory Effects",
     "impact_per_purchase": 2.29607397284577,
@@ -28075,6 +29545,76 @@
     "indicator": "Human Health - Respiratory Effects",
     "impact_per_purchase": 0.00620823424903803,
     "total_impact": 0.000119415462244421
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "G",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 1.91016128645658,
+    "total_impact": 6.11831653219957
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "G",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 20.5534397849276,
+    "total_impact": 65.8334200998108
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "G",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 8.70295243578377,
+    "total_impact": 27.8758752699769
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "G",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 5.80512574488962,
+    "total_impact": 18.5940302885846
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "G",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 4.2815307864032,
+    "total_impact": 13.7138998572033
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "G",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 2.14842527722347,
+    "total_impact": 6.88148481755474
+  },
+  {
+    "emissions_source": "322120/US",
+    "sector_code": "G",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 2.02515321777756,
+    "total_impact": 6.48663989811588
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "G",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 1.86070545609051,
+    "total_impact": 5.95990769694162
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "G",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 1.83584308736679,
+    "total_impact": 5.88027261969947
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "G",
+    "indicator": "Human Health - Respiratory Effects",
+    "impact_per_purchase": 27.8275567618827,
+    "total_impact": 89.1326830849885
   },
   {
     "emissions_source": "Direct",

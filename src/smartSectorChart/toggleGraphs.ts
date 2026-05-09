@@ -6,6 +6,7 @@ import {
 import { SumSmartSectorTotalParts } from "../smartSectorChart/smartSector";
 import { WebModel, Sector } from "useeio";
 import { formatNumberGraph } from "../util";
+import { chartTypography } from "../util/chartTypography";
 
 export async function calculate(
   topSectorList: SumSmartSectorTotalParts[],
@@ -38,7 +39,7 @@ export async function calculate(
     if (impactSelector == "impact_per_purchase") {
       switch (titleGraph) {
         case "Social Cost of Carbon":
-          yaxisTitle = "Million $ per Million $ of Output)";
+          yaxisTitle = "Million $ per Million $ of Output";
           unitLabel = "Million $ per Million $ of Output";
           break;
         case "Acidification Potential":
@@ -77,9 +78,12 @@ export async function calculate(
           unitLabel = "jobs per Million $ of Output";
           break;
         case "Global Warming Potential":
+        case "GWP AR6 100":
+        case "GWP AR6 20":
           yaxisTitle =
             "Metric Tons of CO2 eq. Emissions per Million $ of Output";
           unitLabel = "tons CO2e per Million $ of Output";
+          break;
         default:
           yaxisTitle = "Kilograms of Emissions per Million $ of Output";
           unitLabel = "kg per Million $ of Output";
@@ -123,8 +127,11 @@ export async function calculate(
           unitLabel = "Thousand MT";
           break;
         case "Global Warming Potential":
+        case "GWP AR6 100":
+        case "GWP AR6 20":
           yaxisTitle = "Million Metric Tons of CO2 eq. Emissions";
           unitLabel = "MMT CO2e";
+          break;
         default:
           yaxisTitle = "Metric Tons of Emissions";
           unitLabel = "MT";
@@ -211,6 +218,10 @@ export async function calculate(
       title: {
         text: titleName,
         align: "center",
+        style: {
+          fontSize: chartTypography.chartTitle,
+          fontWeight: 600,
+        },
       },
       plotOptions: {
         bar: {
@@ -218,6 +229,10 @@ export async function calculate(
           dataLabels: {
             total: {
               enabled: true,
+              style: {
+                fontSize: chartTypography.stackedBarTotal,
+                fontWeight: 600,
+              },
               formatter: function (val) {
                 let value;
                 value =
@@ -243,17 +258,27 @@ export async function calculate(
           hideOverlappingLabels: false,
           trim: true,
           minHeight: -100,
+          style: {
+            fontSize: chartTypography.axisLabel,
+          },
         },
       },
       yaxis: [
         {
           title: {
             text: yaxisTitle,
+            style: {
+              fontSize: chartTypography.axisTitle,
+              fontWeight: 600,
+            },
           },
           forceNiceScale: true,
           min: 0,
           max: undefined,
           labels: {
+            style: {
+              fontSize: chartTypography.axisLabel,
+            },
             formatter: function (val) {
               return Number(formatNumberGraph(val)).toLocaleString();
             },
@@ -262,6 +287,8 @@ export async function calculate(
       ],
       legend: {
         position: "bottom",
+        fontSize: chartTypography.axisLabel,
+        fontWeight: 500,
       },
       tooltip: {
         enabled: true,

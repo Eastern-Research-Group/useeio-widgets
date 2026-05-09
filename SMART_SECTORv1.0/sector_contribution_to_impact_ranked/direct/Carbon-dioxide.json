@@ -1,6 +1,76 @@
 [
   {
     "emissions_source": "Direct",
+    "sector_code": "11",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 102403.571347819,
+    "total_impact": 38660378.5663275
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "11",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 85021.6348406244,
+    "total_impact": 32098183.1590839
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "11",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 56095.4829082167,
+    "total_impact": 21177704.8060815
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "11",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 22690.0118348246,
+    "total_impact": 8566150.92289412
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "11",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 19070.6230894028,
+    "total_impact": 7199724.56456486
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "11",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 14925.5981290356,
+    "total_impact": 5634854.98017913
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "11",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 10152.0660008246,
+    "total_impact": 3832705.34080433
+  },
+  {
+    "emissions_source": "325320/US",
+    "sector_code": "11",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 8944.17466191887,
+    "total_impact": 3376690.61578587
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "11",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 8222.50747557434,
+    "total_impact": 3104239.89697048
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "11",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 79406.5776660111,
+    "total_impact": 29978332.9118225
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "111/112",
     "indicator": "Carbon dioxide",
     "impact_per_purchase": 112588.416906598,
@@ -981,6 +1051,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "211",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 272539.389326744,
+    "total_impact": 248173903.223103
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "211",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 60595.2372449743,
+    "total_impact": 55177919.7163539
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "211",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 54789.0024177091,
+    "total_impact": 49890772.1826638
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "211",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 49058.7374064767,
+    "total_impact": 44672802.6339195
+  },
+  {
+    "emissions_source": "325110/US",
+    "sector_code": "211",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 30458.6294167004,
+    "total_impact": 27735576.0128534
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "211",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 21083.2332348301,
+    "total_impact": 19198356.2353179
+  },
+  {
+    "emissions_source": "327310/US",
+    "sector_code": "211",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 11089.4901642712,
+    "total_impact": 10098070.8352652
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "211",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 10657.8085937715,
+    "total_impact": 9704982.33321409
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "211",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 8970.14034711707,
+    "total_impact": 8168194.50539744
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "211",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 50606.0281385082,
+    "total_impact": 46081762.9362735
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "211/32411",
     "indicator": "Carbon dioxide",
     "impact_per_purchase": 239937.45340027,
@@ -1118,6 +1258,76 @@
     "indicator": "Carbon dioxide",
     "impact_per_purchase": 32517.7024581848,
     "total_impact": 9802868.29847792
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "212",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 122938.463882754,
+    "total_impact": 28150558.5170768
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "212",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 74856.866825772,
+    "total_impact": 17140791.7703739
+  },
+  {
+    "emissions_source": "327310/US",
+    "sector_code": "212",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 15038.8464002238,
+    "total_impact": 3443608.38949949
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "212",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 11609.618633247,
+    "total_impact": 2658380.77339124
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "212",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 10317.6886202129,
+    "total_impact": 2362553.4929514
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "212",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 9072.00918998568,
+    "total_impact": 2077316.71199103
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "212",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 8670.44497706685,
+    "total_impact": 1985366.18229419
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "212",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 7091.82472163009,
+    "total_impact": 1623892.31582961
+  },
+  {
+    "emissions_source": "2122A0/US",
+    "sector_code": "212",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 7066.7911868916,
+    "total_impact": 1618160.11483825
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "212",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 65774.021124184,
+    "total_impact": 15060993.7043433
   },
   {
     "emissions_source": "Direct",
@@ -1678,6 +1888,76 @@
     "indicator": "Carbon dioxide",
     "impact_per_purchase": 54135.3154411849,
     "total_impact": 5007509.10901789
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "2211",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 3108092.05776151,
+    "total_impact": 1424582492.08222
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "2211",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 95725.9776900402,
+    "total_impact": 43875647.606429
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "2211",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 29300.4018959184,
+    "total_impact": 13429730.772505
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "2211",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 11453.5502311495,
+    "total_impact": 5249692.36053812
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "2211",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 8512.10059549147,
+    "total_impact": 3901489.80590789
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "2211",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 4673.04558470342,
+    "total_impact": 2141873.14949261
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "2211",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 4486.70144534879,
+    "total_impact": 2056463.00285174
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "2211",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 3734.26319789885,
+    "total_impact": 1711585.71679664
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "2211",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 3547.10907333938,
+    "total_impact": 1625804.31643477
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "2211",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 29267.3043166688,
+    "total_impact": 13414560.6195452
   },
   {
     "emissions_source": "Direct",
@@ -2868,6 +3148,76 @@
     "indicator": "Carbon dioxide",
     "impact_per_purchase": 81135.0799169137,
     "total_impact": 21562205.3371826
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "31",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 74633.6566608587,
+    "total_impact": 68136855.6958819
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "31",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 72657.1349887204,
+    "total_impact": 66332388.67685
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "31",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 33082.5662109441,
+    "total_impact": 30202754.9073143
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "31",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 22131.6173248606,
+    "total_impact": 20205077.4871301
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "31",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 17357.1850768463,
+    "total_impact": 15846255.8017479
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "31",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 12414.8737828355,
+    "total_impact": 11334168.8089535
+  },
+  {
+    "emissions_source": "325110/US",
+    "sector_code": "31",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 11692.0687429648,
+    "total_impact": 10674283.3778843
+  },
+  {
+    "emissions_source": "325211/US",
+    "sector_code": "31",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 8528.4509118551,
+    "total_impact": 7786055.98451456
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "31",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 7199.19880450106,
+    "total_impact": 6572514.22501332
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "31",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 125628.34740531,
+    "total_impact": 114692498.819463
   },
   {
     "emissions_source": "Direct",
@@ -5461,6 +5811,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "321",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 71699.6514645239,
+    "total_impact": 8095450.00204932
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "321",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 95537.6303627715,
+    "total_impact": 10786943.7872897
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "321",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 23383.9906503169,
+    "total_impact": 2640234.97034284
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "321",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 12592.4154433658,
+    "total_impact": 1421781.94097974
+  },
+  {
+    "emissions_source": "321100/US",
+    "sector_code": "321",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 11660.0887098255,
+    "total_impact": 1316514.97938672
+  },
+  {
+    "emissions_source": "325211/US",
+    "sector_code": "321",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 10892.9078995306,
+    "total_impact": 1229894.28088378
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "321",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 9077.99497638534,
+    "total_impact": 1024976.45314977
+  },
+  {
+    "emissions_source": "321200/US",
+    "sector_code": "321",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 8463.35654261034,
+    "total_impact": 955578.978987356
+  },
+  {
+    "emissions_source": "325110/US",
+    "sector_code": "321",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 8118.72127436379,
+    "total_impact": 916666.968593368
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "321",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 86133.8602233558,
+    "total_impact": 9725184.77675855
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "321/322",
     "indicator": "Carbon dioxide",
     "impact_per_purchase": 233216.517962192,
@@ -5808,6 +6228,76 @@
     "indicator": "Carbon dioxide",
     "impact_per_purchase": 88321.3789837369,
     "total_impact": 2560970.90665952
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "322-323",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 272881.336049287,
+    "total_impact": 56521257.8663672
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "322-323",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 149438.431729499,
+    "total_impact": 30952824.6131239
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "322-323",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 86337.1145278188,
+    "total_impact": 17882799.8437517
+  },
+  {
+    "emissions_source": "322120/US",
+    "sector_code": "322-323",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 38881.4334455867,
+    "total_impact": 8053418.22862915
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "322-323",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 28283.3759070781,
+    "total_impact": 5858267.9421015
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "322-323",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 22829.7435693114,
+    "total_impact": 4728670.13180787
+  },
+  {
+    "emissions_source": "322110/US",
+    "sector_code": "322-323",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 22079.7366224065,
+    "total_impact": 4573322.98838902
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "322-323",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 18725.4534543482,
+    "total_impact": 3878558.34583978
+  },
+  {
+    "emissions_source": "325211/US",
+    "sector_code": "322-323",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 13926.3303006237,
+    "total_impact": 2884527.45596198
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "322-323",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 113789.341411387,
+    "total_impact": 23568913.8783587
   },
   {
     "emissions_source": "Direct",
@@ -6858,6 +7348,76 @@
     "indicator": "Carbon dioxide",
     "impact_per_purchase": 73538.6639716585,
     "total_impact": 52929927.5322798
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "325-326",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 373199.666038723,
+    "total_impact": 347066166.963416
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "325-326",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 98933.6531451601,
+    "total_impact": 92005773.0630875
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "325-326",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 91346.3345848123,
+    "total_impact": 84949760.3977464
+  },
+  {
+    "emissions_source": "325110/US",
+    "sector_code": "325-326",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 90671.1771007264,
+    "total_impact": 84321881.1646658
+  },
+  {
+    "emissions_source": "325211/US",
+    "sector_code": "325-326",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 51351.4822029618,
+    "total_impact": 47755568.1794817
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "325-326",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 22534.3050124192,
+    "total_impact": 20956328.6828701
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "325-326",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 20660.4285554954,
+    "total_impact": 19213671.3912099
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "325-326",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 13258.927174538,
+    "total_impact": 12330463.9614455
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "325-326",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 10467.3754898755,
+    "total_impact": 9734392.1231188
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "325-326",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 80832.5944999594,
+    "total_impact": 75172250.3843241
   },
   {
     "emissions_source": "Direct",
@@ -8891,6 +9451,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "327",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 779754.654064677,
+    "total_impact": 87333210.444996
+  },
+  {
+    "emissions_source": "327310/US",
+    "sector_code": "327",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 350260.957860253,
+    "total_impact": 39229536.8601136
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "327",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 140127.41098327,
+    "total_impact": 15694393.8823856
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "327",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 22504.6959618179,
+    "total_impact": 2520545.83860307
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "327",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 17497.3134627444,
+    "total_impact": 1959714.57290869
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "327",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 14163.7470814146,
+    "total_impact": 1586352.1918117
+  },
+  {
+    "emissions_source": "327200/US",
+    "sector_code": "327",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 14016.1364170506,
+    "total_impact": 1569819.66693656
+  },
+  {
+    "emissions_source": "325211/US",
+    "sector_code": "327",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 11108.5118653579,
+    "total_impact": 1244163.1472296
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "327",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 11097.2278727115,
+    "total_impact": 1242899.3300798
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "327",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 100677.488316113,
+    "total_impact": 11275967.6756676
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "327100/US",
     "indicator": "Carbon dioxide",
     "impact_per_purchase": 444646.75226909,
@@ -9798,6 +10428,76 @@
     "indicator": "Carbon dioxide",
     "impact_per_purchase": 72321.2914556203,
     "total_impact": 303910.866457435
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "331-332",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 253417.171978997,
+    "total_impact": 121820525.392733
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "331-332",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 124910.91762093,
+    "total_impact": 60046103.0049348
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "331-332",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 116233.110115373,
+    "total_impact": 55874581.946087
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "331-332",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 32394.3219634416,
+    "total_impact": 15572320.101713
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "331-332",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 24850.7541168342,
+    "total_impact": 11946040.9856096
+  },
+  {
+    "emissions_source": "2122A0/US",
+    "sector_code": "331-332",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 11068.6997662002,
+    "total_impact": 5320850.24232174
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "331-332",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 9583.70594999298,
+    "total_impact": 4606996.77500295
+  },
+  {
+    "emissions_source": "S00401/US",
+    "sector_code": "331-332",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 9142.09668855747,
+    "total_impact": 4394710.16543243
+  },
+  {
+    "emissions_source": "331410/US",
+    "sector_code": "331-332",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 8938.22501481998,
+    "total_impact": 4296706.72622802
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "331-332",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 98069.8933716644,
+    "total_impact": 47143316.4629255
   },
   {
     "emissions_source": "Direct",
@@ -11898,6 +12598,76 @@
     "indicator": "Carbon dioxide",
     "impact_per_purchase": 61356.543117277,
     "total_impact": 1159203.98421766
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "333",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 19909.3267631259,
+    "total_impact": 6297305.51803911
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "333",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 87119.1903851946,
+    "total_impact": 27555736.3072607
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "333",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 68664.2378903019,
+    "total_impact": 21718448.3083273
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "333",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 16232.7634815746,
+    "total_impact": 5134411.2365904
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "333",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 8547.49868421211,
+    "total_impact": 2703567.592713
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "333",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 7010.43998358005,
+    "total_impact": 2217397.04801295
+  },
+  {
+    "emissions_source": "325211/US",
+    "sector_code": "333",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 6892.97198176645,
+    "total_impact": 2180242.00481059
+  },
+  {
+    "emissions_source": "325110/US",
+    "sector_code": "333",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 5490.19156909433,
+    "total_impact": 1736543.58454666
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "333",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 3755.00977401026,
+    "total_impact": 1187706.84973443
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "333",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 70791.4682637796,
+    "total_impact": 22391289.7222245
   },
   {
     "emissions_source": "Direct",
@@ -15331,6 +16101,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "335",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 30884.3138428246,
+    "total_impact": 3472743.1819866
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "335",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 64315.4148462273,
+    "total_impact": 7231856.26012435
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "335",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 48698.1912299464,
+    "total_impact": 5475799.54113721
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "335",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 15681.7565982311,
+    "total_impact": 1763313.03927392
+  },
+  {
+    "emissions_source": "325211/US",
+    "sector_code": "335",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 12892.3757291272,
+    "total_impact": 1449665.03516276
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "335",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 11354.9051001801,
+    "total_impact": 1276786.31519661
+  },
+  {
+    "emissions_source": "331410/US",
+    "sector_code": "335",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 8771.67673288589,
+    "total_impact": 986318.838868984
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "335",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 7783.14333302171,
+    "total_impact": 875164.592670896
+  },
+  {
+    "emissions_source": "325110/US",
+    "sector_code": "335",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 7718.5568843809,
+    "total_impact": 867902.26039738
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "335",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 76666.8805241268,
+    "total_impact": 8620699.42622994
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "335110/US",
     "indicator": "Carbon dioxide",
     "impact_per_purchase": 43345.1080875639,
@@ -16308,6 +17148,76 @@
     "indicator": "Carbon dioxide",
     "impact_per_purchase": 43576.7295695217,
     "total_impact": 509429.625640751
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "336",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 14285.8884753139,
+    "total_impact": 13313577.0830088
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "336",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 68298.5322064388,
+    "total_impact": 63650068.0204843
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "336",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 61861.5406796371,
+    "total_impact": 57651184.3652718
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "336",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 15895.1392672365,
+    "total_impact": 14813300.7089615
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "336",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 11593.4972384419,
+    "total_impact": 10804432.59881
+  },
+  {
+    "emissions_source": "325211/US",
+    "sector_code": "336",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 10491.7725707106,
+    "total_impact": 9777692.37796624
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "336",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 7915.22525338028,
+    "total_impact": 7376507.36405744
+  },
+  {
+    "emissions_source": "325110/US",
+    "sector_code": "336",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 7650.712622183,
+    "total_impact": 7129997.71847537
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "336",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 3866.78407144663,
+    "total_impact": 3603607.00613856
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "336",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 75233.6624150389,
+    "total_impact": 70113186.5568252
   },
   {
     "emissions_source": "Direct",
@@ -18201,6 +19111,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "337-339",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 18235.9942555792,
+    "total_impact": 3701686.0298261
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "337-339",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 58581.1779852658,
+    "total_impact": 11891269.8216315
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "337-339",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 25138.2935365095,
+    "total_impact": 5102769.20981676
+  },
+  {
+    "emissions_source": "325211/US",
+    "sector_code": "337-339",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 18128.1368118251,
+    "total_impact": 3679792.27469754
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "337-339",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 16596.25922337,
+    "total_impact": 3368839.6724366
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "337-339",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 13298.2286288552,
+    "total_impact": 2699379.39478163
+  },
+  {
+    "emissions_source": "325110/US",
+    "sector_code": "337-339",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 12660.0760905124,
+    "total_impact": 2569842.1563413
+  },
+  {
+    "emissions_source": "3252A0/US",
+    "sector_code": "337-339",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 6154.75285902529,
+    "total_impact": 1249340.30774416
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "337-339",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 5989.74173869353,
+    "total_impact": 1215845.04829533
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "337-339",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 71176.2354931876,
+    "total_impact": 14447913.9929613
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "337110/US",
     "indicator": "Carbon dioxide",
     "impact_per_purchase": 27713.4708932384,
@@ -19531,6 +20511,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "42-44",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 7883.28676446972,
+    "total_impact": 32785282.779468
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "42-44",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 62842.8404260208,
+    "total_impact": 261352955.38379
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "42-44",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 5414.00320738556,
+    "total_impact": 22515941.8179585
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "42-44",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 3981.03556846367,
+    "total_impact": 16556466.9619096
+  },
+  {
+    "emissions_source": "481000/US",
+    "sector_code": "42-44",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 3605.30940383503,
+    "total_impact": 14993884.1302772
+  },
+  {
+    "emissions_source": "492000/US",
+    "sector_code": "42-44",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 3512.04018438112,
+    "total_impact": 14605992.9085347
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "42-44",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 2556.05428250828,
+    "total_impact": 10630206.0238882
+  },
+  {
+    "emissions_source": "325110/US",
+    "sector_code": "42-44",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 2473.33908123765,
+    "total_impact": 10286207.214148
+  },
+  {
+    "emissions_source": "325211/US",
+    "sector_code": "42-44",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 2374.7433360236,
+    "total_impact": 9876163.85478881
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "42-44",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 27736.5834623483,
+    "total_impact": 115351852.510033
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "423100/US",
     "indicator": "Carbon dioxide",
     "impact_per_purchase": 4543.35427788243,
@@ -20791,6 +21841,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "48",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 446968.455382883,
+    "total_impact": 595131212.733342
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "48",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 44461.2782424247,
+    "total_impact": 59199467.2586509
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "48",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 22121.0830932393,
+    "total_impact": 29453861.5638483
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "48",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 14040.0874524961,
+    "total_impact": 18694147.5888461
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "48",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 7940.27351763774,
+    "total_impact": 10572344.7618652
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "48",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 7676.27849037014,
+    "total_impact": 10220839.686191
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "48",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 6404.62129233702,
+    "total_impact": 8527648.85508804
+  },
+  {
+    "emissions_source": "325110/US",
+    "sector_code": "48",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 5285.33488360161,
+    "total_impact": 7037337.24628326
+  },
+  {
+    "emissions_source": "481000/US",
+    "sector_code": "48",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 5174.62896143491,
+    "total_impact": 6889934.11543057
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "48",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 41078.6991442393,
+    "total_impact": 54695618.3256315
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "481000/US",
     "indicator": "Carbon dioxide",
     "impact_per_purchase": 611754.848981947,
@@ -21558,6 +22678,76 @@
     "indicator": "Carbon dioxide",
     "impact_per_purchase": 22198.6322026791,
     "total_impact": 5466175.57936123
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "5",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 10138.8966058508,
+    "total_impact": 148700230.150262
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "5",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 34119.9265980742,
+    "total_impact": 500413519.841581
+  },
+  {
+    "emissions_source": "481000/US",
+    "sector_code": "5",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 4258.98333150349,
+    "total_impact": 62463582.2043232
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "5",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 4018.55380966339,
+    "total_impact": 58937367.6050039
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "5",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 2441.4774173526,
+    "total_impact": 35807471.7575771
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "5",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 2353.95608701808,
+    "total_impact": 34523856.5408789
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "5",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 1993.51506701699,
+    "total_impact": 29237515.7571266
+  },
+  {
+    "emissions_source": "325110/US",
+    "sector_code": "5",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 1681.71719045108,
+    "total_impact": 24664590.5357609
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "5",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 1320.60076393277,
+    "total_impact": 19368344.0286879
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "5",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 21714.1297153979,
+    "total_impact": 318466220.903072
   },
   {
     "emissions_source": "Direct",
@@ -25271,6 +26461,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "562",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 145082.116676314,
+    "total_impact": 18816004.8719149
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "562",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 45622.8376141566,
+    "total_impact": 5916921.77150803
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "562",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 13595.2032896778,
+    "total_impact": 1763190.51026785
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "562",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 13296.9567451341,
+    "total_impact": 1724510.28858563
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "562",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 12720.5445108507,
+    "total_impact": 1649754.17351801
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "562",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 7518.16839271739,
+    "total_impact": 975047.072278768
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "562",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 7418.30359630593,
+    "total_impact": 962095.39678038
+  },
+  {
+    "emissions_source": "481000/US",
+    "sector_code": "562",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 5390.55057249876,
+    "total_impact": 699111.842024835
+  },
+  {
+    "emissions_source": "325110/US",
+    "sector_code": "562",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 4966.57516655135,
+    "total_impact": 644125.579853897
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "562",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 47768.270805082,
+    "total_impact": 6195167.51466109
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "562000/US",
     "indicator": "Carbon dioxide",
     "impact_per_purchase": 158677.319965992,
@@ -25338,6 +26598,76 @@
     "indicator": "Carbon dioxide",
     "impact_per_purchase": 44686.8385263162,
     "total_impact": 5795530.0810614
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "6",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 8366.28214964306,
+    "total_impact": 29177894.7554903
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "6",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 43345.1846092049,
+    "total_impact": 151168848.009583
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "6",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 9013.35662187969,
+    "total_impact": 31434604.5475083
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "6",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 3900.25649237579,
+    "total_impact": 13602370.971772
+  },
+  {
+    "emissions_source": "325110/US",
+    "sector_code": "6",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 3751.48450620055,
+    "total_impact": 13083520.0320661
+  },
+  {
+    "emissions_source": "481000/US",
+    "sector_code": "6",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 3043.29120956876,
+    "total_impact": 10613654.7913214
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "6",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 2949.7928173913,
+    "total_impact": 10287573.7199488
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "6",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 2252.12841526727,
+    "total_impact": 7854428.61012296
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "6",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 2104.51635137925,
+    "total_impact": 7339622.9667406
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "6",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 29981.1883080512,
+    "total_impact": 104561134.976087
   },
   {
     "emissions_source": "Direct",
@@ -26461,6 +27791,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "7",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 11370.0827407693,
+    "total_impact": 20834740.8204562
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "7",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 84099.5276277634,
+    "total_impact": 154105462.65987
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "7",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 5900.07065703217,
+    "total_impact": 10811393.8802636
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "7",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 4650.89665586889,
+    "total_impact": 8522385.33500758
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "7",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 3065.25786705846,
+    "total_impact": 5616832.75874794
+  },
+  {
+    "emissions_source": "481000/US",
+    "sector_code": "7",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 2930.46024371612,
+    "total_impact": 5369827.20834145
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "7",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 2520.55241304403,
+    "total_impact": 4618704.84564256
+  },
+  {
+    "emissions_source": "325110/US",
+    "sector_code": "7",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 2515.37108831444,
+    "total_impact": 4609210.49451875
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "7",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 2383.93911541974,
+    "total_impact": 4368372.22155144
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "7",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 38785.8462759285,
+    "total_impact": 71071871.0747352
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "711100/US",
     "indicator": "Carbon dioxide",
     "impact_per_purchase": 2322.7612511125,
@@ -27301,6 +28701,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "8",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 7049.79905329212,
+    "total_impact": 6396030.2097147
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "8",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 49462.9836196466,
+    "total_impact": 44875993.6421373
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "8",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 4564.64156283582,
+    "total_impact": 4141335.81847037
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "8",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 4551.08202462472,
+    "total_impact": 4129033.73505319
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "8",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 4306.49446645211,
+    "total_impact": 3907128.20282929
+  },
+  {
+    "emissions_source": "481000/US",
+    "sector_code": "8",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 3165.20050797563,
+    "total_impact": 2871673.06695962
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "8",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 2345.78594613628,
+    "total_impact": 2128247.58033428
+  },
+  {
+    "emissions_source": "325110/US",
+    "sector_code": "8",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 2231.67892142445,
+    "total_impact": 2024722.36327767
+  },
+  {
+    "emissions_source": "325211/US",
+    "sector_code": "8",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 2091.48268374683,
+    "total_impact": 1897527.33761865
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "8",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 27029.8495253365,
+    "total_impact": 24523214.4662848
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "811100/US",
     "indicator": "Carbon dioxide",
     "impact_per_purchase": 7073.18948597378,
@@ -28068,6 +29538,76 @@
     "indicator": "Carbon dioxide",
     "impact_per_purchase": 27249.3387145364,
     "total_impact": 2877970.27523854
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "G",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 71664.0865373995,
+    "total_impact": 229542692.826802
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "G",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 22766.7843746285,
+    "total_impact": 72922843.8519494
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "G",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 8474.01837787115,
+    "total_impact": 27142591.1011261
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "G",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 5577.66764725981,
+    "total_impact": 17865473.6745551
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "G",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 5044.98843394685,
+    "total_impact": 16159282.6527396
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "G",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 4374.10945219025,
+    "total_impact": 14010432.7130568
+  },
+  {
+    "emissions_source": "481000/US",
+    "sector_code": "G",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 3960.02206956973,
+    "total_impact": 12684095.666638
+  },
+  {
+    "emissions_source": "325110/US",
+    "sector_code": "G",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 3325.55826834316,
+    "total_impact": 10651884.8833655
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "G",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 3248.56545800066,
+    "total_impact": 10405274.0931045
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "G",
+    "indicator": "Carbon dioxide",
+    "impact_per_purchase": 36221.4047958386,
+    "total_impact": 116018485.63949
   },
   {
     "emissions_source": "Direct",

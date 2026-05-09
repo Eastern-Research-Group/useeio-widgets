@@ -1,6 +1,76 @@
 [
   {
     "emissions_source": "Direct",
+    "sector_code": "11",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 8891.21652710478,
+    "total_impact": 3356697.35272744
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "11",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 1982.49804745023,
+    "total_impact": 748451.680079647
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "11",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 546.223112965341,
+    "total_impact": 206215.389277708
+  },
+  {
+    "emissions_source": "115000/US",
+    "sector_code": "11",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 356.883033251856,
+    "total_impact": 134733.906130608
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "11",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 321.790254605912,
+    "total_impact": 121485.343707053
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "11",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 299.520289635503,
+    "total_impact": 113077.772905732
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "11",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 273.898769639837,
+    "total_impact": 103404.890901327
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "11",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 129.301695302077,
+    "total_impact": 48815.2163430645
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "11",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 101.851240006898,
+    "total_impact": 38451.8571402387
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "11",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 936.299090667352,
+    "total_impact": 353480.614202027
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "111/112",
     "indicator": "Criteria Air Pollutants",
     "impact_per_purchase": 9776.5755525239,
@@ -981,6 +1051,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "211",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 5750.62478657432,
+    "total_impact": 5236509.1254559
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "211",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 4281.65607527259,
+    "total_impact": 3898868.72163414
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "211",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 226.797527739671,
+    "total_impact": 206521.442054838
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "211",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 108.281583211921,
+    "total_impact": 98601.0250454563
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "211",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 79.2893716515475,
+    "total_impact": 72200.7666322339
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "211",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 78.9469027802958,
+    "total_impact": 71888.9150620045
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "211",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 65.6533496648732,
+    "total_impact": 59783.828261495
+  },
+  {
+    "emissions_source": "21311A/US",
+    "sector_code": "211",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 55.9191951970482,
+    "total_impact": 50919.9238004759
+  },
+  {
+    "emissions_source": "327310/US",
+    "sector_code": "211",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 52.0961602428806,
+    "total_impact": 47438.6746897404
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "211",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 566.068387978935,
+    "total_impact": 515460.908909274
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "211/32411",
     "indicator": "Criteria Air Pollutants",
     "impact_per_purchase": 6496.6864273465,
@@ -1118,6 +1258,76 @@
     "indicator": "Criteria Air Pollutants",
     "impact_per_purchase": 270.33493683233,
     "total_impact": 81495.8493962619
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "212",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 2355.42887707993,
+    "total_impact": 539348.193745836
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "212",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 374.729482341676,
+    "total_impact": 85805.8892845257
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "212",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 259.189000715304,
+    "total_impact": 59349.3273071746
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "212",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 139.883907117469,
+    "total_impact": 32030.7411410567
+  },
+  {
+    "emissions_source": "2122A0/US",
+    "sector_code": "212",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 127.103798075388,
+    "total_impact": 29104.340435523
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "212",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 104.663859531516,
+    "total_impact": 23966.0234015529
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "212",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 97.9508325121923,
+    "total_impact": 22428.8685196242
+  },
+  {
+    "emissions_source": "327310/US",
+    "sector_code": "212",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 70.6494293541418,
+    "total_impact": 16177.3690057539
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "212",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 56.9199887222192,
+    "total_impact": 13033.5895106378
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "212",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 588.977995454765,
+    "total_impact": 134864.70387439
   },
   {
     "emissions_source": "Direct",
@@ -1678,6 +1888,76 @@
     "indicator": "Criteria Air Pollutants",
     "impact_per_purchase": 468.688655834688,
     "total_impact": 43353.635131865
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "2211",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 4066.96429454964,
+    "total_impact": 1864078.03316858
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "2211",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 895.073112606808,
+    "total_impact": 410253.448629043
+  },
+  {
+    "emissions_source": "486000/US",
+    "sector_code": "2211",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 135.455151581128,
+    "total_impact": 62085.3674275644
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "2211",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 125.258237558973,
+    "total_impact": 57411.649622793
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "2211",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 83.584229490954,
+    "total_impact": 38310.5222542068
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "2211",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 71.4485303656033,
+    "total_impact": 32748.1694725445
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "2211",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 62.1452541742727,
+    "total_impact": 28484.0472603085
+  },
+  {
+    "emissions_source": "48A000/US",
+    "sector_code": "2211",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 61.1397688746613,
+    "total_impact": 28023.1867943852
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "2211",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 54.1604832367781,
+    "total_impact": 24824.2570515738
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "2211",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 279.50007547309,
+    "total_impact": 128107.825204313
   },
   {
     "emissions_source": "Direct",
@@ -2868,6 +3148,76 @@
     "indicator": "Criteria Air Pollutants",
     "impact_per_purchase": 866.630240885776,
     "total_impact": 230312.945085245
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "31",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 306.824321869561,
+    "total_impact": 280115.506576501
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "31",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 1649.01016502196,
+    "total_impact": 1505465.13037287
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "31",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 762.481193181223,
+    "total_impact": 696107.806518067
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "31",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 588.585389399106,
+    "total_impact": 537349.495341341
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "31",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 399.350791338011,
+    "total_impact": 364587.619833248
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "31",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 222.078707840933,
+    "total_impact": 202746.93142861
+  },
+  {
+    "emissions_source": "112120/US",
+    "sector_code": "31",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 134.369197908391,
+    "total_impact": 122672.465178261
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "31",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 124.825904421195,
+    "total_impact": 113959.907864402
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "31",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 112.387697978263,
+    "total_impact": 102604.437485017
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "31",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 1307.81443288634,
+    "total_impact": 1193970.21769271
   },
   {
     "emissions_source": "Direct",
@@ -5461,6 +5811,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "321",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 1975.68569042861,
+    "total_impact": 223070.327399608
+  },
+  {
+    "emissions_source": "113000/US",
+    "sector_code": "321",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 821.382515561064,
+    "total_impact": 92740.4938721656
+  },
+  {
+    "emissions_source": "321100/US",
+    "sector_code": "321",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 469.307296151098,
+    "total_impact": 52988.454950412
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "321",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 282.276021494229,
+    "total_impact": 31871.1649514028
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "321",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 211.998011746458,
+    "total_impact": 23936.2293898525
+  },
+  {
+    "emissions_source": "321200/US",
+    "sector_code": "321",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 185.444154686944,
+    "total_impact": 20938.0917727788
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "321",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 150.95761740528,
+    "total_impact": 17044.2926732719
+  },
+  {
+    "emissions_source": "115000/US",
+    "sector_code": "321",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 137.126487756588,
+    "total_impact": 15482.6502349088
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "321",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 125.011783515547,
+    "total_impact": 14114.805615448
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "321",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 830.650380995133,
+    "total_impact": 93786.9081812275
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "321/322",
     "indicator": "Criteria Air Pollutants",
     "impact_per_purchase": 2927.8949691144,
@@ -5808,6 +6228,76 @@
     "indicator": "Criteria Air Pollutants",
     "impact_per_purchase": 924.567930202668,
     "total_impact": 26808.8156879371
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "322-323",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 2739.17538652123,
+    "total_impact": 567358.840308556
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "322-323",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 813.323909953476,
+    "total_impact": 168461.83439625
+  },
+  {
+    "emissions_source": "322120/US",
+    "sector_code": "322-323",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 406.582331277653,
+    "total_impact": 84214.4249319503
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "322-323",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 274.857650733601,
+    "total_impact": 56930.6071956928
+  },
+  {
+    "emissions_source": "322110/US",
+    "sector_code": "322-323",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 265.600775595378,
+    "total_impact": 55013.2528089867
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "322-323",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 226.041251076926,
+    "total_impact": 46819.3831997643
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "322-323",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 198.717805650996,
+    "total_impact": 41159.9433601791
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "322-323",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 195.541430170856,
+    "total_impact": 40502.0283111228
+  },
+  {
+    "emissions_source": "113000/US",
+    "sector_code": "322-323",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 143.650390064152,
+    "total_impact": 29753.9613993744
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "322-323",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 1214.62331537972,
+    "total_impact": 251582.01954376
   },
   {
     "emissions_source": "Direct",
@@ -6858,6 +7348,76 @@
     "indicator": "Criteria Air Pollutants",
     "impact_per_purchase": 855.996926842018,
     "total_impact": 616109.307113108
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "325-326",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 770.83351276142,
+    "total_impact": 716855.49850758
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "325-326",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 818.00543687028,
+    "total_impact": 760724.184303919
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "325-326",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 422.770567418912,
+    "total_impact": 393165.840410494
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "325-326",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 251.936747173294,
+    "total_impact": 234294.746527436
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "325-326",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 171.726759037916,
+    "total_impact": 159701.504175932
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "325-326",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 160.052972483531,
+    "total_impact": 148845.180545248
+  },
+  {
+    "emissions_source": "325110/US",
+    "sector_code": "325-326",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 140.071463663331,
+    "total_impact": 130262.887184748
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "325-326",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 123.957955429178,
+    "total_impact": 115277.735674509
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "325-326",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 119.527438148656,
+    "total_impact": 111157.467651395
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "325-326",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 961.690987643334,
+    "total_impact": 894348.080284729
   },
   {
     "emissions_source": "Direct",
@@ -8891,6 +9451,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "327",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 3844.03406404362,
+    "total_impact": 430535.212740146
+  },
+  {
+    "emissions_source": "327310/US",
+    "sector_code": "327",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 1645.45445437183,
+    "total_impact": 184292.353232163
+  },
+  {
+    "emissions_source": "2123A0/US",
+    "sector_code": "327",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 368.790230045785,
+    "total_impact": 41304.8317220759
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "327",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 271.661759364975,
+    "total_impact": 30426.3571583778
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "327",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 217.647013585554,
+    "total_impact": 24376.6578899002
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "327",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 192.428813005894,
+    "total_impact": 21552.1971357552
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "327",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 183.3578821237,
+    "total_impact": 20536.2448595653
+  },
+  {
+    "emissions_source": "212310/US",
+    "sector_code": "327",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 137.846166359357,
+    "total_impact": 15438.8924682187
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "327",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 109.842937455865,
+    "total_impact": 12302.5060802445
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "327",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 925.165017607111,
+    "total_impact": 103619.29968337
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "327100/US",
     "indicator": "Criteria Air Pollutants",
     "impact_per_purchase": 3673.26118168482,
@@ -9798,6 +10428,76 @@
     "indicator": "Criteria Air Pollutants",
     "impact_per_purchase": 620.624465354561,
     "total_impact": 2608.00817040621
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "331-332",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 1085.3672434936,
+    "total_impact": 521748.415128757
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "331-332",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 796.495238120399,
+    "total_impact": 382884.346877167
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "331-332",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 373.212302345299,
+    "total_impact": 179407.41110671
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "331-332",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 299.981816967423,
+    "total_impact": 144204.681418617
+  },
+  {
+    "emissions_source": "2122A0/US",
+    "sector_code": "331-332",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 199.082404281289,
+    "total_impact": 95701.1827438638
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "331-332",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 175.411373457318,
+    "total_impact": 84322.2482026689
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "331-332",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 152.09199080935,
+    "total_impact": 73112.3549510581
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "331-332",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 121.102097605824,
+    "total_impact": 58215.1597750692
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "331-332",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 103.811528032063,
+    "total_impact": 49903.3857411072
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "331-332",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 854.455585071698,
+    "total_impact": 410746.546831548
   },
   {
     "emissions_source": "Direct",
@@ -11898,6 +12598,76 @@
     "indicator": "Criteria Air Pollutants",
     "impact_per_purchase": 579.372750909989,
     "total_impact": 10946.0404234033
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "333",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 71.2044820972672,
+    "total_impact": 22521.9256961874
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "333",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 260.29713207926,
+    "total_impact": 82331.7928162386
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "333",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 195.951151450431,
+    "total_impact": 61979.2061266652
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "333",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 172.369159951917,
+    "total_impact": 54520.2394344823
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "333",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 119.136828215213,
+    "total_impact": 37682.8917746662
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "333",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 101.513399843647,
+    "total_impact": 32108.6142487892
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "333",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 89.8477260720019,
+    "total_impact": 28418.7701527105
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "333",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 50.6207716896827,
+    "total_impact": 16011.3131238189
+  },
+  {
+    "emissions_source": "2122A0/US",
+    "sector_code": "333",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 48.2362528221761,
+    "total_impact": 15257.0915471241
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "333",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 589.545087743004,
+    "total_impact": 186472.680786619
   },
   {
     "emissions_source": "Direct",
@@ -15331,6 +16101,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "335",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 104.790327761578,
+    "total_impact": 11783.0008503398
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "335",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 191.367999903083,
+    "total_impact": 21518.1052846426
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "335",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 189.299761909098,
+    "total_impact": 21285.545175686
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "335",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 145.501805727945,
+    "total_impact": 16360.7456646104
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "335",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 126.75802615565,
+    "total_impact": 14253.1277636393
+  },
+  {
+    "emissions_source": "331410/US",
+    "sector_code": "335",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 96.0923359060292,
+    "total_impact": 10804.9674037476
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "335",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 92.2833332561225,
+    "total_impact": 10376.6694642191
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "335",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 84.1572549679046,
+    "total_impact": 9462.94403339642
+  },
+  {
+    "emissions_source": "2122A0/US",
+    "sector_code": "335",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 80.4887273012248,
+    "total_impact": 9050.44160555467
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "335",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 664.215231400077,
+    "total_impact": 74686.7464161644
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "335110/US",
     "indicator": "Criteria Air Pollutants",
     "impact_per_purchase": 110.479525548674,
@@ -16308,6 +17148,76 @@
     "indicator": "Criteria Air Pollutants",
     "impact_per_purchase": 363.132280369255,
     "total_impact": 4245.16349606848
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "336",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 68.7049753238232,
+    "total_impact": 64028.8482260351
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "336",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 194.615563495435,
+    "total_impact": 181369.839938691
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "336",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 191.875575924907,
+    "total_impact": 178816.338573358
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "336",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 184.831626117252,
+    "total_impact": 172251.806805165
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "336",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 120.929924860225,
+    "total_impact": 112699.317165409
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "336",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 114.759270800081,
+    "total_impact": 106948.643791173
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "336",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 89.3691971446264,
+    "total_impact": 83286.6431155203
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "336",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 51.1859707353227,
+    "total_impact": 47702.204040787
+  },
+  {
+    "emissions_source": "2122A0/US",
+    "sector_code": "336",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 38.4002952234141,
+    "total_impact": 35786.7339753249
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "336",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 640.587221433868,
+    "total_impact": 596988.235326598
   },
   {
     "emissions_source": "Direct",
@@ -18201,6 +19111,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "337-339",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 129.969689018222,
+    "total_impact": 26382.2731789029
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "337-339",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 160.527393566291,
+    "total_impact": 32585.1172050538
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "337-339",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 149.296117691946,
+    "total_impact": 30305.3041924747
+  },
+  {
+    "emissions_source": "331313/US",
+    "sector_code": "337-339",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 116.10594386968,
+    "total_impact": 23568.1007779806
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "337-339",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 99.4548005573907,
+    "total_impact": 20188.120300038
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "337-339",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 76.968719755649,
+    "total_impact": 15623.7181620036
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "337-339",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 76.6539583677335,
+    "total_impact": 15559.8254114332
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "337-339",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 75.1088902914327,
+    "total_impact": 15246.1952998519
+  },
+  {
+    "emissions_source": "321200/US",
+    "sector_code": "337-339",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 69.5093516592989,
+    "total_impact": 14109.5567575525
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "337-339",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 789.293464538918,
+    "total_impact": 160217.016421952
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "337110/US",
     "indicator": "Criteria Air Pollutants",
     "impact_per_purchase": 658.807752955873,
@@ -19531,6 +20511,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "42-44",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 224.221890828342,
+    "total_impact": 932501.67294259
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "42-44",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 171.487878245952,
+    "total_impact": 713189.65674119
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "42-44",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 111.340544323685,
+    "total_impact": 463046.866051364
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "42-44",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 82.2303790978378,
+    "total_impact": 341982.514696307
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "42-44",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 65.3542549084572,
+    "total_impact": 271797.511879467
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "42-44",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 32.8400636229361,
+    "total_impact": 136576.380454188
+  },
+  {
+    "emissions_source": "48A000/US",
+    "sector_code": "42-44",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 32.6338970647496,
+    "total_impact": 135718.96791653
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "42-44",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 25.7944202927127,
+    "total_impact": 107274.717855062
+  },
+  {
+    "emissions_source": "493000/US",
+    "sector_code": "42-44",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 18.9865630985625,
+    "total_impact": 78961.9683762012
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "42-44",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 248.021401029235,
+    "total_impact": 1031479.89043759
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "423100/US",
     "indicator": "Criteria Air Pollutants",
     "impact_per_purchase": 128.614132428802,
@@ -20791,6 +21841,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "48",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 3702.33885168475,
+    "total_impact": 4929603.83270326
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "48",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 620.517236049016,
+    "total_impact": 826208.585336186
+  },
+  {
+    "emissions_source": "48A000/US",
+    "sector_code": "48",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 215.855379058235,
+    "total_impact": 287407.918762184
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "48",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 169.482621114029,
+    "total_impact": 225663.347437829
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "48",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 152.864339782578,
+    "total_impact": 203536.376723849
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "48",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 138.793047253565,
+    "total_impact": 184800.680084264
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "48",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 58.1779521782276,
+    "total_impact": 77462.9950216771
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "48",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 52.1756293101264,
+    "total_impact": 69470.9999609738
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "48",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 42.5835662856704,
+    "total_impact": 56699.3243950347
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "48",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 361.573676304819,
+    "total_impact": 481429.45633022
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "481000/US",
     "indicator": "Criteria Air Pollutants",
     "impact_per_purchase": 743.146666283445,
@@ -21558,6 +22678,76 @@
     "indicator": "Criteria Air Pollutants",
     "impact_per_purchase": 189.25409908991,
     "total_impact": 46601.7962410507
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "5",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 325.799357134941,
+    "total_impact": 4778275.31654837
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "5",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 195.533509535755,
+    "total_impact": 2867755.63459996
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "5",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 71.2378720234401,
+    "total_impact": 1044796.92190445
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "5",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 44.646207585937,
+    "total_impact": 654795.250553606
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "5",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 35.5409942807649,
+    "total_impact": 521255.343137546
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "5",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 29.4718956333895,
+    "total_impact": 432244.043313405
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "5",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 13.6634680920058,
+    "total_impact": 200392.698428303
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "5",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 13.591714472006,
+    "total_impact": 199340.337385197
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "5",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 12.5077976395172,
+    "total_impact": 183443.273955058
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "5",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 198.115502788931,
+    "total_impact": 2905623.95557407
   },
   {
     "emissions_source": "Direct",
@@ -25271,6 +26461,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "562",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 2283.45628197791,
+    "total_impact": 296146.248144141
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "562",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 234.851263195712,
+    "total_impact": 30458.3543009977
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "562",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 213.975733658769,
+    "total_impact": 27750.9629665629
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "562",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 166.373844360962,
+    "total_impact": 21577.3738195407
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "562",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 90.754341059881,
+    "total_impact": 11770.1213812586
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "562",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 59.6978622719575,
+    "total_impact": 7742.34132424564
+  },
+  {
+    "emissions_source": "48A000/US",
+    "sector_code": "562",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 53.4689771791565,
+    "total_impact": 6934.50411496211
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "562",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 46.5442382384093,
+    "total_impact": 6036.42015650611
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "562",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 39.7290159703848,
+    "total_impact": 5152.53964568871
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "562",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 444.233572621338,
+    "total_impact": 57613.5864171318
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "562000/US",
     "indicator": "Criteria Air Pollutants",
     "impact_per_purchase": 2497.43201563668,
@@ -25338,6 +26598,76 @@
     "indicator": "Criteria Air Pollutants",
     "impact_per_purchase": 405.008811908464,
     "total_impact": 52526.4446964209
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "6",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 39.9930544923122,
+    "total_impact": 139478.09959733
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "6",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 153.743296755666,
+    "total_impact": 536188.673996648
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "6",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 91.0969930741016,
+    "total_impact": 317706.052570934
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "6",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 56.7175343812889,
+    "total_impact": 197805.694257963
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "6",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 47.0813088295498,
+    "total_impact": 164198.798152887
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "6",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 40.9699292569112,
+    "total_impact": 142885.00705765
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "6",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 32.4744118880211,
+    "total_impact": 113256.396971449
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "6",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 20.2114551094193,
+    "total_impact": 70488.6232008219
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "6",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 15.6451770608054,
+    "total_impact": 54563.4633814814
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "6",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 263.064539457465,
+    "total_impact": 917452.855270834
   },
   {
     "emissions_source": "Direct",
@@ -26461,6 +27791,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "7",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 306.591791948289,
+    "total_impact": 561804.225049084
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "7",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 185.4315381544,
+    "total_impact": 339788.031931601
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "7",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 116.640164758479,
+    "total_impact": 213733.50198099
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "7",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 110.044931004051,
+    "total_impact": 201648.278939373
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "7",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 83.5510031631176,
+    "total_impact": 153100.336724102
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "7",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 71.221738688957,
+    "total_impact": 130507.974321591
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "7",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 52.9606097551215,
+    "total_impact": 97045.9585122269
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "7",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 45.3647918628861,
+    "total_impact": 83127.2473900419
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "7",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 37.2495211057998,
+    "total_impact": 68256.6816460074
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "7",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 352.594151579062,
+    "total_impact": 646099.762899472
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "711100/US",
     "indicator": "Criteria Air Pollutants",
     "impact_per_purchase": 16.6352471182313,
@@ -27301,6 +28701,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "8",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 65.1462538044173,
+    "total_impact": 60357.9520170638
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "8",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 169.500376442725,
+    "total_impact": 153781.621304428
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "8",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 86.683520215192,
+    "total_impact": 78644.8535326513
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "8",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 64.7227252425328,
+    "total_impact": 58720.6107262006
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "8",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 54.9376428778018,
+    "total_impact": 49842.9559255095
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "8",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 42.8472747911137,
+    "total_impact": 38873.7979474653
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "8",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 15.2199033066735,
+    "total_impact": 13808.4732064754
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "8",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 14.7180306812529,
+    "total_impact": 13353.1421467738
+  },
+  {
+    "emissions_source": "48A000/US",
+    "sector_code": "8",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 14.2460077293052,
+    "total_impact": 12924.892626821
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "8",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 252.011314131377,
+    "total_impact": 228640.840141603
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "811100/US",
     "indicator": "Criteria Air Pollutants",
     "impact_per_purchase": 106.982925602119,
@@ -28075,6 +29545,76 @@
     "indicator": "Criteria Air Pollutants",
     "impact_per_purchase": 0.113418678188349,
     "total_impact": 2.1816096718824
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "G",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 392.427462075883,
+    "total_impact": 1256959.527937
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "G",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 248.503756231237,
+    "total_impact": 795966.629018908
+  },
+  {
+    "emissions_source": "561700/US",
+    "sector_code": "G",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 111.101680612206,
+    "total_impact": 355862.750472651
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "G",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 75.422210837444,
+    "total_impact": 241580.102546102
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "G",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 60.8997533789049,
+    "total_impact": 195064.139634106
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "G",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 53.1680491497678,
+    "total_impact": 170299.207927758
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "G",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 29.7905266100807,
+    "total_impact": 95420.1473737862
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "G",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 29.1085138365142,
+    "total_impact": 93235.6354913243
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "G",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 20.8867431356951,
+    "total_impact": 66901.0029346724
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "G",
+    "indicator": "Criteria Air Pollutants",
+    "impact_per_purchase": 311.289386658974,
+    "total_impact": 997071.301883051
   },
   {
     "emissions_source": "Direct",

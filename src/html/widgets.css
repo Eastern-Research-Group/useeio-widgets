@@ -696,4 +696,8 @@ th.io-sector-column-header>div {
     body {
         background: white;
     }
+abbr.term-help,
+.term-help {
+    cursor: help;
+    text-decoration: underline dotted;
 }

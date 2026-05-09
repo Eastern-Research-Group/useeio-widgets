@@ -16,6 +16,7 @@ import {
   ImpactPerPurchaseSector,
 } from "../smartSectorChart/smartSector";
 import { apexGraph } from "./getGraph";
+import { SECTOR_PURCHASES_FILE_SLUG } from "../util/util";
 import * as apex from "apexcharts";
 
 export interface SmartSectorChartConfig {
@@ -154,9 +155,19 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
     this.perspective = perspective;
     const sectorsList: Sector[] = await this._chartConfig.model.sectors();
     const sortListWithTop15OfEachSector: SortingImpactPerPurchaseWithTop[] = [];
+    const skipSmallIntensityCutoff =
+      this.graphName === SECTOR_PURCHASES_FILE_SLUG;
+
     sectorContributionToImpactGhg.forEach((t, i) => {
-      if (t.impact_per_purchase > 0.001) {
-        if (perspective == "final") {
+      const ipp = Number(t.impact_per_purchase ?? 0);
+      const isDirectRow =
+        (perspective === "final" &&
+          t.purchased_commodity_code === "Direct") ||
+        (perspective !== "final" && t.emissions_source === "Direct");
+      if (!isDirectRow && !skipSmallIntensityCutoff && ipp <= 0.001) {
+        return;
+      }
+      if (perspective == "final") {
           const purchasedGroup = this.sectorMappingList.find((d) => {
             if (t.purchased_commodity_code == d.id) {
               return true;
@@ -165,7 +176,12 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
 
           const sectorName = selectSectorName(t.sector_code, sectorsList);
           let purchaseCommodity;
-          if (purchasedGroup == "All Others" || purchasedGroup == undefined) {
+          if (isDirectRow) {
+            purchaseCommodity = "Direct";
+          } else if (
+            purchasedGroup == "All Others" ||
+            purchasedGroup == undefined
+          ) {
             purchaseCommodity = "All Others";
           } else
             purchaseCommodity = selectSectorName(
@@ -217,7 +233,7 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
               );
             }
           }
-        } else {
+      } else {
           const purchasedGroup = this.sectorMappingList.find((d) => {
             if (t.emissions_source == d.id) {
               return true;
@@ -226,7 +242,12 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
 
           const sectorName = selectSectorName(t.sector_code, sectorsList);
           let purchaseCommodity;
-          if (purchasedGroup == "All Others" || purchasedGroup == undefined) {
+          if (isDirectRow) {
+            purchaseCommodity = "Direct";
+          } else if (
+            purchasedGroup == "All Others" ||
+            purchasedGroup == undefined
+          ) {
             purchaseCommodity = "All Others";
           } else
             purchaseCommodity = selectSectorName(
@@ -278,37 +299,43 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
               );
             }
           }
-        }
       }
     });
 
     const sortedImpactPerPurchaseTopList: SortedImpactPerPurchaseTopList[] =
       sortListWithTop15OfEachSector.map((t) => {
-        const topFifteen: ImpactPerPurchaseSector[] = t._smartSectors
-          .sort(
-            (a: ImpactPerPurchaseSector, b: ImpactPerPurchaseSector): any => {
-              return b.totalImpact - a.totalImpact;
-            },
-          )
-          .slice(0, 15);
+        const directBars = t._smartSectors.filter(
+          (s) => s.purchaseCommodity === "Direct",
+        );
+        const nonDirect = t._smartSectors.filter(
+          (s) => s.purchaseCommodity !== "Direct",
+        );
+        nonDirect.sort(
+          (a: ImpactPerPurchaseSector, b: ImpactPerPurchaseSector): number =>
+            (Number(b.impactPerPurchase) || 0) -
+            (Number(a.impactPerPurchase) || 0),
+        );
+        const cap = Math.max(0, 15 - directBars.length);
+        const topFifteen: ImpactPerPurchaseSector[] = [
+          ...directBars,
+          ...nonDirect.slice(0, cap),
+        ];
 
-        const index = topFifteen.findIndex(
-          (t) => t.purchaseCommodity === "All Others",
+        const allOtherIndex = topFifteen.findIndex(
+          (t) => t.purchaseCommodity.toLowerCase() === "all others",
         );
-        const allOtherobject = topFifteen.filter(
-          (t) => t.purchaseCommodity === "All Others",
-        );
-        topFifteen.splice(index, 1);
-        topFifteen.push(...allOtherobject);
+        if (allOtherIndex >= 0) {
+          const [allOthersItem] = topFifteen.splice(allOtherIndex, 1);
+          topFifteen.push(allOthersItem);
+        }
 
         const directIndex = topFifteen.findIndex(
           (t) => t.purchaseCommodity === "Direct",
         );
-        const directObject = topFifteen.filter(
-          (t) => t.purchaseCommodity === "Direct",
-        );
-        topFifteen.splice(directIndex, 1);
-        topFifteen.splice(0, 0, ...directObject);
+        if (directIndex >= 0) {
+          const [directItem] = topFifteen.splice(directIndex, 1);
+          topFifteen.unshift(directItem);
+        }
 
         return {
           sector_code: t._sectorCode,

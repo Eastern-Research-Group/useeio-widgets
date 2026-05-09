@@ -1,6 +1,76 @@
 [
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "11",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 587.648725724346,
+    "total_impact": 221854.783983636
+  },
+  {
+    "purchased_commodity_code": "311119/US",
+    "sector_code": "11",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 107.838926125158,
+    "total_impact": 24420.6700705855
+  },
+  {
+    "purchased_commodity_code": "1111B0/US",
+    "sector_code": "11",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 96.8258631480408,
+    "total_impact": 29958.4314489725
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "11",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 85.1133454384784,
+    "total_impact": 29157.136167795
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "11",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 69.7700014732237,
+    "total_impact": 26340.2402282087
+  },
+  {
+    "purchased_commodity_code": "112300/US",
+    "sector_code": "11",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 52.205143203574,
+    "total_impact": 9908.05256566363
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "11",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 41.2868518286034,
+    "total_impact": 15587.0083484122
+  },
+  {
+    "purchased_commodity_code": "1111A0/US",
+    "sector_code": "11",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 36.2197682082092,
+    "total_impact": 6167.76899708976
+  },
+  {
+    "purchased_commodity_code": "325310/US",
+    "sector_code": "11",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 33.5167449942105,
+    "total_impact": 9401.04541795628
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "11",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 263.073498996864,
+    "total_impact": 74953.8155427924
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "111/112",
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 660.163854083715,
@@ -981,6 +1051,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 1035.01252013915,
+    "total_impact": 942480.636073351
+  },
+  {
+    "purchased_commodity_code": "211000/US",
+    "sector_code": "211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 762.784985148647,
+    "total_impact": 678295.362020822
+  },
+  {
+    "purchased_commodity_code": "486000/US",
+    "sector_code": "211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 84.3268554644827,
+    "total_impact": 76787.890803047
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 37.6900327771634,
+    "total_impact": 34320.4795828662
+  },
+  {
+    "purchased_commodity_code": "325110/US",
+    "sector_code": "211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 31.5424698527314,
+    "total_impact": 28722.5192658831
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 30.7054099865963,
+    "total_impact": 27960.2939790233
+  },
+  {
+    "purchased_commodity_code": "482000/US",
+    "sector_code": "211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 23.3760577698642,
+    "total_impact": 21286.1983475013
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 19.9195582792091,
+    "total_impact": 18138.7158048728
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 17.1566086167559,
+    "total_impact": 15622.7785532563
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 97.8651119710215,
+    "total_impact": 82350.6073814898
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "211/32411",
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 1162.25907941608,
@@ -1118,6 +1258,76 @@
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 66.7093873535794,
     "total_impact": 20110.3795491151
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "212",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 316.020573412783,
+    "total_impact": 72362.6712380347
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "212",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 47.0859946252847,
+    "total_impact": 10781.7928187061
+  },
+  {
+    "purchased_commodity_code": "2122A0/US",
+    "sector_code": "212",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 34.2995082225668,
+    "total_impact": 7315.20950322541
+  },
+  {
+    "purchased_commodity_code": "230301/US",
+    "sector_code": "212",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 32.3001031018707,
+    "total_impact": 7396.10626129174
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "212",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 27.4608643568353,
+    "total_impact": 6288.0130806242
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "212",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 24.9825117081588,
+    "total_impact": 5720.51769261399
+  },
+  {
+    "purchased_commodity_code": "327310/US",
+    "sector_code": "212",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 19.4013969564714,
+    "total_impact": 4442.54908583416
+  },
+  {
+    "purchased_commodity_code": "211000/US",
+    "sector_code": "212",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 18.3478153979592,
+    "total_impact": 3498.33022227836
+  },
+  {
+    "purchased_commodity_code": "482000/US",
+    "sector_code": "212",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 14.2040248816984,
+    "total_impact": 3252.4502176276
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "212",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 167.881359365094,
+    "total_impact": 32382.0587183022
   },
   {
     "purchased_commodity_code": "Direct",
@@ -1678,6 +1888,76 @@
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 123.67972572983,
     "total_impact": 11440.3573369
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "2211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 1517.52948969992,
+    "total_impact": 695554.025449928
+  },
+  {
+    "purchased_commodity_code": "211000/US",
+    "sector_code": "2211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 119.821297452514,
+    "total_impact": 54919.6482463151
+  },
+  {
+    "purchased_commodity_code": "486000/US",
+    "sector_code": "2211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 57.5840819187369,
+    "total_impact": 26393.4508372131
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "2211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 50.1257468187853,
+    "total_impact": 22974.9505463544
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "2211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 46.8631682617612,
+    "total_impact": 21479.5597390671
+  },
+  {
+    "purchased_commodity_code": "482000/US",
+    "sector_code": "2211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 40.9735560360614,
+    "total_impact": 18780.0777720085
+  },
+  {
+    "purchased_commodity_code": "48A000/US",
+    "sector_code": "2211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 17.3139016126183,
+    "total_impact": 7935.76272793358
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "2211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 13.1442472909481,
+    "total_impact": 6024.61710087503
+  },
+  {
+    "purchased_commodity_code": "212100/US",
+    "sector_code": "2211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 10.102310464138,
+    "total_impact": 4630.35661406858
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "2211",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 48.1331248938927,
+    "total_impact": 22061.6396614814
   },
   {
     "purchased_commodity_code": "Direct",
@@ -2868,6 +3148,76 @@
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 188.711584781767,
     "total_impact": 50151.4011539334
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "31",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 62.4141888294248,
+    "total_impact": 56981.0829043347
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "31",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 118.846420980348,
+    "total_impact": 46428.5148130844
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "31",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 100.057428432361,
+    "total_impact": 91347.5081808808
+  },
+  {
+    "purchased_commodity_code": "112120/US",
+    "sector_code": "31",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 92.6744514704758,
+    "total_impact": 51323.4106726609
+  },
+  {
+    "purchased_commodity_code": "1111B0/US",
+    "sector_code": "31",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 61.187638347784,
+    "total_impact": 53151.0660140036
+  },
+  {
+    "purchased_commodity_code": "112300/US",
+    "sector_code": "31",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 45.5289876941625,
+    "total_impact": 35738.5202342374
+  },
+  {
+    "purchased_commodity_code": "482000/US",
+    "sector_code": "31",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 35.1520584948617,
+    "total_impact": 32092.0995196758
+  },
+  {
+    "purchased_commodity_code": "31161A/US",
+    "sector_code": "31",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 25.760136291335,
+    "total_impact": 22691.5367128424
+  },
+  {
+    "purchased_commodity_code": "311224/US",
+    "sector_code": "31",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 23.3091053149391,
+    "total_impact": 20762.4677155515
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "31",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 398.22203150793,
+    "total_impact": 305175.36243718
   },
   {
     "purchased_commodity_code": "Direct",
@@ -5461,6 +5811,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "321",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 333.625663908369,
+    "total_impact": 37668.9401747937
+  },
+  {
+    "purchased_commodity_code": "321100/US",
+    "sector_code": "321",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 134.399718419846,
+    "total_impact": 15174.7767043988
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "321",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 73.3837399533457,
+    "total_impact": 8285.59673054534
+  },
+  {
+    "purchased_commodity_code": "321200/US",
+    "sector_code": "321",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 55.6541911356619,
+    "total_impact": 6283.79235519955
+  },
+  {
+    "purchased_commodity_code": "113000/US",
+    "sector_code": "321",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 52.7344531276886,
+    "total_impact": 5954.13115629782
+  },
+  {
+    "purchased_commodity_code": "482000/US",
+    "sector_code": "321",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 45.1575672696189,
+    "total_impact": 5098.64163323386
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "321",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 29.2349055627632,
+    "total_impact": 3300.84890879957
+  },
+  {
+    "purchased_commodity_code": "423A00/US",
+    "sector_code": "321",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 15.3084219802441,
+    "total_impact": 1728.44026742107
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "321",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 13.1503557125512,
+    "total_impact": 1484.77775003964
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "321",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 145.563412532205,
+    "total_impact": 16356.0163997966
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "321/322",
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 678.003485147493,
@@ -5808,6 +6228,76 @@
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 170.028081568706,
     "total_impact": 4930.14234178532
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "322-323",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 695.297976339714,
+    "total_impact": 144015.405317285
+  },
+  {
+    "purchased_commodity_code": "322130/US",
+    "sector_code": "322-323",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 244.157048039637,
+    "total_impact": 50571.66485599
+  },
+  {
+    "purchased_commodity_code": "322120/US",
+    "sector_code": "322-323",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 137.833322786002,
+    "total_impact": 28549.0861799312
+  },
+  {
+    "purchased_commodity_code": "322110/US",
+    "sector_code": "322-323",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 84.0888942851275,
+    "total_impact": 17417.1313670531
+  },
+  {
+    "purchased_commodity_code": "482000/US",
+    "sector_code": "322-323",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 59.82871599209,
+    "total_impact": 12392.1787153365
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "322-323",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 56.9242116291032,
+    "total_impact": 11790.5756799252
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "322-323",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 47.0998544686821,
+    "total_impact": 9755.68010049587
+  },
+  {
+    "purchased_commodity_code": "322210/US",
+    "sector_code": "322-323",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 33.8238647017274,
+    "total_impact": 7005.85612237752
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "322-323",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 16.541706923568,
+    "total_impact": 3426.24415474128
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "322-323",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 220.240948687132,
+    "total_impact": 44665.78867568
   },
   {
     "purchased_commodity_code": "Direct",
@@ -6858,6 +7348,76 @@
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 188.362523207538,
     "total_impact": 126504.572835192
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "325-326",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 186.491151862805,
+    "total_impact": 173432.012779187
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "325-326",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 92.2090700116142,
+    "total_impact": 85752.0823313695
+  },
+  {
+    "purchased_commodity_code": "325211/US",
+    "sector_code": "325-326",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 78.9971064302547,
+    "total_impact": 73465.2933132709
+  },
+  {
+    "purchased_commodity_code": "325110/US",
+    "sector_code": "325-326",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 76.239318028327,
+    "total_impact": 70900.6204663935
+  },
+  {
+    "purchased_commodity_code": "211000/US",
+    "sector_code": "325-326",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 54.1336280916636,
+    "total_impact": 48727.9082528477
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "325-326",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 36.7437195031857,
+    "total_impact": 34170.7215960541
+  },
+  {
+    "purchased_commodity_code": "482000/US",
+    "sector_code": "325-326",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 36.2703091227486,
+    "total_impact": 33730.4620216473
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "325-326",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 27.5521160669364,
+    "total_impact": 25622.7649305843
+  },
+  {
+    "purchased_commodity_code": "1111B0/US",
+    "sector_code": "325-326",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 20.080808270489,
+    "total_impact": 13525.7097844997
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "325-326",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 212.251189907904,
+    "total_impact": 183605.437906324
   },
   {
     "purchased_commodity_code": "Direct",
@@ -8891,6 +9451,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "327",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 1474.26386022384,
+    "total_impact": 165118.855379991
+  },
+  {
+    "purchased_commodity_code": "327310/US",
+    "sector_code": "327",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 671.231272624387,
+    "total_impact": 73266.4118293722
+  },
+  {
+    "purchased_commodity_code": "482000/US",
+    "sector_code": "327",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 119.132186261416,
+    "total_impact": 13342.9101568116
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "327",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 94.3851265987996,
+    "total_impact": 10571.2176017956
+  },
+  {
+    "purchased_commodity_code": "311221/US",
+    "sector_code": "327",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 51.2772161851385,
+    "total_impact": 756.609438595116
+  },
+  {
+    "purchased_commodity_code": "327200/US",
+    "sector_code": "327",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 50.4803973520955,
+    "total_impact": 5510.04956495617
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "327",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 49.8800580752206,
+    "total_impact": 5586.6105911444
+  },
+  {
+    "purchased_commodity_code": "2123A0/US",
+    "sector_code": "327",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 46.9832127885102,
+    "total_impact": 5262.16135864275
+  },
+  {
+    "purchased_commodity_code": "327320/US",
+    "sector_code": "327",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 18.3418139003444,
+    "total_impact": 1849.18244310929
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "327",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 230.395286061711,
+    "total_impact": 24397.7971162724
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "327100/US",
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 883.432306645905,
@@ -9798,6 +10428,76 @@
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 107.723528111091,
     "total_impact": 452.679288590738
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "331-332",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 133.137494451135,
+    "total_impact": 64000.7123307869
+  },
+  {
+    "purchased_commodity_code": "331110/US",
+    "sector_code": "331-332",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 122.290106789534,
+    "total_impact": 58786.249341734
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "331-332",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 72.6543096085387,
+    "total_impact": 34925.7554231251
+  },
+  {
+    "purchased_commodity_code": "482000/US",
+    "sector_code": "331-332",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 41.6753403544171,
+    "total_impact": 20033.8115142285
+  },
+  {
+    "purchased_commodity_code": "331313/US",
+    "sector_code": "331-332",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 40.8685645672695,
+    "total_impact": 19645.98519016
+  },
+  {
+    "purchased_commodity_code": "331410/US",
+    "sector_code": "331-332",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 32.7311436251191,
+    "total_impact": 15734.2341167294
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "331-332",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 30.0997835804955,
+    "total_impact": 14469.3093263918
+  },
+  {
+    "purchased_commodity_code": "S00401/US",
+    "sector_code": "331-332",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 28.3501998577032,
+    "total_impact": 13092.6465425083
+  },
+  {
+    "purchased_commodity_code": "2122A0/US",
+    "sector_code": "331-332",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 25.9468565472589,
+    "total_impact": 11579.8578842702
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "331-332",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 193.261276369321,
+    "total_impact": 88939.0989648755
   },
   {
     "purchased_commodity_code": "Direct",
@@ -11898,6 +12598,76 @@
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 107.867331437325,
     "total_impact": 2037.92837758267
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "333",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 18.9692890987011,
+    "total_impact": 5999.97229116622
+  },
+  {
+    "purchased_commodity_code": "331110/US",
+    "sector_code": "333",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 76.2367337850906,
+    "total_impact": 24113.6232306608
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "333",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 39.9436485790381,
+    "total_impact": 12634.1468800072
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "333",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 12.150751866145,
+    "total_impact": 3843.27394318104
+  },
+  {
+    "purchased_commodity_code": "331510/US",
+    "sector_code": "333",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 10.9087709199042,
+    "total_impact": 3450.43627673883
+  },
+  {
+    "purchased_commodity_code": "482000/US",
+    "sector_code": "333",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 9.16953795347428,
+    "total_impact": 2900.31815938795
+  },
+  {
+    "purchased_commodity_code": "333618/US",
+    "sector_code": "333",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 8.57690524850173,
+    "total_impact": 2421.56384235618
+  },
+  {
+    "purchased_commodity_code": "326190/US",
+    "sector_code": "333",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 6.24547113578485,
+    "total_impact": 1975.4379600105
+  },
+  {
+    "purchased_commodity_code": "322210/US",
+    "sector_code": "333",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 6.12999135134974,
+    "total_impact": 1938.91178851323
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "333",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 186.117732639157,
+    "total_impact": 54880.4513185722
   },
   {
     "purchased_commodity_code": "Direct",
@@ -15331,6 +16101,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "335",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 19.2451259373694,
+    "total_impact": 2163.99108704824
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "335",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 39.2214794652276,
+    "total_impact": 4410.20403087057
+  },
+  {
+    "purchased_commodity_code": "331110/US",
+    "sector_code": "335",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 35.0696554627449,
+    "total_impact": 3844.80696635533
+  },
+  {
+    "purchased_commodity_code": "331410/US",
+    "sector_code": "335",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 30.5397206848602,
+    "total_impact": 3263.36867314552
+  },
+  {
+    "purchased_commodity_code": "331420/US",
+    "sector_code": "335",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 21.4465776267968,
+    "total_impact": 2291.63654669425
+  },
+  {
+    "purchased_commodity_code": "327200/US",
+    "sector_code": "335",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 14.0058416047898,
+    "total_impact": 1535.50859457319
+  },
+  {
+    "purchased_commodity_code": "325211/US",
+    "sector_code": "335",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 12.3415190777838,
+    "total_impact": 1353.04319074586
+  },
+  {
+    "purchased_commodity_code": "482000/US",
+    "sector_code": "335",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 11.3380698484814,
+    "total_impact": 1274.89329902499
+  },
+  {
+    "purchased_commodity_code": "322210/US",
+    "sector_code": "335",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 11.2026084741972,
+    "total_impact": 1259.66153553618
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "335",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 187.662690564505,
+    "total_impact": 20341.0859622751
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "335110/US",
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 53.9225612085904,
@@ -16308,6 +17148,76 @@
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 82.7198159477551,
     "total_impact": 967.028165895451
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "336",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 10.7891966938366,
+    "total_impact": 10054.8735274921
+  },
+  {
+    "purchased_commodity_code": "336991/US",
+    "sector_code": "336",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 55.1753054307866,
+    "total_impact": 314.42029030923
+  },
+  {
+    "purchased_commodity_code": "336370/US",
+    "sector_code": "336",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 42.8269689981662,
+    "total_impact": 28895.1955534428
+  },
+  {
+    "purchased_commodity_code": "336500/US",
+    "sector_code": "336",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 42.6502083536349,
+    "total_impact": 734.06905765775
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "336",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 32.3487010519084,
+    "total_impact": 30147.017158506
+  },
+  {
+    "purchased_commodity_code": "331110/US",
+    "sector_code": "336",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 30.0050023835679,
+    "total_impact": 27962.832889238
+  },
+  {
+    "purchased_commodity_code": "336360/US",
+    "sector_code": "336",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 22.3817705179161,
+    "total_impact": 17369.4872327761
+  },
+  {
+    "purchased_commodity_code": "336413/US",
+    "sector_code": "336",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 17.0325071623196,
+    "total_impact": 4557.17898426162
+  },
+  {
+    "purchased_commodity_code": "336390/US",
+    "sector_code": "336",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 14.6899064702875,
+    "total_impact": 13690.0972223266
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "336",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 242.282583873037,
+    "total_impact": 195259.279789751
   },
   {
     "purchased_commodity_code": "Direct",
@@ -18201,6 +19111,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "337-339",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 15.3105599744537,
+    "total_impact": 3107.85829233909
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "337-339",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 39.6450805841007,
+    "total_impact": 8047.47133020164
+  },
+  {
+    "purchased_commodity_code": "321200/US",
+    "sector_code": "337-339",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 21.2390812798444,
+    "total_impact": 4196.89026440453
+  },
+  {
+    "purchased_commodity_code": "331110/US",
+    "sector_code": "337-339",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 17.9583177545296,
+    "total_impact": 3645.32106226027
+  },
+  {
+    "purchased_commodity_code": "322210/US",
+    "sector_code": "337-339",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 17.8375725591517,
+    "total_impact": 3620.81124959886
+  },
+  {
+    "purchased_commodity_code": "325211/US",
+    "sector_code": "337-339",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 15.8210311147364,
+    "total_impact": 3126.27135719332
+  },
+  {
+    "purchased_commodity_code": "482000/US",
+    "sector_code": "337-339",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 12.2017218181199,
+    "total_impact": 2476.80178886546
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "337-339",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 11.8206934150406,
+    "total_impact": 2399.45763658738
+  },
+  {
+    "purchased_commodity_code": "3252A0/US",
+    "sector_code": "337-339",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 11.7108515139495,
+    "total_impact": 2377.16106064752
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "337-339",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 202.163057930412,
+    "total_impact": 37189.5288288076
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "337110/US",
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 34.6104942046865,
@@ -19531,6 +20511,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "42-44",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 43.8128408700605,
+    "total_impact": 182210.341982072
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "42-44",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 24.6145394082379,
+    "total_impact": 102367.788854592
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "42-44",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 17.3611879612744,
+    "total_impact": 72202.3026313396
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "42-44",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 12.992642056418,
+    "total_impact": 54034.2444209851
+  },
+  {
+    "purchased_commodity_code": "492000/US",
+    "sector_code": "42-44",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 10.1751417335982,
+    "total_impact": 42316.7276573914
+  },
+  {
+    "purchased_commodity_code": "493000/US",
+    "sector_code": "42-44",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 8.89284810122571,
+    "total_impact": 36983.8810161756
+  },
+  {
+    "purchased_commodity_code": "48A000/US",
+    "sector_code": "42-44",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 5.96262888153478,
+    "total_impact": 24797.5850467861
+  },
+  {
+    "purchased_commodity_code": "211000/US",
+    "sector_code": "42-44",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 4.99454607477065,
+    "total_impact": 17693.3695204858
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "42-44",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 4.00589402118369,
+    "total_impact": 16659.8491457924
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "42-44",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 71.2721591139625,
+    "total_impact": 263979.715709402
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "423100/US",
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 38.3421081269893,
@@ -20791,6 +21841,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "48",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 1703.31436245645,
+    "total_impact": 2267935.30949846
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "48",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 144.869767879795,
+    "total_impact": 192891.734547229
+  },
+  {
+    "purchased_commodity_code": "48A000/US",
+    "sector_code": "48",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 64.5679961487315,
+    "total_impact": 85971.2344103554
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "48",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 55.2263933014809,
+    "total_impact": 73533.0424878513
+  },
+  {
+    "purchased_commodity_code": "482000/US",
+    "sector_code": "48",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 22.8493938355009,
+    "total_impact": 30423.5954456668
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "48",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 12.1813008648208,
+    "total_impact": 16219.203545674
+  },
+  {
+    "purchased_commodity_code": "492000/US",
+    "sector_code": "48",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 11.6374310189317,
+    "total_impact": 15495.0497109793
+  },
+  {
+    "purchased_commodity_code": "424700/US",
+    "sector_code": "48",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 5.6705920055605,
+    "total_impact": 7550.30082446049
+  },
+  {
+    "purchased_commodity_code": "493000/US",
+    "sector_code": "48",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 5.6333179689684,
+    "total_impact": 7500.67105230684
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "48",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 77.8625316310304,
+    "total_impact": 95894.8286898651
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "481000/US",
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 245.784742308583,
@@ -21558,6 +22678,76 @@
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 36.8388479513901,
     "total_impact": 9071.17200758827
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "5",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 7.40667492606394,
+    "total_impact": 108628.612063991
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "5",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 12.0157349845367,
+    "total_impact": 155273.493807906
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "5",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 8.53583356846597,
+    "total_impact": 125189.206034783
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "5",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 5.13596780329882,
+    "total_impact": 74743.6702473576
+  },
+  {
+    "purchased_commodity_code": "230302/US",
+    "sector_code": "5",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 5.08316161589482,
+    "total_impact": 37055.8485722029
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "5",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 4.57360865954917,
+    "total_impact": 67077.9757138198
+  },
+  {
+    "purchased_commodity_code": "561700/US",
+    "sector_code": "5",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 3.23701655614113,
+    "total_impact": 47475.09769659
+  },
+  {
+    "purchased_commodity_code": "230301/US",
+    "sector_code": "5",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 2.98798350873493,
+    "total_impact": 38612.2562988241
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "5",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 2.70261279225876,
+    "total_impact": 33123.8386863613
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "5",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 68.5678116132099,
+    "total_impact": 822060.917186437
   },
   {
     "purchased_commodity_code": "Direct",
@@ -25271,6 +26461,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "562",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 513.489248151394,
+    "total_impact": 66595.5006463585
+  },
+  {
+    "purchased_commodity_code": "562000/US",
+    "sector_code": "562",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 65.2745278912328,
+    "total_impact": 8465.59081815417
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "562",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 36.2210110148531,
+    "total_impact": 4697.57910440263
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "562",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 18.1767272113433,
+    "total_impact": 2357.37798427048
+  },
+  {
+    "purchased_commodity_code": "48A000/US",
+    "sector_code": "562",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 12.074973288322,
+    "total_impact": 1566.0286837985
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "562",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 10.7497665270532,
+    "total_impact": 1394.15983154044
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "562",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 10.2833537195822,
+    "total_impact": 1333.66977350471
+  },
+  {
+    "purchased_commodity_code": "332320/US",
+    "sector_code": "562",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 6.52782219952245,
+    "total_impact": 846.60699142709
+  },
+  {
+    "purchased_commodity_code": "482000/US",
+    "sector_code": "562",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 5.61572167262439,
+    "total_impact": 728.31475561639
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "562",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 104.126680323143,
+    "total_impact": 13504.4081871769
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "562000/US",
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 578.763776042627,
@@ -25338,6 +26598,76 @@
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 99.4518490884813,
     "total_impact": 12898.1194914928
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "6",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 4.4096592919047,
+    "total_impact": 15378.9428118026
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "6",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 13.992038347245,
+    "total_impact": 48798.0461342818
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "6",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 12.6242354104473,
+    "total_impact": 44027.7539755554
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "6",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 7.80113140345416,
+    "total_impact": 27206.8987146754
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "6",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 6.79234611944032,
+    "total_impact": 23688.7014651243
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "6",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 6.14929821266553,
+    "total_impact": 21446.0345539428
+  },
+  {
+    "purchased_commodity_code": "339116/US",
+    "sector_code": "6",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 5.9577161384583,
+    "total_impact": 1278.95490496941
+  },
+  {
+    "purchased_commodity_code": "31161A/US",
+    "sector_code": "6",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 4.81664645555194,
+    "total_impact": 12845.4593002439
+  },
+  {
+    "purchased_commodity_code": "322291/US",
+    "sector_code": "6",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 3.27732760276388,
+    "total_impact": 9217.06903513495
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "6",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 87.1213796147352,
+    "total_impact": 263093.263462971
   },
   {
     "purchased_commodity_code": "Direct",
@@ -26461,6 +27791,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "7",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 5.61692353908862,
+    "total_impact": 10292.5500907404
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "7",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 36.1461741273968,
+    "total_impact": 66234.8891178288
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "7",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 12.6952535340288,
+    "total_impact": 23263.0072323973
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "7",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 11.6575160538584,
+    "total_impact": 21361.4387098131
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "7",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 9.34405390313213,
+    "total_impact": 17122.2097255344
+  },
+  {
+    "purchased_commodity_code": "31161A/US",
+    "sector_code": "7",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 7.25546320621355,
+    "total_impact": 13295.0391725635
+  },
+  {
+    "purchased_commodity_code": "482000/US",
+    "sector_code": "7",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 4.43064188124997,
+    "total_impact": 8118.78658834246
+  },
+  {
+    "purchased_commodity_code": "311615/US",
+    "sector_code": "7",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 4.33021297087796,
+    "total_impact": 7934.75887577542
+  },
+  {
+    "purchased_commodity_code": "230301/US",
+    "sector_code": "7",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 4.00091266122952,
+    "total_impact": 7331.34316104008
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "7",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 103.470962117162,
+    "total_impact": 178730.461367844
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "711100/US",
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 0.668276008690115,
@@ -27301,6 +28701,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "8",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 8.66174978824144,
+    "total_impact": 8025.10424731499
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "8",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 15.9113943465778,
+    "total_impact": 14435.8382629177
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "8",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 15.737775138335,
+    "total_impact": 14278.3197730269
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "8",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 11.6176046825449,
+    "total_impact": 10540.2366723318
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "8",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 6.46555310302929,
+    "total_impact": 5865.96478238319
+  },
+  {
+    "purchased_commodity_code": "325620/US",
+    "sector_code": "8",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 6.23263940710553,
+    "total_impact": 1207.60734391763
+  },
+  {
+    "purchased_commodity_code": "336310/US",
+    "sector_code": "8",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 3.04198695517635,
+    "total_impact": 2695.86523217558
+  },
+  {
+    "purchased_commodity_code": "3363A0/US",
+    "sector_code": "8",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 2.8497159777943,
+    "total_impact": 2525.47112769112
+  },
+  {
+    "purchased_commodity_code": "492000/US",
+    "sector_code": "8",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 2.665464460018,
+    "total_impact": 2362.18401697439
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "8",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 82.1615501181012,
+    "total_impact": 61995.3526880066
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "811100/US",
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 14.7732561584253,
@@ -28075,6 +29545,76 @@
     "indicator": "Nitrogen dioxide",
     "impact_per_purchase": 0.0769901993798183,
     "total_impact": 1.48090743332627
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "G",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 15.2944545422365,
+    "total_impact": 48988.6978341644
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "G",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 50.5579622996103,
+    "total_impact": 161939.004190503
+  },
+  {
+    "purchased_commodity_code": "211000/US",
+    "sector_code": "G",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 23.7092461405428,
+    "total_impact": 2612.97222893398
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "G",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 13.8049993887628,
+    "total_impact": 44217.9184481092
+  },
+  {
+    "purchased_commodity_code": "324121/US",
+    "sector_code": "G",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 10.4099071568181,
+    "total_impact": 10656.863161129
+  },
+  {
+    "purchased_commodity_code": "230301/US",
+    "sector_code": "G",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 8.18725249096552,
+    "total_impact": 26224.069466767
+  },
+  {
+    "purchased_commodity_code": "336411/US",
+    "sector_code": "G",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 7.90082756946065,
+    "total_impact": 5077.49598281699
+  },
+  {
+    "purchased_commodity_code": "482000/US",
+    "sector_code": "G",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 7.38569798147363,
+    "total_impact": 23656.6610276709
+  },
+  {
+    "purchased_commodity_code": "485000/US",
+    "sector_code": "G",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 5.51570736505758,
+    "total_impact": 17335.0641877449
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "G",
+    "indicator": "Nitrogen dioxide",
+    "impact_per_purchase": 115.894614545602,
+    "total_impact": 278686.172051001
   },
   {
     "purchased_commodity_code": "Direct",

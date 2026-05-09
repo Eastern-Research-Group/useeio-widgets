@@ -1,6 +1,76 @@
 [
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "11",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1174.51849871474,
+    "total_impact": 443415.49025901
+  },
+  {
+    "purchased_commodity_code": "1111B0/US",
+    "sector_code": "11",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 215.703059011028,
+    "total_impact": 66739.6612497566
+  },
+  {
+    "purchased_commodity_code": "1111A0/US",
+    "sector_code": "11",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 161.256096656866,
+    "total_impact": 27459.8762707295
+  },
+  {
+    "purchased_commodity_code": "311119/US",
+    "sector_code": "11",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 139.078979396256,
+    "total_impact": 31495.1380881506
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "11",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 51.7977211418158,
+    "total_impact": 17744.2585617206
+  },
+  {
+    "purchased_commodity_code": "111900/US",
+    "sector_code": "11",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 40.4534642594687,
+    "total_impact": 12352.967408727
+  },
+  {
+    "purchased_commodity_code": "115000/US",
+    "sector_code": "11",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 38.0466500982716,
+    "total_impact": 14363.7363093891
+  },
+  {
+    "purchased_commodity_code": "112300/US",
+    "sector_code": "11",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 33.3199914410984,
+    "total_impact": 6323.82570810118
+  },
+  {
+    "purchased_commodity_code": "113000/US",
+    "sector_code": "11",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 23.1866575462664,
+    "total_impact": 2437.53656478083
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "11",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 80.2563547946346,
+    "total_impact": 22047.5396374596
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "111/112",
     "indicator": "Particulate matter 2.5",
     "impact_per_purchase": 1304.78804407099,
@@ -981,6 +1051,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "211",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 97.6629946148801,
+    "total_impact": 88931.7563743924
+  },
+  {
+    "purchased_commodity_code": "211000/US",
+    "sector_code": "211",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 25.3664178558605,
+    "total_impact": 22556.7150870954
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "211",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 10.3467279919793,
+    "total_impact": 9421.71286763531
+  },
+  {
+    "purchased_commodity_code": "325110/US",
+    "sector_code": "211",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 5.11752678176616,
+    "total_impact": 4660.0111617519
+  },
+  {
+    "purchased_commodity_code": "230301/US",
+    "sector_code": "211",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 5.00380361101716,
+    "total_impact": 4556.45503637345
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "211",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 4.07148300139228,
+    "total_impact": 3707.48547891783
+  },
+  {
+    "purchased_commodity_code": "486000/US",
+    "sector_code": "211",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 2.77260171167417,
+    "total_impact": 2524.72639117972
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "211",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.92708973956409,
+    "total_impact": 1754.80463103057
+  },
+  {
+    "purchased_commodity_code": "1111B0/US",
+    "sector_code": "211",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.81072541295384,
+    "total_impact": 837.749077652996
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "211",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 23.5411509886074,
+    "total_impact": 19834.9854135525
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "211/32411",
     "indicator": "Particulate matter 2.5",
     "impact_per_purchase": 98.1295172849369,
@@ -1118,6 +1258,76 @@
     "indicator": "Particulate matter 2.5",
     "impact_per_purchase": 13.7754257727194,
     "total_impact": 4152.77447043118
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "212",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 207.14600607184,
+    "total_impact": 47432.4762270119
+  },
+  {
+    "purchased_commodity_code": "230301/US",
+    "sector_code": "212",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 27.2081086442509,
+    "total_impact": 6230.13685334011
+  },
+  {
+    "purchased_commodity_code": "2122A0/US",
+    "sector_code": "212",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 16.0550749100528,
+    "total_impact": 3424.13762305029
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "212",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 5.08648607057336,
+    "total_impact": 1164.70809259931
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "212",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 3.46307629259456,
+    "total_impact": 792.978281530815
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "212",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 3.08449945579193,
+    "total_impact": 706.291421608881
+  },
+  {
+    "purchased_commodity_code": "212310/US",
+    "sector_code": "212",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 2.74723785251841,
+    "total_impact": 566.95795151204
+  },
+  {
+    "purchased_commodity_code": "230302/US",
+    "sector_code": "212",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 2.67642251692065,
+    "total_impact": 223.368378832768
+  },
+  {
+    "purchased_commodity_code": "327310/US",
+    "sector_code": "212",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 2.48059828676871,
+    "total_impact": 568.009596212622
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "212",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 39.5786505513727,
+    "total_impact": 7698.32095609282
   },
   {
     "purchased_commodity_code": "Direct",
@@ -1678,6 +1888,76 @@
     "indicator": "Particulate matter 2.5",
     "impact_per_purchase": 26.5130293480005,
     "total_impact": 2452.45150759327
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "2211",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 173.508900344849,
+    "total_impact": 79527.1623420743
+  },
+  {
+    "purchased_commodity_code": "230301/US",
+    "sector_code": "2211",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 7.16691645945433,
+    "total_impact": 3284.92963548442
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "2211",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 5.41485668933762,
+    "total_impact": 2481.87952396762
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "2211",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 5.26383347303881,
+    "total_impact": 2412.65859169183
+  },
+  {
+    "purchased_commodity_code": "211000/US",
+    "sector_code": "2211",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 3.98465774548449,
+    "total_impact": 1826.35313100902
+  },
+  {
+    "purchased_commodity_code": "212100/US",
+    "sector_code": "2211",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 3.3762551553196,
+    "total_impact": 1547.49405541569
+  },
+  {
+    "purchased_commodity_code": "486000/US",
+    "sector_code": "2211",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.89332002496311,
+    "total_impact": 867.79622654217
+  },
+  {
+    "purchased_commodity_code": "48A000/US",
+    "sector_code": "2211",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.82190088253084,
+    "total_impact": 835.061526920108
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "2211",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.44494132258379,
+    "total_impact": 662.283507690409
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "2211",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 11.9641702022764,
+    "total_impact": 5483.73313457455
   },
   {
     "purchased_commodity_code": "Direct",
@@ -2868,6 +3148,76 @@
     "indicator": "Particulate matter 2.5",
     "impact_per_purchase": 52.3677620058324,
     "total_impact": 13917.0928108382
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "31",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 22.2734557951874,
+    "total_impact": 20334.5690304521
+  },
+  {
+    "purchased_commodity_code": "1111B0/US",
+    "sector_code": "31",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 136.31028256467,
+    "total_impact": 118406.871430504
+  },
+  {
+    "purchased_commodity_code": "1111A0/US",
+    "sector_code": "31",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 95.5373274829232,
+    "total_impact": 67039.3144547656
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "31",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 72.3267748545096,
+    "total_impact": 28255.1608202866
+  },
+  {
+    "purchased_commodity_code": "111900/US",
+    "sector_code": "31",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 68.2590316430723,
+    "total_impact": 55588.9677525257
+  },
+  {
+    "purchased_commodity_code": "311224/US",
+    "sector_code": "31",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 50.9277457036295,
+    "total_impact": 45363.6320103514
+  },
+  {
+    "purchased_commodity_code": "112120/US",
+    "sector_code": "31",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 42.693465817825,
+    "total_impact": 23643.7793204042
+  },
+  {
+    "purchased_commodity_code": "112300/US",
+    "sector_code": "31",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 29.0589276687878,
+    "total_impact": 22810.1507868441
+  },
+  {
+    "purchased_commodity_code": "311210/US",
+    "sector_code": "31",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 22.7317474093662,
+    "total_impact": 19746.0898932151
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "31",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 176.516063031642,
+    "total_impact": 127580.719052771
   },
   {
     "purchased_commodity_code": "Direct",
@@ -5461,6 +5811,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "321",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 298.037023615169,
+    "total_impact": 33650.7050474295
+  },
+  {
+    "purchased_commodity_code": "321100/US",
+    "sector_code": "321",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 98.7267269608166,
+    "total_impact": 11147.0176723623
+  },
+  {
+    "purchased_commodity_code": "113000/US",
+    "sector_code": "321",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 76.7396338256909,
+    "total_impact": 8664.50332912477
+  },
+  {
+    "purchased_commodity_code": "321200/US",
+    "sector_code": "321",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 35.1871878729612,
+    "total_impact": 3972.90801726166
+  },
+  {
+    "purchased_commodity_code": "3219A0/US",
+    "sector_code": "321",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 6.4191898253113,
+    "total_impact": 724.776609411883
+  },
+  {
+    "purchased_commodity_code": "322210/US",
+    "sector_code": "321",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 6.03930776808455,
+    "total_impact": 681.884961570659
+  },
+  {
+    "purchased_commodity_code": "321910/US",
+    "sector_code": "321",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 5.2345629280594,
+    "total_impact": 591.022991062278
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "321",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 3.28376591234376,
+    "total_impact": 370.762789202204
+  },
+  {
+    "purchased_commodity_code": "423A00/US",
+    "sector_code": "321",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 3.15656159837346,
+    "total_impact": 356.40042979379
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "321",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 39.0508108176013,
+    "total_impact": 4381.20759772073
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "321/322",
     "indicator": "Particulate matter 2.5",
     "impact_per_purchase": 467.366236020191,
@@ -5808,6 +6228,76 @@
     "indicator": "Particulate matter 2.5",
     "impact_per_purchase": 47.185752398889,
     "total_impact": 1368.20032129079
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "322-323",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 436.182384912832,
+    "total_impact": 90345.4131797874
+  },
+  {
+    "purchased_commodity_code": "322130/US",
+    "sector_code": "322-323",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 156.750250435133,
+    "total_impact": 32467.304117353
+  },
+  {
+    "purchased_commodity_code": "322120/US",
+    "sector_code": "322-323",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 66.7843197394886,
+    "total_impact": 13832.8762680339
+  },
+  {
+    "purchased_commodity_code": "322110/US",
+    "sector_code": "322-323",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 23.2831497638462,
+    "total_impact": 4822.5830714414
+  },
+  {
+    "purchased_commodity_code": "322210/US",
+    "sector_code": "322-323",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 17.7691638879878,
+    "total_impact": 3680.48437728735
+  },
+  {
+    "purchased_commodity_code": "321100/US",
+    "sector_code": "322-323",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 10.2906191081397,
+    "total_impact": 2131.47130044349
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "322-323",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 8.36946890979158,
+    "total_impact": 1733.5480590341
+  },
+  {
+    "purchased_commodity_code": "113000/US",
+    "sector_code": "322-323",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 8.28203350794658,
+    "total_impact": 1673.69481756604
+  },
+  {
+    "purchased_commodity_code": "322220/US",
+    "sector_code": "322-323",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 6.49652359399013,
+    "total_impact": 1345.6093795456
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "322-323",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 66.3933609482438,
+    "total_impact": 13374.6922242715
   },
   {
     "purchased_commodity_code": "Direct",
@@ -6858,6 +7348,76 @@
     "indicator": "Particulate matter 2.5",
     "impact_per_purchase": 56.9087680971679,
     "total_impact": 38138.2644892541
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "325-326",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 56.4372727133313,
+    "total_impact": 52485.2235865947
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "325-326",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 47.8957491140427,
+    "total_impact": 44541.824582253
+  },
+  {
+    "purchased_commodity_code": "1111B0/US",
+    "sector_code": "325-326",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 44.7348635016641,
+    "total_impact": 30131.7941400763
+  },
+  {
+    "purchased_commodity_code": "111900/US",
+    "sector_code": "325-326",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 27.4212322006403,
+    "total_impact": 18830.1123612399
+  },
+  {
+    "purchased_commodity_code": "325211/US",
+    "sector_code": "325-326",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 25.1318084026979,
+    "total_impact": 23371.9405586989
+  },
+  {
+    "purchased_commodity_code": "325110/US",
+    "sector_code": "325-326",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 12.3692517946487,
+    "total_impact": 11503.0885588431
+  },
+  {
+    "purchased_commodity_code": "322210/US",
+    "sector_code": "325-326",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 6.49431479658694,
+    "total_impact": 6039.54705380512
+  },
+  {
+    "purchased_commodity_code": "1111A0/US",
+    "sector_code": "325-326",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 5.66844830433768,
+    "total_impact": 4076.76777559566
+  },
+  {
+    "purchased_commodity_code": "325180/US",
+    "sector_code": "325-326",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 4.49870257137749,
+    "total_impact": 4183.67860381323
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "325-326",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 63.5498188426993,
+    "total_impact": 54448.1742226234
   },
   {
     "purchased_commodity_code": "Direct",
@@ -8891,6 +9451,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "327",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 252.640630749954,
+    "total_impact": 28295.9739415831
+  },
+  {
+    "purchased_commodity_code": "327310/US",
+    "sector_code": "327",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 85.8214049551854,
+    "total_impact": 9367.60049131461
+  },
+  {
+    "purchased_commodity_code": "311221/US",
+    "sector_code": "327",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 50.666403836186,
+    "total_impact": 747.596734263444
+  },
+  {
+    "purchased_commodity_code": "2123A0/US",
+    "sector_code": "327",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 45.6462747154171,
+    "total_impact": 5112.42311279743
+  },
+  {
+    "purchased_commodity_code": "212310/US",
+    "sector_code": "327",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 18.29113874645,
+    "total_impact": 1844.07348249108
+  },
+  {
+    "purchased_commodity_code": "327200/US",
+    "sector_code": "327",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 7.67233397663857,
+    "total_impact": 837.452609481509
+  },
+  {
+    "purchased_commodity_code": "322130/US",
+    "sector_code": "327",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 6.45835841410523,
+    "total_impact": 723.341850629697
+  },
+  {
+    "purchased_commodity_code": "322210/US",
+    "sector_code": "327",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 5.99990170607919,
+    "total_impact": 671.994294121702
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "327",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 5.85561687727488,
+    "total_impact": 655.834265768806
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "327",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 65.4499750189183,
+    "total_impact": 6885.90120325443
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "327100/US",
     "indicator": "Particulate matter 2.5",
     "impact_per_purchase": 373.923084783821,
@@ -9798,6 +10428,76 @@
     "indicator": "Particulate matter 2.5",
     "impact_per_purchase": 31.5298976546537,
     "total_impact": 132.495954132956
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "331-332",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 62.1656558032141,
+    "total_impact": 29883.7398909929
+  },
+  {
+    "purchased_commodity_code": "331110/US",
+    "sector_code": "331-332",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 34.8129830944621,
+    "total_impact": 16734.9980979473
+  },
+  {
+    "purchased_commodity_code": "331313/US",
+    "sector_code": "331-332",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 13.0783101650177,
+    "total_impact": 6286.89288539462
+  },
+  {
+    "purchased_commodity_code": "2122A0/US",
+    "sector_code": "331-332",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 12.1453264823358,
+    "total_impact": 5420.35426786098
+  },
+  {
+    "purchased_commodity_code": "331410/US",
+    "sector_code": "331-332",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 11.9107146489591,
+    "total_impact": 5725.61640163587
+  },
+  {
+    "purchased_commodity_code": "S00401/US",
+    "sector_code": "331-332",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 8.53503529231143,
+    "total_impact": 3941.63712675572
+  },
+  {
+    "purchased_commodity_code": "33131B/US",
+    "sector_code": "331-332",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 6.58932116606743,
+    "total_impact": 3090.89635655843
+  },
+  {
+    "purchased_commodity_code": "322210/US",
+    "sector_code": "331-332",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 3.88027615336964,
+    "total_impact": 1865.29301065501
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "331-332",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 3.38091200870681,
+    "total_impact": 1625.24296988603
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "331-332",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 51.7289477866569,
+    "total_impact": 23733.6540044677
   },
   {
     "purchased_commodity_code": "Direct",
@@ -11898,6 +12598,76 @@
     "indicator": "Particulate matter 2.5",
     "impact_per_purchase": 28.0832860348485,
     "total_impact": 530.575149895525
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "333",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 2.56880064356465,
+    "total_impact": 812.509767905494
+  },
+  {
+    "purchased_commodity_code": "331110/US",
+    "sector_code": "333",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 21.7027214556699,
+    "total_impact": 6864.55494981275
+  },
+  {
+    "purchased_commodity_code": "331510/US",
+    "sector_code": "333",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 6.31276000093852,
+    "total_impact": 1996.72137892648
+  },
+  {
+    "purchased_commodity_code": "322210/US",
+    "sector_code": "333",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 3.22035408770182,
+    "total_impact": 1018.59564654312
+  },
+  {
+    "purchased_commodity_code": "333618/US",
+    "sector_code": "333",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 2.04554277257602,
+    "total_impact": 577.529105492728
+  },
+  {
+    "purchased_commodity_code": "326190/US",
+    "sector_code": "333",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.7851340088301,
+    "total_impact": 564.636583546638
+  },
+  {
+    "purchased_commodity_code": "33131B/US",
+    "sector_code": "333",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.61178404431698,
+    "total_impact": 509.806116345597
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "333",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.54566020698291,
+    "total_impact": 488.891194878291
+  },
+  {
+    "purchased_commodity_code": "331520/US",
+    "sector_code": "333",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.4334041147766,
+    "total_impact": 453.384674879151
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "333",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 49.1978114804574,
+    "total_impact": 14476.5463698462
   },
   {
     "purchased_commodity_code": "Direct",
@@ -15331,6 +16101,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "335",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 4.11678265894325,
+    "total_impact": 462.905829260876
+  },
+  {
+    "purchased_commodity_code": "331410/US",
+    "sector_code": "335",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 11.1132657844906,
+    "total_impact": 1187.52505275615
+  },
+  {
+    "purchased_commodity_code": "331110/US",
+    "sector_code": "335",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 9.98346763123147,
+    "total_impact": 1094.52189907364
+  },
+  {
+    "purchased_commodity_code": "331420/US",
+    "sector_code": "335",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 6.20393959776103,
+    "total_impact": 662.911116314843
+  },
+  {
+    "purchased_commodity_code": "322210/US",
+    "sector_code": "335",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 5.88522298401946,
+    "total_impact": 661.755611480837
+  },
+  {
+    "purchased_commodity_code": "325211/US",
+    "sector_code": "335",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 3.9262791623253,
+    "total_impact": 430.451490782411
+  },
+  {
+    "purchased_commodity_code": "33131B/US",
+    "sector_code": "335",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 3.18815405273142,
+    "total_impact": 340.664625884271
+  },
+  {
+    "purchased_commodity_code": "331490/US",
+    "sector_code": "335",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 2.62480955407591,
+    "total_impact": 295.143014324995
+  },
+  {
+    "purchased_commodity_code": "327200/US",
+    "sector_code": "335",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 2.12869747570215,
+    "total_impact": 233.376426880985
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "335",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 46.6769003958409,
+    "total_impact": 4985.93492759685
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "335110/US",
     "indicator": "Particulate matter 2.5",
     "impact_per_purchase": 9.89534505604766,
@@ -16308,6 +17148,76 @@
     "indicator": "Particulate matter 2.5",
     "impact_per_purchase": 20.0781339703182,
     "total_impact": 234.721521626486
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "336",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 3.56853322106161,
+    "total_impact": 3325.65539721095
+  },
+  {
+    "purchased_commodity_code": "336991/US",
+    "sector_code": "336",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 14.6256782299924,
+    "total_impact": 83.3454379480004
+  },
+  {
+    "purchased_commodity_code": "336370/US",
+    "sector_code": "336",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 10.588312332909,
+    "total_impact": 7143.89466724661
+  },
+  {
+    "purchased_commodity_code": "336500/US",
+    "sector_code": "336",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 8.99119530429096,
+    "total_impact": 154.750903196353
+  },
+  {
+    "purchased_commodity_code": "331110/US",
+    "sector_code": "336",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 8.54168557172152,
+    "total_impact": 7960.33018698474
+  },
+  {
+    "purchased_commodity_code": "336360/US",
+    "sector_code": "336",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 6.86897332905771,
+    "total_impact": 5330.70180689423
+  },
+  {
+    "purchased_commodity_code": "336413/US",
+    "sector_code": "336",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 4.07634822799227,
+    "total_impact": 1090.65848615845
+  },
+  {
+    "purchased_commodity_code": "336390/US",
+    "sector_code": "336",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 3.88017238106162,
+    "total_impact": 3616.08409444695
+  },
+  {
+    "purchased_commodity_code": "322210/US",
+    "sector_code": "336",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 3.61590674395763,
+    "total_impact": 3369.80463230121
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "336",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 63.2943686572659,
+    "total_impact": 50523.6675865643
   },
   {
     "purchased_commodity_code": "Direct",
@@ -18201,6 +19111,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "337-339",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 6.82262239183845,
+    "total_impact": 1384.90973624432
+  },
+  {
+    "purchased_commodity_code": "321200/US",
+    "sector_code": "337-339",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 13.4283425559319,
+    "total_impact": 2653.47071266976
+  },
+  {
+    "purchased_commodity_code": "322210/US",
+    "sector_code": "337-339",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 9.37086146017056,
+    "total_impact": 1902.17141266847
+  },
+  {
+    "purchased_commodity_code": "321100/US",
+    "sector_code": "337-339",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 8.30104393177461,
+    "total_impact": 1640.30496435458
+  },
+  {
+    "purchased_commodity_code": "3252A0/US",
+    "sector_code": "337-339",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 5.34421523201453,
+    "total_impact": 1084.81098356782
+  },
+  {
+    "purchased_commodity_code": "331110/US",
+    "sector_code": "337-339",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 5.11229100052535,
+    "total_impact": 1037.73317274766
+  },
+  {
+    "purchased_commodity_code": "325211/US",
+    "sector_code": "337-339",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 5.03323654088168,
+    "total_impact": 994.578868951257
+  },
+  {
+    "purchased_commodity_code": "313300/US",
+    "sector_code": "337-339",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 3.52379741960502,
+    "total_impact": 696.310301242109
+  },
+  {
+    "purchased_commodity_code": "313200/US",
+    "sector_code": "337-339",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 3.44585103149995,
+    "total_impact": 680.907919516017
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "337-339",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 58.852969414629,
+    "total_impact": 10639.7575208568
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "337110/US",
     "indicator": "Particulate matter 2.5",
     "impact_per_purchase": 35.9753309234616,
@@ -19531,6 +20511,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "42-44",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 6.29012880979301,
+    "total_impact": 26159.6029561934
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "42-44",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 3.96962018515443,
+    "total_impact": 16508.9922751436
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "42-44",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 2.76479037304522,
+    "total_impact": 11498.3048206208
+  },
+  {
+    "purchased_commodity_code": "1111A0/US",
+    "sector_code": "42-44",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 2.49568306806794,
+    "total_impact": 2502.17640566186
+  },
+  {
+    "purchased_commodity_code": "1111B0/US",
+    "sector_code": "42-44",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.93246811035864,
+    "total_impact": 4261.47672151984
+  },
+  {
+    "purchased_commodity_code": "230301/US",
+    "sector_code": "42-44",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.27918826272998,
+    "total_impact": 5319.93192367395
+  },
+  {
+    "purchased_commodity_code": "322210/US",
+    "sector_code": "42-44",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.04254583446952,
+    "total_impact": 4335.77529460058
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "42-44",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.00438434194378,
+    "total_impact": 438.41241044677
+  },
+  {
+    "purchased_commodity_code": "493000/US",
+    "sector_code": "42-44",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 0.933295711336087,
+    "total_impact": 3881.42214373406
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "42-44",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 23.4924161245613,
+    "total_impact": 85712.1846199076
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "423100/US",
     "indicator": "Particulate matter 2.5",
     "impact_per_purchase": 4.53261042939083,
@@ -20791,6 +21841,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "48",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 52.1025242959364,
+    "total_impact": 69373.6618261954
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "48",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 15.6496228280177,
+    "total_impact": 20837.2177058431
+  },
+  {
+    "purchased_commodity_code": "48A000/US",
+    "sector_code": "48",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 6.79433739422944,
+    "total_impact": 9046.54949236516
+  },
+  {
+    "purchased_commodity_code": "230301/US",
+    "sector_code": "48",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 2.82866553042087,
+    "total_impact": 3766.32204636078
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "48",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 2.13704159579661,
+    "total_impact": 2845.43605091452
+  },
+  {
+    "purchased_commodity_code": "322120/US",
+    "sector_code": "48",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.89221864824265,
+    "total_impact": 2519.45828687314
+  },
+  {
+    "purchased_commodity_code": "321100/US",
+    "sector_code": "48",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.67847976018601,
+    "total_impact": 1057.40121587579
+  },
+  {
+    "purchased_commodity_code": "722A00/US",
+    "sector_code": "48",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.39924086711814,
+    "total_impact": 1863.06640686921
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "48",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.38879677094588,
+    "total_impact": 1849.16026305517
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "48",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 19.3659839716346,
+    "total_impact": 24164.5000459356
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "481000/US",
     "indicator": "Particulate matter 2.5",
     "impact_per_purchase": 3.78812080485005,
@@ -21558,6 +22678,76 @@
     "indicator": "Particulate matter 2.5",
     "impact_per_purchase": 10.2989614554289,
     "total_impact": 2536.00902463052
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "5",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.6488701775903,
+    "total_impact": 24182.8459670937
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "5",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 2.6079389460101,
+    "total_impact": 38248.8486237986
+  },
+  {
+    "purchased_commodity_code": "230301/US",
+    "sector_code": "5",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 2.51693871305883,
+    "total_impact": 32525.1737142975
+  },
+  {
+    "purchased_commodity_code": "722110/US",
+    "sector_code": "5",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.64325964326272,
+    "total_impact": 21235.0444122893
+  },
+  {
+    "purchased_commodity_code": "311111/US",
+    "sector_code": "5",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.59328348746095,
+    "total_impact": 4073.63797968515
+  },
+  {
+    "purchased_commodity_code": "230302/US",
+    "sector_code": "5",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.46771703411671,
+    "total_impact": 10699.541795603
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "5",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.40380620077964,
+    "total_impact": 17205.3689210417
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "5",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.34964899644604,
+    "total_impact": 17440.8569564994
+  },
+  {
+    "purchased_commodity_code": "322130/US",
+    "sector_code": "5",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.13092815136989,
+    "total_impact": 13898.7737269517
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "5",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 18.8573288649989,
+    "total_impact": 221236.042070118
   },
   {
     "purchased_commodity_code": "Direct",
@@ -25271,6 +26461,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "562",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 98.7734335288901,
+    "total_impact": 12810.1343506162
+  },
+  {
+    "purchased_commodity_code": "562000/US",
+    "sector_code": "562",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 12.9144079805245,
+    "total_impact": 1674.896734665
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "562",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 5.34143690790973,
+    "total_impact": 692.742187560485
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "562",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 3.91279125470996,
+    "total_impact": 507.458127838495
+  },
+  {
+    "purchased_commodity_code": "332320/US",
+    "sector_code": "562",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.63711538846001,
+    "total_impact": 212.320938175141
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "562",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.42829336409961,
+    "total_impact": 185.238370607598
+  },
+  {
+    "purchased_commodity_code": "230301/US",
+    "sector_code": "562",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.34783118480603,
+    "total_impact": 174.80306133395
+  },
+  {
+    "purchased_commodity_code": "48A000/US",
+    "sector_code": "562",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.27062085616203,
+    "total_impact": 164.789491410863
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "562",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.20745103182933,
+    "total_impact": 156.596864024168
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "562",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 26.9902377294968,
+    "total_impact": 3500.42070137003
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "562000/US",
     "indicator": "Particulate matter 2.5",
     "impact_per_purchase": 111.687841509415,
@@ -25338,6 +26598,76 @@
     "indicator": "Particulate matter 2.5",
     "impact_per_purchase": 25.9549482542366,
     "total_impact": 3366.15183173534
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "6",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 0.530160029680959,
+    "total_impact": 1848.96388538111
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "6",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 4.27496406146601,
+    "total_impact": 14909.185375045
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "6",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 3.52811828154734,
+    "total_impact": 12304.5173546175
+  },
+  {
+    "purchased_commodity_code": "31161A/US",
+    "sector_code": "6",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 2.01098875905305,
+    "total_impact": 5363.08290343552
+  },
+  {
+    "purchased_commodity_code": "722A00/US",
+    "sector_code": "6",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.65412264918506,
+    "total_impact": 5768.84877981956
+  },
+  {
+    "purchased_commodity_code": "339116/US",
+    "sector_code": "6",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.55675352142053,
+    "total_impact": 334.191409220851
+  },
+  {
+    "purchased_commodity_code": "722110/US",
+    "sector_code": "6",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.5265098588343,
+    "total_impact": 5323.79176408554
+  },
+  {
+    "purchased_commodity_code": "322291/US",
+    "sector_code": "6",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.52607156545469,
+    "total_impact": 4291.8831060679
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "6",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.41799787316678,
+    "total_impact": 4945.34991370505
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "6",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 26.8355259825636,
+    "total_impact": 77986.0295272351
   },
   {
     "purchased_commodity_code": "Direct",
@@ -26461,6 +27791,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "7",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 127.70040180805,
+    "total_impact": 234000.476073829
+  },
+  {
+    "purchased_commodity_code": "311224/US",
+    "sector_code": "7",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 5.62812589627702,
+    "total_impact": 9930.80606393432
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "7",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 4.06006354993571,
+    "total_impact": 7439.73229624613
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "7",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 3.87875956756925,
+    "total_impact": 7107.50767058205
+  },
+  {
+    "purchased_commodity_code": "230301/US",
+    "sector_code": "7",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 3.37018324738991,
+    "total_impact": 6175.58342166132
+  },
+  {
+    "purchased_commodity_code": "31161A/US",
+    "sector_code": "7",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 3.02921443042606,
+    "total_impact": 5550.78612763399
+  },
+  {
+    "purchased_commodity_code": "311910/US",
+    "sector_code": "7",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 2.86199124571402,
+    "total_impact": 5244.36340476725
+  },
+  {
+    "purchased_commodity_code": "311615/US",
+    "sector_code": "7",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 2.08422183778463,
+    "total_impact": 3819.16497818201
+  },
+  {
+    "purchased_commodity_code": "312120/US",
+    "sector_code": "7",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.97948498886296,
+    "total_impact": 3587.02544456464
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "7",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 37.4747362725256,
+    "total_impact": 62964.8767592611
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "711100/US",
     "indicator": "Particulate matter 2.5",
     "impact_per_purchase": 0.065235690112189,
@@ -27301,6 +28701,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "8",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.62377298615645,
+    "total_impact": 1504.42437226359
+  },
+  {
+    "purchased_commodity_code": "531ORE/US",
+    "sector_code": "8",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 4.86138168802451,
+    "total_impact": 4410.55750703114
+  },
+  {
+    "purchased_commodity_code": "325620/US",
+    "sector_code": "8",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 2.46024313257839,
+    "total_impact": 476.685314304801
+  },
+  {
+    "purchased_commodity_code": "230301/US",
+    "sector_code": "8",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 2.20801109690249,
+    "total_impact": 2003.24939369423
+  },
+  {
+    "purchased_commodity_code": "311111/US",
+    "sector_code": "8",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.78437140106369,
+    "total_impact": 196.381201146493
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "8",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.76772144601075,
+    "total_impact": 1603.7903613388
+  },
+  {
+    "purchased_commodity_code": "212230/US",
+    "sector_code": "8",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.32030161710756,
+    "total_impact": 1048.05985630543
+  },
+  {
+    "purchased_commodity_code": "3363A0/US",
+    "sector_code": "8",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 0.801769137526444,
+    "total_impact": 710.542672910191
+  },
+  {
+    "purchased_commodity_code": "336310/US",
+    "sector_code": "8",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 0.71722091084687,
+    "total_impact": 635.614467067721
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "8",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 22.3610487333484,
+    "total_impact": 17014.2302268366
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "811100/US",
     "indicator": "Particulate matter 2.5",
     "impact_per_purchase": 2.0840869765006,
@@ -28075,6 +29545,76 @@
     "indicator": "Particulate matter 2.5",
     "impact_per_purchase": 0.00536700065576983,
     "total_impact": 0.103234323716792
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "G",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.55350456804964,
+    "total_impact": 4975.93200581376
+  },
+  {
+    "purchased_commodity_code": "230301/US",
+    "sector_code": "G",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 6.89656174067141,
+    "total_impact": 22089.9397409309
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "G",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 5.46154696401904,
+    "total_impact": 17493.5348749157
+  },
+  {
+    "purchased_commodity_code": "336411/US",
+    "sector_code": "G",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.85003222872209,
+    "total_impact": 1188.93003635815
+  },
+  {
+    "purchased_commodity_code": "324121/US",
+    "sector_code": "G",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.68656111063854,
+    "total_impact": 1726.57168773929
+  },
+  {
+    "purchased_commodity_code": "115000/US",
+    "sector_code": "G",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.65985931957478,
+    "total_impact": 2282.09943080389
+  },
+  {
+    "purchased_commodity_code": "31161A/US",
+    "sector_code": "G",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.48248540289121,
+    "total_impact": 3813.70227660851
+  },
+  {
+    "purchased_commodity_code": "322120/US",
+    "sector_code": "G",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.43752868876945,
+    "total_impact": 4446.02842408883
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "G",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.41878658520251,
+    "total_impact": 4544.42537468145
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "G",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 31.2652472993348,
+    "total_impact": 72163.8305729007
   },
   {
     "purchased_commodity_code": "Direct",

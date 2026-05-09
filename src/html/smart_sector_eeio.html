@@ -11,8 +11,10 @@
 <body>
     <h1 id="graphTitle" class="text-center">Top 10 Sectors Based on Total Embodied Impacts</h1>
     <p id="graphParagraph">This chart presents the top 10 sectors ranked on total embodied impacts from contributions
-        from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all
-        other sectors in the supply chain.</p>
+        from <abbr class="term-help" title="Impacts from a sector's own operations.">Direct impacts</abbr> due to the
+        sector's operations and <abbr class="term-help" title="Impacts from purchased inputs upstream.">Indirect impacts</abbr>
+        embedded in the purchases made from all other sectors in the <abbr class="term-help" title="Network of sector purchases delivering goods and services.">supply
+        chain</abbr>.</p>
     <!-- default title is for GHGs and 10 sectors -->
     <div style=" display: flex; flex-direction: column;height: 85vh;">
         <div style=" flex-grow: 1;">
@@ -33,12 +35,12 @@
                     <input type="radio" name="myRadios" value="direct" /> Supply Chain
                 </div>
                 <div style=" margin-left: 20px;flex-grow: 1;">
-                    <label for="grap-selected">Sector Filter: </label>
+                    <label for="mySelect">Sector Filter: </label>
                     <br>
                     <select id="mySelect" onchange="toggleNumSelection(this)">
                         <option data-value='{"name":"select"}'>Select an option</option>
                         <option selected data-value='{"name":"total_rank","num":"10"}'>Top 10 Total Embodied Impacts</option>
-                        <option data-value='{"name":"total_rank","num":"25"}'>Top 25 Total Embodied Impacts</opion>
+                        <option data-value='{"name":"total_rank","num":"25"}'>Top 25 Total Embodied Impacts</option>
                         <option data-value='{"name":"intensity_rank","num":"10"}'>Top 10 Embodied Impact Intensity
                         </option>
                         <option data-value='{"name":"intensity_rank","num":"25"}'>Top 25 Embodied Impact Intensity
@@ -97,6 +99,7 @@
                         sectors BEA/NAICS Codes</a>.
                     ·
                     <a href="./sector-dashboard.html" target="_blank">Multi-indicator sector dashboard</a>
+                    <a href="./glossary.html" target="_blank">Glossary</a>.
                 </div>
             </div>
         </div>
