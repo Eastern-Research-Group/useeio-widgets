@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sector dashboard</title>
+    <link rel="stylesheet" type="text/css" href="widgets.css" />
+  </head>
+  <body>
+    <div class="sector-dashboard-root"></div>
+
+    <script src="lib/apexcharts.min.js"></script>
+    <script src="lib/useeio_widgets.js"></script>
+    <script>
+      var config = useeio.urlConfig();
+      var modelID = config.get().model || "SMART_SECTORv1.0";
+      var params = new URLSearchParams(window.location.search);
+      var initialSector =
+        params.get("sector") || params.get("code") || "";
+
+      var perspectiveParam = (params.get("perspective") || "").toLowerCase();
+      var initialPerspective =
+        perspectiveParam === "direct" || perspectiveParam === "final"
+          ? perspectiveParam
+          : undefined;
+
+      var barParam = (params.get("bar") || "").toLowerCase();
+      var initialBarMode;
+      if (barParam === "total" || barParam === "total_impact") {
+        initialBarMode = "total_impact";
+      } else if (
+        barParam === "intensity" ||
+        barParam === "impact_per_purchase"
+      ) {
+        initialBarMode = "impact_per_purchase";
+      }
+
+      var pieParam = (params.get("pie") || "").toLowerCase();
+      var initialPieMode;
+      if (pieParam === "simple" || pieParam === "aggregate") {
+        initialPieMode = "aggregate";
+      } else if (pieParam === "detailed" || pieParam === "detail") {
+        initialPieMode = "detail";
+      }
+
+      var model = useeio.model({
+        endpoint: "./api",
+        model: modelID,
+        asJsonFiles: true,
+      });
+
+      var dashboard = useeio.sectorDashboard({
+        model: model,
+        endpoint: "./api",
+        selector: ".sector-dashboard-root",
+        initialSectorCode: initialSector,
+        initialPerspective: initialPerspective,
+        initialBarMode: initialBarMode,
+        initialPieMode: initialPieMode,
+      });
+      dashboard.update();
+    </script>
+  </body>
+</html>

@@ -665,6 +665,37 @@ th.io-sector-column-header>div {
     background: #eee;
 }
 
+/* --- Multi-indicator sector dashboard (print / PDF snapshot) --- */
+.sector-dashboard-page .apexcharts-datalabel-value {
+    white-space: normal !important;
+    text-align: center;
+    display: block;
+    max-width: 120px;
+    margin: 0 auto;
+}
+
+@media print {
+    .sector-dashboard-no-print {
+        display: none !important;
+    }
+
+    .sector-dashboard-page {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+
+    .sector-dashboard-section {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .sector-dashboard-snapshot-meta {
+        font-size: 0.9em;
+    }
+
+    body {
+        background: white;
+    }
 abbr.term-help,
 .term-help {
     cursor: help;

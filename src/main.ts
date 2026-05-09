@@ -31,6 +31,11 @@ import { DotsMenu } from "./widgets/dotsMenu";
 import { SectorListSearch}from './sector_contribution_to_impact_ranked_bar_chart.ts/sectorListSearch';
 import { PieListSearch, SmartSectorChartConfigPie, dataTableConfig} from './totalGhgEmissionPieChart.ts/pieListSearch';
 import { DataTableInfo } from './informationSectorTable';
+import {
+    sectorDashboard as createSectorDashboard,
+    SectorDashboard,
+    SectorDashboardConfig,
+} from './sector_dashboard/sectorDashboardWidget';
 
 export * from "./naics";
 
@@ -124,6 +129,10 @@ export function pieListSearch(config: SmartSectorChartConfigPie): PieListSearch 
 
 export function dataTable(config: dataTableConfig): DataTableInfo {
     return new DataTableInfo(config);
+}
+
+export function sectorDashboard(config: SectorDashboardConfig): SectorDashboard {
+    return createSectorDashboard(config);
 }
 
 export function paginator(args: WidgetArgs): Paginator {
