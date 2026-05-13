@@ -1,6 +1,5 @@
 import * as React from "react";
 import { WebModel, Sector } from "useeio";
-import { TextField } from "@material-ui/core";
 import InputLabel from "@material-ui/core/InputLabel";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
@@ -9,8 +8,8 @@ import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormLabel from "@material-ui/core/FormLabel";
 import { makeStyles } from "@material-ui/core/styles";
-import * as strings from "../util/strings";
 import { getLabel, pickPreferredBootSector } from "../util/util";
+import { SectorSearchTable } from "../util/sectorSearchTable";
 import { SECTOR_DASHBOARD_INDICATORS } from "./curatedIndicators";
 import {
   buildIndustryOutputCaption,
@@ -105,12 +104,6 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(1),
     minWidth: 150,
   },
-  selector: {
-    width: "auto",
-    height: "200px",
-    border: "1px solid black",
-    overflowY: "scroll",
-  },
   tagContainer: {
     display: "flex",
     flexWrap: "wrap",
@@ -188,7 +181,6 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
   const bootSectorRef = React.useRef(
     resolveInitialSector(sectors, initialSectorCode),
   );
-  const [searchTerm, setSearchTerm] = React.useState("");
   const [activeSector, setActiveSector] = React.useState<Sector>(() =>
     bootSectorRef.current,
   );
@@ -369,31 +361,10 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
   };
   const introText = buildSectorDashboardIntro(narrativeInput);
 
-  const onSearch = (value: string) => {
-    if (!value) {
-      setSearchTerm("");
-      return;
-    }
-    const term = value.trimStart().toLowerCase();
-    setSearchTerm(term.length === 0 ? "" : term);
-  };
-
-  let filtered = sectors;
-  if (searchTerm) {
-    filtered = sectors.filter(
-      (s) =>
-        strings.search(s.name, searchTerm) >= 0 ||
-        strings.search(s.code, searchTerm) >= 0,
-    );
-  }
-
-  const handlePickSector = (name: string, code: string) => {
-    setSearchTerm("");
-    const next = sectors.find((s) => s.code === code);
-    if (next) {
-      sectorSyncNeededRef.current = true;
-      setActiveSector(next);
-    }
+  const handlePickSector = (picked: Sector) => {
+    const next = sectors.find((s) => s.code === picked.code) ?? picked;
+    sectorSyncNeededRef.current = true;
+    setActiveSector(next);
   };
 
   const handleCopyShareLink = async () => {
@@ -451,67 +422,7 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
       <div className={`sector-dashboard-controls sector-dashboard-no-print`}>
         <div className={classes.tagContainer}>
           <div className={classes.left}>
-            <FormControl className={classes.margin}>
-              <TextField
-                value={searchTerm}
-                label="Search sector"
-                variant="outlined"
-                size="small"
-                onChange={(e) => onSearch(e.target.value)}
-              />
-              {searchTerm != null && searchTerm !== "" ? (
-                <div className={classes.selector}>
-                  <table id="sector-dashboard-sector-table">
-                    <thead>
-                      <tr>
-                        <th>
-                          BEA/NAICS
-                          <br />
-                          Code
-                        </th>
-                        <th>Sector name</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {filtered.map((sector) => (
-                        <tr key={sector.code}>
-                          <td
-                            style={{
-                              borderTop: "lightgray solid 1px",
-                              fontSize: 12,
-                            }}
-                          >
-                            <a
-                              style={{ cursor: "pointer" }}
-                              onClick={() =>
-                                handlePickSector(sector.name, sector.code)
-                              }
-                            >
-                              {sector.code}
-                            </a>
-                          </td>
-                          <td
-                            style={{
-                              borderTop: "lightgray solid 1px",
-                              fontSize: 12,
-                            }}
-                          >
-                            <a
-                              style={{ cursor: "pointer" }}
-                              onClick={() =>
-                                handlePickSector(sector.name, sector.code)
-                              }
-                            >
-                              {strings.cut(sector.name, 80)}
-                            </a>
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              ) : null}
-            </FormControl>
+            <SectorSearchTable sectors={sectors} onPick={handlePickSector} />
           </div>
 
           <div className={classes.right}>

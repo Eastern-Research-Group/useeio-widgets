@@ -1,8 +1,6 @@
 import * as ReactDOM from "react-dom";
 import { Sector, WebModel } from "useeio";
-import { TextField } from "@material-ui/core";
 import { SmartSectorEEIOImpactPurchasePerSector } from "./smart-sector-eeio-impact-per-purchase";
-import * as strings from "../util/strings";
 import { Widget } from "../widget";
 import {
   modelOfSmartSector,
@@ -27,6 +25,7 @@ import {
   sectorPurchasesPointOfConsumptionOnly,
 } from "../util/util";
 import DownloadCSVButton from "../util/downloadcsvfile";
+import { SectorSearchTable } from "../util/sectorSearchTable";
 export interface SmartSectorChartConfigNormal {
   model: WebModel;
   endpoint: "./api";
@@ -94,7 +93,6 @@ export class SectorListSearch extends Widget {
 }
 
 const Component = (props: { widget: SectorListSearch }) => {
-  const [searchTerm, setSearchTerm] = React.useState<string>("");
   const [value, setValue] = React.useState<string>("");
   const [sectorId, setSectorId] = React.useState<string>("");
   const [title, setTitle] = React.useState<string>("");
@@ -170,22 +168,12 @@ const Component = (props: { widget: SectorListSearch }) => {
     setGraph(props.widget.smartSectorImpactPurchase.getGraph());
   }, []);
 
-  let sectors = props.widget.sectors;
-
-  if (searchTerm) {
-    sectors = sectors.filter((s) => {
-      return (
-        strings.search(s.name, searchTerm) >= 0 ||
-        strings.search(s.code, searchTerm) >= 0
-      );
-    });
-  }
-
   const handleState = (e: string, c: string) => {
     setTitle(e + " (" + c + ")");
-    setSearchTerm("");
     setValue(e);
-    setSectorId(sectors.filter((t) => t.code === c)?.[0].id);
+    setSectorId(
+      props.widget.sectors.find((t) => t.code === c)?.id ?? "",
+    );
 
     if (changePrespective === "impact_per_purchase") {
       props.widget.smartSectorImpactPurchase.updateGraph(e, c);
@@ -194,39 +182,10 @@ const Component = (props: { widget: SectorListSearch }) => {
     }
   };
 
-  // create the sector ranking, if there is a result
-  const ranking: [Sector][] = sectors.map((sector) => {
-    return [sector];
-  });
-
-  const rows: JSX.Element[] = ranking.map(([sector], i) => (
-    <Row
-      key={sector.code}
-      sector={sector}
-      widget={props.widget}
-      index={i}
-      handleState={handleState}
-    />
-  ));
-
-  const onSearch = (value: string) => {
-    if (!value) {
-      setSearchTerm("");
-    }
-    const term = value.trimStart().toLowerCase();
-    setSearchTerm(term.length === 0 ? "" : term);
-  };
-
   const useStyles = makeStyles((theme) => ({
     margin: {
       margin: theme.spacing(1),
       minWidth: 150,
-    },
-    selector: {
-      width: "auto",
-      height: "200px",
-      border: "1px solid black",
-      overflowY: "scroll",
     },
     tagCcontainer: {
       display: "flex",
@@ -437,34 +396,10 @@ const Component = (props: { widget: SectorListSearch }) => {
 
       <div className={classes.tagCcontainer}>
         <div className={classes.left}>
-          <FormControl className={classes.margin}>
-            <TextField
-              value={searchTerm}
-              label="Search Sector"
-              variant="outlined"
-              size="small"
-              onChange={(e) => onSearch(e.target.value)}
-            />
-            {searchTerm != null ? (
-              <div className={classes.selector} id="div1">
-                <table id="sector-list-table">
-                  <thead>
-                    <tr>
-                      <th className={`indicator`}>
-                        BEA/NAICS
-                        <br />
-                        Code
-                      </th>
-                      <th className={`indicator`}>Sector Name</th>
-                    </tr>
-                  </thead>
-                  <tbody id="sectorListSearch" className="sector-list-body">
-                    {rows}
-                  </tbody>
-                </table>
-              </div>
-            ) : null}
-          </FormControl>
+          <SectorSearchTable
+            sectors={props.widget.sectors}
+            onPick={(sector) => handleState(sector.name, sector.code)}
+          />
         </div>
 
         <div className={classes.right}>
@@ -589,46 +524,3 @@ const Component = (props: { widget: SectorListSearch }) => {
   );
 };
 
-export type RowProps = {
-  sector: Sector;
-  widget: SectorListSearch;
-  index: number;
-  handleState: any;
-};
-
-const Row = (props: RowProps) => {
-  const sector = props.sector;
-
-  const useStyles = makeStyles({
-    td: {
-      borderTop: "lightgray solid 1px",
-      padding: "5px 0px",
-      whiteSpace: "nowrap",
-      fontSize: 12,
-    },
-  });
-  const classes = useStyles();
-
-  return (
-    <tr>
-      <td key={props.sector.code} className={classes.td}>
-        <a
-          style={{ cursor: "pointer" }}
-          title={sector.code}
-          onClick={() => props.handleState(sector.name, sector.code)}
-        >
-          {sector.code}
-        </a>
-      </td>
-      <td className={classes.td}>
-        <a
-          style={{ cursor: "pointer" }}
-          title={sector.name}
-          onClick={() => props.handleState(sector.name, sector.code)}
-        >
-          {strings.cut(sector.name, 80)}
-        </a>
-      </td>
-    </tr>
-  );
-};
