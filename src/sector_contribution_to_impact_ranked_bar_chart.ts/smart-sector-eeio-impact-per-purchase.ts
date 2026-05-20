@@ -195,6 +195,8 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
                 sectorCode: t.sector_code,
                 purchaseCommodity: purchaseCommodity,
                 impactPerPurchase: t.impact_per_purchase,
+                domesticImpactPerPurchase: t.domestic_impact_per_purchase,
+                importedImpactPerPurchase: t.imported_impact_per_purchase,
                 purchasedGroup: purchasedGroup,
               });
 
@@ -216,6 +218,8 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
                   sectorCode: t.sector_code,
                   purchaseCommodity: purchaseCommodity,
                   impactPerPurchase: t.impact_per_purchase,
+                  domesticImpactPerPurchase: t.domestic_impact_per_purchase,
+                  importedImpactPerPurchase: t.imported_impact_per_purchase,
                   purchasedGroup: purchasedGroup,
                 },
               );
@@ -225,6 +229,8 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
                   sectorCode: t.sector_code,
                   purchaseCommodity: purchaseCommodity,
                   impactPerPurchase: t.impact_per_purchase,
+                  domesticImpactPerPurchase: t.domestic_impact_per_purchase,
+                  importedImpactPerPurchase: t.imported_impact_per_purchase,
                   purchasedGroup: purchasedGroup,
                 });
 
@@ -261,6 +267,8 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
                 sectorCode: t.sector_code,
                 purchaseCommodity: purchaseCommodity,
                 impactPerPurchase: t.impact_per_purchase,
+                domesticImpactPerPurchase: t.domestic_impact_per_purchase,
+                importedImpactPerPurchase: t.imported_impact_per_purchase,
                 purchasedGroup: purchasedGroup,
               });
 
@@ -282,6 +290,8 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
                   sectorCode: t.sector_code,
                   purchaseCommodity: purchaseCommodity,
                   impactPerPurchase: t.impact_per_purchase,
+                  domesticImpactPerPurchase: t.domestic_impact_per_purchase,
+                  importedImpactPerPurchase: t.imported_impact_per_purchase,
                   purchasedGroup: purchasedGroup,
                 },
               );
@@ -291,6 +301,8 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
                   sectorCode: t.sector_code,
                   purchaseCommodity: purchaseCommodity,
                   impactPerPurchase: t.impact_per_purchase,
+                  domesticImpactPerPurchase: t.domestic_impact_per_purchase,
+                  importedImpactPerPurchase: t.imported_impact_per_purchase,
                   purchasedGroup: purchasedGroup,
                 });
 

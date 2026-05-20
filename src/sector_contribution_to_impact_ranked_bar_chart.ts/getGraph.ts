@@ -1,7 +1,27 @@
 import * as apex from "apexcharts";
-import { SortedImpactPerPurchaseTopList } from "../smartSectorChart/smartSector";
+import {
+  ImpactPerPurchaseSector,
+  SortedImpactPerPurchaseTopList,
+} from "../smartSectorChart/smartSector";
 import { formatNumberGraph } from "../util";
 import { chartTypography } from "../util/chartTypography";
+
+function hasPurchaseOriginIntensitySplit(
+  graphTitleName: string | undefined,
+  rows: ImpactPerPurchaseSector[],
+): boolean {
+  return (
+    graphTitleName === "sector purchases" &&
+    rows.length > 0 &&
+    rows.every(
+      (r) =>
+        r.domesticImpactPerPurchase != null &&
+        r.importedImpactPerPurchase != null &&
+        !Number.isNaN(r.domesticImpactPerPurchase) &&
+        !Number.isNaN(r.importedImpactPerPurchase),
+    )
+  );
+}
 
 //Impact Intensity graph
 export async function apexGraph(
@@ -20,12 +40,22 @@ export async function apexGraph(
   const data: {
     purchase_commodity: string;
     impactPerPurchase: number;
+    domesticImpactPerPurchase?: number;
+    importedImpactPerPurchase?: number;
   }[] = values?.topFifteenImpactPerPurchase.map((t) => {
     return {
       purchase_commodity: t.purchaseCommodity,
       impactPerPurchase: t.impactPerPurchase,
+      domesticImpactPerPurchase: t.domesticImpactPerPurchase,
+      importedImpactPerPurchase: t.importedImpactPerPurchase,
     };
   });
+
+  const stackOrigin = hasPurchaseOriginIntensitySplit(
+    graphTitleName,
+    values?.topFifteenImpactPerPurchase ?? [],
+  );
+
   let list = data?.map((impact) => impact?.impactPerPurchase);
   let highestNumber: number = Math.max(...list);
   let highNumberFormat = formatNumberGraph(highestNumber);
@@ -90,25 +120,41 @@ export async function apexGraph(
       break;
   }
 
-  const colors = data.map((t) => {
-    return t.purchase_commodity.includes("Direct") ? "#4CAF50" : "#2E93fA";
-  });
+  const colors = stackOrigin
+    ? ["#2E93fA", "#FF9800"]
+    : data.map((t) => {
+        return t.purchase_commodity.includes("Direct") ? "#4CAF50" : "#2E93fA";
+      });
 
   let totalSum: number = 0;
   values.topFifteenImpactPerPurchase.forEach((t) => {
     totalSum += t.impactPerPurchase;
   });
 
+  const series = stackOrigin
+    ? [
+        {
+          name: "Domestic",
+          data: data.map((t) => t.domesticImpactPerPurchase ?? 0),
+        },
+        {
+          name: "Imported",
+          data: data.map((t) => t.importedImpactPerPurchase ?? 0),
+        },
+      ]
+    : [
+        {
+          name: "Impact Intensity",
+          data: data.map((t) => t.impactPerPurchase),
+        },
+      ];
+
   return {
-    series: [
-      {
-        name: "Impact Intensity",
-        data: data.map((t) => t.impactPerPurchase),
-      },
-    ],
+    series,
     chart: {
       height: 500,
       type: "bar",
+      stacked: stackOrigin,
       toolbar: {
         show: true,
         tools: {
@@ -126,7 +172,7 @@ export async function apexGraph(
     plotOptions: {
       bar: {
         columnWidth: "55%",
-        distributed: true,
+        distributed: !stackOrigin,
       },
     },
     annotations: {
@@ -148,7 +194,8 @@ export async function apexGraph(
       enabled: false,
     },
     legend: {
-      show: false,
+      show: stackOrigin,
+      position: "top",
     },
     xaxis: {
       categories: sortedSectorCodesWithNamesWithArray,
@@ -180,17 +227,31 @@ export async function apexGraph(
     fill: {
       opacity: 1,
     },
-    tooltip: {
-      y: {
-        formatter: function (val) {
-          return (
-            "" +
-            parseFloat(formatNumberGraph(val)).toLocaleString() +
-            " " +
-            unitLabel
-          );
+    tooltip: stackOrigin
+      ? {
+          shared: true,
+          intersect: false,
+          y: {
+            formatter: function (val: number) {
+              return (
+                parseFloat(formatNumberGraph(val)).toLocaleString() +
+                " " +
+                unitLabel
+              );
+            },
+          },
+        }
+      : {
+          y: {
+            formatter: function (val) {
+              return (
+                "" +
+                parseFloat(formatNumberGraph(val)).toLocaleString() +
+                " " +
+                unitLabel
+              );
+            },
+          },
         },
-      },
-    },
   };
 }

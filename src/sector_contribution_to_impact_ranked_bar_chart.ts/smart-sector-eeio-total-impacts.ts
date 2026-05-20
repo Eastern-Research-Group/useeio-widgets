@@ -182,6 +182,8 @@ export class SmartSectorEEIOTotalImpactPerSector extends Widget {
               sectorCode: t.sector_code,
               purchaseCommodity: purchaseCommodity,
               totalImpact: t.total_impact,
+              domesticPurchase: t.domestic_purchase,
+              importedPurchase: t.imported_purchase,
               purchasedGroup: purchasedGroup,
             });
 
@@ -200,6 +202,8 @@ export class SmartSectorEEIOTotalImpactPerSector extends Widget {
               sectorCode: t.sector_code,
               purchaseCommodity: purchaseCommodity,
               totalImpact: t.total_impact,
+              domesticPurchase: t.domestic_purchase,
+              importedPurchase: t.imported_purchase,
               purchasedGroup: purchasedGroup,
             });
           } else {
@@ -208,6 +212,8 @@ export class SmartSectorEEIOTotalImpactPerSector extends Widget {
                 sectorCode: t.sector_code,
                 purchaseCommodity: purchaseCommodity,
                 totalImpact: t.total_impact,
+                domesticPurchase: t.domestic_purchase,
+                importedPurchase: t.imported_purchase,
                 purchasedGroup: purchasedGroup,
               });
 
@@ -241,6 +247,8 @@ export class SmartSectorEEIOTotalImpactPerSector extends Widget {
               sectorCode: t.sector_code,
               purchaseCommodity: purchaseCommodity,
               totalImpact: t.total_impact,
+              domesticPurchase: t.domestic_purchase,
+              importedPurchase: t.imported_purchase,
               purchasedGroup: purchasedGroup,
             });
 
@@ -259,6 +267,8 @@ export class SmartSectorEEIOTotalImpactPerSector extends Widget {
               sectorCode: t.sector_code,
               purchaseCommodity: purchaseCommodity,
               totalImpact: t.total_impact,
+              domesticPurchase: t.domestic_purchase,
+              importedPurchase: t.imported_purchase,
               purchasedGroup: purchasedGroup,
             });
           } else {
@@ -267,6 +277,8 @@ export class SmartSectorEEIOTotalImpactPerSector extends Widget {
                 sectorCode: t.sector_code,
                 purchaseCommodity: purchaseCommodity,
                 totalImpact: t.total_impact,
+                domesticPurchase: t.domestic_purchase,
+                importedPurchase: t.imported_purchase,
                 purchasedGroup: purchasedGroup,
               });
 

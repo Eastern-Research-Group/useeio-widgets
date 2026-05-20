@@ -332,6 +332,10 @@ export interface SectorContributionToImpact {
   impact_per_purchase?: number;
   commodity_output?: number;
   total_impact?: number;
+  domestic_purchase?: number;
+  imported_purchase?: number;
+  domestic_impact_per_purchase?: number;
+  imported_impact_per_purchase?: number;
   impact_per_dollar?: number;
   total_rank?: number;
   intensity_rank?: number;
