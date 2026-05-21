@@ -19,10 +19,12 @@ export type SectorDashboardConfig = {
   initialBarMode?: "impact_per_purchase" | "total_impact";
   /** Optional initial pie-chart mode (`?pie=simple` or `?pie=detailed`). */
   initialPieMode?: "aggregate" | "detail";
+  /** Optional indicator codes from `?ind=ACID,GCC,...`. */
+  initialInd?: string;
 };
 
 /**
- * Multi-indicator sector dashboard: one sector, fixed curated indicators,
+ * Multi-indicator sector dashboard: one sector, user-selected indicators,
  * global bar/pie/perspective toggles. Compose ranked-bar and pie widgets.
  */
 export class SectorDashboard extends Widget {
@@ -49,6 +51,7 @@ export class SectorDashboard extends Widget {
         initialPerspective: this._config.initialPerspective,
         initialBarMode: this._config.initialBarMode,
         initialPieMode: this._config.initialPieMode,
+        initialInd: this._config.initialInd,
       }),
       root,
     );

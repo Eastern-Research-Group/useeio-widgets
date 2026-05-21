@@ -14,7 +14,12 @@ import {
   modelOfSmartSector,
   CommodityOutputTimeSeriesRow,
 } from "../smartSectorWebApi.ts/webApiSmartSector";
-import { SECTOR_DASHBOARD_INDICATORS } from "./curatedIndicators";
+import {
+  encodeIndicatorsParam,
+  indicatorDomId,
+  resolveIndicatorsFromParam,
+} from "./indicatorCodes";
+import { IndicatorPickerModal } from "./indicatorPickerModal";
 import {
   buildIndustryOutputCaption,
   buildIndustryOutputSeriesFromCatalog,
@@ -40,6 +45,7 @@ export type SectorDashboardAppProps = {
   initialPerspective?: "final" | "direct";
   initialBarMode?: "impact_per_purchase" | "total_impact";
   initialPieMode?: "aggregate" | "detail";
+  initialInd?: string;
 };
 
 function buildShareUrl(input: {
@@ -47,6 +53,7 @@ function buildShareUrl(input: {
   perspective: "final" | "direct";
   barMode: "impact_per_purchase" | "total_impact";
   pieMode: "aggregate" | "detail";
+  indicatorSlugs: readonly string[];
 }): string {
   const params = new URLSearchParams();
   if (input.sectorCode) {
@@ -56,7 +63,10 @@ function buildShareUrl(input: {
   params.set("bar", input.barMode === "total_impact" ? "total" : "intensity");
   params.set("pie", input.pieMode === "detail" ? "detailed" : "simple");
   const url = new URL(window.location.href);
-  url.search = params.toString();
+  const ind = encodeIndicatorsParam(input.indicatorSlugs);
+  const qs = params.toString();
+  // Append ind with literal commas (codes are alphanumeric; URLSearchParams would use %2C).
+  url.search = qs ? `${qs}&ind=${ind}` : `ind=${ind}`;
   url.hash = "";
   return url.toString();
 }
@@ -184,8 +194,14 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
   initialPerspective,
   initialBarMode,
   initialPieMode,
+  initialInd,
 }) => {
   const classes = useStyles();
+  const [appliedIndicators, setAppliedIndicators] = React.useState<string[]>(
+    () => resolveIndicatorsFromParam(initialInd),
+  );
+  const [indicatorModalOpen, setIndicatorModalOpen] = React.useState(false);
+  const [indicatorDraft, setIndicatorDraft] = React.useState<string[]>([]);
   const bootSectorRef = React.useRef(
     resolveInitialSector(sectors, initialSectorCode),
   );
@@ -307,7 +323,7 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
   React.useEffect(() => {
     setShareStatus("idle");
     setShareUrlForFallback("");
-  }, [activeSector.code, perspective, barMode, pieMode]);
+  }, [activeSector.code, perspective, barMode, pieMode, appliedIndicators]);
 
   const industryOutputCaption = buildIndustryOutputCaption(industryOutputSeries);
 
@@ -320,18 +336,32 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
 
   React.useEffect(() => {
     let alive = true;
+    setChartsReady(false);
+    orchRef.current?.destroyCharts();
+    orchRef.current = null;
+    perspectiveInitSkipRef.current = true;
+    barModeInitSkipRef.current = true;
+    pieModeInitSkipRef.current = true;
+
     (async () => {
       try {
         const orch = new SectorDashboardOrchestrator(
           model,
           endpoint,
-          SECTOR_DASHBOARD_INDICATORS,
+          appliedIndicators,
         );
         orchRef.current = orch;
-        await orch.initCharts(
-          bootSectorRef.current.name,
-          bootSectorRef.current.code,
+        await orch.initCharts(activeSector.name, activeSector.code);
+        await orch.setPerspective(
+          perspectiveRef.current,
+          activeSector.name,
         );
+        await orch.refreshBarMode(
+          barMode,
+          activeSector.name,
+          perspectiveRef.current,
+        );
+        orch.refreshPieMode(pieModeRef.current, activeSector.name);
         if (alive) {
           setChartsReady(true);
           bumpNarrative();
@@ -342,8 +372,10 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
     })();
     return () => {
       alive = false;
+      orchRef.current?.destroyCharts();
+      orchRef.current = null;
     };
-  }, [model, endpoint]);
+  }, [model, endpoint, appliedIndicators]);
 
   React.useEffect(() => {
     document.title = `${activeSector.name} — Sector dashboard`;
@@ -415,8 +447,35 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
     perspective,
     barMode,
     pieMode,
+    indicatorSlugs: appliedIndicators,
   };
   const introText = buildSectorDashboardIntro(narrativeInput);
+
+  const openIndicatorModal = () => {
+    setIndicatorDraft([...appliedIndicators]);
+    setIndicatorModalOpen(true);
+  };
+
+  const applyIndicatorDraft = () => {
+    if (indicatorDraft.length === 0) {
+      return;
+    }
+    setAppliedIndicators([...indicatorDraft]);
+    setIndicatorModalOpen(false);
+    const url = buildShareUrl({
+      sectorCode: activeSector.code,
+      perspective,
+      barMode,
+      pieMode,
+      indicatorSlugs: indicatorDraft,
+    });
+    window.history.replaceState(null, "", url);
+  };
+
+  const cancelIndicatorModal = () => {
+    setIndicatorModalOpen(false);
+    setIndicatorDraft([]);
+  };
 
   const handlePickSector = (picked: Sector) => {
     const next = sectors.find((s) => s.code === picked.code) ?? picked;
@@ -430,6 +489,7 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
       perspective,
       barMode,
       pieMode,
+      indicatorSlugs: appliedIndicators,
     });
     try {
       if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -483,6 +543,11 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
           </div>
 
           <div className={classes.right}>
+            <div className={classes.item}>
+              <button type="button" onClick={openIndicatorModal}>
+                Choose indicators ({appliedIndicators.length})
+              </button>
+            </div>
             <div className={classes.item}>
               <FormControl className={classes.margin}>
                 <InputLabel htmlFor="sd-perspective">
@@ -659,7 +724,16 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
         </p>
       </section>
 
-      {SECTOR_DASHBOARD_INDICATORS.map((slug, i) => {
+      <IndicatorPickerModal
+        open={indicatorModalOpen}
+        draft={indicatorDraft}
+        onDraftChange={setIndicatorDraft}
+        onApply={applyIndicatorDraft}
+        onCancel={cancelIndicatorModal}
+      />
+
+      {appliedIndicators.map((slug, i) => {
+        const domId = indicatorDomId(slug);
         const interpretation = chartsReady
           ? orchRef.current?.getInterpretation(
               i,
@@ -701,12 +775,12 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
           <div className={classes.chartGrid}>
             <div
               className={classes.chartCell}
-              id={`sector-dash-pie-agg-${i}`}
+              id={`sector-dash-pie-agg-${domId}`}
               style={{ visibility: pieAggVis }}
             />
             <div
               className={classes.chartCell}
-              id={`sector-dash-pie-detail-${i}`}
+              id={`sector-dash-pie-detail-${domId}`}
               style={{ visibility: pieDetVis }}
             />
           </div>
@@ -722,27 +796,18 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
           <div className={classes.chartGrid}>
             <div
               className={classes.chartCell}
-              id={`sector-dash-bar-total-${i}`}
+              id={`sector-dash-bar-total-${domId}`}
               style={{ visibility: totalBarVis }}
             />
             <div
               className={classes.chartCell}
-              id={`sector-dash-bar-intensity-${i}`}
+              id={`sector-dash-bar-intensity-${domId}`}
               style={{ visibility: intBarVis }}
             />
           </div>
         </section>
         );
       })}
-
-      <div className="sector-dashboard-no-print" style={{ marginTop: 24 }}>
-        <p style={{ fontSize: 13 }}>
-          Saving this page as HTML still depends on <code>useeio_widgets.js</code>,{" "}
-          ApexCharts, and local JSON under <code>./api/</code>. For a portable
-          artifact, use Print → Save as PDF. Archiving the full{" "}
-          <code>build/</code> folder preserves relative links for offline viewing.
-        </p>
-      </div>
     </div>
   );
 };

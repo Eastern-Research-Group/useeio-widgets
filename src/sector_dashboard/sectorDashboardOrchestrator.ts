@@ -6,9 +6,14 @@ import { SmartSectorEEIOTotalImpactPerSector } from "../sector_contribution_to_i
 import { PiePercentContributionDirectAndIndirect } from "../totalGhgEmissionPieChart.ts/piePercentContributionDirectAndIndirect";
 import { PiePercentContribution } from "../totalGhgEmissionPieChart.ts/piePercentContribution";
 import { SectorDashboardInterpretation } from "./sectorDashboardNarrative";
+import { indicatorDomId } from "./indicatorCodes";
+
+function chartSelector(kind: string, slug: string): string {
+  return `#sector-dash-${kind}-${indicatorDomId(slug)}`;
+}
 
 /**
- * Owns ranked-bar and pie widget instances for each curated indicator; keeps them
+ * Owns ranked-bar and pie widget instances per indicator; keeps them
  * in sync with shared sector / perspective / mode state.
  */
 export class SectorDashboardOrchestrator {
@@ -36,22 +41,22 @@ export class SectorDashboardOrchestrator {
       const bi = new SmartSectorEEIOImpactPurchasePerSector({
         model: this.model,
         endpoint: this.endpoint,
-        selector: `#sector-dash-bar-intensity-${i}`,
+        selector: chartSelector("bar-intensity", slug),
       });
       const bt = new SmartSectorEEIOTotalImpactPerSector({
         model: this.model,
         endpoint: this.endpoint,
-        selector: `#sector-dash-bar-total-${i}`,
+        selector: chartSelector("bar-total", slug),
       });
       const pa = new PiePercentContributionDirectAndIndirect({
         model: this.model,
         endpoint: this.endpoint,
-        selector: `#sector-dash-pie-agg-${i}`,
+        selector: chartSelector("pie-agg", slug),
       });
       const pd = new PiePercentContribution({
         model: this.model,
         endpoint: this.endpoint,
-        selector: `#sector-dash-pie-detail-${i}`,
+        selector: chartSelector("pie-detail", slug),
       });
       this.barIntensity.push(bi);
       this.barTotal.push(bt);
@@ -177,5 +182,31 @@ export class SectorDashboardOrchestrator {
       .slice(0, 3);
 
     return { directPercent, indirectPercent, topPurchases };
+  }
+
+  destroyCharts(): void {
+    const destroyOne = (w: { chart?: { destroy: () => void } }) => {
+      try {
+        w.chart?.destroy();
+      } catch {
+        /* ignore */
+      }
+    };
+    for (const w of this.barIntensity) {
+      destroyOne(w);
+    }
+    for (const w of this.barTotal) {
+      destroyOne(w);
+    }
+    for (const w of this.pieAgg) {
+      destroyOne(w);
+    }
+    for (const w of this.pieDetail) {
+      destroyOne(w);
+    }
+    this.barIntensity.length = 0;
+    this.barTotal.length = 0;
+    this.pieAgg.length = 0;
+    this.pieDetail.length = 0;
   }
 }
