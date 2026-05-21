@@ -1,81 +1,187 @@
 import * as apex from "apexcharts";
+import { normalizeSectorCodeBase } from "../util/util";
 import { SECTOR_NAME_TOKEN } from "./sectorDashboardNarrative";
 
-const YEARS = ["2017", "2018", "2019", "2020", "2021", "2022", "2023"] as const;
+/** First calendar year shown on the dashboard line chart. */
+export const INDUSTRY_OUTPUT_CHART_YEAR_START = 2000;
 
-/** Deterministic hash so each sector code gets a stable but distinct curve. */
-function hashSectorCode(code: string): number {
-  let h = 0;
-  for (let i = 0; i < code.length; i++) {
-    h = Math.imul(31, h) + code.charCodeAt(i);
-    h |= 0;
+/** Apex chart height (px); host container should match. */
+export const INDUSTRY_OUTPUT_CHART_HEIGHT = 360;
+
+/** Max width of the chart host (px). */
+export const INDUSTRY_OUTPUT_CHART_MAX_WIDTH = 1120;
+
+/** Default focal year aligned with smart_sectors useeio target vintage. */
+export const INDUSTRY_OUTPUT_FOCAL_YEAR = "2023";
+
+export interface CommodityOutputTimeSeriesRow {
+  sector_code: string;
+  focal_year: string;
+  years: string[];
+  output_million_usd: number[];
+}
+
+export interface IndustryOutputSeries {
+  years: string[];
+  values: number[];
+  focalYear: string;
+  priceAdjusted: true;
+}
+
+function sectorLookupKeys(sectorId: string, sectorCode: string): string[] {
+  const base = normalizeSectorCodeBase(sectorCode);
+  const keys = new Set<string>([
+    sectorId,
+    sectorCode,
+    base,
+    `${base}/US`,
+  ]);
+  return Array.from(keys);
+}
+
+export function findCommodityOutputTimeSeries(
+  catalog: CommodityOutputTimeSeriesRow[] | null | undefined,
+  sectorId: string,
+  sectorCode: string,
+): CommodityOutputTimeSeriesRow | undefined {
+  if (!catalog?.length) {
+    return undefined;
   }
-  return Math.abs(h);
+  const keys = sectorLookupKeys(sectorId, sectorCode);
+  return catalog.find((row) => keys.includes(row.sector_code));
 }
 
 /**
- * Gross-output path for the dashboard's industry-output line chart, 2017–2023.
- *
- * Magnitudes are sized in the ballpark of industry gross output expressed in
- * millions of current dollars. Until a real time series is wired in, the
- * caller surfaces a "proxy data" notice next to the chart.
+ * Price-adjusted gross output (BEA MultiYearCommodityOutput × model Rho), millions USD.
  */
-export function buildIndustryOutputSeriesMillionsUSD(
+export function buildIndustryOutputSeriesFromCatalog(
+  catalog: CommodityOutputTimeSeriesRow[] | null | undefined,
+  sectorId: string,
   sectorCode: string,
-): number[] {
-  const h = hashSectorCode(sectorCode);
-  // 2023 anchor: roughly $3B–$90B expressed in millions
-  const y2023 = 3_000 + (h % 87_000);
-  const y2017 = Math.round(y2023 * (0.72 + (h % 400) / 2_000)); // 72–92% of 2023
-  const steps = 6;
-  const out: number[] = [];
-  for (let i = 0; i <= steps; i++) {
-    const t = i / steps;
-    // smooth convex curve toward 2023
-    const v = y2017 + (y2023 - y2017) * Math.pow(t, 1.05 + (h % 200) / 1_000);
-    out.push(Math.round(v));
+  yearStart = INDUSTRY_OUTPUT_CHART_YEAR_START,
+  yearEnd = Number(INDUSTRY_OUTPUT_FOCAL_YEAR),
+): IndustryOutputSeries | null {
+  const row = findCommodityOutputTimeSeries(catalog, sectorId, sectorCode);
+  if (!row?.years?.length) {
+    return null;
   }
-  // 2020 dip (index 3): below neighbors, then recovery by 2021
-  const dip = 0.93 - (h % 150) / 5_000;
-  out[3] = Math.round(Math.min(out[3], out[2] * dip, out[4] * dip));
-  if (out[4] <= out[3]) {
-    out[4] = Math.round(out[3] * 1.04);
+
+  const years: string[] = [];
+  const values: number[] = [];
+  for (let i = 0; i < row.years.length; i++) {
+    const y = row.years[i];
+    const yr = Number(y);
+    if (!isFinite(yr) || yr < yearStart || yr > yearEnd) {
+      continue;
+    }
+    const v = row.output_million_usd[i];
+    if (v == null || !isFinite(v)) {
+      continue;
+    }
+    years.push(y);
+    values.push(Math.round(v));
   }
-  if (out[5] <= out[4]) {
-    out[5] = Math.round(out[4] * 1.03);
+
+  if (!years.length) {
+    return null;
   }
-  if (out[6] <= out[5]) {
-    out[6] = y2023;
+
+  const pairs = years
+    .map((year, idx) => ({ year, value: values[idx] }))
+    .sort((a, b) => Number(a.year) - Number(b.year));
+
+  return {
+    years: pairs.map((p) => p.year),
+    values: pairs.map((p) => p.value),
+    focalYear: row.focal_year || INDUSTRY_OUTPUT_FOCAL_YEAR,
+    priceAdjusted: true,
+  };
+}
+
+const Y_AXIS_TICK_COUNT = 5;
+
+/** Round up to a readable bound (1, 2, or 5 × 10^n). */
+function niceAxisCeil(value: number): number {
+  if (!isFinite(value) || value <= 0) {
+    return 1;
   }
-  return out;
+  const exponent = Math.floor(Math.log10(value));
+  const magnitude = Math.pow(10, exponent);
+  const fraction = value / magnitude;
+  const niceFraction =
+    fraction <= 1 ? 1 : fraction <= 2 ? 2 : fraction <= 5 ? 5 : 10;
+  return niceFraction * magnitude;
+}
+
+function industryOutputYAxisBounds(values: number[]): {
+  min: number;
+  max: number;
+  tickAmount: number;
+} {
+  const dataMax = values.length ? Math.max(...values, 0) : 0;
+  return {
+    min: 0,
+    max: niceAxisCeil(dataMax * 1.02),
+    tickAmount: Y_AXIS_TICK_COUNT,
+  };
+}
+
+export function formatIndustryOutputYearRange(
+  series: IndustryOutputSeries | null,
+): string {
+  if (!series?.years.length) {
+    return `${INDUSTRY_OUTPUT_CHART_YEAR_START}–${INDUSTRY_OUTPUT_FOCAL_YEAR}`;
+  }
+  const first = series.years[0];
+  const last = series.years[series.years.length - 1];
+  return first === last ? first : `${first}–${last}`;
 }
 
 export function getIndustryOutputChartOptions(
   _sectorName: string,
-  sectorCode: string,
+  series: IndustryOutputSeries | null,
 ): apex.ApexOptions {
-  const data = buildIndustryOutputSeriesMillionsUSD(sectorCode);
+  if (!series) {
+    return {
+      chart: { type: "line", height: INDUSTRY_OUTPUT_CHART_HEIGHT },
+      series: [],
+      noData: {
+        text: "Output time series not available for this sector",
+        align: "center",
+        verticalAlign: "middle",
+      },
+    };
+  }
+
+  const focalIndex = series.years.indexOf(series.focalYear);
+  const markerIndex = focalIndex >= 0 ? focalIndex : series.years.length - 1;
+  const yAxis = industryOutputYAxisBounds(series.values);
+
   return {
     chart: {
       type: "line",
-      height: 240,
+      height: INDUSTRY_OUTPUT_CHART_HEIGHT,
       toolbar: { show: false },
       zoom: { enabled: false },
       animations: { enabled: true },
     },
     series: [
       {
-        name: "Gross output (millions $)",
-        data,
+        name: "Gross output (millions $, price-adjusted)",
+        data: series.values,
       },
     ],
     xaxis: {
-      categories: [...YEARS],
+      categories: [...series.years],
       title: { text: "Calendar year" },
     },
     yaxis: {
+      min: yAxis.min,
+      max: yAxis.max,
+      tickAmount: yAxis.tickAmount,
+      decimalsInFloat: 0,
       title: {
-        text: "Millions of current dollars",
+        text: "Millions of dollars (price-adjusted)",
       },
       labels: {
         formatter(val: string | number) {
@@ -83,7 +189,7 @@ export function getIndustryOutputChartOptions(
           if (!isFinite(n)) {
             return "";
           }
-          return n.toLocaleString();
+          return Math.round(n).toLocaleString();
         },
       },
     },
@@ -95,7 +201,7 @@ export function getIndustryOutputChartOptions(
       discrete: [
         {
           seriesIndex: 0,
-          dataPointIndex: 6,
+          dataPointIndex: markerIndex,
           fillColor: "#c62828",
           strokeColor: "#ffffff",
           size: 9,
@@ -110,11 +216,11 @@ export function getIndustryOutputChartOptions(
     annotations: {
       xaxis: [
         {
-          x: YEARS[6],
+          x: series.years[markerIndex],
           borderColor: "#c62828",
           strokeDashArray: 0,
           label: {
-            text: "2023 — focal year for this dashboard",
+            text: `${series.focalYear} — focal year for this dashboard`,
             borderColor: "#c62828",
             style: {
               color: "#fff",
@@ -127,7 +233,7 @@ export function getIndustryOutputChartOptions(
     tooltip: {
       y: {
         formatter(val: number) {
-          return `${val.toLocaleString()} million $`;
+          return `${Math.round(val).toLocaleString()} million $`;
         },
       },
     },
@@ -136,14 +242,23 @@ export function getIndustryOutputChartOptions(
 }
 
 /**
- * One-line caption shown under the chart (screen + print). The active sector
- * name is emitted as `SECTOR_NAME_TOKEN`; renderers wrap it in bold+italic.
+ * One-line caption shown under the chart (screen + print).
  */
 export function buildIndustryOutputCaption(
-  series: readonly number[],
+  series: IndustryOutputSeries | null,
 ): string {
-  const first = series[0];
-  const last = series[series.length - 1];
+  if (!series?.values.length) {
+    return "";
+  }
+  const startYear = String(INDUSTRY_OUTPUT_CHART_YEAR_START);
+  const endYear = series.focalYear || INDUSTRY_OUTPUT_FOCAL_YEAR;
+  const startIdx = series.years.indexOf(startYear);
+  const endIdx = series.years.indexOf(endYear);
+  if (startIdx < 0 || endIdx < 0) {
+    return "";
+  }
+  const first = series.values[startIdx];
+  const last = series.values[endIdx];
   if (!isFinite(first) || !isFinite(last) || first <= 0) {
     return "";
   }
@@ -151,7 +266,7 @@ export function buildIndustryOutputCaption(
   const dir = change >= 0 ? "up" : "down";
   const amt = Math.abs(Math.round(change * 10) / 10);
   return (
-    `Nominal gross output for ${SECTOR_NAME_TOKEN} trends ${dir} by about ${amt}% from 2017 to 2023; ` +
-    `the red marker highlights 2023, the year aligned with the latest economic vintage used alongside the impact charts below.`
+    `Price-adjusted nominal gross output for ${SECTOR_NAME_TOKEN} trends ${dir} by about ${amt}% from ${startYear} to ${endYear}; ` +
+    `the red marker highlights ${endYear}, the year aligned with the latest economic vintage used alongside the impact charts below.`
   );
 }

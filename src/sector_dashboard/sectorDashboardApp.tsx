@@ -10,11 +10,19 @@ import FormLabel from "@material-ui/core/FormLabel";
 import { makeStyles } from "@material-ui/core/styles";
 import { getLabel, pickPreferredBootSector } from "../util/util";
 import { SectorSearchTable } from "../util/sectorSearchTable";
+import {
+  modelOfSmartSector,
+  CommodityOutputTimeSeriesRow,
+} from "../smartSectorWebApi.ts/webApiSmartSector";
 import { SECTOR_DASHBOARD_INDICATORS } from "./curatedIndicators";
 import {
   buildIndustryOutputCaption,
-  buildIndustryOutputSeriesMillionsUSD,
+  buildIndustryOutputSeriesFromCatalog,
+  formatIndustryOutputYearRange,
   getIndustryOutputChartOptions,
+  INDUSTRY_OUTPUT_CHART_HEIGHT,
+  INDUSTRY_OUTPUT_CHART_MAX_WIDTH,
+  INDUSTRY_OUTPUT_FOCAL_YEAR,
 } from "./industryOutputChart";
 import {
   buildSectorDashboardIntro,
@@ -152,9 +160,9 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 14,
     lineHeight: 1.5,
   },
-  proxyDataNotice: {
-    border: "1px solid #e65100",
-    backgroundColor: "#fff8e1",
+  outputDataNotice: {
+    border: "1px solid #e0e0e0",
+    backgroundColor: "#f5f5f5",
     padding: theme.spacing(1, 1.5),
     marginBottom: theme.spacing(1.5),
     fontSize: 13,
@@ -162,9 +170,9 @@ const useStyles = makeStyles((theme) => ({
   },
   outputChartHost: {
     width: "100%",
-    maxWidth: 560,
+    maxWidth: INDUSTRY_OUTPUT_CHART_MAX_WIDTH,
     margin: "0 auto",
-    height: 240,
+    height: INDUSTRY_OUTPUT_CHART_HEIGHT,
   },
 }));
 
@@ -200,6 +208,11 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
   const [snapshotDate, setSnapshotDate] = React.useState(() =>
     new Date().toLocaleString(),
   );
+  const [outputTimeSeries, setOutputTimeSeries] = React.useState<
+    CommodityOutputTimeSeriesRow[] | null
+  >(null);
+  const [outputTimeSeriesError, setOutputTimeSeriesError] =
+    React.useState(false);
 
   const orchRef = React.useRef<SectorDashboardOrchestrator | null>(null);
   const sectorSyncNeededRef = React.useRef(false);
@@ -218,25 +231,74 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
   pieModeRef.current = pieMode;
 
   React.useEffect(() => {
+    let cancelled = false;
+    const api = modelOfSmartSector({
+      endpoint,
+      model: model.id() as string,
+      asJsonFiles: true,
+    });
+    api
+      .commodityOutputTimeSeries()
+      .then((rows) => {
+        if (!cancelled) {
+          setOutputTimeSeries(rows);
+          setOutputTimeSeriesError(false);
+        }
+      })
+      .catch(() => {
+        if (!cancelled) {
+          setOutputTimeSeries(null);
+          setOutputTimeSeriesError(true);
+        }
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [endpoint, model]);
+
+  const industryOutputSeries = React.useMemo(
+    () =>
+      buildIndustryOutputSeriesFromCatalog(
+        outputTimeSeries,
+        activeSector.id,
+        activeSector.code,
+      ),
+    [outputTimeSeries, activeSector.id, activeSector.code],
+  );
+
+  const industryOutputYearRange = formatIndustryOutputYearRange(
+    industryOutputSeries,
+  );
+
+  React.useEffect(() => {
     const el = outputLineRef.current;
     if (!el) {
       return;
     }
+    const options = getIndustryOutputChartOptions(
+      activeSector.name,
+      industryOutputSeries,
+    );
     if (outputLineChartRef.current) {
       outputLineChartRef.current.destroy();
       outputLineChartRef.current = null;
     }
-    const chart = new ApexCharts(
-      el,
-      getIndustryOutputChartOptions(activeSector.name, activeSector.code),
-    );
-    chart.render();
-    outputLineChartRef.current = chart;
+    const chart = new ApexCharts(el, options);
+    void chart.render().then(() => {
+      outputLineChartRef.current = chart;
+    });
     return () => {
-      chart.destroy();
-      outputLineChartRef.current = null;
+      void chart.destroy();
+      if (outputLineChartRef.current === chart) {
+        outputLineChartRef.current = null;
+      }
     };
-  }, [activeSector.name, activeSector.code]);
+  }, [
+    activeSector.id,
+    activeSector.code,
+    activeSector.name,
+    industryOutputSeries,
+  ]);
 
   React.useEffect(() => {
     document.title = "Sector dashboard (multi-indicator)";
@@ -247,12 +309,7 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
     setShareUrlForFallback("");
   }, [activeSector.code, perspective, barMode, pieMode]);
 
-  const industryOutputSeries = React.useMemo(
-    () => buildIndustryOutputSeriesMillionsUSD(activeSector.code),
-    [activeSector.code],
-  );
   const industryOutputCaption = buildIndustryOutputCaption(industryOutputSeries);
-
 
   React.useEffect(() => {
     const onBeforePrint = () =>
@@ -558,9 +615,27 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
       <section
         className={`sector-dashboard-section sector-dashboard-industry-output ${classes.section}`}
       >
-        <h3>Industry output over time (2017–2023)</h3>
-        <div className={classes.proxyDataNotice}>
-          <strong>Proxy data:</strong> this line is not yet loaded from BEA.
+        <h3>Industry output over time ({industryOutputYearRange})</h3>
+        <div className={classes.outputDataNotice}>
+          {outputTimeSeriesError ? (
+            <>
+              <strong>Data unavailable:</strong> could not load commodity output
+              time series. Re-run <code>smart_sectors.R</code> to publish{" "}
+              <code>commodity_output_timeseries.json</code>.
+            </>
+          ) : industryOutputSeries ? (
+            <>
+              <strong>Price-adjusted output:</strong> BEA gross commodity output
+              for each year multiplied by the model price ratio (Rho), in
+              millions of dollars — the same basis as the {INDUSTRY_OUTPUT_FOCAL_YEAR}{" "}
+              scaling used for total impacts below.
+            </>
+          ) : (
+            <>
+              <strong>No series for this sector:</strong> choose another sector or
+              regenerate upstream output data.
+            </>
+          )}
         </div>
         <p
           style={{
