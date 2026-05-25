@@ -56,6 +56,8 @@ export function normalizeSectorCodeBase(code: string): string {
 }
 
 /** Prefer `PREFERRED_OPEN_DETAIL_SECTOR_CODE` when present; otherwise the first sector. */
+export { filterPickableSectors, isPickableSector, UNPICKABLE_SECTOR_CODES } from "./filterPickableSectors";
+
 export function pickPreferredBootSector<T extends { code: string }>(
     sectors: T[],
 ): T | undefined {

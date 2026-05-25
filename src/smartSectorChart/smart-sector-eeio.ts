@@ -25,7 +25,11 @@ import DownloadCSVButton, {
   DownloadCSVButtonProps,
 } from "../util/downloadcsvfile";
 import { getLabel } from "../util";
-import { fileNames, SECTOR_PURCHASES_FILE_SLUG } from "../util/util";
+import {
+  fileNames,
+  filterPickableSectors,
+  SECTOR_PURCHASES_FILE_SLUG,
+} from "../util/util";
 
 export interface SmartSectorChartConfig {
   model: WebModel;
@@ -68,7 +72,9 @@ export class SmartSectorEEIO extends Widget {
     this.graphName = graphName;
     this.perspective = "final";
     this.selectorName = "total_rank";
-    this.sectorsList = await this._chartConfig.modelOne.model.sectors();
+    this.sectorsList = filterPickableSectors(
+      await this._chartConfig.modelOne.model.sectors(),
+    );
     const sectorMappingList: SectorMapping[] =
       await this.modelSmartSectorApi.sectorMapping();
     this.uniqueSortedMappingGroupNoDuplicates =

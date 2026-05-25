@@ -3,7 +3,11 @@ import { Sector, WebModel } from "useeio";
 import { PiePercentContribution } from "./piePercentContribution";
 import { PiePercentContributionDirectAndIndirect } from "./piePercentContributionDirectAndIndirect";
 import { Widget } from "../widget";
-import { fileNames, pickPreferredBootSector } from "../util/util";
+import {
+  fileNames,
+  filterPickableSectors,
+  pickPreferredBootSector,
+} from "../util/util";
 import {
   modelOfSmartSector,
   WebModelSmartSector,
@@ -89,7 +93,9 @@ export class PieListSearch extends Widget {
   }
 
   async update() {
-    this.sectors = await this._chartConfig.model.sectors();
+    this.sectors = filterPickableSectors(
+      await this._chartConfig.model.sectors(),
+    );
     this.modelSmartSectorApi.init();
     const boot = pickPreferredBootSector(this.sectors) ?? this.sectors[0];
     this.piePercentContribution.init(

@@ -21,6 +21,7 @@ import { Menu, MenuItem, IconButton } from "@material-ui/core";
 import {
   fileNames,
   getLabel,
+  filterPickableSectors,
   pickPreferredBootSector,
   sectorPurchasesPointOfConsumptionOnly,
 } from "../util/util";
@@ -72,7 +73,9 @@ export class SectorListSearch extends Widget {
   }
 
   async update() {
-    this.sectors = await this._chartConfig.model.sectors();
+    this.sectors = filterPickableSectors(
+      await this._chartConfig.model.sectors(),
+    );
     this.modelSmartSectorApi.init();
     const boot = pickPreferredBootSector(this.sectors) ?? this.sectors[0];
     this.smartSectorImpactPurchase.init(

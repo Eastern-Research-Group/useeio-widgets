@@ -2,6 +2,7 @@ import * as ReactDOM from "react-dom";
 import { WebModel } from "useeio";
 import { Widget } from "../widget";
 import React from "react";
+import { filterPickableSectors } from "../util/util";
 import { SectorDashboardApp } from "./sectorDashboardApp";
 
 export type SectorDashboardConfig = {
@@ -36,7 +37,9 @@ export class SectorDashboard extends Widget {
   }
 
   async update() {
-    const sectors = await this._config.model.sectors();
+    const sectors = filterPickableSectors(
+      await this._config.model.sectors(),
+    );
     const root = document.querySelector(this._config.selector);
     if (!root) {
       console.error("SectorDashboard: missing root", this._config.selector);
