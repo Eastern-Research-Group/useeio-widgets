@@ -440,6 +440,172 @@ input[type="search" i] {
     margin: 15px 0px;
 }
 
+/* Shared chart download menu (stacked page HTML; ranked/pie use MUI ChartExportMenu) */
+.chart-export-menu-wrap {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-height: 0;
+}
+
+/* Stacked top-sectors page: chart legend and filter row must not overlap */
+.smart-sector-eeio-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    min-height: 85vh;
+}
+
+.smart-sector-stacked-chart-region {
+    position: relative;
+    flex: 1 1 auto;
+    min-height: 36rem;
+}
+
+.smart-sector-stacked-chart-mount {
+    width: 100%;
+    min-height: 34rem;
+    padding-bottom: 2.5rem;
+}
+
+.smart-sector-stacked-chart-mount .apexcharts-legend {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.75rem !important;
+}
+
+.smart-sector-eeio-controls {
+    flex: 0 0 auto;
+    padding-top: 0.75rem;
+    border-top: 1px solid #e6e6e6;
+}
+
+.smart-sector-eeio-controls-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(13.5rem, 1fr));
+    gap: 1.25rem 1.5rem;
+    align-items: start;
+}
+
+.smart-sector-eeio-control-cell {
+    margin-left: 0;
+    min-width: 0;
+}
+
+.smart-sector-eeio-control-cell--wide {
+    grid-column: span 2;
+}
+
+.smart-sector-eeio-control-cell select {
+    width: 100%;
+    max-width: 100%;
+}
+
+.smart-sector-eeio-control-cell--radios {
+    min-width: 12rem;
+}
+
+.smart-sector-eeio-help-link {
+    font-size: 0.85em;
+    margin-left: 6px;
+}
+
+.smart-sector-eeio-radio-option {
+    display: block;
+    margin: 0.35rem 0 0;
+    white-space: nowrap;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.smart-sector-eeio-radio-option input[type="radio"] {
+    margin: 0 0.35rem 0 0;
+    vertical-align: middle;
+}
+
+.smart-sector-eeio-controls-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 1.25rem 2rem;
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.smart-sector-eeio-csv-mount > div > button {
+    margin: 0 !important;
+}
+
+@media (max-width: 720px) {
+    .smart-sector-eeio-control-cell--wide {
+        grid-column: span 1;
+    }
+
+    .smart-sector-eeio-radio-option {
+        white-space: normal;
+    }
+}
+
+.chart-export-menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0 8px 4px;
+    box-sizing: border-box;
+}
+
+.chart-export-menu-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.chart-export-menu-btn:hover,
+.chart-export-menu-btn:focus-visible {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+.chart-export-menu-panel {
+    position: absolute;
+    right: 8px;
+    top: 44px;
+    z-index: 20;
+    min-width: 160px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 4px 0;
+}
+
+.chart-export-menu-panel[hidden] {
+    display: none;
+}
+
+.chart-export-menu-item {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    border: none;
+    background: transparent;
+    text-align: left;
+    font: inherit;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.chart-export-menu-item:hover,
+.chart-export-menu-item:focus-visible {
+    background: rgba(0, 0, 0, 0.04);
+}
+
 th.io-sector-column-header>div {
     transform: translate(0px, 0px) rotate(315deg);
     width: 22px;
@@ -665,11 +831,11 @@ th.io-sector-column-header>div {
     background: #eee;
 }
 
-/* Stacked sector EEIO footer links — avoids narrow-column wraps like "Codes. · Multi-" */
-.smart-sector-resource-links {
-    flex: 1 1 220px;
-    min-width: 200px;
-    max-width: 28rem;
+/* Stacked sector EEIO footer links */
+.smart-sector-eeio-controls-footer .smart-sector-resource-links {
+    flex: 1 1 16rem;
+    min-width: 0;
+    max-width: none;
     line-height: 1.45;
     font-size: 0.95rem;
 }

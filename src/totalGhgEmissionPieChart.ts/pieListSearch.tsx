@@ -17,8 +17,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import InputLabel from "@material-ui/core/InputLabel";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
-import { Menu, MenuItem, IconButton } from "@material-ui/core";
 import DownloadCSVButton from "../util/downloadcsvfile";
+import { ChartExportMenu } from "../util/chartExportMenu";
+import { isChartExportAttributionSvgText } from "../util/chartExportOverlay";
 import {
   getLabel,
   sectorPurchasesPointOfConsumptionOnly,
@@ -98,18 +99,22 @@ export class PieListSearch extends Widget {
     );
     this.modelSmartSectorApi.init();
     const boot = pickPreferredBootSector(this.sectors) ?? this.sectors[0];
-    this.piePercentContribution.init(
-      "Acidification-Potential",
-      boot.name,
-    );
-    this.piePercentContributionSectors.init(
-      "Acidification-Potential",
-      boot.name,
-    );
     ReactDOM.render(
       <Component widget={this} />,
       document.querySelector(this._chartConfig.selector),
     );
+    await Promise.all([
+      this.piePercentContribution.init(
+        "Acidification-Potential",
+        boot.name,
+        boot.code,
+      ),
+      this.piePercentContributionSectors.init(
+        "Acidification-Potential",
+        boot.name,
+        boot.code,
+      ),
+    ]);
   }
 }
 
@@ -124,25 +129,12 @@ const Component = (props: { widget: PieListSearch }) => {
   const [detail, setDetail] = React.useState<boolean>(false);
   const [perspective, setPerspective] = React.useState<string>("final");
 
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-  const open = Boolean(anchorEl);
-
-  const handleMenuClick = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleMenuClose = (type?: string) => {
-    let file = null;
-    if (["png", "svg", "csv"].includes(type)) {
-      file = type;
+  const handleChartExport = (type: "png" | "svg" | "csv") => {
+    if (graphDetails === "Aggregate") {
+      props.widget.piePercentContribution.addExportEventListeners(type);
+    } else {
+      props.widget.piePercentContributionSectors.addExportEventListeners(type);
     }
-
-    if (graphDetails === "Aggregate")
-      props.widget.piePercentContribution.addExportEventListeners(file);
-    else
-      props.widget.piePercentContributionSectors.addExportEventListeners(file);
-
-    setAnchorEl(null);
   };
 
   React.useEffect(() => {
@@ -154,35 +146,28 @@ const Component = (props: { widget: PieListSearch }) => {
   }, []);
 
   React.useEffect(() => {
-    const textElements = document.querySelectorAll<SVGTextElement>(
-      "#profile-chart-details svg text",
-    );
-
-    if (textElements.length > 0) {
-      textElements[textElements.length - 1].setAttribute(
-        "visibility",
-        "hidden",
+    const setCenterTotalVisibility = (
+      selector: string,
+      visibility: string,
+    ) => {
+      const texts = document.querySelectorAll<SVGTextElement>(
+        `${selector} svg text`,
       );
-    }
+      for (let i = texts.length - 1; i >= 0; i--) {
+        const node = texts[i];
+        if (isChartExportAttributionSvgText(node.textContent)) {
+          continue;
+        }
+        node.setAttribute("visibility", visibility);
+        return;
+      }
+    };
 
-    const textElement = document.querySelectorAll<SVGTextElement>(
-      "#profile-chart svg text",
+    setCenterTotalVisibility("#profile-chart", aggregate ? "visible" : "hidden");
+    setCenterTotalVisibility(
+      "#profile-chart-details",
+      detail ? "visible" : "hidden",
     );
-
-    if (textElement.length > 0) {
-      textElement[textElement.length - 1].setAttribute("visibility", "hidden");
-    }
-
-    const simple = aggregate ? "visible" : "hidden";
-    const details = detail ? "visible" : "hidden";
-
-    if (textElement.length > 0) {
-      textElement[textElement.length - 1].setAttribute("visibility", simple);
-    }
-
-    if (textElements.length > 0) {
-      textElements[textElements.length - 1].setAttribute("visibility", details);
-    }
   }, [detail, aggregate]);
 
   const handleState = (e: string, c: string) => {
@@ -499,43 +484,7 @@ const Component = (props: { widget: PieListSearch }) => {
               </div>
             </div>
           )}
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "flex-end",
-              width: "100%",
-            }}
-          >
-            {/* Menu Icon Button */}
-            <IconButton onClick={handleMenuClick}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path fill="none" d="M0 0h24v24H0V0z"></path>
-                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
-              </svg>
-            </IconButton>
-
-            {/* Dropdown Menu */}
-            <Menu
-              anchorEl={anchorEl}
-              open={open}
-              onClose={() => handleMenuClose()}
-            >
-              <MenuItem onClick={() => handleMenuClose("svg")}>
-                Download SVG
-              </MenuItem>
-              <MenuItem onClick={() => handleMenuClose("png")}>
-                Download PNG
-              </MenuItem>
-              <MenuItem onClick={() => handleMenuClose("csv")}>
-                Download CSV
-              </MenuItem>
-            </Menu>
-          </div>
+          <ChartExportMenu onExport={handleChartExport} />
           <div
             style={{
               position: "relative",

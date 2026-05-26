@@ -199,6 +199,15 @@ export async function apexGraph(
             size: "80%",
             labels: {
               show: true,
+              name: {
+                show: false,
+                formatter: (v: string) => v,
+              },
+              total: {
+                show: false,
+                label: "Total",
+                formatter: () => "",
+              },
               value: {
                 show: true,
                 formatter: function (val) {
@@ -240,6 +249,9 @@ export async function apexGraph(
       ],
       tooltip: {
         enabled: true,
+        z: {
+          formatter: (val: number) => String(val),
+        },
         y: {
           formatter: function (val) {
             const uniqueValue: ContributionListForSectorDirectOrIndirect =

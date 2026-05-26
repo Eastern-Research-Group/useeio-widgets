@@ -17,7 +17,6 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormLabel from "@material-ui/core/FormLabel";
 import { SmartSectorChartConfigPie } from "../totalGhgEmissionPieChart.ts/pieListSearch";
 import { SmartSectorEEIOTotalImpactPerSector } from "./smart-sector-eeio-total-impacts";
-import { Menu, MenuItem, IconButton } from "@material-ui/core";
 import {
   fileNames,
   getLabel,
@@ -26,6 +25,7 @@ import {
   sectorPurchasesPointOfConsumptionOnly,
 } from "../util/util";
 import DownloadCSVButton from "../util/downloadcsvfile";
+import { ChartExportMenu } from "../util/chartExportMenu";
 import { SectorSearchTable } from "../util/sectorSearchTable";
 export interface SmartSectorChartConfigNormal {
   model: WebModel;
@@ -122,24 +122,12 @@ const Component = (props: { widget: SectorListSearch }) => {
     setSectorId(boot.id);
   }, []);
 
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-  const open = Boolean(anchorEl);
-
-  const handleMenuClick = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleMenuClose = (type?: string) => {
-    let file = null;
-    if (["png", "svg", "csv"].includes(type)) {
-      file = type;
-    }
+  const handleChartExport = (type: "png" | "svg" | "csv") => {
     if (changePrespective === "impact_per_purchase") {
-      props.widget.smartSectorImpactPurchase.addExportEventListeners(file);
+      props.widget.smartSectorImpactPurchase.addExportEventListeners(type);
     } else {
-      props.widget.smartSectorTotalImpact.addExportEventListeners(file);
+      props.widget.smartSectorTotalImpact.addExportEventListeners(type);
     }
-    setAnchorEl(null);
   };
 
   const handleGraphChange = (event: any) => {
@@ -331,43 +319,7 @@ const Component = (props: { widget: SectorListSearch }) => {
               <div>From {getLabel(graph)}</div>
             </div>
           )}
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "flex-end",
-              width: "100%",
-            }}
-          >
-            {/* Menu Icon Button */}
-            <IconButton onClick={handleMenuClick}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path fill="none" d="M0 0h24v24H0V0z"></path>
-                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
-              </svg>
-            </IconButton>
-
-            {/* Dropdown Menu */}
-            <Menu
-              anchorEl={anchorEl}
-              open={open}
-              onClose={() => handleMenuClose()}
-            >
-              <MenuItem onClick={() => handleMenuClose("svg")}>
-                Download SVG
-              </MenuItem>
-              <MenuItem onClick={() => handleMenuClose("png")}>
-                Download PNG
-              </MenuItem>
-              <MenuItem onClick={() => handleMenuClose("csv")}>
-                Download CSV
-              </MenuItem>
-            </Menu>
-          </div>
+          <ChartExportMenu onExport={handleChartExport} />
           <div
             style={{
               display: "grid",

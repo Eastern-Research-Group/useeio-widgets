@@ -16,6 +16,7 @@ import {
   ImpactPerPurchaseSector,
 } from "../smartSectorChart/smartSector";
 import { apexGraph } from "./getGraph";
+import { exportSmindexRankedPieChart } from "../util/chartExportOverlay";
 import { SECTOR_PURCHASES_FILE_SLUG } from "../util/util";
 import * as apex from "apexcharts";
 
@@ -359,97 +360,28 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
     return sortedImpactPerPurchaseTopList;
   }
 
-  addExportEventListeners(type: string) {
-    if (type !== null) {
-      let titleName: string;
-      if (this.perspective == "final") {
-        titleName = `Sector: ${this.sectorCode}, ${this.graphName.replace(/\-/g, " ").replace(" AR6 ", "-")}, Point of Consumption`;
-      } else {
-        titleName = `Sector: ${this.sectorCode}, ${this.graphName.replace(/\-/g, " ").replace(" AR6 ", "-")}, Supply Chain`;
-      }
-
-      // Show the title before export
-      this.chart.updateOptions({
-        ...this.options,
-        chart: {
-          toolbar: {
-            show: true,
-            tools: {
-              download: true,
-              zoom: false,
-              zoomin: false,
-              zoomout: false,
-              pan: false,
-              reset: false,
-            },
-            export: {
-              csv: {
-                filename: `${titleName}-Impact-Intensity`,
-                columnDelimiter: ",",
-                headerCategory: "Sector Purchased",
-                headerValue: "Contribution",
-              },
-              svg: {
-                filename: `${titleName}-Impact-Intensity`,
-              },
-              png: {
-                filename: `${titleName}-Impact-Intensity`,
-              },
-            },
-          },
-        },
-        title: {
-          text: titleName, // Title visible before exporting
-        },
-      });
-
-      // Delay to ensure title is updated before export
-      setTimeout(() => {
-        if (type === "png") {
-          this.chart.exports.exportToPng();
-        } else if (type === "svg") {
-          this.chart.exports.exportToSVG();
-        } else if (type === "csv") {
-          this.chart.dataURI().then(() => {
-            this.chart.exports.exportToCSV({
-              series: this.options["series"],
-              columnDelimiter: ",",
-              fileName: `${titleName}-Impact-Intensity`.replace(",", "-"),
-            });
-          });
-        }
-
-        this.chart.updateOptions({
-          ...this.options,
-          title: {
-            text: "",
-          },
-          chart: {
-            toolbar: {
-              show: false,
-              tools: {
-                download: false,
-                zoom: false,
-                zoomin: false,
-                zoomout: false,
-                pan: false,
-                reset: false,
-              },
-            },
-            export: {
-              csv: {
-                filename: "",
-              },
-              svg: {
-                filename: "",
-              },
-              png: {
-                filename: "",
-              },
-            },
-          },
-        });
-      }, 2000);
+  private async reapplyChartAfterExport(): Promise<void> {
+    this.options = await apexGraph(
+      this.getTopValuesFromSectors,
+      this.sector_name,
+      this.graphName.replace(/-+/g, " ").trim(),
+    );
+    await this.chart.updateOptions(this.options, false, true);
+    if (this.options.series) {
+      await this.chart.updateSeries(this.options.series, false);
     }
+  }
+
+  addExportEventListeners(type: string) {
+    exportSmindexRankedPieChart(
+      this.chart,
+      this.options,
+      type,
+      this.sectorCode,
+      this.graphName,
+      this.perspective,
+      "Impact-Intensity",
+      () => this.reapplyChartAfterExport(),
+    );
   }
 }
