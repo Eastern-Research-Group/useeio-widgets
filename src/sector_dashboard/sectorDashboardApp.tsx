@@ -30,7 +30,6 @@ import {
   INDUSTRY_OUTPUT_FOCAL_YEAR,
 } from "./industryOutputChart";
 import {
-  buildSectorDashboardIntro,
   buildSectorDashboardInterpretation,
   buildSectorDashboardSectionBlurb,
   SECTOR_NAME_TOKEN,
@@ -221,9 +220,10 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
     "idle" | "copied" | "manual"
   >("idle");
   const [shareUrlForFallback, setShareUrlForFallback] = React.useState("");
-  const [snapshotDate, setSnapshotDate] = React.useState(() =>
-    new Date().toLocaleString(),
-  );
+  // Restore with print snapshot block below.
+  // const [snapshotDate, setSnapshotDate] = React.useState(() =>
+  //   new Date().toLocaleString(),
+  // );
   const [outputTimeSeries, setOutputTimeSeries] = React.useState<
     CommodityOutputTimeSeriesRow[] | null
   >(null);
@@ -327,12 +327,12 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
 
   const industryOutputCaption = buildIndustryOutputCaption(industryOutputSeries);
 
-  React.useEffect(() => {
-    const onBeforePrint = () =>
-      setSnapshotDate(new Date().toLocaleString());
-    window.addEventListener("beforeprint", onBeforePrint);
-    return () => window.removeEventListener("beforeprint", onBeforePrint);
-  }, []);
+  // React.useEffect(() => {
+  //   const onBeforePrint = () =>
+  //     setSnapshotDate(new Date().toLocaleString());
+  //   window.addEventListener("beforeprint", onBeforePrint);
+  //   return () => window.removeEventListener("beforeprint", onBeforePrint);
+  // }, []);
 
   React.useEffect(() => {
     let alive = true;
@@ -449,7 +449,7 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
     pieMode,
     indicatorSlugs: appliedIndicators,
   };
-  const introText = buildSectorDashboardIntro(narrativeInput);
+  // const introText = buildSectorDashboardIntro(narrativeInput);
 
   const openIndicatorModal = () => {
     setIndicatorDraft([...appliedIndicators]);
@@ -517,6 +517,7 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
         Multi-indicator sector dashboard
       </h1>
 
+      {/* Print-snapshot intro + meta — hidden from live UI; restore for PDF/print flows.
       <div id="sector-dashboard-snapshot" className={classes.snapshot}>
         <p style={{ marginTop: 0 }}>
           {renderSectorNarrative(introText, activeSector.name)}
@@ -529,6 +530,7 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
           Pie view: {pieMode === "aggregate" ? "Simple" : "Detailed"}.
         </p>
       </div>
+      */}
 
       {!chartsReady ? (
         <p className="sector-dashboard-no-print" style={{ padding: "0 16px" }}>
