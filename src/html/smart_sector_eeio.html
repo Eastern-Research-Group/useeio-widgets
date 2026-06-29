@@ -10,31 +10,50 @@
 
 <body>
     <h1 id="graphTitle" class="text-center">Top 10 Sectors Based on Total Embodied Impacts</h1>
-    <p id="graphParagraph">This chart presents the top 10 sectors ranked on total embodied impacts from contributions
-        from <abbr class="term-help" title="Impacts from a sector's own operations.">Direct impacts</abbr> due to the
-        sector's operations and <abbr class="term-help" title="Impacts from purchased inputs upstream.">Indirect impacts</abbr>
-        embedded in the purchases made from all other sectors in the <abbr class="term-help" title="Network of sector purchases delivering goods and services.">supply
-        chain</abbr>.</p>
+    <p id="graphParagraph">This chart presents the top 10 sectors ranked by total embodied impacts, including
+        contributions from <abbr class="term-help" tabindex="0" title="Impacts from a sector's own operations.">Direct impacts</abbr> due to the
+        sector's operations and <abbr class="term-help" tabindex="0" title="Impacts from purchased inputs upstream.">Indirect impacts</abbr>
+        embedded in purchases made from all other sectors in the <abbr class="term-help" tabindex="0" title="Network of sector purchases delivering goods and services.">supply chain</abbr>.</p>
     <!-- default title is for GHGs and 10 sectors -->
-    <div style=" display: flex; flex-direction: column;height: 85vh;">
-        <div style=" flex-grow: 1;">
-            <div id="smart-sector-eeio">
+    <div class="smart-sector-eeio-layout">
+        <div class="chart-export-menu-wrap smart-sector-stacked-chart-region">
+            <div class="chart-export-menu" style="position: relative;">
+                <button type="button" class="chart-export-menu-btn" aria-label="Download chart"
+                    aria-expanded="false" aria-controls="chartExportDropdown" onclick="toggleChartExportMenu(event)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="none" d="M0 0h24v24H0V0z"></path>
+                        <path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                    </svg>
+                </button>
+                <div id="chartExportDropdown" class="chart-export-menu-panel" hidden role="menu">
+                    <button type="button" class="chart-export-menu-item" role="menuitem"
+                        onclick="downloadStackedChart('svg')">Download SVG</button>
+                    <button type="button" class="chart-export-menu-item" role="menuitem"
+                        onclick="downloadStackedChart('png')">Download PNG</button>
+                    <button type="button" class="chart-export-menu-item" role="menuitem"
+                        onclick="downloadStackedChart('csv')">Download CSV</button>
+                </div>
             </div>
+            <div id="smart-sector-eeio" class="smart-sector-stacked-chart-mount"></div>
         </div>
-        <div style=" flex-grow: 1;">
-            <div style=" display: flex; flex-direction: row;">
-                <div style=" margin-left: 20px;flex-grow: 1;">
+        <div class="smart-sector-eeio-controls">
+            <div class="smart-sector-eeio-controls-row">
+                <div class="smart-sector-eeio-control-cell">
                     <label for="my-select">Select Indicator:</label>
                     <br>
                     <select id="my-select" onchange="changeGraph(this.value)"></select>
                 </div>
-                <div style=" margin-left: 20px;flex-grow: 1;">
+                <div class="smart-sector-eeio-control-cell smart-sector-eeio-control-cell--radios">
                     <label for="allocation-selected">Results Perspective:</label>
+                    <a href="./glossary.html#perspectives-help" target="_blank" rel="noopener noreferrer"
+                        class="smart-sector-eeio-help-link">What is this?</a>
                     <br>
-                    <input type="radio" name="myRadios" value="final" checked /> Point of Consumption
-                    <input type="radio" name="myRadios" value="direct" /> Supply Chain
+                    <label class="smart-sector-eeio-radio-option"><input type="radio" name="myRadios" value="final"
+                            checked /> Point of consumption</label>
+                    <label class="smart-sector-eeio-radio-option"><input type="radio" name="myRadios"
+                            value="direct" /> Supply chain</label>
                 </div>
-                <div style=" margin-left: 20px;flex-grow: 1;">
+                <div class="smart-sector-eeio-control-cell smart-sector-eeio-control-cell--wide">
                     <label for="mySelect">Sector Filter: </label>
                     <br>
                     <select id="mySelect" onchange="toggleNumSelection(this)">
@@ -53,53 +72,57 @@
                     </select>
                 </div>
 
-                <!-- Modal -->
-                <div id="customModal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closeModal()">&times;</span>
-                        <h3 id="modalTitle">Custom Sector List</h3>
-                        <div id="scrollContainer">
-                            <div id="selectedSectorsContainer" style="margin: bottom 0.6em;"></div>
-                        </div>
-                        <!-- Custom Dropdown -->
-                        <input type="text" id="sectorFilterInput" placeholder="Filter by code or name"
-                            oninput="filterDropdown()"
-                            style="width: 50%; margin-bottom: .6em; padding: .5em; border-radius:.1em; border:1px solid #ccc;">
-                        <div class="custom-dropdown">
-                            <button id="dropdownBtn" class="dropdown-btn" onclick="toggleDropdown()"> <span
-                                    class="btn-text">Select Sector</span>
-                                <span class="btn-arrow">▼</span></button>
-                            <div id="dropdownList" class="dropdown-list"></div>
-                        </div>
-                        <br><br>
-                        <div style="display: flex; justify-content: flex-end; margin-left: 10px; gap: 10px;">
-                            <button onclick="resetList()">Reset</button>
-                            <button onclick="saveCustomSelection()">Run Calculations</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div style=" margin-left: 20px;flex-grow: 1;">
+                <div class="smart-sector-eeio-control-cell smart-sector-eeio-control-cell--radios">
                     <label for="impact-selected">Select Result View:</label>
                     <br>
-                    <input type="radio" name="impactRadio" value="total_impact" checked /> Total Impact
-                    <input type="radio" name="impactRadio" value="impact_per_purchase" /> Impact Intensity
+                    <label class="smart-sector-eeio-radio-option"><input type="radio" name="impactRadio"
+                            value="total_impact" checked /> Total impacts</label>
+                    <label class="smart-sector-eeio-radio-option"><input type="radio" name="impactRadio"
+                            value="impact_per_purchase" /> Impact intensity</label>
                 </div>
-                <div style=" margin-left: 20px;flex-grow: 1;">
+                <div class="smart-sector-eeio-control-cell smart-sector-eeio-control-cell--radios">
                     <label for="group-selected">Level of Detail:</label>
                     <br>
-                    <input type="radio" name="groupRadio" value="group_detail" checked /> Detailed
-                    <input type="radio" name="groupRadio" value="group_summary" /> Simple
+                    <label class="smart-sector-eeio-radio-option"><input type="radio" name="groupRadio"
+                            value="group_detail" checked /> Detailed</label>
+                    <label class="smart-sector-eeio-radio-option"><input type="radio" name="groupRadio"
+                            value="group_summary" /> Simple</label>
                     <!-- <input type="radio" name="groupRadio" value="group_direct" /> Direct vs Indirect -->
                 </div>
-                <div id="smart-sector-eeio-graph"></div>
-                <div style=" margin-left: 20px;width: 200px;">
-                    See more info about the
-                    <a href="./sector-info-table.html" target="_blank">
-                        sectors BEA/NAICS Codes</a>.
-                    ·
-                    <a href="./sector-dashboard.html" target="_blank">Multi-indicator sector dashboard</a>
-                    <a href="./glossary.html" target="_blank">Glossary</a>.
+            </div>
+            <div class="smart-sector-eeio-controls-footer">
+                <div id="smart-sector-eeio-graph" class="smart-sector-eeio-csv-mount"></div>
+                <div class="smart-sector-resource-links">
+                    <span class="smart-sector-resource-intro">See more info about the
+                        <a href="./sector-info-table.html" target="_blank">sectors BEA/NAICS Codes</a>.</span>
+                    <span class="smart-sector-resource-line"><a href="./sector-dashboard.html" target="_blank">Multi-indicator sector dashboard</a></span>
+                    <span class="smart-sector-resource-line"><a href="./glossary.html" target="_blank">Glossary</a></span>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div id="customModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h3 id="modalTitle">Custom Sector List</h3>
+                    <div id="scrollContainer">
+                        <div id="selectedSectorsContainer" style="margin: bottom 0.6em;"></div>
+                    </div>
+                    <!-- Custom Dropdown -->
+                    <input type="text" id="sectorFilterInput" placeholder="Filter by code or name"
+                        oninput="filterDropdown()"
+                        style="width: 50%; margin-bottom: .6em; padding: .5em; border-radius:.1em; border:1px solid #ccc;">
+                    <div class="custom-dropdown">
+                        <button id="dropdownBtn" class="dropdown-btn" onclick="toggleDropdown()"> <span
+                                class="btn-text">Select Sector</span>
+                            <span class="btn-arrow">▼</span></button>
+                        <div id="dropdownList" class="dropdown-list"></div>
+                    </div>
+                    <br><br>
+                    <div style="display: flex; justify-content: flex-end; margin-left: 10px; gap: 10px;">
+                        <button onclick="resetList()">Reset</button>
+                        <button onclick="saveCustomSelection()">Run Calculations</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -142,6 +165,37 @@
                 model: model,
                 endpoint: './api',
                 selector: '#smart-sector-eeio-graph',
+            }
+        });
+
+        function toggleChartExportMenu(event) {
+            event.stopPropagation();
+            const panel = document.getElementById('chartExportDropdown');
+            const btn = event.currentTarget;
+            const open = panel.hidden;
+            panel.hidden = !open;
+            btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        }
+
+        function downloadStackedChart(type) {
+            smartSectorChart.exportChart(type);
+            const panel = document.getElementById('chartExportDropdown');
+            panel.hidden = true;
+            document.querySelector('.chart-export-menu-btn').setAttribute('aria-expanded', 'false');
+        }
+
+        document.addEventListener('click', function (event) {
+            const panel = document.getElementById('chartExportDropdown');
+            const menu = document.querySelector('.chart-export-menu');
+            if (!panel || panel.hidden || !menu) {
+                return;
+            }
+            if (!menu.contains(event.target)) {
+                panel.hidden = true;
+                const btn = document.querySelector('.chart-export-menu-btn');
+                if (btn) {
+                    btn.setAttribute('aria-expanded', 'false');
+                }
             }
         });
 
@@ -299,24 +353,24 @@
                 switch (otherSelector) {
                     case "select_sectors_construction":
                         name = "Select Sectors for Construction Materials";
-                        paragraph = "This chart presents select sectors for construction materials ranked on embodied impacts from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
+                        paragraph = "This chart presents select sectors for construction materials ranked by embodied impacts, including contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in purchases made from all other sectors in the supply chain."
                         break;
                     case "select_sectors_energy":
                         name = "Select Energy Intensive Sectors";
-                        paragraph = "This chart presents select energy intensive sectors ranked on embodied impacts from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
+                        paragraph = "This chart presents select energy intensive sectors ranked by embodied impacts, including contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in purchases made from all other sectors in the supply chain."
                         break;
                     case "select_sector_snapshots":
                         name = "Select EPA Smart Sectors";
-                        paragraph = "This chart presents select EPA Smart Sectors ranked on embodied impacts from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
+                        paragraph = "This chart presents select EPA Smart Sectors ranked by embodied impacts, including contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in purchases made from all other sectors in the supply chain."
                         break;
                     case "custom_sector_list":
                         if (impactSelector == "total_impact") {
                             name = "Selected Custom Sectors List Based on Total Embodied Impacts";
-                            paragraph = "This chart presents the sectors ranked on total embodied impacts from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
+                            paragraph = "This chart presents the sectors ranked by total embodied impacts, including contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in purchases made from all other sectors in the supply chain."
                         }
                         else if (impactSelector == "impact_per_purchase") {
                             name = "Selected Custom Sectors List Based on Embodied Impact Intensity";
-                            paragraph = "This chart presents the sectors ranked on total embodied impact intensity from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
+                            paragraph = "This chart presents the sectors ranked by total embodied impact intensity, including contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in purchases made from all other sectors in the supply chain."
                         }
                         smartSectorChart.updateFileNameTitle(name)
                         break;
@@ -327,22 +381,22 @@
                     case "total_impact":
                         if (topSectors == 10) {
                             name = "Top 10 Sectors Based on Total Embodied Impacts";
-                            paragraph = "This chart presents the top 10 sectors ranked on total embodied impacts from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
+                            paragraph = "This chart presents the top 10 sectors ranked by total embodied impacts, including contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in purchases made from all other sectors in the supply chain."
                         }
                         else {
                             name = "Top 25 Sectors Based on Total Embodied Impacts";
-                            paragraph = "This chart presents the top 25 sectors ranked on total embodied impacts from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
+                            paragraph = "This chart presents the top 25 sectors ranked by total embodied impacts, including contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in purchases made from all other sectors in the supply chain."
                         }
                         smartSectorChart.updateFileNameTitle(name)
                         break;
                     case "impact_per_purchase":
                         if (topSectors == 10) {
                             name = "Top 10 Sectors Based on Embodied Impact Intensity";
-                            paragraph = "This chart presents the top 10 sectors ranked on total embodied impact intensity from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
+                            paragraph = "This chart presents the top 10 sectors ranked by total embodied impact intensity, including contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in purchases made from all other sectors in the supply chain."
                         }
                         else {
                             name = "Top 25 Sectors Based on Embodied Impact Intensity";
-                            paragraph = "This chart presents the top 25 sectors ranked on total embodied impact intensity from contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in the purchases made from all other sectors in the supply chain."
+                            paragraph = "This chart presents the top 25 sectors ranked by total embodied impact intensity, including contributions from Direct impacts due to the sector's operations and Indirect impacts embedded in purchases made from all other sectors in the supply chain."
                         }
                         smartSectorChart.updateFileNameTitle(name)
                         break;

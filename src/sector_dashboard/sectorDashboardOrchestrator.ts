@@ -1,18 +1,19 @@
 import { WebModel } from "useeio";
+import { normalizeSectorCodeBase } from "../util/util";
 import { modelOfSmartSector } from "../smartSectorWebApi.ts/webApiSmartSector";
 import { SmartSectorEEIOImpactPurchasePerSector } from "../sector_contribution_to_impact_ranked_bar_chart.ts/smart-sector-eeio-impact-per-purchase";
 import { SmartSectorEEIOTotalImpactPerSector } from "../sector_contribution_to_impact_ranked_bar_chart.ts/smart-sector-eeio-total-impacts";
 import { PiePercentContributionDirectAndIndirect } from "../totalGhgEmissionPieChart.ts/piePercentContributionDirectAndIndirect";
 import { PiePercentContribution } from "../totalGhgEmissionPieChart.ts/piePercentContribution";
 import { SectorDashboardInterpretation } from "./sectorDashboardNarrative";
+import { indicatorDomId } from "./indicatorCodes";
 
-/** Align model sector codes (e.g. `1111A0`) with JSON keys (e.g. `1111A0/US`). */
-function normalizeSectorKey(code: string): string {
-  return code.replace(/\/US$/i, "").replace(/\s/g, "").trim();
+function chartSelector(kind: string, slug: string): string {
+  return `#sector-dash-${kind}-${indicatorDomId(slug)}`;
 }
 
 /**
- * Owns ranked-bar and pie widget instances for each curated indicator; keeps them
+ * Owns ranked-bar and pie widget instances per indicator; keeps them
  * in sync with shared sector / perspective / mode state.
  */
 export class SectorDashboardOrchestrator {
@@ -40,22 +41,22 @@ export class SectorDashboardOrchestrator {
       const bi = new SmartSectorEEIOImpactPurchasePerSector({
         model: this.model,
         endpoint: this.endpoint,
-        selector: `#sector-dash-bar-intensity-${i}`,
+        selector: chartSelector("bar-intensity", slug),
       });
       const bt = new SmartSectorEEIOTotalImpactPerSector({
         model: this.model,
         endpoint: this.endpoint,
-        selector: `#sector-dash-bar-total-${i}`,
+        selector: chartSelector("bar-total", slug),
       });
       const pa = new PiePercentContributionDirectAndIndirect({
         model: this.model,
         endpoint: this.endpoint,
-        selector: `#sector-dash-pie-agg-${i}`,
+        selector: chartSelector("pie-agg", slug),
       });
       const pd = new PiePercentContribution({
         model: this.model,
         endpoint: this.endpoint,
-        selector: `#sector-dash-pie-detail-${i}`,
+        selector: chartSelector("pie-detail", slug),
       });
       this.barIntensity.push(bi);
       this.barTotal.push(bt);
@@ -142,9 +143,9 @@ export class SectorDashboardOrchestrator {
     sectorCode: string,
     barMode: "impact_per_purchase" | "total_impact",
   ): SectorDashboardInterpretation | null {
-    const needle = normalizeSectorKey(sectorCode);
+    const needle = normalizeSectorCodeBase(sectorCode);
     const pieEntry = this.pieAgg[i]?.contributionList?.find(
-      (c) => normalizeSectorKey(c._sectorCode) === needle,
+      (c) => normalizeSectorCodeBase(c._sectorCode) === needle,
     );
     if (!pieEntry) {
       return null;
@@ -166,7 +167,7 @@ export class SectorDashboardOrchestrator {
     const barSource =
       barMode === "total_impact" ? this.barTotal[i] : this.barIntensity[i];
     const barEntry = barSource?.getTopValuesFromSectors?.find(
-      (s) => normalizeSectorKey(s.sector_code) === needle,
+      (s) => normalizeSectorCodeBase(s.sector_code) === needle,
     );
     const topRows =
       barMode === "total_impact"
@@ -181,5 +182,31 @@ export class SectorDashboardOrchestrator {
       .slice(0, 3);
 
     return { directPercent, indirectPercent, topPurchases };
+  }
+
+  destroyCharts(): void {
+    const destroyOne = (w: { chart?: { destroy: () => void } }) => {
+      try {
+        w.chart?.destroy();
+      } catch {
+        /* ignore */
+      }
+    };
+    for (const w of this.barIntensity) {
+      destroyOne(w);
+    }
+    for (const w of this.barTotal) {
+      destroyOne(w);
+    }
+    for (const w of this.pieAgg) {
+      destroyOne(w);
+    }
+    for (const w of this.pieDetail) {
+      destroyOne(w);
+    }
+    this.barIntensity.length = 0;
+    this.barTotal.length = 0;
+    this.pieAgg.length = 0;
+    this.pieDetail.length = 0;
   }
 }

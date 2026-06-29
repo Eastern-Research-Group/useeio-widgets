@@ -1,2642 +1,3040 @@
 [
   {
+    "id": "11",
     "code": "11",
     "name": "Agriculture, Forestry, Fishing, and Hunting",
-    "id": "11",
     "model": "Detail"
   },
   {
+    "id": "1111A0/US",
     "code": "1111A0",
     "name": "Oilseed farming",
-    "id": "1111A0/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "11"
   },
   {
+    "id": "1111B0/US",
     "code": "1111B0",
     "name": "Grain farming",
-    "id": "1111B0/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "11"
   },
   {
+    "id": "111200/US",
     "code": "111200",
     "name": "Vegetable and melon farming",
-    "id": "111200/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "11"
   },
   {
+    "id": "111300/US",
     "code": "111300",
     "name": "Fruit and tree nut farming",
-    "id": "111300/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "11"
   },
   {
+    "id": "111400/US",
     "code": "111400",
     "name": "Greenhouse, nursery, and floriculture production",
-    "id": "111400/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "11"
   },
   {
+    "id": "111900/US",
     "code": "111900",
     "name": "Other crop farming",
-    "id": "111900/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "11"
   },
   {
+    "id": "112120/US",
     "code": "112120",
     "name": "Dairy cattle and milk production",
-    "id": "112120/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "11"
   },
   {
+    "id": "1121A0/US",
     "code": "1121A0",
     "name": "Beef cattle ranching and farming, including feedlots and dual-purpose ranching and farming",
-    "id": "1121A0/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "11"
   },
   {
+    "id": "112300/US",
     "code": "112300",
     "name": "Poultry and egg production",
-    "id": "112300/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "11"
   },
   {
+    "id": "112A00/US",
     "code": "112A00",
     "name": "Animal production, except cattle and poultry and eggs",
-    "id": "112A00/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "11"
   },
   {
+    "id": "113000/US",
     "code": "113000",
     "name": "Forestry and logging",
-    "id": "113000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "11"
   },
   {
+    "id": "114000/US",
     "code": "114000",
     "name": "Fishing, hunting and trapping",
-    "id": "114000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "11"
   },
   {
+    "id": "115000/US",
     "code": "115000",
     "name": "Support activities for agriculture and forestry",
-    "id": "115000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "11"
   },
   {
-    "code": "211",
-    "name": "Oil and Gas",
     "id": "211",
+    "code": "211",
+    "name": "Oil, Gas, and Refining (324)",
     "model": "Detail"
   },
   {
+    "id": "211000/US",
     "code": "211000",
     "name": "Oil and gas extraction",
-    "id": "211000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "211"
   },
   {
+    "id": "212",
     "code": "212",
     "name": "Mining and Water",
-    "id": "212",
     "model": "Detail"
   },
   {
+    "id": "212100/US",
     "code": "212100",
     "name": "Coal mining",
-    "id": "212100/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "212"
   },
   {
+    "id": "212230/US",
     "code": "212230",
     "name": "Copper, nickel, lead, and zinc mining",
-    "id": "212230/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "212"
   },
   {
+    "id": "2122A0/US",
     "code": "2122A0",
     "name": "Iron, gold, silver, and other metal ore mining",
-    "id": "2122A0/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "212"
   },
   {
+    "id": "212310/US",
     "code": "212310",
     "name": "Stone mining and quarrying",
-    "id": "212310/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "212"
   },
   {
+    "id": "2123A0/US",
     "code": "2123A0",
     "name": "Other nonmetallic mineral mining and quarrying",
-    "id": "2123A0/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "212"
   },
   {
+    "id": "213111/US",
     "code": "213111",
     "name": "Drilling oil and gas wells",
-    "id": "213111/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "211"
   },
   {
+    "id": "21311A/US",
     "code": "21311A",
     "name": "Other support activities for mining",
-    "id": "21311A/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "212"
   },
   {
+    "id": "2211",
     "code": "2211",
     "name": "Electricity",
-    "id": "2211",
     "model": "Detail"
   },
   {
+    "id": "221100/US",
     "code": "221100",
     "name": "Electric power generation, transmission, and distribution",
-    "id": "221100/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "2211"
   },
   {
+    "id": "221200/US",
     "code": "221200",
     "name": "Natural gas distribution",
-    "id": "221200/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "211"
   },
   {
+    "id": "221300/US",
     "code": "221300",
     "name": "Water, sewage and other systems",
-    "id": "221300/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "212"
   },
   {
+    "id": "23",
     "code": "23",
     "name": "Construction",
-    "id": "23",
     "model": "Detail"
   },
   {
+    "id": "230301/US",
     "code": "230301",
     "name": "Nonresidential maintenance and repair",
-    "id": "230301/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "23"
   },
   {
+    "id": "230302/US",
     "code": "230302",
     "name": "Residential maintenance and repair",
-    "id": "230302/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "23"
   },
   {
+    "id": "233210/US",
     "code": "233210",
     "name": "Health care structures",
-    "id": "233210/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "23"
   },
   {
+    "id": "233230/US",
     "code": "233230",
     "name": "Manufacturing structures",
-    "id": "233230/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "23"
   },
   {
+    "id": "233240/US",
     "code": "233240",
     "name": "Power and communication structures",
-    "id": "233240/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "23"
   },
   {
+    "id": "233262/US",
     "code": "233262",
     "name": "Educational and vocational structures",
-    "id": "233262/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "23"
   },
   {
+    "id": "2332A0/US",
     "code": "2332A0",
     "name": "Office and commercial structures",
-    "id": "2332A0/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "23"
   },
   {
+    "id": "2332C0/US",
     "code": "2332C0",
     "name": "Transportation structures and highways and streets",
-    "id": "2332C0/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "23"
   },
   {
+    "id": "2332D0/US",
     "code": "2332D0",
     "name": "Other nonresidential structures",
-    "id": "2332D0/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "23"
   },
   {
+    "id": "233411/US",
     "code": "233411",
     "name": "Single-family residential structures",
-    "id": "233411/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "23"
   },
   {
+    "id": "233412/US",
     "code": "233412",
     "name": "Multifamily residential structures",
-    "id": "233412/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "23"
   },
   {
+    "id": "2334A0/US",
     "code": "2334A0",
     "name": "Other residential structures",
-    "id": "2334A0/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "23"
   },
   {
+    "id": "31",
     "code": "31",
     "name": "Food, Textiles, and Apparel",
-    "id": "31",
     "model": "Detail"
   },
   {
+    "id": "311111/US",
     "code": "311111",
     "name": "Dog and cat food manufacturing",
-    "id": "311111/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "311119/US",
     "code": "311119",
     "name": "Other animal food manufacturing",
-    "id": "311119/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "311210/US",
     "code": "311210",
     "name": "Flour milling and malt manufacturing",
-    "id": "311210/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "311221/US",
     "code": "311221",
     "name": "Wet corn milling",
-    "id": "311221/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "311224/US",
     "code": "311224",
     "name": "Soybean and other oilseed processing",
-    "id": "311224/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "311225/US",
     "code": "311225",
     "name": "Fats and oils refining and blending",
-    "id": "311225/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "311230/US",
     "code": "311230",
     "name": "Breakfast cereal manufacturing",
-    "id": "311230/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "311300/US",
     "code": "311300",
     "name": "Sugar and confectionery product manufacturing",
-    "id": "311300/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "311410/US",
     "code": "311410",
     "name": "Frozen food manufacturing",
-    "id": "311410/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "311420/US",
     "code": "311420",
     "name": "Fruit and vegetable canning, pickling, and drying",
-    "id": "311420/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "311513/US",
     "code": "311513",
     "name": "Cheese manufacturing",
-    "id": "311513/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "311514/US",
     "code": "311514",
     "name": "Dry, condensed, and evaporated dairy product manufacturing",
-    "id": "311514/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "31151A/US",
     "code": "31151A",
     "name": "Fluid milk and butter manufacturing",
-    "id": "31151A/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "311520/US",
     "code": "311520",
     "name": "Ice cream and frozen dessert manufacturing",
-    "id": "311520/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "311615/US",
     "code": "311615",
     "name": "Poultry processing",
-    "id": "311615/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "31161A/US",
     "code": "31161A",
     "name": "Animal (except poultry) slaughtering, rendering, and processing",
-    "id": "31161A/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "311700/US",
     "code": "311700",
     "name": "Seafood product preparation and packaging",
-    "id": "311700/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "311810/US",
     "code": "311810",
     "name": "Bread and bakery product manufacturing",
-    "id": "311810/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "3118A0/US",
     "code": "3118A0",
     "name": "Cookie, cracker, pasta, and tortilla manufacturing",
-    "id": "3118A0/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "311910/US",
     "code": "311910",
     "name": "Snack food manufacturing",
-    "id": "311910/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "311920/US",
     "code": "311920",
     "name": "Coffee and tea manufacturing",
-    "id": "311920/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "311930/US",
     "code": "311930",
     "name": "Flavoring syrup and concentrate manufacturing",
-    "id": "311930/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "311940/US",
     "code": "311940",
     "name": "Seasoning and dressing manufacturing",
-    "id": "311940/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "311990/US",
     "code": "311990",
     "name": "All other food manufacturing",
-    "id": "311990/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "312110/US",
     "code": "312110",
     "name": "Soft drink and ice manufacturing",
-    "id": "312110/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "312120/US",
     "code": "312120",
     "name": "Breweries",
-    "id": "312120/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "312130/US",
     "code": "312130",
     "name": "Wineries",
-    "id": "312130/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "312140/US",
     "code": "312140",
     "name": "Distilleries",
-    "id": "312140/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "312200/US",
     "code": "312200",
     "name": "Tobacco manufacturing",
-    "id": "312200/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "313100/US",
     "code": "313100",
     "name": "Fiber, yarn, and thread mills",
-    "id": "313100/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "313200/US",
     "code": "313200",
     "name": "Fabric mills",
-    "id": "313200/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "313300/US",
     "code": "313300",
     "name": "Textile and fabric finishing and fabric coating mills",
-    "id": "313300/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "314110/US",
     "code": "314110",
     "name": "Carpet and rug mills",
-    "id": "314110/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "314120/US",
     "code": "314120",
     "name": "Curtain and linen mills",
-    "id": "314120/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "314900/US",
     "code": "314900",
     "name": "Other textile product mills",
-    "id": "314900/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "315000/US",
     "code": "315000",
     "name": "Apparel manufacturing",
-    "id": "315000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "316000/US",
     "code": "316000",
     "name": "Leather and allied product manufacturing",
-    "id": "316000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "31"
   },
   {
+    "id": "321",
     "code": "321",
     "name": "Wood Products",
-    "id": "321",
     "model": "Detail"
   },
   {
+    "id": "321100/US",
     "code": "321100",
     "name": "Sawmills and wood preservation",
-    "id": "321100/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "321"
   },
   {
+    "id": "321200/US",
     "code": "321200",
     "name": "Veneer, plywood, and engineered wood product manufacturing",
-    "id": "321200/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "321"
   },
   {
+    "id": "321910/US",
     "code": "321910",
     "name": "Millwork",
-    "id": "321910/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "321"
   },
   {
+    "id": "3219A0/US",
     "code": "3219A0",
     "name": "All other wood product manufacturing",
-    "id": "3219A0/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "321"
   },
   {
+    "id": "322-323",
     "code": "322-323",
     "name": "Paper and Printing",
-    "id": "322-323",
     "model": "Detail"
   },
   {
+    "id": "322110/US",
     "code": "322110",
     "name": "Pulp mills",
-    "id": "322110/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "322-323"
   },
   {
+    "id": "322120/US",
     "code": "322120",
     "name": "Paper mills",
-    "id": "322120/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "322-323"
   },
   {
+    "id": "322130/US",
     "code": "322130",
     "name": "Paperboard mills",
-    "id": "322130/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "322-323"
   },
   {
+    "id": "322210/US",
     "code": "322210",
     "name": "Paperboard container manufacturing",
-    "id": "322210/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "322-323"
   },
   {
+    "id": "322220/US",
     "code": "322220",
     "name": "Paper bag and coated and treated paper manufacturing",
-    "id": "322220/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "322-323"
   },
   {
+    "id": "322230/US",
     "code": "322230",
     "name": "Stationery product manufacturing",
-    "id": "322230/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "322-323"
   },
   {
+    "id": "322291/US",
     "code": "322291",
     "name": "Sanitary paper product manufacturing",
-    "id": "322291/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "322-323"
   },
   {
+    "id": "322299/US",
     "code": "322299",
     "name": "All other converted paper product manufacturing",
-    "id": "322299/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "322-323"
   },
   {
+    "id": "323110/US",
     "code": "323110",
     "name": "Printing",
-    "id": "323110/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "322-323"
   },
   {
+    "id": "323120/US",
     "code": "323120",
     "name": "Support activities for printing",
-    "id": "323120/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "322-323"
   },
   {
+    "id": "324110/US",
     "code": "324110",
     "name": "Petroleum refineries",
-    "id": "324110/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "211"
   },
   {
+    "id": "324121/US",
     "code": "324121",
     "name": "Asphalt paving mixture and block manufacturing",
-    "id": "324121/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "211"
   },
   {
+    "id": "324122/US",
     "code": "324122",
     "name": "Asphalt shingle and coating materials manufacturing",
-    "id": "324122/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "211"
   },
   {
+    "id": "324190/US",
     "code": "324190",
     "name": "Other petroleum and coal products manufacturing",
-    "id": "324190/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "211"
   },
   {
+    "id": "325-326",
     "code": "325-326",
     "name": "Chemicals and Plastics",
-    "id": "325-326",
     "model": "Detail"
   },
   {
+    "id": "325110/US",
     "code": "325110",
     "name": "Petrochemical manufacturing",
-    "id": "325110/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "325-326"
   },
   {
+    "id": "325120/US",
     "code": "325120",
     "name": "Industrial gas manufacturing",
-    "id": "325120/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "325-326"
   },
   {
+    "id": "325130/US",
     "code": "325130",
     "name": "Synthetic dye and pigment manufacturing",
-    "id": "325130/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "325-326"
   },
   {
+    "id": "325180/US",
     "code": "325180",
     "name": "Other basic inorganic chemical manufacturing",
-    "id": "325180/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "325-326"
   },
   {
+    "id": "325190/US",
     "code": "325190",
     "name": "Other basic organic chemical manufacturing",
-    "id": "325190/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "325-326"
   },
   {
+    "id": "325211/US",
     "code": "325211",
     "name": "Plastics material and resin manufacturing",
-    "id": "325211/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "325-326"
   },
   {
+    "id": "3252A0/US",
     "code": "3252A0",
     "name": "Synthetic rubber and artificial and synthetic fibers and filaments manufacturing",
-    "id": "3252A0/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "325-326"
   },
   {
+    "id": "325310/US",
     "code": "325310",
     "name": "Fertilizer manufacturing",
-    "id": "325310/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "325-326"
   },
   {
+    "id": "325320/US",
     "code": "325320",
     "name": "Pesticide and other agricultural chemical manufacturing",
-    "id": "325320/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "325-326"
   },
   {
+    "id": "325411/US",
     "code": "325411",
     "name": "Medicinal and botanical manufacturing",
-    "id": "325411/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "325-326"
   },
   {
+    "id": "325412/US",
     "code": "325412",
     "name": "Pharmaceutical preparation manufacturing",
-    "id": "325412/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "325-326"
   },
   {
+    "id": "325413/US",
     "code": "325413",
     "name": "In-vitro diagnostic substance manufacturing",
-    "id": "325413/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "325-326"
   },
   {
+    "id": "325414/US",
     "code": "325414",
     "name": "Biological product (except diagnostic) manufacturing",
-    "id": "325414/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "325-326"
   },
   {
+    "id": "325510/US",
     "code": "325510",
     "name": "Paint and coating manufacturing",
-    "id": "325510/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "325-326"
   },
   {
+    "id": "325520/US",
     "code": "325520",
     "name": "Adhesive manufacturing",
-    "id": "325520/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "325-326"
   },
   {
+    "id": "325610/US",
     "code": "325610",
     "name": "Soap and cleaning compound manufacturing",
-    "id": "325610/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "325-326"
   },
   {
+    "id": "325620/US",
     "code": "325620",
     "name": "Toilet preparation manufacturing",
-    "id": "325620/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "325-326"
   },
   {
+    "id": "325910/US",
     "code": "325910",
     "name": "Printing ink manufacturing",
-    "id": "325910/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "325-326"
   },
   {
+    "id": "3259A0/US",
     "code": "3259A0",
     "name": "All other chemical product and preparation manufacturing",
-    "id": "3259A0/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "325-326"
   },
   {
+    "id": "326110/US",
     "code": "326110",
     "name": "Plastics packaging materials and unlaminated film and sheet manufacturing",
-    "id": "326110/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "325-326"
   },
   {
+    "id": "326120/US",
     "code": "326120",
     "name": "Plastics pipe, pipe fitting, and unlaminated profile shape manufacturing",
-    "id": "326120/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "325-326"
   },
   {
+    "id": "326130/US",
     "code": "326130",
     "name": "Laminated plastics plate, sheet (except packaging), and shape manufacturing",
-    "id": "326130/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "325-326"
   },
   {
+    "id": "326140/US",
     "code": "326140",
     "name": "Polystyrene foam product manufacturing",
-    "id": "326140/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "325-326"
   },
   {
+    "id": "326150/US",
     "code": "326150",
     "name": "Urethane and other foam product (except polystyrene) manufacturing",
-    "id": "326150/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "325-326"
   },
   {
+    "id": "326160/US",
     "code": "326160",
     "name": "Plastics bottle manufacturing",
-    "id": "326160/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "325-326"
   },
   {
+    "id": "326190/US",
     "code": "326190",
     "name": "Other plastics product manufacturing",
-    "id": "326190/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "325-326"
   },
   {
+    "id": "326210/US",
     "code": "326210",
     "name": "Tire manufacturing",
-    "id": "326210/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "325-326"
   },
   {
+    "id": "326220/US",
     "code": "326220",
     "name": "Rubber and plastics hoses and belting manufacturing",
-    "id": "326220/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "325-326"
   },
   {
+    "id": "326290/US",
     "code": "326290",
     "name": "Other rubber product manufacturing",
-    "id": "326290/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "325-326"
   },
   {
+    "id": "327",
     "code": "327",
     "name": "Nonmetallic Minerals",
-    "id": "327",
     "model": "Detail"
   },
   {
+    "id": "327100/US",
     "code": "327100",
     "name": "Clay product and refractory manufacturing",
-    "id": "327100/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "327"
   },
   {
+    "id": "327200/US",
     "code": "327200",
     "name": "Glass and glass product manufacturing",
-    "id": "327200/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "327"
   },
   {
+    "id": "327310/US",
     "code": "327310",
     "name": "Cement manufacturing",
-    "id": "327310/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "327"
   },
   {
+    "id": "327320/US",
     "code": "327320",
     "name": "Ready-mix concrete manufacturing",
-    "id": "327320/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "327"
   },
   {
+    "id": "327330/US",
     "code": "327330",
     "name": "Concrete pipe, brick, and block manufacturing",
-    "id": "327330/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "327"
   },
   {
+    "id": "327390/US",
     "code": "327390",
     "name": "Other concrete product manufacturing",
-    "id": "327390/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "327"
   },
   {
+    "id": "327400/US",
     "code": "327400",
     "name": "Lime and gypsum product manufacturing",
-    "id": "327400/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "327"
   },
   {
+    "id": "327910/US",
     "code": "327910",
     "name": "Abrasive product manufacturing",
-    "id": "327910/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "327"
   },
   {
+    "id": "327991/US",
     "code": "327991",
     "name": "Cut stone and stone product manufacturing",
-    "id": "327991/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "327"
   },
   {
+    "id": "327992/US",
     "code": "327992",
     "name": "Ground or treated mineral and earth manufacturing",
-    "id": "327992/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "327"
   },
   {
+    "id": "327993/US",
     "code": "327993",
     "name": "Mineral wool manufacturing",
-    "id": "327993/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "327"
   },
   {
+    "id": "327999/US",
     "code": "327999",
     "name": "Miscellaneous nonmetallic mineral products",
-    "id": "327999/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "327"
   },
   {
+    "id": "331-332",
     "code": "331-332",
     "name": "Metals and Metal Products",
-    "id": "331-332",
     "model": "Detail"
   },
   {
+    "id": "331110/US",
     "code": "331110",
     "name": "Iron and steel mills and ferroalloy manufacturing",
-    "id": "331110/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "331-332"
   },
   {
+    "id": "331200/US",
     "code": "331200",
     "name": "Steel product manufacturing from purchased steel",
-    "id": "331200/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "331-332"
   },
   {
+    "id": "331313/US",
     "code": "331313",
     "name": "Alumina refining and primary aluminum production",
-    "id": "331313/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "331-332"
   },
   {
+    "id": "331314/US",
     "code": "331314",
     "name": "Secondary smelting and alloying of aluminum",
-    "id": "331314/US",
     "model": "Detail"
   },
   {
+    "id": "33131B/US",
     "code": "33131B",
     "name": "Aluminum product manufacturing from purchased aluminum",
-    "id": "33131B/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "331-332"
   },
   {
+    "id": "331410/US",
     "code": "331410",
     "name": "Nonferrous metal (except aluminum) smelting and refining",
-    "id": "331410/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "331-332"
   },
   {
+    "id": "331420/US",
     "code": "331420",
     "name": "Copper rolling, drawing, extruding and alloying",
-    "id": "331420/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "331-332"
   },
   {
+    "id": "331490/US",
     "code": "331490",
     "name": "Nonferrous metal (except copper and aluminum) rolling, drawing, extruding and alloying",
-    "id": "331490/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "331-332"
   },
   {
+    "id": "331510/US",
     "code": "331510",
     "name": "Ferrous metal foundries",
-    "id": "331510/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "331-332"
   },
   {
+    "id": "331520/US",
     "code": "331520",
     "name": "Nonferrous metal foundries",
-    "id": "331520/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "331-332"
   },
   {
+    "id": "332114/US",
     "code": "332114",
     "name": "Custom roll forming",
-    "id": "332114/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "331-332"
   },
   {
+    "id": "332119/US",
     "code": "332119",
     "name": "Metal crown, closure, and other metal stamping (except automotive)",
-    "id": "332119/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "331-332"
   },
   {
+    "id": "33211A/US",
     "code": "33211A",
     "name": "All other forging, stamping, and sintering",
-    "id": "33211A/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "331-332"
   },
   {
+    "id": "332200/US",
     "code": "332200",
     "name": "Cutlery and handtool manufacturing",
-    "id": "332200/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "331-332"
   },
   {
+    "id": "332310/US",
     "code": "332310",
     "name": "Plate work and fabricated structural product manufacturing",
-    "id": "332310/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "331-332"
   },
   {
+    "id": "332320/US",
     "code": "332320",
     "name": "Ornamental and architectural metal products manufacturing",
-    "id": "332320/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "331-332"
   },
   {
+    "id": "332410/US",
     "code": "332410",
     "name": "Power boiler and heat exchanger manufacturing",
-    "id": "332410/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "331-332"
   },
   {
+    "id": "332420/US",
     "code": "332420",
     "name": "Metal tank (heavy gauge) manufacturing",
-    "id": "332420/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "331-332"
   },
   {
+    "id": "332430/US",
     "code": "332430",
     "name": "Metal can, box, and other metal container (light gauge) manufacturing",
-    "id": "332430/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "331-332"
   },
   {
+    "id": "332500/US",
     "code": "332500",
     "name": "Hardware manufacturing",
-    "id": "332500/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "331-332"
   },
   {
+    "id": "332600/US",
     "code": "332600",
     "name": "Spring and wire product manufacturing",
-    "id": "332600/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "331-332"
   },
   {
+    "id": "332710/US",
     "code": "332710",
     "name": "Machine shops",
-    "id": "332710/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "331-332"
   },
   {
+    "id": "332720/US",
     "code": "332720",
     "name": "Turned product and screw, nut, and bolt manufacturing",
-    "id": "332720/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "331-332"
   },
   {
+    "id": "332800/US",
     "code": "332800",
     "name": "Coating, engraving, heat treating and allied activities",
-    "id": "332800/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "331-332"
   },
   {
+    "id": "332913/US",
     "code": "332913",
     "name": "Plumbing fixture fitting and trim manufacturing",
-    "id": "332913/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "331-332"
   },
   {
+    "id": "33291A/US",
     "code": "33291A",
     "name": "Valve and fittings other than plumbing",
-    "id": "33291A/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "331-332"
   },
   {
+    "id": "332991/US",
     "code": "332991",
     "name": "Ball and roller bearing manufacturing",
-    "id": "332991/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "331-332"
   },
   {
+    "id": "332996/US",
     "code": "332996",
     "name": "Fabricated pipe and pipe fitting manufacturing",
-    "id": "332996/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "331-332"
   },
   {
+    "id": "332999/US",
     "code": "332999",
     "name": "Other fabricated metal manufacturing",
-    "id": "332999/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "331-332"
   },
   {
+    "id": "33299A/US",
     "code": "33299A",
     "name": "Ammunition, arms, ordnance, and accessories manufacturing",
-    "id": "33299A/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "331-332"
   },
   {
+    "id": "333",
     "code": "333",
     "name": "Machinery",
-    "id": "333",
     "model": "Detail"
   },
   {
+    "id": "333111/US",
     "code": "333111",
     "name": "Farm machinery and equipment manufacturing",
-    "id": "333111/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "333"
   },
   {
+    "id": "333112/US",
     "code": "333112",
     "name": "Lawn and garden equipment manufacturing",
-    "id": "333112/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "333"
   },
   {
+    "id": "333120/US",
     "code": "333120",
     "name": "Construction machinery manufacturing",
-    "id": "333120/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "333"
   },
   {
+    "id": "333130/US",
     "code": "333130",
     "name": "Mining and oil and gas field machinery manufacturing",
-    "id": "333130/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "333"
   },
   {
+    "id": "333242/US",
     "code": "333242",
     "name": "Semiconductor machinery manufacturing",
-    "id": "333242/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "333"
   },
   {
+    "id": "33329A/US",
     "code": "33329A",
     "name": "Other industrial machinery manufacturing",
-    "id": "33329A/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "333"
   },
   {
+    "id": "333314/US",
     "code": "333314",
     "name": "Optical instrument and lens manufacturing",
-    "id": "333314/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "333"
   },
   {
+    "id": "333316/US",
     "code": "333316",
     "name": "Photographic and photocopying equipment manufacturing",
-    "id": "333316/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "333"
   },
   {
+    "id": "333318/US",
     "code": "333318",
     "name": "Other commercial and service industry machinery manufacturing",
-    "id": "333318/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "333"
   },
   {
+    "id": "333413/US",
     "code": "333413",
     "name": "Industrial and commercial fan and blower and air purification equipment manufacturing",
-    "id": "333413/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "333"
   },
   {
+    "id": "333414/US",
     "code": "333414",
     "name": "Heating equipment (except warm air furnaces) manufacturing",
-    "id": "333414/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "333"
   },
   {
+    "id": "333415/US",
     "code": "333415",
     "name": "Air conditioning, refrigeration, and warm air heating equipment manufacturing",
-    "id": "333415/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "333"
   },
   {
+    "id": "333511/US",
     "code": "333511",
     "name": "Industrial mold manufacturing",
-    "id": "333511/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "333"
   },
   {
+    "id": "333514/US",
     "code": "333514",
     "name": "Special tool, die, jig, and fixture manufacturing",
-    "id": "333514/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "333"
   },
   {
+    "id": "333517/US",
     "code": "333517",
     "name": "Machine tool manufacturing",
-    "id": "333517/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "333"
   },
   {
+    "id": "33351B/US",
     "code": "33351B",
     "name": "Cutting and machine tool accessory, rolling mill, and other metalworking machinery manufacturing",
-    "id": "33351B/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "333"
   },
   {
+    "id": "333611/US",
     "code": "333611",
     "name": "Turbine and turbine generator set units manufacturing",
-    "id": "333611/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "333"
   },
   {
+    "id": "333612/US",
     "code": "333612",
     "name": "Speed changer, industrial high-speed drive, and gear manufacturing",
-    "id": "333612/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "333"
   },
   {
+    "id": "333613/US",
     "code": "333613",
     "name": "Mechanical power transmission equipment manufacturing",
-    "id": "333613/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "333"
   },
   {
+    "id": "333618/US",
     "code": "333618",
     "name": "Other engine equipment manufacturing",
-    "id": "333618/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "333"
   },
   {
+    "id": "333912/US",
     "code": "333912",
     "name": "Air and gas compressor manufacturing",
-    "id": "333912/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "333"
   },
   {
+    "id": "333914/US",
     "code": "333914",
     "name": "Measuring, dispensing, and other pumping equipment manufacturing",
-    "id": "333914/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "333"
   },
   {
+    "id": "333920/US",
     "code": "333920",
     "name": "Material handling equipment manufacturing",
-    "id": "333920/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "333"
   },
   {
+    "id": "333991/US",
     "code": "333991",
     "name": "Power-driven handtool manufacturing",
-    "id": "333991/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "333"
   },
   {
+    "id": "333993/US",
     "code": "333993",
     "name": "Packaging machinery manufacturing",
-    "id": "333993/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "333"
   },
   {
+    "id": "333994/US",
     "code": "333994",
     "name": "Industrial process furnace and oven manufacturing",
-    "id": "333994/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "333"
   },
   {
+    "id": "33399A/US",
     "code": "33399A",
     "name": "Other general purpose machinery manufacturing",
-    "id": "33399A/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "333"
   },
   {
+    "id": "33399B/US",
     "code": "33399B",
     "name": "Fluid power process machinery",
-    "id": "33399B/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "333"
   },
   {
+    "id": "334",
     "code": "334",
     "name": "Computers, Electronics, and Semiconductors",
-    "id": "334",
     "model": "Detail"
   },
   {
+    "id": "334111/US",
     "code": "334111",
     "name": "Electronic computer manufacturing",
-    "id": "334111/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "334"
   },
   {
+    "id": "334112/US",
     "code": "334112",
     "name": "Computer storage device manufacturing",
-    "id": "334112/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "334"
   },
   {
+    "id": "334118/US",
     "code": "334118",
     "name": "Computer terminals and other computer peripheral equipment manufacturing",
-    "id": "334118/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "334"
   },
   {
+    "id": "334210/US",
     "code": "334210",
     "name": "Telephone apparatus manufacturing",
-    "id": "334210/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "334"
   },
   {
+    "id": "334220/US",
     "code": "334220",
     "name": "Broadcast and wireless communications equipment",
-    "id": "334220/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "334"
   },
   {
+    "id": "334290/US",
     "code": "334290",
     "name": "Other communications equipment manufacturing",
-    "id": "334290/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "334"
   },
   {
+    "id": "334300/US",
     "code": "334300",
     "name": "Audio and video equipment manufacturing",
-    "id": "334300/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "334"
   },
   {
+    "id": "334413/US",
     "code": "334413",
     "name": "Semiconductor and related device manufacturing",
-    "id": "334413/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "334"
   },
   {
+    "id": "334418/US",
     "code": "334418",
     "name": "Printed circuit assembly (electronic assembly) manufacturing",
-    "id": "334418/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "334"
   },
   {
+    "id": "33441A/US",
     "code": "33441A",
     "name": "Other electronic component manufacturing",
-    "id": "33441A/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "334"
   },
   {
+    "id": "334510/US",
     "code": "334510",
     "name": "Electromedical and electrotherapeutic apparatus manufacturing",
-    "id": "334510/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "334"
   },
   {
+    "id": "334511/US",
     "code": "334511",
     "name": "Search, detection, and navigation instruments manufacturing",
-    "id": "334511/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "334"
   },
   {
+    "id": "334512/US",
     "code": "334512",
     "name": "Automatic environmental control manufacturing",
-    "id": "334512/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "334"
   },
   {
+    "id": "334513/US",
     "code": "334513",
     "name": "Industrial process variable instruments manufacturing",
-    "id": "334513/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "334"
   },
   {
+    "id": "334514/US",
     "code": "334514",
     "name": "Totalizing fluid meter and counting device manufacturing",
-    "id": "334514/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "334"
   },
   {
+    "id": "334515/US",
     "code": "334515",
     "name": "Electricity and signal testing instruments manufacturing",
-    "id": "334515/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "334"
   },
   {
+    "id": "334516/US",
     "code": "334516",
     "name": "Analytical laboratory instrument manufacturing",
-    "id": "334516/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "334"
   },
   {
+    "id": "334517/US",
     "code": "334517",
     "name": "Irradiation apparatus manufacturing",
-    "id": "334517/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "334"
   },
   {
+    "id": "33451A/US",
     "code": "33451A",
     "name": "Watch, clock, and other measuring and controlling device manufacturing",
-    "id": "33451A/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "334"
   },
   {
+    "id": "334610/US",
     "code": "334610",
     "name": "Manufacturing and reproducing magnetic and optical media",
-    "id": "334610/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "334"
   },
   {
+    "id": "335",
     "code": "335",
     "name": "Electrical Equipment and Appliances",
-    "id": "335",
     "model": "Detail"
   },
   {
+    "id": "335110/US",
     "code": "335110",
     "name": "Electric lamp bulb and part manufacturing",
-    "id": "335110/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "335"
   },
   {
+    "id": "335120/US",
     "code": "335120",
     "name": "Lighting fixture manufacturing",
-    "id": "335120/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "335"
   },
   {
+    "id": "335210/US",
     "code": "335210",
     "name": "Small electrical appliance manufacturing",
-    "id": "335210/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "335"
   },
   {
+    "id": "335220/US",
     "code": "335220",
     "name": "Major household appliance manufacturing",
-    "id": "335220/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "335"
   },
   {
+    "id": "335311/US",
     "code": "335311",
     "name": "Power, distribution, and specialty transformer manufacturing",
-    "id": "335311/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "335"
   },
   {
+    "id": "335312/US",
     "code": "335312",
     "name": "Motor and generator manufacturing",
-    "id": "335312/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "335"
   },
   {
+    "id": "335313/US",
     "code": "335313",
     "name": "Switchgear and switchboard apparatus manufacturing",
-    "id": "335313/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "335"
   },
   {
+    "id": "335314/US",
     "code": "335314",
     "name": "Relay and industrial control manufacturing",
-    "id": "335314/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "335"
   },
   {
+    "id": "335911/US",
     "code": "335911",
     "name": "Storage battery manufacturing",
-    "id": "335911/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "335"
   },
   {
+    "id": "335912/US",
     "code": "335912",
     "name": "Primary battery manufacturing",
-    "id": "335912/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "335"
   },
   {
+    "id": "335920/US",
     "code": "335920",
     "name": "Communication and energy wire and cable manufacturing",
-    "id": "335920/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "335"
   },
   {
+    "id": "335930/US",
     "code": "335930",
     "name": "Wiring device manufacturing",
-    "id": "335930/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "335"
   },
   {
+    "id": "335991/US",
     "code": "335991",
     "name": "Carbon and graphite product manufacturing",
-    "id": "335991/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "335"
   },
   {
+    "id": "335999/US",
     "code": "335999",
     "name": "All other miscellaneous electrical equipment and component manufacturing",
-    "id": "335999/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "335"
   },
   {
+    "id": "336",
     "code": "336",
     "name": "Motor Vehicles and Other Transportation Equipment",
-    "id": "336",
     "model": "Detail"
   },
   {
+    "id": "336111/US",
     "code": "336111",
     "name": "Automobile manufacturing",
-    "id": "336111/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "336"
   },
   {
+    "id": "336112/US",
     "code": "336112",
     "name": "Light truck and utility vehicle manufacturing",
-    "id": "336112/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "336"
   },
   {
+    "id": "336120/US",
     "code": "336120",
     "name": "Heavy duty truck manufacturing",
-    "id": "336120/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "336"
   },
   {
+    "id": "336211/US",
     "code": "336211",
     "name": "Motor vehicle body manufacturing",
-    "id": "336211/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "336"
   },
   {
+    "id": "336212/US",
     "code": "336212",
     "name": "Truck trailer manufacturing",
-    "id": "336212/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "336"
   },
   {
+    "id": "336213/US",
     "code": "336213",
     "name": "Motor home manufacturing",
-    "id": "336213/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "336"
   },
   {
+    "id": "336214/US",
     "code": "336214",
     "name": "Travel trailer and camper manufacturing",
-    "id": "336214/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "336"
   },
   {
+    "id": "336310/US",
     "code": "336310",
     "name": "Motor vehicle gasoline engine and engine parts manufacturing",
-    "id": "336310/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "336"
   },
   {
+    "id": "336320/US",
     "code": "336320",
     "name": "Motor vehicle electrical and electronic equipment manufacturing",
-    "id": "336320/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "336"
   },
   {
+    "id": "336350/US",
     "code": "336350",
     "name": "Motor vehicle transmission and power train parts manufacturing",
-    "id": "336350/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "336"
   },
   {
+    "id": "336360/US",
     "code": "336360",
     "name": "Motor vehicle seating and interior trim manufacturing",
-    "id": "336360/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "336"
   },
   {
+    "id": "336370/US",
     "code": "336370",
     "name": "Motor vehicle metal stamping",
-    "id": "336370/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "336"
   },
   {
+    "id": "336390/US",
     "code": "336390",
     "name": "Other motor vehicle parts manufacturing",
-    "id": "336390/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "336"
   },
   {
+    "id": "3363A0/US",
     "code": "3363A0",
     "name": "Motor vehicle steering, suspension component (except spring), and brake systems manufacturing",
-    "id": "3363A0/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "336"
   },
   {
+    "id": "336411/US",
     "code": "336411",
     "name": "Aircraft manufacturing",
-    "id": "336411/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "336"
   },
   {
+    "id": "336412/US",
     "code": "336412",
     "name": "Aircraft engine and engine parts manufacturing",
-    "id": "336412/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "336"
   },
   {
+    "id": "336413/US",
     "code": "336413",
     "name": "Other aircraft parts and auxiliary equipment manufacturing",
-    "id": "336413/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "336"
   },
   {
+    "id": "336414/US",
     "code": "336414",
     "name": "Guided missile and space vehicle manufacturing",
-    "id": "336414/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "336"
   },
   {
+    "id": "33641A/US",
     "code": "33641A",
     "name": "Propulsion units and parts for space vehicles and guided missiles",
-    "id": "33641A/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "336"
   },
   {
+    "id": "336500/US",
     "code": "336500",
     "name": "Railroad rolling stock manufacturing",
-    "id": "336500/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "336"
   },
   {
+    "id": "336611/US",
     "code": "336611",
     "name": "Ship building and repairing",
-    "id": "336611/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "336"
   },
   {
+    "id": "336612/US",
     "code": "336612",
     "name": "Boat building",
-    "id": "336612/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "336"
   },
   {
+    "id": "336991/US",
     "code": "336991",
     "name": "Motorcycle, bicycle, and parts manufacturing",
-    "id": "336991/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "336"
   },
   {
+    "id": "336992/US",
     "code": "336992",
     "name": "Military armored vehicle, tank, and tank component manufacturing",
-    "id": "336992/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "336"
   },
   {
+    "id": "336999/US",
     "code": "336999",
     "name": "All other transportation equipment manufacturing",
-    "id": "336999/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "336"
   },
   {
+    "id": "337-339",
     "code": "337-339",
     "name": "Furniture and Other Miscellaneous Manufacturing",
-    "id": "337-339",
     "model": "Detail"
   },
   {
+    "id": "337110/US",
     "code": "337110",
     "name": "Wood kitchen cabinet and countertop manufacturing",
-    "id": "337110/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "337-339"
   },
   {
+    "id": "337121/US",
     "code": "337121",
     "name": "Upholstered household furniture manufacturing",
-    "id": "337121/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "337-339"
   },
   {
+    "id": "337122/US",
     "code": "337122",
     "name": "Nonupholstered wood household furniture manufacturing",
-    "id": "337122/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "337-339"
   },
   {
+    "id": "337127/US",
     "code": "337127",
     "name": "Institutional furniture manufacturing",
-    "id": "337127/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "337-339"
   },
   {
+    "id": "33712N/US",
     "code": "33712N",
     "name": "Other household nonupholstered furniture",
-    "id": "33712N/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "337-339"
   },
   {
+    "id": "337215/US",
     "code": "337215",
     "name": "Showcase, partition, shelving, and locker manufacturing",
-    "id": "337215/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "337-339"
   },
   {
+    "id": "33721A/US",
     "code": "33721A",
     "name": "Office furniture and custom architectural woodwork and millwork manufacturing",
-    "id": "33721A/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "337-339"
   },
   {
+    "id": "337900/US",
     "code": "337900",
     "name": "Other furniture related product manufacturing",
-    "id": "337900/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "337-339"
   },
   {
+    "id": "339112/US",
     "code": "339112",
     "name": "Surgical and medical instrument manufacturing",
-    "id": "339112/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "337-339"
   },
   {
+    "id": "339113/US",
     "code": "339113",
     "name": "Surgical appliance and supplies manufacturing",
-    "id": "339113/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "337-339"
   },
   {
+    "id": "339114/US",
     "code": "339114",
     "name": "Dental equipment and supplies manufacturing",
-    "id": "339114/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "337-339"
   },
   {
+    "id": "339115/US",
     "code": "339115",
     "name": "Ophthalmic goods manufacturing",
-    "id": "339115/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "337-339"
   },
   {
+    "id": "339116/US",
     "code": "339116",
     "name": "Dental laboratories",
-    "id": "339116/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "337-339"
   },
   {
+    "id": "339910/US",
     "code": "339910",
     "name": "Jewelry and silverware manufacturing",
-    "id": "339910/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "337-339"
   },
   {
+    "id": "339920/US",
     "code": "339920",
     "name": "Sporting and athletic goods manufacturing",
-    "id": "339920/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "337-339"
   },
   {
+    "id": "339930/US",
     "code": "339930",
     "name": "Doll, toy, and game manufacturing",
-    "id": "339930/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "337-339"
   },
   {
+    "id": "339940/US",
     "code": "339940",
     "name": "Office supplies (except paper) manufacturing",
-    "id": "339940/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "337-339"
   },
   {
+    "id": "339950/US",
     "code": "339950",
     "name": "Sign manufacturing",
-    "id": "339950/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "337-339"
   },
   {
+    "id": "339990/US",
     "code": "339990",
     "name": "All other miscellaneous manufacturing",
-    "id": "339990/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "337-339"
   },
   {
+    "id": "42-44",
     "code": "42-44",
     "name": "Wholesale and Retail",
-    "id": "42-44",
     "model": "Detail"
   },
   {
+    "id": "4200ID/US",
     "code": "4200ID",
     "name": "Customs duties",
-    "id": "4200ID/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "42-44"
   },
   {
+    "id": "423100/US",
     "code": "423100",
     "name": "Motor vehicle and motor vehicle parts and supplies",
-    "id": "423100/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "42-44"
   },
   {
+    "id": "423400/US",
     "code": "423400",
     "name": "Professional and commercial equipment and supplies",
-    "id": "423400/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "42-44"
   },
   {
+    "id": "423600/US",
     "code": "423600",
     "name": "Household appliances and electrical and electronic goods",
-    "id": "423600/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "42-44"
   },
   {
+    "id": "423800/US",
     "code": "423800",
     "name": "Machinery, equipment, and supplies",
-    "id": "423800/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "42-44"
   },
   {
+    "id": "423A00/US",
     "code": "423A00",
     "name": "Other durable goods merchant wholesalers",
-    "id": "423A00/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "42-44"
   },
   {
+    "id": "424200/US",
     "code": "424200",
     "name": "Drugs and druggists' sundries",
-    "id": "424200/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "42-44"
   },
   {
+    "id": "424400/US",
     "code": "424400",
     "name": "Grocery and related product wholesalers",
-    "id": "424400/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "42-44"
   },
   {
+    "id": "424700/US",
     "code": "424700",
     "name": "Petroleum and petroleum products",
-    "id": "424700/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "42-44"
   },
   {
+    "id": "424A00/US",
     "code": "424A00",
     "name": "Other nondurable goods merchant wholesalers",
-    "id": "424A00/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "42-44"
   },
   {
+    "id": "425000/US",
     "code": "425000",
     "name": "Wholesale electronic markets and agents and brokers",
-    "id": "425000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "42-44"
   },
   {
+    "id": "441000/US",
     "code": "441000",
     "name": "Motor vehicle and parts dealers",
-    "id": "441000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "42-44"
   },
   {
+    "id": "444000/US",
     "code": "444000",
     "name": "Building material and garden equipment and supplies dealers",
-    "id": "444000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "42-44"
   },
   {
+    "id": "445000/US",
     "code": "445000",
     "name": "Food and beverage stores",
-    "id": "445000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "42-44"
   },
   {
+    "id": "446000/US",
     "code": "446000",
     "name": "Health and personal care stores",
-    "id": "446000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "42-44"
   },
   {
+    "id": "447000/US",
     "code": "447000",
     "name": "Gasoline stations",
-    "id": "447000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "42-44"
   },
   {
+    "id": "448000/US",
     "code": "448000",
     "name": "Clothing and clothing accessories stores",
-    "id": "448000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "42-44"
   },
   {
+    "id": "452000/US",
     "code": "452000",
     "name": "General merchandise stores",
-    "id": "452000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "42-44"
   },
   {
+    "id": "454000/US",
     "code": "454000",
     "name": "Nonstore retailers",
-    "id": "454000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "42-44"
   },
   {
+    "id": "48",
     "code": "48",
     "name": "Transport",
-    "id": "48",
     "model": "Detail"
   },
   {
+    "id": "481000/US",
     "code": "481000",
     "name": "Air transportation",
-    "id": "481000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "48"
   },
   {
+    "id": "482000/US",
     "code": "482000",
     "name": "Rail transportation",
-    "id": "482000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "48"
   },
   {
+    "id": "483000/US",
     "code": "483000",
     "name": "Water transportation",
-    "id": "483000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "48"
   },
   {
+    "id": "484000/US",
     "code": "484000",
     "name": "Truck transportation",
-    "id": "484000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "48"
   },
   {
+    "id": "485000/US",
     "code": "485000",
     "name": "Transit and ground passenger transportation",
-    "id": "485000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "48"
   },
   {
+    "id": "486000/US",
     "code": "486000",
     "name": "Pipeline transportation",
-    "id": "486000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "48"
   },
   {
+    "id": "48A000/US",
     "code": "48A000",
     "name": "Scenic and sightseeing transportation and support activities",
-    "id": "48A000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "48"
   },
   {
+    "id": "491000/US",
     "code": "491000",
     "name": "Postal service",
-    "id": "491000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "G"
   },
   {
+    "id": "492000/US",
     "code": "492000",
     "name": "Couriers and messengers",
-    "id": "492000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "48"
   },
   {
+    "id": "493000/US",
     "code": "493000",
     "name": "Warehousing and storage",
-    "id": "493000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "48"
   },
   {
+    "id": "4B0000/US",
     "code": "4B0000",
     "name": "All other retail",
-    "id": "4B0000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "42-44"
   },
   {
+    "id": "5",
     "code": "5",
     "name": "Information, Finance, and Other Professional Services",
-    "id": "5",
     "model": "Detail"
   },
   {
+    "id": "511110/US",
     "code": "511110",
     "name": "Newspaper publishers",
-    "id": "511110/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "511120/US",
     "code": "511120",
     "name": "Periodical Publishers",
-    "id": "511120/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "511130/US",
     "code": "511130",
     "name": "Book publishers",
-    "id": "511130/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "5111A0/US",
     "code": "5111A0",
     "name": "Directory, mailing list, and other publishers",
-    "id": "5111A0/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "511200/US",
     "code": "511200",
     "name": "Software publishers",
-    "id": "511200/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "512100/US",
     "code": "512100",
     "name": "Motion picture and video industries",
-    "id": "512100/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "512200/US",
     "code": "512200",
     "name": "Sound recording industries",
-    "id": "512200/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "515100/US",
     "code": "515100",
     "name": "Radio and television broadcasting",
-    "id": "515100/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "515200/US",
     "code": "515200",
     "name": "Cable and other subscription programming",
-    "id": "515200/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "517110/US",
     "code": "517110",
     "name": "Wired telecommunications carriers",
-    "id": "517110/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "517210/US",
     "code": "517210",
     "name": "Wireless telecommunications carriers (except satellite)",
-    "id": "517210/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "517A00/US",
     "code": "517A00",
     "name": "Satellite, telecommunications resellers, and all other telecommunications",
-    "id": "517A00/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "518200/US",
     "code": "518200",
     "name": "Data processing, hosting, and related services",
-    "id": "518200/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "519130/US",
     "code": "519130",
     "name": "Internet publishing and broadcasting and Web search portals",
-    "id": "519130/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "5191A0/US",
     "code": "5191A0",
     "name": "News syndicates, libraries, archives and all other information services",
-    "id": "5191A0/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "522A00/US",
     "code": "522A00",
     "name": "Nondepository credit intermediation and related activities",
-    "id": "522A00/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "523900/US",
     "code": "523900",
     "name": "Other financial investment activities",
-    "id": "523900/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "523A00/US",
     "code": "523A00",
     "name": "Securities and commodity contracts intermediation and brokerage",
-    "id": "523A00/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "524113/US",
     "code": "524113",
     "name": "Direct life insurance carriers",
-    "id": "524113/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "5241XX/US",
     "code": "5241XX",
     "name": "Insurance carriers, except direct life",
-    "id": "5241XX/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "524200/US",
     "code": "524200",
     "name": "Insurance agencies, brokerages, and related activities",
-    "id": "524200/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "525000/US",
     "code": "525000",
     "name": "Funds, trusts, and other financial vehicles",
-    "id": "525000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "52A000/US",
     "code": "52A000",
     "name": "Monetary authorities and depository credit intermediation",
-    "id": "52A000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "531HSO/US",
     "code": "531HSO",
     "name": "Owner-occupied housing",
-    "id": "531HSO/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "531HST/US",
     "code": "531HST",
     "name": "Tenant-occupied housing",
-    "id": "531HST/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "531ORE/US",
     "code": "531ORE",
     "name": "Other real estate",
-    "id": "531ORE/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "532100/US",
     "code": "532100",
     "name": "Automotive equipment rental and leasing",
-    "id": "532100/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "532400/US",
     "code": "532400",
     "name": "Commercial and industrial machinery and equipment rental and leasing",
-    "id": "532400/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "532A00/US",
     "code": "532A00",
     "name": "General and consumer goods rental",
-    "id": "532A00/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "533000/US",
     "code": "533000",
     "name": "Lessors of nonfinancial intangible assets",
-    "id": "533000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "541100/US",
     "code": "541100",
     "name": "Legal services",
-    "id": "541100/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "541200/US",
     "code": "541200",
     "name": "Accounting, tax preparation, bookkeeping, and payroll services",
-    "id": "541200/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "541300/US",
     "code": "541300",
     "name": "Architectural, engineering, and related services",
-    "id": "541300/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "541400/US",
     "code": "541400",
     "name": "Specialized design services",
-    "id": "541400/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "541511/US",
     "code": "541511",
     "name": "Custom computer programming services",
-    "id": "541511/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "541512/US",
     "code": "541512",
     "name": "Computer systems design services",
-    "id": "541512/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "54151A/US",
     "code": "54151A",
     "name": "Other computer related services, including facilities management",
-    "id": "54151A/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "541610/US",
     "code": "541610",
     "name": "Management consulting services",
-    "id": "541610/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "5416A0/US",
     "code": "5416A0",
     "name": "Environmental and other technical consulting services",
-    "id": "5416A0/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "541700/US",
     "code": "541700",
     "name": "Scientific research and development services",
-    "id": "541700/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "541800/US",
     "code": "541800",
     "name": "Advertising, public relations, and related services",
-    "id": "541800/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "541920/US",
     "code": "541920",
     "name": "Photographic services",
-    "id": "541920/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "541940/US",
     "code": "541940",
     "name": "Veterinary services",
-    "id": "541940/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "5419A0/US",
     "code": "5419A0",
     "name": "All other miscellaneous professional, scientific, and technical services",
-    "id": "5419A0/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "550000/US",
     "code": "550000",
     "name": "Management of companies and enterprises",
-    "id": "550000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "561100/US",
     "code": "561100",
     "name": "Office administrative services",
-    "id": "561100/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "561200/US",
     "code": "561200",
     "name": "Facilities support services",
-    "id": "561200/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "561300/US",
     "code": "561300",
     "name": "Employment services",
-    "id": "561300/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "561400/US",
     "code": "561400",
     "name": "Business support services",
-    "id": "561400/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "561500/US",
     "code": "561500",
     "name": "Travel arrangement and reservation services",
-    "id": "561500/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "561600/US",
     "code": "561600",
     "name": "Investigation and security services",
-    "id": "561600/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "561700/US",
     "code": "561700",
     "name": "Services to buildings and dwellings",
-    "id": "561700/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "561900/US",
     "code": "561900",
     "name": "Other support services",
-    "id": "561900/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "5"
   },
   {
+    "id": "562",
     "code": "562",
     "name": "Waste",
-    "id": "562",
     "model": "Detail"
   },
   {
+    "id": "562000/US",
     "code": "562000",
     "name": "Waste management and remediation services",
-    "id": "562000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "562"
   },
   {
+    "id": "6",
     "code": "6",
     "name": "Education and Healthcare",
-    "id": "6",
     "model": "Detail"
   },
   {
+    "id": "611100/US",
     "code": "611100",
     "name": "Elementary and secondary schools",
-    "id": "611100/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "6"
   },
   {
+    "id": "611A00/US",
     "code": "611A00",
     "name": "Junior colleges, colleges, universities, and professional schools",
-    "id": "611A00/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "6"
   },
   {
+    "id": "611B00/US",
     "code": "611B00",
     "name": "Other educational services",
-    "id": "611B00/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "6"
   },
   {
+    "id": "621100/US",
     "code": "621100",
     "name": "Offices of physicians",
-    "id": "621100/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "6"
   },
   {
+    "id": "621200/US",
     "code": "621200",
     "name": "Offices of dentists",
-    "id": "621200/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "6"
   },
   {
+    "id": "621300/US",
     "code": "621300",
     "name": "Offices of other health practitioners",
-    "id": "621300/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "6"
   },
   {
+    "id": "621400/US",
     "code": "621400",
     "name": "Outpatient care centers",
-    "id": "621400/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "6"
   },
   {
+    "id": "621500/US",
     "code": "621500",
     "name": "Medical and diagnostic laboratories",
-    "id": "621500/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "6"
   },
   {
+    "id": "621600/US",
     "code": "621600",
     "name": "Home health care services",
-    "id": "621600/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "6"
   },
   {
+    "id": "621900/US",
     "code": "621900",
     "name": "Other ambulatory health care services",
-    "id": "621900/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "6"
   },
   {
+    "id": "622000/US",
     "code": "622000",
     "name": "Hospitals",
-    "id": "622000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "6"
   },
   {
+    "id": "623A00/US",
     "code": "623A00",
     "name": "Nursing and community care facilities",
-    "id": "623A00/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "6"
   },
   {
+    "id": "623B00/US",
     "code": "623B00",
     "name": "Residential mental health, substance abuse, and other residential care facilities",
-    "id": "623B00/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "6"
   },
   {
+    "id": "624100/US",
     "code": "624100",
     "name": "Individual and family services",
-    "id": "624100/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "6"
   },
   {
+    "id": "624400/US",
     "code": "624400",
     "name": "Child day care services",
-    "id": "624400/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "6"
   },
   {
+    "id": "624A00/US",
     "code": "624A00",
     "name": "Community food, housing, and other relief services, including vocational rehabilitation services",
-    "id": "624A00/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "6"
   },
   {
+    "id": "7",
     "code": "7",
     "name": "Entertainment, Recreating, and Food Service",
-    "id": "7",
     "model": "Detail"
   },
   {
+    "id": "711100/US",
     "code": "711100",
     "name": "Performing arts companies",
-    "id": "711100/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "7"
   },
   {
+    "id": "711200/US",
     "code": "711200",
     "name": "Spectator sports",
-    "id": "711200/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "7"
   },
   {
+    "id": "711500/US",
     "code": "711500",
     "name": "Independent artists, writers, and performers",
-    "id": "711500/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "7"
   },
   {
+    "id": "711A00/US",
     "code": "711A00",
     "name": "Promoters of performing arts and sports and agents for public figures",
-    "id": "711A00/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "7"
   },
   {
+    "id": "712000/US",
     "code": "712000",
     "name": "Museums, historical sites, zoos, and parks",
-    "id": "712000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "7"
   },
   {
+    "id": "713100/US",
     "code": "713100",
     "name": "Amusement parks and arcades",
-    "id": "713100/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "7"
   },
   {
+    "id": "713200/US",
     "code": "713200",
     "name": "Gambling industries (except casino hotels)",
-    "id": "713200/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "7"
   },
   {
+    "id": "713900/US",
     "code": "713900",
     "name": "Other amusement and recreation industries",
-    "id": "713900/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "7"
   },
   {
+    "id": "721000/US",
     "code": "721000",
     "name": "Accommodation",
-    "id": "721000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "7"
   },
   {
+    "id": "722110/US",
     "code": "722110",
     "name": "Full-service restaurants",
-    "id": "722110/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "7"
   },
   {
+    "id": "722211/US",
     "code": "722211",
     "name": "Limited-service restaurants",
-    "id": "722211/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "7"
   },
   {
+    "id": "722A00/US",
     "code": "722A00",
     "name": "All other food and drinking places",
-    "id": "722A00/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "7"
   },
   {
+    "id": "8",
     "code": "8",
     "name": "Other Services",
-    "id": "8",
     "model": "Detail"
   },
   {
+    "id": "811100/US",
     "code": "811100",
     "name": "Automotive repair and maintenance (including car washes)",
-    "id": "811100/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "8"
   },
   {
+    "id": "811200/US",
     "code": "811200",
     "name": "Electronic and precision equipment repair and maintenance",
-    "id": "811200/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "8"
   },
   {
+    "id": "811300/US",
     "code": "811300",
     "name": "Commercial and industrial machinery and equipment repair and maintenance",
-    "id": "811300/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "8"
   },
   {
+    "id": "811400/US",
     "code": "811400",
     "name": "Personal and household goods repair and maintenance",
-    "id": "811400/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "8"
   },
   {
+    "id": "812100/US",
     "code": "812100",
     "name": "Personal care services",
-    "id": "812100/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "8"
   },
   {
+    "id": "812200/US",
     "code": "812200",
     "name": "Death care services",
-    "id": "812200/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "8"
   },
   {
+    "id": "812300/US",
     "code": "812300",
     "name": "Dry-cleaning and laundry services",
-    "id": "812300/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "8"
   },
   {
+    "id": "812900/US",
     "code": "812900",
     "name": "Other personal services",
-    "id": "812900/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "8"
   },
   {
+    "id": "813100/US",
     "code": "813100",
     "name": "Religious organizations",
-    "id": "813100/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "8"
   },
   {
+    "id": "813A00/US",
     "code": "813A00",
     "name": "Grantmaking, giving, and social advocacy organizations",
-    "id": "813A00/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "8"
   },
   {
+    "id": "813B00/US",
     "code": "813B00",
     "name": "Civic, social, professional, and similar organizations",
-    "id": "813B00/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "8"
   },
   {
+    "id": "814000/US",
     "code": "814000",
     "name": "Private households",
-    "id": "814000/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "8"
   },
   {
+    "id": "G",
     "code": "G",
     "name": "Government",
-    "id": "G",
     "model": "Detail"
   },
   {
+    "id": "GSLGE/US",
     "code": "GSLGE",
     "name": "State and local government (educational services)",
-    "id": "GSLGE/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "G"
   },
   {
+    "id": "GSLGH/US",
     "code": "GSLGH",
     "name": "State and local government (hospitals and health services)",
-    "id": "GSLGH/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "G"
   },
   {
+    "id": "GSLGO/US",
     "code": "GSLGO",
     "name": "State and local government (other services)",
-    "id": "GSLGO/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "G"
   },
   {
+    "id": "S00101/US",
     "code": "S00101",
     "name": "Federal electric utilities",
-    "id": "S00101/US",
     "model": "Detail"
   },
   {
+    "id": "S00102/US",
     "code": "S00102",
     "name": "Other federal government enterprises",
-    "id": "S00102/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "G"
   },
   {
+    "id": "S00201/US",
     "code": "S00201",
     "name": "State and local government passenger transit",
-    "id": "S00201/US",
     "model": "Detail"
   },
   {
+    "id": "S00202/US",
     "code": "S00202",
     "name": "State and local government electric utilities",
-    "id": "S00202/US",
     "model": "Detail"
   },
   {
+    "id": "S00203/US",
     "code": "S00203",
     "name": "Other state and local government enterprises",
-    "id": "S00203/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "G"
   },
   {
+    "id": "S00300/US",
     "code": "S00300",
     "name": "Noncomparable imports",
-    "id": "S00300/US",
     "model": "Detail"
   },
   {
+    "id": "S00401/US",
     "code": "S00401",
     "name": "Scrap",
-    "id": "S00401/US",
     "model": "Detail"
   },
   {
+    "id": "S00402/US",
     "code": "S00402",
     "name": "Used and secondhand goods",
-    "id": "S00402/US",
     "model": "Detail"
   },
   {
+    "id": "S00500/US",
     "code": "S00500",
     "name": "Federal general government (defense)",
-    "id": "S00500/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "G"
   },
   {
+    "id": "S00600/US",
     "code": "S00600",
     "name": "Federal general government (nondefense)",
-    "id": "S00600/US",
-    "model": "Detail"
+    "model": "Detail",
+    "parent_code": "G"
   },
   {
+    "id": "S00900/US",
     "code": "S00900",
     "name": "Rest of the world adjustment",
-    "id": "S00900/US",
     "model": "Detail"
   },
   {
+    "id": "111/112",
     "code": "111/112",
     "name": "Agriculture (Sector Snapshots)",
-    "id": "111/112",
     "model": "Detail"
   },
   {
+    "id": "211/32411",
     "code": "211/32411",
     "name": "Oil & Gas (Sector Snapshots)",
-    "id": "211/32411",
     "model": "Detail"
   },
   {
+    "id": "2121/2122",
     "code": "2121/2122",
     "name": "Mining (Sector Snapshots)",
-    "id": "2121/2122",
     "model": "Detail"
   },
   {
+    "id": "22111",
     "code": "22111",
     "name": "Utilities & Power Generation (Sector Snapshots)",
-    "id": "22111",
     "model": "Detail"
   },
   {
+    "id": "321/322",
     "code": "321/322",
     "name": "Paper & Wood Products (Sector Snapshots)",
-    "id": "321/322",
     "model": "Detail"
   },
   {
+    "id": "325",
     "code": "325",
     "name": "Chemical Manufacturing (Sector Snapshots)",
-    "id": "325",
     "model": "Detail"
   },
   {
+    "id": "3273",
     "code": "3273",
     "name": "Cement & Concrete (Sector Snapshots)",
-    "id": "3273",
     "model": "Detail"
   },
   {
+    "id": "3311/3312",
     "code": "3311/3312",
     "name": "Iron & Steel (Sector Snapshots)",
-    "id": "3311/3312",
     "model": "Detail"
   },
   {
+    "id": "3361/3362/3363",
     "code": "3361/3362/3363",
     "name": "Automotive Manufacturing (Sector Snapshots)",
-    "id": "3361/3362/3363",
     "model": "Detail"
   },
   {
+    "id": "33641",
     "code": "33641",
     "name": "Aerospace (Sector Snapshots)",
-    "id": "33641",
     "model": "Detail"
   }
 ]

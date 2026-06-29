@@ -136,6 +136,10 @@ export interface ImpactPerPurchaseSector {
   impactPerPurchase?: number;
   purchasedGroup: string;
   totalImpact?: number;
+  domesticPurchase?: number;
+  importedPurchase?: number;
+  domesticImpactPerPurchase?: number;
+  importedImpactPerPurchase?: number;
 }
 
 export interface SortedImpactPerPurchaseTopList {

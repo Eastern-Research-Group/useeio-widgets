@@ -6,6 +6,7 @@ import {
 import { SumSmartSectorTotalParts } from "../smartSectorChart/smartSector";
 import { WebModel, Sector } from "useeio";
 import { formatNumberGraph } from "../util";
+import { sanitizeExportFilename } from "../util/chartExportOverlay";
 import { chartTypography } from "../util/chartTypography";
 
 export async function calculate(
@@ -181,9 +182,9 @@ export async function calculate(
         height: 500,
         stacked: true,
         toolbar: {
-          show: true,
+          show: false,
           tools: {
-            download: true,
+            download: false,
             zoom: false,
             zoomin: false,
             zoomout: false,
@@ -192,13 +193,13 @@ export async function calculate(
           },
           export: {
             csv: {
-              filename: titleName.replace(",", "-"),
+              filename: sanitizeExportFilename(titleName),
             },
             svg: {
-              filename: titleName.replace(",", "-"),
+              filename: sanitizeExportFilename(titleName),
             },
             png: {
-              filename: titleName.replace(",", "-"),
+              filename: sanitizeExportFilename(titleName),
             },
           },
         },
@@ -287,8 +288,19 @@ export async function calculate(
       ],
       legend: {
         position: "bottom",
+        horizontalAlign: "center",
+        offsetY: 8,
         fontSize: chartTypography.axisLabel,
         fontWeight: 500,
+        itemMargin: {
+          horizontal: 10,
+          vertical: 4,
+        },
+      },
+      grid: {
+        padding: {
+          bottom: 8,
+        },
       },
       tooltip: {
         enabled: true,

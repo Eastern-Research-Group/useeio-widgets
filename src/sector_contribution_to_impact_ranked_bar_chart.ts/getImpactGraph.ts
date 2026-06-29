@@ -1,7 +1,27 @@
 import * as apex from "apexcharts";
-import { SortedImpactPerPurchaseTopList } from "../smartSectorChart/smartSector";
+import {
+  ImpactPerPurchaseSector,
+  SortedImpactPerPurchaseTopList,
+} from "../smartSectorChart/smartSector";
 import { formatNumberGraph } from "../util";
 import { chartTypography } from "../util/chartTypography";
+
+function hasPurchaseOriginSplit(
+  graphTitleName: string | undefined,
+  rows: ImpactPerPurchaseSector[],
+): boolean {
+  return (
+    graphTitleName === "sector purchases" &&
+    rows.length > 0 &&
+    rows.every(
+      (r) =>
+        r.domesticPurchase != null &&
+        r.importedPurchase != null &&
+        !Number.isNaN(r.domesticPurchase) &&
+        !Number.isNaN(r.importedPurchase),
+    )
+  );
+}
 
 //Total Impacts graph
 export async function apexGraph(
@@ -12,6 +32,8 @@ export async function apexGraph(
   let data: {
     purchase_commodity: string;
     totalImpact: number;
+    domesticPurchase?: number;
+    importedPurchase?: number;
   }[];
   const values = sortingImpactPerPurchaseWithTopList.find((t) => {
     if (t.sector_name === sectorName) {
@@ -23,8 +45,15 @@ export async function apexGraph(
     return {
       purchase_commodity: t.purchaseCommodity,
       totalImpact: t.totalImpact,
+      domesticPurchase: t.domesticPurchase,
+      importedPurchase: t.importedPurchase,
     };
   });
+
+  const stackOrigin = hasPurchaseOriginSplit(
+    graphTitleName,
+    values?.topFifteenTotalImpact ?? [],
+  );
 
   let list = data?.map((impact) => parseFloat(impact?.totalImpact.toString()));
   let highestNumber: number = Math.max(...list);
@@ -89,25 +118,41 @@ export async function apexGraph(
       break;
   }
 
-  const colors = data.map((t) => {
-    return t.purchase_commodity.includes("Direct") ? "#4CAF50" : "#2E93fA";
-  });
+  const colors = stackOrigin
+    ? ["#2E93fA", "#FF9800"]
+    : data.map((t) => {
+        return t.purchase_commodity.includes("Direct") ? "#4CAF50" : "#2E93fA";
+      });
 
   let totalSum: number = 0;
   values.topFifteenTotalImpact.forEach((t) => {
     totalSum += t.totalImpact;
   });
 
+  const series = stackOrigin
+    ? [
+        {
+          name: "Domestic",
+          data: data.map((t) => t.domesticPurchase ?? 0),
+        },
+        {
+          name: "Imported",
+          data: data.map((t) => t.importedPurchase ?? 0),
+        },
+      ]
+    : [
+        {
+          name: "Impact",
+          data: data.map((t) => t.totalImpact),
+        },
+      ];
+
   return {
-    series: [
-      {
-        name: "Impact",
-        data: data.map((t) => t.totalImpact),
-      },
-    ],
+    series,
     chart: {
       height: 500,
       type: "bar",
+      stacked: stackOrigin,
       toolbar: {
         show: true,
         tools: {
@@ -124,7 +169,7 @@ export async function apexGraph(
     plotOptions: {
       bar: {
         columnWidth: "55%",
-        distributed: true,
+        distributed: !stackOrigin,
       },
     },
     annotations: {
@@ -146,7 +191,8 @@ export async function apexGraph(
       enabled: false,
     },
     legend: {
-      show: false,
+      show: stackOrigin,
+      position: "top",
     },
     xaxis: {
       categories: sortedSectorCodesWithNamesWithArray,
@@ -179,18 +225,32 @@ export async function apexGraph(
     fill: {
       opacity: 1,
     },
-    tooltip: {
-      y: {
-        formatter: function (val) {
-          let value;
-          value =
-            "" +
-            parseFloat(formatNumberGraph(val)).toLocaleString() +
-            " " +
-            unitLabel;
-          return value;
+    tooltip: stackOrigin
+      ? {
+          shared: true,
+          intersect: false,
+          y: {
+            formatter: function (val: number) {
+              return (
+                parseFloat(formatNumberGraph(val)).toLocaleString() +
+                " " +
+                unitLabel
+              );
+            },
+          },
+        }
+      : {
+          y: {
+            formatter: function (val) {
+              let value;
+              value =
+                "" +
+                parseFloat(formatNumberGraph(val)).toLocaleString() +
+                " " +
+                unitLabel;
+              return value;
+            },
+          },
         },
-      },
-    },
   };
 }

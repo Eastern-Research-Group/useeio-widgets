@@ -1,8 +1,6 @@
 import * as ReactDOM from "react-dom";
 import { Sector, WebModel } from "useeio";
-import { TextField } from "@material-ui/core";
 import { SmartSectorEEIOImpactPurchasePerSector } from "./smart-sector-eeio-impact-per-purchase";
-import * as strings from "../util/strings";
 import { Widget } from "../widget";
 import {
   modelOfSmartSector,
@@ -19,13 +17,16 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormLabel from "@material-ui/core/FormLabel";
 import { SmartSectorChartConfigPie } from "../totalGhgEmissionPieChart.ts/pieListSearch";
 import { SmartSectorEEIOTotalImpactPerSector } from "./smart-sector-eeio-total-impacts";
-import { Menu, MenuItem, IconButton } from "@material-ui/core";
 import {
   fileNames,
   getLabel,
+  filterPickableSectors,
+  pickPreferredBootSector,
   sectorPurchasesPointOfConsumptionOnly,
 } from "../util/util";
 import DownloadCSVButton from "../util/downloadcsvfile";
+import { ChartExportMenu } from "../util/chartExportMenu";
+import { SectorSearchTable } from "../util/sectorSearchTable";
 export interface SmartSectorChartConfigNormal {
   model: WebModel;
   endpoint: "./api";
@@ -72,17 +73,20 @@ export class SectorListSearch extends Widget {
   }
 
   async update() {
-    this.sectors = await this._chartConfig.model.sectors();
+    this.sectors = filterPickableSectors(
+      await this._chartConfig.model.sectors(),
+    );
     this.modelSmartSectorApi.init();
+    const boot = pickPreferredBootSector(this.sectors) ?? this.sectors[0];
     this.smartSectorImpactPurchase.init(
       "Acidification-Potential",
-      this.sectors[0].name,
-      this.sectors[0].code,
+      boot.name,
+      boot.code,
     );
     this.smartSectorTotalImpact.init(
       "Acidification-Potential",
-      this.sectors[0].name,
-      this.sectors[0].code,
+      boot.name,
+      boot.code,
     );
     ReactDOM.render(
       <Component widget={this} />,
@@ -92,7 +96,6 @@ export class SectorListSearch extends Widget {
 }
 
 const Component = (props: { widget: SectorListSearch }) => {
-  const [searchTerm, setSearchTerm] = React.useState<string>("");
   const [value, setValue] = React.useState<string>("");
   const [sectorId, setSectorId] = React.useState<string>("");
   const [title, setTitle] = React.useState<string>("");
@@ -112,29 +115,19 @@ const Component = (props: { widget: SectorListSearch }) => {
   }, [graph]);
 
   React.useEffect(() => {
-    setTitle(sectors[0].name + " (" + sectors[0].code + ")");
-    setValue(sectors[0].name);
-    setSectorId(sectors[0].id);
+    const list = props.widget.sectors;
+    const boot = pickPreferredBootSector(list) ?? list[0];
+    setTitle(boot.name + " (" + boot.code + ")");
+    setValue(boot.name);
+    setSectorId(boot.id);
   }, []);
 
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-  const open = Boolean(anchorEl);
-
-  const handleMenuClick = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleMenuClose = (type?: string) => {
-    let file = null;
-    if (["png", "svg", "csv"].includes(type)) {
-      file = type;
-    }
+  const handleChartExport = (type: "png" | "svg" | "csv") => {
     if (changePrespective === "impact_per_purchase") {
-      props.widget.smartSectorImpactPurchase.addExportEventListeners(file);
+      props.widget.smartSectorImpactPurchase.addExportEventListeners(type);
     } else {
-      props.widget.smartSectorTotalImpact.addExportEventListeners(file);
+      props.widget.smartSectorTotalImpact.addExportEventListeners(type);
     }
-    setAnchorEl(null);
   };
 
   const handleGraphChange = (event: any) => {
@@ -166,22 +159,12 @@ const Component = (props: { widget: SectorListSearch }) => {
     setGraph(props.widget.smartSectorImpactPurchase.getGraph());
   }, []);
 
-  let sectors = props.widget.sectors;
-
-  if (searchTerm) {
-    sectors = sectors.filter((s) => {
-      return (
-        strings.search(s.name, searchTerm) >= 0 ||
-        strings.search(s.code, searchTerm) >= 0
-      );
-    });
-  }
-
   const handleState = (e: string, c: string) => {
     setTitle(e + " (" + c + ")");
-    setSearchTerm("");
     setValue(e);
-    setSectorId(sectors.filter((t) => t.code === c)?.[0].id);
+    setSectorId(
+      props.widget.sectors.find((t) => t.code === c)?.id ?? "",
+    );
 
     if (changePrespective === "impact_per_purchase") {
       props.widget.smartSectorImpactPurchase.updateGraph(e, c);
@@ -190,39 +173,10 @@ const Component = (props: { widget: SectorListSearch }) => {
     }
   };
 
-  // create the sector ranking, if there is a result
-  const ranking: [Sector][] = sectors.map((sector) => {
-    return [sector];
-  });
-
-  const rows: JSX.Element[] = ranking.map(([sector], i) => (
-    <Row
-      key={sector.code}
-      sector={sector}
-      widget={props.widget}
-      index={i}
-      handleState={handleState}
-    />
-  ));
-
-  const onSearch = (value: string) => {
-    if (!value) {
-      setSearchTerm("");
-    }
-    const term = value.trimStart().toLowerCase();
-    setSearchTerm(term.length === 0 ? "" : term);
-  };
-
   const useStyles = makeStyles((theme) => ({
     margin: {
       margin: theme.spacing(1),
       minWidth: 150,
-    },
-    selector: {
-      width: "auto",
-      height: "200px",
-      border: "1px solid black",
-      overflowY: "scroll",
     },
     tagCcontainer: {
       display: "flex",
@@ -365,43 +319,7 @@ const Component = (props: { widget: SectorListSearch }) => {
               <div>From {getLabel(graph)}</div>
             </div>
           )}
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "flex-end",
-              width: "100%",
-            }}
-          >
-            {/* Menu Icon Button */}
-            <IconButton onClick={handleMenuClick}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path fill="none" d="M0 0h24v24H0V0z"></path>
-                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
-              </svg>
-            </IconButton>
-
-            {/* Dropdown Menu */}
-            <Menu
-              anchorEl={anchorEl}
-              open={open}
-              onClose={() => handleMenuClose()}
-            >
-              <MenuItem onClick={() => handleMenuClose("svg")}>
-                Download SVG
-              </MenuItem>
-              <MenuItem onClick={() => handleMenuClose("png")}>
-                Download PNG
-              </MenuItem>
-              <MenuItem onClick={() => handleMenuClose("csv")}>
-                Download CSV
-              </MenuItem>
-            </Menu>
-          </div>
+          <ChartExportMenu onExport={handleChartExport} />
           <div
             style={{
               display: "grid",
@@ -433,41 +351,25 @@ const Component = (props: { widget: SectorListSearch }) => {
 
       <div className={classes.tagCcontainer}>
         <div className={classes.left}>
-          <FormControl className={classes.margin}>
-            <TextField
-              value={searchTerm}
-              label="Search Sector"
-              variant="outlined"
-              size="small"
-              onChange={(e) => onSearch(e.target.value)}
-            />
-            {searchTerm != null ? (
-              <div className={classes.selector} id="div1">
-                <table id="sector-list-table">
-                  <thead>
-                    <tr>
-                      <th className={`indicator`}>
-                        BEA/NAICS
-                        <br />
-                        Code
-                      </th>
-                      <th className={`indicator`}>Sector Name</th>
-                    </tr>
-                  </thead>
-                  <tbody id="sectorListSearch" className="sector-list-body">
-                    {rows}
-                  </tbody>
-                </table>
-              </div>
-            ) : null}
-          </FormControl>
+          <SectorSearchTable
+            sectors={props.widget.sectors}
+            onPick={(sector) => handleState(sector.name, sector.code)}
+          />
         </div>
 
         <div className={classes.right}>
           <div className={classes.item}>
             <FormControl className={classes.margin}>
               <InputLabel id="demo-controlled-open-select-label">
-                Select perspective:
+                Select perspective:{" "}
+                <a
+                  href="./glossary.html#perspectives-help"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ fontSize: "0.75rem", fontWeight: 400 }}
+                >
+                  What is this?
+                </a>
               </InputLabel>
               <Select
                 native
@@ -483,9 +385,9 @@ const Component = (props: { widget: SectorListSearch }) => {
                   name: "perspective",
                 }}
               >
-                <option value="final">Point of Consumption</option>
+                <option value="final">Point of consumption</option>
                 {!sectorPurchasesPointOfConsumptionOnly(graph) ? (
-                  <option value="direct">Supply Chain</option>
+                  <option value="direct">Supply chain</option>
                 ) : null}
               </Select>
             </FormControl>
@@ -528,12 +430,12 @@ const Component = (props: { widget: SectorListSearch }) => {
                 <FormControlLabel
                   value="total_impact"
                   control={<Radio color="default" size="small" />}
-                  label="Total Impacts"
+                  label="Total impacts"
                 />
                 <FormControlLabel
                   value="impact_per_purchase"
                   control={<Radio color="default" size="small" />}
-                  label="Impact Intensity"
+                  label="Impact intensity"
                 />
               </RadioGroup>
             </FormControl>
@@ -549,30 +451,27 @@ const Component = (props: { widget: SectorListSearch }) => {
             />{" "}
           </div>
 
-          <div
-            className={classes.item}
-            style={{
-              overflowWrap: "break-word",
-              whiteSpace: "normal",
-              wordWrap: "break-word",
-              textAlign: "left",
-              width: "200px",
-            }}
-          >
-            See more info about the{" "}
-            <a href="./sector-info-table.html" target="_blank">
-              sectors BEA/NAICS Codes
-            </a>
-            . Open the{" "}
-            <a href="./sector-dashboard.html" target="_blank">
-              multi-indicator sector dashboard
-            </a>{" "}
-            for several indicators on one page.
-            .{" "}
-            <a href="./glossary.html" target="_blank">
-              Glossary
-            </a>
-            .
+          <div className={`${classes.item} smart-sector-resource-links`}>
+            <span className="smart-sector-resource-intro">
+              See more info about the{" "}
+              <a href="./sector-info-table.html" target="_blank">
+                sectors BEA/NAICS Codes
+              </a>
+              .
+            </span>
+            <span className="smart-sector-resource-line">
+              Open the{" "}
+              <a href="./sector-dashboard.html" target="_blank">
+                multi-indicator sector dashboard
+              </a>{" "}
+              for several indicators on one page.
+            </span>
+            <span className="smart-sector-resource-line">
+              <a href="./glossary.html" target="_blank">
+                Glossary
+              </a>
+              .
+            </span>
           </div>
         </div>
       </div>
@@ -580,46 +479,3 @@ const Component = (props: { widget: SectorListSearch }) => {
   );
 };
 
-export type RowProps = {
-  sector: Sector;
-  widget: SectorListSearch;
-  index: number;
-  handleState: any;
-};
-
-const Row = (props: RowProps) => {
-  const sector = props.sector;
-
-  const useStyles = makeStyles({
-    td: {
-      borderTop: "lightgray solid 1px",
-      padding: "5px 0px",
-      whiteSpace: "nowrap",
-      fontSize: 12,
-    },
-  });
-  const classes = useStyles();
-
-  return (
-    <tr>
-      <td key={props.sector.code} className={classes.td}>
-        <a
-          style={{ cursor: "pointer" }}
-          title={sector.code}
-          onClick={() => props.handleState(sector.name, sector.code)}
-        >
-          {sector.code}
-        </a>
-      </td>
-      <td className={classes.td}>
-        <a
-          style={{ cursor: "pointer" }}
-          title={sector.name}
-          onClick={() => props.handleState(sector.name, sector.code)}
-        >
-          {strings.cut(sector.name, 80)}
-        </a>
-      </td>
-    </tr>
-  );
-};

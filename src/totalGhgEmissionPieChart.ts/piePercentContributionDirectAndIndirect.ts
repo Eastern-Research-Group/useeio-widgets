@@ -16,6 +16,10 @@ import {
   ContributionListForSectorDirectOrIndirect,
 } from "../smartSectorChart/smartSector";
 import { apexGraph } from "./getGraphDirectorIndirect";
+import {
+  exportSmindexRankedPieChart,
+  preparePieChartOptionsForDisplay,
+} from "../util/chartExportOverlay";
 import * as apex from "apexcharts";
 
 export interface SmartSectorChartConfig {
@@ -34,7 +38,7 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
   sectorsListlowerCase: string[];
   graphName: string = "";
   perspective: string;
-  sectorCode: string = "1111A0";
+  sectorCode: string = "";
   options: apex.ApexOptions;
   sector_name: string;
 
@@ -49,11 +53,16 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
 
   async update() {}
 
-  async init(graphName?: string, sectorName?: string) {
+  async init(graphName?: string, sectorName?: string, sectorCode?: string) {
     this.graphName = graphName;
     this.perspective = "final";
     this.sectorsList = await this._chartConfig.model.sectors();
     this.sector_name = sectorName;
+    if (sectorCode) {
+      this.sectorCode = sectorCode;
+    } else {
+      this.syncSectorCodeFromName(sectorName);
+    }
     const sectorMappingList: SectorMapping[] =
       await this.modelSmartSectorApi.sectorMapping();
     this.uniqueSortedMappingGroupNoDuplicates =
@@ -86,6 +95,7 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
       this.perspective = perspective;
       this.graphName = graphName;
       this.sector_name = sectorName;
+      this.syncSectorCodeFromName(sectorName);
       this.percentContributionList =
         await this.modelSmartSectorApi.percentContribution(
           this.perspective + "/" + graphName,
@@ -121,6 +131,7 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
 
     this.sectorsList = await this._chartConfig.model.sectors();
     this.sector_name = sectorName;
+    this.syncSectorCodeFromName(sectorName);
 
     const titleNameWithNoSpace = graphName.replace(/-+/g, " ").trim();
 
@@ -148,6 +159,16 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
 
   getGraph(): string {
     return this.graphName;
+  }
+
+  private syncSectorCodeFromName(sectorName?: string): void {
+    if (!sectorName || !this.sectorsList?.length) {
+      return;
+    }
+    const match = this.sectorsList.find((s) => s.name === sectorName);
+    if (match?.code) {
+      this.sectorCode = match.code;
+    }
   }
 
   async contributionListPerSector(
@@ -246,98 +267,30 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
     return sortedPercentList;
   }
 
+  private async reapplyChartAfterExport(): Promise<void> {
+    this.options = await apexGraph(
+      this.contributionList,
+      this.sector_name,
+      this.graphName.replace(/-+/g, " ").trim(),
+    );
+    await this.chart.updateOptions(
+      preparePieChartOptionsForDisplay(this.options),
+      true,
+      true,
+    );
+    this.chart.resetSeries();
+  }
+
   addExportEventListeners(type: string) {
-    if (type !== null) {
-      let titleName: string;
-      if (this.perspective == "final") {
-        titleName = `Sector: ${this.sectorCode}, ${this.graphName.replace(/\-/g, " ").replace(" AR6 ", "-")}, Point of Consumption`;
-      } else {
-        titleName = `Sector: ${this.sectorCode}, ${this.graphName.replace(/\-/g, " ").replace(" AR6 ", "-")}, Supply Chain`;
-      }
-
-      // Show the title before export
-      this.chart.updateOptions({
-        ...this.options,
-        chart: {
-          toolbar: {
-            show: true,
-            tools: {
-              download: true,
-              zoom: false,
-              zoomin: false,
-              zoomout: false,
-              pan: false,
-              reset: false,
-            },
-            export: {
-              csv: {
-                filename: `${titleName}-DirectVsIndirect`,
-                columnDelimiter: ",",
-                headerCategory: "Sector Purchased",
-                headerValue: "Contribution",
-              },
-              svg: {
-                filename: `${titleName}-DirectVsIndirect`,
-              },
-              png: {
-                filename: `${titleName}-DirectVsIndirect`,
-              },
-            },
-          },
-        },
-        title: {
-          text: titleName, // Title visible before exporting
-        },
-      });
-
-      // Delay to ensure title is updated before export
-      setTimeout(() => {
-        if (type === "png") {
-          this.chart.exports.exportToPng();
-        } else if (type === "svg") {
-          this.chart.exports.exportToSVG();
-        } else if (type === "csv") {
-          this.chart.dataURI().then(() => {
-            this.chart.exports.exportToCSV({
-              series: this.options["series"],
-              columnDelimiter: ",",
-              fileName: `${titleName}-DirectVsIndirect`.replace(",", "-"),
-            });
-          });
-        }
-
-        // Hide the title after export
-        this.chart.updateOptions({
-          ...this.options,
-          title: {
-            text: "",
-          },
-          chart: {
-            toolbar: {
-              show: false,
-              tools: {
-                download: false,
-                zoom: false,
-                zoomin: false,
-                zoomout: false,
-                pan: false,
-                reset: false,
-              },
-            },
-            export: {
-              csv: {
-                filename: "",
-              },
-              svg: {
-                filename: "",
-              },
-              png: {
-                filename: "",
-              },
-            },
-          },
-        });
-      }, 2000);
-    }
+    exportSmindexRankedPieChart(
+      this.chart,
+      this.options,
+      type,
+      this.sectorCode,
+      this.graphName,
+      this.perspective,
+      "DirectVsIndirect",
+      () => this.reapplyChartAfterExport(),
+    );
   }
 }

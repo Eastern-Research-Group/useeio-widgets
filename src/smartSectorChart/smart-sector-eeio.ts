@@ -24,8 +24,14 @@ import ReactDOM from "react-dom";
 import DownloadCSVButton, {
   DownloadCSVButtonProps,
 } from "../util/downloadcsvfile";
+import { runStackedChartExport } from "../util/chartExportOverlay";
+import type { ChartExportFormat } from "../util/chartExportMenu";
 import { getLabel } from "../util";
-import { fileNames } from "../util/util";
+import {
+  fileNames,
+  filterPickableSectors,
+  SECTOR_PURCHASES_FILE_SLUG,
+} from "../util/util";
 
 export interface SmartSectorChartConfig {
   model: WebModel;
@@ -35,6 +41,8 @@ export interface SmartSectorChartConfig {
 
 export class SmartSectorEEIO extends Widget {
   chart: ApexCharts;
+  /** Latest stacked-chart options (without export toolbar enrichment). */
+  chartOptions: apex.ApexOptions;
   sectorsList: Sector[];
   modelSmartSectorApi: WebModelSmartSector;
   uniqueSortedMappingGroupNoDuplicates: string[];
@@ -42,6 +50,8 @@ export class SmartSectorEEIO extends Widget {
   toggleImpactSelection: string;
   toggleGroupSelection: string;
   listSumSmartSectorTotalParts: SumSmartSectorTotalParts[];
+  /** Sectors/series last passed to `calculate()` for the visible stacked chart. */
+  private lastStackGraphListForChart: SumSmartSectorTotalParts[] = [];
   perspective: string;
   graphName: string;
   selectorName: string;
@@ -68,7 +78,9 @@ export class SmartSectorEEIO extends Widget {
     this.graphName = graphName;
     this.perspective = "final";
     this.selectorName = "total_rank";
-    this.sectorsList = await this._chartConfig.modelOne.model.sectors();
+    this.sectorsList = filterPickableSectors(
+      await this._chartConfig.modelOne.model.sectors(),
+    );
     const sectorMappingList: SectorMapping[] =
       await this.modelSmartSectorApi.sectorMapping();
     this.uniqueSortedMappingGroupNoDuplicates =
@@ -89,6 +101,7 @@ export class SmartSectorEEIO extends Widget {
       this.toggleImpactSelection,
       this.toggleGroupSelection,
     );
+    this.lastStackGraphListForChart = options;
     const option = await calculate(
       options,
       this._chartConfig.modelOne.model,
@@ -99,6 +112,7 @@ export class SmartSectorEEIO extends Widget {
       this.perspective,
       this.fileNameTitle,
     );
+    this.chartOptions = option;
     this.chart = new ApexCharts(
       document.querySelector(this._chartConfig.modelOne.selector),
       option,
@@ -122,7 +136,7 @@ export class SmartSectorEEIO extends Widget {
   }
 
   getFilesNames(): string[] {
-    return fileNames;
+    return fileNames.filter((slug) => slug !== SECTOR_PURCHASES_FILE_SLUG);
   }
 
   async selectiveGraph(
@@ -217,6 +231,7 @@ export class SmartSectorEEIO extends Widget {
       );
     }
 
+    this.lastStackGraphListForChart = listOfStackGraph;
     const option = await calculate(
       listOfStackGraph,
       this._chartConfig.modelOne.model,
@@ -227,6 +242,7 @@ export class SmartSectorEEIO extends Widget {
       this.perspective,
       this.fileNameTitle,
     );
+    this.chartOptions = option;
 
     if (this.modalOpen) {
       fileObjects = {
@@ -248,6 +264,38 @@ export class SmartSectorEEIO extends Widget {
 
     this.chart.updateOptions(option);
     this.chart.resetSeries();
+  }
+
+  private async reapplyStackedChartAfterExport(): Promise<void> {
+    if (!this.chart || this.lastStackGraphListForChart.length === 0) {
+      return;
+    }
+    const nameWithNoSpace = this.graphName.replace(/-+/g, " ").trim();
+    const option = await calculate(
+      this.lastStackGraphListForChart,
+      this._chartConfig.modelOne.model,
+      this.uniqueSortedMappingGroupNoDuplicates,
+      nameWithNoSpace,
+      this.toggleImpactSelection,
+      this.toggleGroupSelection,
+      this.perspective,
+      this.fileNameTitle,
+    );
+    this.chartOptions = option;
+    await this.chart.updateOptions(option, false, true);
+    if (option.series) {
+      await this.chart.updateSeries(option.series, false);
+    }
+  }
+
+  /** PNG/SVG/CSV with source/disclaimer overlay (same menu pattern as ranked/pie pages). */
+  exportChart(type: ChartExportFormat): void {
+    if (!this.chart || !this.chartOptions) {
+      return;
+    }
+    runStackedChartExport(this.chart, type, this.chartOptions, () =>
+      this.reapplyStackedChartAfterExport(),
+    );
   }
 
   async getValues(

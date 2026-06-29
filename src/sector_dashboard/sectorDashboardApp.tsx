@@ -1,6 +1,5 @@
 import * as React from "react";
 import { WebModel, Sector } from "useeio";
-import { TextField } from "@material-ui/core";
 import InputLabel from "@material-ui/core/InputLabel";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
@@ -9,16 +8,28 @@ import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormLabel from "@material-ui/core/FormLabel";
 import { makeStyles } from "@material-ui/core/styles";
-import * as strings from "../util/strings";
-import { getLabel } from "../util/util";
-import { SECTOR_DASHBOARD_INDICATORS } from "./curatedIndicators";
+import { getLabel, pickPreferredBootSector } from "../util/util";
+import { SectorSearchTable } from "../util/sectorSearchTable";
+import {
+  modelOfSmartSector,
+  CommodityOutputTimeSeriesRow,
+} from "../smartSectorWebApi.ts/webApiSmartSector";
+import {
+  encodeIndicatorsParam,
+  indicatorDomId,
+  resolveIndicatorsFromParam,
+} from "./indicatorCodes";
+import { IndicatorPickerModal } from "./indicatorPickerModal";
 import {
   buildIndustryOutputCaption,
-  buildIndustryOutputSeriesMillionsUSD,
+  buildIndustryOutputSeriesFromCatalog,
+  formatIndustryOutputYearRange,
   getIndustryOutputChartOptions,
+  INDUSTRY_OUTPUT_CHART_HEIGHT,
+  INDUSTRY_OUTPUT_CHART_MAX_WIDTH,
+  INDUSTRY_OUTPUT_FOCAL_YEAR,
 } from "./industryOutputChart";
 import {
-  buildSectorDashboardIntro,
   buildSectorDashboardInterpretation,
   buildSectorDashboardSectionBlurb,
   SECTOR_NAME_TOKEN,
@@ -33,6 +44,7 @@ export type SectorDashboardAppProps = {
   initialPerspective?: "final" | "direct";
   initialBarMode?: "impact_per_purchase" | "total_impact";
   initialPieMode?: "aggregate" | "detail";
+  initialInd?: string;
 };
 
 function buildShareUrl(input: {
@@ -40,6 +52,7 @@ function buildShareUrl(input: {
   perspective: "final" | "direct";
   barMode: "impact_per_purchase" | "total_impact";
   pieMode: "aggregate" | "detail";
+  indicatorSlugs: readonly string[];
 }): string {
   const params = new URLSearchParams();
   if (input.sectorCode) {
@@ -49,7 +62,10 @@ function buildShareUrl(input: {
   params.set("bar", input.barMode === "total_impact" ? "total" : "intensity");
   params.set("pie", input.pieMode === "detail" ? "detailed" : "simple");
   const url = new URL(window.location.href);
-  url.search = params.toString();
+  const ind = encodeIndicatorsParam(input.indicatorSlugs);
+  const qs = params.toString();
+  // Append ind with literal commas (codes are alphanumeric; URLSearchParams would use %2C).
+  url.search = qs ? `${qs}&ind=${ind}` : `ind=${ind}`;
   url.hash = "";
   return url.toString();
 }
@@ -94,19 +110,16 @@ function resolveInitialSector(
       return hit;
     }
   }
-  return sectors[0];
+  return (
+    pickPreferredBootSector(sectors) ??
+    sectors[0]
+  );
 }
 
 const useStyles = makeStyles((theme) => ({
   margin: {
     margin: theme.spacing(1),
     minWidth: 150,
-  },
-  selector: {
-    width: "auto",
-    height: "200px",
-    border: "1px solid black",
-    overflowY: "scroll",
   },
   tagContainer: {
     display: "flex",
@@ -156,9 +169,9 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 14,
     lineHeight: 1.5,
   },
-  proxyDataNotice: {
-    border: "1px solid #e65100",
-    backgroundColor: "#fff8e1",
+  outputDataNotice: {
+    border: "1px solid #e0e0e0",
+    backgroundColor: "#f5f5f5",
     padding: theme.spacing(1, 1.5),
     marginBottom: theme.spacing(1.5),
     fontSize: 13,
@@ -166,9 +179,9 @@ const useStyles = makeStyles((theme) => ({
   },
   outputChartHost: {
     width: "100%",
-    maxWidth: 560,
+    maxWidth: INDUSTRY_OUTPUT_CHART_MAX_WIDTH,
     margin: "0 auto",
-    height: 240,
+    height: INDUSTRY_OUTPUT_CHART_HEIGHT,
   },
 }));
 
@@ -180,12 +193,17 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
   initialPerspective,
   initialBarMode,
   initialPieMode,
+  initialInd,
 }) => {
   const classes = useStyles();
+  const [appliedIndicators, setAppliedIndicators] = React.useState<string[]>(
+    () => resolveIndicatorsFromParam(initialInd),
+  );
+  const [indicatorModalOpen, setIndicatorModalOpen] = React.useState(false);
+  const [indicatorDraft, setIndicatorDraft] = React.useState<string[]>([]);
   const bootSectorRef = React.useRef(
     resolveInitialSector(sectors, initialSectorCode),
   );
-  const [searchTerm, setSearchTerm] = React.useState("");
   const [activeSector, setActiveSector] = React.useState<Sector>(() =>
     bootSectorRef.current,
   );
@@ -202,9 +220,15 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
     "idle" | "copied" | "manual"
   >("idle");
   const [shareUrlForFallback, setShareUrlForFallback] = React.useState("");
-  const [snapshotDate, setSnapshotDate] = React.useState(() =>
-    new Date().toLocaleString(),
-  );
+  // Restore with print snapshot block below.
+  // const [snapshotDate, setSnapshotDate] = React.useState(() =>
+  //   new Date().toLocaleString(),
+  // );
+  const [outputTimeSeries, setOutputTimeSeries] = React.useState<
+    CommodityOutputTimeSeriesRow[] | null
+  >(null);
+  const [outputTimeSeriesError, setOutputTimeSeriesError] =
+    React.useState(false);
 
   const orchRef = React.useRef<SectorDashboardOrchestrator | null>(null);
   const sectorSyncNeededRef = React.useRef(false);
@@ -217,62 +241,127 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
   const [, bumpNarrative] = React.useReducer((n: number) => n + 1, 0);
   const outputLineRef = React.useRef<HTMLDivElement | null>(null);
   const outputLineChartRef = React.useRef<ApexCharts | null>(null);
+  const pieModeRef = React.useRef(pieMode);
   sectorNameRef.current = activeSector.name;
   perspectiveRef.current = perspective;
+  pieModeRef.current = pieMode;
+
+  React.useEffect(() => {
+    let cancelled = false;
+    const api = modelOfSmartSector({
+      endpoint,
+      model: model.id() as string,
+      asJsonFiles: true,
+    });
+    api
+      .commodityOutputTimeSeries()
+      .then((rows) => {
+        if (!cancelled) {
+          setOutputTimeSeries(rows);
+          setOutputTimeSeriesError(false);
+        }
+      })
+      .catch(() => {
+        if (!cancelled) {
+          setOutputTimeSeries(null);
+          setOutputTimeSeriesError(true);
+        }
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [endpoint, model]);
+
+  const industryOutputSeries = React.useMemo(
+    () =>
+      buildIndustryOutputSeriesFromCatalog(
+        outputTimeSeries,
+        activeSector.id,
+        activeSector.code,
+      ),
+    [outputTimeSeries, activeSector.id, activeSector.code],
+  );
+
+  const industryOutputYearRange = formatIndustryOutputYearRange(
+    industryOutputSeries,
+  );
 
   React.useEffect(() => {
     const el = outputLineRef.current;
     if (!el) {
       return;
     }
+    const options = getIndustryOutputChartOptions(
+      activeSector.name,
+      industryOutputSeries,
+    );
     if (outputLineChartRef.current) {
       outputLineChartRef.current.destroy();
       outputLineChartRef.current = null;
     }
-    const chart = new ApexCharts(
-      el,
-      getIndustryOutputChartOptions(activeSector.name, activeSector.code),
-    );
-    chart.render();
-    outputLineChartRef.current = chart;
+    const chart = new ApexCharts(el, options);
+    void chart.render().then(() => {
+      outputLineChartRef.current = chart;
+    });
     return () => {
-      chart.destroy();
-      outputLineChartRef.current = null;
+      void chart.destroy();
+      if (outputLineChartRef.current === chart) {
+        outputLineChartRef.current = null;
+      }
     };
-  }, [activeSector.name, activeSector.code]);
+  }, [
+    activeSector.id,
+    activeSector.code,
+    activeSector.name,
+    industryOutputSeries,
+  ]);
 
   React.useEffect(() => {
     document.title = "Sector dashboard (multi-indicator)";
   }, []);
 
-  const industryOutputSeries = React.useMemo(
-    () => buildIndustryOutputSeriesMillionsUSD(activeSector.code),
-    [activeSector.code],
-  );
+  React.useEffect(() => {
+    setShareStatus("idle");
+    setShareUrlForFallback("");
+  }, [activeSector.code, perspective, barMode, pieMode, appliedIndicators]);
+
   const industryOutputCaption = buildIndustryOutputCaption(industryOutputSeries);
 
-
-  React.useEffect(() => {
-    const onBeforePrint = () =>
-      setSnapshotDate(new Date().toLocaleString());
-    window.addEventListener("beforeprint", onBeforePrint);
-    return () => window.removeEventListener("beforeprint", onBeforePrint);
-  }, []);
+  // React.useEffect(() => {
+  //   const onBeforePrint = () =>
+  //     setSnapshotDate(new Date().toLocaleString());
+  //   window.addEventListener("beforeprint", onBeforePrint);
+  //   return () => window.removeEventListener("beforeprint", onBeforePrint);
+  // }, []);
 
   React.useEffect(() => {
     let alive = true;
+    setChartsReady(false);
+    orchRef.current?.destroyCharts();
+    orchRef.current = null;
+    perspectiveInitSkipRef.current = true;
+    barModeInitSkipRef.current = true;
+    pieModeInitSkipRef.current = true;
+
     (async () => {
       try {
         const orch = new SectorDashboardOrchestrator(
           model,
           endpoint,
-          SECTOR_DASHBOARD_INDICATORS,
+          appliedIndicators,
         );
         orchRef.current = orch;
-        await orch.initCharts(
-          bootSectorRef.current.name,
-          bootSectorRef.current.code,
+        await orch.initCharts(activeSector.name, activeSector.code);
+        await orch.setPerspective(
+          perspectiveRef.current,
+          activeSector.name,
         );
+        await orch.refreshBarMode(
+          barMode,
+          activeSector.name,
+          perspectiveRef.current,
+        );
+        orch.refreshPieMode(pieModeRef.current, activeSector.name);
         if (alive) {
           setChartsReady(true);
           bumpNarrative();
@@ -283,8 +372,10 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
     })();
     return () => {
       alive = false;
+      orchRef.current?.destroyCharts();
+      orchRef.current = null;
     };
-  }, [model, endpoint]);
+  }, [model, endpoint, appliedIndicators]);
 
   React.useEffect(() => {
     document.title = `${activeSector.name} — Sector dashboard`;
@@ -329,7 +420,13 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
         sectorNameRef.current,
         perspectiveRef.current,
       )
-      .then(() => bumpNarrative())
+      .then(() => {
+        orchRef.current?.refreshPieMode(
+          pieModeRef.current,
+          sectorNameRef.current,
+        );
+        bumpNarrative();
+      })
       .catch((e) => console.error(e));
   }, [barMode, chartsReady]);
 
@@ -350,34 +447,40 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
     perspective,
     barMode,
     pieMode,
+    indicatorSlugs: appliedIndicators,
   };
-  const introText = buildSectorDashboardIntro(narrativeInput);
+  // const introText = buildSectorDashboardIntro(narrativeInput);
 
-  const onSearch = (value: string) => {
-    if (!value) {
-      setSearchTerm("");
+  const openIndicatorModal = () => {
+    setIndicatorDraft([...appliedIndicators]);
+    setIndicatorModalOpen(true);
+  };
+
+  const applyIndicatorDraft = () => {
+    if (indicatorDraft.length === 0) {
       return;
     }
-    const term = value.trimStart().toLowerCase();
-    setSearchTerm(term.length === 0 ? "" : term);
+    setAppliedIndicators([...indicatorDraft]);
+    setIndicatorModalOpen(false);
+    const url = buildShareUrl({
+      sectorCode: activeSector.code,
+      perspective,
+      barMode,
+      pieMode,
+      indicatorSlugs: indicatorDraft,
+    });
+    window.history.replaceState(null, "", url);
   };
 
-  let filtered = sectors;
-  if (searchTerm) {
-    filtered = sectors.filter(
-      (s) =>
-        strings.search(s.name, searchTerm) >= 0 ||
-        strings.search(s.code, searchTerm) >= 0,
-    );
-  }
+  const cancelIndicatorModal = () => {
+    setIndicatorModalOpen(false);
+    setIndicatorDraft([]);
+  };
 
-  const handlePickSector = (name: string, code: string) => {
-    setSearchTerm("");
-    const next = sectors.find((s) => s.code === code);
-    if (next) {
-      sectorSyncNeededRef.current = true;
-      setActiveSector(next);
-    }
+  const handlePickSector = (picked: Sector) => {
+    const next = sectors.find((s) => s.code === picked.code) ?? picked;
+    sectorSyncNeededRef.current = true;
+    setActiveSector(next);
   };
 
   const handleCopyShareLink = async () => {
@@ -386,6 +489,7 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
       perspective,
       barMode,
       pieMode,
+      indicatorSlugs: appliedIndicators,
     });
     try {
       if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -413,6 +517,7 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
         Multi-indicator sector dashboard
       </h1>
 
+      {/* Print-snapshot intro + meta — hidden from live UI; restore for PDF/print flows.
       <div id="sector-dashboard-snapshot" className={classes.snapshot}>
         <p style={{ marginTop: 0 }}>
           {renderSectorNarrative(introText, activeSector.name)}
@@ -425,6 +530,7 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
           Pie view: {pieMode === "aggregate" ? "Simple" : "Detailed"}.
         </p>
       </div>
+      */}
 
       {!chartsReady ? (
         <p className="sector-dashboard-no-print" style={{ padding: "0 16px" }}>
@@ -435,73 +541,33 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
       <div className={`sector-dashboard-controls sector-dashboard-no-print`}>
         <div className={classes.tagContainer}>
           <div className={classes.left}>
-            <FormControl className={classes.margin}>
-              <TextField
-                value={searchTerm}
-                label="Search sector"
-                variant="outlined"
-                size="small"
-                onChange={(e) => onSearch(e.target.value)}
-              />
-              {searchTerm != null && searchTerm !== "" ? (
-                <div className={classes.selector}>
-                  <table id="sector-dashboard-sector-table">
-                    <thead>
-                      <tr>
-                        <th>
-                          BEA/NAICS
-                          <br />
-                          Code
-                        </th>
-                        <th>Sector name</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {filtered.map((sector) => (
-                        <tr key={sector.code}>
-                          <td
-                            style={{
-                              borderTop: "lightgray solid 1px",
-                              fontSize: 12,
-                            }}
-                          >
-                            <a
-                              style={{ cursor: "pointer" }}
-                              onClick={() =>
-                                handlePickSector(sector.name, sector.code)
-                              }
-                            >
-                              {sector.code}
-                            </a>
-                          </td>
-                          <td
-                            style={{
-                              borderTop: "lightgray solid 1px",
-                              fontSize: 12,
-                            }}
-                          >
-                            <a
-                              style={{ cursor: "pointer" }}
-                              onClick={() =>
-                                handlePickSector(sector.name, sector.code)
-                              }
-                            >
-                              {strings.cut(sector.name, 80)}
-                            </a>
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              ) : null}
-            </FormControl>
+            <SectorSearchTable sectors={sectors} onPick={handlePickSector} />
           </div>
 
           <div className={classes.right}>
             <div className={classes.item}>
+              <button type="button" onClick={openIndicatorModal}>
+                Choose indicators ({appliedIndicators.length})
+              </button>
+            </div>
+            <div className={classes.item}>
               <FormControl className={classes.margin}>
-                <InputLabel htmlFor="sd-perspective">Perspective</InputLabel>
+                <InputLabel htmlFor="sd-perspective">
+                  Perspective{" "}
+                  <a
+                    href="./glossary.html#perspectives-help"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="sector-dashboard-no-print"
+                    style={{
+                      fontSize: "0.75rem",
+                      fontWeight: 400,
+                      marginLeft: 4,
+                    }}
+                  >
+                    What is this?
+                  </a>
+                </InputLabel>
                 <Select
                   native
                   id="sd-perspective"
@@ -532,14 +598,14 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
                   }
                 >
                   <FormControlLabel
-                    value="impact_per_purchase"
-                    control={<Radio color="default" size="small" />}
-                    label="Impact intensity"
-                  />
-                  <FormControlLabel
                     value="total_impact"
                     control={<Radio color="default" size="small" />}
                     label="Total impacts"
+                  />
+                  <FormControlLabel
+                    value="impact_per_purchase"
+                    control={<Radio color="default" size="small" />}
+                    label="Impact intensity"
                   />
                 </RadioGroup>
               </FormControl>
@@ -616,9 +682,27 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
       <section
         className={`sector-dashboard-section sector-dashboard-industry-output ${classes.section}`}
       >
-        <h3>Industry output over time (2017–2023)</h3>
-        <div className={classes.proxyDataNotice}>
-          <strong>Proxy data:</strong> this line is not yet loaded from BEA.
+        <h3>Industry output over time ({industryOutputYearRange})</h3>
+        <div className={classes.outputDataNotice}>
+          {outputTimeSeriesError ? (
+            <>
+              <strong>Data unavailable:</strong> could not load commodity output
+              time series. Re-run <code>smart_sectors.R</code> to publish{" "}
+              <code>commodity_output_timeseries.json</code>.
+            </>
+          ) : industryOutputSeries ? (
+            <>
+              <strong>Price-adjusted output:</strong> BEA gross commodity output
+              for each year multiplied by the model price ratio (Rho), in
+              millions of dollars — the same basis as the {INDUSTRY_OUTPUT_FOCAL_YEAR}{" "}
+              scaling used for total impacts below.
+            </>
+          ) : (
+            <>
+              <strong>No series for this sector:</strong> choose another sector or
+              regenerate upstream output data.
+            </>
+          )}
         </div>
         <p
           style={{
@@ -642,7 +726,16 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
         </p>
       </section>
 
-      {SECTOR_DASHBOARD_INDICATORS.map((slug, i) => {
+      <IndicatorPickerModal
+        open={indicatorModalOpen}
+        draft={indicatorDraft}
+        onDraftChange={setIndicatorDraft}
+        onApply={applyIndicatorDraft}
+        onCancel={cancelIndicatorModal}
+      />
+
+      {appliedIndicators.map((slug, i) => {
+        const domId = indicatorDomId(slug);
         const interpretation = chartsReady
           ? orchRef.current?.getInterpretation(
               i,
@@ -673,20 +766,24 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
             {renderSectorNarrative(interpretationText, activeSector.name)}
           </p>
           <div
-            style={{ fontWeight: "bold", textAlign: "center", marginBottom: 8 }}
+            style={{
+              fontWeight: "bold",
+              textAlign: "center",
+              marginBottom: 8,
+            }}
           >
-            Supplier contributions (ranked)
+            Direct vs indirect shares
           </div>
           <div className={classes.chartGrid}>
             <div
               className={classes.chartCell}
-              id={`sector-dash-bar-total-${i}`}
-              style={{ visibility: totalBarVis }}
+              id={`sector-dash-pie-agg-${domId}`}
+              style={{ visibility: pieAggVis }}
             />
             <div
               className={classes.chartCell}
-              id={`sector-dash-bar-intensity-${i}`}
-              style={{ visibility: intBarVis }}
+              id={`sector-dash-pie-detail-${domId}`}
+              style={{ visibility: pieDetVis }}
             />
           </div>
           <div
@@ -696,32 +793,23 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
               margin: "16px 0 8px",
             }}
           >
-            Direct vs indirect shares
+            Supplier contributions (ranked)
           </div>
           <div className={classes.chartGrid}>
             <div
               className={classes.chartCell}
-              id={`sector-dash-pie-agg-${i}`}
-              style={{ visibility: pieAggVis }}
+              id={`sector-dash-bar-total-${domId}`}
+              style={{ visibility: totalBarVis }}
             />
             <div
               className={classes.chartCell}
-              id={`sector-dash-pie-detail-${i}`}
-              style={{ visibility: pieDetVis }}
+              id={`sector-dash-bar-intensity-${domId}`}
+              style={{ visibility: intBarVis }}
             />
           </div>
         </section>
         );
       })}
-
-      <div className="sector-dashboard-no-print" style={{ marginTop: 24 }}>
-        <p style={{ fontSize: 13 }}>
-          Saving this page as HTML still depends on <code>useeio_widgets.js</code>,{" "}
-          ApexCharts, and local JSON under <code>./api/</code>. For a portable
-          artifact, use Print → Save as PDF. Archiving the full{" "}
-          <code>build/</code> folder preserves relative links for offline viewing.
-        </p>
-      </div>
     </div>
   );
 };

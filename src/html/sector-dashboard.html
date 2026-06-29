@@ -42,6 +42,8 @@
         initialPieMode = "detail";
       }
 
+      var initialInd = params.get("ind") || "";
+
       var model = useeio.model({
         endpoint: "./api",
         model: modelID,
@@ -56,6 +58,7 @@
         initialPerspective: initialPerspective,
         initialBarMode: initialBarMode,
         initialPieMode: initialPieMode,
+        initialInd: initialInd,
       });
       dashboard.update();
     </script>

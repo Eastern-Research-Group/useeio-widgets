@@ -44,6 +44,34 @@ export function ifNone<T>(
     return defaultValue;
 }
 
+/**
+ * BEA-style detail sector code (last character is digit zero). Used to avoid
+ * defaulting to aggregated parents like `11` when picking an initial sector.
+ */
+export const PREFERRED_OPEN_DETAIL_SECTOR_CODE = "1111A0";
+
+/** Strip `/US` suffix and spaces so `1111A0` matches `1111A0/US`. */
+export function normalizeSectorCodeBase(code: string): string {
+    return code.replace(/\/US$/i, "").replace(/\s/g, "").trim();
+}
+
+/** Prefer `PREFERRED_OPEN_DETAIL_SECTOR_CODE` when present; otherwise the first sector. */
+export { filterPickableSectors, isPickableSector, UNPICKABLE_SECTOR_CODES } from "./filterPickableSectors";
+
+export function pickPreferredBootSector<T extends { code: string }>(
+    sectors: T[],
+): T | undefined {
+    if (!sectors.length) {
+        return undefined;
+    }
+    const preferred = sectors.find(
+        (s) =>
+            normalizeSectorCodeBase(s.code) ===
+            PREFERRED_OPEN_DETAIL_SECTOR_CODE,
+    );
+    return preferred ?? sectors[0];
+}
+
 export function ifNan<T>(
     obj: T | null | undefined, defaultValue: T | (() => T)): T {
     if (!isNone(obj)) {

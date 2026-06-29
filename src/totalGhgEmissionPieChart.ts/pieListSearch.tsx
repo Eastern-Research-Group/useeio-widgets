@@ -1,11 +1,13 @@
 import * as ReactDOM from "react-dom";
 import { Sector, WebModel } from "useeio";
-import { TextField } from "@material-ui/core";
 import { PiePercentContribution } from "./piePercentContribution";
 import { PiePercentContributionDirectAndIndirect } from "./piePercentContributionDirectAndIndirect";
-import * as strings from "../util/strings";
 import { Widget } from "../widget";
-import { fileNames } from "../util/util";
+import {
+  fileNames,
+  filterPickableSectors,
+  pickPreferredBootSector,
+} from "../util/util";
 import {
   modelOfSmartSector,
   WebModelSmartSector,
@@ -15,12 +17,14 @@ import { makeStyles } from "@material-ui/core/styles";
 import InputLabel from "@material-ui/core/InputLabel";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
-import { Menu, MenuItem, IconButton } from "@material-ui/core";
 import DownloadCSVButton from "../util/downloadcsvfile";
+import { ChartExportMenu } from "../util/chartExportMenu";
+import { isChartExportAttributionSvgText } from "../util/chartExportOverlay";
 import {
   getLabel,
   sectorPurchasesPointOfConsumptionOnly,
 } from "../util/util";
+import { SectorSearchTable } from "../util/sectorSearchTable";
 
 export interface SmartSectorChartConfigPie {
   modelOne: {
@@ -90,25 +94,31 @@ export class PieListSearch extends Widget {
   }
 
   async update() {
-    this.sectors = await this._chartConfig.model.sectors();
+    this.sectors = filterPickableSectors(
+      await this._chartConfig.model.sectors(),
+    );
     this.modelSmartSectorApi.init();
-    this.piePercentContribution.init(
-      "Acidification-Potential",
-      this.sectors[0].name,
-    );
-    this.piePercentContributionSectors.init(
-      "Acidification-Potential",
-      this.sectors[0].name,
-    );
+    const boot = pickPreferredBootSector(this.sectors) ?? this.sectors[0];
     ReactDOM.render(
       <Component widget={this} />,
       document.querySelector(this._chartConfig.selector),
     );
+    await Promise.all([
+      this.piePercentContribution.init(
+        "Acidification-Potential",
+        boot.name,
+        boot.code,
+      ),
+      this.piePercentContributionSectors.init(
+        "Acidification-Potential",
+        boot.name,
+        boot.code,
+      ),
+    ]);
   }
 }
 
 const Component = (props: { widget: PieListSearch }) => {
-  const [searchTerm, setSearchTerm] = React.useState<string>("");
   const [value, setValue] = React.useState<string>("");
   const [sectorId, setSectorId] = React.useState<string>("");
   const [title, setTitle] = React.useState<string>("");
@@ -119,109 +129,56 @@ const Component = (props: { widget: PieListSearch }) => {
   const [detail, setDetail] = React.useState<boolean>(false);
   const [perspective, setPerspective] = React.useState<string>("final");
 
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-  const open = Boolean(anchorEl);
-
-  const handleMenuClick = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleMenuClose = (type?: string) => {
-    let file = null;
-    if (["png", "svg", "csv"].includes(type)) {
-      file = type;
+  const handleChartExport = (type: "png" | "svg" | "csv") => {
+    if (graphDetails === "Aggregate") {
+      props.widget.piePercentContribution.addExportEventListeners(type);
+    } else {
+      props.widget.piePercentContributionSectors.addExportEventListeners(type);
     }
-
-    if (graphDetails === "Aggregate")
-      props.widget.piePercentContribution.addExportEventListeners(file);
-    else
-      props.widget.piePercentContributionSectors.addExportEventListeners(file);
-
-    setAnchorEl(null);
   };
-
-  let sectors = props.widget.sectors;
-
-  if (searchTerm) {
-    sectors = sectors.filter((s) => {
-      return (
-        strings.search(s.name, searchTerm) >= 0 ||
-        strings.search(s.code, searchTerm) >= 0
-      );
-    });
-  }
 
   React.useEffect(() => {
-    setTitle(sectors[0].name + " (" + sectors[0].code + ")");
-    setValue(sectors[0].name);
-    setSectorId(sectors[0].id);
+    const list = props.widget.sectors;
+    const boot = pickPreferredBootSector(list) ?? list[0];
+    setTitle(boot.name + " (" + boot.code + ")");
+    setValue(boot.name);
+    setSectorId(boot.id);
   }, []);
 
   React.useEffect(() => {
-    const textElements = document.querySelectorAll<SVGTextElement>(
-      "#profile-chart-details svg text",
-    );
-
-    if (textElements.length > 0) {
-      textElements[textElements.length - 1].setAttribute(
-        "visibility",
-        "hidden",
+    const setCenterTotalVisibility = (
+      selector: string,
+      visibility: string,
+    ) => {
+      const texts = document.querySelectorAll<SVGTextElement>(
+        `${selector} svg text`,
       );
-    }
+      for (let i = texts.length - 1; i >= 0; i--) {
+        const node = texts[i];
+        if (isChartExportAttributionSvgText(node.textContent)) {
+          continue;
+        }
+        node.setAttribute("visibility", visibility);
+        return;
+      }
+    };
 
-    const textElement = document.querySelectorAll<SVGTextElement>(
-      "#profile-chart svg text",
+    setCenterTotalVisibility("#profile-chart", aggregate ? "visible" : "hidden");
+    setCenterTotalVisibility(
+      "#profile-chart-details",
+      detail ? "visible" : "hidden",
     );
-
-    if (textElement.length > 0) {
-      textElement[textElement.length - 1].setAttribute("visibility", "hidden");
-    }
-
-    const simple = aggregate ? "visible" : "hidden";
-    const details = detail ? "visible" : "hidden";
-
-    if (textElement.length > 0) {
-      textElement[textElement.length - 1].setAttribute("visibility", simple);
-    }
-
-    if (textElements.length > 0) {
-      textElements[textElements.length - 1].setAttribute("visibility", details);
-    }
   }, [detail, aggregate]);
 
   const handleState = (e: string, c: string) => {
     setTitle(e + " (" + c + ")");
-
-    setSearchTerm("");
     setValue(e);
-    setSectorId(sectors.filter((t) => t.code === c)?.[0].id);
+    setSectorId(
+      props.widget.sectors.find((t) => t.code === c)?.id ?? "",
+    );
     if (graphDetails === "Aggregate")
       props.widget.piePercentContribution.updateGraph(e, c);
     else props.widget.piePercentContributionSectors.updateGraph(e, c);
-  };
-
-  // create the sector ranking, if there is a result
-  let ranking: [Sector][];
-  ranking = sectors.map((sector) => {
-    return [sector];
-  });
-
-  const rows: JSX.Element[] = ranking.map(([sector], i) => (
-    <Row
-      key={sector.code}
-      sector={sector}
-      widget={props.widget}
-      index={i}
-      handleState={handleState}
-    />
-  ));
-
-  const onSearch = (value: string) => {
-    if (!value) {
-      setSearchTerm("");
-    }
-    const term = value.trimStart().toLowerCase();
-    setSearchTerm(term.length === 0 ? "" : term);
   };
 
   const handleChange = async (event: any) => {
@@ -296,12 +253,6 @@ const Component = (props: { widget: PieListSearch }) => {
       margin: theme.spacing(1),
       minWidth: 150,
     },
-    selector: {
-      width: "auto",
-      height: "200px",
-      border: "1px solid black",
-      overflowY: "scroll",
-    },
     flexContainer: {
       display: "flex",
       flexDirection: "row",
@@ -314,12 +265,13 @@ const Component = (props: { widget: PieListSearch }) => {
       overflowWrap: "break-word",
       whiteSpace: "normal",
       wordWrap: "break-word",
-      width: "300px",
       marginBottom: "1em",
+      flex: "1 1 220px",
+      minWidth: 200,
+      maxWidth: "28rem",
       "@media (max-width:1256px)": {
         bottom: "0",
         right: "0",
-        width: "300px",
       },
     },
   }));
@@ -362,37 +314,10 @@ const Component = (props: { widget: PieListSearch }) => {
             width: "50%",
           }}
         >
-          <FormControl
-            className={classes.margin}
-            style={{ width: "min-content" }}
-          >
-            <TextField
-              value={searchTerm}
-              label="Search Sector"
-              variant="outlined"
-              size="small"
-              onChange={(e) => onSearch(e.target.value)}
-            />
-            {searchTerm != null ? (
-              <div className={classes.selector} id="div1">
-                <table id="sector-list-table">
-                  <thead>
-                    <tr>
-                      <th className={`indicator`}>
-                        BEA/NAICS
-                        <br />
-                        Code
-                      </th>
-                      <th className={`indicator`}>Sector Name</th>
-                    </tr>
-                  </thead>
-                  <tbody id="sectorListSearch" className="sector-list-body">
-                    {rows}
-                  </tbody>
-                </table>
-              </div>
-            ) : null}
-          </FormControl>
+          <SectorSearchTable
+            sectors={props.widget.sectors}
+            onPick={(sector) => handleState(sector.name, sector.code)}
+          />
           <div
             style={{
               display: "flex",
@@ -402,7 +327,15 @@ const Component = (props: { widget: PieListSearch }) => {
           >
             <FormControl className={classes.margin}>
               <InputLabel id="demo-controlled-open-select-label">
-                Select perspective:
+                Select perspective:{" "}
+                <a
+                  href="./glossary.html#perspectives-help"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ fontSize: "0.75rem", fontWeight: 400 }}
+                >
+                  What is this?
+                </a>
               </InputLabel>
               <Select
                 native
@@ -418,9 +351,9 @@ const Component = (props: { widget: PieListSearch }) => {
                   name: "perspective",
                 }}
               >
-                <option value="final">Point of Consumption</option>
+                <option value="final">Point of consumption</option>
                 {!sectorPurchasesPointOfConsumptionOnly(graph) ? (
-                  <option value="direct">Supply Chain</option>
+                  <option value="direct">Supply chain</option>
                 ) : null}
               </Select>
             </FormControl>
@@ -473,21 +406,27 @@ const Component = (props: { widget: PieListSearch }) => {
               />{" "}
             </div>
           </div>
-          <div className={classes.linkSectors}>
-            See more info about the{" "}
-            <a href="./sector-info-table.html" target="_blank">
-              sectors BEA/NAICS Codes
-            </a>
-            . Open the{" "}
-            <a href="./sector-dashboard.html" target="_blank">
-              multi-indicator sector dashboard
-            </a>{" "}
-            for several indicators on one page.
-            .{" "}
-            <a href="./glossary.html" target="_blank">
-              Glossary
-            </a>
-            .
+          <div className={`${classes.linkSectors} smart-sector-resource-links`}>
+            <span className="smart-sector-resource-intro">
+              See more info about the{" "}
+              <a href="./sector-info-table.html" target="_blank">
+                sectors BEA/NAICS Codes
+              </a>
+              .
+            </span>
+            <span className="smart-sector-resource-line">
+              Open the{" "}
+              <a href="./sector-dashboard.html" target="_blank">
+                multi-indicator sector dashboard
+              </a>{" "}
+              for several indicators on one page.
+            </span>
+            <span className="smart-sector-resource-line">
+              <a href="./glossary.html" target="_blank">
+                Glossary
+              </a>
+              .
+            </span>
           </div>
         </div>
 
@@ -545,43 +484,7 @@ const Component = (props: { widget: PieListSearch }) => {
               </div>
             </div>
           )}
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "flex-end",
-              width: "100%",
-            }}
-          >
-            {/* Menu Icon Button */}
-            <IconButton onClick={handleMenuClick}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path fill="none" d="M0 0h24v24H0V0z"></path>
-                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
-              </svg>
-            </IconButton>
-
-            {/* Dropdown Menu */}
-            <Menu
-              anchorEl={anchorEl}
-              open={open}
-              onClose={() => handleMenuClose()}
-            >
-              <MenuItem onClick={() => handleMenuClose("svg")}>
-                Download SVG
-              </MenuItem>
-              <MenuItem onClick={() => handleMenuClose("png")}>
-                Download PNG
-              </MenuItem>
-              <MenuItem onClick={() => handleMenuClose("csv")}>
-                Download CSV
-              </MenuItem>
-            </Menu>
-          </div>
+          <ChartExportMenu onExport={handleChartExport} />
           <div
             style={{
               position: "relative",
@@ -612,46 +515,3 @@ const Component = (props: { widget: PieListSearch }) => {
   );
 };
 
-export type RowProps = {
-  sector: Sector;
-  widget: PieListSearch;
-  index: number;
-  handleState: any;
-};
-
-const Row = (props: RowProps) => {
-  const sector = props.sector;
-
-  const useStyles = makeStyles({
-    td: {
-      borderTop: "lightgray solid 1px",
-      padding: "5px 0px",
-      whiteSpace: "nowrap",
-      fontSize: 12,
-    },
-  });
-  const classes = useStyles();
-
-  return (
-    <tr>
-      <td key={props.sector.code} className={classes.td}>
-        <a
-          style={{ cursor: "pointer" }}
-          title={sector.code}
-          onClick={() => props.handleState(sector.name, sector.code)}
-        >
-          {sector.code}
-        </a>
-      </td>
-      <td className={classes.td}>
-        <a
-          style={{ cursor: "pointer" }}
-          title={sector.name}
-          onClick={() => props.handleState(sector.name, sector.code)}
-        >
-          {strings.cut(sector.name, 80)}
-        </a>
-      </td>
-    </tr>
-  );
-};

@@ -132,6 +132,7 @@ export class WebModelSmartSector {
   private _sectoMapping?: SectorMapping[];
   private _sectorListTable: DataRow[];
   private _sectorOutput?: ImpactOutput[];
+  private _commodityOutputTimeSeries?: CommodityOutputTimeSeriesRow[];
 
   constructor(
     private api: WebApiSmartSector,
@@ -289,6 +290,19 @@ export class WebModelSmartSector {
   }
 
   /**
+   * Price-adjusted commodity gross output time series (BEA × model Rho).
+   */
+  async commodityOutputTimeSeries(): Promise<CommodityOutputTimeSeriesRow[]> {
+    if (!this._commodityOutputTimeSeries) {
+      this._commodityOutputTimeSeries = await this.api.getJson(
+        this.modelId,
+        "commodity_output_timeseries",
+      );
+    }
+    return this._commodityOutputTimeSeries || [];
+  }
+
+  /**
    * Get the output of the specific impactOutput
    */
   findSectorOutput(id: string, impactList: ImpactOutput[]): number {
@@ -332,6 +346,10 @@ export interface SectorContributionToImpact {
   impact_per_purchase?: number;
   commodity_output?: number;
   total_impact?: number;
+  domestic_purchase?: number;
+  imported_purchase?: number;
+  domestic_impact_per_purchase?: number;
+  imported_impact_per_purchase?: number;
   impact_per_dollar?: number;
   total_rank?: number;
   intensity_rank?: number;
@@ -369,4 +387,12 @@ export interface ImpactOutput {
   sector_code: string;
 
   x: number;
+}
+
+/** Price-adjusted BEA commodity gross output by year (millions USD). */
+export interface CommodityOutputTimeSeriesRow {
+  sector_code: string;
+  focal_year: string;
+  years: string[];
+  output_million_usd: number[];
 }

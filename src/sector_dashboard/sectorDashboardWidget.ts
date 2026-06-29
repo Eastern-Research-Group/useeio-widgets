@@ -2,6 +2,7 @@ import * as ReactDOM from "react-dom";
 import { WebModel } from "useeio";
 import { Widget } from "../widget";
 import React from "react";
+import { filterPickableSectors } from "../util/util";
 import { SectorDashboardApp } from "./sectorDashboardApp";
 
 export type SectorDashboardConfig = {
@@ -19,10 +20,12 @@ export type SectorDashboardConfig = {
   initialBarMode?: "impact_per_purchase" | "total_impact";
   /** Optional initial pie-chart mode (`?pie=simple` or `?pie=detailed`). */
   initialPieMode?: "aggregate" | "detail";
+  /** Optional indicator codes from `?ind=ACID,GCC,...`. */
+  initialInd?: string;
 };
 
 /**
- * Multi-indicator sector dashboard: one sector, fixed curated indicators,
+ * Multi-indicator sector dashboard: one sector, user-selected indicators,
  * global bar/pie/perspective toggles. Compose ranked-bar and pie widgets.
  */
 export class SectorDashboard extends Widget {
@@ -34,7 +37,9 @@ export class SectorDashboard extends Widget {
   }
 
   async update() {
-    const sectors = await this._config.model.sectors();
+    const sectors = filterPickableSectors(
+      await this._config.model.sectors(),
+    );
     const root = document.querySelector(this._config.selector);
     if (!root) {
       console.error("SectorDashboard: missing root", this._config.selector);
@@ -49,6 +54,7 @@ export class SectorDashboard extends Widget {
         initialPerspective: this._config.initialPerspective,
         initialBarMode: this._config.initialBarMode,
         initialPieMode: this._config.initialPieMode,
+        initialInd: this._config.initialInd,
       }),
       root,
     );
