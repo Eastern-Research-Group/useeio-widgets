@@ -4,7 +4,6 @@ import { PiePercentContribution } from "./piePercentContribution";
 import { PiePercentContributionDirectAndIndirect } from "./piePercentContributionDirectAndIndirect";
 import { Widget } from "../widget";
 import {
-  fileNames,
   filterPickableSectors,
   pickPreferredBootSector,
 } from "../util/util";
@@ -24,6 +23,7 @@ import {
   getLabel,
   sectorPurchasesPointOfConsumptionOnly,
 } from "../util/util";
+import { IndicatorOptGroups } from "../util/indicatorOptGroups";
 import { SectorSearchTable } from "../util/sectorSearchTable";
 
 export interface SmartSectorChartConfigPie {
@@ -370,11 +370,7 @@ const Component = (props: { widget: PieListSearch }) => {
                   name: "graph",
                 }}
               >
-                {fileNames.map((file) => (
-                  <option key={file} value={file}>
-                    {getLabel(file)}
-                  </option>
-                ))}
+                <IndicatorOptGroups />
               </Select>
             </FormControl>
             <FormControl className={classes.margin}>

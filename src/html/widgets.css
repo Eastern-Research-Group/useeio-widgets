@@ -854,6 +854,19 @@ th.io-sector-column-header>div {
 }
 
 /* --- Multi-indicator sector dashboard (print / PDF snapshot) --- */
+.sector-dashboard-indicator-group {
+    margin-bottom: 0.75em;
+}
+
+.sector-dashboard-indicator-group-label {
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin: 0.65em 0 0.25em;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.2em;
+}
+
 .sector-dashboard-page .apexcharts-datalabel-value {
     white-space: normal !important;
     text-align: center;

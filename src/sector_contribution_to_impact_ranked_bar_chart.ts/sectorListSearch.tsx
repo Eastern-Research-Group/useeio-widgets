@@ -18,12 +18,12 @@ import FormLabel from "@material-ui/core/FormLabel";
 import { SmartSectorChartConfigPie } from "../totalGhgEmissionPieChart.ts/pieListSearch";
 import { SmartSectorEEIOTotalImpactPerSector } from "./smart-sector-eeio-total-impacts";
 import {
-  fileNames,
   getLabel,
   filterPickableSectors,
   pickPreferredBootSector,
   sectorPurchasesPointOfConsumptionOnly,
 } from "../util/util";
+import { IndicatorOptGroups } from "../util/indicatorOptGroups";
 import DownloadCSVButton from "../util/downloadcsvfile";
 import { ChartExportMenu } from "../util/chartExportMenu";
 import { SectorSearchTable } from "../util/sectorSearchTable";
@@ -407,11 +407,7 @@ const Component = (props: { widget: SectorListSearch }) => {
                   name: "graph",
                 }}
               >
-                {fileNames.map((file) => (
-                  <option key={file} value={file}>
-                    {getLabel(file)}
-                  </option>
-                ))}
+                <IndicatorOptGroups />
               </Select>
             </FormControl>
           </div>

@@ -508,12 +508,17 @@
 
         const select = document.getElementById('my-select');
 
-        smartSectorChart.getFilesNames().forEach(file => {
-            const option = document.createElement('option');
-            option.value = file;
-            option.textContent = smartSectorChart.getLabelFormat(file);
-            if (file === 'Acidification-Potential') option.selected = true;
-            select.appendChild(option);
+        smartSectorChart.getIndicatorSelectGroups().forEach(group => {
+            const optgroup = document.createElement('optgroup');
+            optgroup.label = group.label;
+            group.slugs.forEach(file => {
+                const option = document.createElement('option');
+                option.value = file;
+                option.textContent = smartSectorChart.getLabelFormat(file);
+                if (file === 'Acidification-Potential') option.selected = true;
+                optgroup.appendChild(option);
+            });
+            select.appendChild(optgroup);
         });
     </script>
 </body>

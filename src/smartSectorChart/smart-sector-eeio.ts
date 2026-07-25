@@ -30,6 +30,7 @@ import { getLabel } from "../util";
 import {
   fileNames,
   filterPickableSectors,
+  getIndicatorSelectGroups,
   SECTOR_PURCHASES_FILE_SLUG,
 } from "../util/util";
 
@@ -137,6 +138,13 @@ export class SmartSectorEEIO extends Widget {
 
   getFilesNames(): string[] {
     return fileNames.filter((slug) => slug !== SECTOR_PURCHASES_FILE_SLUG);
+  }
+
+  /** Grouped indicator options for the stacked-page `<select>` (excludes sector-purchases). */
+  getIndicatorSelectGroups(): { id: string; label: string; slugs: string[] }[] {
+    return getIndicatorSelectGroups({
+      excludeSlugs: [SECTOR_PURCHASES_FILE_SLUG],
+    });
   }
 
   async selectiveGraph(
