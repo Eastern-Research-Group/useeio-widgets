@@ -24,7 +24,12 @@ import {
   sectorPurchasesPointOfConsumptionOnly,
 } from "../util/util";
 import { IndicatorOptGroups } from "../util/indicatorOptGroups";
+import {
+  CONTROL_HELP_HREFS,
+  ControlHelpLink,
+} from "../util/controlHelpLink";
 import { SectorSearchTable } from "../util/sectorSearchTable";
+import { SmartSectorResourceLinks } from "../util/smartSectorResourceLinks";
 
 export interface SmartSectorChartConfigPie {
   modelOne: {
@@ -328,14 +333,7 @@ const Component = (props: { widget: PieListSearch }) => {
             <FormControl className={classes.margin}>
               <InputLabel id="demo-controlled-open-select-label">
                 Select perspective:{" "}
-                <a
-                  href="./glossary.html#perspectives-help"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ fontSize: "0.75rem", fontWeight: 400 }}
-                >
-                  What is this?
-                </a>
+                <ControlHelpLink href={CONTROL_HELP_HREFS.perspectives} />
               </InputLabel>
               <Select
                 native
@@ -359,7 +357,8 @@ const Component = (props: { widget: PieListSearch }) => {
             </FormControl>
             <FormControl className={classes.margin}>
               <InputLabel id="demo-controlled-open-select-label">
-                Select Indicator:
+                Select Indicator:{" "}
+                <ControlHelpLink href={CONTROL_HELP_HREFS.indicators} />
               </InputLabel>
               <Select
                 native
@@ -375,7 +374,8 @@ const Component = (props: { widget: PieListSearch }) => {
             </FormControl>
             <FormControl className={classes.margin}>
               <InputLabel id="demo-controlled-open-select-label">
-                Level of Detail:
+                Level of Detail:{" "}
+                <ControlHelpLink href={CONTROL_HELP_HREFS.levelOfDetail} />
               </InputLabel>
               <Select
                 id="aggregateId"
@@ -402,28 +402,7 @@ const Component = (props: { widget: PieListSearch }) => {
               />{" "}
             </div>
           </div>
-          <div className={`${classes.linkSectors} smart-sector-resource-links`}>
-            <span className="smart-sector-resource-intro">
-              See more info about the{" "}
-              <a href="./sector-info-table.html" target="_blank">
-                sectors BEA/NAICS Codes
-              </a>
-              .
-            </span>
-            <span className="smart-sector-resource-line">
-              Open the{" "}
-              <a href="./sector-dashboard.html" target="_blank">
-                multi-indicator sector dashboard
-              </a>{" "}
-              for several indicators on one page.
-            </span>
-            <span className="smart-sector-resource-line">
-              <a href="./glossary.html" target="_blank">
-                Glossary
-              </a>
-              .
-            </span>
-          </div>
+          <SmartSectorResourceLinks className={classes.linkSectors} />
         </div>
 
         <div

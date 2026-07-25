@@ -11,6 +11,10 @@ import { makeStyles } from "@material-ui/core/styles";
 import { getLabel, pickPreferredBootSector } from "../util/util";
 import { SectorSearchTable } from "../util/sectorSearchTable";
 import {
+  CONTROL_HELP_HREFS,
+  ControlHelpLink,
+} from "../util/controlHelpLink";
+import {
   modelOfSmartSector,
   CommodityOutputTimeSeriesRow,
 } from "../smartSectorWebApi.ts/webApiSmartSector";
@@ -548,25 +552,20 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
             <div className={classes.item}>
               <button type="button" onClick={openIndicatorModal}>
                 Choose indicators ({appliedIndicators.length})
-              </button>
+              </button>{" "}
+              <ControlHelpLink
+                href={CONTROL_HELP_HREFS.indicators}
+                className="sector-dashboard-no-print"
+              />
             </div>
             <div className={classes.item}>
               <FormControl className={classes.margin}>
                 <InputLabel htmlFor="sd-perspective">
                   Perspective{" "}
-                  <a
-                    href="./glossary.html#perspectives-help"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <ControlHelpLink
+                    href={CONTROL_HELP_HREFS.perspectives}
                     className="sector-dashboard-no-print"
-                    style={{
-                      fontSize: "0.75rem",
-                      fontWeight: 400,
-                      marginLeft: 4,
-                    }}
-                  >
-                    What is this?
-                  </a>
+                  />
                 </InputLabel>
                 <Select
                   native
@@ -613,7 +612,11 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
             <div className={classes.item}>
               <FormControl component="fieldset">
                 <FormLabel component="legend" style={{ fontSize: "0.75rem" }}>
-                  Pie chart
+                  Pie chart{" "}
+                  <ControlHelpLink
+                    href={CONTROL_HELP_HREFS.levelOfDetail}
+                    className="sector-dashboard-no-print"
+                  />
                 </FormLabel>
                 <RadioGroup
                   row

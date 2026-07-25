@@ -24,9 +24,14 @@ import {
   sectorPurchasesPointOfConsumptionOnly,
 } from "../util/util";
 import { IndicatorOptGroups } from "../util/indicatorOptGroups";
+import {
+  CONTROL_HELP_HREFS,
+  ControlHelpLink,
+} from "../util/controlHelpLink";
 import DownloadCSVButton from "../util/downloadcsvfile";
 import { ChartExportMenu } from "../util/chartExportMenu";
 import { SectorSearchTable } from "../util/sectorSearchTable";
+import { SmartSectorResourceLinks } from "../util/smartSectorResourceLinks";
 export interface SmartSectorChartConfigNormal {
   model: WebModel;
   endpoint: "./api";
@@ -349,7 +354,7 @@ const Component = (props: { widget: SectorListSearch }) => {
         </div>
       </div>
 
-      <div className={classes.tagCcontainer}>
+      <div className={`${classes.tagCcontainer} ranked-sector-controls`}>
         <div className={classes.left}>
           <SectorSearchTable
             sectors={props.widget.sectors}
@@ -362,14 +367,7 @@ const Component = (props: { widget: SectorListSearch }) => {
             <FormControl className={classes.margin}>
               <InputLabel id="demo-controlled-open-select-label">
                 Select perspective:{" "}
-                <a
-                  href="./glossary.html#perspectives-help"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ fontSize: "0.75rem", fontWeight: 400 }}
-                >
-                  What is this?
-                </a>
+                <ControlHelpLink href={CONTROL_HELP_HREFS.perspectives} />
               </InputLabel>
               <Select
                 native
@@ -396,7 +394,8 @@ const Component = (props: { widget: SectorListSearch }) => {
           <div className={classes.item}>
             <FormControl className={classes.margin}>
               <InputLabel id="demo-controlled-open-select-label">
-                Select Indicator:
+                Select Indicator:{" "}
+                <ControlHelpLink href={CONTROL_HELP_HREFS.indicators} />
               </InputLabel>
               <Select
                 native
@@ -447,28 +446,7 @@ const Component = (props: { widget: SectorListSearch }) => {
             />{" "}
           </div>
 
-          <div className={`${classes.item} smart-sector-resource-links`}>
-            <span className="smart-sector-resource-intro">
-              See more info about the{" "}
-              <a href="./sector-info-table.html" target="_blank">
-                sectors BEA/NAICS Codes
-              </a>
-              .
-            </span>
-            <span className="smart-sector-resource-line">
-              Open the{" "}
-              <a href="./sector-dashboard.html" target="_blank">
-                multi-indicator sector dashboard
-              </a>{" "}
-              for several indicators on one page.
-            </span>
-            <span className="smart-sector-resource-line">
-              <a href="./glossary.html" target="_blank">
-                Glossary
-              </a>
-              .
-            </span>
-          </div>
+          <SmartSectorResourceLinks className={classes.item} />
         </div>
       </div>
     </div>

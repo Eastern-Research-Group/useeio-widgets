@@ -504,9 +504,59 @@ input[type="search" i] {
     min-width: 12rem;
 }
 
-.smart-sector-eeio-help-link {
-    font-size: 0.85em;
-    margin-left: 6px;
+.smart-sector-eeio-help-link,
+a.control-help-link {
+    color: #005ea2;
+    font-weight: 600;
+    font-size: 0.8em;
+    margin-left: 0.4em;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+a.control-help-link--icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 1.15rem;
+    height: 1.15rem;
+    margin-left: 0.35em;
+    padding: 0;
+    border: 1.5px solid #005ea2;
+    border-radius: 50%;
+    font-size: 0.72rem;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none;
+    vertical-align: middle;
+    flex-shrink: 0;
+}
+
+/* Beat MUI InputLabel / FormLabel inherited muted colors */
+.MuiFormLabel-root a.control-help-link,
+.MuiInputLabel-root a.control-help-link,
+label a.control-help-link {
+    color: #005ea2;
+}
+
+.smart-sector-eeio-help-link:hover,
+.smart-sector-eeio-help-link:focus,
+a.control-help-link:hover,
+a.control-help-link:focus {
+    color: #1a4480;
+}
+
+a.control-help-link--icon:hover,
+a.control-help-link--icon:focus {
+    border-color: #1a4480;
+    background: #e7f0f8;
+}
+
+.smart-sector-eeio-help-link:focus-visible,
+a.control-help-link:focus-visible {
+    outline: 2px solid #2491ff;
+    outline-offset: 2px;
 }
 
 .smart-sector-eeio-radio-option {
@@ -831,13 +881,16 @@ th.io-sector-column-header>div {
     background: #eee;
 }
 
-/* Stacked sector EEIO footer links */
+/* Shared resource links under chart controls */
+.smart-sector-resource-links {
+    line-height: 1.45;
+    font-size: 0.95rem;
+}
+
 .smart-sector-eeio-controls-footer .smart-sector-resource-links {
     flex: 1 1 16rem;
     min-width: 0;
     max-width: none;
-    line-height: 1.45;
-    font-size: 0.95rem;
 }
 
 .smart-sector-resource-intro {
@@ -850,7 +903,30 @@ th.io-sector-column-header>div {
 }
 
 .smart-sector-resource-line:not(:last-child) {
-    margin-bottom: 0.25em;
+    margin-bottom: 0.35em;
+}
+
+.smart-sector-resource-links a {
+    color: #005ea2;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.smart-sector-resource-links a:hover,
+.smart-sector-resource-links a:focus {
+    color: #1a4480;
+}
+
+.smart-sector-resource-links a:focus-visible {
+    outline: 2px solid #2491ff;
+    outline-offset: 2px;
+}
+
+/* Ranked bars: separate chart from controls (match stacked page divider) */
+.ranked-sector-controls {
+    padding-top: 0.75rem;
+    margin-top: 1rem;
+    border-top: 1px solid #e6e6e6;
 }
 
 /* --- Multi-indicator sector dashboard (print / PDF snapshot) --- */

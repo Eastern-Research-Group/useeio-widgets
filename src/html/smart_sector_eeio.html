@@ -40,13 +40,17 @@
             <div class="smart-sector-eeio-controls-row">
                 <div class="smart-sector-eeio-control-cell">
                     <label for="my-select">Select Indicator:</label>
+                    <a href="./indicator-list.html" target="_blank" rel="noopener noreferrer"
+                        class="control-help-link control-help-link--icon" aria-label="What is this?"
+                        title="What is this?">?</a>
                     <br>
                     <select id="my-select" onchange="changeGraph(this.value)"></select>
                 </div>
                 <div class="smart-sector-eeio-control-cell smart-sector-eeio-control-cell--radios">
                     <label for="allocation-selected">Results Perspective:</label>
                     <a href="./glossary.html#perspectives-help" target="_blank" rel="noopener noreferrer"
-                        class="smart-sector-eeio-help-link">What is this?</a>
+                        class="control-help-link control-help-link--icon" aria-label="What is this?"
+                        title="What is this?">?</a>
                     <br>
                     <label class="smart-sector-eeio-radio-option"><input type="radio" name="myRadios" value="final"
                             checked /> Point of consumption</label>
@@ -82,6 +86,9 @@
                 </div>
                 <div class="smart-sector-eeio-control-cell smart-sector-eeio-control-cell--radios">
                     <label for="group-selected">Level of Detail:</label>
+                    <a href="./glossary.html#level-of-detail" target="_blank" rel="noopener noreferrer"
+                        class="control-help-link control-help-link--icon" aria-label="What is this?"
+                        title="What is this?">?</a>
                     <br>
                     <label class="smart-sector-eeio-radio-option"><input type="radio" name="groupRadio"
                             value="group_detail" checked /> Detailed</label>
@@ -93,10 +100,18 @@
             <div class="smart-sector-eeio-controls-footer">
                 <div id="smart-sector-eeio-graph" class="smart-sector-eeio-csv-mount"></div>
                 <div class="smart-sector-resource-links">
-                    <span class="smart-sector-resource-intro">See more info about the
-                        <a href="./sector-info-table.html" target="_blank">sectors BEA/NAICS Codes</a>.</span>
-                    <span class="smart-sector-resource-line"><a href="./sector-dashboard.html" target="_blank">Multi-indicator sector dashboard</a></span>
-                    <span class="smart-sector-resource-line"><a href="./glossary.html" target="_blank">Glossary</a></span>
+                    <span class="smart-sector-resource-line">See the
+                        <a href="./sector-info-table.html" target="_blank" rel="noopener noreferrer">Sector Information Table</a>
+                        for more information.</span>
+                    <span class="smart-sector-resource-line">Use the
+                        <a href="./sector-dashboard.html" target="_blank" rel="noopener noreferrer">Multi-indicator Sector Dashboard</a>
+                        to compare up to 6 indicators on one page.</span>
+                    <span class="smart-sector-resource-line">See the
+                        <a href="./glossary.html" target="_blank" rel="noopener noreferrer">Glossary</a>
+                        for definitions of terms.</span>
+                    <span class="smart-sector-resource-line">See the
+                        <a href="./indicator-list.html" target="_blank" rel="noopener noreferrer">Indicator List</a>
+                        for indicator definitions.</span>
                 </div>
             </div>
 
