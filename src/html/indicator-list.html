@@ -43,7 +43,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-    <title>Prototype - Supply Chain Life Cycle Assessment Tool</title>
+    <title>Indicator List</title>
    <!-- <link rel="icon" type="image/x-icon" href="https://www.epa.gov/themes/epa_theme/images/favicon.ico"> -->
     <meta name="msapplication-TileColor" content="#FFFFFF">
     <meta name="msapplication-TileImage" content="https://www.epa.gov/themes/epa_theme/images/favicon-144.png">
@@ -217,103 +217,105 @@
         <div class="l-constrain">
             <article  role="article" class="article" lang="en">
 
-            <h1>Prototype - Supply Chain Life Cycle Assessment Tool</h1>
-            <p>The <b>Supply Chain Life Cycle Assessment Tool</b> provides data visualizations of the life cycle (cradle-to-gate) environmental and economic impacts of over 400 economic sectors of the U.S. economy. The tool is based on EPA's United States Environmentally-Extended Input-Output (USEEIO) model and is intended to help businesses, organizations, and others interested in understanding and managing life cycle environmental aspects.</p>
+            <h1>Indicator List</h1>
 
-            <p>Life cycle environmental impacts include <em>Direct</em> impacts from a sector's own operations and <em>Indirect</em> impacts embedded in the purchases made by a sector through its supply chain. The tool provides the following charts and functions:</p>
-            
-            <ul class="usa-card-group">
-              <li class="usa-card   tablet:grid-col-3">
-                <div class="usa-card__container" style="border-radius: 0;">
-                    <div class="usa-card__media" style="border-radius: 0;">
-                      <div class="usa-card__img" style="border-radius: 0;background-color: white !important;">
-                      <img loading="eager" style="object-fit: contain !important;" sizes="(max-width: 640px) calc(100vw - 2rem), 640px" width="640" height="180" src="image/directAndIndirect.png" alt="Comparison of Direct and
-                      Indirect Supply Chain Impacts by
-                      Sector" />
-                      </div>
-                    </div>
-                    <div class="usa-card__body">
-                        <a style="text-decoration: none;" href="./pie_chart.html" target="_blank">Comparison of Direct and
-                          Indirect Supply Chain Impacts by Sector</a>
-                    </div>
-                     
-               </div>
-              </li>
-            <li class="usa-card   tablet:grid-col-3">
-              <div class="usa-card__container" style="border-radius: 0;">
-                <div class="usa-card__media" style="border-radius: 0;">
-                  <div class="usa-card__img" style="border-radius: 0;background-color: white !important;">
-                      <img loading="eager" style="object-fit: contain !important;margin-top: 40%;" sizes="(max-width: 640px) calc(100vw - 2rem), 640px" width="640" height="180" src="image/ContributionsToTotalSectors.png" alt="Supplier Contributions to Total Life Cycle Impacts by Sector" />
-                    </div>
-                  </div>
-                  <div class="usa-card__body">
-                      <a style="text-decoration: none;" href="./sum_of_impact_per_purchase.html" target="_blank">Supplier Contributions to Total Life Cycle Impacts by Sector</a>
-                  </div>
-              </div>
-            </li>
-              <li class="usa-card   tablet:grid-col-3">
-                <div class="usa-card__container" style="border-radius: 0;">
-                  <div class="usa-card__media" style="border-radius: 0;">
-                    <div class="usa-card__img" style="border-radius: 0;background-color: white !important;">
-                        <img loading="eager" style="object-fit: contain !important;margin-top: 40%;" sizes="(max-width: 640px) calc(100vw - 2rem), 640px" width="640" height="180" src="image/topSectorsGraph.png" alt="Top Sectors Based on Selected Life Cycle Impacts" />
-                      </div>
-                    </div>
-                    <div class="usa-card__body">
-                        <a style="text-decoration: none;" href="./smart_sector_eeio.html" target="_blank">Top Sectors Based on
-                          Selected Life Cycle Impacts</a>
-                    </div>
-                     
-               </div>
-              </li>
+            <p><a href="./smindex.html">Home</a>
+              &nbsp;|&nbsp; <a href="./user-guide.html">User Guide</a>
+              &nbsp;|&nbsp; <a href="./interpreting-results.html">Interpreting Results</a>
+              &nbsp;|&nbsp; <a href="./indicator-list.html">Indicator List</a>
+              &nbsp;|&nbsp; <a href="./about-data-methods.html">About Data and Methods</a>
+              &nbsp;|&nbsp; <a href="./glossary.html">Glossary</a>
+              &nbsp;|&nbsp; <a href="./sector-info-table.html">Sector Information Table</a>
+            </p>
+
+            <p>The tool provides environmental and economic indicators based on sector purchases,
+              jobs supported, EPA regulatory program indicators, life cycle assessment metrics,
+              and individual pollutants. Select an indicator from the drop-down menu on any chart
+              page. Display names in the tool may use slightly shorter labels than the headings
+              below.</p>
+
+            <h3 id="economic-indicators">Economic Indicators</h3>
+            <ul>
+              <li id="sector-purchases"><b>Sector Purchases:</b>
+                <em>Description pending final EPA wording.</em>
+                In this tool, Sector Purchases shows estimated dollar purchases associated with a
+                sector&rsquo;s supply chain (including domestic vs imported where shown), as distinct
+                from industry dollar output used for intensity calculations.</li>
+              <li id="jobs-supported"><b>Jobs Supported:</b>
+                Reflects the jobs supported within a sector&rsquo;s supply chain. Measured in
+                total jobs; an economic and sustainability indicator.</li>
             </ul>
 
-            <h3>Using the Supply Chain Life Cycle Assessment Tool</h3>
-            
-            <h4>Select a Sector</h4>
-            <p>Use the drop-down menu to select a sector for analysis.
-              Data for over 400 sectors across the U.S. economy are included in the Tool and are based on statistical categories developed by the U.S. Bureau of Economic Analysis (BEA) and the U.S. Census Bureau's North American Industry Classification System (NAICS). The Tool draws from data pertaining to economic sectors and not the products produced by those sectors.
-              The <a href="./sector-info-table.html">Sector Information Table</a> provides descriptions of the available sectors.
-              </p>
-
-            <h4>Select a Perspective</h4>
-            <p>Select one of the following supply chain perspectives to view results, where applicable:</p>
-                <ul>
-                  <li><b>Point of consumption</b>: Allocates a sector's impacts to its direct suppliers of final products (e.g., its Tier 1 suppliers). </li>
-                  <li><b>Supply chain</b>: Allocates a sector's impacts to all the sources within the entire supply chain wherever they occur. </li> 
-                </ul>
-            <p>See the <a href="./glossary.html#perspectives-help">Glossary</a> for more information about perspectives.</p>
-
-            <h4>Select Indicator</h4>
-            <p>Select an indicator from the drop-down menu. The tool includes indicators commonly used in Life Cycle Assessments (LCAs) and Environmental Product Declarations (EPDs) as well as additional indicators from USEEIO. See the <a href="./indicator-list.html">Indicator List</a> for definitions and groupings.</p>
-
-            <h4>Select Results View</h4>
-            <p>Where applicable, view results as</p>
+            <h3 id="regulatory-indicators">Regulatory Environmental Indicators</h3>
             <ul>
-                <li><b>Total impacts:</b> Shows the total estimated potential impacts across a sector's supply chain.
-                <li><b>Impact intensity:</b> Shows the estimated potential impact per million dollars ($) of output across a sector's supply chain.
-              </ul>
-
-            <h4>Downloading Results</h4>
-            <p>Data visualizations and data tables can be downloaded from the Tool by clicking on the download menu shown as three small horizontal lines at the top right corner of a graph. </p>
-
-            <h3>More information</h3>
-            <ul>
-              <li><a href="./user-guide.html">User Guide</a> &mdash; walkthrough of the data viewers (content in progress)</li>
-              <li><a href="./interpreting-results.html">Interpreting and Understanding Results</a> &mdash; how to read and use the results (content in progress)</li>
-              <li><a href="./indicator-list.html">Indicator List</a> &mdash; definitions of the environmental and economic indicators</li>
-              <li><a href="./about-data-methods.html">About Data and Methods</a> &mdash; USEEIO context and primary data sources</li>
-              <li><a href="./glossary.html">Glossary</a> &mdash; definitions of key terms</li>
-              <li><a href="./sector-info-table.html">Sector Information Table</a> &mdash; descriptions of available sectors</li>
-              <li><a href="./sector-dashboard.html">Multi-indicator Sector Dashboard</a> &mdash; compare up to 6 indicators for one sector</li>
+              <li id="commercial-hazardous-waste"><b>Commercial Hazardous Waste:</b>
+                Based on the quantity of hazardous waste generated, as reported to EPA&rsquo;s
+                National Biennial Resource Conservation and Recovery Act of 1976 (RCRA) Hazardous
+                Waste Report.</li>
+              <li id="criteria-air-pollutants"><b>Criteria Air Pollutants (CAPs):</b>
+                Based on the total quantity of CAPs published by the National Emissions Inventory
+                and other sources. The Federal Clean Air Act defines CAPs as lead, carbon monoxide,
+                nitrogen oxide, sulfur dioxide, particulate matter (PM) 10 microns in diameter or
+                less, PM 2.5 microns in diameter or less, volatile organic compounds, ammonia,
+                black carbon, and organic carbon.</li>
+              <li id="toxic-releases-to-land"><b>Toxic Releases to Land:</b>
+                Based on the total release to land as reported to the Toxic Release Inventory
+                (TRI). This includes releases to uncontained surface impoundments, other land
+                disposal methods, spills, and leaks. The quantity of releases does not indicate
+                the level of health risk posed by the chemicals.</li>
             </ul>
-            </article>
+
+            <h3 id="lcia-metrics">Life Cycle Impact Assessment Metrics</h3>
+            <ul>
+              <li id="acidification-potential"><b>Acidification Potential (SO<sub>2</sub>eq):</b>
+                Reflects potential air emissions that contribute to acid rain. Measured in metric
+                tons of sulfur dioxide equivalents (SO<sub>2</sub>eq). AP is an air quality
+                indicator and SO<sub>2</sub> is a criteria air pollutant regulated under the Clean
+                Air Act.</li>
+              <li id="eutrophication-potential"><b>Eutrophication Potential (Neq):</b>
+                Reflects potential discharges of excess nitrogen and phosphorus in water that can
+                lead to eutrophication. Measured in metric tons of nitrogen equivalents (N eq). EP
+                is a water quality indicator and nitrogen and phosphorus discharges are regulated
+                under the Clean Water Act.</li>
+              <li id="freshwater-withdrawals"><b>H<sub>2</sub>O Freshwater Withdrawals (FW):</b>
+                Reflects potential water withdrawals from rivers, lakes, and groundwater. Measured
+                in cubic meters of water (m<sup>3</sup>). FW is a water use indicator.</li>
+              <li id="global-warming-potential"><b>Global Warming Potential (CO<sub>2</sub>e):</b>
+                Reflects potential greenhouse gas emissions. Measured in metric tons of carbon
+                dioxide equivalent emissions (CO<sub>2</sub>e) based on the AR6 100-year Global
+                Warming Potential (GWP) timeframe. GWP is an air quality indicator.</li>
+              <li id="human-health-respiratory"><b>Human Health Respiratory Effects (PM2.5eq):</b>
+                Reflects potential air emissions of soot and particulates from smoke. Measured in
+                metric tons of particulate matter micron-size equivalents (PM 2.5 eq). PM is an air
+                quality indicator and a criteria air pollutant regulated under the Clean Air Act.</li>
+              <li id="ozone-depletion"><b>Ozone Depletion Potential (CFCeq):</b>
+                Reflects potential emissions of ozone depleting substances that impact the
+                stratospheric ozone layer. Measured in chlorofluorocarbon equivalents (CFC-11 eq).
+                ODP is an air quality indicator and regulated under the Clean Air Act.</li>
+              <li id="smog-formation"><b>Smog Formation (O<sub>3</sub>eq):</b>
+                Reflects potential air emissions of nitrogen oxides and volatile organic compounds
+                (VOCs) that contribute to photochemical ozone creation (POCP). Measured in metric
+                tons of ozone equivalents (O<sub>3</sub>eq). POCP is an air quality indicator and
+                ozone is a criteria pollutant regulated under the Clean Air Act.</li>
+            </ul>
+
+            <h3 id="individual-pollutants">Individual Pollutants</h3>
+            <p>Emissions to air of selected individual pollutants. Chart units and labels follow the
+              values shown in each viewer.</p>
+            <ul>
+              <li>Carbon Dioxide</li>
+              <li>Carbon Monoxide</li>
+              <li>Lead</li>
+              <li>Methane</li>
+              <li>Nitrogen Dioxide</li>
+              <li>Nitrous Oxide</li>
+              <li>Particulate Matter 2.5</li>
+              <li>Sulfur Dioxide</li>
+            </ul>
+</article>
             <p>&nbsp;&nbsp;</p>
         </div>
     </div>
-    <script>
-      const image = document.querySelector('.usa-card__img img');
-      image.removeAttribute('height');
-    </script>
   </main>
 
 
