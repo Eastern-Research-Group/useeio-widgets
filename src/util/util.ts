@@ -144,3 +144,13 @@ export type {
   IndicatorGroupId,
   IndicatorSelectGroup,
 } from "./indicatorCatalog";
+
+export {
+  TERM_HELP,
+  TermHelp,
+  termHelp,
+  termHelpHtml,
+  stackedIntroParagraphHtml,
+  stackedEmbodiedImpactsClauseHtml,
+} from "./termHelp";
+export type { TermHelpId, TermHelpEntry, StackedIntroKind } from "./termHelp";

@@ -24,6 +24,7 @@ import {
   SECTOR_PURCHASES_DIRECT_DISPLAY,
   SECTOR_PURCHASES_FILE_SLUG,
   sectorPurchasesPointOfConsumptionOnly,
+  TermHelp,
 } from "../util/util";
 import { IndicatorOptGroups } from "../util/indicatorOptGroups";
 import {
@@ -234,16 +235,18 @@ const Component = (props: { widget: PieListSearch }) => {
   const pieIntro = isSectorPurchases ? (
     <>
       For the sector selected below, the chart shows the total and percentage
-      attributable to <em>{SECTOR_PURCHASES_DIRECT_DISPLAY}</em> (purchases
-      within the same BEA sector code) and <em>Indirect</em> purchases from
-      other sectors.
+      attributable to{" "}
+      <TermHelp term="withinSectorSpend" /> (purchases within the same BEA
+      sector code) and <TermHelp term="indirect">Indirect</TermHelp> purchases
+      from other sectors.
     </>
   ) : (
     <>
       For the sector selected below, the chart shows the total and percentage
-      impacts attributable to <em>Direct</em> impacts from facility operations
-      and <em>Indirect</em> impacts embedded in the purchases made by the
-      sector.
+      impacts attributable to <TermHelp term="direct">Direct</TermHelp> impacts
+      from facility operations and{" "}
+      <TermHelp term="indirect">Indirect</TermHelp> impacts embedded in the
+      purchases made by the sector.
     </>
   );
 

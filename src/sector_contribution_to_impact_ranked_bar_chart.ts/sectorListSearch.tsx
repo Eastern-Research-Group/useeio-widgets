@@ -21,9 +21,9 @@ import {
   getLabel,
   filterPickableSectors,
   pickPreferredBootSector,
-  SECTOR_PURCHASES_DIRECT_DISPLAY,
   SECTOR_PURCHASES_FILE_SLUG,
   sectorPurchasesPointOfConsumptionOnly,
+  TermHelp,
 } from "../util/util";
 import { IndicatorOptGroups } from "../util/indicatorOptGroups";
 import {
@@ -276,16 +276,18 @@ const Component = (props: { widget: SectorListSearch }) => {
           <>
             For the sector selected below, the chart shows the contribution to
             total purchases and intensity from{" "}
-            <em>{SECTOR_PURCHASES_DIRECT_DISPLAY}</em> (purchases within the same
-            BEA sector code) and <em>Indirect</em> purchases from all other
-            sectors.
+            <TermHelp term="withinSectorSpend" /> (purchases within the same
+            BEA sector code) and <TermHelp term="indirect">Indirect</TermHelp>{" "}
+            purchases from all other sectors.
           </>
         ) : (
           <>
             For the sector selected below, the chart shows the contribution to
-            total impacts and intensity from <em>Direct</em> impacts due to
-            facility operations and <em>Indirect</em> impacts embedded in the
-            purchases made from all other sectors for {getLabel(graph)}.
+            total impacts and intensity from{" "}
+            <TermHelp term="direct">Direct</TermHelp> impacts due to facility
+            operations and <TermHelp term="indirect">Indirect</TermHelp> impacts
+            embedded in the purchases made from all other sectors for{" "}
+            {getLabel(graph)}.
           </>
         )}
       </p>
