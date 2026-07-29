@@ -112,6 +112,7 @@ export class SmartSectorEEIO extends Widget {
       this.toggleGroupSelection,
       this.perspective,
       this.fileNameTitle,
+      this.selectorName,
     );
     this.chartOptions = option;
     this.chart = new ApexCharts(
@@ -249,6 +250,7 @@ export class SmartSectorEEIO extends Widget {
       this.toggleGroupSelection,
       this.perspective,
       this.fileNameTitle,
+      this.selectorName,
     );
     this.chartOptions = option;
 
@@ -288,6 +290,7 @@ export class SmartSectorEEIO extends Widget {
       this.toggleGroupSelection,
       this.perspective,
       this.fileNameTitle,
+      this.selectorName,
     );
     this.chartOptions = option;
     await this.chart.updateOptions(option, false, true);

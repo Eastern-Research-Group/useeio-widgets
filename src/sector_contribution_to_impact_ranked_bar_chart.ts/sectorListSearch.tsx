@@ -117,9 +117,8 @@ const Component = (props: { widget: SectorListSearch }) => {
   );
 
   React.useEffect(() => {
-    //Changes meta title according to the graph selected
-    document.title = getLabel(graph);
-  }, [graph]);
+    document.title = "Contribution to Total Impacts";
+  }, []);
 
   React.useEffect(() => {
     const list = props.widget.sectors;
@@ -267,7 +266,9 @@ const Component = (props: { widget: SectorListSearch }) => {
           margin: "0 auto",
         }}
       >
-        Contribution to Total Sector Impacts and Intensity for {getLabel(graph)}
+        {graph === SECTOR_PURCHASES_FILE_SLUG
+          ? "Contribution to Total Sector Impacts and Intensity"
+          : `Contribution to Total Sector Impacts and Intensity for ${getLabel(graph)}`}
       </h1>
       {/* Update paragraph with graph selected */}
       <p id="paragraph" className="text-center">
@@ -277,7 +278,7 @@ const Component = (props: { widget: SectorListSearch }) => {
             total purchases and intensity from{" "}
             <em>{SECTOR_PURCHASES_DIRECT_DISPLAY}</em> (purchases within the same
             BEA sector code) and <em>Indirect</em> purchases from all other
-            sectors for {getLabel(graph)}.
+            sectors.
           </>
         ) : (
           <>

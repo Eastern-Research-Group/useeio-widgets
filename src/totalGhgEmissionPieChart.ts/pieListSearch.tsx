@@ -221,30 +221,29 @@ const Component = (props: { widget: PieListSearch }) => {
   };
 
   React.useEffect(() => {
-    //Changes meta title according to the graph selected
-    document.title = getLabel(graph);
-  }, [graph]);
+    document.title = "Comparison of Direct and Indirect";
+  }, []);
 
   const isSectorPurchases = graph === SECTOR_PURCHASES_FILE_SLUG;
   const pieTitle = isSectorPurchases
-    ? `Comparison of ${SECTOR_PURCHASES_DIRECT_DISPLAY} and Indirect Supply Chain for ${getLabel(graph)}`
+    ? `Comparison of ${SECTOR_PURCHASES_DIRECT_DISPLAY} and Indirect Supply Chain`
     : `Comparison of Direct and Indirect Supply Chain Impacts for ${getLabel(graph)}`;
   const pieChartSubtitle = isSectorPurchases
-    ? `${SECTOR_PURCHASES_DIRECT_DISPLAY} and Indirect Supply Chain for ${getLabel(graph)}`
+    ? `${SECTOR_PURCHASES_DIRECT_DISPLAY} and Indirect Supply Chain`
     : `Direct and Indirect Supply Chain Impacts for ${getLabel(graph)}`;
   const pieIntro = isSectorPurchases ? (
     <>
       For the sector selected below, the chart shows the total and percentage
       attributable to <em>{SECTOR_PURCHASES_DIRECT_DISPLAY}</em> (purchases
       within the same BEA sector code) and <em>Indirect</em> purchases from
-      other sectors for {getLabel(graph)}.
+      other sectors.
     </>
   ) : (
     <>
       For the sector selected below, the chart shows the total and percentage
       impacts attributable to <em>Direct</em> impacts from facility operations
       and <em>Indirect</em> impacts embedded in the purchases made by the
-      sector for {getLabel(graph)}.
+      sector.
     </>
   );
 

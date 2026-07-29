@@ -107,6 +107,10 @@ export async function apexGraph(
       yaxisTitle = "Million USD of Purchases";
       unitLabel = "million USD";
       break;
+    case "Releases to Ground":
+      yaxisTitle = "Metric Tons of Releases";
+      unitLabel = "MT";
+      break;
     case "Global Warming Potential":
     case "GWP AR6 100":
     case "GWP AR6 20":

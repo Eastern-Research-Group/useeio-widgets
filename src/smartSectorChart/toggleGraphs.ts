@@ -18,6 +18,8 @@ export async function calculate(
   groupMappingSector?: string,
   perspective?: string,
   titleFileName?: string,
+  /** Filter key from the stacked Sector Filter control (e.g. construction_materials). */
+  sectorFilterName?: string,
 ): Promise<apex.ApexOptions> {
   const sortTopTen: SumSmartSectorTotalParts[] = topSectorList.sort(
     (a: SumSmartSectorTotalParts, b: SumSmartSectorTotalParts): any => {
@@ -78,6 +80,10 @@ export async function calculate(
           yaxisTitle = "Number of jobs per Million $ of Output";
           unitLabel = "jobs per Million $ of Output";
           break;
+        case "Releases to Ground":
+          yaxisTitle = "Kilograms of Releases per Million $ of Output";
+          unitLabel = "kg per Million $ of Output";
+          break;
         case "Global Warming Potential":
         case "GWP AR6 100":
         case "GWP AR6 20":
@@ -127,6 +133,10 @@ export async function calculate(
           yaxisTitle = "Thousand Metric Tons of Waste Generated";
           unitLabel = "Thousand MT";
           break;
+        case "Releases to Ground":
+          yaxisTitle = "Metric Tons of Releases";
+          unitLabel = "MT";
+          break;
         case "Global Warming Potential":
         case "GWP AR6 100":
         case "GWP AR6 20":
@@ -139,12 +149,17 @@ export async function calculate(
       }
     }
 
-    let titleName: string;
-    if (perspective == "final") {
-      titleName = `${titleFileName} from ${titleGraph.replace(" AR6 ", "-")} (Point of Consumption)`;
-    } else {
-      titleName = `${titleFileName} from ${titleGraph.replace(" AR6 ", "-")} (Supply Chain)`;
-    }
+    const indicatorTitle = titleGraph.replace(" AR6 ", "-");
+    const perspectiveLabel =
+      perspective == "final" ? "Point of Consumption" : "Supply Chain";
+    // Curated filter presets + custom list: "<filter>: <indicator>"; Top 10/25 keep "from".
+    const useFilterColonTitle =
+      sectorFilterName === "construction_materials" ||
+      sectorFilterName === "energy_intensive" ||
+      sectorFilterName === "custom_sector_list";
+    const titleName = useFilterColonTitle
+      ? `${titleFileName}: ${indicatorTitle} (${perspectiveLabel})`
+      : `${titleFileName} from ${indicatorTitle} (${perspectiveLabel})`;
 
     const sortedSectorCodesWithNamesWithArray: string[][] =
       sortedSectorCodes.map((t) => {
