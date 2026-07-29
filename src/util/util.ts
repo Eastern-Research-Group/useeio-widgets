@@ -130,11 +130,14 @@ export function formatNumberGraph(value: number): string {
 /** Indicator order, labels, and dropdown groupings (see `indicatorCatalog.ts`). */
 export {
   SECTOR_PURCHASES_FILE_SLUG,
+  SECTOR_PURCHASES_DIRECT_DISPLAY,
   INDICATOR_GROUPS,
   fileNames,
   getLabel,
   getIndicatorSelectGroups,
   sectorPurchasesPointOfConsumptionOnly,
+  isDirectContributionLabel,
+  displayContributionLabel,
 } from "./indicatorCatalog";
 export type {
   IndicatorGroup,

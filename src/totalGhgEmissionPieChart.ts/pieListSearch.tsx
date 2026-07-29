@@ -21,6 +21,8 @@ import { ChartExportMenu } from "../util/chartExportMenu";
 import { isChartExportAttributionSvgText } from "../util/chartExportOverlay";
 import {
   getLabel,
+  SECTOR_PURCHASES_DIRECT_DISPLAY,
+  SECTOR_PURCHASES_FILE_SLUG,
   sectorPurchasesPointOfConsumptionOnly,
 } from "../util/util";
 import { IndicatorOptGroups } from "../util/indicatorOptGroups";
@@ -223,6 +225,29 @@ const Component = (props: { widget: PieListSearch }) => {
     document.title = getLabel(graph);
   }, [graph]);
 
+  const isSectorPurchases = graph === SECTOR_PURCHASES_FILE_SLUG;
+  const pieTitle = isSectorPurchases
+    ? `Comparison of ${SECTOR_PURCHASES_DIRECT_DISPLAY} and Indirect Supply Chain for ${getLabel(graph)}`
+    : `Comparison of Direct and Indirect Supply Chain Impacts for ${getLabel(graph)}`;
+  const pieChartSubtitle = isSectorPurchases
+    ? `${SECTOR_PURCHASES_DIRECT_DISPLAY} and Indirect Supply Chain for ${getLabel(graph)}`
+    : `Direct and Indirect Supply Chain Impacts for ${getLabel(graph)}`;
+  const pieIntro = isSectorPurchases ? (
+    <>
+      For the sector selected below, the chart shows the total and percentage
+      attributable to <em>{SECTOR_PURCHASES_DIRECT_DISPLAY}</em> (purchases
+      within the same BEA sector code) and <em>Indirect</em> purchases from
+      other sectors for {getLabel(graph)}.
+    </>
+  ) : (
+    <>
+      For the sector selected below, the chart shows the total and percentage
+      impacts attributable to <em>Direct</em> impacts from facility operations
+      and <em>Indirect</em> impacts embedded in the purchases made by the
+      sector for {getLabel(graph)}.
+    </>
+  );
+
   const handleChangePerspective = (event: any) => {
     const next = sectorPurchasesPointOfConsumptionOnly(graph)
       ? "final"
@@ -300,15 +325,11 @@ const Component = (props: { widget: PieListSearch }) => {
           margin: "0 auto",
         }}
       >
-        Comparison of Direct and Indirect Supply Chain Impacts for{" "}
-        {getLabel(graph)}
+        {pieTitle}
       </h1>
       {/* Update paragraph with graph selected */}
       <p id="paragraph" className="text-center">
-        For the sector selected below, the chart shows the total and percentage
-        impacts attributable to <em>Direct</em> impacts from facility operations
-        and <em>Indirect</em> impacts embedded in the purchases made by the
-        sector for {getLabel(graph)}.
+        {pieIntro}
       </p>
       <div className={classes.flexContainer}>
         <div
@@ -421,7 +442,7 @@ const Component = (props: { widget: PieListSearch }) => {
             >
               {/* Updated title of the graph with selected option */}
               <div>
-                Direct and Indirect Supply Chain Impacts for {getLabel(graph)}
+                {pieChartSubtitle}
               </div>
               <div
                 style={{
@@ -444,7 +465,7 @@ const Component = (props: { widget: PieListSearch }) => {
             >
               {/* Updated title of the graph with selected option */}
               <div>
-                Direct and Indirect Supply Chain Impacts for {getLabel(graph)}
+                {pieChartSubtitle}
               </div>
               <div
                 style={{

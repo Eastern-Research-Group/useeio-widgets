@@ -4,6 +4,7 @@ import {
   SortedImpactPerPurchaseTopList,
 } from "../smartSectorChart/smartSector";
 import { formatNumberGraph } from "../util";
+import { isDirectContributionLabel } from "../util/util";
 import { chartTypography } from "../util/chartTypography";
 
 function hasPurchaseOriginIntensitySplit(
@@ -123,7 +124,9 @@ export async function apexGraph(
   const colors = stackOrigin
     ? ["#2E93fA", "#FF9800"]
     : data.map((t) => {
-        return t.purchase_commodity.includes("Direct") ? "#4CAF50" : "#2E93fA";
+        return isDirectContributionLabel(t.purchase_commodity)
+          ? "#4CAF50"
+          : "#2E93fA";
       });
 
   let totalSum: number = 0;

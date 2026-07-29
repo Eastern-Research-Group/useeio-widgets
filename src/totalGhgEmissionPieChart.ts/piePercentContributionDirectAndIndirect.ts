@@ -20,6 +20,10 @@ import {
   exportSmindexRankedPieChart,
   preparePieChartOptionsForDisplay,
 } from "../util/chartExportOverlay";
+import {
+  displayContributionLabel,
+  isDirectContributionLabel,
+} from "../util/util";
 import * as apex from "apexcharts";
 
 export interface SmartSectorChartConfig {
@@ -178,10 +182,11 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
     const sortedPercentList: SortingPercentContributionIndirectAndDirect[] = [];
 
     sectorContribution.forEach((t) => {
+      const directLabel = displayContributionLabel("Direct", this.graphName);
       if (sortedPercentList.length === 0) {
         let directOrIndirect = "Indirect";
         if (t.sector_purchased_detail == "Direct") {
-          directOrIndirect = "Direct";
+          directOrIndirect = directLabel;
         }
 
         const sortingContribution =
@@ -215,26 +220,25 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
 
           const direct: ContributionListForSectorDirectOrIndirect =
             contributionPercentageFound._contributionList.find((j) => {
-              if (j.directOrIndirect === "Direct") {
+              if (isDirectContributionLabel(j.directOrIndirect)) {
                 return true;
               }
             });
 
-          if (
-            indirect !== undefined &&
-            !(t.sector_purchased_detail == "Direct")
-          ) {
+          if (t.sector_purchased_detail == "Direct") {
+            if (direct !== undefined) {
+              direct.contribution += t.contribution;
+              direct.totalImpactSum += t.total_impacts_sum;
+            } else {
+              contributionPercentageFound.addContributionSectorList({
+                directOrIndirect: directLabel,
+                contribution: t.contribution,
+                totalImpactSum: t.total_impacts_sum,
+              });
+            }
+          } else if (indirect !== undefined) {
             indirect.contribution += t.contribution;
             indirect.totalImpactSum += t.total_impacts_sum;
-          } else if (
-            direct === undefined &&
-            t.sector_purchased_detail == "Direct"
-          ) {
-            contributionPercentageFound.addContributionSectorList({
-              directOrIndirect: "Direct",
-              contribution: t.contribution,
-              totalImpactSum: t.total_impacts_sum,
-            });
           } else {
             contributionPercentageFound.addContributionSectorList({
               directOrIndirect: "Indirect",
@@ -245,7 +249,7 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
         } else {
           let sign = "Indirect";
           if (t.sector_purchased_detail == "Direct") {
-            sign = "Direct";
+            sign = directLabel;
           }
 
           const sortingContribution =

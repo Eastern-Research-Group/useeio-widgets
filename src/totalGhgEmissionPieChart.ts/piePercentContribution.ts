@@ -16,6 +16,7 @@ import {
   exportSmindexRankedPieChart,
   preparePieChartOptionsForDisplay,
 } from "../util/chartExportOverlay";
+import { displayContributionLabel } from "../util/util";
 import * as apex from "apexcharts";
 
 export interface SmartSectorChartConfig {
@@ -173,12 +174,16 @@ export class PiePercentContribution extends Widget {
     const sortedPercentList: SortingPercentContribution[] = [];
 
     sectorContribution.forEach((t) => {
+      const sectorPurchased = displayContributionLabel(
+        t.sector_purchased_detail,
+        this.graphName,
+      );
       if (sortedPercentList.length === 0) {
         const sortingContribution = new SortingPercentContribution(
           t.sector,
           selectSectorName(t.sector, sectorsList),
           {
-            sectorPurchased: t.sector_purchased_detail,
+            sectorPurchased,
             contribution: t.contribution,
             totalImpactsSum: t.total_impacts_sum,
           },
@@ -196,7 +201,7 @@ export class PiePercentContribution extends Widget {
 
         if (contributionPercentageFound !== undefined) {
           contributionPercentageFound.addContributionSectorList({
-            sectorPurchased: t.sector_purchased_detail,
+            sectorPurchased,
             contribution: t.contribution,
             totalImpactsSum: t.total_impacts_sum,
           });
@@ -205,7 +210,7 @@ export class PiePercentContribution extends Widget {
             t.sector,
             selectSectorName(t.sector, sectorsList),
             {
-              sectorPurchased: t.sector_purchased_detail,
+              sectorPurchased,
               contribution: t.contribution,
               totalImpactsSum: t.total_impacts_sum,
             },

@@ -1,9 +1,33 @@
 /**
  * Canonical indicator order and groupings for smart-sector viewers
- * (aligned with EPA Indicator List: Economic → Regulatory → LCIA → Individual pollutants).
+ * (Economic → Regulatory → LCIA → Individual pollutants).
  */
 
 export const SECTOR_PURCHASES_FILE_SLUG = "sector-purchases";
+
+/** Chart/legend label for the sector-purchases “Direct” row (same-BEA spend). */
+export const SECTOR_PURCHASES_DIRECT_DISPLAY = "Within-sector spend";
+
+export function isDirectContributionLabel(label: string | undefined | null): boolean {
+  if (!label) {
+    return false;
+  }
+  return label === "Direct" || label === SECTOR_PURCHASES_DIRECT_DISPLAY;
+}
+
+/** Map data “Direct” to the Sector Purchases display name when needed. */
+export function displayContributionLabel(
+  label: string,
+  indicatorSlug: string,
+): string {
+  if (
+    label === "Direct" &&
+    indicatorSlug === SECTOR_PURCHASES_FILE_SLUG
+  ) {
+    return SECTOR_PURCHASES_DIRECT_DISPLAY;
+  }
+  return label;
+}
 
 export type IndicatorGroupId =
   | "economic"
@@ -45,7 +69,6 @@ const customLabels: Record<string, string> = {
 
 /**
  * Grouped catalog. Order within and across groups is the product order.
- * Keep Nitrous oxide under Individual Pollutants (EPA list omission was an oversight).
  */
 export const INDICATOR_GROUPS: readonly IndicatorGroup[] = [
   {
