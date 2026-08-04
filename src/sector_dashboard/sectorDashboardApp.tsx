@@ -216,7 +216,7 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
   );
   const [barMode, setBarMode] = React.useState<
     "impact_per_purchase" | "total_impact"
-  >(initialBarMode ?? "impact_per_purchase");
+  >(initialBarMode ?? "total_impact");
   const [pieMode, setPieMode] = React.useState<"aggregate" | "detail">(
     initialPieMode ?? "detail",
   );
@@ -546,7 +546,11 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
 
           <div className={classes.right}>
             <div className={classes.item}>
-              <button type="button" onClick={openIndicatorModal}>
+              <button
+                type="button"
+                className="sector-dashboard-choose-indicators"
+                onClick={openIndicatorModal}
+              >
                 Choose indicators ({appliedIndicators.length})
               </button>{" "}
               <ControlHelpLink
