@@ -121,7 +121,7 @@ export const IndicatorPickerModal: React.FC<IndicatorPickerModalProps> = ({
         />
         <div
           id="scrollContainer"
-          style={{ maxHeight: "40vh", overflowY: "auto" }}
+          className="sector-dashboard-indicator-scroll"
         >
           {groups.map((group) => (
             <div key={group.id} className="sector-dashboard-indicator-group">

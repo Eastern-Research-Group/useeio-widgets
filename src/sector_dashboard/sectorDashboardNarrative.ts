@@ -52,7 +52,7 @@ const INTRO_TEMPLATE = [
 ].join("");
 
 const PER_INDICATOR_TEMPLATE =
-  "For {indicatorLabel}, the charts below show supplier contributions and the direct vs indirect impact shares for {sectorName} using the selections above.";
+  "For {indicatorLabel}, the charts below show the direct vs indirect impact shares and supplier contributions for {sectorName} using the selections above.";
 
 function perspectiveLabel(p: "final" | "direct"): string {
   return p === "final" ? "Point of consumption" : "Supply chain";

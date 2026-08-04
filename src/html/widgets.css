@@ -929,7 +929,45 @@ th.io-sector-column-header>div {
     border-top: 1px solid #e6e6e6;
 }
 
-/* --- Multi-indicator sector dashboard (print / PDF snapshot) --- */
+/* --- Multi-indicator sector dashboard --- */
+.sector-dashboard-controls {
+    padding-bottom: 1rem;
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+.sector-dashboard-control-label,
+.sector-dashboard-controls .MuiFormLabel-root.sector-dashboard-control-label,
+.sector-dashboard-controls .MuiInputLabel-root.sector-dashboard-control-label {
+    font-size: 0.95rem !important;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.75);
+    line-height: 1.3;
+}
+
+.sector-dashboard-section + .sector-dashboard-section {
+    margin-top: 1.75rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid #c8c8c8;
+}
+
+.sector-dashboard-indicator-modal .modal-content {
+    width: min(56em, 94vw);
+    max-height: 88vh;
+    margin: 4vh auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.sector-dashboard-indicator-modal .sector-dashboard-indicator-scroll,
+.sector-dashboard-indicator-modal #scrollContainer {
+    overflow-y: auto;
+    max-height: min(58vh, calc(88vh - 12rem));
+    flex: 1 1 auto;
+    padding-right: 4px;
+}
+
 .sector-dashboard-indicator-group {
     margin-bottom: 0.75em;
 }

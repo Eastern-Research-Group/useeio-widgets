@@ -210,7 +210,7 @@ export function getIndustryOutputChartOptions(
     },
     dataLabels: { enabled: false },
     title: {
-      text: "Industry output",
+      text: `Industry Price Adjusted Output Over Time (${formatIndustryOutputYearRange(series)})`,
       align: "center",
     },
     annotations: {
