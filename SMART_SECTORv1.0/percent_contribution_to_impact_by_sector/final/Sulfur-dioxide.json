@@ -1,73 +1,73 @@
 [
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 17711.9028873028,
-    "contribution": 0.340286137866382
+    "total_impacts_sum": 15927.7663887041,
+    "contribution": 0.339362831398403
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 11642.0463213582,
-    "contribution": 0.223670319601656
+    "total_impacts_sum": 10939.3360604668,
+    "contribution": 0.23307750556484
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 9115.36497829274,
-    "contribution": 0.175126995864986
+    "total_impacts_sum": 7367.41880077695,
+    "contribution": 0.15697292660587
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 4686.23868691281,
-    "contribution": 0.0900333563274424
+    "total_impacts_sum": 4474.56899635348,
+    "contribution": 0.0953368078632133
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 3940.50788181416,
-    "contribution": 0.0757061630738635
+    "total_impacts_sum": 3634.01479777429,
+    "contribution": 0.0774276518765991
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 3183.16866022916,
-    "contribution": 0.0611559456066798
+    "total_impacts_sum": 2924.28863212819,
+    "contribution": 0.0623059659343689
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 873.929883764837,
-    "contribution": 0.016790190574359
+    "total_impacts_sum": 802.782922146795,
+    "contribution": 0.0171043873201976
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 492.998980637712,
-    "contribution": 0.00947163724647189
+    "total_impacts_sum": 480.103689176109,
+    "contribution": 0.0102292652558724
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 248.735882411747,
-    "contribution": 0.00477878482697401
+    "total_impacts_sum": 241.419781135429,
+    "contribution": 0.00514377838563765
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 155.133494463548,
-    "contribution": 0.00298046901118458
+    "total_impacts_sum": 142.627780592895,
+    "contribution": 0.00303887979499763
   },
   {
     "sector": "111/112",
@@ -833,6 +833,76 @@
     "contribution": 0.00272273474388361
   },
   {
+    "sector": "113-115",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 1784.13649859869,
+    "contribution": 0.348757074414743
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 1747.9461775158,
+    "contribution": 0.341682710702711
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 702.710260891471,
+    "contribution": 0.137363466832397
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 306.493084039875,
+    "contribution": 0.0599122496524534
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 258.880028100969,
+    "contribution": 0.0506050076862469
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 211.669690559331,
+    "contribution": 0.0413764877741852
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 71.1469616180418,
+    "contribution": 0.0139075716498682
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 12.8952914616027,
+    "contribution": 0.00252072872642104
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 12.5057138706529,
+    "contribution": 0.00244457539343116
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 7.31610127631777,
+    "contribution": 0.00143012716754273
+  },
+  {
     "sector": "113000/US",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Direct",
@@ -1043,74 +1113,74 @@
     "contribution": 0.000693617433328433
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 301459.519596415,
-    "contribution": 0.567622588774503
+    "total_impacts_sum": 300992.877361911,
+    "contribution": 0.570206619783014
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 167604.327930036,
-    "contribution": 0.315584668338962
+    "total_impacts_sum": 167146.860496063,
+    "contribution": 0.316646185006583
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 35095.8241244653,
-    "contribution": 0.0660824463973589
+    "total_impacts_sum": 33978.2648199329,
+    "contribution": 0.064369069789549
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 13631.1824324894,
-    "contribution": 0.0256663550407887
+    "total_impacts_sum": 12777.6249338593,
+    "contribution": 0.0242061751967326
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 4650.65131027068,
-    "contribution": 0.00875678014665944
+    "total_impacts_sum": 4481.67752491741,
+    "contribution": 0.00849017496639289
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 3768.31850900303,
-    "contribution": 0.00709542266328421
+    "total_impacts_sum": 3714.84694713701,
+    "contribution": 0.0070374765652388
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 3375.83966769918,
-    "contribution": 0.00635641844726756
+    "total_impacts_sum": 3335.29138195902,
+    "contribution": 0.00631843929852053
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 1190.10340511538,
-    "contribution": 0.00224086330604295
+    "total_impacts_sum": 1126.86539763121,
+    "contribution": 0.00213475519741665
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 236.643573918795,
-    "contribution": 0.000445579685871145
+    "total_impacts_sum": 236.152294652213,
+    "contribution": 0.000447371389209759
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 79.0674117904081,
-    "contribution": 0.0001488771992613
+    "total_impacts_sum": 75.8717099250301,
+    "contribution": 0.000143732807343113
   },
   {
     "sector": "211/32411",
@@ -1256,71 +1326,71 @@
     "sector": "212",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 16951.0825469263,
-    "contribution": 0.393057127391949
+    "total_impacts_sum": 14219.73889846,
+    "contribution": 0.392521273240629
   },
   {
     "sector": "212",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 10405.4053535473,
-    "contribution": 0.241277731159167
+    "total_impacts_sum": 9399.38027622979,
+    "contribution": 0.259460229195779
   },
   {
     "sector": "212",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 5486.41543805298,
-    "contribution": 0.127217520520598
+    "total_impacts_sum": 5586.19202257999,
+    "contribution": 0.154201087722307
   },
   {
     "sector": "212",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 3451.81616349857,
-    "contribution": 0.0800397816336434
+    "total_impacts_sum": 2459.03132532455,
+    "contribution": 0.0678790316508212
   },
   {
     "sector": "212",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 2331.77437097584,
-    "contribution": 0.0540685548220709
+    "total_impacts_sum": 2319.22038779252,
+    "contribution": 0.0640196944572965
   },
   {
     "sector": "212",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 2157.64264066598,
-    "contribution": 0.0500308352537831
+    "total_impacts_sum": 1469.59034581952,
+    "contribution": 0.0405665306376116
   },
   {
     "sector": "212",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 1888.44994244136,
-    "contribution": 0.0437888676162506
+    "total_impacts_sum": 442.409043373753,
+    "contribution": 0.0122122468097526
   },
   {
     "sector": "212",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 408.060606930885,
-    "contribution": 0.00946199922736806
+    "total_impacts_sum": 308.004520023876,
+    "contribution": 0.00850214812149144
   },
   {
     "sector": "212",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 37.5110981797146,
-    "contribution": 0.000869797221211072
+    "total_impacts_sum": 12.6640861526871,
+    "contribution": 0.000349579078531471
   },
   {
     "sector": "212",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 8.09847074134641,
-    "contribution": 0.00018778515395989
+    "total_impacts_sum": 10.4397688358883,
+    "contribution": 0.000288179085780856
   },
   {
     "sector": "2121/2122",
@@ -1734,6 +1804,76 @@
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 1.64780596633513,
     "contribution": 0.000256975738763576
+  },
+  {
+    "sector": "2130",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 3197.98588297012,
+    "contribution": 0.31585884770602
+  },
+  {
+    "sector": "2130",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 2123.58438184997,
+    "contribution": 0.209742300436509
+  },
+  {
+    "sector": "2130",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 1509.27890655178,
+    "contribution": 0.149068543056761
+  },
+  {
+    "sector": "2130",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 1450.25227214608,
+    "contribution": 0.143238597144044
+  },
+  {
+    "sector": "2130",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 857.026080199718,
+    "contribution": 0.0846467995957752
+  },
+  {
+    "sector": "2130",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 753.780914103151,
+    "contribution": 0.0744494752835769
+  },
+  {
+    "sector": "2130",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 153.527648773022,
+    "contribution": 0.0151636273601757
+  },
+  {
+    "sector": "2130",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 53.1022689234852,
+    "contribution": 0.00524480785298824
+  },
+  {
+    "sector": "2130",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 25.3382912936095,
+    "contribution": 0.00250261376495068
+  },
+  {
+    "sector": "2130",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 0.854403770836146,
+    "contribution": 8.43877991985823e-05
   },
   {
     "sector": "213111/US",
@@ -3087,74 +3227,74 @@
     "contribution": 0.000168254639383381
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 73692.7423491662,
-    "contribution": 0.454529103572633
+    "total_impacts_sum": 68751.1650621834,
+    "contribution": 0.444022542410401
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 38431.8278105778,
-    "contribution": 0.237043481984048
+    "total_impacts_sum": 37906.7122165364,
+    "contribution": 0.244816720088777
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 26959.0182187358,
-    "contribution": 0.166280396054482
+    "total_impacts_sum": 26697.417797419,
+    "contribution": 0.172422610082038
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 11483.5961530882,
-    "contribution": 0.0708296163076958
+    "total_impacts_sum": 10553.9115568377,
+    "contribution": 0.0681613851576637
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 7479.43819774728,
-    "contribution": 0.0461323901225049
+    "total_impacts_sum": 7004.30739543303,
+    "contribution": 0.045236620713717
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 2763.21659820569,
-    "contribution": 0.0170432300837514
+    "total_impacts_sum": 2685.83882667191,
+    "contribution": 0.0173462221803046
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 971.12428719328,
-    "contribution": 0.00598979272102726
+    "total_impacts_sum": 904.213162797911,
+    "contribution": 0.00583977052699167
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 178.597297731565,
-    "contribution": 0.00110156939544728
+    "total_impacts_sum": 168.661424922725,
+    "contribution": 0.00108928299081206
   },
   {
-    "sector": "31",
-    "indicator": "Sulfur dioxide",
-    "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 85.2372619953643,
-    "contribution": 0.000525734489594238
-  },
-  {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Sulfur dioxide",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 85.0671519719823,
-    "contribution": 0.000524685268816563
+    "total_impacts_sum": 84.2824569826183,
+    "contribution": 0.000544329842209497
+  },
+  {
+    "sector": "311-312",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 80.5951916909853,
+    "contribution": 0.000520516007086097
   },
   {
     "sector": "311111/US",
@@ -5080,6 +5220,76 @@
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.30507810297641,
     "contribution": 7.13920138730252e-05
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 4941.57728698277,
+    "contribution": 0.677600404756102
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 929.68459625051,
+    "contribution": 0.127480482876247
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 525.115594041368,
+    "contribution": 0.0720050539335847
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 475.130802314245,
+    "contribution": 0.065151024715997
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 261.600421316747,
+    "contribution": 0.0358712494157561
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 77.3777715337881,
+    "contribution": 0.0106102173993181
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 66.9111243953683,
+    "contribution": 0.0091750067518767
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 9.93587280884051,
+    "contribution": 0.00136242965471987
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 4.64207030437897,
+    "contribution": 0.000636531320766619
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Sulfur dioxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 0.784694989364021,
+    "contribution": 0.000107599175632402
   },
   {
     "sector": "313100/US",

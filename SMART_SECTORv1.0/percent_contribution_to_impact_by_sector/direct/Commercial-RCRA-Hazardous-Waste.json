@@ -1,73 +1,73 @@
 [
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 1461.03905239508,
-    "contribution": 0.865163622702152
+    "total_impacts_sum": 1376.91185124501,
+    "contribution": 0.866861495073078
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 139.564985781619,
-    "contribution": 0.0826442992767782
+    "total_impacts_sum": 129.693812621756,
+    "contribution": 0.0816512489229912
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 68.1168918222458,
-    "contribution": 0.0403358533090112
+    "total_impacts_sum": 63.5521383955502,
+    "contribution": 0.0400104782705185
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 15.297700641504,
-    "contribution": 0.00905863131058712
+    "total_impacts_sum": 13.9695898784143,
+    "contribution": 0.00879482557769426
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 2.46922898965766,
-    "contribution": 0.00146216974451941
+    "total_impacts_sum": 2.14368739478409,
+    "contribution": 0.00134959987331911
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 1.00924856040319,
-    "contribution": 0.000597632992283111
+    "total_impacts_sum": 0.926562156302953,
+    "contribution": 0.000583335131704078
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 0.570053559393338,
-    "contribution": 0.000337560862435888
+    "total_impacts_sum": 0.55368427944192,
+    "contribution": 0.000348582650255711
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 0.463451507470121,
-    "contribution": 0.000274435775342437
+    "total_impacts_sum": 0.437241037984826,
+    "contribution": 0.000275273554768312
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 0.156882329945936,
-    "contribution": 9.28988754212146e-05
+    "total_impacts_sum": 0.147022852804347,
+    "contribution": 9.25610814349853e-05
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 0.055551458324804,
-    "contribution": 3.289515146901e-05
+    "total_impacts_sum": 0.0517812126508018,
+    "contribution": 3.25998642357417e-05
   },
   {
     "sector": "111/112",
@@ -819,6 +819,76 @@
     "contribution": 3.6184543662886e-05
   },
   {
+    "sector": "113-115",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 84.1272011500733,
+    "contribution": 0.838290413931621
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 9.87117315986292,
+    "contribution": 0.0983618820197132
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 4.5647534266956,
+    "contribution": 0.0454857523755514
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 1.32811076308969,
+    "contribution": 0.0132340373400919
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 0.325541594873565,
+    "contribution": 0.00324387825326201
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 0.0826864041002337,
+    "contribution": 0.000823933507499576
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 0.0262104694852941,
+    "contribution": 0.000261175755448869
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 0.0163692799514178,
+    "contribution": 0.00016311264702314
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.00985947714158846,
+    "contribution": 9.82453363618688e-05
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 0.00377024567400219,
+    "contribution": 3.75688334269569e-05
+  },
+  {
     "sector": "113000/US",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Manufacturing",
@@ -1029,74 +1099,74 @@
     "contribution": 3.59318754215084e-05
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Direct",
     "total_impacts_sum": 4715.94419617269,
-    "contribution": 0.56595451985207
+    "contribution": 0.569178739164107
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 3237.22735090749,
-    "contribution": 0.388495574761408
+    "total_impacts_sum": 3199.9568261509,
+    "contribution": 0.386210547861507
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 278.037004396229,
-    "contribution": 0.0333668705095962
+    "total_impacts_sum": 270.26758714784,
+    "contribution": 0.0326192503750526
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 94.17198806648,
-    "contribution": 0.0113014616103672
+    "total_impacts_sum": 92.1472315722597,
+    "contribution": 0.0111214727956974
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 4.1108957676873,
-    "contribution": 0.000493343420444108
+    "total_impacts_sum": 4.06599603821465,
+    "contribution": 0.000490734920136558
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 1.20750998778045,
-    "contribution": 0.00014491175190442
+    "total_impacts_sum": 1.1582946494793,
+    "contribution": 0.000139797389609954
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 0.622154170230445,
-    "contribution": 7.46639379177762e-05
+    "total_impacts_sum": 0.617178319713387,
+    "contribution": 7.44887477970964e-05
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 0.547689967426955,
-    "contribution": 6.5727582780661e-05
+    "total_impacts_sum": 0.522661951016295,
+    "contribution": 6.30813380976685e-05
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 0.45781627912517,
-    "contribution": 5.49419547082485e-05
+    "total_impacts_sum": 0.446456737251377,
+    "contribution": 5.38839460836475e-05
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 0.399842702214521,
-    "contribution": 4.79846188027046e-05
+    "total_impacts_sum": 0.397733843545876,
+    "contribution": 4.80034619103552e-05
   },
   {
     "sector": "211/32411",
@@ -1242,71 +1312,71 @@
     "sector": "212",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 501.273514086643,
-    "contribution": 0.800708931070934
+    "total_impacts_sum": 388.117067196433,
+    "contribution": 0.836963331562559
   },
   {
     "sector": "212",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 75.689521405403,
-    "contribution": 0.120902609203716
+    "total_impacts_sum": 54.8990282562099,
+    "contribution": 0.118388180970174
   },
   {
     "sector": "212",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 35.3878102219432,
-    "contribution": 0.0565266963034787
+    "total_impacts_sum": 16.1287950047014,
+    "contribution": 0.0347812841592774
   },
   {
     "sector": "212",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 11.5914333663841,
-    "contribution": 0.0185155687654647
-  },
-  {
-    "sector": "212",
-    "indicator": "Commercial RCRA Hazardous Waste",
-    "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 0.56217884566795,
-    "contribution": 0.000897996023998328
-  },
-  {
-    "sector": "212",
-    "indicator": "Commercial RCRA Hazardous Waste",
-    "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 0.551599627363153,
-    "contribution": 0.000881097316322071
+    "total_impacts_sum": 3.16199856160437,
+    "contribution": 0.00681875927186935
   },
   {
     "sector": "212",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 0.455528413462912,
-    "contribution": 0.000727638023486878
+    "total_impacts_sum": 0.446976779208117,
+    "contribution": 0.000963892613534019
   },
   {
     "sector": "212",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 0.3751079665125,
-    "contribution": 0.000599178473352376
+    "total_impacts_sum": 0.348101624976902,
+    "contribution": 0.00075067117730113
+  },
+  {
+    "sector": "212",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 0.342876182728862,
+    "contribution": 0.000739402660859946
+  },
+  {
+    "sector": "212",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.173146773544877,
+    "contribution": 0.000373386054579463
   },
   {
     "sector": "212",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 0.0998505865812702,
-    "contribution": 0.0001594962713998
+    "total_impacts_sum": 0.0781239566711602,
+    "contribution": 0.000168472073445948
   },
   {
     "sector": "212",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 0.0505766299163386,
-    "contribution": 8.07885478475168e-05
+    "total_impacts_sum": 0.0244007214234856,
+    "contribution": 5.26194563992061e-05
   },
   {
     "sector": "2121/2122",
@@ -1720,6 +1790,76 @@
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 0.00336173122246002,
     "contribution": 5.87351051837835e-05
+  },
+  {
+    "sector": "2130",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 150.426971646795,
+    "contribution": 0.717963760992686
+  },
+  {
+    "sector": "2130",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 28.559910397582,
+    "contribution": 0.136311862548214
+  },
+  {
+    "sector": "2130",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 21.2837717114621,
+    "contribution": 0.101584021926274
+  },
+  {
+    "sector": "2130",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 8.42943480477974,
+    "contribution": 0.0402323376534665
+  },
+  {
+    "sector": "2130",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.414060088533732,
+    "contribution": 0.00197624226018895
+  },
+  {
+    "sector": "2130",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 0.253623174106939,
+    "contribution": 0.00121050265097589
+  },
+  {
+    "sector": "2130",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 0.0762216798367555,
+    "contribution": 0.000363793828498196
+  },
+  {
+    "sector": "2130",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 0.0330861717839036,
+    "contribution": 0.000157914980742933
+  },
+  {
+    "sector": "2130",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 0.0282847671614978,
+    "contribution": 0.000134998648099847
+  },
+  {
+    "sector": "2130",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 0.0135274847718534,
+    "contribution": 6.45645108536497e-05
   },
   {
     "sector": "213111/US",
@@ -3108,74 +3248,74 @@
     "contribution": 7.49334715794739e-05
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 3896.42352106892,
-    "contribution": 0.750781177322676
+    "total_impacts_sum": 3317.85200469091,
+    "contribution": 0.723199661992325
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 927.826533475982,
-    "contribution": 0.17877797251445
+    "total_impacts_sum": 923.163165476093,
+    "contribution": 0.201223951005696
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 186.328861010659,
-    "contribution": 0.0359027197331974
+    "total_impacts_sum": 177.566748596172,
+    "contribution": 0.0387046234685176
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 164.004108196929,
-    "contribution": 0.0316010815487704
+    "total_impacts_sum": 155.290684543655,
+    "contribution": 0.0338490596969803
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 9.99946466805171,
-    "contribution": 0.00192674379863533
+    "total_impacts_sum": 8.88200650159921,
+    "contribution": 0.00193603092925436
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 2.83497850994657,
-    "contribution": 0.000546256969211156
+    "total_impacts_sum": 2.72184920736643,
+    "contribution": 0.000593287592086211
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 1.45161365728132,
-    "contribution": 0.000279703734652634
+    "total_impacts_sum": 1.35292839712783,
+    "contribution": 0.000294900844919939
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 0.531177986868676,
-    "contribution": 0.000102349868332524
+    "total_impacts_sum": 0.513946490292905,
+    "contribution": 0.000112026072150435
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 0.306892006394193,
-    "contribution": 5.91333926165043e-05
+    "total_impacts_sum": 0.290958266227816,
+    "contribution": 6.34208275391211e-05
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Commercial RCRA Hazardous Waste",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 0.118645217106826,
-    "contribution": 2.28611174584867e-05
+    "total_impacts_sum": 0.105690383425378,
+    "contribution": 2.30375705308753e-05
   },
   {
     "sector": "311111/US",
@@ -5206,6 +5346,76 @@
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00474677579881625,
     "contribution": 4.88722261635057e-05
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 578.571516378013,
+    "contribution": 0.960945273331528
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 8.76211241448646,
+    "contribution": 0.0145529295355063
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 8.71342365327373,
+    "contribution": 0.0144720627219365
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 4.66336799988869,
+    "contribution": 0.00774535439516986
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 1.1174581664525,
+    "contribution": 0.00185597823743653
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 0.113129302580144,
+    "contribution": 0.00018789564558974
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 0.0986852601534906,
+    "contribution": 0.000163905639333324
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 0.0172314965757713,
+    "contribution": 2.86196688191218e-05
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.0159337401663774,
+    "contribution": 2.64642345257959e-05
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Commercial RCRA Hazardous Waste",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 0.0129548336814471,
+    "contribution": 2.15165901545163e-05
   },
   {
     "sector": "313100/US",

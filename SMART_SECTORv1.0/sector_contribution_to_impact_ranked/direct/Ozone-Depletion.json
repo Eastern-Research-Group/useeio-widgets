@@ -1,73 +1,73 @@
 [
   {
     "emissions_source": "Direct",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 140.368213764371,
-    "total_impact": 28.3297536545863
+    "impact_per_purchase": 0.359519931668814,
+    "total_impact": 0.0517724749699505
   },
   {
     "emissions_source": "115000/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 72.8507879404472,
-    "total_impact": 27.5033282879048
+    "impact_per_purchase": 73.7699778779195,
+    "total_impact": 23.5849621157218
   },
   {
     "emissions_source": "325190/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 34.1147714692084,
-    "total_impact": 12.8793357726136
+    "impact_per_purchase": 37.9327936154491,
+    "total_impact": 12.1274741581784
   },
   {
     "emissions_source": "325320/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 11.4917567440635,
-    "total_impact": 4.33847824123866
+    "impact_per_purchase": 12.9007301329297,
+    "total_impact": 4.12448587084867
   },
   {
     "emissions_source": "311119/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 11.0806893612829,
-    "total_impact": 4.18328813970804
+    "impact_per_purchase": 12.8808893909813,
+    "total_impact": 4.11814259732924
   },
   {
     "emissions_source": "3252A0/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 7.63691755863573,
-    "total_impact": 2.88316237422886
+    "impact_per_purchase": 8.36306249432358,
+    "total_impact": 2.67375045748893
   },
   {
     "emissions_source": "325180/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 4.69385297728662,
-    "total_impact": 1.77206840199182
+    "impact_per_purchase": 5.28944846286515,
+    "total_impact": 1.69108687840718
   },
   {
     "emissions_source": "425000/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 4.11039028458273,
-    "total_impact": 1.55179396934878
+    "impact_per_purchase": 4.71661798017801,
+    "total_impact": 1.50794753606842
   },
   {
-    "emissions_source": "325310/US",
-    "sector_code": "11",
+    "emissions_source": "424A00/US",
+    "sector_code": "111-112",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 3.29102756133006,
-    "total_impact": 1.24246029429078
+    "impact_per_purchase": 3.52740715304922,
+    "total_impact": 1.12774554723424
   },
   {
     "emissions_source": "All others",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 16.8091392420102,
-    "total_impact": 6.34594748910648
+    "impact_per_purchase": 18.6214235601658,
+    "total_impact": 5.95344585752918
   },
   {
     "emissions_source": "Direct",
@@ -841,6 +841,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "113-115",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 489.06834595789,
+    "total_impact": 28.2779811796164
+  },
+  {
+    "emissions_source": "115000/US",
+    "sector_code": "113-115",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 67.7682346032621,
+    "total_impact": 3.91836617218297
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "113-115",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 13.003464208615,
+    "total_impact": 0.751861614435155
+  },
+  {
+    "emissions_source": "325320/US",
+    "sector_code": "113-115",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 3.70100305143723,
+    "total_impact": 0.213992370389998
+  },
+  {
+    "emissions_source": "3252A0/US",
+    "sector_code": "113-115",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 3.6217839984168,
+    "total_impact": 0.209411916739924
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "113-115",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 2.6531758479799,
+    "total_impact": 0.153406895611781
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "113-115",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 1.40057734465281,
+    "total_impact": 0.0809815235846386
+  },
+  {
+    "emissions_source": "311119/US",
+    "sector_code": "113-115",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 1.12669367927489,
+    "total_impact": 0.0651455423787971
+  },
+  {
+    "emissions_source": "325211/US",
+    "sector_code": "113-115",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 0.980926208575521,
+    "total_impact": 0.0567172524943567
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "113-115",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 5.89654216553127,
+    "total_impact": 0.340938663808073
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "113000/US",
     "indicator": "Ozone Depletion",
     "impact_per_purchase": 0.00230523314095533,
@@ -1051,73 +1121,73 @@
   },
   {
     "emissions_source": "Direct",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 13.7991117035295,
-    "total_impact": 12.5654475888285
+    "impact_per_purchase": 14.1303158215378,
+    "total_impact": 12.5651761272814
   },
   {
     "emissions_source": "325190/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 37.7150594538214,
-    "total_impact": 34.3432688319588
+    "impact_per_purchase": 38.3420372634501,
+    "total_impact": 34.0950943615645
   },
   {
     "emissions_source": "325120/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 14.8542244398261,
-    "total_impact": 13.5262314474626
+    "impact_per_purchase": 15.0900076688851,
+    "total_impact": 13.4185680289298
   },
   {
     "emissions_source": "325110/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 6.95417914441383,
-    "total_impact": 6.33246367156413
+    "impact_per_purchase": 7.09086327239042,
+    "total_impact": 6.30544617950093
   },
   {
     "emissions_source": "3259A0/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 4.77513319335888,
-    "total_impact": 4.34822814395212
+    "impact_per_purchase": 4.72905470769459,
+    "total_impact": 4.20524254858907
   },
   {
     "emissions_source": "3252A0/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 3.44314266396271,
-    "total_impact": 3.13531983901663
+    "impact_per_purchase": 3.06750803377968,
+    "total_impact": 2.72773653491475
   },
   {
     "emissions_source": "211000/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 2.88696102039023,
-    "total_impact": 2.62886178270632
+    "impact_per_purchase": 2.95107351102533,
+    "total_impact": 2.62419884303426
   },
   {
     "emissions_source": "325180/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 2.79178352427099,
-    "total_impact": 2.54219331702411
+    "impact_per_purchase": 2.81770447488043,
+    "total_impact": 2.505602383461
   },
   {
     "emissions_source": "425000/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 1.75659625703513,
-    "total_impact": 1.59955355654245
+    "impact_per_purchase": 1.75895344973221,
+    "total_impact": 1.56412356062748
   },
   {
     "emissions_source": "All others",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 7.31520794940872,
-    "total_impact": 6.66121588581429
+    "impact_per_purchase": 7.27358385285726,
+    "total_impact": 6.46792777613626
   },
   {
     "emissions_source": "Direct",
@@ -1263,71 +1333,71 @@
     "emissions_source": "Direct",
     "sector_code": "212",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 19.6443702470325,
-    "total_impact": 4.49818532544547
+    "impact_per_purchase": 2.67827125554976,
+    "total_impact": 0.446966058188917
   },
   {
     "emissions_source": "325190/US",
     "sector_code": "212",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 18.4569527549735,
-    "total_impact": 4.22628941477029
+    "impact_per_purchase": 19.0438930710907,
+    "total_impact": 3.1781597181087
   },
   {
     "emissions_source": "325120/US",
     "sector_code": "212",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 12.7483569923393,
-    "total_impact": 2.91913009301702
+    "impact_per_purchase": 14.819026646266,
+    "total_impact": 2.47308853147455
   },
   {
     "emissions_source": "3252A0/US",
     "sector_code": "212",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 8.29874974607113,
-    "total_impact": 1.90025507857451
+    "impact_per_purchase": 11.0360443973071,
+    "total_impact": 1.84176164084983
   },
   {
     "emissions_source": "3259A0/US",
     "sector_code": "212",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 4.73322398256545,
-    "total_impact": 1.08381782631279
+    "impact_per_purchase": 6.66519729556797,
+    "total_impact": 1.11232831852946
   },
   {
     "emissions_source": "325211/US",
     "sector_code": "212",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 3.32561001632975,
-    "total_impact": 0.761501131647051
+    "impact_per_purchase": 3.03122920990091,
+    "total_impact": 0.505869810090767
   },
   {
     "emissions_source": "325180/US",
     "sector_code": "212",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 2.06888444270093,
-    "total_impact": 0.473734994971678
+    "impact_per_purchase": 2.36206633699204,
+    "total_impact": 0.394195874536
   },
   {
     "emissions_source": "327310/US",
     "sector_code": "212",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 1.87683200536859,
-    "total_impact": 0.429758657503958
+    "impact_per_purchase": 2.01059519871976,
+    "total_impact": 0.335540251467497
   },
   {
-    "emissions_source": "325110/US",
+    "emissions_source": "425000/US",
     "sector_code": "212",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 1.40967753338161,
-    "total_impact": 0.322789212101376
+    "impact_per_purchase": 1.59677216206372,
+    "total_impact": 0.266478967589457
   },
   {
     "emissions_source": "All others",
     "sector_code": "212",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 6.09152044595124,
-    "total_impact": 1.39484175542701
+    "impact_per_purchase": 6.43242329157873,
+    "total_impact": 1.07348158902201
   },
   {
     "emissions_source": "Direct",
@@ -1748,6 +1818,76 @@
     "indicator": "Ozone Depletion",
     "impact_per_purchase": 6.45467808669524,
     "total_impact": 0.0949465174682667
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "2130",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 48.5453718665503,
+    "total_impact": 4.05149072880359
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "2130",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 15.53244769746,
+    "total_impact": 1.29630416705587
+  },
+  {
+    "emissions_source": "325120/US",
+    "sector_code": "2130",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 6.63454909843723,
+    "total_impact": 0.553704980075185
+  },
+  {
+    "emissions_source": "3252A0/US",
+    "sector_code": "2130",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 5.58457868099376,
+    "total_impact": 0.466076741826558
+  },
+  {
+    "emissions_source": "325211/US",
+    "sector_code": "2130",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 3.7472910766868,
+    "total_impact": 0.312740730404953
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "2130",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 1.39148205774588,
+    "total_impact": 0.116130053998793
+  },
+  {
+    "emissions_source": "3259A0/US",
+    "sector_code": "2130",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 1.37165226917453,
+    "total_impact": 0.114475103146387
+  },
+  {
+    "emissions_source": "327310/US",
+    "sector_code": "2130",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 1.22642519248328,
+    "total_impact": 0.102354768454064
+  },
+  {
+    "emissions_source": "325110/US",
+    "sector_code": "2130",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 1.07846430194559,
+    "total_impact": 0.0900062756278708
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "2130",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 5.7851609662855,
+    "total_impact": 0.482816901351048
   },
   {
     "emissions_source": "Direct",
@@ -3151,73 +3291,73 @@
   },
   {
     "emissions_source": "Direct",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 27.8739413773851,
-    "total_impact": 25.4475367586057
-  },
-  {
-    "emissions_source": "3252A0/US",
-    "sector_code": "31",
-    "indicator": "Ozone Depletion",
-    "impact_per_purchase": 111.894234584588,
-    "total_impact": 102.153929690674
+    "impact_per_purchase": 29.4886765025319,
+    "total_impact": 25.2673446325825
   },
   {
     "emissions_source": "325190/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 31.0496620624003,
-    "total_impact": 28.3468134619914
+    "impact_per_purchase": 28.834821931054,
+    "total_impact": 24.7070899600575
   },
   {
     "emissions_source": "115000/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 18.2520186493525,
-    "total_impact": 16.6631948173283
+    "impact_per_purchase": 19.134650770351,
+    "total_impact": 16.3955074551093
+  },
+  {
+    "emissions_source": "3252A0/US",
+    "sector_code": "311-312",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 16.099625491646,
+    "total_impact": 13.7949489092195
   },
   {
     "emissions_source": "325211/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 9.13835999277683,
-    "total_impact": 8.34287296084484
+    "impact_per_purchase": 7.63796748866409,
+    "total_impact": 6.54458523467358
   },
   {
     "emissions_source": "311221/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 6.87106953328451,
-    "total_impact": 6.27294834813191
+    "impact_per_purchase": 7.30989024055469,
+    "total_impact": 6.26347255423918
   },
   {
     "emissions_source": "311119/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 4.41041893239026,
-    "total_impact": 4.02649544186494
-  },
-  {
-    "emissions_source": "325180/US",
-    "sector_code": "31",
-    "indicator": "Ozone Depletion",
-    "impact_per_purchase": 3.84977384470054,
-    "total_impact": 3.51465406699963
+    "impact_per_purchase": 4.67831572297518,
+    "total_impact": 4.00861041228126
   },
   {
     "emissions_source": "425000/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 3.65936089918911,
-    "total_impact": 3.34081641825765
+    "impact_per_purchase": 3.8076713925843,
+    "total_impact": 3.26259963941726
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "311-312",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 3.79004362440184,
+    "total_impact": 3.24749530288553
   },
   {
     "emissions_source": "All others",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Ozone Depletion",
-    "impact_per_purchase": 25.379528480372,
-    "total_impact": 23.1702605374761
+    "impact_per_purchase": 25.2432975368373,
+    "total_impact": 21.6296956722125
   },
   {
     "emissions_source": "Direct",
@@ -5248,6 +5388,76 @@
     "indicator": "Ozone Depletion",
     "impact_per_purchase": 5.55911066812718,
     "total_impact": 0.357926871098968
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "313-316",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 3.21188168344207,
+    "total_impact": 0.18019212602327
+  },
+  {
+    "emissions_source": "3252A0/US",
+    "sector_code": "313-316",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 1574.97776513783,
+    "total_impact": 88.3589807814543
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "313-316",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 64.8772036084714,
+    "total_impact": 3.63972350193386
+  },
+  {
+    "emissions_source": "325211/US",
+    "sector_code": "313-316",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 32.0540499561133,
+    "total_impact": 1.79828772617125
+  },
+  {
+    "emissions_source": "325110/US",
+    "sector_code": "313-316",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 9.05964493384195,
+    "total_impact": 0.508261773794685
+  },
+  {
+    "emissions_source": "115000/US",
+    "sector_code": "313-316",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 4.77146340727985,
+    "total_impact": 0.267687362218957
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "313-316",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 4.76204127209362,
+    "total_impact": 0.267158764114102
+  },
+  {
+    "emissions_source": "325130/US",
+    "sector_code": "313-316",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 4.03278813393108,
+    "total_impact": 0.226246399859816
+  },
+  {
+    "emissions_source": "325120/US",
+    "sector_code": "313-316",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 3.25304994765885,
+    "total_impact": 0.182501736956995
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "313-316",
+    "indicator": "Ozone Depletion",
+    "impact_per_purchase": 12.9966139820517,
+    "total_impact": 0.729132556968886
   },
   {
     "emissions_source": "Direct",

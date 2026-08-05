@@ -1,73 +1,73 @@
 [
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 3934.31538302692,
-    "contribution": 0.637589270824802
+    "total_impacts_sum": 3682.63215582926,
+    "contribution": 0.637614474725388
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 1259.37664559411,
-    "contribution": 0.204092696946008
+    "total_impacts_sum": 1202.71327579449,
+    "contribution": 0.208238933768358
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 472.361580391847,
-    "contribution": 0.0765502117361972
+    "total_impacts_sum": 418.576007649326,
+    "contribution": 0.0724726526996495
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 162.851708860359,
-    "contribution": 0.0263915045430253
+    "total_impacts_sum": 150.732383970483,
+    "contribution": 0.026097949988655
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 93.5101723293398,
-    "contribution": 0.0151541187692724
+    "total_impacts_sum": 86.390615112804,
+    "contribution": 0.014957754221844
   },
   {
-    "sector": "11",
-    "indicator": "Releases to Ground",
-    "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 77.8786215770785,
-    "contribution": 0.0126208930169619
-  },
-  {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 74.948272992149,
-    "contribution": 0.0121460051049282
+    "total_impacts_sum": 72.9878636145731,
+    "contribution": 0.0126371889319081
   },
   {
-    "sector": "11",
+    "sector": "111-112",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 71.5573560928167,
+    "contribution": 0.0123895094832204
+  },
+  {
+    "sector": "111-112",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 41.3011462952614,
-    "contribution": 0.00669320204074854
+    "total_impacts_sum": 39.4356414756972,
+    "contribution": 0.00682792490832506
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 36.6985779714039,
-    "contribution": 0.00594731669709012
+    "total_impacts_sum": 33.7405340043539,
+    "contribution": 0.0058418685211572
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 17.3689144773287,
-    "contribution": 0.00281478032096609
+    "total_impacts_sum": 16.8749365552755,
+    "contribution": 0.00292174275149492
   },
   {
     "sector": "111/112",
@@ -826,6 +826,76 @@
     "contribution": 0.00204920181408821
   },
   {
+    "sector": "113-115",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 251.683227197665,
+    "contribution": 0.637220714776518
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 56.6633697996184,
+    "contribution": 0.143462372949475
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 53.7855727425203,
+    "contribution": 0.136176262078584
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 12.1193248898766,
+    "contribution": 0.0306841459199456
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 7.11955721653581,
+    "contribution": 0.0180255529497412
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 6.32126548426174,
+    "contribution": 0.0160044090145502
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 2.95804396704994,
+    "contribution": 0.00748928290538629
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 1.96040937757589,
+    "contribution": 0.00496343550081864
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 1.86550481956411,
+    "contribution": 0.00472315270182099
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 0.493977922053127,
+    "contribution": 0.00125067120316007
+  },
+  {
     "sector": "113000/US",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Manufacturing",
@@ -1036,74 +1106,74 @@
     "contribution": 0.000757826884513946
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 7896.81319603529,
-    "contribution": 0.398796071963287
+    "total_impacts_sum": 7618.5748693718,
+    "contribution": 0.401931448984771
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 6148.04078502394,
-    "contribution": 0.310481513804657
+    "total_impacts_sum": 6085.8237468507,
+    "contribution": 0.32106844111638
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 3170.3196997072,
-    "contribution": 0.160103957346468
+    "total_impacts_sum": 3157.30825612695,
+    "contribution": 0.166569404913038
   },
   {
-    "sector": "211",
-    "indicator": "Releases to Ground",
-    "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 1024.46421856226,
-    "contribution": 0.0517363518785892
-  },
-  {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 756.011481799629,
-    "contribution": 0.0381792505174373
+    "total_impacts_sum": 725.834533187175,
+    "contribution": 0.038292689991135
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 591.893824323824,
+    "contribution": 0.0312264099959194
+  },
+  {
+    "sector": "211 & 324",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 362.001477215941,
-    "contribution": 0.0182813957446917
+    "total_impacts_sum": 354.343191675099,
+    "contribution": 0.0186940044443777
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 280.15158463198,
-    "contribution": 0.0141479035570471
+    "total_impacts_sum": 265.191777131522,
+    "contribution": 0.0139906632236205
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 120.135464161029,
-    "contribution": 0.00606694751687407
+    "total_impacts_sum": 112.6128206344,
+    "contribution": 0.00594108937011456
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 35.9757887469898,
-    "contribution": 0.00181680924721427
+    "total_impacts_sum": 35.9011019138861,
+    "contribution": 0.00189402639730021
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 7.71864507385994,
-    "contribution": 0.000389798423733711
+    "total_impacts_sum": 7.42694288618579,
+    "contribution": 0.00039182156334416
   },
   {
     "sector": "211/32411",
@@ -1249,71 +1319,71 @@
     "sector": "212",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 207450.988119377,
-    "contribution": 0.775444244652394
+    "total_impacts_sum": 207815.308167299,
+    "contribution": 0.778822051453722
   },
   {
     "sector": "212",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 55747.9774419439,
-    "contribution": 0.208383911063806
+    "total_impacts_sum": 55757.5274932223,
+    "contribution": 0.20896050598592
   },
   {
     "sector": "212",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 3225.21200736442,
-    "contribution": 0.0120557251212289
-  },
-  {
-    "sector": "212",
-    "indicator": "Releases to Ground",
-    "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 433.075982512905,
-    "contribution": 0.00161882226342331
+    "total_impacts_sum": 2661.65861401004,
+    "contribution": 0.00997500347935852
   },
   {
     "sector": "212",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 423.927656812033,
-    "contribution": 0.00158462615485205
+    "total_impacts_sum": 252.834951087044,
+    "contribution": 0.000947540568697138
   },
   {
     "sector": "212",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 149.525830686783,
-    "contribution": 0.000558922114008981
+    "total_impacts_sum": 156.245364053306,
+    "contribution": 0.000585555203008274
+  },
+  {
+    "sector": "212",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 104.657853538312,
+    "contribution": 0.000392222521585529
   },
   {
     "sector": "212",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 48.3533302041177,
-    "contribution": 0.000180742988772766
+    "total_impacts_sum": 49.2326894492838,
+    "contribution": 0.000184507602128171
   },
   {
     "sector": "212",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 39.9201373892245,
-    "contribution": 0.000149220020906305
+    "total_impacts_sum": 32.5777412569636,
+    "contribution": 0.000122090444160405
   },
   {
     "sector": "212",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 5.70263253480143,
-    "contribution": 2.13162329018871e-05
+    "total_impacts_sum": 1.92526034220178,
+    "contribution": 7.21522982363257e-06
   },
   {
     "sector": "212",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 0.660623795065003,
-    "contribution": 2.4693877065015e-06
+    "total_impacts_sum": 0.882552747928652,
+    "contribution": 3.30751159632846e-06
   },
   {
     "sector": "2121/2122",
@@ -1727,6 +1797,76 @@
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 0.132991896520014,
     "contribution": 0.000335543594645678
+  },
+  {
+    "sector": "2130",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 841.791720017868,
+    "contribution": 0.546897005388845
+  },
+  {
+    "sector": "2130",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 343.377936475051,
+    "contribution": 0.223086495993118
+  },
+  {
+    "sector": "2130",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 201.269654337443,
+    "contribution": 0.130761290014185
+  },
+  {
+    "sector": "2130",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 68.2503463168989,
+    "contribution": 0.0443410277505121
+  },
+  {
+    "sector": "2130",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 55.4975048067143,
+    "contribution": 0.0360557350037856
+  },
+  {
+    "sector": "2130",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 15.0006816731027,
+    "contribution": 0.00974567424544999
+  },
+  {
+    "sector": "2130",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 6.64328428146265,
+    "contribution": 0.00431602282735875
+  },
+  {
+    "sector": "2130",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 3.85205902570332,
+    "contribution": 0.00250261376495067
+  },
+  {
+    "sector": "2130",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 3.46139230185028,
+    "contribution": 0.00224880459066257
+  },
+  {
+    "sector": "2130",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 0.069773234810503,
+    "contribution": 4.53304211323756e-05
   },
   {
     "sector": "213111/US",
@@ -3080,74 +3220,74 @@
     "contribution": 6.01822682422027e-07
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 12864.0066637206,
-    "contribution": 0.4849596268371
+    "total_impacts_sum": 11282.3997710931,
+    "contribution": 0.455386441319323
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 8436.12951825399,
-    "contribution": 0.318033279216182
+    "total_impacts_sum": 8399.13712876654,
+    "contribution": 0.339010604554336
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 3463.88854438267,
-    "contribution": 0.130584983341673
+    "total_impacts_sum": 3439.30422027275,
+    "contribution": 0.138819093567076
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 1187.23635265755,
-    "contribution": 0.0447575715407564
+    "total_impacts_sum": 1107.43481197194,
+    "contribution": 0.0446988945835032
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 290.27364088322,
-    "contribution": 0.0109430133428318
+    "total_impacts_sum": 282.702771531927,
+    "contribution": 0.0114106051629972
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 101.208179181937,
-    "contribution": 0.00381544273817553
+    "total_impacts_sum": 93.0146060236973,
+    "contribution": 0.00375430682188514
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 73.2107635610491,
-    "contribution": 0.0027599693862998
+    "total_impacts_sum": 69.535800193638,
+    "contribution": 0.00280664231342019
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 54.7717090909409,
-    "contribution": 0.00206483627506847
+    "total_impacts_sum": 49.7599409202078,
+    "contribution": 0.00200843817588975
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 42.2496106449108,
-    "contribution": 0.00159276623123597
+    "total_impacts_sum": 39.8991453079614,
+    "contribution": 0.00161043130558338
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Releases to Ground",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 12.9582125562781,
-    "contribution": 0.00048851109067685
+    "total_impacts_sum": 12.2525008487786,
+    "contribution": 0.000494542195985905
   },
   {
     "sector": "311111/US",
@@ -5073,6 +5213,76 @@
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0193605481684356,
     "contribution": 2.56722372049929e-05
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 1581.6068926275,
+    "contribution": 0.903521091596906
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 79.8015406856132,
+    "contribution": 0.0455880506638393
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 36.9923894874429,
+    "contribution": 0.0211325609962071
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 24.5843241099153,
+    "contribution": 0.0140442327733293
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 8.1935731582397,
+    "contribution": 0.0046807245204358
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 7.57086935129295,
+    "contribution": 0.00432499388596734
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 5.01176817073301,
+    "contribution": 0.00286306178201374
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 3.67496336741111,
+    "contribution": 0.00209938824165452
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 2.35046533694936,
+    "contribution": 0.00134274516436452
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Releases to Ground",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 0.705711707499481,
+    "contribution": 0.000403150375282803
   },
   {
     "sector": "313100/US",

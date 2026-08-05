@@ -1,73 +1,73 @@
 [
   {
     "emissions_source": "Direct",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 1159.73279779872,
-    "total_impact": 437.833450616661
+    "impact_per_purchase": 1351.85656686213,
+    "total_impact": 432.201375579865
   },
   {
     "emissions_source": "221300/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 386.772160712103,
-    "total_impact": 146.017936242268
+    "impact_per_purchase": 443.605791484435,
+    "total_impact": 141.824982024385
   },
   {
     "emissions_source": "1111B0/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 148.057441137526,
-    "total_impact": 55.8960654262419
+    "impact_per_purchase": 172.623567383741,
+    "total_impact": 55.1893929501218
   },
   {
     "emissions_source": "1121A0/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 91.4628755947915,
-    "total_impact": 34.5299421565035
+    "impact_per_purchase": 107.05913922678,
+    "total_impact": 34.2278229632107
   },
   {
     "emissions_source": "112A00/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 37.0514291186938,
-    "total_impact": 13.9880109384746
+    "impact_per_purchase": 39.4327844108552,
+    "total_impact": 12.6070354526406
   },
   {
     "emissions_source": "112300/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 29.3897131228027,
-    "total_impact": 11.0954864203329
+    "impact_per_purchase": 34.4268070361593,
+    "total_impact": 11.0065769716886
   },
   {
     "emissions_source": "1111A0/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 12.5065664454596,
-    "total_impact": 4.72159893431976
+    "impact_per_purchase": 14.6284341160806,
+    "total_impact": 4.67684923277387
   },
   {
     "emissions_source": "111900/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 8.34872267819963,
-    "total_impact": 3.15188987099088
+    "impact_per_purchase": 9.49561092150915,
+    "total_impact": 3.03583693924979
   },
   {
     "emissions_source": "115000/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 8.10391352893759,
-    "total_impact": 3.05946717261813
+    "impact_per_purchase": 8.20616411510879,
+    "total_impact": 2.62358855645213
   },
   {
     "emissions_source": "All others",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 54.27149231009,
-    "total_impact": 20.4890943787607
+    "impact_per_purchase": 58.4926458175251,
+    "total_impact": 18.7006540511324
   },
   {
     "emissions_source": "Direct",
@@ -841,6 +841,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "113-115",
+    "indicator": "Eutrophication Potential",
+    "impact_per_purchase": 97.4068695024822,
+    "total_impact": 5.63207503679599
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "113-115",
+    "indicator": "Eutrophication Potential",
+    "impact_per_purchase": 72.5172412766068,
+    "total_impact": 4.1929542178838
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "113-115",
+    "indicator": "Eutrophication Potential",
+    "impact_per_purchase": 23.8840033301978,
+    "total_impact": 1.380975485834
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "113-115",
+    "indicator": "Eutrophication Potential",
+    "impact_per_purchase": 12.2219170044287,
+    "total_impact": 0.706672476120188
+  },
+  {
+    "emissions_source": "115000/US",
+    "sector_code": "113-115",
+    "indicator": "Eutrophication Potential",
+    "impact_per_purchase": 7.53853086232275,
+    "total_impact": 0.435878616166
+  },
+  {
+    "emissions_source": "113000/US",
+    "sector_code": "113-115",
+    "indicator": "Eutrophication Potential",
+    "impact_per_purchase": 7.38536403865678,
+    "total_impact": 0.427022494945387
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "113-115",
+    "indicator": "Eutrophication Potential",
+    "impact_per_purchase": 5.93546612007755,
+    "total_impact": 0.343189250792884
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "113-115",
+    "indicator": "Eutrophication Potential",
+    "impact_per_purchase": 5.22515851493473,
+    "total_impact": 0.302119193292789
+  },
+  {
+    "emissions_source": "S00203/US",
+    "sector_code": "113-115",
+    "indicator": "Eutrophication Potential",
+    "impact_per_purchase": 4.64832065679346,
+    "total_impact": 0.268766370050343
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "113-115",
+    "indicator": "Eutrophication Potential",
+    "impact_per_purchase": 17.2807427826731,
+    "total_impact": 0.999174293770991
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "113000/US",
     "indicator": "Eutrophication Potential",
     "impact_per_purchase": 120.921814933754,
@@ -1051,73 +1121,73 @@
   },
   {
     "emissions_source": "Direct",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 129.273729983554,
-    "total_impact": 117.716438102695
+    "impact_per_purchase": 132.205013138195,
+    "total_impact": 117.561369184613
   },
   {
     "emissions_source": "221300/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 112.47419288223,
-    "total_impact": 102.41880826256
+    "impact_per_purchase": 114.5688040253,
+    "total_impact": 101.878628860909
   },
   {
     "emissions_source": "211000/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 32.2794532975406,
-    "total_impact": 29.3936151341204
+    "impact_per_purchase": 32.9963026531876,
+    "total_impact": 29.3414782530505
   },
   {
     "emissions_source": "S00203/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 8.21965791793004,
-    "total_impact": 7.48480648500231
+    "impact_per_purchase": 8.2915725524029,
+    "total_impact": 7.37315929869547
   },
   {
     "emissions_source": "486000/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 5.00884849034511,
-    "total_impact": 4.56104889488762
+    "impact_per_purchase": 5.11743715807944,
+    "total_impact": 4.55060594707677
   },
   {
     "emissions_source": "221100/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 4.29757853770455,
-    "total_impact": 3.91336768877582
+    "impact_per_purchase": 4.22145594771797,
+    "total_impact": 3.75386779506981
   },
   {
     "emissions_source": "1111B0/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 3.69154876229951,
-    "total_impact": 3.36151800861316
+    "impact_per_purchase": 3.74958850401409,
+    "total_impact": 3.3342665905566
   },
   {
     "emissions_source": "221200/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 2.36305492644937,
-    "total_impact": 2.15179378685859
+    "impact_per_purchase": 2.38958719628321,
+    "total_impact": 2.12490537168528
   },
   {
     "emissions_source": "484000/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 2.05848642789127,
-    "total_impact": 1.87445423138119
+    "impact_per_purchase": 2.06398312338948,
+    "total_impact": 1.8353667247547
   },
   {
     "emissions_source": "All others",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 11.0233138611338,
-    "total_impact": 10.0378108064633
+    "impact_per_purchase": 10.8420702629442,
+    "total_impact": 9.64115198547829
   },
   {
     "emissions_source": "Direct",
@@ -1263,71 +1333,71 @@
     "emissions_source": "Direct",
     "sector_code": "212",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 9446.20403054885,
-    "total_impact": 2163.00017852684
+    "impact_per_purchase": 23.8156182193123,
+    "total_impact": 3.97449398628339
   },
   {
     "emissions_source": "221300/US",
     "sector_code": "212",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 56.5771671473367,
-    "total_impact": 12.9550899223084
-  },
-  {
-    "emissions_source": "S00203/US",
-    "sector_code": "212",
-    "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 22.1188578623851,
-    "total_impact": 5.06479569469652
+    "impact_per_purchase": 37.4518457878953,
+    "total_impact": 6.25018987491567
   },
   {
     "emissions_source": "221100/US",
     "sector_code": "212",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 5.30905197993803,
-    "total_impact": 1.21567143196112
+    "impact_per_purchase": 6.75998900085651,
+    "total_impact": 1.12814772994047
+  },
+  {
+    "emissions_source": "S00203/US",
+    "sector_code": "212",
+    "indicator": "Eutrophication Potential",
+    "impact_per_purchase": 5.72228845148061,
+    "total_impact": 0.954970004505107
   },
   {
     "emissions_source": "211000/US",
     "sector_code": "212",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 2.82508978110522,
-    "total_impact": 0.646891564179977
-  },
-  {
-    "emissions_source": "230301/US",
-    "sector_code": "212",
-    "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 2.40015427622029,
-    "total_impact": 0.549589455316349
+    "impact_per_purchase": 2.61959357078101,
+    "total_impact": 0.437173572304452
   },
   {
     "emissions_source": "484000/US",
     "sector_code": "212",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 1.98971171223719,
-    "total_impact": 0.455605952916932
+    "impact_per_purchase": 2.11971998177514,
+    "total_impact": 0.353751653330514
+  },
+  {
+    "emissions_source": "482000/US",
+    "sector_code": "212",
+    "indicator": "Eutrophication Potential",
+    "impact_per_purchase": 2.09239772148717,
+    "total_impact": 0.349191949769338
   },
   {
     "emissions_source": "1111B0/US",
     "sector_code": "212",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 1.78037671999532,
-    "total_impact": 0.407672240694885
+    "impact_per_purchase": 1.83910034807762,
+    "total_impact": 0.306920156608778
   },
   {
-    "emissions_source": "221200/US",
+    "emissions_source": "2122A0/US",
     "sector_code": "212",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 1.62624675684085,
-    "total_impact": 0.372379425004975
+    "impact_per_purchase": 1.67437703648709,
+    "total_impact": 0.27943013702212
   },
   {
     "emissions_source": "All others",
     "sector_code": "212",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 12.2614800076824,
-    "total_impact": 2.80764456916767
+    "impact_per_purchase": 12.7288737593476,
+    "total_impact": 2.12427121323531
   },
   {
     "emissions_source": "Direct",
@@ -1748,6 +1818,76 @@
     "indicator": "Eutrophication Potential",
     "impact_per_purchase": 11.6053372845448,
     "total_impact": 0.170711280161815
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "2130",
+    "indicator": "Eutrophication Potential",
+    "impact_per_purchase": 25871.5222667437,
+    "total_impact": 2159.18075345864
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "2130",
+    "indicator": "Eutrophication Potential",
+    "impact_per_purchase": 86.8112750588452,
+    "total_impact": 7.24507944904375
+  },
+  {
+    "emissions_source": "S00203/US",
+    "sector_code": "2130",
+    "indicator": "Eutrophication Potential",
+    "impact_per_purchase": 50.5821151600365,
+    "total_impact": 4.22147287649825
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "2130",
+    "indicator": "Eutrophication Potential",
+    "impact_per_purchase": 4.78039467715738,
+    "total_impact": 0.398961300940622
+  },
+  {
+    "emissions_source": "211000/US",
+    "sector_code": "2130",
+    "indicator": "Eutrophication Potential",
+    "impact_per_purchase": 3.13757158367167,
+    "total_impact": 0.261854872945413
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "2130",
+    "indicator": "Eutrophication Potential",
+    "impact_per_purchase": 2.95986171931928,
+    "total_impact": 0.247023595726653
+  },
+  {
+    "emissions_source": "221200/US",
+    "sector_code": "2130",
+    "indicator": "Eutrophication Potential",
+    "impact_per_purchase": 1.76966020996752,
+    "total_impact": 0.147691976766096
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "2130",
+    "indicator": "Eutrophication Potential",
+    "impact_per_purchase": 1.68877898337667,
+    "total_impact": 0.140941806212909
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "2130",
+    "indicator": "Eutrophication Potential",
+    "impact_per_purchase": 1.53375091483216,
+    "total_impact": 0.128003502142667
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "2130",
+    "indicator": "Eutrophication Potential",
+    "impact_per_purchase": 10.3532190721461,
+    "total_impact": 0.864057055724707
   },
   {
     "emissions_source": "Direct",
@@ -3151,73 +3291,73 @@
   },
   {
     "emissions_source": "Direct",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 14.3580151887936,
-    "total_impact": 13.1081612876564
+    "impact_per_purchase": 14.9256708930298,
+    "total_impact": 12.7890470192621
   },
   {
     "emissions_source": "221300/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 149.033274906159,
-    "total_impact": 136.060045835744
+    "impact_per_purchase": 153.639939033518,
+    "total_impact": 131.646236770088
   },
   {
     "emissions_source": "1111B0/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 123.151811300359,
-    "total_impact": 112.431543229742
+    "impact_per_purchase": 130.479881643225,
+    "total_impact": 111.801563451478
   },
   {
     "emissions_source": "112A00/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 89.1503229875538,
-    "total_impact": 81.3898576649792
+    "impact_per_purchase": 93.0861738180488,
+    "total_impact": 79.7608001901058
   },
   {
     "emissions_source": "1121A0/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 79.4985867320318,
-    "total_impact": 72.5782974402728
+    "impact_per_purchase": 83.8490669050628,
+    "total_impact": 71.8459938488179
   },
   {
     "emissions_source": "112120/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 74.5706227344279,
-    "total_impact": 68.0793088230458
+    "impact_per_purchase": 79.4376571135444,
+    "total_impact": 68.0660815320249
   },
   {
     "emissions_source": "112300/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 53.7853835941932,
-    "total_impact": 49.1034083611659
+    "impact_per_purchase": 57.2858493689428,
+    "total_impact": 49.0853259708352
   },
   {
     "emissions_source": "1111A0/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 17.4581072817755,
-    "total_impact": 15.9383928083134
+    "impact_per_purchase": 18.5574186845239,
+    "total_impact": 15.9009066871052
   },
   {
     "emissions_source": "S00203/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 16.8363110388857,
-    "total_impact": 15.3707234380916
+    "impact_per_purchase": 16.7501711376907,
+    "total_impact": 14.3523683321097
   },
   {
     "emissions_source": "All others",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Eutrophication Potential",
-    "impact_per_purchase": 79.0271168838379,
-    "total_impact": 72.1478686706184
+    "impact_per_purchase": 80.1580135730419,
+    "total_impact": 68.6833182845413
   },
   {
     "emissions_source": "Direct",
@@ -5248,6 +5388,76 @@
     "indicator": "Eutrophication Potential",
     "impact_per_purchase": 7.80915995579449,
     "total_impact": 0.502797723548562
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "313-316",
+    "indicator": "Eutrophication Potential",
+    "impact_per_purchase": 5.68813574822008,
+    "total_impact": 0.319114268394321
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "313-316",
+    "indicator": "Eutrophication Potential",
+    "impact_per_purchase": 78.6750942178275,
+    "total_impact": 4.4138090656561
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "313-316",
+    "indicator": "Eutrophication Potential",
+    "impact_per_purchase": 30.4532434564698,
+    "total_impact": 1.70847970864381
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "313-316",
+    "indicator": "Eutrophication Potential",
+    "impact_per_purchase": 29.0375610760296,
+    "total_impact": 1.62905747487341
+  },
+  {
+    "emissions_source": "S00203/US",
+    "sector_code": "313-316",
+    "indicator": "Eutrophication Potential",
+    "impact_per_purchase": 18.1519369593351,
+    "total_impact": 1.01835510598189
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "313-316",
+    "indicator": "Eutrophication Potential",
+    "impact_per_purchase": 13.0531369157012,
+    "total_impact": 0.73230359145496
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "313-316",
+    "indicator": "Eutrophication Potential",
+    "impact_per_purchase": 11.2292393424687,
+    "total_impact": 0.629979778263542
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "313-316",
+    "indicator": "Eutrophication Potential",
+    "impact_per_purchase": 5.70080180999187,
+    "total_impact": 0.319824856399716
+  },
+  {
+    "emissions_source": "484000/US",
+    "sector_code": "313-316",
+    "indicator": "Eutrophication Potential",
+    "impact_per_purchase": 3.74831145653277,
+    "total_impact": 0.21028676549075
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "313-316",
+    "indicator": "Eutrophication Potential",
+    "impact_per_purchase": 23.0786966393334,
+    "total_impact": 1.29475485810266
   },
   {
     "emissions_source": "Direct",

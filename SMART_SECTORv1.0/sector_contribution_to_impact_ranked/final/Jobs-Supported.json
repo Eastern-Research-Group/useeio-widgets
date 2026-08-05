@@ -1,73 +1,73 @@
 [
   {
     "purchased_commodity_code": "Direct",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Jobs Supported",
-    "impact_per_purchase": 2.98380235150227,
-    "total_impact": 1126473.68600424
+    "impact_per_purchase": 2.12387619722521,
+    "total_impact": 679023.379035511
   },
   {
     "purchased_commodity_code": "115000/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.829199216946631,
-    "total_impact": 313047.242514379
+    "impact_per_purchase": 0.832354872770066,
+    "total_impact": 266111.753125445
   },
   {
     "purchased_commodity_code": "311119/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.511504468843675,
-    "total_impact": 115832.773211818
-  },
-  {
-    "purchased_commodity_code": "424A00/US",
-    "sector_code": "11",
-    "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.412890270744678,
-    "total_impact": 155878.295680971
-  },
-  {
-    "purchased_commodity_code": "1121A0/US",
-    "sector_code": "11",
-    "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.310147098847,
-    "total_impact": 106246.572103843
-  },
-  {
-    "purchased_commodity_code": "1111B0/US",
-    "sector_code": "11",
-    "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.275564056314827,
-    "total_impact": 85260.9687381402
+    "impact_per_purchase": 0.676916137587095,
+    "total_impact": 114151.722472512
   },
   {
     "purchased_commodity_code": "111400/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.235018646116846,
-    "total_impact": 24706.7324029782
+    "impact_per_purchase": 0.496330249640243,
+    "total_impact": 23479.691209551
   },
   {
-    "purchased_commodity_code": "113000/US",
-    "sector_code": "11",
+    "purchased_commodity_code": "424A00/US",
+    "sector_code": "111-112",
     "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.232051086357365,
-    "total_impact": 24394.7626674752
+    "impact_per_purchase": 0.468524886645595,
+    "total_impact": 149791.853267136
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "111-112",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.370485835364786,
+    "total_impact": 105495.183559946
+  },
+  {
+    "purchased_commodity_code": "1111B0/US",
+    "sector_code": "111-112",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.335938416641502,
+    "total_impact": 84517.1202525279
   },
   {
     "purchased_commodity_code": "112300/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.231664073592866,
-    "total_impact": 43967.6950943933
+    "impact_per_purchase": 0.330900671766748,
+    "total_impact": 43669.1718503571
+  },
+  {
+    "purchased_commodity_code": "1111A0/US",
+    "sector_code": "111-112",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.177919980976378,
+    "total_impact": 20010.1739944499
   },
   {
     "purchased_commodity_code": "All others",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Jobs Supported",
-    "impact_per_purchase": 1.82313359032773,
-    "total_impact": 542620.432658188
+    "impact_per_purchase": 1.87497905839746,
+    "total_impact": 470520.6452782
   },
   {
     "purchased_commodity_code": "Direct",
@@ -841,6 +841,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "113-115",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 7.73866352543196,
+    "total_impact": 447450.306968733
+  },
+  {
+    "purchased_commodity_code": "115000/US",
+    "sector_code": "113-115",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.811750386859877,
+    "total_impact": 46935.4893889337
+  },
+  {
+    "purchased_commodity_code": "113000/US",
+    "sector_code": "113-115",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.421372049507078,
+    "total_impact": 24363.7744786768
+  },
+  {
+    "purchased_commodity_code": "423A00/US",
+    "sector_code": "113-115",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.118411032203858,
+    "total_impact": 6846.53784648732
+  },
+  {
+    "purchased_commodity_code": "424A00/US",
+    "sector_code": "113-115",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.105265163916575,
+    "total_impact": 6086.44241383478
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "113-115",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0701534364169359,
+    "total_impact": 4056.2787820546
+  },
+  {
+    "purchased_commodity_code": "325310/US",
+    "sector_code": "113-115",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0701118850019926,
+    "total_impact": 4053.87627504414
+  },
+  {
+    "purchased_commodity_code": "541300/US",
+    "sector_code": "113-115",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.056273184584074,
+    "total_impact": 3253.72121859332
+  },
+  {
+    "purchased_commodity_code": "5241XX/US",
+    "sector_code": "113-115",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0422960917508387,
+    "total_impact": 2445.56429870545
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "113-115",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.657006390598094,
+    "total_impact": 36166.4753597302
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "113000/US",
     "indicator": "Jobs Supported",
     "impact_per_purchase": 4.00915407178793,
@@ -1051,73 +1121,73 @@
   },
   {
     "purchased_commodity_code": "Direct",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.355557108047878,
-    "total_impact": 323769.696339822
+    "impact_per_purchase": 0.329037393323645,
+    "total_impact": 292591.676774231
   },
   {
     "purchased_commodity_code": "211000/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Jobs Supported",
     "impact_per_purchase": 0.494883137452108,
     "total_impact": 440067.572660286
   },
   {
     "purchased_commodity_code": "550000/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.141076733380293,
-    "total_impact": 128464.232870858
+    "impact_per_purchase": 0.137921186059416,
+    "total_impact": 122644.392128775
   },
   {
     "purchased_commodity_code": "21311A/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.118926392598159,
-    "total_impact": 93135.7165875315
+    "impact_per_purchase": 0.121486390876453,
+    "total_impact": 92545.2383476306
   },
   {
     "purchased_commodity_code": "230301/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.0899347883235048,
-    "total_impact": 81894.464902573
+    "impact_per_purchase": 0.0870721662922788,
+    "total_impact": 77427.6469871113
   },
   {
     "purchased_commodity_code": "484000/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.0615816109220539,
-    "total_impact": 56076.1099048698
+    "impact_per_purchase": 0.0620050221453915,
+    "total_impact": 55137.0566569574
   },
   {
     "purchased_commodity_code": "486000/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.0561818976268911,
-    "total_impact": 51159.1401851657
+    "impact_per_purchase": 0.0574974994353121,
+    "total_impact": 51128.8081885446
   },
   {
     "purchased_commodity_code": "325190/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.0463352502022177,
-    "total_impact": 42192.7998294485
+    "impact_per_purchase": 0.0473882743752447,
+    "total_impact": 42139.3280527602
   },
   {
     "purchased_commodity_code": "325110/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.0379107227007221,
-    "total_impact": 34521.4394509677
+    "impact_per_purchase": 0.038809255656962,
+    "total_impact": 34510.5614663715
   },
   {
     "purchased_commodity_code": "All others",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.974821094913945,
-    "total_impact": 836621.946075005
+    "impact_per_purchase": 0.942603939014775,
+    "total_impact": 793839.130397225
   },
   {
     "purchased_commodity_code": "Direct",
@@ -1263,71 +1333,71 @@
     "purchased_commodity_code": "Direct",
     "sector_code": "212",
     "indicator": "Jobs Supported",
-    "impact_per_purchase": 2.61191366498042,
-    "total_impact": 571315.861108407
-  },
-  {
-    "purchased_commodity_code": "230301/US",
-    "sector_code": "212",
-    "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.489019090640572,
-    "total_impact": 111976.025177717
-  },
-  {
-    "purchased_commodity_code": "230302/US",
-    "sector_code": "212",
-    "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.232016674477241,
-    "total_impact": 19363.6050035099
+    "impact_per_purchase": 2.47344384140062,
+    "total_impact": 387439.58036438
   },
   {
     "purchased_commodity_code": "550000/US",
     "sector_code": "212",
     "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.148797175829446,
-    "total_impact": 34071.7093175766
+    "impact_per_purchase": 0.239029084211129,
+    "total_impact": 39890.6150155522
   },
   {
-    "purchased_commodity_code": "541300/US",
+    "purchased_commodity_code": "230301/US",
     "sector_code": "212",
     "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.148648689523213,
-    "total_impact": 34037.708791455
+    "impact_per_purchase": 0.187250972986258,
+    "total_impact": 31249.5715713184
   },
   {
     "purchased_commodity_code": "523900/US",
     "sector_code": "212",
     "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.119616853250166,
-    "total_impact": 27389.9731678668
-  },
-  {
-    "purchased_commodity_code": "21311A/US",
-    "sector_code": "212",
-    "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.111813321783142,
-    "total_impact": 16271.4179377511
+    "impact_per_purchase": 0.162983315783339,
+    "total_impact": 27199.6385934722
   },
   {
     "purchased_commodity_code": "532400/US",
     "sector_code": "212",
     "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.0814410811199277,
-    "total_impact": 18648.4510002255
+    "impact_per_purchase": 0.12311336360712,
+    "total_impact": 20545.9005423101
+  },
+  {
+    "purchased_commodity_code": "2122A0/US",
+    "sector_code": "212",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.104994583360736,
+    "total_impact": 13630.0456670083
+  },
+  {
+    "purchased_commodity_code": "423800/US",
+    "sector_code": "212",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.10287654761545,
+    "total_impact": 17168.6586534056
+  },
+  {
+    "purchased_commodity_code": "21311A/US",
+    "sector_code": "212",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.101038392108919,
+    "total_impact": 16861.896177652
   },
   {
     "purchased_commodity_code": "333130/US",
     "sector_code": "212",
     "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.080641309748092,
-    "total_impact": 11735.1710246452
+    "impact_per_purchase": 0.0870062481775455,
+    "total_impact": 14520.1273788609
   },
   {
     "purchased_commodity_code": "All others",
     "sector_code": "212",
     "indicator": "Jobs Supported",
-    "impact_per_purchase": 1.95240804565743,
-    "total_impact": 401407.152908751
+    "impact_per_purchase": 1.66811025559853,
+    "total_impact": 265785.014031834
   },
   {
     "purchased_commodity_code": "Direct",
@@ -1748,6 +1818,76 @@
     "indicator": "Jobs Supported",
     "impact_per_purchase": 1.34249153162071,
     "total_impact": 19747.6766379355
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "2130",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 2.57680238678817,
+    "total_impact": 215054.300309619
+  },
+  {
+    "purchased_commodity_code": "230301/US",
+    "sector_code": "2130",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 1.02079439973888,
+    "total_impact": 85193.2715218602
+  },
+  {
+    "purchased_commodity_code": "541300/US",
+    "sector_code": "2130",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.268090199001895,
+    "total_impact": 22374.2225875851
+  },
+  {
+    "purchased_commodity_code": "230302/US",
+    "sector_code": "2130",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.232016674477241,
+    "total_impact": 19363.6050035099
+  },
+  {
+    "purchased_commodity_code": "524200/US",
+    "sector_code": "2130",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.134112428695157,
+    "total_impact": 11192.7304413164
+  },
+  {
+    "purchased_commodity_code": "541512/US",
+    "sector_code": "2130",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0818199367172397,
+    "total_impact": 6828.5132505001
+  },
+  {
+    "purchased_commodity_code": "2334A0/US",
+    "sector_code": "2130",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0772626776350386,
+    "total_impact": 6448.17435905953
+  },
+  {
+    "purchased_commodity_code": "48A000/US",
+    "sector_code": "2130",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.0715523827534555,
+    "total_impact": 5971.60561765477
+  },
+  {
+    "purchased_commodity_code": "562000/US",
+    "sector_code": "2130",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.070742760262864,
+    "total_impact": 5904.03629254012
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "2130",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 1.43146897991985,
+    "total_impact": 119467.275205102
   },
   {
     "purchased_commodity_code": "Direct",
@@ -3151,73 +3291,73 @@
   },
   {
     "purchased_commodity_code": "Direct",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Jobs Supported",
-    "impact_per_purchase": 2.17961109562936,
-    "total_impact": 1989877.66834058
+    "impact_per_purchase": 1.99117513193931,
+    "total_impact": 1706136.53272023
   },
   {
     "purchased_commodity_code": "112120/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.434666159198194,
-    "total_impact": 240719.523450799
+    "impact_per_purchase": 0.444135596371521,
+    "total_impact": 240719.431812322
   },
   {
     "purchased_commodity_code": "1121A0/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.433068075112231,
-    "total_impact": 169182.272167429
+    "impact_per_purchase": 0.438720509129877,
+    "total_impact": 167715.701823298
   },
   {
     "purchased_commodity_code": "424400/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.268058784021399,
-    "total_impact": 244724.478232064
-  },
-  {
-    "purchased_commodity_code": "112300/US",
-    "sector_code": "31",
-    "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.202038153878046,
-    "total_impact": 158592.251138154
+    "impact_per_purchase": 0.284382413508689,
+    "total_impact": 243672.80264181
   },
   {
     "purchased_commodity_code": "484000/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.200671400586173,
-    "total_impact": 183203.113391084
+    "impact_per_purchase": 0.207638513176889,
+    "total_impact": 177914.864066111
   },
   {
-    "purchased_commodity_code": "424A00/US",
-    "sector_code": "31",
+    "purchased_commodity_code": "112300/US",
+    "sector_code": "311-312",
     "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.189151914970064,
-    "total_impact": 172686.389914943
-  },
-  {
-    "purchased_commodity_code": "111300/US",
-    "sector_code": "31",
-    "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.184082310188001,
-    "total_impact": 156388.688029118
+    "impact_per_purchase": 0.205122854594281,
+    "total_impact": 158591.559106718
   },
   {
     "purchased_commodity_code": "31161A/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Jobs Supported",
-    "impact_per_purchase": 0.179915304398929,
-    "total_impact": 158483.42915576
+    "impact_per_purchase": 0.187315379259166,
+    "total_impact": 156341.509823801
+  },
+  {
+    "purchased_commodity_code": "424A00/US",
+    "sector_code": "311-312",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.186856753593344,
+    "total_impact": 160108.0329788
+  },
+  {
+    "purchased_commodity_code": "111300/US",
+    "sector_code": "311-312",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.186675093692351,
+    "total_impact": 156387.173522169
   },
   {
     "purchased_commodity_code": "All others",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Jobs Supported",
-    "impact_per_purchase": 3.05924408824795,
-    "total_impact": 2327765.52083447
+    "impact_per_purchase": 2.76023499887268,
+    "total_impact": 2139642.37881517
   },
   {
     "purchased_commodity_code": "Direct",
@@ -5248,6 +5388,76 @@
     "indicator": "Jobs Supported",
     "impact_per_purchase": 0.39794268880572,
     "total_impact": 25621.7927622093
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "313-316",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 5.05761809048389,
+    "total_impact": 283741.135620346
+  },
+  {
+    "purchased_commodity_code": "3252A0/US",
+    "sector_code": "313-316",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.651937671032675,
+    "total_impact": 36574.8326233934
+  },
+  {
+    "purchased_commodity_code": "313200/US",
+    "sector_code": "313-316",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.506813971317888,
+    "total_impact": 28433.1416878961
+  },
+  {
+    "purchased_commodity_code": "313300/US",
+    "sector_code": "313-316",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.314218730050644,
+    "total_impact": 17628.2150416823
+  },
+  {
+    "purchased_commodity_code": "424A00/US",
+    "sector_code": "313-316",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.224206213349049,
+    "total_impact": 12578.3569361423
+  },
+  {
+    "purchased_commodity_code": "313100/US",
+    "sector_code": "313-316",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.184059296064576,
+    "total_impact": 10326.0453344842
+  },
+  {
+    "purchased_commodity_code": "532100/US",
+    "sector_code": "313-316",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.177681770461655,
+    "total_impact": 9968.25510108851
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "313-316",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.175090736296095,
+    "total_impact": 1466.57034413181
+  },
+  {
+    "purchased_commodity_code": "493000/US",
+    "sector_code": "313-316",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 0.144930961296841,
+    "total_impact": 8130.8779763914
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "313-316",
+    "indicator": "Jobs Supported",
+    "impact_per_purchase": 1.60348191705797,
+    "total_impact": 85545.9166784126
   },
   {
     "purchased_commodity_code": "Direct",

@@ -1,8 +1,8 @@
 [
   {
-    "id": "11",
-    "code": "11",
-    "name": "Agriculture, Forestry, Fishing, and Hunting",
+    "id": "111-112",
+    "code": "111-112",
+    "name": "Agriculture and Animal Production",
     "model": "Detail"
   },
   {
@@ -10,96 +10,102 @@
     "code": "1111A0",
     "name": "Oilseed farming",
     "model": "Detail",
-    "parent_code": "11"
+    "parent_code": "111-112"
   },
   {
     "id": "1111B0/US",
     "code": "1111B0",
     "name": "Grain farming",
     "model": "Detail",
-    "parent_code": "11"
+    "parent_code": "111-112"
   },
   {
     "id": "111200/US",
     "code": "111200",
     "name": "Vegetable and melon farming",
     "model": "Detail",
-    "parent_code": "11"
+    "parent_code": "111-112"
   },
   {
     "id": "111300/US",
     "code": "111300",
     "name": "Fruit and tree nut farming",
     "model": "Detail",
-    "parent_code": "11"
+    "parent_code": "111-112"
   },
   {
     "id": "111400/US",
     "code": "111400",
     "name": "Greenhouse, nursery, and floriculture production",
     "model": "Detail",
-    "parent_code": "11"
+    "parent_code": "111-112"
   },
   {
     "id": "111900/US",
     "code": "111900",
     "name": "Other crop farming",
     "model": "Detail",
-    "parent_code": "11"
+    "parent_code": "111-112"
   },
   {
     "id": "112120/US",
     "code": "112120",
     "name": "Dairy cattle and milk production",
     "model": "Detail",
-    "parent_code": "11"
+    "parent_code": "111-112"
   },
   {
     "id": "1121A0/US",
     "code": "1121A0",
     "name": "Beef cattle ranching and farming, including feedlots and dual-purpose ranching and farming",
     "model": "Detail",
-    "parent_code": "11"
+    "parent_code": "111-112"
   },
   {
     "id": "112300/US",
     "code": "112300",
     "name": "Poultry and egg production",
     "model": "Detail",
-    "parent_code": "11"
+    "parent_code": "111-112"
   },
   {
     "id": "112A00/US",
     "code": "112A00",
     "name": "Animal production, except cattle and poultry and eggs",
     "model": "Detail",
-    "parent_code": "11"
+    "parent_code": "111-112"
+  },
+  {
+    "id": "113-115",
+    "code": "113-115",
+    "name": "Forest, Fishing, and Hunting Resource Management",
+    "model": "Detail"
   },
   {
     "id": "113000/US",
     "code": "113000",
     "name": "Forestry and logging",
     "model": "Detail",
-    "parent_code": "11"
+    "parent_code": "113-115"
   },
   {
     "id": "114000/US",
     "code": "114000",
     "name": "Fishing, hunting and trapping",
     "model": "Detail",
-    "parent_code": "11"
+    "parent_code": "113-115"
   },
   {
     "id": "115000/US",
     "code": "115000",
     "name": "Support activities for agriculture and forestry",
     "model": "Detail",
-    "parent_code": "11"
+    "parent_code": "113-115"
   },
   {
-    "id": "211",
-    "code": "211",
-    "name": "Oil, Gas, and Refining (324)",
+    "id": "211 & 324",
+    "code": "211 & 324",
+    "name": "Oil, Gas, and Refining",
     "model": "Detail"
   },
   {
@@ -107,12 +113,12 @@
     "code": "211000",
     "name": "Oil and gas extraction",
     "model": "Detail",
-    "parent_code": "211"
+    "parent_code": "211 & 324"
   },
   {
     "id": "212",
     "code": "212",
-    "name": "Mining and Water",
+    "name": "Mining",
     "model": "Detail"
   },
   {
@@ -151,11 +157,17 @@
     "parent_code": "212"
   },
   {
+    "id": "2130",
+    "code": "2130",
+    "name": "Water Utilities",
+    "model": "Detail"
+  },
+  {
     "id": "213111/US",
     "code": "213111",
     "name": "Drilling oil and gas wells",
     "model": "Detail",
-    "parent_code": "211"
+    "parent_code": "211 & 324"
   },
   {
     "id": "21311A/US",
@@ -182,14 +194,14 @@
     "code": "221200",
     "name": "Natural gas distribution",
     "model": "Detail",
-    "parent_code": "211"
+    "parent_code": "211 & 324"
   },
   {
     "id": "221300/US",
     "code": "221300",
     "name": "Water, sewage and other systems",
     "model": "Detail",
-    "parent_code": "212"
+    "parent_code": "2130"
   },
   {
     "id": "23",
@@ -282,9 +294,9 @@
     "parent_code": "23"
   },
   {
-    "id": "31",
-    "code": "31",
-    "name": "Food, Textiles, and Apparel",
+    "id": "311-312",
+    "code": "311-312",
+    "name": "Food, Beverage & Tobacco",
     "model": "Detail"
   },
   {
@@ -292,259 +304,265 @@
     "code": "311111",
     "name": "Dog and cat food manufacturing",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "311-312"
   },
   {
     "id": "311119/US",
     "code": "311119",
     "name": "Other animal food manufacturing",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "311-312"
   },
   {
     "id": "311210/US",
     "code": "311210",
     "name": "Flour milling and malt manufacturing",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "311-312"
   },
   {
     "id": "311221/US",
     "code": "311221",
     "name": "Wet corn milling",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "311-312"
   },
   {
     "id": "311224/US",
     "code": "311224",
     "name": "Soybean and other oilseed processing",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "311-312"
   },
   {
     "id": "311225/US",
     "code": "311225",
     "name": "Fats and oils refining and blending",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "311-312"
   },
   {
     "id": "311230/US",
     "code": "311230",
     "name": "Breakfast cereal manufacturing",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "311-312"
   },
   {
     "id": "311300/US",
     "code": "311300",
     "name": "Sugar and confectionery product manufacturing",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "311-312"
   },
   {
     "id": "311410/US",
     "code": "311410",
     "name": "Frozen food manufacturing",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "311-312"
   },
   {
     "id": "311420/US",
     "code": "311420",
     "name": "Fruit and vegetable canning, pickling, and drying",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "311-312"
   },
   {
     "id": "311513/US",
     "code": "311513",
     "name": "Cheese manufacturing",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "311-312"
   },
   {
     "id": "311514/US",
     "code": "311514",
     "name": "Dry, condensed, and evaporated dairy product manufacturing",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "311-312"
   },
   {
     "id": "31151A/US",
     "code": "31151A",
     "name": "Fluid milk and butter manufacturing",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "311-312"
   },
   {
     "id": "311520/US",
     "code": "311520",
     "name": "Ice cream and frozen dessert manufacturing",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "311-312"
   },
   {
     "id": "311615/US",
     "code": "311615",
     "name": "Poultry processing",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "311-312"
   },
   {
     "id": "31161A/US",
     "code": "31161A",
     "name": "Animal (except poultry) slaughtering, rendering, and processing",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "311-312"
   },
   {
     "id": "311700/US",
     "code": "311700",
     "name": "Seafood product preparation and packaging",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "311-312"
   },
   {
     "id": "311810/US",
     "code": "311810",
     "name": "Bread and bakery product manufacturing",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "311-312"
   },
   {
     "id": "3118A0/US",
     "code": "3118A0",
     "name": "Cookie, cracker, pasta, and tortilla manufacturing",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "311-312"
   },
   {
     "id": "311910/US",
     "code": "311910",
     "name": "Snack food manufacturing",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "311-312"
   },
   {
     "id": "311920/US",
     "code": "311920",
     "name": "Coffee and tea manufacturing",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "311-312"
   },
   {
     "id": "311930/US",
     "code": "311930",
     "name": "Flavoring syrup and concentrate manufacturing",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "311-312"
   },
   {
     "id": "311940/US",
     "code": "311940",
     "name": "Seasoning and dressing manufacturing",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "311-312"
   },
   {
     "id": "311990/US",
     "code": "311990",
     "name": "All other food manufacturing",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "311-312"
   },
   {
     "id": "312110/US",
     "code": "312110",
     "name": "Soft drink and ice manufacturing",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "311-312"
   },
   {
     "id": "312120/US",
     "code": "312120",
     "name": "Breweries",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "311-312"
   },
   {
     "id": "312130/US",
     "code": "312130",
     "name": "Wineries",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "311-312"
   },
   {
     "id": "312140/US",
     "code": "312140",
     "name": "Distilleries",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "311-312"
   },
   {
     "id": "312200/US",
     "code": "312200",
     "name": "Tobacco manufacturing",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "311-312"
+  },
+  {
+    "id": "313-316",
+    "code": "313-316",
+    "name": "Textiles and Apparel",
+    "model": "Detail"
   },
   {
     "id": "313100/US",
     "code": "313100",
     "name": "Fiber, yarn, and thread mills",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "313-316"
   },
   {
     "id": "313200/US",
     "code": "313200",
     "name": "Fabric mills",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "313-316"
   },
   {
     "id": "313300/US",
     "code": "313300",
     "name": "Textile and fabric finishing and fabric coating mills",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "313-316"
   },
   {
     "id": "314110/US",
     "code": "314110",
     "name": "Carpet and rug mills",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "313-316"
   },
   {
     "id": "314120/US",
     "code": "314120",
     "name": "Curtain and linen mills",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "313-316"
   },
   {
     "id": "314900/US",
     "code": "314900",
     "name": "Other textile product mills",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "313-316"
   },
   {
     "id": "315000/US",
     "code": "315000",
     "name": "Apparel manufacturing",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "313-316"
   },
   {
     "id": "316000/US",
     "code": "316000",
     "name": "Leather and allied product manufacturing",
     "model": "Detail",
-    "parent_code": "31"
+    "parent_code": "313-316"
   },
   {
     "id": "321",
@@ -661,28 +679,28 @@
     "code": "324110",
     "name": "Petroleum refineries",
     "model": "Detail",
-    "parent_code": "211"
+    "parent_code": "211 & 324"
   },
   {
     "id": "324121/US",
     "code": "324121",
     "name": "Asphalt paving mixture and block manufacturing",
     "model": "Detail",
-    "parent_code": "211"
+    "parent_code": "211 & 324"
   },
   {
     "id": "324122/US",
     "code": "324122",
     "name": "Asphalt shingle and coating materials manufacturing",
     "model": "Detail",
-    "parent_code": "211"
+    "parent_code": "211 & 324"
   },
   {
     "id": "324190/US",
     "code": "324190",
     "name": "Other petroleum and coal products manufacturing",
     "model": "Detail",
-    "parent_code": "211"
+    "parent_code": "211 & 324"
   },
   {
     "id": "325-326",
@@ -896,7 +914,7 @@
   {
     "id": "327",
     "code": "327",
-    "name": "Nonmetallic Minerals",
+    "name": "Nonmetallic Minerals Manufacturing",
     "model": "Detail"
   },
   {
@@ -1201,7 +1219,7 @@
   {
     "id": "333",
     "code": "333",
-    "name": "Machinery",
+    "name": "Machinery and Equipment Manufacturing",
     "model": "Detail"
   },
   {
@@ -1653,7 +1671,7 @@
   {
     "id": "336",
     "code": "336",
-    "name": "Motor Vehicles and Other Transportation Equipment",
+    "name": "Motor Vehicle and Transportation Equipment Manufacturing",
     "model": "Detail"
   },
   {
@@ -1973,7 +1991,7 @@
   {
     "id": "42-44",
     "code": "42-44",
-    "name": "Wholesale and Retail",
+    "name": "Wholesale and Retail Sales",
     "model": "Detail"
   },
   {
@@ -2195,7 +2213,7 @@
   {
     "id": "5",
     "code": "5",
-    "name": "Information, Finance, and Other Professional Services",
+    "name": "Information, Financial, Legal and Other Professional Services",
     "model": "Detail"
   },
   {
@@ -2793,7 +2811,7 @@
   {
     "id": "8",
     "code": "8",
-    "name": "Other Services",
+    "name": "Other Services and Organizations",
     "model": "Detail"
   },
   {

@@ -1,73 +1,73 @@
 [
   {
     "emissions_source": "Direct",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Lead",
-    "impact_per_purchase": 0.000137300011626291,
-    "total_impact": 0.0518348174460095
+    "impact_per_purchase": 0.000119668272163008,
+    "total_impact": 0.0382590824425775
   },
   {
     "emissions_source": "48A000/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Lead",
-    "impact_per_purchase": 0.00766768372259965,
-    "total_impact": 2.8947775115744
+    "impact_per_purchase": 0.0080512144200649,
+    "total_impact": 2.57404966824072
   },
   {
     "emissions_source": "331410/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Lead",
-    "impact_per_purchase": 0.0026508353122678,
-    "total_impact": 1.00076877535038
+    "impact_per_purchase": 0.00298886678315054,
+    "total_impact": 0.955569079418747
   },
   {
     "emissions_source": "335911/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Lead",
-    "impact_per_purchase": 0.00115074187465676,
-    "total_impact": 0.434439111066251
+    "impact_per_purchase": 0.00132607483527226,
+    "total_impact": 0.423958711283138
   },
   {
     "emissions_source": "331110/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Lead",
-    "impact_per_purchase": 0.000765293073443054,
-    "total_impact": 0.288920782196206
-  },
-  {
-    "emissions_source": "2123A0/US",
-    "sector_code": "11",
-    "indicator": "Lead",
-    "impact_per_purchase": 0.000645598345012187,
-    "total_impact": 0.243732480141644
+    "impact_per_purchase": 0.000835907912945359,
+    "total_impact": 0.267247693793186
   },
   {
     "emissions_source": "221100/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Lead",
-    "impact_per_purchase": 0.000637048925823885,
-    "total_impact": 0.240504821398969
+    "impact_per_purchase": 0.000709716455380281,
+    "total_impact": 0.226903087062717
+  },
+  {
+    "emissions_source": "2123A0/US",
+    "sector_code": "111-112",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.000707621086164809,
+    "total_impact": 0.226233177636323
   },
   {
     "emissions_source": "325310/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Lead",
-    "impact_per_purchase": 0.000456360488575957,
-    "total_impact": 0.172289589306755
+    "impact_per_purchase": 0.000472356789295267,
+    "total_impact": 0.151016948914762
   },
   {
     "emissions_source": "324110/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Lead",
-    "impact_per_purchase": 0.000308750989391987,
-    "total_impact": 0.116562635223724
+    "impact_per_purchase": 0.000338794878865894,
+    "total_impact": 0.108315938446883
   },
   {
     "emissions_source": "All others",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Lead",
-    "impact_per_purchase": 0.00425321791976778,
-    "total_impact": 1.60571562826469
+    "impact_per_purchase": 0.0045999876537472,
+    "total_impact": 1.47065971371111
   },
   {
     "emissions_source": "Direct",
@@ -841,6 +841,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "113-115",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.000234792654437336,
+    "total_impact": 0.013575735003432
+  },
+  {
+    "emissions_source": "48A000/US",
+    "sector_code": "113-115",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00554699555267089,
+    "total_impact": 0.320727843333678
+  },
+  {
+    "emissions_source": "331410/US",
+    "sector_code": "113-115",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.000781729798413605,
+    "total_impact": 0.0451996959316369
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "113-115",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00037483657089016,
+    "total_impact": 0.0216730884030195
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "113-115",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.000367910813172496,
+    "total_impact": 0.0212726403919933
+  },
+  {
+    "emissions_source": "327320/US",
+    "sector_code": "113-115",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.000364693896266222,
+    "total_impact": 0.0210866379314296
+  },
+  {
+    "emissions_source": "324190/US",
+    "sector_code": "113-115",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.000313113420896036,
+    "total_impact": 0.0181042496337429
+  },
+  {
+    "emissions_source": "2123A0/US",
+    "sector_code": "113-115",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.000302650846159539,
+    "total_impact": 0.0174993025053216
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "113-115",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.000235242313506601,
+    "total_impact": 0.0136017343362513
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "113-115",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00198187345721823,
+    "total_impact": 0.11459212354836
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "113000/US",
     "indicator": "Lead",
     "impact_per_purchase": 3.67644817093121e-05,
@@ -1051,73 +1121,73 @@
   },
   {
     "emissions_source": "Direct",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Lead",
-    "impact_per_purchase": 0.0133235210704563,
-    "total_impact": 12.1323755692658
+    "impact_per_purchase": 0.0135234693513914,
+    "total_impact": 12.0255468029328
   },
   {
     "emissions_source": "48A000/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Lead",
-    "impact_per_purchase": 0.00482997655402493,
-    "total_impact": 4.39816841466305
+    "impact_per_purchase": 0.00481725083785314,
+    "total_impact": 4.28366966396165
   },
   {
     "emissions_source": "331110/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Lead",
-    "impact_per_purchase": 0.00217819545876938,
-    "total_impact": 1.98346107078691
+    "impact_per_purchase": 0.00217980236602767,
+    "total_impact": 1.9383572878148
   },
   {
     "emissions_source": "331410/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Lead",
-    "impact_per_purchase": 0.00182697679053281,
-    "total_impact": 1.66364195034193
+    "impact_per_purchase": 0.00182168513269815,
+    "total_impact": 1.61990678976284
   },
   {
     "emissions_source": "324190/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Lead",
-    "impact_per_purchase": 0.00104263701034344,
-    "total_impact": 0.94942348385312
+    "impact_per_purchase": 0.00103495129518464,
+    "total_impact": 0.920315261979604
   },
   {
     "emissions_source": "221100/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Lead",
-    "impact_per_purchase": 0.000688150432007423,
-    "total_impact": 0.626628610043591
+    "impact_per_purchase": 0.000675961290441958,
+    "total_impact": 0.601088664747432
   },
   {
     "emissions_source": "331200/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Lead",
-    "impact_per_purchase": 0.000455785928204282,
-    "total_impact": 0.415037889077422
+    "impact_per_purchase": 0.000462279577643982,
+    "total_impact": 0.411075335222746
   },
   {
     "emissions_source": "327310/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Lead",
-    "impact_per_purchase": 0.000410128331029001,
-    "total_impact": 0.373462158938859
+    "impact_per_purchase": 0.000417269732215121,
+    "total_impact": 0.371050990231581
   },
   {
     "emissions_source": "331510/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Lead",
-    "impact_per_purchase": 0.000400275240339766,
-    "total_impact": 0.364489951357418
+    "impact_per_purchase": 0.000394813955394613,
+    "total_impact": 0.351082520001458
   },
   {
     "emissions_source": "All others",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Lead",
-    "impact_per_purchase": 0.00461254329344925,
-    "total_impact": 4.20017405832104
+    "impact_per_purchase": 0.00458507831023358,
+    "total_impact": 4.07721364851936
   },
   {
     "emissions_source": "Direct",
@@ -1263,71 +1333,71 @@
     "emissions_source": "Direct",
     "sector_code": "212",
     "indicator": "Lead",
-    "impact_per_purchase": 0.0546666563232671,
-    "total_impact": 12.5176194590222
-  },
-  {
-    "emissions_source": "48A000/US",
-    "sector_code": "212",
-    "indicator": "Lead",
-    "impact_per_purchase": 0.00855362615795227,
-    "total_impact": 1.95861690546479
+    "impact_per_purchase": 0.0733801320303318,
+    "total_impact": 12.2461189452027
   },
   {
     "emissions_source": "2122A0/US",
     "sector_code": "212",
     "indicator": "Lead",
-    "impact_per_purchase": 0.00508257487317421,
-    "total_impact": 1.16381250314928
+    "impact_per_purchase": 0.006871166244998,
+    "total_impact": 1.14670165888671
   },
   {
-    "emissions_source": "331410/US",
+    "emissions_source": "48A000/US",
     "sector_code": "212",
     "indicator": "Lead",
-    "impact_per_purchase": 0.0028972437509443,
-    "total_impact": 0.663413444200632
+    "impact_per_purchase": 0.00642916103045012,
+    "total_impact": 1.07293716321211
   },
   {
     "emissions_source": "331110/US",
     "sector_code": "212",
     "indicator": "Lead",
-    "impact_per_purchase": 0.00237272215601259,
-    "total_impact": 0.543308024096493
+    "impact_per_purchase": 0.00270548589884871,
+    "total_impact": 0.451507801977992
+  },
+  {
+    "emissions_source": "331410/US",
+    "sector_code": "212",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00256064996419235,
+    "total_impact": 0.427336707783064
   },
   {
     "emissions_source": "324190/US",
     "sector_code": "212",
     "indicator": "Lead",
-    "impact_per_purchase": 0.000902590720414115,
-    "total_impact": 0.206676023837584
+    "impact_per_purchase": 0.00115162424668373,
+    "total_impact": 0.192189999048229
   },
   {
     "emissions_source": "221100/US",
     "sector_code": "212",
     "indicator": "Lead",
-    "impact_per_purchase": 0.000850112774319563,
-    "total_impact": 0.194659577188311
+    "impact_per_purchase": 0.00108244429054449,
+    "total_impact": 0.180644830784498
   },
   {
     "emissions_source": "212230/US",
     "sector_code": "212",
     "indicator": "Lead",
-    "impact_per_purchase": 0.000832058614332342,
-    "total_impact": 0.190525519618814
+    "impact_per_purchase": 0.00107376927456406,
+    "total_impact": 0.179197091803816
   },
   {
-    "emissions_source": "327320/US",
+    "emissions_source": "327310/US",
     "sector_code": "212",
     "indicator": "Lead",
-    "impact_per_purchase": 0.000765948241470704,
-    "total_impact": 0.175387507795255
+    "impact_per_purchase": 0.000595829435481923,
+    "total_impact": 0.0994356092865647
   },
   {
     "emissions_source": "All others",
     "sector_code": "212",
     "indicator": "Lead",
-    "impact_per_purchase": 0.00630039201244644,
-    "total_impact": 1.44266935201048
+    "impact_per_purchase": 0.00598801201495442,
+    "total_impact": 0.999315555198561
   },
   {
     "emissions_source": "Direct",
@@ -1748,6 +1818,76 @@
     "indicator": "Lead",
     "impact_per_purchase": 0.00482206895994673,
     "total_impact": 0.0709312917839378
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "2130",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00453317971640223,
+    "total_impact": 0.378329280152433
+  },
+  {
+    "emissions_source": "48A000/US",
+    "sector_code": "2130",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.0119842399066082,
+    "total_impact": 1.00017849295407
+  },
+  {
+    "emissions_source": "331410/US",
+    "sector_code": "2130",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00335273446285261,
+    "total_impact": 0.279811896996659
+  },
+  {
+    "emissions_source": "327320/US",
+    "sector_code": "2130",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00180788158103444,
+    "total_impact": 0.150881848932396
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "2130",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.0016403976417605,
+    "total_impact": 0.136904005090614
+  },
+  {
+    "emissions_source": "324190/US",
+    "sector_code": "2130",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00052235067464073,
+    "total_impact": 0.0435942466628716
+  },
+  {
+    "emissions_source": "2123A0/US",
+    "sector_code": "2130",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.000513656789840036,
+    "total_impact": 0.0428686740220002
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "2130",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.000473948318328983,
+    "total_impact": 0.0395546916999728
+  },
+  {
+    "emissions_source": "331490/US",
+    "sector_code": "2130",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.000464374258236833,
+    "total_impact": 0.0387556615512907
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "2130",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00548756685429223,
+    "total_impact": 0.457980346612077
   },
   {
     "emissions_source": "Direct",
@@ -3151,73 +3291,73 @@
   },
   {
     "emissions_source": "Direct",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Lead",
-    "impact_per_purchase": 0.00496096369750598,
-    "total_impact": 4.5291157192724
+    "impact_per_purchase": 0.00492838054436719,
+    "total_impact": 4.22287821850358
   },
   {
     "emissions_source": "48A000/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Lead",
-    "impact_per_purchase": 0.00948803400802613,
-    "total_impact": 8.66210812877862
+    "impact_per_purchase": 0.00965571062970501,
+    "total_impact": 8.27348654092016
   },
   {
     "emissions_source": "331410/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Lead",
-    "impact_per_purchase": 0.00225815852029951,
-    "total_impact": 2.06158760162649
+    "impact_per_purchase": 0.00231237433130657,
+    "total_impact": 1.98135576358077
   },
   {
     "emissions_source": "327200/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Lead",
-    "impact_per_purchase": 0.00112755325775814,
-    "total_impact": 1.02940063572659
+    "impact_per_purchase": 0.00118466445718645,
+    "total_impact": 1.01507862216642
   },
   {
     "emissions_source": "331110/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Lead",
-    "impact_per_purchase": 0.000933815353464716,
-    "total_impact": 0.852527463242912
+    "impact_per_purchase": 0.000932814636600584,
+    "total_impact": 0.799281341069357
   },
   {
     "emissions_source": "221100/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Lead",
-    "impact_per_purchase": 0.000825131497196284,
-    "total_impact": 0.7533044509673
+    "impact_per_purchase": 0.00081938871370274,
+    "total_impact": 0.702092446074952
   },
   {
     "emissions_source": "324190/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Lead",
-    "impact_per_purchase": 0.000674847256648777,
-    "total_impact": 0.616102335062923
+    "impact_per_purchase": 0.000698969551951943,
+    "total_impact": 0.598911400968949
   },
   {
     "emissions_source": "322130/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Lead",
-    "impact_per_purchase": 0.000636442272223098,
-    "total_impact": 0.581040474249831
+    "impact_per_purchase": 0.000658275768928789,
+    "total_impact": 0.564042971388486
   },
   {
     "emissions_source": "331313/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Lead",
-    "impact_per_purchase": 0.000507173027746302,
-    "total_impact": 0.463024015578171
+    "impact_per_purchase": 0.000531595610500231,
+    "total_impact": 0.455497197187677
   },
   {
     "emissions_source": "All others",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Lead",
-    "impact_per_purchase": 0.00692271924961257,
-    "total_impact": 6.32010199737851
+    "impact_per_purchase": 0.00679502715235786,
+    "total_impact": 5.82231260299661
   },
   {
     "emissions_source": "Direct",
@@ -5248,6 +5388,76 @@
     "indicator": "Lead",
     "impact_per_purchase": 0.00261872118481379,
     "total_impact": 0.168608026700205
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "313-316",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00545861043548273,
+    "total_impact": 0.306237500768817
+  },
+  {
+    "emissions_source": "48A000/US",
+    "sector_code": "313-316",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00692708714514836,
+    "total_impact": 0.388621587858454
+  },
+  {
+    "emissions_source": "3252A0/US",
+    "sector_code": "313-316",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00192603258398115,
+    "total_impact": 0.108053764211428
+  },
+  {
+    "emissions_source": "331410/US",
+    "sector_code": "313-316",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00143011338361499,
+    "total_impact": 0.0802318380457132
+  },
+  {
+    "emissions_source": "331110/US",
+    "sector_code": "313-316",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.000949099432355193,
+    "total_impact": 0.0532461221735552
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "313-316",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.000912841776809037,
+    "total_impact": 0.0512120048923483
+  },
+  {
+    "emissions_source": "313100/US",
+    "sector_code": "313-316",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.000723900939246959,
+    "total_impact": 0.0406120966241078
+  },
+  {
+    "emissions_source": "2122A0/US",
+    "sector_code": "313-316",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.000539420534064912,
+    "total_impact": 0.0302624263386933
+  },
+  {
+    "emissions_source": "212230/US",
+    "sector_code": "313-316",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.000488684667861544,
+    "total_impact": 0.0274160563606375
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "313-316",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00619378949993938,
+    "total_impact": 0.347482319753018
   },
   {
     "emissions_source": "Direct",

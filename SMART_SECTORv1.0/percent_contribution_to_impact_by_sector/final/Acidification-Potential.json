@@ -1,73 +1,73 @@
 [
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 6929.52851946122,
-    "contribution": 0.755641415628788
+    "total_impacts_sum": 6843.57936547736,
+    "contribution": 0.759210980347026
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 1849.86748549593,
-    "contribution": 0.201721730640123
+    "total_impacts_sum": 1795.83515804187,
+    "contribution": 0.199225828775571
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 311.268346209011,
-    "contribution": 0.0339427499445658
+    "total_impacts_sum": 300.218933661923,
+    "contribution": 0.0333055991275567
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 31.1466556958362,
-    "contribution": 0.00339643641497475
+    "total_impacts_sum": 29.1030665564847,
+    "contribution": 0.00322862737632799
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 19.061211007861,
-    "contribution": 0.00207855995240193
+    "total_impacts_sum": 17.685567303563,
+    "contribution": 0.00196199622645785
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 16.8754963132143,
-    "contribution": 0.00184021523076828
+    "total_impacts_sum": 15.5454109878987,
+    "contribution": 0.00172457219909756
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 8.89877715758272,
-    "contribution": 0.000970381253188602
+    "total_impacts_sum": 8.49683403578607,
+    "contribution": 0.000942619257211632
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 2.18415153284764,
-    "contribution": 0.000238174264178813
+    "total_impacts_sum": 2.12702104836683,
+    "contribution": 0.000235966830967949
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 0.783040387643869,
-    "contribution": 8.53878796157597e-05
+    "total_impacts_sum": 0.760377326254023,
+    "contribution": 8.43545145704173e-05
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 0.77901377622953,
-    "contribution": 8.49487913948551e-05
+    "total_impacts_sum": 0.716215880769255,
+    "contribution": 7.94553452133459e-05
   },
   {
     "sector": "111/112",
@@ -833,6 +833,76 @@
     "contribution": 9.59363677164618e-06
   },
   {
+    "sector": "113-115",
+    "indicator": "Acidification Potential",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 85.949153983859,
+    "contribution": 0.549811567194805
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Acidification Potential",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 54.0323274540589,
+    "contribution": 0.345641548051515
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Acidification Potential",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 11.0494125470879,
+    "contribution": 0.070682427313214
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Acidification Potential",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 2.04358913935153,
+    "contribution": 0.013072716778808
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Acidification Potential",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 1.37564370429804,
+    "contribution": 0.00879991001544719
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Acidification Potential",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 1.33008532531567,
+    "contribution": 0.00850847580596261
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Acidification Potential",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 0.401943121796651,
+    "contribution": 0.00257120596858569
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Acidification Potential",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.0627978954602753,
+    "contribution": 0.00040171435923655
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Acidification Potential",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 0.0571304844808071,
+    "contribution": 0.000365460272161491
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Acidification Potential",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 0.0226630613898457,
+    "contribution": 0.000144974240264461
+  },
+  {
     "sector": "113000/US",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Direct",
@@ -1043,74 +1113,74 @@
     "contribution": 7.846935157898e-05
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 989.739741333198,
-    "contribution": 0.49458909312102
+    "total_impacts_sum": 986.890511384774,
+    "contribution": 0.496604396593666
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 682.566553936714,
-    "contribution": 0.341089640849987
+    "total_impacts_sum": 680.582329035072,
+    "contribution": 0.342469780531714
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 155.711138082082,
-    "contribution": 0.0778113956191358
+    "total_impacts_sum": 152.34365406109,
+    "contribution": 0.0766594951791825
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 96.8159109479043,
-    "contribution": 0.0483804899365854
+    "total_impacts_sum": 94.1725070111428,
+    "contribution": 0.0473877096602744
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 25.8844807030071,
-    "contribution": 0.0129348972281986
+    "total_impacts_sum": 24.2636460680352,
+    "contribution": 0.0122094935312241
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 21.3221288212827,
-    "contribution": 0.0106550155730056
+    "total_impacts_sum": 20.5599857814503,
+    "contribution": 0.0103458075796523
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 12.9057309010938,
-    "contribution": 0.00644920424619694
+    "total_impacts_sum": 12.7567244730795,
+    "contribution": 0.00641919786073954
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 9.1620047186663,
-    "contribution": 0.0045784032061517
+    "total_impacts_sum": 8.99969731207484,
+    "contribution": 0.00452865763894862
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 5.97929705867197,
-    "contribution": 0.00298795227295432
+    "total_impacts_sum": 5.66174275725824,
+    "contribution": 0.00284899521598559
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 1.04841073716764,
-    "contribution": 0.000523907946765491
+    "total_impacts_sum": 1.04623420454728,
+    "contribution": 0.000526466208612971
   },
   {
     "sector": "211/32411",
@@ -1256,71 +1326,71 @@
     "sector": "212",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 73.7615234414684,
-    "contribution": 0.426621328192107
+    "total_impacts_sum": 61.8403807941204,
+    "contribution": 0.435804571427528
   },
   {
     "sector": "212",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 33.5805041580548,
-    "contribution": 0.194222659956828
-  },
-  {
-    "sector": "212",
-    "indicator": "Acidification Potential",
-    "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 14.7558399768082,
-    "contribution": 0.0853447130127602
+    "total_impacts_sum": 29.3657205476349,
+    "contribution": 0.206947549377629
   },
   {
     "sector": "212",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 10.4182461967848,
-    "contribution": 0.060256971691096
+    "total_impacts_sum": 10.6077136248375,
+    "contribution": 0.0747552009016379
+  },
+  {
+    "sector": "212",
+    "indicator": "Acidification Potential",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 10.584722887312,
+    "contribution": 0.0745931794459896
   },
   {
     "sector": "212",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 10.2578776158126,
-    "contribution": 0.0593294331341012
-  },
-  {
-    "sector": "212",
-    "indicator": "Acidification Potential",
-    "sector_purchased_detail": "Other",
-    "total_impacts_sum": 10.1433748725029,
-    "contribution": 0.058667173053869
+    "total_impacts_sum": 10.2433556899403,
+    "contribution": 0.0721874797520423
   },
   {
     "sector": "212",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 9.76812114806937,
-    "contribution": 0.0564967834678416
+    "total_impacts_sum": 9.4376109746015,
+    "contribution": 0.0665091959860149
+  },
+  {
+    "sector": "212",
+    "indicator": "Acidification Potential",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 6.90723880813387,
+    "contribution": 0.0486770328686685
   },
   {
     "sector": "212",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 9.51365536212625,
-    "contribution": 0.0550250062252708
+    "total_impacts_sum": 2.22158952023965,
+    "contribution": 0.0156560948739821
   },
   {
     "sector": "212",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 0.531613378693961,
-    "contribution": 0.00307474134374517
+    "total_impacts_sum": 0.634900388509151,
+    "contribution": 0.00447430122777816
   },
   {
     "sector": "212",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 0.166186799173586,
-    "contribution": 0.000961189922381283
+    "total_impacts_sum": 0.0561061670892841,
+    "contribution": 0.000395394138729358
   },
   {
     "sector": "2121/2122",
@@ -1734,6 +1804,76 @@
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 0.010419381937487,
     "contribution": 0.000535783432387782
+  },
+  {
+    "sector": "2130",
+    "indicator": "Acidification Potential",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 14.7703725957718,
+    "contribution": 0.329284441388481
+  },
+  {
+    "sector": "2130",
+    "indicator": "Acidification Potential",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 7.60962014330033,
+    "contribution": 0.169645653947991
+  },
+  {
+    "sector": "2130",
+    "indicator": "Acidification Potential",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 7.58226763141117,
+    "contribution": 0.16903586861322
+  },
+  {
+    "sector": "2130",
+    "indicator": "Acidification Potential",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 6.1553419911382,
+    "contribution": 0.137224591726766
+  },
+  {
+    "sector": "2130",
+    "indicator": "Acidification Potential",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 3.99827910420146,
+    "contribution": 0.089135943782427
+  },
+  {
+    "sector": "2130",
+    "indicator": "Acidification Potential",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 2.97391411022939,
+    "contribution": 0.0662991837324765
+  },
+  {
+    "sector": "2130",
+    "indicator": "Acidification Potential",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 1.43136720691917,
+    "contribution": 0.0319102952952651
+  },
+  {
+    "sector": "2130",
+    "indicator": "Acidification Potential",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 0.163528353886646,
+    "contribution": 0.00364563197790669
+  },
+  {
+    "sector": "2130",
+    "indicator": "Acidification Potential",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 0.11225716470466,
+    "contribution": 0.00250261376495068
+  },
+  {
+    "sector": "2130",
+    "indicator": "Acidification Potential",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 0.059020396776278,
+    "contribution": 0.00131577577051554
   },
   {
     "sector": "213111/US",
@@ -3087,74 +3227,74 @@
     "contribution": 0.000178848841313769
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 5458.71314177238,
-    "contribution": 0.731633837849746
+    "total_impacts_sum": 5417.8529357056,
+    "contribution": 0.736399265259876
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 1734.50401671142,
-    "contribution": 0.232476372645649
+    "total_impacts_sum": 1681.1565819027,
+    "contribution": 0.228504259231747
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 97.6000958740411,
-    "contribution": 0.0130813858256055
+    "total_impacts_sum": 95.2002289575588,
+    "contribution": 0.0129396976050971
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 93.2002264312627,
-    "contribution": 0.0124916692966632
+    "total_impacts_sum": 90.6450488953646,
+    "contribution": 0.0123205535842583
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 49.792775161904,
-    "contribution": 0.0066737486002177
+    "total_impacts_sum": 47.2980336486048,
+    "contribution": 0.00642878971437665
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 21.8063931355845,
-    "contribution": 0.00292272092067984
+    "total_impacts_sum": 20.0409994794794,
+    "contribution": 0.00272399001355324
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 3.83882123155306,
-    "contribution": 0.000514518978652234
+    "total_impacts_sum": 3.56639972411563,
+    "contribution": 0.000484748140569403
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 0.896839454179892,
-    "contribution": 0.000120203805320984
+    "total_impacts_sum": 0.846945738766154,
+    "contribution": 0.000115117598639866
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 0.377629779684517,
-    "contribution": 5.06138933886587e-05
+    "total_impacts_sum": 0.357063844725016,
+    "contribution": 4.85324271490443e-05
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Acidification Potential",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 0.260598850914118,
-    "contribution": 3.49281840759312e-05
+    "total_impacts_sum": 0.257844329951969,
+    "contribution": 3.50464247334403e-05
   },
   {
     "sector": "311111/US",
@@ -5080,6 +5220,76 @@
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.000932503889913102,
     "contribution": 1.86176270075424e-05
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Acidification Potential",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 53.3474348087228,
+    "contribution": 0.514100688924301
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Acidification Potential",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 40.8602060667781,
+    "contribution": 0.393763264603771
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Acidification Potential",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 2.55517753589806,
+    "contribution": 0.0246238368581183
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Acidification Potential",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 2.4947415132992,
+    "contribution": 0.0240414245834641
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Acidification Potential",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 2.39986691648233,
+    "contribution": 0.0231271332823012
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Acidification Potential",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 1.76539365610518,
+    "contribution": 0.0170128160441158
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Acidification Potential",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 0.272421507437432,
+    "contribution": 0.00262528245553956
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Acidification Potential",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.049893715413738,
+    "contribution": 0.000480817748016661
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Acidification Potential",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 0.0205659349595017,
+    "contribution": 0.000198190622828662
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Acidification Potential",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 0.00275452096214942,
+    "contribution": 2.65448775442507e-05
   },
   {
     "sector": "313100/US",
