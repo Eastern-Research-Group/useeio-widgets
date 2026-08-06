@@ -24,6 +24,7 @@ interface Filters {
   code: string;
   name: string;
   group: string;
+  description: string;
 }
 
 export class DataTableInfo {
@@ -53,10 +54,10 @@ const DataTable = (props: { dataTable: DataRow[] }) => {
   const [data, setData] = React.useState<DataRow[]>([]); // Typed as an array of DataRow
   const [filteredData, setFilteredData] = React.useState<DataRow[]>([]); // Typed as an array of DataRow
   const [filters, setFilters] = React.useState<Filters>({
-    // Filters are typed as Filters
     code: "",
     name: "",
     group: "",
+    description: "",
   });
 
   // Fetch JSON data
@@ -78,21 +79,25 @@ const DataTable = (props: { dataTable: DataRow[] }) => {
 
   React.useEffect(() => {
     const filtered = data.filter((row) => {
-      console.log(filters.code);
-      const matchesId =
+      const matchesCode =
         filters.code === "" ||
         row.Code.toLowerCase().includes(filters.code.toLowerCase());
-      const matchesCode =
+      const matchesName =
         filters.name === "" ||
         row.Name.toLowerCase().includes(filters.name.toLowerCase());
       const matchesGroup =
         filters.group === "" ||
         row.Group.toLowerCase().includes(filters.group.toLowerCase());
+      const matchesDescription =
+        filters.description === "" ||
+        (row.Description || "")
+          .toLowerCase()
+          .includes(filters.description.toLowerCase());
 
-      return matchesId && matchesCode && matchesGroup;
+      return matchesCode && matchesName && matchesGroup && matchesDescription;
     });
     setFilteredData(filtered);
-  }, [filters]);
+  }, [filters, data]);
 
   return (
     <div>
@@ -118,6 +123,14 @@ const DataTable = (props: { dataTable: DataRow[] }) => {
           variant="outlined"
           name="group"
           value={filters.group}
+          onChange={handleFilterChange}
+          style={{ marginRight: 10 }}
+        />
+        <TextField
+          label="Filter by Description"
+          variant="outlined"
+          name="description"
+          value={filters.description}
           onChange={handleFilterChange}
         />
       </div>
