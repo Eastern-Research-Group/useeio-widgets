@@ -93,6 +93,7 @@
           border-collapse: collapse;
       }
     </style>
+    <link rel="stylesheet" type="text/css" href="ssceat.css" />
   </head>
   <body class="path-node not-front node-page node-page--node-type-page" id="top">
     
@@ -228,23 +229,191 @@
               &nbsp;|&nbsp; <a href="./sector-info-table.html">Sector Information Table</a>
             </p>
 
-            <p>A short walkthrough for using the Sector Supply Chain Environmental Assessment Tool.
-              Full step-by-step content is still being drafted with EPA.</p>
+            <h2>How to use the SSCEAT</h2>
+            <p>Use the Sector Supply Chain Environmental Assessment Tool (SSCEAT) to explore the
+              environmental and economic impacts associated with the operations and upstream supply
+              chains of over 400 agriculture, commercial, and industrial sectors included in the
+              U.S. Environmentally-Extended Input-Output (USEEIO) model developed by the U.S. EPA.</p>
+            <p>USEEIO uses Life Cycle Assessment (LCA) techniques to estimate sector-wide impacts for
+              different environmental and economic indicators from a &ldquo;cradle-to-gate&rdquo;
+              perspective. <!-- EPA draft includes a cradle-to-gate figure; add when asset is supplied. --></p>
+            <p>The results shown in the tool reflect cumulative or &ldquo;total embodied&rdquo;
+              environmental and economic impacts associated with creating a selected sector&rsquo;s
+              final goods or services. More information on how USEEIO estimates environmental and
+              economic impacts can be found on the
+              <a href="./about-data-methods.html">About Data and Methods</a> page.</p>
 
-            <p><em>Placeholder page.</em> Planned steps include:</p>
+            <nav class="ssceat-step-nav" aria-label="User guide steps">
+              <p class="ssceat-step-nav__title">In this guide</p>
+              <ol>
+                <li><a href="#step-1">Compare sector direct and indirect impacts</a></li>
+                <li><a href="#step-2">Identify specific supplier contributions</a></li>
+                <li><a href="#step-3">Compare a sector&rsquo;s impacts with other sectors</a></li>
+                <li><a href="#step-4">Compare multiple indicators at the same time</a></li>
+                <li><a href="#step-5">Interpreting and understanding results</a></li>
+              </ol>
+            </nav>
+
+            <section class="ssceat-step" aria-labelledby="step-1">
+              <div class="ssceat-step__main">
+            <h2 id="step-1">Step 1 &mdash; Compare sector direct and indirect impacts</h2>
+            <p>Start with the
+              <a href="./pie_chart.html" target="_blank" rel="noopener noreferrer">Comparison of
+                Direct and Indirect Supply Chain Impacts</a>
+              chart to see how a sector&rsquo;s own operations (direct impacts) compare with the
+              environmental and economic impacts associated with purchases and inputs (indirect
+              impacts):</p>
             <ol>
-              <li>Compare a sector&rsquo;s direct and indirect impacts (pie / donut viewer)</li>
-              <li>Identify specific supplier contributions (ranked bar viewer)</li>
-              <li>Compare a sector with other sectors (cross-sector comparison viewer)</li>
-              <li>Compare multiple indicators at once (multi-indicator sector dashboard)</li>
-              <li>Review guidance on
-                <a href="./interpreting-results.html">interpreting and understanding results</a></li>
+              <li>Select the sector you&rsquo;re exploring from the list.</li>
+              <li>Begin with the
+                <a href="./glossary.html#point-of-consumption">Point of consumption</a>
+                perspective.</li>
+              <li>Choose an environmental or economic indicator (see the
+                <a href="./indicator-list.html">Indicator List</a>).</li>
+              <li>Start with the
+                <a href="./glossary.html#level-of-detail">Simple</a>
+                level of detail.</li>
             </ol>
+            <p>The chart estimates total cradle-to-gate impacts and the portion attributed to the
+              selected sector&rsquo;s operations (direct) and from upstream purchases (indirect)
+              from primary suppliers.</p>
+            <p>To look more closely at which types of upstream suppliers contribute to indirect
+              impacts:</p>
+            <ul>
+              <li>Change the level of detail to <b>Detailed</b> to see broader categories of
+                indirect impacts (for example manufacturing purchases, energy, or transport). Sector
+                assignments to those groups are shown in the
+                <a href="./sector-info-table.html">Sector Information Table</a>.</li>
+              <li>Change the perspective to
+                <a href="./glossary.html#supply-chain">Supply chain</a>
+                to attribute impacts to the upstream goods and services where the impact actually
+                occurs (rather than to the goods and services purchased directly by the selected
+                sector).</li>
+            </ul>
+            <p>To see the underlying data used to create the chart, use
+              <b>Download Full Dataset (CSV)</b>.</p>
+              </div>
+              <div class="ssceat-step__side">
+            <aside class="ssceat-tip" role="note">
+              <p class="ssceat-tip__label">Tip</p>
+              <p>Click the three lines in the upper-right of the chart to open a graphics download
+                menu (for example PNG or SVG).</p>
+            </aside>
+              </div>
+            </section>
 
-            <p>Until this guide is complete, start from the
-              <a href="./smindex.html">tool home page</a>,
-              see the <a href="./indicator-list.html">Indicator List</a> for indicator definitions,
-              and <a href="./about-data-methods.html">About Data and Methods</a> for data sources.</p>
+            <section class="ssceat-step" aria-labelledby="step-2">
+              <div class="ssceat-step__main">
+            <h2 id="step-2">Step 2 &mdash; Identify specific supplier contributions</h2>
+            <p>Use the
+              <a href="./sum_of_impact_per_purchase.html" target="_blank" rel="noopener noreferrer">Supplier
+                Contributions to Total Impacts by Sector</a>
+              viewer to identify the specific supply-chain sectors that contribute to your selected
+              sector&rsquo;s total environmental and economic impacts. This viewer uses the same
+              underlying contribution data as the pie chart, but presents top contributing sectors
+              in rank order as a bar chart. The full supply chain can be reviewed by downloading the
+              CSV dataset.</p>
+            <p>This viewer also lets you examine supplier contributions on an
+              <a href="./glossary.html#impact-intensity">impact intensity</a>
+              basis (indicator impact per million dollars of output).</p>
+            <ol>
+              <li>Select the sector you&rsquo;re exploring from the list.</li>
+              <li>Begin with the Point of consumption perspective.</li>
+              <li>Choose an environmental or economic indicator.</li>
+              <li>Select <b>Impact intensity</b> to view impacts normalized by million dollars of
+                sector output within the supply chain (or keep <b>Total impacts</b> for absolute
+                contributions).</li>
+            </ol>
+              </div>
+              <div class="ssceat-step__side">
+            <aside class="ssceat-note" role="note">
+              <p class="ssceat-note__label">Sector Purchases</p>
+              <p>Compare domestic versus imported purchases by selecting <b>Sector Purchases</b>
+                from the indicator list. That chart shows sector supply-chain purchases and
+                differentiates purchases from domestic (blue) and imported (orange) first-tier
+                suppliers. Hover over the bars to see estimated purchases by supplier sector.</p>
+              <p>Because imports are shown from the Point of consumption perspective, the chart
+                shows purchases from foreign companies and not the total imported content within a
+                purchased supplier&rsquo;s product. On Sector Purchases charts, same-sector purchases
+                are labeled <b>Within-sector spend</b>.</p>
+            </aside>
+              </div>
+            </section>
+
+            <section class="ssceat-step" aria-labelledby="step-3">
+              <div class="ssceat-step__main">
+            <h2 id="step-3">Step 3 &mdash; Compare a sector&rsquo;s impacts with other sectors</h2>
+            <p>To see how a sector&rsquo;s total embodied environmental and economic impacts compare
+              with other sectors, use the
+              <a href="./smart_sector_eeio.html" target="_blank" rel="noopener noreferrer">Cross Sector
+                Comparison</a>
+              viewer. Prefabricated lists include:</p>
+            <ul>
+              <li>Top 10 sectors based on total embodied impacts</li>
+              <li>Top 25 sectors based on total embodied impacts</li>
+              <li>Top 10 sectors based on embodied impact intensity</li>
+              <li>Top 25 sectors based on embodied impact intensity</li>
+              <li>Basic Construction Materials Sectors</li>
+              <li>Energy Intensive Industrial Sectors</li>
+            </ul>
+            <p>Use these presets to compare how different sectors rank across indicators. Bar colors
+              correspond to broad sector categories. The number of categories shown can be controlled
+              with the Simple or Detailed level of detail.</p>
+            <p>The sector you&rsquo;re exploring may not appear in a curated top list; those lists
+              can still help benchmark your sector against leading sectors for an indicator. You can
+              also create your own comparison charts.</p>
+            <p>Create a custom comparison by selecting <b>Custom Sector List</b> from the Sector
+              Filter menu. Choose up to six sectors, then vary indicators, perspectives, result
+              views (total vs intensity), and level of detail to compare across sectors.</p>
+              </div>
+              <div class="ssceat-step__side">
+            <aside class="ssceat-tip" role="note">
+              <p class="ssceat-tip__label">Tip</p>
+              <p>If results are slow to load, select the <b>Simple</b> level of detail.</p>
+            </aside>
+              </div>
+            </section>
+
+            <section class="ssceat-step" aria-labelledby="step-4">
+              <div class="ssceat-step__main">
+            <h2 id="step-4">Step 4 &mdash; Compare multiple indicators at the same time</h2>
+            <p>The
+              <a href="./sector-dashboard.html" target="_blank" rel="noopener noreferrer">Multi-indicator
+                Sector Dashboard</a>
+              lets you compare up to six indicators for one sector on one screen. The dashboard also
+              includes a chart of the sector&rsquo;s price-adjusted dollar output from 2000 to 2023.
+              The last year on that chart (2023) is the year used by the model for transactions
+              between sectors.</p>
+            <p>To use the dashboard:</p>
+            <ol>
+              <li>Select the sector you&rsquo;re exploring from the list.</li>
+              <li>Choose up to six indicators with the checkboxes (Choose indicators).</li>
+              <li>Select the bar chart metric: Total impacts or Impact intensity.</li>
+              <li>Select the perspective (Point of consumption or Supply chain).</li>
+              <li>Select the pie chart format (Simple or Detailed).</li>
+            </ol>
+            <p>After you set those options, the dashboard shows a series of charts and a short
+              narrative for each indicator. Placing the direct vs indirect pie chart beside the
+              supplier contribution bar chart makes it easier to assess total embodied impacts in
+              the supply chain.</p>
+              </div>
+              <div class="ssceat-step__side">
+            <div class="ssceat-share-list">
+              <p>Share your dashboard results</p>
+              <ul>
+                <li>Create a PDF using Print / Save as PDF.</li>
+                <li>Copy a share link (URL) that preserves your sector and control selections.</li>
+              </ul>
+            </div>
+              </div>
+            </section>
+
+            <h2 id="step-5">Step 5 &mdash; Interpreting and understanding results</h2>
+            <p>For more information on how to interpret results from this tool, see
+              <a href="./interpreting-results.html">Interpreting and Understanding Results</a>.</p>
+            <p>See
+              <a href="./about-data-methods.html">About Data and Methods</a>
+              for how results are calculated and which primary data sources are used.</p>
 </article>
             <p>&nbsp;&nbsp;</p>
         </div>
