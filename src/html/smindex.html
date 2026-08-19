@@ -92,6 +92,33 @@
           width: 50%;
           border-collapse: collapse;
       }
+
+      .ssceat-card-thumb {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          height: 180px;
+          padding-top: 20px;
+          padding-bottom: 2px;
+          text-align: center;
+      }
+
+      .ssceat-card-thumb img {
+          display: block;
+          height: 150px !important;
+          width: auto !important;
+          max-width: 100%;
+          margin: 0 auto;
+      }
+
+      .ssceat-viewer-card .usa-card__body {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          min-height: 4.5rem;
+          padding-top: 0.25rem;
+      }
     </style>
   </head>
   <body class="path-node not-front node-page node-page--node-type-page" id="top">
@@ -228,11 +255,11 @@
             <p>The SSCEAT provides four data viewers:</p>
 
             <ul class="usa-card-group">
-              <li class="usa-card tablet:grid-col-3">
+              <li class="usa-card tablet:grid-col-3 ssceat-viewer-card">
                 <div class="usa-card__container" style="border-radius: 0;">
                     <div class="usa-card__media" style="border-radius: 0;">
-                      <div class="usa-card__img" style="border-radius: 0;background-color: white !important;">
-                      <img loading="eager" style="object-fit: contain !important;" sizes="(max-width: 640px) calc(100vw - 2rem), 640px" width="640" height="180" src="image/directAndIndirect.png" alt="Comparison of Direct and Indirect Supply Chain Impacts by Sector" />
+                      <div class="usa-card__img ssceat-card-thumb" style="border-radius: 0;background-color: white !important;">
+                      <img loading="eager" style="object-fit: contain !important;" sizes="(max-width: 640px) calc(100vw - 2rem), 640px" width="640" height="180" src="image/ssceat-pie-thumb.png" alt="Comparison of Direct and Indirect Supply Chain Impacts by Sector" />
                       </div>
                     </div>
                     <div class="usa-card__body">
@@ -241,11 +268,11 @@
                     </div>
                </div>
               </li>
-            <li class="usa-card tablet:grid-col-3">
+            <li class="usa-card tablet:grid-col-3 ssceat-viewer-card">
               <div class="usa-card__container" style="border-radius: 0;">
                 <div class="usa-card__media" style="border-radius: 0;">
-                  <div class="usa-card__img" style="border-radius: 0;background-color: white !important;">
-                      <img loading="eager" style="object-fit: contain !important;margin-top: 40%;" sizes="(max-width: 640px) calc(100vw - 2rem), 640px" width="640" height="180" src="image/ContributionsToTotalSectors.png" alt="Supplier Contributions to Total Impacts by Sector" />
+                  <div class="usa-card__img ssceat-card-thumb" style="border-radius: 0;background-color: white !important;">
+                      <img loading="eager" style="object-fit: contain !important;" sizes="(max-width: 640px) calc(100vw - 2rem), 640px" width="640" height="180" src="image/ssceat-bar-thumb.png" alt="Supplier Contributions to Total Impacts by Sector" />
                     </div>
                   </div>
                   <div class="usa-card__body">
@@ -253,11 +280,11 @@
                   </div>
               </div>
             </li>
-              <li class="usa-card tablet:grid-col-3">
+              <li class="usa-card tablet:grid-col-3 ssceat-viewer-card">
                 <div class="usa-card__container" style="border-radius: 0;">
                   <div class="usa-card__media" style="border-radius: 0;">
-                    <div class="usa-card__img" style="border-radius: 0;background-color: white !important;">
-                        <img loading="eager" style="object-fit: contain !important;margin-top: 40%;" sizes="(max-width: 640px) calc(100vw - 2rem), 640px" width="640" height="180" src="image/topSectorsGraph.png" alt="Cross Sector Comparison Viewer" />
+                    <div class="usa-card__img ssceat-card-thumb" style="border-radius: 0;background-color: white !important;">
+                        <img loading="eager" style="object-fit: contain !important;" sizes="(max-width: 640px) calc(100vw - 2rem), 640px" width="640" height="180" src="image/ssceat-stacked-thumb.png" alt="Cross Sector Comparison Viewer" />
                       </div>
                     </div>
                     <div class="usa-card__body">
@@ -265,11 +292,15 @@
                     </div>
                </div>
               </li>
-              <li class="usa-card tablet:grid-col-3">
+              <li class="usa-card tablet:grid-col-3 ssceat-viewer-card">
                 <div class="usa-card__container" style="border-radius: 0;">
+                  <div class="usa-card__media" style="border-radius: 0;">
+                    <div class="usa-card__img ssceat-card-thumb" style="border-radius: 0;background-color: white !important;">
+                        <img loading="eager" style="object-fit: contain !important;" sizes="(max-width: 640px) calc(100vw - 2rem), 640px" width="640" height="180" src="image/ssceat-dashboard-thumb.png" alt="Multi-Indicator Sector Dashboard" />
+                      </div>
+                    </div>
                   <div class="usa-card__body">
                       <a style="text-decoration: none;" href="./sector-dashboard.html" target="_blank" rel="noopener noreferrer">Multi-Indicator Sector Dashboard</a>
-                      <p style="margin-top: 0.75rem; font-size: 0.95rem;">Compare up to six indicators for one sector on a single page.</p>
                   </div>
               </div>
               </li>
