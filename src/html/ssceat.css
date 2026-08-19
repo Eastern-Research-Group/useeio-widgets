@@ -1,8 +1,27 @@
 /* SSCEAT (Sector Supply Chain Environmental Assessment Tool) styles
  * Scoped rules for smindex-adjacent chart pages and EPA guidance chrome.
- * Load alongside widgets.css on chart pages; alone on EPA guidance pages.
+ * Chart pages (pie, ranked, stacked, dashboard) load this file only.
  * Do not add bare html/body/a resets here; they fight the EPA theme.
  */
+
+/* Minimal base formerly supplied by widgets.css on chart pages */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.text-center {
+    text-align: center;
+}
+
+th.indicator {
+    font-size: 0.8em;
+}
+
+.sector-list-body td {
+    white-space: nowrap;
+    padding: 4px;
+    padding-left: 6px;
+}
 
 /* Shared chart download menu (stacked page HTML; ranked/pie use MUI ChartExportMenu) */
 .chart-export-menu-wrap {
