@@ -8,6 +8,7 @@ import { WebModel, Sector } from "useeio";
 import { formatNumberGraph } from "../util";
 import { sanitizeExportFilename } from "../util/chartExportOverlay";
 import { chartTypography, apexYAxisTitleConfig } from "../util/chartTypography";
+import { getLabel } from "../util/indicatorCatalog";
 
 const STACKED_AXIS_NAME_LINE_LENGTH = 24;
 const STACKED_AXIS_MAX_NAME_LINES = 2;
@@ -64,6 +65,8 @@ export async function calculate(
   model: WebModel,
   uniqueSortedMapping: string[],
   titleGraph?: string,
+  /** Indicator file slug (e.g. Releases-to-Ground) for catalog display names in figure titles. */
+  indicatorSlug?: string,
   impactSelector?: string,
   groupMappingSector?: string,
   perspective?: string,
@@ -199,7 +202,9 @@ export async function calculate(
       }
     }
 
-    const indicatorTitle = titleGraph.replace(" AR6 ", "-");
+    const indicatorTitle = indicatorSlug
+      ? getLabel(indicatorSlug)
+      : (titleGraph ?? "").replace(" AR6 ", "-");
     const perspectiveLabel =
       perspective == "final" ? "Point of Consumption" : "Supply Chain";
     // Curated filter presets + custom list: "<filter>: <indicator>"; Top 10/25 keep "from".
