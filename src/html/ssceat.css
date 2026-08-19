@@ -500,6 +500,30 @@ abbr.term-help,
     font-weight: 600;
 }
 
+.ssceat-glossary dt:first-child {
+    margin-top: 0;
+}
+
+.ssceat-glossary--nested {
+    margin: 0.35rem 0 0;
+}
+
+.ssceat-glossary--nested dt {
+    margin-top: 0.85rem;
+}
+
+.ssceat-glossary--nested dt:first-child {
+    margin-top: 0;
+}
+
+.ssceat-glossary--nested dd {
+    margin-left: 1rem;
+}
+
+.ssceat-glossary dd > p:first-child {
+    margin-top: 0;
+}
+
 .ssceat-glossary dd {
     margin: 0.35rem 0 0 1.25rem;
     max-width: 75ch;

@@ -228,47 +228,68 @@
               &nbsp;|&nbsp; <a href="./sector-info-table.html">Sector Information Table</a>
             </p>
 
-            <h2 id="perspectives-help">Terms</h2>
+            <p>Definitions for terms used in SSCEAT charts and guidance pages.</p>
+
             <dl class="ssceat-glossary">
-              <dt id="point-of-consumption">Point of consumption</dt>
-              <dd>Attributes impacts to the goods and services which are directly purchased by the
-                selected sector (demand framing).</dd>
+              <dt id="perspectives-help">Perspective</dt>
+              <dd>
+                <p>How the tool attributes sector impacts. On chart pages, choose between the options
+                  below. See the <a href="./user-guide.html#step-1">User Guide</a>.</p>
+                <dl class="ssceat-glossary ssceat-glossary--nested">
+                  <dt id="point-of-consumption">Point of consumption</dt>
+                  <dd>Attributes impacts to the goods and services purchased directly by the
+                    selected sector (demand framing), for example its tier-1 suppliers.</dd>
 
-              <dt id="supply-chain">Supply chain</dt>
-              <dd>Attributes impacts to the upstream goods and services where the impact actually
-                occurs.</dd>
-
-              <dt id="impact-intensity">Impact intensity</dt>
-              <dd>impact per unit of economic activity or per purchase (e.g., embodied
-                impact per dollar), as opposed to total sector-level impacts.</dd>
+                  <dt id="supply-chain">Supply chain</dt>
+                  <dd>Attributes impacts to the upstream goods and services where the impact actually
+                    occurs.</dd>
+                </dl>
+              </dd>
 
               <dt id="direct-impacts">Direct impacts</dt>
-              <dd>Impacts from a sector&rsquo;s own operations and on-site processes.
-                For the <a href="./indicator-list.html#sector-purchases">Sector Purchases</a>
-                indicator only, charts label the analogous same-sector purchases slice as
-                <a href="#within-sector-spend">Within-sector spend</a> instead of Direct.</dd>
-
-              <dt id="within-sector-spend">Within-sector spend</dt>
-              <dd>On Sector Purchases charts: estimated purchases within the same BEA sector
-                code. Analagous to the Direct impacts on environmental indicators, which mean
-                on-site/facility operations.</dd>
+              <dd>Impacts from a sector&rsquo;s own operations and on-site activity, such as
+                on-site combustion and other emissions or resource use at facilities in that
+                sector. For <a href="./indicator-list.html#jobs-supported">Jobs Supported</a>, the
+                direct slice reflects total jobs in that sector. For
+                <a href="./indicator-list.html#sector-purchases">Sector Purchases</a> only, charts
+                label the analogous same-sector purchases slice as
+                <span id="within-sector-spend">&ldquo;Within-sector spend&rdquo;</span> instead of
+                Direct.</dd>
 
               <dt id="indirect-impacts">Indirect impacts</dt>
-              <dd>impacts embodied in purchased inputs from other sectors (upstream
+              <dd>Impacts embodied in purchased inputs from other sectors (upstream
                 supply chain).</dd>
 
               <dt id="embodied-impacts">Embodied impacts</dt>
-              <dd>direct plus indirect impacts associated with producing a
+              <dd>Direct plus indirect impacts associated with producing a
                 sector&rsquo;s output.</dd>
 
-              <dt id="bea-naics">BEA / NAICS</dt>
-              <dd>Bureau of Economic Analysis sectoring aligned with North American
-                Industry Classification System codes; see the
-                <a href="./sector-info-table.html">Sector Information Table</a>.</dd>
+              <dt id="cradle-to-gate">Cradle-to-gate</dt>
+              <dd>Life cycle scope from raw materials through production of a sector&rsquo;s goods or
+                services (the &ldquo;gate&rdquo; is where output leaves the sector). SSCEAT results
+                do not include product use or end-of-life. See the
+                <a href="./user-guide.html">User Guide</a>.</dd>
 
-              <dt id="total-embodied-impacts">Total embodied impacts</dt>
-              <dd>aggregate embodied impacts for a sector or selection, often before
-                normalizing by intensity.</dd>
+              <dt id="impact-intensity">Impact intensity</dt>
+              <dd>Impact per unit of economic activity or per purchase (e.g., embodied
+                impact per dollar), as opposed to total sector-level impacts. Intensity helps
+                compare sectors of different sizes.</dd>
+
+              <dt id="bea-naics">BEA / NAICS</dt>
+              <dd>The tool organizes results by economic sector. The U.S. Bureau of Economic Analysis
+                (BEA) uses its own industry and commodity codes for Input-Output accounts. That
+                schema is NAICS-like but not identical to the U.S. Census Bureau&rsquo;s
+                North American Industry Classification System (NAICS). Sector codes and names in
+                SSCEAT follow BEA; see the
+                <a href="./sector-info-table.html">Sector Information Table</a>. For NAICS industry
+                descriptions, see the
+                <a href="https://www.census.gov/naics/" target="_blank"
+                  rel="noopener noreferrer">U.S. Census NAICS website</a>; BEA publishes a
+                <a href="https://www.bea.gov/system/files/2023-10/BEA-Industry-and-Commodity-Codes-and-NAICS-Concordance.xlsx"
+                  target="_blank" rel="noopener noreferrer">BEA&ndash;NAICS concordance</a>. BEA
+                Input-Output account documentation is on
+                <a href="https://www.bea.gov/industry/input-output-accounts-data" target="_blank"
+                  rel="noopener noreferrer">BEA&rsquo;s website</a>.</dd>
 
               <dt id="level-of-detail">Level of detail</dt>
               <dd>For some figures, purchases from sectors are aggregated into groups. Those
