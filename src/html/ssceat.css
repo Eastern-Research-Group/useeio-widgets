@@ -32,6 +32,11 @@
     padding-bottom: 2.5rem;
 }
 
+/* Keep rotated y-axis titles from clipping at the SVG edge (do not change text-anchor — middle pulls titles into the plot) */
+.apexcharts-canvas svg {
+    overflow: visible;
+}
+
 .smart-sector-stacked-chart-mount .apexcharts-legend {
     padding-top: 0.5rem !important;
     padding-bottom: 0.75rem !important;

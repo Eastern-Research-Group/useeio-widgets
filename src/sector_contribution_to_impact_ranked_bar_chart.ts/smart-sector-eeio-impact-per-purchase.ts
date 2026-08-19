@@ -62,6 +62,7 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
     this.perspective = "final";
     this.sectorsList = await this._chartConfig.model.sectors();
     const sector_name: string = sectorName ? sectorName : "";
+    this.sector_name = sector_name;
     this.sectorMappingList = await this.modelSmartSectorApi.sectorMapping();
     this.uniqueSortedMappingGroupNoDuplicates =
       uniqueSortedMappingGroupNoDuplicatesList(this.sectorMappingList);
@@ -110,6 +111,7 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
     this.graphName = graphName;
     this.sectorsList = await this._chartConfig.model.sectors();
     const sector_name: string = sectorName ? sectorName : "";
+    this.sector_name = sector_name;
     const sectorMappingList: SectorMapping[] =
       await this.modelSmartSectorApi.sectorMapping();
     this.uniqueSortedMappingGroupNoDuplicates =
@@ -139,6 +141,7 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
 
   async updateGraph(sectorName?: string, sectorCode?: string) {
     this.sectorCode = sectorCode;
+    this.sector_name = sectorName ? sectorName : "";
     this.options = await apexGraph(
       this.getTopValuesFromSectors,
       sectorName,
@@ -388,6 +391,7 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
       this.options,
       type,
       this.sectorCode,
+      this.sector_name,
       this.graphName,
       this.perspective,
       "Impact-Intensity",

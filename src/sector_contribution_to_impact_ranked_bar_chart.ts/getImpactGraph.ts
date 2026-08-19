@@ -5,8 +5,10 @@ import {
 } from "../smartSectorChart/smartSector";
 import { formatNumberGraph } from "../util";
 import { isDirectContributionLabel } from "../util/util";
-import { chartTypography } from "../util/chartTypography";
+import { chartTypography, apexCategoryLabelLines, apexYAxisTitleConfig } from "../util/chartTypography";
 
+const RANKED_AXIS_LINE_LENGTH = 20;
+const RANKED_AXIS_MAX_LINES = 5;
 function hasPurchaseOriginSplit(
   graphTitleName: string | undefined,
   rows: ImpactPerPurchaseSector[],
@@ -60,7 +62,11 @@ export async function apexGraph(
   let highestNumber: number = Math.max(...list);
   let highNumberFormat = formatNumberGraph(highestNumber);
   const sortedSectorCodesWithNamesWithArray: string[][] = data.map((t) => {
-    return t.purchase_commodity.split(" ");
+    return apexCategoryLabelLines(
+      t.purchase_commodity,
+      RANKED_AXIS_LINE_LENGTH,
+      RANKED_AXIS_MAX_LINES,
+    );
   });
 
   let unitLabel: string = "";
@@ -175,7 +181,7 @@ export async function apexGraph(
     colors: colors,
     plotOptions: {
       bar: {
-        columnWidth: "55%",
+        columnWidth: "72%",
         distributed: !stackOrigin,
       },
     },
@@ -204,19 +210,22 @@ export async function apexGraph(
     xaxis: {
       categories: sortedSectorCodesWithNamesWithArray,
       labels: {
+        trim: false,
+        minHeight: 80,
+        maxHeight: 120,
         style: {
           fontSize: chartTypography.axisLabel,
         },
       },
     },
-    yaxis: {
-      title: {
-        text: yaxisTitle,
-        style: {
-          fontSize: chartTypography.axisTitle,
-          fontWeight: 600,
-        },
+    grid: {
+      padding: {
+        left: 12,
+        bottom: 16,
       },
+    },
+    yaxis: {
+      title: apexYAxisTitleConfig(yaxisTitle),
       forceNiceScale: true,
       max: parseFloat(highNumberFormat),
       min: 0,

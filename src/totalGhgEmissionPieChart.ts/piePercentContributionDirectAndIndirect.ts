@@ -291,6 +291,7 @@ export class PiePercentContributionDirectAndIndirect extends Widget {
       this.options,
       type,
       this.sectorCode,
+      this.sector_name,
       this.graphName,
       this.perspective,
       "DirectVsIndirect",

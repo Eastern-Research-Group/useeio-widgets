@@ -7,7 +7,57 @@ import { SumSmartSectorTotalParts } from "../smartSectorChart/smartSector";
 import { WebModel, Sector } from "useeio";
 import { formatNumberGraph } from "../util";
 import { sanitizeExportFilename } from "../util/chartExportOverlay";
-import { chartTypography } from "../util/chartTypography";
+import { chartTypography, apexYAxisTitleConfig } from "../util/chartTypography";
+
+const STACKED_AXIS_NAME_LINE_LENGTH = 24;
+const STACKED_AXIS_MAX_NAME_LINES = 2;
+
+function stripSectorSuffix(sectorId: string): string {
+  return sectorId.replace(/\/US$/, "");
+}
+
+function wrapLabelLine(
+  text: string,
+  maxLineLength: number,
+  maxLines: number,
+): string[] {
+  const words = text.trim().split(/\s+/);
+  const lines: string[] = [];
+  let currentLine = "";
+  let nextWordIndex = 0;
+
+  for (let i = 0; i < words.length; i++) {
+    const word = words[i];
+    const nextLine = currentLine ? `${currentLine} ${word}` : word;
+    if (nextLine.length <= maxLineLength || currentLine.length === 0) {
+      currentLine = nextLine;
+      nextWordIndex = i + 1;
+      continue;
+    }
+
+    lines.push(currentLine);
+    currentLine = word;
+    nextWordIndex = i + 1;
+
+    if (lines.length === maxLines - 1) {
+      break;
+    }
+  }
+
+  const remainingText = [currentLine, ...words.slice(nextWordIndex)]
+    .filter(Boolean)
+    .join(" ");
+
+  if (lines.length < maxLines && remainingText) {
+    if (remainingText.length <= maxLineLength) {
+      lines.push(remainingText);
+    } else {
+      lines.push(`${remainingText.slice(0, maxLineLength - 1).trimEnd()}...`);
+    }
+  }
+
+  return lines.slice(0, maxLines);
+}
 
 export async function calculate(
   topSectorList: SumSmartSectorTotalParts[],
@@ -163,13 +213,13 @@ export async function calculate(
 
     const sortedSectorCodesWithNamesWithArray: string[][] =
       sortedSectorCodes.map((t) => {
-        const sectorName: Sector = sectorsList.find((s) => {
-          if (s.id === t) {
-            return true;
-          }
-        });
-
-        return [sectorName.name].concat(sectorName.id);
+        const sectorName: Sector | undefined = sectorsList.find((s) => s.id === t);
+        const wrappedName = wrapLabelLine(
+          sectorName?.name ?? t,
+          STACKED_AXIS_NAME_LINE_LENGTH,
+          STACKED_AXIS_MAX_NAME_LINES,
+        );
+        return [...wrappedName, stripSectorSuffix(sectorName?.id ?? t)];
       });
 
     let colors: string[] = [];
@@ -194,7 +244,7 @@ export async function calculate(
       colors: colors,
       chart: {
         type: "bar",
-        height: 500,
+        height: 540,
         stacked: true,
         toolbar: {
           show: false,
@@ -269,11 +319,12 @@ export async function calculate(
         categories: sortedSectorCodesWithNamesWithArray,
         labels: {
           show: true,
-          rotate: -45,
-          rotateAlways: true,
+          rotate: 0,
+          rotateAlways: false,
           hideOverlappingLabels: false,
-          trim: true,
-          minHeight: -100,
+          trim: false,
+          minHeight: 96,
+          maxHeight: 120,
           style: {
             fontSize: chartTypography.axisLabel,
           },
@@ -281,13 +332,7 @@ export async function calculate(
       },
       yaxis: [
         {
-          title: {
-            text: yaxisTitle,
-            style: {
-              fontSize: chartTypography.axisTitle,
-              fontWeight: 600,
-            },
-          },
+          title: apexYAxisTitleConfig(yaxisTitle),
           forceNiceScale: true,
           min: 0,
           max: undefined,
@@ -314,7 +359,8 @@ export async function calculate(
       },
       grid: {
         padding: {
-          bottom: 8,
+          left: 12,
+          bottom: 24,
         },
       },
       tooltip: {
