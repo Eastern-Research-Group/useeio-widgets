@@ -1,73 +1,73 @@
 [
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 157.033444766374,
-    "contribution": 0.751721542238826
+    "total_impacts_sum": 151.696913498265,
+    "contribution": 0.752836453830698
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 48.6132000294883,
-    "contribution": 0.232712144560664
+    "total_impacts_sum": 46.7120072422487,
+    "contribution": 0.231820813440417
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 1.83818223488541,
-    "contribution": 0.00879940694531564
+    "total_impacts_sum": 1.73422395964131,
+    "contribution": 0.00860654963780475
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 1.00337451096178,
-    "contribution": 0.00480316938818647
+    "total_impacts_sum": 0.974562273944036,
+    "contribution": 0.00483652560512776
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 0.202943682227956,
-    "contribution": 0.000971494562951172
+    "total_impacts_sum": 0.188738383926002,
+    "contribution": 0.000936664645178909
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 0.0890840390733946,
-    "contribution": 0.000426446680455523
+    "total_impacts_sum": 0.0841958797778868,
+    "contribution": 0.000417844543421544
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 0.0520851611391909,
-    "contribution": 0.000249332476387822
+    "total_impacts_sum": 0.0489311048372453,
+    "contribution": 0.000242833678010932
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 0.0367446069217435,
-    "contribution": 0.0001758970047767
+    "total_impacts_sum": 0.033452688160612,
+    "contribution": 0.000166017900728266
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 0.0209675464304253,
-    "contribution": 0.000100371970844128
+    "total_impacts_sum": 0.0196674670025682,
+    "contribution": 9.76050584853531e-05
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 0.00839649906261529,
-    "contribution": 4.01941715928503e-05
+    "total_impacts_sum": 0.00779638843145868,
+    "contribution": 3.86916601272389e-05
   },
   {
     "sector": "111/112",
@@ -840,6 +840,76 @@
     "contribution": 1.68089934301433e-05
   },
   {
+    "sector": "113-115",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 5.33653126810899,
+    "contribution": 0.721354249823489
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 1.90119278723954,
+    "contribution": 0.25698968635388
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 0.103958275244104,
+    "contribution": 0.0140523384730823
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 0.0288122370177455,
+    "contribution": 0.00389463278213625
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 0.0142052983019546,
+    "contribution": 0.00192017094725211
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 0.00488815929550781,
+    "contribution": 0.000660746523252028
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 0.00329191876113155,
+    "contribution": 0.000444978108271701
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 0.0031540563019456,
+    "contribution": 0.000426342843934509
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.00130007942785713,
+    "contribution": 0.000175735468092769
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 0.000600110631156614,
+    "contribution": 8.11186766085372e-05
+  },
+  {
     "sector": "113000/US",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Direct",
@@ -1050,74 +1120,74 @@
     "contribution": 0.000174994853916307
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 4.78933258864808,
-    "contribution": 0.341903699340065
+    "total_impacts_sum": 4.59413037419656,
+    "contribution": 0.338834095585886
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 3.91035456148164,
-    "contribution": 0.279154697560744
+    "total_impacts_sum": 3.75625048173674,
+    "contribution": 0.277037356606559
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 3.50444606694959,
-    "contribution": 0.250177462569169
+    "total_impacts_sum": 3.44547404051059,
+    "contribution": 0.254116445396964
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 0.7037794417477,
-    "contribution": 0.0502418218403469
+    "total_impacts_sum": 0.700067553626887,
+    "contribution": 0.0516325696185045
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 0.355471211371428,
-    "contribution": 0.0253765884759932
+    "total_impacts_sum": 0.341730154554531,
+    "contribution": 0.0252038619764158
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 0.22432615815004,
-    "contribution": 0.0160143280740278
+    "total_impacts_sum": 0.219176330416298,
+    "contribution": 0.0161650644717342
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 0.208804991298923,
-    "contribution": 0.0149062938612756
+    "total_impacts_sum": 0.208313459255695,
+    "contribution": 0.0153638875730893
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 0.137122571807265,
-    "contribution": 0.00978898702400655
+    "total_impacts_sum": 0.125404430146118,
+    "contribution": 0.00924904023396468
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 0.10201993235605,
-    "contribution": 0.00728305909713463
+    "total_impacts_sum": 0.0991462292733862,
+    "contribution": 0.00731240086595796
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 0.0721832743214608,
-    "contribution": 0.00515306215723738
+    "total_impacts_sum": 0.0689494620333954,
+    "contribution": 0.00508527767092474
   },
   {
     "sector": "211/32411",
@@ -1263,71 +1333,71 @@
     "sector": "212",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 16.1853175001946,
-    "contribution": 0.86177178109643
+    "total_impacts_sum": 1.50242971213828,
+    "contribution": 0.40839083920639
   },
   {
     "sector": "212",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 1.48778629283393,
-    "contribution": 0.0792157610408901
+    "total_impacts_sum": 1.38067135968597,
+    "contribution": 0.375294451843539
   },
   {
     "sector": "212",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 0.605202412767792,
-    "contribution": 0.0322234247903068
-  },
-  {
-    "sector": "212",
-    "indicator": "Freshwater withdrawals",
-    "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 0.130108809439545,
-    "contribution": 0.00692751936721072
+    "total_impacts_sum": 0.466633759909624,
+    "contribution": 0.126840511254469
   },
   {
     "sector": "212",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 0.116166437847034,
-    "contribution": 0.00618517110003324
+    "total_impacts_sum": 0.108857963677076,
+    "contribution": 0.0295898002956216
+  },
+  {
+    "sector": "212",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 0.100345876536113,
+    "contribution": 0.0272760425319067
   },
   {
     "sector": "212",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 0.0890219883240569,
-    "contribution": 0.00473989079508917
-  },
-  {
-    "sector": "212",
-    "indicator": "Freshwater withdrawals",
-    "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 0.0815613401784142,
-    "contribution": 0.00434265570590869
-  },
-  {
-    "sector": "212",
-    "indicator": "Freshwater withdrawals",
-    "sector_purchased_detail": "Other",
-    "total_impacts_sum": 0.0534370808577576,
-    "contribution": 0.00284520636353473
+    "total_impacts_sum": 0.0429487045944594,
+    "contribution": 0.0116743281701982
   },
   {
     "sector": "212",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 0.0250199162545836,
-    "contribution": 0.00133216155897694
+    "total_impacts_sum": 0.0286145052285382,
+    "contribution": 0.00777800233138814
+  },
+  {
+    "sector": "212",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.0223923761853445,
+    "contribution": 0.00608670157963194
+  },
+  {
+    "sector": "212",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 0.0213098810951404,
+    "contribution": 0.00579245747972256
   },
   {
     "sector": "212",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 0.00782112211538537,
-    "contribution": 0.000416428181619996
+    "total_impacts_sum": 0.00469746182250912,
+    "contribution": 0.00127686530713253
   },
   {
     "sector": "2121/2122",
@@ -1741,6 +1811,76 @@
     "sector_purchased_detail": "Transport",
     "total_impacts_sum": 0.00035503140610244,
     "contribution": 0.000606193565861716
+  },
+  {
+    "sector": "2130",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 14.8369918678012,
+    "contribution": 0.954040658233934
+  },
+  {
+    "sector": "2130",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 0.302317147599483,
+    "contribution": 0.019439442513758
+  },
+  {
+    "sector": "2130",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 0.197540679297161,
+    "contribution": 0.0127021596684727
+  },
+  {
+    "sector": "2130",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.0624027762811351,
+    "contribution": 0.00401259138572958
+  },
+  {
+    "sector": "2130",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 0.0497851718504102,
+    "contribution": 0.00320126064270019
+  },
+  {
+    "sector": "2130",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 0.0435039897203284,
+    "contribution": 0.0027973712837746
+  },
+  {
+    "sector": "2130",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 0.0350009028452812,
+    "contribution": 0.00225061014300081
+  },
+  {
+    "sector": "2130",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 0.0124583019036989,
+    "contribution": 0.000801087353459835
+  },
+  {
+    "sector": "2130",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 0.00812355268719313,
+    "contribution": 0.000522356527653494
+  },
+  {
+    "sector": "2130",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 0.00361519233610378,
+    "contribution": 0.000232462247516878
   },
   {
     "sector": "213111/US",
@@ -3129,74 +3269,74 @@
     "contribution": 0.000982217836585124
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 143.480786526532,
-    "contribution": 0.936529543054145
+    "total_impacts_sum": 138.528281553751,
+    "contribution": 0.939394650582218
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 5.75751808705377,
-    "contribution": 0.0375805424107941
+    "total_impacts_sum": 5.36610390642154,
+    "contribution": 0.0363888820941217
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 1.66178028624405,
-    "contribution": 0.0108467925902033
+    "total_impacts_sum": 1.41542432153279,
+    "contribution": 0.00959834353706284
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 0.934948030804717,
-    "contribution": 0.00610260421110111
+    "total_impacts_sum": 0.904618171153891,
+    "contribution": 0.00613444028374599
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 0.932674073293702,
-    "contribution": 0.00608776160784898
+    "total_impacts_sum": 0.837531687747047,
+    "contribution": 0.00567951019342859
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 0.161074981309498,
-    "contribution": 0.00105137058623068
+    "total_impacts_sum": 0.151695973867589,
+    "contribution": 0.00102868803949453
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 0.15938453830234,
-    "contribution": 0.00104033670597829
+    "total_impacts_sum": 0.151548427596936,
+    "contribution": 0.0010276874916222
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 0.0616020045538249,
-    "contribution": 0.000402089356858555
+    "total_impacts_sum": 0.0583659518985649,
+    "contribution": 0.000395794002312638
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 0.0406000899866015,
-    "contribution": 0.000265005403466184
+    "total_impacts_sum": 0.0385002403163827,
+    "contribution": 0.000261079682745552
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Freshwater withdrawals",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 0.0143942115280994,
-    "contribution": 9.39540733737391e-05
+    "total_impacts_sum": 0.0134081649088407,
+    "contribution": 9.09240932480774e-05
   },
   {
     "sector": "311111/US",
@@ -5227,6 +5367,76 @@
     "sector_purchased_detail": "Transport",
     "total_impacts_sum": 0.000349096340154536,
     "contribution": 6.55159037865921e-05
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 4.95250497278166,
+    "contribution": 0.862913318346171
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 0.391414180632235,
+    "contribution": 0.068199125758253
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 0.246355964711265,
+    "contribution": 0.0429245087428894
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 0.0951423855466551,
+    "contribution": 0.0165773950917049
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 0.0303298596508267,
+    "contribution": 0.0052846064729075
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 0.009379007441909,
+    "contribution": 0.00163417714448965
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 0.00783611070540489,
+    "contribution": 0.00136534629018877
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 0.00323605265526004,
+    "contribution": 0.000563842530283209
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.00209984967021878,
+    "contribution": 0.000365873079767725
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Freshwater withdrawals",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 0.000986046619258699,
+    "contribution": 0.000171806543344194
   },
   {
     "sector": "313100/US",

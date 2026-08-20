@@ -1,73 +1,73 @@
 [
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 1036.78878047541,
-    "contribution": 0.71055020443457
+    "total_impacts_sum": 997.072860992425,
+    "contribution": 0.709696513062614
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 391.579540097677,
-    "contribution": 0.268364133089111
+    "total_impacts_sum": 379.197641828469,
+    "contribution": 0.269905294483063
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 11.2354731810204,
-    "contribution": 0.00770009081505729
+    "total_impacts_sum": 10.3441697600526,
+    "contribution": 0.0073627730694927
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 4.6566654663493,
-    "contribution": 0.00319138735045018
+    "total_impacts_sum": 4.36299844859024,
+    "contribution": 0.0031054950010174
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 4.59599792340055,
-    "contribution": 0.0031498096097796
+    "total_impacts_sum": 4.31832912173091,
+    "contribution": 0.00307370026790093
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 3.28031254462666,
-    "contribution": 0.00224812111501147
+    "total_impacts_sum": 3.08957272975252,
+    "contribution": 0.00219909605299683
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 3.1758893955697,
-    "contribution": 0.00217655601775405
+    "total_impacts_sum": 2.9616630904259,
+    "contribution": 0.00210805253093482
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 1.99846915446112,
-    "contribution": 0.00136962580324934
+    "total_impacts_sum": 1.88544586303579,
+    "contribution": 0.00134202264138749
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 1.72182503696958,
-    "contribution": 0.00118003122242343
+    "total_impacts_sum": 1.59655906282493,
+    "contribution": 0.00113639879703232
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 0.102198617756724,
-    "contribution": 7.00405425940981e-05
+    "total_impacts_sum": 0.0992639500274532,
+    "contribution": 7.06540935606112e-05
   },
   {
     "sector": "111/112",
@@ -840,6 +840,76 @@
     "contribution": 1.96165076316271e-05
   },
   {
+    "sector": "113-115",
+    "indicator": "Human Health - Respiratory Effects",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 39.7159194829841,
+    "contribution": 0.732676187282894
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Human Health - Respiratory Effects",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 12.3818982692084,
+    "contribution": 0.228420294262482
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Human Health - Respiratory Effects",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 0.89130342096777,
+    "contribution": 0.0164426960445081
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Human Health - Respiratory Effects",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.293667017759054,
+    "contribution": 0.00541754625609577
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Human Health - Respiratory Effects",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 0.277668801669639,
+    "contribution": 0.00512241241253105
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Human Health - Respiratory Effects",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 0.214226305143797,
+    "contribution": 0.00395203018113949
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Human Health - Respiratory Effects",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 0.190739814874148,
+    "contribution": 0.00351875323911134
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Human Health - Respiratory Effects",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 0.12526597414465,
+    "contribution": 0.0023108969281676
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Human Health - Respiratory Effects",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 0.113023291425332,
+    "contribution": 0.00208504487151946
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Human Health - Respiratory Effects",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 0.00293466772927111,
+    "contribution": 5.41385215504256e-05
+  },
+  {
     "sector": "113000/US",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Direct",
@@ -1050,74 +1120,74 @@
     "contribution": 4.40932245644992e-05
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 121.926529071911,
-    "contribution": 0.498340536484315
+    "total_impacts_sum": 116.230585282807,
+    "contribution": 0.492671247789602
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 34.0434010901903,
-    "contribution": 0.139142866545722
+    "total_impacts_sum": 33.5020937522733,
+    "contribution": 0.142006669693147
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 25.8030180336597,
-    "contribution": 0.105462608898056
+    "total_impacts_sum": 25.4556618594952,
+    "contribution": 0.107899935813907
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 23.3223819340891,
-    "contribution": 0.0953237036565781
+    "total_impacts_sum": 22.7762080249553,
+    "contribution": 0.0965424272816608
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 16.3159698395238,
-    "contribution": 0.0666869566859779
+    "total_impacts_sum": 15.5666010444297,
+    "contribution": 0.0659827767514181
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 8.13254963254517,
-    "contribution": 0.0332395187308053
+    "total_impacts_sum": 7.71996711821175,
+    "contribution": 0.03272293453371
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 7.17291054543267,
-    "contribution": 0.0293172627530197
+    "total_impacts_sum": 7.00448171982516,
+    "contribution": 0.0296901778531798
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 5.2069556909113,
-    "contribution": 0.0212819729406746
+    "total_impacts_sum": 4.99473211641451,
+    "contribution": 0.0211713715299749
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 2.66968447572873,
-    "contribution": 0.0109115875273857
+    "total_impacts_sum": 2.59752041296011,
+    "contribution": 0.0110102140490668
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 0.0716833897676653,
-    "contribution": 0.000292985777465736
+    "total_impacts_sum": 0.0713053157473765,
+    "contribution": 0.000302244704333327
   },
   {
     "sector": "211/32411",
@@ -1263,71 +1333,71 @@
     "sector": "212",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 104.589527714815,
-    "contribution": 0.706606518845371
-  },
-  {
-    "sector": "212",
-    "indicator": "Human Health - Respiratory Effects",
-    "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 16.313136850599,
-    "contribution": 0.110211501029821
+    "total_impacts_sum": 108.774251073271,
+    "contribution": 0.79223429593507
   },
   {
     "sector": "212",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 11.4537886799419,
-    "contribution": 0.0773817601394319
+    "total_impacts_sum": 10.7593888513037,
+    "contribution": 0.0783637374396856
+  },
+  {
+    "sector": "212",
+    "indicator": "Human Health - Respiratory Effects",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 5.18302650165247,
+    "contribution": 0.0377494794111109
   },
   {
     "sector": "212",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 6.24524836765072,
-    "contribution": 0.0421928782432519
+    "total_impacts_sum": 4.83759408067193,
+    "contribution": 0.0352335952921357
   },
   {
     "sector": "212",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 3.89345355106172,
-    "contribution": 0.0263041598916425
+    "total_impacts_sum": 2.9853883410546,
+    "contribution": 0.0217434457799667
   },
   {
     "sector": "212",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 1.93670702155207,
-    "contribution": 0.0130843865195928
+    "total_impacts_sum": 1.79002750755531,
+    "contribution": 0.0130372874844914
   },
   {
     "sector": "212",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 1.61751917640746,
-    "contribution": 0.0109279544461029
-  },
-  {
-    "sector": "212",
-    "indicator": "Human Health - Respiratory Effects",
-    "sector_purchased_detail": "Other",
-    "total_impacts_sum": 0.986910260483003,
-    "contribution": 0.0066675626021963
+    "total_impacts_sum": 1.50106397092469,
+    "contribution": 0.0109326825643504
   },
   {
     "sector": "212",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 0.971288117612741,
-    "contribution": 0.0065620194543148
+    "total_impacts_sum": 0.800914291890801,
+    "contribution": 0.00583329017556768
+  },
+  {
+    "sector": "212",
+    "indicator": "Human Health - Respiratory Effects",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 0.664579555917232,
+    "contribution": 0.00484032490575618
   },
   {
     "sector": "212",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 0.00906732636446299,
-    "contribution": 6.1258828274836e-05
+    "total_impacts_sum": 0.0043745363232202,
+    "contribution": 3.18610118651542e-05
   },
   {
     "sector": "2121/2122",
@@ -1748,6 +1818,76 @@
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 0.000602687727396466,
     "contribution": 1.95667987005134e-05
+  },
+  {
+    "sector": "2130",
+    "indicator": "Human Health - Respiratory Effects",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 11.8794791440405,
+    "contribution": 0.610394628302652
+  },
+  {
+    "sector": "2130",
+    "indicator": "Human Health - Respiratory Effects",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 1.95382819611258,
+    "contribution": 0.100392131765446
+  },
+  {
+    "sector": "2130",
+    "indicator": "Human Health - Respiratory Effects",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 1.51122043064815,
+    "contribution": 0.0776499391820225
+  },
+  {
+    "sector": "2130",
+    "indicator": "Human Health - Respiratory Effects",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 1.25542138417158,
+    "contribution": 0.0645064030049696
+  },
+  {
+    "sector": "2130",
+    "indicator": "Human Health - Respiratory Effects",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 1.1069823429716,
+    "contribution": 0.0568792678182962
+  },
+  {
+    "sector": "2130",
+    "indicator": "Human Health - Respiratory Effects",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 0.687986851913764,
+    "contribution": 0.0353503275403856
+  },
+  {
+    "sector": "2130",
+    "indicator": "Human Health - Respiratory Effects",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 0.394494767334388,
+    "contribution": 0.0202700374279636
+  },
+  {
+    "sector": "2130",
+    "indicator": "Human Health - Respiratory Effects",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 0.338802651329449,
+    "contribution": 0.0174084499765242
+  },
+  {
+    "sector": "2130",
+    "indicator": "Human Health - Respiratory Effects",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 0.32867877997956,
+    "contribution": 0.0168882624653824
+  },
+  {
+    "sector": "2130",
+    "indicator": "Human Health - Respiratory Effects",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 0.00507086406153161,
+    "contribution": 0.000260552516358818
   },
   {
     "sector": "213111/US",
@@ -3136,74 +3276,74 @@
     "contribution": 0.000196789587613965
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 1039.9108666329,
-    "contribution": 0.897595103768884
+    "total_impacts_sum": 1017.53233648669,
+    "contribution": 0.900629207086919
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 51.1039071746587,
-    "contribution": 0.0441101428355649
+    "total_impacts_sum": 47.7143198756206,
+    "contribution": 0.0422324760947132
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 26.1670222512278,
-    "contribution": 0.0225859655923808
+    "total_impacts_sum": 25.3051705585977,
+    "contribution": 0.0223978883797244
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 10.4108242095235,
-    "contribution": 0.00898606326417554
+    "total_impacts_sum": 10.090798662511,
+    "contribution": 0.00893147831514634
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 9.13356299570988,
-    "contribution": 0.00788360011224686
+    "total_impacts_sum": 8.65888103680803,
+    "contribution": 0.00766407207201555
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 6.25956561045007,
-    "contribution": 0.00540292021551064
+    "total_impacts_sum": 5.834020660789,
+    "contribution": 0.00516375668216794
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 5.93622887266465,
-    "contribution": 0.00512383334180144
+    "total_impacts_sum": 5.54605255228598,
+    "contribution": 0.00490887290115428
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 5.11922530003183,
-    "contribution": 0.00441863981984954
+    "total_impacts_sum": 4.83735806487046,
+    "contribution": 0.00428159951496223
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 4.41586199509006,
-    "contribution": 0.00381153446212727
+    "total_impacts_sum": 4.190541525305,
+    "contribution": 0.00370909498977836
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Human Health - Respiratory Effects",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 0.095229044966494,
-    "contribution": 8.21965874587658e-05
+    "total_impacts_sum": 0.0921397999246813,
+    "contribution": 8.15539634188309e-05
   },
   {
     "sector": "311111/US",
@@ -5234,6 +5374,76 @@
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 0.00197997708735991,
     "contribution": 7.57228220847169e-05
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Human Health - Respiratory Effects",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 22.3785301462086,
+    "contribution": 0.778365386280745
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Human Health - Respiratory Effects",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 3.38958729903805,
+    "contribution": 0.11789592122944
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Human Health - Respiratory Effects",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 0.861851692630122,
+    "contribution": 0.029976746518556
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Human Health - Respiratory Effects",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.474681958901849,
+    "contribution": 0.0165102892766947
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Human Health - Respiratory Effects",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 0.425544949661076,
+    "contribution": 0.0148012160297704
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Human Health - Respiratory Effects",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 0.390176320378667,
+    "contribution": 0.0135710317141
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Human Health - Respiratory Effects",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 0.320025547012438,
+    "contribution": 0.011131062089091
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Human Health - Respiratory Effects",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 0.281867235161366,
+    "contribution": 0.00980384761388952
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Human Health - Respiratory Effects",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 0.225320469785053,
+    "contribution": 0.00783704976847708
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Human Health - Respiratory Effects",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 0.00308924504181271,
+    "contribution": 0.00010744947923641
   },
   {
     "sector": "313100/US",

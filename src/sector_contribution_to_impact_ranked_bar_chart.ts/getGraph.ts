@@ -4,8 +4,11 @@ import {
   SortedImpactPerPurchaseTopList,
 } from "../smartSectorChart/smartSector";
 import { formatNumberGraph } from "../util";
-import { chartTypography } from "../util/chartTypography";
+import { isDirectContributionLabel } from "../util/util";
+import { chartTypography, apexCategoryLabelLines, apexYAxisTitleConfig } from "../util/chartTypography";
 
+const RANKED_AXIS_LINE_LENGTH = 20;
+const RANKED_AXIS_MAX_LINES = 5;
 function hasPurchaseOriginIntensitySplit(
   graphTitleName: string | undefined,
   rows: ImpactPerPurchaseSector[],
@@ -62,7 +65,11 @@ export async function apexGraph(
 
   const sectorGraphTitle = values.sector_code + " - " + values.sector_name;
   const sortedSectorCodesWithNamesWithArray: string[][] = data.map((t) => {
-    return t.purchase_commodity.split(" ");
+    return apexCategoryLabelLines(
+      t.purchase_commodity,
+      RANKED_AXIS_LINE_LENGTH,
+      RANKED_AXIS_MAX_LINES,
+    );
   });
   let yaxisTitle = "";
   unitLabel = "";
@@ -108,6 +115,10 @@ export async function apexGraph(
       yaxisTitle = "Million USD of Purchases per Million $ of Output";
       unitLabel = "million USD per Million $ of Output";
       break;
+    case "Releases to Ground":
+      yaxisTitle = "Kilograms of Releases per Million $ of Output";
+      unitLabel = "kg per Million $ of Output";
+      break;
     case "Global Warming Potential":
     case "GWP AR6 100":
     case "GWP AR6 20":
@@ -123,7 +134,9 @@ export async function apexGraph(
   const colors = stackOrigin
     ? ["#2E93fA", "#FF9800"]
     : data.map((t) => {
-        return t.purchase_commodity.includes("Direct") ? "#4CAF50" : "#2E93fA";
+        return isDirectContributionLabel(t.purchase_commodity)
+          ? "#4CAF50"
+          : "#2E93fA";
       });
 
   let totalSum: number = 0;
@@ -171,7 +184,7 @@ export async function apexGraph(
 
     plotOptions: {
       bar: {
-        columnWidth: "55%",
+        columnWidth: "72%",
         distributed: !stackOrigin,
       },
     },
@@ -200,19 +213,22 @@ export async function apexGraph(
     xaxis: {
       categories: sortedSectorCodesWithNamesWithArray,
       labels: {
+        trim: false,
+        minHeight: 80,
+        maxHeight: 120,
         style: {
           fontSize: chartTypography.axisLabel,
         },
       },
     },
-    yaxis: {
-      title: {
-        text: yaxisTitle,
-        style: {
-          fontSize: chartTypography.axisTitle,
-          fontWeight: 600,
-        },
+    grid: {
+      padding: {
+        left: 12,
+        bottom: 16,
       },
+    },
+    yaxis: {
+      title: apexYAxisTitleConfig(yaxisTitle),
       max: parseFloat(highNumberFormat),
       forceNiceScale: true,
       labels: {

@@ -4,7 +4,6 @@ import { PiePercentContribution } from "./piePercentContribution";
 import { PiePercentContributionDirectAndIndirect } from "./piePercentContributionDirectAndIndirect";
 import { Widget } from "../widget";
 import {
-  fileNames,
   filterPickableSectors,
   pickPreferredBootSector,
 } from "../util/util";
@@ -22,9 +21,18 @@ import { ChartExportMenu } from "../util/chartExportMenu";
 import { isChartExportAttributionSvgText } from "../util/chartExportOverlay";
 import {
   getLabel,
+  SECTOR_PURCHASES_DIRECT_DISPLAY,
+  SECTOR_PURCHASES_FILE_SLUG,
   sectorPurchasesPointOfConsumptionOnly,
+  TermHelp,
 } from "../util/util";
+import { IndicatorOptGroups } from "../util/indicatorOptGroups";
+import {
+  CONTROL_HELP_HREFS,
+  ControlHelpLink,
+} from "../util/controlHelpLink";
 import { SectorSearchTable } from "../util/sectorSearchTable";
+import { SmartSectorResourceLinks } from "../util/smartSectorResourceLinks";
 
 export interface SmartSectorChartConfigPie {
   modelOne: {
@@ -214,9 +222,33 @@ const Component = (props: { widget: PieListSearch }) => {
   };
 
   React.useEffect(() => {
-    //Changes meta title according to the graph selected
-    document.title = getLabel(graph);
-  }, [graph]);
+    document.title = "Comparison of Direct and Indirect";
+  }, []);
+
+  const isSectorPurchases = graph === SECTOR_PURCHASES_FILE_SLUG;
+  const pieTitle = isSectorPurchases
+    ? `Comparison of ${SECTOR_PURCHASES_DIRECT_DISPLAY} and Indirect Supply Chain`
+    : `Comparison of Direct and Indirect Supply Chain Impacts for ${getLabel(graph)}`;
+  const pieChartSubtitle = isSectorPurchases
+    ? `${SECTOR_PURCHASES_DIRECT_DISPLAY} and Indirect Supply Chain`
+    : `Direct and Indirect Supply Chain Impacts for ${getLabel(graph)}`;
+  const pieIntro = isSectorPurchases ? (
+    <>
+      For the sector selected below, the chart shows the total and percentage
+      attributable to{" "}
+      <TermHelp term="withinSectorSpend" /> (purchases within the same BEA
+      sector code) and <TermHelp term="indirect">Indirect</TermHelp> purchases
+      from other sectors.
+    </>
+  ) : (
+    <>
+      For the sector selected below, the chart shows the total and percentage
+      impacts attributable to <TermHelp term="direct">Direct</TermHelp> impacts
+      from facility operations and{" "}
+      <TermHelp term="indirect">Indirect</TermHelp> impacts embedded in the
+      purchases made by the sector.
+    </>
+  );
 
   const handleChangePerspective = (event: any) => {
     const next = sectorPurchasesPointOfConsumptionOnly(graph)
@@ -295,15 +327,11 @@ const Component = (props: { widget: PieListSearch }) => {
           margin: "0 auto",
         }}
       >
-        Comparison of Direct and Indirect Supply Chain Impacts for{" "}
-        {getLabel(graph)}
+        {pieTitle}
       </h1>
       {/* Update paragraph with graph selected */}
       <p id="paragraph" className="text-center">
-        For the sector selected below, the chart shows the total and percentage
-        impacts attributable to <em>Direct</em> impacts from facility operations
-        and <em>Indirect</em> impacts embedded in the purchases made by the
-        sector for {getLabel(graph)}.
+        {pieIntro}
       </p>
       <div className={classes.flexContainer}>
         <div
@@ -328,14 +356,7 @@ const Component = (props: { widget: PieListSearch }) => {
             <FormControl className={classes.margin}>
               <InputLabel id="demo-controlled-open-select-label">
                 Select perspective:{" "}
-                <a
-                  href="./glossary.html#perspectives-help"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ fontSize: "0.75rem", fontWeight: 400 }}
-                >
-                  What is this?
-                </a>
+                <ControlHelpLink href={CONTROL_HELP_HREFS.perspectives} />
               </InputLabel>
               <Select
                 native
@@ -359,7 +380,8 @@ const Component = (props: { widget: PieListSearch }) => {
             </FormControl>
             <FormControl className={classes.margin}>
               <InputLabel id="demo-controlled-open-select-label">
-                Select Indicator:
+                Select Indicator:{" "}
+                <ControlHelpLink href={CONTROL_HELP_HREFS.indicators} />
               </InputLabel>
               <Select
                 native
@@ -370,16 +392,13 @@ const Component = (props: { widget: PieListSearch }) => {
                   name: "graph",
                 }}
               >
-                {fileNames.map((file) => (
-                  <option key={file} value={file}>
-                    {getLabel(file)}
-                  </option>
-                ))}
+                <IndicatorOptGroups />
               </Select>
             </FormControl>
             <FormControl className={classes.margin}>
               <InputLabel id="demo-controlled-open-select-label">
-                Level of Detail:
+                Level of Detail:{" "}
+                <ControlHelpLink href={CONTROL_HELP_HREFS.levelOfDetail} />
               </InputLabel>
               <Select
                 id="aggregateId"
@@ -406,28 +425,7 @@ const Component = (props: { widget: PieListSearch }) => {
               />{" "}
             </div>
           </div>
-          <div className={`${classes.linkSectors} smart-sector-resource-links`}>
-            <span className="smart-sector-resource-intro">
-              See more info about the{" "}
-              <a href="./sector-info-table.html" target="_blank">
-                sectors BEA/NAICS Codes
-              </a>
-              .
-            </span>
-            <span className="smart-sector-resource-line">
-              Open the{" "}
-              <a href="./sector-dashboard.html" target="_blank">
-                multi-indicator sector dashboard
-              </a>{" "}
-              for several indicators on one page.
-            </span>
-            <span className="smart-sector-resource-line">
-              <a href="./glossary.html" target="_blank">
-                Glossary
-              </a>
-              .
-            </span>
-          </div>
+          <SmartSectorResourceLinks className={classes.linkSectors} />
         </div>
 
         <div
@@ -446,7 +444,7 @@ const Component = (props: { widget: PieListSearch }) => {
             >
               {/* Updated title of the graph with selected option */}
               <div>
-                Direct and Indirect Supply Chain Impacts for {getLabel(graph)}
+                {pieChartSubtitle}
               </div>
               <div
                 style={{
@@ -469,7 +467,7 @@ const Component = (props: { widget: PieListSearch }) => {
             >
               {/* Updated title of the graph with selected option */}
               <div>
-                Direct and Indirect Supply Chain Impacts for {getLabel(graph)}
+                {pieChartSubtitle}
               </div>
               <div
                 style={{

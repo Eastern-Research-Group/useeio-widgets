@@ -1,73 +1,73 @@
 [
   {
     "purchased_commodity_code": "Direct",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 24.1447694650622,
-    "total_impact": 9115.36497829274
+    "impact_per_purchase": 23.0441040898848,
+    "total_impact": 7367.41880077695
   },
   {
     "purchased_commodity_code": "325310/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 26.4708073342849,
-    "total_impact": 7424.74431937136
+    "impact_per_purchase": 28.2359894441062,
+    "total_impact": 6287.24899044677
   },
   {
     "purchased_commodity_code": "311119/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 20.24030683632,
-    "total_impact": 4583.51982106649
+    "impact_per_purchase": 26.785670823546,
+    "total_impact": 4517.00039681219
   },
   {
     "purchased_commodity_code": "1111B0/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 12.5168080738811,
-    "total_impact": 3872.76626770664
+    "impact_per_purchase": 15.2591623957704,
+    "total_impact": 3838.97881060875
   },
   {
     "purchased_commodity_code": "221100/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 12.4129042581636,
-    "total_impact": 4686.23868691281
+    "impact_per_purchase": 13.9957339873861,
+    "total_impact": 4474.56899635348
   },
   {
     "purchased_commodity_code": "324110/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 9.52470017052824,
-    "total_impact": 3595.85617451446
-  },
-  {
-    "purchased_commodity_code": "115000/US",
-    "sector_code": "11",
-    "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 6.81174116195872,
-    "total_impact": 2571.63386541176
+    "impact_per_purchase": 10.3189880788779,
+    "total_impact": 3299.0784315494
   },
   {
     "purchased_commodity_code": "1121A0/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 6.75696329653231,
-    "total_impact": 2314.72159745138
+    "impact_per_purchase": 8.07152219302207,
+    "total_impact": 2298.35160775482
+  },
+  {
+    "purchased_commodity_code": "112300/US",
+    "sector_code": "111-112",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 7.5484844492175,
+    "total_impact": 996.178287770259
   },
   {
     "purchased_commodity_code": "325320/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 6.63618829876024,
-    "total_impact": 2505.35746449793
+    "impact_per_purchase": 7.41735995419562,
+    "total_impact": 2371.40037926916
   },
   {
     "purchased_commodity_code": "All others",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 46.0724031527399,
-    "total_impact": 11379.8244819622
+    "impact_per_purchase": 54.0839380616314,
+    "total_impact": 11484.1031479132
   },
   {
     "purchased_commodity_code": "Direct",
@@ -841,6 +841,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "113-115",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 30.230770026726,
+    "total_impact": 1747.9461775158
+  },
+  {
+    "purchased_commodity_code": "325310/US",
+    "sector_code": "113-115",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 19.6730083211521,
+    "total_impact": 1137.49532892459
+  },
+  {
+    "purchased_commodity_code": "115000/US",
+    "sector_code": "113-115",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 6.66840176691246,
+    "total_impact": 385.567663949994
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "113-115",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 5.1327780065737,
+    "total_impact": 296.777742965064
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "113-115",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 3.66083224943552,
+    "total_impact": 211.669690559331
+  },
+  {
+    "purchased_commodity_code": "113000/US",
+    "sector_code": "113-115",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 3.61500279559573,
+    "total_impact": 209.019826907625
+  },
+  {
+    "purchased_commodity_code": "324190/US",
+    "sector_code": "113-115",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 3.28438728370063,
+    "total_impact": 189.903604603874
+  },
+  {
+    "purchased_commodity_code": "325320/US",
+    "sector_code": "113-115",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 2.31679092245099,
+    "total_impact": 133.957085228771
+  },
+  {
+    "purchased_commodity_code": "311119/US",
+    "sector_code": "113-115",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 1.15045499844849,
+    "total_impact": 66.5194242543005
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "113-115",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 13.652966667568,
+    "total_impact": 736.843263023401
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "113000/US",
     "indicator": "Sulfur dioxide",
     "impact_per_purchase": 20.7482478329236,
@@ -1051,73 +1121,73 @@
   },
   {
     "purchased_commodity_code": "Direct",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 331.056538622761,
-    "total_impact": 301459.519596415
+    "impact_per_purchase": 338.485061735254,
+    "total_impact": 300992.877361911
   },
   {
     "purchased_commodity_code": "211000/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Sulfur dioxide",
     "impact_per_purchase": 178.613551045457,
     "total_impact": 158829.480950773
   },
   {
     "purchased_commodity_code": "221100/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 14.9694794162639,
-    "total_impact": 13631.1824324894
+    "impact_per_purchase": 14.3692276125421,
+    "total_impact": 12777.6249338593
   },
   {
     "purchased_commodity_code": "324190/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 8.94200520768353,
-    "total_impact": 8142.57469540154
+    "impact_per_purchase": 8.78464536604761,
+    "total_impact": 7811.61706745791
   },
   {
     "purchased_commodity_code": "324110/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 8.69492939568617,
-    "total_impact": 7917.58788227748
+    "impact_per_purchase": 8.6141081464532,
+    "total_impact": 7659.96934581289
   },
   {
     "purchased_commodity_code": "325110/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 6.10771381293732,
-    "total_impact": 5561.67378400145
+    "impact_per_purchase": 6.25247449691398,
+    "total_impact": 5559.92125563897
   },
   {
     "purchased_commodity_code": "325190/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 5.80569948380932,
-    "total_impact": 5286.66005085206
+    "impact_per_purchase": 5.93764097265639,
+    "total_impact": 5279.96016113607
   },
   {
     "purchased_commodity_code": "327310/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Sulfur dioxide",
     "impact_per_purchase": 3.80828202122585,
     "total_impact": 3253.63254985792
   },
   {
     "purchased_commodity_code": "21311A/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 3.50991897824823,
-    "total_impact": 2748.74913853551
+    "impact_per_purchase": 3.58547316218475,
+    "total_impact": 2731.32213402295
   },
   {
     "purchased_commodity_code": "All others",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 28.1654521272389,
-    "total_impact": 24260.4168805996
+    "impact_per_purchase": 27.1851539535435,
+    "total_impact": 22969.9271075188
   },
   {
     "purchased_commodity_code": "Direct",
@@ -1263,71 +1333,71 @@
     "purchased_commodity_code": "Direct",
     "sector_code": "212",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 74.0283731210772,
-    "total_impact": 16951.0825469263
+    "impact_per_purchase": 85.2062863732515,
+    "total_impact": 14219.73889846
   },
   {
     "purchased_commodity_code": "221100/US",
     "sector_code": "212",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 23.9601457913418,
-    "total_impact": 5486.41543805298
-  },
-  {
-    "purchased_commodity_code": "324110/US",
-    "sector_code": "212",
-    "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 10.862537616061,
-    "total_impact": 2487.31349934957
+    "impact_per_purchase": 33.4730954352102,
+    "total_impact": 5586.19202257999
   },
   {
     "purchased_commodity_code": "324190/US",
     "sector_code": "212",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 9.36443609088752,
-    "total_impact": 2144.27688316785
+    "impact_per_purchase": 12.8723943854027,
+    "total_impact": 2148.22280079902
   },
   {
     "purchased_commodity_code": "327310/US",
     "sector_code": "212",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 7.4508841430108,
-    "total_impact": 1706.11006065457
-  },
-  {
-    "purchased_commodity_code": "230301/US",
-    "sector_code": "212",
-    "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 6.92318189348765,
-    "total_impact": 1585.27633144057
+    "impact_per_purchase": 11.6312041488227,
+    "total_impact": 1692.60854437234
   },
   {
     "purchased_commodity_code": "2122A0/US",
     "sector_code": "212",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 6.86494839430643,
-    "total_impact": 1464.1182435421
+    "impact_per_purchase": 11.2783528387786,
+    "total_impact": 1464.11804609981
   },
   {
-    "purchased_commodity_code": "211000/US",
+    "purchased_commodity_code": "324110/US",
     "sector_code": "212",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 4.29632009801211,
-    "total_impact": 819.168174382736
+    "impact_per_purchase": 10.8619595066264,
+    "total_impact": 1812.70930449049
   },
   {
-    "purchased_commodity_code": "21311A/US",
+    "purchased_commodity_code": "327992/US",
     "sector_code": "212",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 3.2999882664708,
-    "total_impact": 480.224426008576
+    "impact_per_purchase": 5.30498412847761,
+    "total_impact": 885.327742567917
+  },
+  {
+    "purchased_commodity_code": "3259A0/US",
+    "sector_code": "212",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 3.7251941394102,
+    "total_impact": 621.682862417481
+  },
+  {
+    "purchased_commodity_code": "327400/US",
+    "sector_code": "212",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 3.28147105579444,
+    "total_impact": 429.260219083885
   },
   {
     "purchased_commodity_code": "All others",
     "sector_code": "212",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 50.3642991449346,
-    "total_impact": 10002.2710284351
+    "impact_per_purchase": 47.4991821348597,
+    "total_impact": 7366.81023372165
   },
   {
     "purchased_commodity_code": "Direct",
@@ -1748,6 +1818,76 @@
     "indicator": "Sulfur dioxide",
     "impact_per_purchase": 28.4236167405468,
     "total_impact": 418.103488217393
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "2130",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 38.3185904410565,
+    "total_impact": 3197.98588297012
+  },
+  {
+    "purchased_commodity_code": "230301/US",
+    "sector_code": "2130",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 14.451675692228,
+    "total_impact": 1206.10529555098
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "2130",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 11.169987094583,
+    "total_impact": 932.222731323671
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "2130",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 9.03187918483808,
+    "total_impact": 753.780914103151
+  },
+  {
+    "purchased_commodity_code": "211000/US",
+    "sector_code": "2130",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 5.82672214825053,
+    "total_impact": 486.285506841852
+  },
+  {
+    "purchased_commodity_code": "324190/US",
+    "sector_code": "2130",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 3.91828740196163,
+    "total_impact": 327.01171031247
+  },
+  {
+    "purchased_commodity_code": "327320/US",
+    "sector_code": "2130",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 3.18715541860562,
+    "total_impact": 265.99303153416
+  },
+  {
+    "purchased_commodity_code": "327400/US",
+    "sector_code": "2130",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 3.18166925679765,
+    "total_impact": 265.535168449646
+  },
+  {
+    "purchased_commodity_code": "562000/US",
+    "sector_code": "2130",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 2.20841882411908,
+    "total_impact": 184.3098125982
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "2130",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 30.0211664663787,
+    "total_impact": 2505.50099689752
   },
   {
     "purchased_commodity_code": "Direct",
@@ -3151,73 +3291,73 @@
   },
   {
     "purchased_commodity_code": "Direct",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 42.0962753911942,
-    "total_impact": 38431.8278105778
+    "impact_per_purchase": 44.2396615110311,
+    "total_impact": 37906.7122165364
   },
   {
     "purchased_commodity_code": "221100/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 12.5785489184724,
-    "total_impact": 11483.5961530882
+    "impact_per_purchase": 12.3171187262233,
+    "total_impact": 10553.9115568377
   },
   {
     "purchased_commodity_code": "311300/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 11.355975088504,
-    "total_impact": 9612.27743177369
+    "impact_per_purchase": 11.5164378008506,
+    "total_impact": 9612.11663824862
   },
   {
     "purchased_commodity_code": "311221/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 10.6587917771949,
-    "total_impact": 8850.230647144
+    "impact_per_purchase": 11.1653104811648,
+    "total_impact": 8848.10014232605
   },
   {
     "purchased_commodity_code": "112120/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 10.0873950243567,
-    "total_impact": 5586.43195872973
+    "impact_per_purchase": 10.3071543762277,
+    "total_impact": 5586.42983205507
   },
   {
     "purchased_commodity_code": "1121A0/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 9.43495876412112,
-    "total_impact": 3685.85876736895
+    "impact_per_purchase": 9.55810448863473,
+    "total_impact": 3653.90759960398
   },
   {
     "purchased_commodity_code": "1111B0/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 7.9098073675035,
-    "total_impact": 6870.90897606863
+    "impact_per_purchase": 8.01876737753703,
+    "total_impact": 6870.87326009159
   },
   {
     "purchased_commodity_code": "322210/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 6.94042992642281,
-    "total_impact": 6336.27097373699
+    "impact_per_purchase": 7.2522177617961,
+    "total_impact": 6214.05594524069
   },
   {
     "purchased_commodity_code": "324190/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 5.57632371360663,
-    "total_impact": 5090.90913117224
+    "impact_per_purchase": 5.90547643691362,
+    "total_impact": 5060.10191194168
   },
   {
     "purchased_commodity_code": "All others",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Sulfur dioxide",
-    "impact_per_purchase": 87.4749351820449,
-    "total_impact": 66181.5534767529
+    "impact_per_purchase": 78.7835139994345,
+    "total_impact": 60530.8959885939
   },
   {
     "purchased_commodity_code": "Direct",
@@ -5248,6 +5388,76 @@
     "indicator": "Sulfur dioxide",
     "impact_per_purchase": 6.80976952086005,
     "total_impact": 438.451335657201
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "313-316",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 9.36006026130946,
+    "total_impact": 525.115594041368
+  },
+  {
+    "purchased_commodity_code": "3252A0/US",
+    "sector_code": "313-316",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 35.7215522868095,
+    "total_impact": 2004.04095972599
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "313-316",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 16.5714062649421,
+    "total_impact": 929.68459625051
+  },
+  {
+    "purchased_commodity_code": "313200/US",
+    "sector_code": "313-316",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 12.7936923601686,
+    "total_impact": 717.748302482891
+  },
+  {
+    "purchased_commodity_code": "313300/US",
+    "sector_code": "313-316",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 7.52334276633817,
+    "total_impact": 422.072561033898
+  },
+  {
+    "purchased_commodity_code": "325211/US",
+    "sector_code": "313-316",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 5.58112050015214,
+    "total_impact": 313.110527607206
+  },
+  {
+    "purchased_commodity_code": "313100/US",
+    "sector_code": "313-316",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 4.71504186593398,
+    "total_impact": 264.522016016749
+  },
+  {
+    "purchased_commodity_code": "111900/US",
+    "sector_code": "313-316",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 4.38198908121323,
+    "total_impact": 211.60138034416
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "313-316",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 3.81458244527756,
+    "total_impact": 31.9511677649771
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "313-316",
+    "indicator": "Sulfur dioxide",
+    "impact_per_purchase": 34.846700955213,
+    "total_impact": 1872.91312966963
   },
   {
     "purchased_commodity_code": "Direct",

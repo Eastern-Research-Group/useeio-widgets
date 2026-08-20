@@ -1,5 +1,6 @@
 import * as apex from "apexcharts";
 import {
+  apexCategoryLabelLines,
   chartExportTypography,
   CHART_EXPORT_EXTRA_HEIGHT_RANKED_PIE,
   CHART_EXPORT_EXTRA_HEIGHT_STACKED,
@@ -16,11 +17,14 @@ declare const ApexCharts: new (
 
 /** Lines rendered at the bottom of PNG/SVG exports via `annotations.text`. */
 export const CHART_EXPORT_ATTRIBUTION_LINES: readonly string[] = [
-  "Source: U.S. EPA Supply Chain Life Cycle Assessment Tool (v1.0).",
+  "Source: U.S. EPA Sector Supply Chain Environmental Assessment Tool (v1.0).",
   "Indicative results; see glossary for methodology and data limitations.",
 ];
 
 const CHART_EXPORT_LAYOUT_MS = 400;
+const RANKED_EXPORT_AXIS_LINE_LENGTH = 13;
+const RANKED_EXPORT_AXIS_MAX_LINES = 4;
+const chartExportQueue = new WeakMap<ApexCharts, Promise<void>>();
 
 /** Rebuild the on-screen chart after export (Apex can desync internal series state). */
 export type ChartExportReapply = () => void | Promise<void>;
@@ -33,18 +37,76 @@ export function isChartExportAttributionSvgText(text: string | null | undefined)
 }
 
 export function sanitizeExportFilename(name: string): string {
-  return name.replace(/,/g, "-");
+  return name
+    .replace(/[,:]/g, "")
+    .replace(/[\/\\]/g, "-")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "");
 }
 
 export function buildSmartSectorExportTitle(
   sectorCode: string,
+  sectorName: string,
   graphSlug: string,
   perspective: string,
 ): string {
   const indicator = getLabel(graphSlug);
   const perspectiveLabel =
     perspective === "final" ? "Point of Consumption" : "Supply Chain";
-  return `Sector: ${sectorCode}, ${indicator}, ${perspectiveLabel}`;
+  return `Sector: ${sectorCode} - ${sectorName}, ${indicator}, ${perspectiveLabel}`;
+}
+
+export function buildSmartSectorExportFilename(
+  sectorCode: string,
+  graphSlug: string,
+  perspective: string,
+  exportFileSuffix: string,
+): string {
+  const indicator = getLabel(graphSlug);
+  const perspectiveLabel =
+    perspective === "final" ? "Point of Consumption" : "Supply Chain";
+  return `${sectorCode} - ${indicator} - ${perspectiveLabel} - ${exportFileSuffix}`;
+}
+
+/** Two-line export title: sector line, then indicator + perspective. */
+function splitExportTitleLines(title: string): string | string[] {
+  const perspectiveMatch = title.match(/, (Point of Consumption|Supply Chain)$/);
+  if (!perspectiveMatch) {
+    return title;
+  }
+  const perspective = perspectiveMatch[1];
+  const beforePerspective = title.slice(0, -perspectiveMatch[0].length);
+  const lastComma = beforePerspective.lastIndexOf(", ");
+  if (lastComma === -1) {
+    return title;
+  }
+  const indicator = beforePerspective.slice(lastComma + 2);
+  const sectorPart = beforePerspective.slice(0, lastComma + 1);
+  return [sectorPart, `${indicator}, ${perspective}`];
+}
+
+function rewrapRankedExportCategories(
+  categories: ApexXAxisCategories,
+): ApexXAxisCategories {
+  if (!categories || !Array.isArray(categories)) {
+    return categories;
+  }
+  if (categories.length === 0) {
+    return [];
+  }
+  const toLines = (label: string) =>
+    apexCategoryLabelLines(
+      label,
+      RANKED_EXPORT_AXIS_LINE_LENGTH,
+      RANKED_EXPORT_AXIS_MAX_LINES,
+    );
+  if (typeof categories[0] === "string") {
+    return (categories as string[]).map(toLines);
+  }
+  return (categories as string[][]).map((lines) =>
+    toLines(lines.join(" ")),
+  );
 }
 
 function clearPieExportTitle(options: apex.ApexOptions): apex.ApexOptions {
@@ -159,6 +221,199 @@ function mapYaxisExportTypography(
   return mapOne(yaxis as Record<string, unknown>) as apex.ApexOptions["yaxis"];
 }
 
+type ApexYAxisConfig = NonNullable<
+  Extract<apex.ApexOptions["yaxis"], readonly unknown[]>[number]
+>;
+
+type ApexXAxisCategories = NonNullable<apex.ApexOptions["xaxis"]>["categories"];
+
+function flattenXAxisCategories(
+  categories: ApexXAxisCategories,
+): string[] | undefined {
+  if (!categories || !Array.isArray(categories)) {
+    return categories as string[] | undefined;
+  }
+  if (categories.length === 0) {
+    return [];
+  }
+  if (typeof categories[0] === "string") {
+    return categories as string[];
+  }
+  return (categories as string[][]).map((lines) => lines.join(" "));
+}
+
+/** Ranked bars: match on-screen wrapped horizontal category labels in export. */
+function applyRankedExportXAxisLayout(
+  options: apex.ApexOptions,
+): apex.ApexOptions {
+  if (!options.xaxis || isPieOrDonutChart(options)) {
+    return options;
+  }
+  return {
+    ...options,
+    xaxis: {
+      ...options.xaxis,
+      categories: rewrapRankedExportCategories(options.xaxis.categories),
+      labels: {
+        ...options.xaxis.labels,
+        rotate: 0,
+        rotateAlways: false,
+        trim: false,
+        hideOverlappingLabels: false,
+        minHeight: 80,
+        maxHeight: 120,
+        style: {
+          ...options.xaxis.labels?.style,
+          fontSize: chartExportTypography.axisLabel,
+        },
+      },
+    },
+    grid: {
+      ...options.grid,
+      padding: {
+        ...options.grid?.padding,
+        bottom: Math.max(
+          typeof options.grid?.padding?.bottom === "number"
+            ? options.grid.padding.bottom
+            : 0,
+          64,
+        ),
+      },
+    },
+  };
+}
+
+/** Stacked bars: rotate dense sector labels so exports do not overlap. */
+function applyStackedExportXAxisLayout(
+  options: apex.ApexOptions,
+): apex.ApexOptions {
+  if (!options.xaxis || isPieOrDonutChart(options)) {
+    return options;
+  }
+  return {
+    ...options,
+    xaxis: {
+      ...options.xaxis,
+      categories: flattenXAxisCategories(options.xaxis.categories),
+      labels: {
+        ...options.xaxis.labels,
+        rotate: -45,
+        rotateAlways: true,
+        trim: false,
+        hideOverlappingLabels: false,
+        minHeight: 56,
+        maxHeight: 96,
+        style: {
+          ...options.xaxis.labels?.style,
+          fontSize: chartExportTypography.axisLabel,
+        },
+      },
+    },
+    grid: {
+      ...options.grid,
+      padding: {
+        ...options.grid?.padding,
+        bottom: Math.max(
+          typeof options.grid?.padding?.bottom === "number"
+            ? options.grid.padding.bottom
+            : 0,
+          76,
+        ),
+      },
+    },
+  };
+}
+
+function preserveMultilineAxisTextFromSource(
+  source: apex.ApexOptions,
+  target: apex.ApexOptions,
+  chartKind: "ranked" | "stacked",
+): void {
+  if (source.xaxis?.categories && target.xaxis && chartKind === "stacked") {
+    target.xaxis.categories = flattenXAxisCategories(source.xaxis.categories);
+  }
+
+  const srcY = source.yaxis;
+  const tgtY = target.yaxis;
+  if (!srcY || !tgtY) {
+    return;
+  }
+  const srcArr = (Array.isArray(srcY) ? srcY : [srcY]) as ApexYAxisConfig[];
+  const tgtArr = (Array.isArray(tgtY) ? tgtY : [tgtY]) as ApexYAxisConfig[];
+  srcArr.forEach((axis, i) => {
+    const srcTitle = axis?.title;
+    const tgtTitle = tgtArr[i]?.title;
+    if (srcTitle?.text != null && tgtTitle) {
+      tgtTitle.text = srcTitle.text as unknown as string;
+    }
+  });
+}
+
+function yAxisTitleLines(titleText: unknown): string[] {
+  if (titleText == null) {
+    return [];
+  }
+  if (Array.isArray(titleText)) {
+    return titleText.map(String);
+  }
+  return [String(titleText)];
+}
+
+/** Rotated y-axis titles need extra left inset in raster export (PNG clips SVG at x=0). */
+function exportYAxisLeftPadding(lines: string[]): number {
+  if (lines.length === 0) {
+    return 16;
+  }
+  const longest = Math.max(...lines.map((line) => line.length));
+  return Math.min(36, Math.max(16, Math.round(longest * 1.4)));
+}
+
+function applyExportYAxisClearance(options: apex.ApexOptions): apex.ApexOptions {
+  if (isPieOrDonutChart(options) || !options.yaxis) {
+    return options;
+  }
+
+  const adjustAxis = (axis: ApexYAxisConfig): ApexYAxisConfig => {
+    if (!axis.title) {
+      return axis;
+    }
+    return {
+      ...axis,
+      title: {
+        ...axis.title,
+        // On-screen negative offset keeps titles off bars; export needs x >= 0.
+        offsetX: 0,
+      },
+    };
+  };
+
+  const yaxis = options.yaxis;
+  const adjusted = Array.isArray(yaxis)
+    ? yaxis.map((axis) => adjustAxis(axis as ApexYAxisConfig))
+    : adjustAxis(yaxis as ApexYAxisConfig);
+  const primaryAxis = Array.isArray(adjusted) ? adjusted[0] : adjusted;
+  const leftPad = exportYAxisLeftPadding(
+    yAxisTitleLines(primaryAxis?.title?.text),
+  );
+
+  return {
+    ...options,
+    yaxis: adjusted as apex.ApexOptions["yaxis"],
+    grid: {
+      ...options.grid,
+      padding: {
+        ...options.grid?.padding,
+        left: Math.max(
+          typeof options.grid?.padding?.left === "number"
+            ? options.grid.padding.left
+            : 0,
+          leftPad,
+        ),
+      },
+    },
+  };
+}
+
 /** Smaller fonts + taller canvas for PNG/SVG export (on-screen figure unchanged). */
 function applyExportRasterTypography(
   options: apex.ApexOptions,
@@ -197,7 +452,7 @@ function applyExportRasterTypography(
     title: options.title?.text
       ? {
           ...options.title,
-          margin: 10,
+          margin: 6,
           style: {
             ...options.title.style,
             fontSize: chartExportTypography.chartTitle,
@@ -475,7 +730,21 @@ function copyChartFormatterRefs(
       if (formatter && tgtArr[i]?.labels) {
         tgtArr[i].labels!.formatter = formatter;
       }
+      const srcTitle = axis?.title;
+      const tgtTitle = tgtArr[i]?.title;
+      if (srcTitle?.text != null && tgtTitle) {
+        tgtTitle.text = srcTitle.text as unknown as string;
+      }
+      if (typeof srcTitle?.offsetX === "number" && tgtTitle) {
+        tgtTitle.offsetX = srcTitle.offsetX;
+      }
     });
+  }
+
+  if (source.xaxis?.categories && target.xaxis) {
+    target.xaxis.categories = JSON.parse(
+      JSON.stringify(source.xaxis.categories),
+    ) as ApexXAxisCategories;
   }
 
   const srcTooltipY = source.tooltip?.y;
@@ -868,7 +1137,7 @@ function applyStackedExportLegendClearance(
       ? {
           ...leg,
           offsetY:
-            (typeof leg.offsetY === "number" ? leg.offsetY : 0) - band,
+            (typeof leg.offsetY === "number" ? leg.offsetY : 0) - Math.round(band * 0.35),
         }
       : leg;
 
@@ -883,7 +1152,7 @@ function applyStackedExportLegendClearance(
           typeof options.grid?.padding?.bottom === "number"
             ? options.grid.padding.bottom
             : 0,
-          band + 12,
+          band,
         ),
       },
     },
@@ -939,6 +1208,18 @@ function mergeExportOverlayIntoOptions(
     CHART_EXPORT_EXTRA_HEIGHT_RANKED_PIE,
   );
 
+  merged.title = {
+    ...merged.title,
+    text: splitExportTitleLines(title) as unknown as string,
+    align: "left",
+    margin: 8,
+    style: {
+      ...merged.title?.style,
+      fontSize: chartExportTypography.chartTitle,
+      fontWeight: 600,
+    },
+  };
+
   const exportHeight = chartHeightFromOptions(merged);
   const existingTexts = merged.annotations?.texts ?? [];
   const pieExport = isPieOrDonutChart(merged);
@@ -946,7 +1227,7 @@ function mergeExportOverlayIntoOptions(
     ? []
     : buildExportAttributionAnnotationTexts(exportHeight);
 
-  const result: apex.ApexOptions = {
+  const result: apex.ApexOptions = applyRankedExportXAxisLayout({
     ...merged,
     grid: {
       ...merged.grid,
@@ -956,7 +1237,7 @@ function mergeExportOverlayIntoOptions(
           typeof merged.grid?.padding?.bottom === "number"
             ? merged.grid.padding.bottom
             : 0,
-          pieExport ? 24 : 56,
+          pieExport ? 20 : 56,
         ),
       },
     },
@@ -964,10 +1245,11 @@ function mergeExportOverlayIntoOptions(
       ...merged.annotations,
       texts: [...existingTexts, ...attributionTexts],
     },
-  };
+  });
+  preserveMultilineAxisTextFromSource(baseOptions, result, "ranked");
   patchPieDonutLabelsForExport(baseOptions, result);
   stripCartesianAxesForPieExport(result);
-  return result;
+  return applyExportYAxisClearance(result);
 }
 
 function appendExportAttributionToOptions(
@@ -990,28 +1272,32 @@ function appendExportAttributionToOptions(
   const exportHeight = chartHeightFromOptions(merged);
   const existingTexts = merged.annotations?.texts ?? [];
 
-  return applyStackedExportLegendClearance({
-    ...merged,
-    grid: {
-      ...merged.grid,
-      padding: {
-        ...merged.grid?.padding,
-        bottom: Math.max(
-          typeof merged.grid?.padding?.bottom === "number"
-            ? merged.grid.padding.bottom
-            : 0,
-          56,
-        ),
+  const result = applyStackedExportLegendClearance(
+    applyStackedExportXAxisLayout({
+      ...merged,
+      grid: {
+        ...merged.grid,
+        padding: {
+          ...merged.grid?.padding,
+          bottom: Math.max(
+            typeof merged.grid?.padding?.bottom === "number"
+              ? merged.grid.padding.bottom
+              : 0,
+            48,
+          ),
+        },
       },
-    },
-    annotations: {
-      ...merged.annotations,
-      texts: [
-        ...existingTexts,
-        ...buildExportAttributionAnnotationTexts(exportHeight),
-      ],
-    },
-  });
+      annotations: {
+        ...merged.annotations,
+        texts: [
+          ...existingTexts,
+          ...buildExportAttributionAnnotationTexts(exportHeight),
+        ],
+      },
+    }),
+  );
+  preserveMultilineAxisTextFromSource(baseOptions, result, "stacked");
+  return applyExportYAxisClearance(result);
 }
 
 export function stackedChartExportFileBase(
@@ -1091,15 +1377,22 @@ export function runRankedPieChartExport(
   reapplyLive?: ChartExportReapply,
 ): void {
   const safeName = sanitizeExportFilename(exportFileBase);
-  void runExportWithOverlay(
-    chart,
-    type,
-    mergeExportOverlayIntoOptions(baseOptions, title, safeName),
-    baseOptions,
-    safeName,
-    baseOptions.series,
-    reapplyLive,
-  ).catch(logChartExportFailure);
+  const previous = chartExportQueue.get(chart) ?? Promise.resolve();
+  const next = previous
+    .catch(() => {})
+    .then(() =>
+      runExportWithOverlay(
+        chart,
+        type,
+        mergeExportOverlayIntoOptions(baseOptions, title, safeName),
+        baseOptions,
+        safeName,
+        baseOptions.series,
+        reapplyLive,
+      ),
+    )
+    .catch(logChartExportFailure);
+  chartExportQueue.set(chart, next);
 }
 
 /** Stacked top-sectors: export title on chart; attribution via off-screen render. */
@@ -1110,15 +1403,22 @@ export function runStackedChartExport(
   reapplyLive?: ChartExportReapply,
 ): void {
   const exportFileBase = stackedChartExportFileBase(baseOptions);
-  void runExportWithOverlay(
-    chart,
-    type,
-    appendExportAttributionToOptions(baseOptions),
-    baseOptions,
-    exportFileBase,
-    baseOptions.series,
-    reapplyLive,
-  ).catch(logChartExportFailure);
+  const previous = chartExportQueue.get(chart) ?? Promise.resolve();
+  const next = previous
+    .catch(() => {})
+    .then(() =>
+      runExportWithOverlay(
+        chart,
+        type,
+        appendExportAttributionToOptions(baseOptions),
+        baseOptions,
+        exportFileBase,
+        baseOptions.series,
+        reapplyLive,
+      ),
+    )
+    .catch(logChartExportFailure);
+  chartExportQueue.set(chart, next);
 }
 
 function logChartExportFailure(err: unknown): void {
@@ -1133,6 +1433,7 @@ export function exportSmindexRankedPieChart(
   options: apex.ApexOptions | undefined,
   type: string | null,
   sectorCode: string,
+  sectorName: string,
   graphSlug: string,
   perspective: string,
   exportFileSuffix: string,
@@ -1146,15 +1447,22 @@ export function exportSmindexRankedPieChart(
   }
   const titleName = buildSmartSectorExportTitle(
     sectorCode,
+    sectorName,
     graphSlug,
     perspective,
+  );
+  const exportFileBase = buildSmartSectorExportFilename(
+    sectorCode,
+    graphSlug,
+    perspective,
+    exportFileSuffix,
   );
   runRankedPieChartExport(
     chart,
     type as ChartExportFormat,
     options,
     titleName,
-    `${titleName}-${exportFileSuffix}`,
+    exportFileBase,
     reapplyLive,
   );
 }

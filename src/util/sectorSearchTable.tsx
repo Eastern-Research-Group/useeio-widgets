@@ -315,7 +315,7 @@ export const SectorSearchTable: React.FC<SectorSearchTableProps> = ({
                           className={classes.snapshotSeparatorCell}
                           colSpan={2}
                         >
-                          Sector Snapshots
+                          EPA's Sector Snapshots Categories
                         </td>
                       </tr>
                     )}

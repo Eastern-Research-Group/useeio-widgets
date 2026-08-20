@@ -11,6 +11,10 @@ import { makeStyles } from "@material-ui/core/styles";
 import { getLabel, pickPreferredBootSector } from "../util/util";
 import { SectorSearchTable } from "../util/sectorSearchTable";
 import {
+  CONTROL_HELP_HREFS,
+  ControlHelpLink,
+} from "../util/controlHelpLink";
+import {
   modelOfSmartSector,
   CommodityOutputTimeSeriesRow,
 } from "../smartSectorWebApi.ts/webApiSmartSector";
@@ -212,7 +216,7 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
   );
   const [barMode, setBarMode] = React.useState<
     "impact_per_purchase" | "total_impact"
-  >(initialBarMode ?? "impact_per_purchase");
+  >(initialBarMode ?? "total_impact");
   const [pieMode, setPieMode] = React.useState<"aggregate" | "detail">(
     initialPieMode ?? "detail",
   );
@@ -317,10 +321,6 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
   ]);
 
   React.useEffect(() => {
-    document.title = "Sector dashboard (multi-indicator)";
-  }, []);
-
-  React.useEffect(() => {
     setShareStatus("idle");
     setShareUrlForFallback("");
   }, [activeSector.code, perspective, barMode, pieMode, appliedIndicators]);
@@ -378,7 +378,7 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
   }, [model, endpoint, appliedIndicators]);
 
   React.useEffect(() => {
-    document.title = `${activeSector.name} — Sector dashboard`;
+    document.title = `${activeSector.name} — Multi-indicator Sector Dashboard`;
   }, [activeSector.name]);
 
   React.useEffect(() => {
@@ -514,7 +514,7 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
   return (
     <div className="sector-dashboard-page">
       <h1 id="sector-dashboard-title" style={{ textAlign: "center" }}>
-        Multi-indicator sector dashboard
+        Multi-indicator Sector Dashboard
       </h1>
 
       {/* Print-snapshot intro + meta — hidden from live UI; restore for PDF/print flows.
@@ -546,27 +546,29 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
 
           <div className={classes.right}>
             <div className={classes.item}>
-              <button type="button" onClick={openIndicatorModal}>
+              <button
+                type="button"
+                className="sector-dashboard-choose-indicators"
+                onClick={openIndicatorModal}
+              >
                 Choose indicators ({appliedIndicators.length})
-              </button>
+              </button>{" "}
+              <ControlHelpLink
+                href={CONTROL_HELP_HREFS.indicators}
+                className="sector-dashboard-no-print"
+              />
             </div>
             <div className={classes.item}>
               <FormControl className={classes.margin}>
-                <InputLabel htmlFor="sd-perspective">
+                <InputLabel
+                  htmlFor="sd-perspective"
+                  className="sector-dashboard-control-label"
+                >
                   Perspective{" "}
-                  <a
-                    href="./glossary.html#perspectives-help"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <ControlHelpLink
+                    href={CONTROL_HELP_HREFS.perspectives}
                     className="sector-dashboard-no-print"
-                    style={{
-                      fontSize: "0.75rem",
-                      fontWeight: 400,
-                      marginLeft: 4,
-                    }}
-                  >
-                    What is this?
-                  </a>
+                  />
                 </InputLabel>
                 <Select
                   native
@@ -584,8 +586,8 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
             </div>
             <div className={classes.item}>
               <FormControl component="fieldset">
-                <FormLabel component="legend" style={{ fontSize: "0.75rem" }}>
-                  Bar chart
+                <FormLabel component="legend" className="sector-dashboard-control-label">
+                  Bar Chart Metric
                 </FormLabel>
                 <RadioGroup
                   row
@@ -612,8 +614,12 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
             </div>
             <div className={classes.item}>
               <FormControl component="fieldset">
-                <FormLabel component="legend" style={{ fontSize: "0.75rem" }}>
-                  Pie chart
+                <FormLabel component="legend" className="sector-dashboard-control-label">
+                  Pie Chart Format{" "}
+                  <ControlHelpLink
+                    href={CONTROL_HELP_HREFS.levelOfDetail}
+                    className="sector-dashboard-no-print"
+                  />
                 </FormLabel>
                 <RadioGroup
                   row
@@ -682,7 +688,9 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
       <section
         className={`sector-dashboard-section sector-dashboard-industry-output ${classes.section}`}
       >
-        <h3>Industry output over time ({industryOutputYearRange})</h3>
+        <h3>
+          Industry Price Adjusted Output Over Time ({industryOutputYearRange})
+        </h3>
         <div className={classes.outputDataNotice}>
           {outputTimeSeriesError ? (
             <>
@@ -692,10 +700,11 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
             </>
           ) : industryOutputSeries ? (
             <>
-              <strong>Price-adjusted output:</strong> BEA gross commodity output
-              for each year multiplied by the model price ratio (Rho), in
-              millions of dollars — the same basis as the {INDUSTRY_OUTPUT_FOCAL_YEAR}{" "}
-              scaling used for total impacts below.
+              <strong>Price-adjusted output:</strong> yearly BEA gross commodity
+              output converted to {INDUSTRY_OUTPUT_FOCAL_YEAR} dollars (using the
+              model price ratio, Rho), in millions of dollars — the same dollar
+              basis as the {INDUSTRY_OUTPUT_FOCAL_YEAR} output used for total
+              impacts below.
             </>
           ) : (
             <>

@@ -1,7 +1,7 @@
 import * as React from "react";
 import Checkbox from "@material-ui/core/Checkbox";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
-import { getLabel } from "../util/util";
+import { getIndicatorSelectGroups, getLabel, SECTOR_PURCHASES_FILE_SLUG } from "../util/util";
 import {
   SECTOR_DASHBOARD_MAX_INDICATORS,
   SECTOR_DASHBOARD_PICKABLE,
@@ -36,7 +36,7 @@ export const IndicatorPickerModal: React.FC<IndicatorPickerModalProps> = ({
   }
 
   const q = filter.trim().toLowerCase();
-  const visible = SECTOR_DASHBOARD_PICKABLE.filter((slug) => {
+  const matchesFilter = (slug: string): boolean => {
     if (!q) {
       return true;
     }
@@ -46,7 +46,17 @@ export const IndicatorPickerModal: React.FC<IndicatorPickerModalProps> = ({
       code.includes(q) ||
       getLabel(slug).toLowerCase().includes(q)
     );
-  });
+  };
+
+  const pickable = new Set(SECTOR_DASHBOARD_PICKABLE);
+  const groups = getIndicatorSelectGroups({
+    excludeSlugs: [SECTOR_PURCHASES_FILE_SLUG],
+  })
+    .map((g) => ({
+      ...g,
+      slugs: g.slugs.filter((slug) => pickable.has(slug) && matchesFilter(slug)),
+    }))
+    .filter((g) => g.slugs.length > 0);
 
   const atMax = draft.length >= SECTOR_DASHBOARD_MAX_INDICATORS;
 
@@ -111,34 +121,41 @@ export const IndicatorPickerModal: React.FC<IndicatorPickerModalProps> = ({
         />
         <div
           id="scrollContainer"
-          style={{ maxHeight: "40vh", overflowY: "auto" }}
+          className="sector-dashboard-indicator-scroll"
         >
-          {visible.map((slug) => {
-            const checked = draft.includes(slug);
-            const disabled = !checked && atMax;
-            return (
-              <FormControlLabel
-                key={slug}
-                style={{
-                  display: "flex",
-                  alignItems: "flex-start",
-                  marginLeft: 0,
-                  marginRight: 0,
-                  opacity: disabled ? 0.5 : 1,
-                }}
-                control={
-                  <Checkbox
-                    color="primary"
-                    size="small"
-                    checked={checked}
-                    disabled={disabled}
-                    onChange={(e) => toggle(slug, e.target.checked)}
+          {groups.map((group) => (
+            <div key={group.id} className="sector-dashboard-indicator-group">
+              <div className="sector-dashboard-indicator-group-label">
+                {group.label}
+              </div>
+              {group.slugs.map((slug) => {
+                const checked = draft.includes(slug);
+                const disabled = !checked && atMax;
+                return (
+                  <FormControlLabel
+                    key={slug}
+                    style={{
+                      display: "flex",
+                      alignItems: "flex-start",
+                      marginLeft: 0,
+                      marginRight: 0,
+                      opacity: disabled ? 0.5 : 1,
+                    }}
+                    control={
+                      <Checkbox
+                        color="primary"
+                        size="small"
+                        checked={checked}
+                        disabled={disabled}
+                        onChange={(e) => toggle(slug, e.target.checked)}
+                      />
+                    }
+                    label={`${slugToIndicatorCode(slug)} — ${getLabel(slug)}`}
                   />
-                }
-                label={`${slugToIndicatorCode(slug)} — ${getLabel(slug)}`}
-              />
-            );
-          })}
+                );
+              })}
+            </div>
+          ))}
         </div>
         <div
           style={{

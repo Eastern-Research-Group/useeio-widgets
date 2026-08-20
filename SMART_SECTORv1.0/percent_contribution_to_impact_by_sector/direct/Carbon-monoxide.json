@@ -1,73 +1,73 @@
 [
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 748121.954921898,
-    "contribution": 0.59552206830283
+    "total_impacts_sum": 634035.455758918,
+    "contribution": 0.573087251391364
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 312795.962517065,
-    "contribution": 0.248992690736344
+    "total_impacts_sum": 291204.163318912,
+    "contribution": 0.263211452978448
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 67508.9541404751,
-    "contribution": 0.0537386608349086
+    "total_impacts_sum": 63128.5548189751,
+    "contribution": 0.0570601685393311
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 49015.4000365658,
-    "contribution": 0.039017371721852
+    "total_impacts_sum": 45048.4440917673,
+    "contribution": 0.0407180525466148
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 40500.9061838668,
-    "contribution": 0.0322396412243686
+    "total_impacts_sum": 37170.7108253279,
+    "contribution": 0.0335975856013488
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 29278.0900443965,
-    "contribution": 0.0233060246721616
+    "total_impacts_sum": 27241.3871884593,
+    "contribution": 0.0246227424130965
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 4886.88056684027,
-    "contribution": 0.00389006792751785
+    "total_impacts_sum": 4610.50335819843,
+    "contribution": 0.00416730747954458
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 1630.29133872222,
-    "contribution": 0.00129774893462845
+    "total_impacts_sum": 1518.67660984168,
+    "contribution": 0.00137269011721871
   },
   {
-    "sector": "11",
-    "indicator": "Carbon monoxide",
-    "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 1265.61253846405,
-    "contribution": 0.00100745632662898
-  },
-  {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 1241.50894499476,
-    "contribution": 0.000988269318759572
+    "total_impacts_sum": 1205.85859750033,
+    "contribution": 0.00108994249916345
+  },
+  {
+    "sector": "111-112",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 1186.90010044465,
+    "contribution": 0.00107280643387015
   },
   {
     "sector": "111/112",
@@ -840,6 +840,76 @@
     "contribution": 0.000688042871675068
   },
   {
+    "sector": "113-115",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 114086.49916298,
+    "contribution": 0.761109912120667
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 21591.7991981531,
+    "contribution": 0.144046250089213
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 4380.39932150001,
+    "contribution": 0.0292231365420155
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 3966.95594479851,
+    "contribution": 0.0264649148907523
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 3330.19535853882,
+    "contribution": 0.02221686803678
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 2036.70285593726,
+    "contribution": 0.013587538780411
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 276.377208641838,
+    "contribution": 0.00184380653736286
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 111.614728880536,
+    "contribution": 0.000744619890284111
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 78.7124380193957,
+    "contribution": 0.000525117496139154
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 35.6503474944289,
+    "contribution": 0.00023783561637555
+  },
+  {
     "sector": "113000/US",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Direct",
@@ -1050,74 +1120,74 @@
     "contribution": 0.000164936278718554
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 1147329.92964024,
-    "contribution": 0.525921817142926
+    "total_impacts_sum": 1138306.91442372,
+    "contribution": 0.52676369903749
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 674705.764022906,
-    "contribution": 0.309276758397646
+    "total_impacts_sum": 672483.932911816,
+    "contribution": 0.311199132286081
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 120299.56209899,
-    "contribution": 0.0551438280011031
+    "total_impacts_sum": 117695.564561434,
+    "contribution": 0.0544648812750768
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 101846.166257365,
-    "contribution": 0.0466850201004598
+    "total_impacts_sum": 99688.0641469294,
+    "contribution": 0.0461317178649557
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 89392.2545232814,
-    "contribution": 0.0409763013435279
+    "total_impacts_sum": 85981.049385449,
+    "contribution": 0.039788650185204
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 18759.9360781689,
-    "contribution": 0.00859932214512124
+    "total_impacts_sum": 18387.6739290929,
+    "contribution": 0.00850909277001785
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 12732.6311349419,
-    "contribution": 0.00583648027520643
+    "total_impacts_sum": 12213.6782855979,
+    "contribution": 0.00565201025404698
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 11252.1989007267,
-    "contribution": 0.0051578684908703
+    "total_impacts_sum": 11147.0855827125,
+    "contribution": 0.00515843307339467
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 4370.61477389712,
-    "contribution": 0.00200343563306193
+    "total_impacts_sum": 4173.93279069251,
+    "contribution": 0.00193153203982089
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 870.809914630637,
-    "contribution": 0.0003991684700775
+    "total_impacts_sum": 866.217070927251,
+    "contribution": 0.000400851213911902
   },
   {
     "sector": "211/32411",
@@ -1263,71 +1333,71 @@
     "sector": "212",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 66344.5343305325,
-    "contribution": 0.345988805302936
+    "total_impacts_sum": 57009.2417373118,
+    "contribution": 0.380391188032702
   },
   {
     "sector": "212",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 38991.1098450469,
-    "contribution": 0.203339847793835
+    "total_impacts_sum": 29449.4691162449,
+    "contribution": 0.196500044601172
   },
   {
     "sector": "212",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 32736.4588605144,
-    "contribution": 0.17072164881841
+    "total_impacts_sum": 24523.8892041105,
+    "contribution": 0.163634369888987
   },
   {
     "sector": "212",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 19449.8019253354,
-    "contribution": 0.101431320596798
+    "total_impacts_sum": 14766.9521206693,
+    "contribution": 0.0985317167817552
   },
   {
     "sector": "212",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 19261.1545983755,
-    "contribution": 0.100447518932696
-  },
-  {
-    "sector": "212",
-    "indicator": "Carbon monoxide",
-    "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 4837.11310247966,
-    "contribution": 0.0252256949322186
+    "total_impacts_sum": 13913.2252602327,
+    "contribution": 0.0928352688936517
   },
   {
     "sector": "212",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 3955.33902138637,
-    "contribution": 0.0206272157365608
-  },
-  {
-    "sector": "212",
-    "indicator": "Carbon monoxide",
-    "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 3257.17067882883,
-    "contribution": 0.0169862461649249
+    "total_impacts_sum": 3670.56971218249,
+    "contribution": 0.0244916846992568
   },
   {
     "sector": "212",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 2810.5809005068,
-    "contribution": 0.014657266612633
+    "total_impacts_sum": 2583.30205223863,
+    "contribution": 0.0172369480237312
+  },
+  {
+    "sector": "212",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 2538.6146010361,
+    "contribution": 0.0169387733395035
+  },
+  {
+    "sector": "212",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 1361.63214407566,
+    "contribution": 0.00908541936647898
   },
   {
     "sector": "212",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 110.149892784894,
-    "contribution": 0.000574435108987615
+    "total_impacts_sum": 53.1418730966644,
+    "contribution": 0.000354586372761612
   },
   {
     "sector": "2121/2122",
@@ -1748,6 +1818,76 @@
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 7.32145131730065,
     "contribution": 0.000332094548948699
+  },
+  {
+    "sector": "2130",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 18358.3078097459,
+    "contribution": 0.293737015695651
+  },
+  {
+    "sector": "2130",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 12952.8458666344,
+    "contribution": 0.207248420119153
+  },
+  {
+    "sector": "2130",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 10816.5671939602,
+    "contribution": 0.173067485334277
+  },
+  {
+    "sector": "2130",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 7569.76044923288,
+    "contribution": 0.121117853940124
+  },
+  {
+    "sector": "2130",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 6840.95191510119,
+    "contribution": 0.109456754995279
+  },
+  {
+    "sector": "2130",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 3672.16294160861,
+    "contribution": 0.0587554253254023
+  },
+  {
+    "sector": "2130",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 1090.81822686877,
+    "contribution": 0.0174533346944295
+  },
+  {
+    "sector": "2130",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 803.722158547895,
+    "contribution": 0.0128597336283356
+  },
+  {
+    "sector": "2130",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 332.392166282378,
+    "contribution": 0.00531834872670378
+  },
+  {
+    "sector": "2130",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 61.6008633916154,
+    "contribution": 0.000985627540645264
   },
   {
     "sector": "213111/US",
@@ -3136,74 +3276,74 @@
     "contribution": 0.000434586634624078
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 651354.771598008,
-    "contribution": 0.477843981090388
+    "total_impacts_sum": 634519.517855746,
+    "contribution": 0.485557871934021
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 227892.484269276,
-    "contribution": 0.167185467416851
+    "total_impacts_sum": 220694.510108556,
+    "contribution": 0.16888362557855
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 197548.060131938,
-    "contribution": 0.144924326382899
+    "total_impacts_sum": 180576.170977524,
+    "contribution": 0.138183584325572
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 144233.721909251,
-    "contribution": 0.10581209947309
+    "total_impacts_sum": 136098.96275413,
+    "contribution": 0.104147974755201
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 74371.2197735474,
-    "contribution": 0.0545598823939724
+    "total_impacts_sum": 71729.4783758054,
+    "contribution": 0.0548900575868678
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 46907.3249386359,
-    "contribution": 0.0344119424134833
+    "total_impacts_sum": 43660.6180073388,
+    "contribution": 0.0334107244464422
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 15306.5907823924,
-    "contribution": 0.0112291528293184
+    "total_impacts_sum": 14266.0006185795,
+    "contribution": 0.0109168728564496
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 2456.21516956051,
-    "contribution": 0.00180191761266739
+    "total_impacts_sum": 2329.06937084561,
+    "contribution": 0.00178229027708429
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 1884.57391533148,
-    "contribution": 0.00138255270649475
+    "total_impacts_sum": 1790.89244655999,
+    "contribution": 0.00137045733148287
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Carbon monoxide",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 1156.84256543119,
-    "contribution": 0.000848677680834767
+    "total_impacts_sum": 1119.31441253757,
+    "contribution": 0.000856540908329283
   },
   {
     "sector": "311111/US",
@@ -5234,6 +5374,76 @@
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 24.052764301504,
     "contribution": 0.000577284821605919
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 16971.8891544136,
+    "contribution": 0.301308568949364
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 16835.2537422618,
+    "contribution": 0.298882827175498
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 8134.75915512132,
+    "contribution": 0.144419552677784
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 7197.97416072021,
+    "contribution": 0.127788443229203
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 3246.70693129704,
+    "contribution": 0.0576400547026133
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 2641.74139774191,
+    "contribution": 0.0468998655863192
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 1040.5901638129,
+    "contribution": 0.0184740031158943
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 127.145798714899,
+    "contribution": 0.00225726896458945
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 93.681468771488,
+    "contribution": 0.00166316366055637
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Carbon monoxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 37.528152893622,
+    "contribution": 0.000666251938179174
   },
   {
     "sector": "313100/US",

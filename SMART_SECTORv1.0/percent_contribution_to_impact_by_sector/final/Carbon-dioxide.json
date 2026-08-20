@@ -1,73 +1,73 @@
 [
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 50646492.3305479,
-    "contribution": 0.329667599326158
+    "total_impacts_sum": 45654523.9975731,
+    "contribution": 0.32075644115663
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 38660378.5663275,
-    "contribution": 0.251647717433618
+    "total_impacts_sum": 35995585.5186179,
+    "contribution": 0.252895329911112
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 32678955.6693959,
-    "contribution": 0.212713504297665
+    "total_impacts_sum": 31089191.6664965,
+    "contribution": 0.218424322590942
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 9220260.95502824,
-    "contribution": 0.0600164227438806
+    "total_impacts_sum": 8803796.93908354,
+    "contribution": 0.061853116133599
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 7675905.32811188,
-    "contribution": 0.0499639198240628
+    "total_impacts_sum": 7116443.93160694,
+    "contribution": 0.0499982264477071
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 7401807.87176209,
-    "contribution": 0.0481797676299386
+    "total_impacts_sum": 6822024.56798152,
+    "contribution": 0.0479297149615484
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 5533672.25305925,
-    "contribution": 0.0360197194944434
+    "total_impacts_sum": 5109202.79563845,
+    "contribution": 0.0358958885643756
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 1156009.73325291,
-    "contribution": 0.00752468603495558
+    "total_impacts_sum": 1125772.18098969,
+    "contribution": 0.00790937341382831
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 381813.752134241,
-    "contribution": 0.00248529793996982
+    "total_impacts_sum": 351036.093431493,
+    "contribution": 0.00246628544528462
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 273669.304894377,
-    "contribution": 0.00178136527530794
+    "total_impacts_sum": 266349.673984259,
+    "contribution": 0.00187130137497351
   },
   {
     "sector": "111/112",
@@ -833,6 +833,76 @@
     "contribution": 0.00195182676265074
   },
   {
+    "sector": "113-115",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 4991968.3329748,
+    "contribution": 0.441961165299607
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 2664793.04770953,
+    "contribution": 0.235925983918684
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 1589764.00289935,
+    "contribution": 0.140748879882029
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 579783.303780576,
+    "contribution": 0.0513307952831945
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 559461.396504945,
+    "contribution": 0.0495316064218949
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 424469.457420801,
+    "contribution": 0.0375801694887747
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 416464.015944695,
+    "contribution": 0.0368714121394649
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 30777.6587027482,
+    "contribution": 0.0027248830517629
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 30237.5522632176,
+    "contribution": 0.00267706502579027
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 7319.63091011827,
+    "contribution": 0.00064803948879842
+  },
+  {
     "sector": "113000/US",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Direct",
@@ -1043,74 +1113,74 @@
     "contribution": 0.000375123503334899
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 248173903.223103,
-    "contribution": 0.478267072238052
+    "total_impacts_sum": 243959885.013244,
+    "contribution": 0.478967424413292
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 104193864.370677,
-    "contribution": 0.200796674471182
+    "total_impacts_sum": 103248858.738957,
+    "contribution": 0.202708900035452
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 77161246.8224576,
-    "contribution": 0.148700903393693
+    "total_impacts_sum": 75471806.878317,
+    "contribution": 0.148174102288835
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 43911670.6477371,
-    "contribution": 0.0846241521974004
+    "total_impacts_sum": 43490482.3867616,
+    "contribution": 0.0853850391598111
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 26819602.5746922,
-    "contribution": 0.0516852603573511
+    "total_impacts_sum": 25140212.4703278,
+    "contribution": 0.0493578803558713
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 9792198.09835431,
-    "contribution": 0.018870984637997
+    "total_impacts_sum": 9416822.70964328,
+    "contribution": 0.0184880859373646
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 5159119.11405824,
-    "contribution": 0.00994237009597995
+    "total_impacts_sum": 5091084.82228701,
+    "contribution": 0.0099953473279758
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 2924789.04721209,
-    "contribution": 0.00563649229978272
+    "total_impacts_sum": 2769147.3972379,
+    "contribution": 0.0054366782334063
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 554894.199594527,
-    "contribution": 0.00106936152752279
+    "total_impacts_sum": 553742.222336523,
+    "contribution": 0.00108716433444383
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 211052.516476388,
-    "contribution": 0.000406728781039047
+    "total_impacts_sum": 203421.328674861,
+    "contribution": 0.000399377913548526
   },
   {
     "sector": "211/32411",
@@ -1256,71 +1326,71 @@
     "sector": "212",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 28150558.5170768,
-    "contribution": 0.369810282382233
+    "total_impacts_sum": 22165568.5358972,
+    "contribution": 0.357869920310908
   },
   {
     "sector": "212",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 16261807.3990566,
-    "contribution": 0.213629281374382
+    "total_impacts_sum": 14117084.012899,
+    "contribution": 0.227924662637762
   },
   {
     "sector": "212",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 10794623.4552276,
-    "contribution": 0.141807586011694
-  },
-  {
-    "sector": "212",
-    "indicator": "Carbon dioxide",
-    "sector_purchased_detail": "Other",
-    "total_impacts_sum": 4743919.61864972,
-    "contribution": 0.0623202645413675
-  },
-  {
-    "sector": "212",
-    "indicator": "Carbon dioxide",
-    "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 4605412.22222327,
-    "contribution": 0.060500710611259
-  },
-  {
-    "sector": "212",
-    "indicator": "Carbon dioxide",
-    "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 4229110.57710245,
-    "contribution": 0.0555572840871063
+    "total_impacts_sum": 10990935.7235526,
+    "contribution": 0.177452037161152
   },
   {
     "sector": "212",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 4203327.32306558,
-    "contribution": 0.0552185727805323
+    "total_impacts_sum": 4220141.82305614,
+    "contribution": 0.0681354875004428
+  },
+  {
+    "sector": "212",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 3559811.15425658,
+    "contribution": 0.0574742457894783
+  },
+  {
+    "sector": "212",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 3315584.54583931,
+    "contribution": 0.0535311320926407
   },
   {
     "sector": "212",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 3027473.44408692,
-    "contribution": 0.0397715309478966
+    "total_impacts_sum": 2426876.17725481,
+    "contribution": 0.0391826621885233
+  },
+  {
+    "sector": "212",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 1088858.99814964,
+    "contribution": 0.0175799633682553
   },
   {
     "sector": "212",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 87957.9802470661,
-    "contribution": 0.00115549272293146
+    "total_impacts_sum": 29695.4099911578,
+    "contribution": 0.000479441526163643
   },
   {
     "sector": "212",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 17431.4358532267,
-    "contribution": 0.000228994540598513
+    "total_impacts_sum": 22944.5877245032,
+    "contribution": 0.000370447424672937
   },
   {
     "sector": "2121/2122",
@@ -1734,6 +1804,76 @@
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 3595.35529605167,
     "contribution": 0.000642927232571051
+  },
+  {
+    "sector": "2130",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 10199008.191039,
+    "contribution": 0.429594760134493
+  },
+  {
+    "sector": "2130",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 3834163.33029811,
+    "contribution": 0.161499671864474
+  },
+  {
+    "sector": "2130",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 3672194.87404782,
+    "contribution": 0.154677361419295
+  },
+  {
+    "sector": "2130",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 1803710.46152144,
+    "contribution": 0.0759745014961539
+  },
+  {
+    "sector": "2130",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 1614305.05456576,
+    "contribution": 0.0679965129657797
+  },
+  {
+    "sector": "2130",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 1483077.8360394,
+    "contribution": 0.0624690612361616
+  },
+  {
+    "sector": "2130",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 1021785.52780761,
+    "contribution": 0.0430388622604578
+  },
+  {
+    "sector": "2130",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 59414.5475139129,
+    "contribution": 0.00250261376495067
+  },
+  {
+    "sector": "2130",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 51219.7917806674,
+    "contribution": 0.00215744058167218
+  },
+  {
+    "sector": "2130",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 2118.03593025089,
+    "contribution": 8.92142765618934e-05
   },
   {
     "sector": "213111/US",
@@ -3087,74 +3227,74 @@
     "contribution": 0.000185133210207993
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 135162049.595909,
-    "contribution": 0.384220118012378
+    "total_impacts_sum": 119692798.305775,
+    "contribution": 0.364067981537835
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 81448080.5160599,
-    "contribution": 0.231529421174961
+    "total_impacts_sum": 80854185.3852974,
+    "contribution": 0.245933092790686
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 68136855.6958819,
-    "contribution": 0.193690098772048
+    "total_impacts_sum": 65018875.4824425,
+    "contribution": 0.197767042744547
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 24720630.9425778,
-    "contribution": 0.0702724157150187
+    "total_impacts_sum": 24037447.4101828,
+    "contribution": 0.0731143818493617
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 22594187.0031772,
-    "contribution": 0.0642276528264281
+    "total_impacts_sum": 20765015.431691,
+    "contribution": 0.0631606693286991
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 17390727.6091631,
-    "contribution": 0.0494359728510363
+    "total_impacts_sum": 16204771.6122343,
+    "contribution": 0.0492898367792868
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 1614708.72637883,
-    "contribution": 0.00459007228182539
+    "total_impacts_sum": 1512711.86755931,
+    "contribution": 0.00460119542751197
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 439564.420286806,
-    "contribution": 0.00124953338560316
+    "total_impacts_sum": 415110.208343321,
+    "contribution": 0.00126263516106642
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 199868.779393845,
-    "contribution": 0.000568159525808326
+    "total_impacts_sum": 188983.810732521,
+    "contribution": 0.00057482952600831
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Carbon dioxide",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 76180.4959247337,
-    "contribution": 0.000216555454892485
+    "total_impacts_sum": 75068.5013001012,
+    "contribution": 0.000228334854997533
   },
   {
     "sector": "311111/US",
@@ -5080,6 +5220,76 @@
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 280.449145560666,
     "contribution": 3.53980805999985e-05
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 15469251.2901335,
+    "contribution": 0.67205352590795
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 3117980.21343935,
+    "contribution": 0.135459018465208
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 1829171.57148621,
+    "contribution": 0.0794674015601487
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 1185955.99692877,
+    "contribution": 0.0515232375736253
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 683183.53239504,
+    "contribution": 0.0296805509961026
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 593895.130762556,
+    "contribution": 0.0258014631194923
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 101996.858819522,
+    "contribution": 0.00443120014767071
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 24454.2119434852,
+    "contribution": 0.00106240043888883
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 10884.9686613244,
+    "contribution": 0.000472891766449381
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Carbon dioxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 1111.99462463256,
+    "contribution": 4.83100244645743e-05
   },
   {
     "sector": "313100/US",

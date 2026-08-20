@@ -1,73 +1,73 @@
 [
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 443415.49025901,
-    "contribution": 0.688127300002173
+    "total_impacts_sum": 417153.122092396,
+    "contribution": 0.683583874744178
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 148917.178805738,
-    "contribution": 0.231101480274574
+    "total_impacts_sum": 142907.838583171,
+    "contribution": 0.23418138054439
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 43175.5947252829,
-    "contribution": 0.0670033097105886
+    "total_impacts_sum": 41906.8451175426,
+    "contribution": 0.0686722501801362
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 3102.56068528036,
-    "contribution": 0.00481479956013216
+    "total_impacts_sum": 2868.94871715931,
+    "contribution": 0.00470131224400549
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 1810.67480133775,
-    "contribution": 0.00280994865898508
+    "total_impacts_sum": 1669.14735295505,
+    "contribution": 0.00273521197523071
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 1555.61694104683,
-    "contribution": 0.002414129657164
+    "total_impacts_sum": 1443.16251676545,
+    "contribution": 0.00236489330380124
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 750.605020843843,
-    "contribution": 0.00116484835940134
+    "total_impacts_sum": 730.731552943817,
+    "contribution": 0.00119744113109748
   },
   {
-    "sector": "11",
-    "indicator": "Particulate matter 2.5",
-    "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 609.650108979152,
-    "contribution": 0.000946103356003201
-  },
-  {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 603.280998595468,
-    "contribution": 0.000936219265735672
+    "total_impacts_sum": 576.031788552103,
+    "contribution": 0.000943936461554397
   },
   {
-    "sector": "11",
+    "sector": "111-112",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 560.527256074295,
+    "contribution": 0.000918529368029325
+  },
+  {
+    "sector": "111-112",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 439.37771171085,
-    "contribution": 0.000681861155243159
+    "total_impacts_sum": 427.884982766635,
+    "contribution": 0.000701170047577103
   },
   {
     "sector": "111/112",
@@ -833,6 +833,76 @@
     "contribution": 0.000571046646205428
   },
   {
+    "sector": "113-115",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 26262.3681666142,
+    "contribution": 0.769349943024713
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 6009.34022256666,
+    "contribution": 0.176042218604074
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 1268.74960774028,
+    "contribution": 0.0371677234983127
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 233.611968121054,
+    "contribution": 0.00684360805634821
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 141.527448382707,
+    "contribution": 0.00414601355288615
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 112.454424281373,
+    "contribution": 0.0032943261005584
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 49.1228529048575,
+    "contribution": 0.00143904250537494
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 27.2492100433642,
+    "contribution": 0.000798259245370767
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 19.8734679000258,
+    "contribution": 0.000582188601560506
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 11.4927289442148,
+    "contribution": 0.000336676810801486
+  },
+  {
     "sector": "113000/US",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Direct",
@@ -1043,74 +1113,74 @@
     "contribution": 0.000239361069220694
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 88931.7563743924,
-    "contribution": 0.560071615222196
+    "total_impacts_sum": 86321.3917684376,
+    "contribution": 0.558567161829781
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 26909.4293947872,
-    "contribution": 0.16946935718213
+    "total_impacts_sum": 26527.8738397957,
+    "contribution": 0.171656166525006
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 23896.0537293671,
-    "contribution": 0.150491814794481
+    "total_impacts_sum": 23418.2024446125,
+    "contribution": 0.151534151693616
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 4635.95049635201,
-    "contribution": 0.0291961430700997
+    "total_impacts_sum": 4507.86346546787,
+    "contribution": 0.0291694150226063
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 4589.79909579989,
-    "contribution": 0.0289054922328085
+    "total_impacts_sum": 4341.27369165101,
+    "contribution": 0.0280914484230829
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 3523.29750416387,
-    "contribution": 0.0221889120884786
+    "total_impacts_sum": 3396.65250965313,
+    "contribution": 0.0219790079048825
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 2903.4698238041,
-    "contribution": 0.0182853808387744
+    "total_impacts_sum": 2783.42122786018,
+    "contribution": 0.0180109201620993
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 1754.80463103057,
-    "contribution": 0.0110513533541735
+    "total_impacts_sum": 1644.92225957341,
+    "contribution": 0.010643938184237
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 1430.9355469883,
-    "contribution": 0.00901170083391452
+    "total_impacts_sum": 1388.68825663953,
+    "contribution": 0.00898590305701148
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 210.904922896638,
-    "contribution": 0.0013282303829439
+    "total_impacts_sum": 210.467077853464,
+    "contribution": 0.0013618871976784
   },
   {
     "sector": "211/32411",
@@ -1256,71 +1326,71 @@
     "sector": "212",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 47432.4762270119,
-    "contribution": 0.689351527656854
-  },
-  {
-    "sector": "212",
-    "indicator": "Particulate matter 2.5",
-    "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 6559.41826581181,
-    "contribution": 0.0953301484922813
-  },
-  {
-    "sector": "212",
-    "indicator": "Particulate matter 2.5",
-    "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 5266.67409278246,
-    "contribution": 0.0765422790527393
+    "total_impacts_sum": 48988.1850850997,
+    "contribution": 0.765087489325029
   },
   {
     "sector": "212",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 4931.43556825059,
-    "contribution": 0.0716701490819269
+    "total_impacts_sum": 4912.99251895072,
+    "contribution": 0.076730115738457
   },
   {
     "sector": "212",
     "indicator": "Particulate matter 2.5",
-    "sector_purchased_detail": "Other",
-    "total_impacts_sum": 1783.85273113463,
-    "contribution": 0.0259253090527501
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 4523.82094350388,
+    "contribution": 0.0706521133985448
+  },
+  {
+    "sector": "212",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 1738.66778347034,
+    "contribution": 0.0271541590470197
   },
   {
     "sector": "212",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 1394.48561235801,
-    "contribution": 0.0202665107040534
+    "total_impacts_sum": 1262.58043175827,
+    "contribution": 0.0197187238295681
+  },
+  {
+    "sector": "212",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 1198.17997775916,
+    "contribution": 0.0187129306658495
   },
   {
     "sector": "212",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 706.291421608881,
-    "contribution": 0.0102647618084873
+    "total_impacts_sum": 719.13611893896,
+    "contribution": 0.0112313213230123
   },
   {
     "sector": "212",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 555.554772695603,
-    "contribution": 0.00807405730668295
+    "total_impacts_sum": 494.606068287109,
+    "contribution": 0.00772465675822327
   },
   {
     "sector": "212",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 143.765504416665,
-    "contribution": 0.00208939060275221
+    "total_impacts_sum": 180.064905452635,
+    "contribution": 0.00281221699046384
   },
   {
     "sector": "212",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 33.4311857210021,
-    "contribution": 0.000485866241472518
+    "total_impacts_sum": 11.2866707908384,
+    "contribution": 0.00017627292383255
   },
   {
     "sector": "2121/2122",
@@ -1734,6 +1804,76 @@
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 2.09602865198903,
     "contribution": 0.000140355238625145
+  },
+  {
+    "sector": "2130",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 5069.27588649036,
+    "contribution": 0.56178537703066
+  },
+  {
+    "sector": "2130",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 1220.70443403316,
+    "contribution": 0.135280445584725
+  },
+  {
+    "sector": "2130",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 1054.65574786695,
+    "contribution": 0.11687866082254
+  },
+  {
+    "sector": "2130",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 712.317747886207,
+    "contribution": 0.0789402083300177
+  },
+  {
+    "sector": "2130",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 513.460735591248,
+    "contribution": 0.0569025516451576
+  },
+  {
+    "sector": "2130",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 189.035735292639,
+    "contribution": 0.0209492468355609
+  },
+  {
+    "sector": "2130",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 138.491645243798,
+    "contribution": 0.0153478687846183
+  },
+  {
+    "sector": "2130",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 97.0376741270783,
+    "contribution": 0.0107538724595637
+  },
+  {
+    "sector": "2130",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 22.5823599733372,
+    "contribution": 0.00250261376495068
+  },
+  {
+    "sector": "2130",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 5.94788931280383,
+    "contribution": 0.0006591547422059
   },
   {
     "sector": "213111/US",
@@ -3087,74 +3227,74 @@
     "contribution": 0.000751127327248879
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 325038.457633263,
-    "contribution": 0.614707558798171
+    "total_impacts_sum": 320260.563262106,
+    "contribution": 0.62417859336874
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 168711.882418741,
-    "contribution": 0.319065227348825
+    "total_impacts_sum": 159308.77368145,
+    "contribution": 0.310488201403699
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 20334.5690304521,
-    "contribution": 0.0384564133700926
+    "total_impacts_sum": 19566.00204161,
+    "contribution": 0.0381335731998542
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 6776.03118321892,
-    "contribution": 0.0128147223479519
+    "total_impacts_sum": 6371.3574452403,
+    "contribution": 0.0124175917493932
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 4936.44347693297,
-    "contribution": 0.00933572335084848
+    "total_impacts_sum": 4810.15472540152,
+    "contribution": 0.00937485271307013
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 1478.33599983914,
-    "contribution": 0.00279580551840392
+    "total_impacts_sum": 1358.65343796471,
+    "contribution": 0.00264797633260378
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 701.887478187013,
-    "contribution": 0.00132739842973951
+    "total_impacts_sum": 662.839492590581,
+    "contribution": 0.00129185503797367
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 516.179379727227,
-    "contribution": 0.00097619022907155
+    "total_impacts_sum": 484.204801747356,
+    "contribution": 0.00094370118187079
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 199.501561160167,
-    "contribution": 0.000377294177834053
+    "total_impacts_sum": 196.853578210382,
+    "contribution": 0.000383661941687149
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Particulate matter 2.5",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 75.9663905989759,
-    "contribution": 0.000143666429061427
+    "total_impacts_sum": 71.829217282105,
+    "contribution": 0.000139993071108255
   },
   {
     "sector": "311111/US",
@@ -5080,6 +5220,76 @@
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.753948320766208,
     "contribution": 5.11607633476122e-05
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 9403.10873729053,
+    "contribution": 0.599763682968787
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 4777.89437115681,
+    "contribution": 0.304751078068098
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 768.566988842036,
+    "contribution": 0.0490219331409065
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 404.673737978616,
+    "contribution": 0.0258115287477508
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 126.288751531449,
+    "contribution": 0.0080551452559143
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 119.682561874439,
+    "contribution": 0.00763377900888091
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 39.0479855964329,
+    "contribution": 0.00249061925243427
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 31.9745779798713,
+    "contribution": 0.00203945218399188
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 4.13717331687095,
+    "contribution": 0.00026388361284884
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Particulate matter 2.5",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 2.64798294978533,
+    "contribution": 0.000168897760386788
   },
   {
     "sector": "313100/US",

@@ -1,73 +1,73 @@
 [
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 437.833450616661,
-    "contribution": 0.599129269936482
+    "total_impacts_sum": 432.201375579865,
+    "contribution": 0.603553871892863
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 146.017936242268,
-    "contribution": 0.199810268985266
+    "total_impacts_sum": 141.824982024385,
+    "contribution": 0.198053550655892
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 130.37045968163,
-    "contribution": 0.178398334390229
+    "total_impacts_sum": 126.734299648619,
+    "contribution": 0.176979948645304
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 4.90275616342404,
-    "contribution": 0.00670890887101412
+    "total_impacts_sum": 4.45694424274821,
+    "contribution": 0.00622396435206212
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 3.6658227529524,
-    "contribution": 0.00501629490985571
+    "total_impacts_sum": 3.46516188929802,
+    "contribution": 0.00483897551740888
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 3.22991302685394,
-    "contribution": 0.0044197980556575
+    "total_impacts_sum": 2.93560414232349,
+    "contribution": 0.0040994669303561
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 2.92680207456846,
-    "contribution": 0.00400502242968198
+    "total_impacts_sum": 2.74699024253166,
+    "contribution": 0.00383607431768928
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 1.5019802510965,
-    "contribution": 0.00205530283268908
+    "total_impacts_sum": 1.41703585690566,
+    "contribution": 0.00197884024986957
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 0.174780810959885,
-    "contribution": 0.000239169253792318
+    "total_impacts_sum": 0.162691134700374,
+    "contribution": 0.000227192391831963
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 0.15904053675683,
-    "contribution": 0.000217630335332355
+    "total_impacts_sum": 0.149029960143752,
+    "contribution": 0.000208115046723583
   },
   {
     "sector": "111/112",
@@ -840,6 +840,76 @@
     "contribution": 3.72386116611156e-05
   },
   {
+    "sector": "113-115",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 5.63207503679599,
+    "contribution": 0.383425774553383
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 4.1929542178838,
+    "contribution": 0.285451935237986
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 3.6361600330117,
+    "contribution": 0.247545969815542
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 0.445811920675829,
+    "contribution": 0.0303504090186099
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 0.294308884530444,
+    "contribution": 0.0200362408653604
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 0.200660863654381,
+    "contribution": 0.0136607816065251
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 0.179811832036805,
+    "contribution": 0.0122414013524572
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 0.0849443941908361,
+    "contribution": 0.00578292546242739
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 0.0120896762595112,
+    "contribution": 0.00082305250793317
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.0100105766130784,
+    "contribution": 0.000681509579776324
+  },
+  {
     "sector": "113000/US",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Direct",
@@ -1050,74 +1120,74 @@
     "contribution": 0.000604740036536401
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 117.716438102695,
-    "contribution": 0.416086086191842
+    "total_impacts_sum": 117.561369184613,
+    "contribution": 0.41778088713667
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 102.41880826256,
-    "contribution": 0.362014360689578
+    "total_impacts_sum": 101.878628860909,
+    "contribution": 0.362048726048259
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 32.0591601159188,
-    "contribution": 0.113317822678198
+    "total_impacts_sum": 31.9553644991147,
+    "contribution": 0.113560607721836
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 8.29115593668576,
-    "contribution": 0.029306311669847
+    "total_impacts_sum": 8.08229366495293,
+    "contribution": 0.0287222566465743
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 8.01817602119209,
-    "contribution": 0.0283414239576683
+    "total_impacts_sum": 7.89183308279925,
+    "contribution": 0.0280454119353513
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 5.0580681666276,
-    "contribution": 0.0178784868202315
+    "total_impacts_sum": 4.99516802680134,
+    "contribution": 0.0177514581882475
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 4.22919113573756,
-    "contribution": 0.0149486988885199
+    "total_impacts_sum": 4.10088758970428,
+    "contribution": 0.0145734306018839
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 3.91336768877582,
-    "contribution": 0.0138323744049393
+    "total_impacts_sum": 3.75386779506981,
+    "contribution": 0.0133402173562241
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 0.653161328185671,
-    "contribution": 0.00230869490342164
+    "total_impacts_sum": 0.644724629466822,
+    "contribution": 0.00229117463947301
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 0.556134642979147,
-    "contribution": 0.00196573979575409
+    "total_impacts_sum": 0.530662678458335,
+    "contribution": 0.00188582972548147
   },
   {
     "sector": "211/32411",
@@ -1262,72 +1332,72 @@
   {
     "sector": "212",
     "indicator": "Eutrophication Potential",
-    "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 2163.00017852684,
-    "contribution": 0.988811147806645
-  },
-  {
-    "sector": "212",
-    "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 12.9550899223084,
-    "contribution": 0.00592239310157647
+    "total_impacts_sum": 6.25018987491567,
+    "contribution": 0.386804115187198
   },
   {
     "sector": "212",
     "indicator": "Eutrophication Potential",
-    "sector_purchased_detail": "Other",
-    "total_impacts_sum": 5.2534935186032,
-    "contribution": 0.00240162391464192
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 3.97449398628339,
+    "contribution": 0.245968628225383
   },
   {
     "sector": "212",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 1.21567143196112,
-    "contribution": 0.000555741731289139
+    "total_impacts_sum": 1.12814772994047,
+    "contribution": 0.0698174284642765
   },
   {
     "sector": "212",
     "indicator": "Eutrophication Potential",
-    "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 1.16565243132228,
-    "contribution": 0.00053287564652186
-  },
-  {
-    "sector": "212",
-    "indicator": "Eutrophication Potential",
-    "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 1.08434673343793,
-    "contribution": 0.000495706911518335
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 1.07056613842173,
+    "contribution": 0.0662538892751925
   },
   {
     "sector": "212",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 1.04415081171687,
-    "contribution": 0.000477331427369637
+    "total_impacts_sum": 0.903269354122754,
+    "contribution": 0.0559004302732287
+  },
+  {
+    "sector": "212",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 0.877169059856957,
+    "contribution": 0.0542851671481635
+  },
+  {
+    "sector": "212",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 0.806352244920812,
+    "contribution": 0.0499025426215574
   },
   {
     "sector": "212",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 0.782401840818649,
-    "contribution": 0.000357673415816743
-  },
-  {
-    "sector": "212",
-    "indicator": "Eutrophication Potential",
-    "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 0.564162044039291,
-    "contribution": 0.000257905535031148
+    "total_impacts_sum": 0.588185387571581,
+    "contribution": 0.0364008986860954
   },
   {
     "sector": "212",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 0.41037152203909,
-    "contribution": 0.000187600509589878
+    "total_impacts_sum": 0.383966867162647,
+    "contribution": 0.0237624723866572
+  },
+  {
+    "sector": "212",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.17619963471914,
+    "contribution": 0.0109044277322478
   },
   {
     "sector": "2121/2122",
@@ -1748,6 +1818,76 @@
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00535954135111906,
     "contribution": 0.00182325004916583
+  },
+  {
+    "sector": "2130",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 2159.18075345864,
+    "contribution": 0.993715546206812
+  },
+  {
+    "sector": "2130",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 7.24507944904375,
+    "contribution": 0.00333438878171075
+  },
+  {
+    "sector": "2130",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 4.30927031857432,
+    "contribution": 0.00198324707253691
+  },
+  {
+    "sector": "2130",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 0.463095803205568,
+    "contribution": 0.000213129678138972
+  },
+  {
+    "sector": "2130",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.413434373840963,
+    "contribution": 0.000190274095378052
+  },
+  {
+    "sector": "2130",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 0.34974372932694,
+    "contribution": 0.000160961874295989
+  },
+  {
+    "sector": "2130",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 0.335481219614257,
+    "contribution": 0.000154397867273086
+  },
+  {
+    "sector": "2130",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 0.257116593073327,
+    "contribution": 0.000118332268067612
+  },
+  {
+    "sector": "2130",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 0.247023595726653,
+    "contribution": 0.000113687187587366
+  },
+  {
+    "sector": "2130",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 0.0348413535952915,
+    "contribution": 1.60349681994296e-05
   },
   {
     "sector": "213111/US",
@@ -3136,74 +3276,74 @@
     "contribution": 0.00252292858418312
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 435.741222874739,
-    "contribution": 0.684904137732899
+    "total_impacts_sum": 430.891277462418,
+    "contribution": 0.690606547892903
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 136.060045835744,
-    "contribution": 0.213861079652355
+    "total_impacts_sum": 131.646236770088,
+    "contribution": 0.210994647314048
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 16.396112700062,
-    "contribution": 0.0257716388569359
+    "total_impacts_sum": 15.3262493899195,
+    "contribution": 0.0245639880334807
   },
   {
-    "sector": "31",
-    "indicator": "Eutrophication Potential",
-    "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 13.403931554966,
-    "contribution": 0.0210684867576181
-  },
-  {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 13.1081612876564,
-    "contribution": 0.0206035909220526
+    "total_impacts_sum": 12.7890470192621,
+    "contribution": 0.0204975131193807
   },
   {
-    "sector": "31",
+    "sector": "311-312",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 12.7565218706741,
+    "contribution": 0.0204453837731607
+  },
+  {
+    "sector": "311-312",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 11.4718394755432,
-    "contribution": 0.0180315974522011
+    "total_impacts_sum": 11.1275591026464,
+    "contribution": 0.0178345805085904
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 4.79479699499609,
-    "contribution": 0.00753652885948347
+    "total_impacts_sum": 4.51177663287014,
+    "contribution": 0.00723120343405437
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 4.70447287432562,
-    "contribution": 0.00739455614554983
+    "total_impacts_sum": 4.3846480179259,
+    "contribution": 0.00702744935849711
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 0.311486710810834,
-    "contribution": 0.00048959916088655
+    "total_impacts_sum": 0.29530718767122,
+    "contribution": 0.00047330054729031
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Eutrophication Potential",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 0.21553725078646,
-    "contribution": 0.000338784460018042
+    "total_impacts_sum": 0.203018632893558,
+    "contribution": 0.000325386018594413
   },
   {
     "sector": "311111/US",
@@ -5234,6 +5374,76 @@
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.00589099619900885,
     "contribution": 0.000904151049302239
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 4.84994541232143,
+    "contribution": 0.395076495032942
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 4.4138090656561,
+    "contribution": 0.359548833472203
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 1.06986331014249,
+    "contribution": 0.0871510523936232
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 0.647409684291834,
+    "contribution": 0.0527379851060991
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 0.344280372896801,
+    "contribution": 0.0280450750408751
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 0.319824856399716,
+    "contribution": 0.0260529289607681
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 0.319114268394321,
+    "contribution": 0.0259950444703839
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 0.283020362125953,
+    "contribution": 0.0230548352993019
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.0161795231396137,
+    "contribution": 0.00131798376061378
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Eutrophication Potential",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 0.0125186178929017,
+    "contribution": 0.00101976646318932
   },
   {
     "sector": "313100/US",

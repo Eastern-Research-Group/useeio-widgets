@@ -30,6 +30,7 @@ import { getLabel } from "../util";
 import {
   fileNames,
   filterPickableSectors,
+  getIndicatorSelectGroups,
   SECTOR_PURCHASES_FILE_SLUG,
 } from "../util/util";
 
@@ -107,10 +108,12 @@ export class SmartSectorEEIO extends Widget {
       this._chartConfig.modelOne.model,
       this.uniqueSortedMappingGroupNoDuplicates,
       nameWithNoSpace,
+      graphName,
       this.toggleImpactSelection,
       this.toggleGroupSelection,
       this.perspective,
       this.fileNameTitle,
+      this.selectorName,
     );
     this.chartOptions = option;
     this.chart = new ApexCharts(
@@ -137,6 +140,13 @@ export class SmartSectorEEIO extends Widget {
 
   getFilesNames(): string[] {
     return fileNames.filter((slug) => slug !== SECTOR_PURCHASES_FILE_SLUG);
+  }
+
+  /** Grouped indicator options for the stacked-page `<select>` (excludes sector-purchases). */
+  getIndicatorSelectGroups(): { id: string; label: string; slugs: string[] }[] {
+    return getIndicatorSelectGroups({
+      excludeSlugs: [SECTOR_PURCHASES_FILE_SLUG],
+    });
   }
 
   async selectiveGraph(
@@ -237,10 +247,12 @@ export class SmartSectorEEIO extends Widget {
       this._chartConfig.modelOne.model,
       this.uniqueSortedMappingGroupNoDuplicates,
       nameWithNoSpace,
+      graphName,
       this.toggleImpactSelection,
       this.toggleGroupSelection,
       this.perspective,
       this.fileNameTitle,
+      this.selectorName,
     );
     this.chartOptions = option;
 
@@ -276,10 +288,12 @@ export class SmartSectorEEIO extends Widget {
       this._chartConfig.modelOne.model,
       this.uniqueSortedMappingGroupNoDuplicates,
       nameWithNoSpace,
+      this.graphName,
       this.toggleImpactSelection,
       this.toggleGroupSelection,
       this.perspective,
       this.fileNameTitle,
+      this.selectorName,
     );
     this.chartOptions = option;
     await this.chart.updateOptions(option, false, true);

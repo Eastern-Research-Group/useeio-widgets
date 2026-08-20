@@ -1,73 +1,73 @@
 [
   {
     "emissions_source": "Direct",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 415950.028464884,
-    "total_impact": 157.033444766374
+    "impact_per_purchase": 474483.609429075,
+    "total_impact": 151.696913498265
   },
   {
     "emissions_source": "1111B0/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 61979.375466297,
-    "total_impact": 23.3990483661255
+    "impact_per_purchase": 72263.175798577,
+    "total_impact": 23.1032231891358
   },
   {
     "emissions_source": "1121A0/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 21340.6241651135,
-    "total_impact": 8.05671714575977
+    "impact_per_purchase": 24979.6306842706,
+    "total_impact": 7.98622502406339
   },
   {
     "emissions_source": "111900/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 20513.1949862732,
-    "total_impact": 7.74433814501048
+    "impact_per_purchase": 23331.1520641751,
+    "total_impact": 7.45919076267499
   },
   {
     "emissions_source": "1111A0/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 13002.6924794512,
-    "total_impact": 4.90890119378469
+    "impact_per_purchase": 15208.7330361053,
+    "total_impact": 4.86237630541618
   },
   {
     "emissions_source": "112A00/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 5415.80752200397,
-    "total_impact": 2.04462760709661
+    "impact_per_purchase": 5763.89023326825,
+    "total_impact": 1.84277041557173
   },
   {
     "emissions_source": "221100/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 4868.97523047877,
-    "total_impact": 1.83818223488541
+    "impact_per_purchase": 5424.37433269465,
+    "total_impact": 1.73422395964131
   },
   {
     "emissions_source": "221300/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 2657.73738209977,
-    "total_impact": 1.00337451096178
+    "impact_per_purchase": 3048.27444864039,
+    "total_impact": 0.974562273944036
   },
   {
-    "emissions_source": "113000/US",
-    "sector_code": "11",
+    "emissions_source": "115000/US",
+    "sector_code": "111-112",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 2478.17984961577,
-    "total_impact": 0.935586228884302
+    "impact_per_purchase": 2422.3738210663,
+    "total_impact": 0.774455902569349
   },
   {
     "emissions_source": "All others",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 5123.31461126469,
-    "total_impact": 1.93420287768225
+    "impact_per_purchase": 3335.98965088818,
+    "total_impact": 1.06654755495308
   },
   {
     "emissions_source": "Direct",
@@ -841,6 +841,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "113-115",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 92295.4331099118,
+    "total_impact": 5.33653126810899
+  },
+  {
+    "emissions_source": "113000/US",
+    "sector_code": "113-115",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 14971.3945680213,
+    "total_impact": 0.865647546659194
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "113-115",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 5116.30335574811,
+    "total_impact": 0.295825176989701
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "113-115",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 4931.630647437,
+    "total_impact": 0.285147382335495
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "113-115",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 3491.12484910847,
+    "total_impact": 0.201857191524885
+  },
+  {
+    "emissions_source": "115000/US",
+    "sector_code": "113-115",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 2225.29546741206,
+    "total_impact": 0.128666808773557
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "113-115",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1797.96080205747,
+    "total_impact": 0.103958275244104
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "113-115",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1219.16289363545,
+    "total_impact": 0.0704921216963777
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "113-115",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 804.649032607213,
+    "total_impact": 0.0465248883685113
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "113-115",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1094.49014250941,
+    "total_impact": 0.0632835306291149
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "113000/US",
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 245129.176270604,
@@ -1051,73 +1121,73 @@
   },
   {
     "emissions_source": "Direct",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 4294.26958433736,
-    "total_impact": 3.91035456148164
+    "impact_per_purchase": 4224.13542588576,
+    "total_impact": 3.75625048173674
   },
   {
     "emissions_source": "221100/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 5259.54486769466,
-    "total_impact": 4.78933258864808
+    "impact_per_purchase": 5166.38306181563,
+    "total_impact": 4.59413037419656
   },
   {
     "emissions_source": "111900/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 1787.34090338875,
-    "total_impact": 1.62754957909039
+    "impact_per_purchase": 1801.92846514925,
+    "total_impact": 1.60233846287083
   },
   {
     "emissions_source": "1111B0/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 1545.34540805808,
-    "total_impact": 1.40718889366073
+    "impact_per_purchase": 1569.64183595834,
+    "total_impact": 1.39578098427948
   },
   {
     "emissions_source": "221300/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 772.875861577613,
-    "total_impact": 0.7037794417477
+    "impact_per_purchase": 787.269157945301,
+    "total_impact": 0.700067553626887
   },
   {
     "emissions_source": "1111A0/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 322.000708941379,
-    "total_impact": 0.293213296529342
+    "impact_per_purchase": 326.821312681114,
+    "total_impact": 0.290621059561046
   },
   {
     "emissions_source": "486000/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 228.683185010813,
-    "total_impact": 0.208238518350769
+    "impact_per_purchase": 233.640891845315,
+    "total_impact": 0.207761736796907
   },
   {
     "emissions_source": "21311A/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 171.209156842085,
-    "total_impact": 0.155902766297375
+    "impact_per_purchase": 174.511497794707,
+    "total_impact": 0.155181790252976
   },
   {
-    "emissions_source": "113000/US",
-    "sector_code": "211",
+    "emissions_source": "221200/US",
+    "sector_code": "211 & 324",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 108.139448561448,
-    "total_impact": 0.0984715974750845
+    "impact_per_purchase": 108.781431121138,
+    "total_impact": 0.0967322923760442
   },
   {
     "emissions_source": "All others",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 893.708630226076,
-    "total_impact": 0.813809554851063
+    "impact_per_purchase": 854.416991658577,
+    "total_impact": 0.759777780052732
   },
   {
     "emissions_source": "Direct",
@@ -1263,71 +1333,71 @@
     "emissions_source": "Direct",
     "sector_code": "212",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 73995.2359606964,
-    "total_impact": 16.1853175001946
+    "impact_per_purchase": 9591.6259126926,
+    "total_impact": 1.50242971213828
   },
   {
     "emissions_source": "221100/US",
     "sector_code": "212",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 6497.42566620359,
-    "total_impact": 1.48778629283393
+    "impact_per_purchase": 8273.13919761843,
+    "total_impact": 1.38067135968597
   },
   {
     "emissions_source": "111900/US",
     "sector_code": "212",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 1368.23034389114,
-    "total_impact": 0.313298597884554
+    "impact_per_purchase": 1430.48135569998,
+    "total_impact": 0.238727355022416
   },
   {
     "emissions_source": "1111B0/US",
     "sector_code": "212",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 745.296125289282,
-    "total_impact": 0.170658567911794
-  },
-  {
-    "emissions_source": "221300/US",
-    "sector_code": "212",
-    "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 388.774755204554,
-    "total_impact": 0.0890219883240569
-  },
-  {
-    "emissions_source": "230301/US",
-    "sector_code": "212",
-    "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 303.978708171072,
-    "total_impact": 0.0696053142527967
-  },
-  {
-    "emissions_source": "113000/US",
-    "sector_code": "212",
-    "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 277.468478648385,
-    "total_impact": 0.0635349783797922
+    "impact_per_purchase": 769.878839712095,
+    "total_impact": 0.12848202345305
   },
   {
     "emissions_source": "2122A0/US",
     "sector_code": "212",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 271.816884031275,
-    "total_impact": 0.0622408712309061
+    "impact_per_purchase": 367.471025018035,
+    "total_impact": 0.061325780654446
   },
   {
-    "emissions_source": "S00203/US",
+    "emissions_source": "113000/US",
     "sector_code": "212",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 148.459975544671,
-    "total_impact": 0.0339944968972425
+    "impact_per_purchase": 336.92778775351,
+    "total_impact": 0.056228541031624
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "212",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 257.353503405889,
+    "total_impact": 0.0429487045944594
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "212",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 154.760633795859,
+    "total_impact": 0.0258273878372916
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "212",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 133.633675664378,
+    "total_impact": 0.0223015936601773
   },
   {
     "emissions_source": "All others",
     "sector_code": "212",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 1336.28748143588,
-    "total_impact": 0.305984292903426
+    "impact_per_purchase": 1318.02010186449,
+    "total_impact": 0.219959142795341
   },
   {
     "emissions_source": "Direct",
@@ -1748,6 +1818,76 @@
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 1189.72774925718,
     "total_impact": 0.0175005639336483
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "2130",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 177778.337855431,
+    "total_impact": 14.8369918678012
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "2130",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 3622.3946527913,
+    "total_impact": 0.302317147599483
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "2130",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1195.60232309182,
+    "total_impact": 0.0997823590816955
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "2130",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 642.054347905823,
+    "total_impact": 0.0535844538399934
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "2130",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 605.435330931535,
+    "total_impact": 0.0505283106472485
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "2130",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 596.530966672597,
+    "total_impact": 0.0497851718504102
+  },
+  {
+    "emissions_source": "S00203/US",
+    "sector_code": "2130",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 339.503044251987,
+    "total_impact": 0.0283341827099133
+  },
+  {
+    "emissions_source": "113000/US",
+    "sector_code": "2130",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 299.927342037465,
+    "total_impact": 0.0250312810234498
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "2130",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 123.090543303096,
+    "total_impact": 0.0102728679546797
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "2130",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 1139.64088684444,
+    "total_impact": 0.0951119398139214
   },
   {
     "emissions_source": "Direct",
@@ -3151,73 +3291,73 @@
   },
   {
     "emissions_source": "Direct",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 1820.22986036935,
-    "total_impact": 1.66178028624405
+    "impact_per_purchase": 1651.89459115831,
+    "total_impact": 1.41542432153279
   },
   {
     "emissions_source": "1111B0/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 51553.4531280301,
-    "total_impact": 47.0657656822436
+    "impact_per_purchase": 54621.108625345,
+    "total_impact": 46.8020453794126
   },
   {
     "emissions_source": "111900/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 40310.34716716,
-    "total_impact": 36.8013632302722
+    "impact_per_purchase": 38050.5176433759,
+    "total_impact": 32.6035501342622
   },
   {
     "emissions_source": "1121A0/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 18549.0500935287,
-    "total_impact": 16.9343699084931
+    "impact_per_purchase": 19564.1281971491,
+    "total_impact": 16.7635047829613
   },
   {
     "emissions_source": "1111A0/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 18150.6571966125,
-    "total_impact": 16.5706567991275
+    "impact_per_purchase": 19293.5774514584,
+    "total_impact": 16.5316836318363
   },
   {
     "emissions_source": "112A00/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 13031.1030184117,
-    "total_impact": 11.8967557754589
+    "impact_per_purchase": 13606.4063478729,
+    "total_impact": 11.6586364387409
   },
   {
     "emissions_source": "111300/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 12046.3889574968,
-    "total_impact": 10.9977602971166
+    "impact_per_purchase": 12832.3897052145,
+    "total_impact": 10.9954210089225
   },
   {
     "emissions_source": "221100/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 6306.4933616217,
-    "total_impact": 5.75751808705377
+    "impact_per_purchase": 6262.60117461596,
+    "total_impact": 5.36610390642154
   },
   {
     "emissions_source": "111200/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 1544.80132262361,
-    "total_impact": 1.41032758553842
+    "impact_per_purchase": 1645.71429326318,
+    "total_impact": 1.41012873911372
   },
   {
     "emissions_source": "All others",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Freshwater withdrawals",
-    "impact_per_purchase": 4500.20442491624,
-    "total_impact": 4.10846517806084
+    "impact_per_purchase": 4573.7111188942,
+    "total_impact": 3.91898005599037
   },
   {
     "emissions_source": "Direct",
@@ -5248,6 +5388,76 @@
     "indicator": "Freshwater withdrawals",
     "impact_per_purchase": 681.87993107941,
     "total_impact": 0.0439032724417152
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "313-316",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 4391.2363327165,
+    "total_impact": 0.246355964711265
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "313-316",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 74825.0175584616,
+    "total_impact": 4.19781309600997
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "313-316",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 6976.86444550754,
+    "total_impact": 0.391414180632235
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "313-316",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 4700.75151954911,
+    "total_impact": 0.263720302830995
+  },
+  {
+    "emissions_source": "112A00/US",
+    "sector_code": "313-316",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 4244.42040258216,
+    "total_impact": 0.238119336717969
+  },
+  {
+    "emissions_source": "1121A0/US",
+    "sector_code": "313-316",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 3045.63012350349,
+    "total_impact": 0.170865125531796
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "313-316",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 694.687414655822,
+    "total_impact": 0.038973167291235
+  },
+  {
+    "emissions_source": "113000/US",
+    "sector_code": "313-316",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 560.38034185017,
+    "total_impact": 0.031438307861769
+  },
+  {
+    "emissions_source": "221300/US",
+    "sector_code": "313-316",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 540.622516775672,
+    "total_impact": 0.0303298596508267
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "313-316",
+    "indicator": "Freshwater withdrawals",
+    "impact_per_purchase": 2321.76590805926,
+    "total_impact": 0.130255089176634
   },
   {
     "emissions_source": "Direct",

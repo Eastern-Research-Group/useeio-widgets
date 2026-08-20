@@ -1,73 +1,73 @@
 [
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 33.5290837333691,
-    "contribution": 0.368331593348205
+    "total_impacts_sum": 29.3394074148508,
+    "contribution": 0.515080554775726
   },
   {
-    "sector": "11",
-    "indicator": "Ozone Depletion",
-    "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 28.3297536545863,
-    "contribution": 0.311214687097785
-  },
-  {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 23.6694453910137,
-    "contribution": 0.260019170337894
+    "total_impacts_sum": 22.3951000245546,
+    "contribution": 0.393166786970163
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 3.63733832689648,
-    "contribution": 0.0399577463000851
+    "total_impacts_sum": 3.435107028036,
+    "contribution": 0.0603064952436352
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 0.971527708496371,
-    "contribution": 0.0106726551700028
+    "total_impacts_sum": 0.894068477000451,
+    "contribution": 0.0156962027429286
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 0.36938658128774,
-    "contribution": 0.00405787253624685
+    "total_impacts_sum": 0.359724598576237,
+    "contribution": 0.00631529952807895
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 0.282219995967003,
-    "contribution": 0.00310030961823736
+    "total_impacts_sum": 0.257785502805296,
+    "contribution": 0.00452566399588839
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 0.113004102330136,
-    "contribution": 0.00124139929969867
+    "total_impacts_sum": 0.107899892969449,
+    "contribution": 0.00189428286485478
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 0.0829322638584466,
-    "contribution": 0.000911047051863052
+    "total_impacts_sum": 0.0762472039369603,
+    "contribution": 0.00133859050214042
   },
   {
-    "sector": "11",
+    "sector": "111-112",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 0.0517724749699505,
+    "contribution": 0.000908913897018124
+  },
+  {
+    "sector": "111-112",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 0.0449248672126982,
-    "contribution": 0.00049351923998273
+    "total_impacts_sum": 0.0437008760762355,
+    "contribution": 0.000767209479566345
   },
   {
     "sector": "111/112",
@@ -833,6 +833,76 @@
     "contribution": 0.000708388045939264
   },
   {
+    "sector": "113-115",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 28.2779811796164,
+    "contribution": 0.830025671012924
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 4.18967631851831,
+    "contribution": 0.1229769153433
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 1.27434536645911,
+    "contribution": 0.0374050524038075
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 0.202231298860482,
+    "contribution": 0.00593596722730274
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 0.0774592314959201,
+    "contribution": 0.00227361176139727
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 0.0244344931617074,
+    "contribution": 0.000717210201590565
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 0.00966198271150344,
+    "contribution": 0.000283602058877235
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.00668505992148632,
+    "contribution": 0.000196222329728864
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 0.0051042093606872,
+    "contribution": 0.00014982062448817
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 0.00122399113646264,
+    "contribution": 3.59270365838066e-05
+  },
+  {
     "sector": "113000/US",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Agriculture",
@@ -1043,74 +1113,74 @@
     "contribution": 1.38164267409974e-05
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 50.7691065098236,
-    "contribution": 0.57900883339041
+    "total_impacts_sum": 49.9118884863585,
+    "contribution": 0.577155394231762
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 17.5847154536348,
-    "contribution": 0.200549237129893
+    "total_impacts_sum": 17.4443258990542,
+    "contribution": 0.201717207998004
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 12.5654475888285,
-    "contribution": 0.143305755204262
+    "total_impacts_sum": 12.5651761272814,
+    "contribution": 0.145297230805336
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 3.29387704738703,
-    "contribution": 0.0375658355572986
+    "total_impacts_sum": 3.18604898264409,
+    "contribution": 0.0368418309221505
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 1.28737534142899,
-    "contribution": 0.0146821905252981
+    "total_impacts_sum": 1.27384386146588,
+    "contribution": 0.0147300749049997
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 0.948486077567295,
-    "contribution": 0.0108172440882532
+    "total_impacts_sum": 0.928252821804174,
+    "contribution": 0.0107338379605003
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 0.63615976713522,
-    "contribution": 0.00725524142418394
+    "total_impacts_sum": 0.602353441094326,
+    "contribution": 0.00696530522696353
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 0.328702748066074,
-    "contribution": 0.00374877179792661
+    "total_impacts_sum": 0.308120036564581,
+    "contribution": 0.00356294154693705
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 0.177308603438702,
-    "contribution": 0.00202215982680847
+    "total_impacts_sum": 0.17694050537792,
+    "contribution": 0.00204604895214236
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 0.0916049275597215,
-    "contribution": 0.00104473105566481
+    "total_impacts_sum": 0.0821661823944311,
+    "contribution": 0.000950127451205094
   },
   {
     "sector": "211/32411",
@@ -1256,71 +1326,71 @@
     "sector": "212",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 9.50283069876513,
-    "contribution": 0.52763301318949
-  },
-  {
-    "sector": "212",
-    "indicator": "Ozone Depletion",
-    "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 4.49818532544547,
-    "contribution": 0.249756220265816
+    "total_impacts_sum": 8.50905245766613,
+    "contribution": 0.731780790601996
   },
   {
     "sector": "212",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 1.26330710642476,
-    "contribution": 0.0701435768221366
-  },
-  {
-    "sector": "212",
-    "indicator": "Ozone Depletion",
-    "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 1.00898977698076,
-    "contribution": 0.0560229191892189
-  },
-  {
-    "sector": "212",
-    "indicator": "Ozone Depletion",
-    "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 0.754227707975274,
-    "contribution": 0.0418775679379103
+    "total_impacts_sum": 0.887237743568714,
+    "contribution": 0.0763026836032369
   },
   {
     "sector": "212",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 0.669726884633013,
-    "contribution": 0.0371857634166676
+    "total_impacts_sum": 0.674628842024409,
+    "contribution": 0.0580182611208085
   },
   {
     "sector": "212",
     "indicator": "Ozone Depletion",
-    "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 0.136411093397622,
-    "contribution": 0.00757405856459308
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 0.604311032921457,
+    "contribution": 0.0519709107025609
+  },
+  {
+    "sector": "212",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 0.446966058188917,
+    "contribution": 0.0384392007289911
+  },
+  {
+    "sector": "212",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.236506888163373,
+    "contribution": 0.0203396557330052
   },
   {
     "sector": "212",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 0.132299588861917,
-    "contribution": 0.0073457723206639
+    "total_impacts_sum": 0.134705604458078,
+    "contribution": 0.0115847180657632
   },
   {
     "sector": "212",
     "indicator": "Ozone Depletion",
-    "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 0.028105730155933,
-    "contribution": 0.0015605361770775
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 0.104287306606346,
+    "contribution": 0.00896873630264072
   },
   {
     "sector": "212",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 0.0162195771312695,
-    "contribution": 0.000900572116426648
+    "total_impacts_sum": 0.0206860774533833,
+    "contribution": 0.00177900820198291
+  },
+  {
+    "sector": "212",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 0.00948874880638379,
+    "contribution": 0.000816034939014091
   },
   {
     "sector": "2121/2122",
@@ -1734,6 +1804,76 @@
     "sector_purchased_detail": "Utilities",
     "total_impacts_sum": 0.00176213958378686,
     "contribution": 0.00182994003323663
+  },
+  {
+    "sector": "2130",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 4.05149072880359,
+    "contribution": 0.534067635290286
+  },
+  {
+    "sector": "2130",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 1.85099626456408,
+    "contribution": 0.243998385808675
+  },
+  {
+    "sector": "2130",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.806289214858277,
+    "contribution": 0.106285069660417
+  },
+  {
+    "sector": "2130",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 0.483897427598985,
+    "contribution": 0.063787374124674
+  },
+  {
+    "sector": "2130",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 0.290306229634436,
+    "contribution": 0.0382681763205432
+  },
+  {
+    "sector": "2130",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 0.052357042554397,
+    "contribution": 0.00690170699614977
+  },
+  {
+    "sector": "2130",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 0.0189850794103312,
+    "contribution": 0.00250261376495067
+  },
+  {
+    "sector": "2130",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 0.0181766959053319,
+    "contribution": 0.00239605262589799
+  },
+  {
+    "sector": "2130",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 0.00862952257171176,
+    "contribution": 0.00113754393680156
+  },
+  {
+    "sector": "2130",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 0.00497224484317658,
+    "contribution": 0.000655441471604653
   },
   {
     "sector": "213111/US",
@@ -3087,74 +3227,74 @@
     "contribution": 1.42698927165438e-06
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 155.43077377512,
-    "contribution": 0.702418244659727
+    "total_impacts_sum": 60.1508664070515,
+    "contribution": 0.48074022951586
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 32.6102873704356,
-    "contribution": 0.147371464840879
+    "total_impacts_sum": 32.3326448092304,
+    "contribution": 0.258410294230143
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 25.4475367586057,
-    "contribution": 0.115001770027571
+    "total_impacts_sum": 25.2673446325825,
+    "contribution": 0.201942711443638
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 6.21480976648864,
-    "contribution": 0.0280857880395488
+    "total_impacts_sum": 5.86678012093793,
+    "contribution": 0.0468887214819594
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 0.912007354062637,
-    "contribution": 0.00412151718220413
+    "total_impacts_sum": 0.886207381144471,
+    "contribution": 0.00708278309620654
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 0.276915787159025,
-    "contribution": 0.00125142979353774
+    "total_impacts_sum": 0.254497344508454,
+    "contribution": 0.00203400414853922
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 0.214862952421085,
-    "contribution": 0.000971002422598655
+    "total_impacts_sum": 0.199639409451476,
+    "contribution": 0.00159556630274676
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 0.0954761023842712,
-    "contribution": 0.000431472832662738
+    "total_impacts_sum": 0.0901644967686041,
+    "contribution": 0.000720616401057181
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 0.0638652452507456,
-    "contribution": 0.000288617963960574
+    "total_impacts_sum": 0.060387107268363,
+    "contribution": 0.000482628323448196
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Ozone Depletion",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 0.0129873902468408,
-    "contribution": 5.86922373113545e-05
+    "total_impacts_sum": 0.0128180637344793,
+    "contribution": 0.000102445056401384
   },
   {
     "sector": "311111/US",
@@ -5080,6 +5220,76 @@
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 4.77343763220413e-05,
     "contribution": 5.40287881548699e-06
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 95.2799073680683,
+    "contribution": 0.990866451217843
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 0.348029645550708,
+    "contribution": 0.00361934545625939
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 0.277642561205185,
+    "contribution": 0.0028873527160944
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 0.18019212602327,
+    "contribution": 0.00187391379129229
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 0.0257999729181663,
+    "contribution": 0.000268307645474343
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 0.0224184426505714,
+    "contribution": 0.00023314131304925
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 0.0152235429696094,
+    "contribution": 0.000158317723158435
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 0.00531160561566712,
+    "contribution": 5.52382128829472e-05
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 0.00347813798238251,
+    "contribution": 3.61710074521373e-05
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Ozone Depletion",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 0.000169326512361502,
+    "contribution": 1.76091649368002e-06
   },
   {
     "sector": "313100/US",

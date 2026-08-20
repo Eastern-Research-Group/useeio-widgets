@@ -1,73 +1,73 @@
 [
   {
     "purchased_commodity_code": "Direct",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.724518065971977,
-    "total_impact": 77.8786215770785
+    "impact_per_purchase": 1.44065138612166,
+    "total_impact": 71.5573560928167
   },
   {
     "purchased_commodity_code": "335911/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 3.64809843952077,
-    "total_impact": 1150.79005182942
+    "impact_per_purchase": 4.36901972815303,
+    "total_impact": 1125.58699621123
   },
   {
     "purchased_commodity_code": "311119/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 3.22692671249311,
-    "total_impact": 730.753869862295
+    "impact_per_purchase": 4.27045881228662,
+    "total_impact": 720.148630091884
   },
   {
     "purchased_commodity_code": "325310/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 2.41046362914001,
-    "total_impact": 676.10616901466
+    "impact_per_purchase": 2.57120324016887,
+    "total_impact": 572.524472995209
   },
   {
     "purchased_commodity_code": "1111B0/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 1.24946965130358,
-    "total_impact": 386.592483445446
-  },
-  {
-    "purchased_commodity_code": "325320/US",
-    "sector_code": "11",
-    "indicator": "Releases to Ground",
-    "impact_per_purchase": 1.0506679677629,
-    "total_impact": 396.658249771997
-  },
-  {
-    "purchased_commodity_code": "1121A0/US",
-    "sector_code": "11",
-    "indicator": "Releases to Ground",
-    "impact_per_purchase": 1.02762293188134,
-    "total_impact": 352.031066334603
+    "impact_per_purchase": 1.52322063303127,
+    "total_impact": 383.219706457148
   },
   {
     "purchased_commodity_code": "332600/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.863216411342852,
-    "total_impact": 144.335822783799
+    "impact_per_purchase": 1.28342243333608,
+    "total_impact": 140.389594523626
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "111-112",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 1.22754570903107,
+    "total_impact": 349.541460269186
+  },
+  {
+    "purchased_commodity_code": "325320/US",
+    "sector_code": "111-112",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 1.17434619971475,
+    "total_impact": 375.449626362223
   },
   {
     "purchased_commodity_code": "112300/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.695149572267617,
-    "total_impact": 131.932949138134
+    "impact_per_purchase": 0.992926770535756,
+    "total_impact": 131.037176642273
   },
   {
     "purchased_commodity_code": "All others",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 7.59545567675471,
-    "total_impact": 2123.53173975837
+    "impact_per_purchase": 8.18634004646484,
+    "total_impact": 1906.18575045348
   },
   {
     "purchased_commodity_code": "Direct",
@@ -841,6 +841,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "113-115",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.109326434412406,
+    "total_impact": 6.32126548426174
+  },
+  {
+    "purchased_commodity_code": "325310/US",
+    "sector_code": "113-115",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 1.79144785555846,
+    "total_impact": 103.581696019451
+  },
+  {
+    "purchased_commodity_code": "335911/US",
+    "sector_code": "113-115",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.435887436446812,
+    "total_impact": 25.2030556181926
+  },
+  {
+    "purchased_commodity_code": "115000/US",
+    "sector_code": "113-115",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.414705037969936,
+    "total_impact": 23.9782871979526
+  },
+  {
+    "purchased_commodity_code": "325320/US",
+    "sector_code": "113-115",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.366803637967575,
+    "total_impact": 21.2086234097739
+  },
+  {
+    "purchased_commodity_code": "113000/US",
+    "sector_code": "113-115",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.338236849068297,
+    "total_impact": 19.5568887891787
+  },
+  {
+    "purchased_commodity_code": "333611/US",
+    "sector_code": "113-115",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.287479567390197,
+    "total_impact": 2.27953901238314
+  },
+  {
+    "purchased_commodity_code": "332310/US",
+    "sector_code": "113-115",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.254311197097687,
+    "total_impact": 14.7042991122417
+  },
+  {
+    "purchased_commodity_code": "423A00/US",
+    "sector_code": "113-115",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.254180457522463,
+    "total_impact": 14.696739736792
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "113-115",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 2.90392565951074,
+    "total_impact": 163.439859036493
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "113000/US",
     "indicator": "Releases to Ground",
     "impact_per_purchase": 1.18263573997072,
@@ -1051,73 +1121,73 @@
   },
   {
     "purchased_commodity_code": "Direct",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 1.12504517553184,
-    "total_impact": 1024.46421856226
+    "impact_per_purchase": 0.665621125067585,
+    "total_impact": 591.893824323824
   },
   {
     "purchased_commodity_code": "211000/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Releases to Ground",
     "impact_per_purchase": 6.42334907196433,
     "total_impact": 5711.86896567596
   },
   {
     "purchased_commodity_code": "21311A/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 2.19847674671623,
-    "total_impact": 1721.70956112572
+    "impact_per_purchase": 2.24580094922089,
+    "total_impact": 1710.79396323778
   },
   {
     "purchased_commodity_code": "331110/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 2.02630631959032,
-    "total_impact": 1826.7686584263
+    "impact_per_purchase": 2.06267362550276,
+    "total_impact": 1815.48993168086
   },
   {
     "purchased_commodity_code": "2122A0/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Releases to Ground",
     "impact_per_purchase": 1.80167820993117,
     "total_impact": 1393.0463655661
   },
   {
     "purchased_commodity_code": "325180/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 1.02833476988603,
-    "total_impact": 936.399888078875
+    "impact_per_purchase": 1.04869042992967,
+    "total_impact": 932.532586071156
   },
   {
     "purchased_commodity_code": "331200/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.768539053097004,
-    "total_impact": 621.704978907741
+    "impact_per_purchase": 0.788149487826092,
+    "total_impact": 620.731514754592
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "211 & 324",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.478714423407825,
+    "total_impact": 425.689780805953
   },
   {
     "purchased_commodity_code": "33291A/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Releases to Ground",
     "impact_per_purchase": 0.470816858144289,
     "total_impact": 418.666986710878
   },
   {
-    "purchased_commodity_code": "325190/US",
-    "sector_code": "211",
-    "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.468076815972842,
-    "total_impact": 426.22995052269
-  },
-  {
     "purchased_commodity_code": "All others",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 6.7954777302858,
-    "total_impact": 5720.77276738159
+    "impact_per_purchase": 6.44182047697079,
+    "total_impact": 5334.19714527443
   },
   {
     "purchased_commodity_code": "Direct",
@@ -1263,15 +1333,15 @@
     "purchased_commodity_code": "Direct",
     "sector_code": "212",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 948.414191812324,
-    "total_impact": 207450.988119377
+    "impact_per_purchase": 1326.7087829585,
+    "total_impact": 207815.308167299
   },
   {
     "purchased_commodity_code": "2122A0/US",
     "sector_code": "212",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 255.942590924424,
-    "total_impact": 54586.0209208086
+    "impact_per_purchase": 420.485440110647,
+    "total_impact": 54586.0135596621
   },
   {
     "purchased_commodity_code": "212230/US",
@@ -1284,50 +1354,50 @@
     "purchased_commodity_code": "331110/US",
     "sector_code": "212",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 2.39032003765176,
-    "total_impact": 547.337602645094
+    "impact_per_purchase": 3.15575166309452,
+    "total_impact": 526.650868000653
   },
   {
     "purchased_commodity_code": "21311A/US",
     "sector_code": "212",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 2.0669843130947,
-    "total_impact": 300.793904454149
-  },
-  {
-    "purchased_commodity_code": "230301/US",
-    "sector_code": "212",
-    "indicator": "Releases to Ground",
-    "impact_per_purchase": 1.63777248110094,
-    "total_impact": 375.018595570379
+    "impact_per_purchase": 1.86779865027617,
+    "total_impact": 311.709502342083
   },
   {
     "purchased_commodity_code": "333130/US",
     "sector_code": "212",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 1.49049936733899,
-    "total_impact": 216.902044900905
+    "impact_per_purchase": 1.60814300100376,
+    "total_impact": 268.376601762545
   },
   {
     "purchased_commodity_code": "333120/US",
     "sector_code": "212",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 1.32871448367279,
-    "total_impact": 193.358611827261
+    "impact_per_purchase": 1.33202204889874,
+    "total_impact": 222.29587215384
   },
   {
-    "purchased_commodity_code": "331410/US",
+    "purchased_commodity_code": "333920/US",
     "sector_code": "212",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 1.20468938392699,
-    "total_impact": 137.182742363853
+    "impact_per_purchase": 1.31727996561069,
+    "total_impact": 219.835624393986
+  },
+  {
+    "purchased_commodity_code": "335911/US",
+    "sector_code": "212",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 1.25073861773103,
+    "total_impact": 182.011324370252
   },
   {
     "purchased_commodity_code": "All others",
     "sector_code": "212",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 14.4860796992172,
-    "total_impact": 2879.62990206381
+    "impact_per_purchase": 11.6677443623789,
+    "total_impact": 1862.53784841275
   },
   {
     "purchased_commodity_code": "Direct",
@@ -1748,6 +1818,76 @@
     "indicator": "Releases to Ground",
     "impact_per_purchase": 7.19932506744625,
     "total_impact": 105.900067221786
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "2130",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.817782555546683,
+    "total_impact": 68.2503463168989
+  },
+  {
+    "purchased_commodity_code": "230301/US",
+    "sector_code": "2130",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 3.41873969493572,
+    "total_impact": 285.320549532525
+  },
+  {
+    "purchased_commodity_code": "331410/US",
+    "sector_code": "2130",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 1.64242936270832,
+    "total_impact": 137.073568084306
+  },
+  {
+    "purchased_commodity_code": "332310/US",
+    "sector_code": "2130",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 1.5063593818018,
+    "total_impact": 125.717464610082
+  },
+  {
+    "purchased_commodity_code": "331490/US",
+    "sector_code": "2130",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 1.03633108855888,
+    "total_impact": 86.4899296437419
+  },
+  {
+    "purchased_commodity_code": "541300/US",
+    "sector_code": "2130",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.737082959458289,
+    "total_impact": 61.5153342488256
+  },
+  {
+    "purchased_commodity_code": "335911/US",
+    "sector_code": "2130",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.717101431405942,
+    "total_impact": 59.8477195506838
+  },
+  {
+    "purchased_commodity_code": "332320/US",
+    "sector_code": "2130",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.606027509383526,
+    "total_impact": 50.5777325677281
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "2130",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.442844425746148,
+    "total_impact": 36.9588287457147
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "2130",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 7.51832370866076,
+    "total_impact": 627.462879170399
   },
   {
     "purchased_commodity_code": "Direct",
@@ -3151,73 +3291,73 @@
   },
   {
     "purchased_commodity_code": "Direct",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 9.24050849693019,
-    "total_impact": 8436.12951825399
+    "impact_per_purchase": 9.80235324653847,
+    "total_impact": 8399.13712876654
   },
   {
     "purchased_commodity_code": "332430/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 1.69633940115113,
-    "total_impact": 1545.18990166572
-  },
-  {
-    "purchased_commodity_code": "325130/US",
-    "sector_code": "31",
-    "indicator": "Releases to Ground",
-    "impact_per_purchase": 1.63213719384126,
-    "total_impact": 713.338292695571
+    "impact_per_purchase": 1.80300958506224,
+    "total_impact": 1544.90706145139
   },
   {
     "purchased_commodity_code": "112120/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 1.5994018741099,
-    "total_impact": 885.75392584565
+    "impact_per_purchase": 1.63424570826006,
+    "total_impact": 885.753588651812
   },
   {
     "purchased_commodity_code": "1121A0/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 1.43490197620897,
-    "total_impact": 560.558467879805
+    "impact_per_purchase": 1.45363041455024,
+    "total_impact": 555.699221017752
   },
   {
     "purchased_commodity_code": "311513/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 1.20740320640853,
-    "total_impact": 868.944026513403
+    "impact_per_purchase": 1.22748370600963,
+    "total_impact": 868.901590683209
   },
   {
     "purchased_commodity_code": "325180/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 1.12919153021769,
-    "total_impact": 687.988053324089
+    "impact_per_purchase": 1.16732276163602,
+    "total_impact": 645.731626470927
   },
   {
     "purchased_commodity_code": "31161A/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.928685119922862,
-    "total_impact": 818.058268600411
+    "impact_per_purchase": 0.966882756482893,
+    "total_impact": 807.002129611505
   },
   {
     "purchased_commodity_code": "1111B0/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.789583430137926,
-    "total_impact": 685.87711753618
+    "impact_per_purchase": 0.800460182816328,
+    "total_impact": 685.87355224788
+  },
+  {
+    "purchased_commodity_code": "311221/US",
+    "sector_code": "311-312",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.787278118037715,
+    "total_impact": 623.889110832229
   },
   {
     "purchased_commodity_code": "All others",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 15.3845344819773,
-    "total_impact": 11324.0956226184
+    "impact_per_purchase": 12.9102714227514,
+    "total_impact": 9758.54568719733
   },
   {
     "purchased_commodity_code": "Direct",
@@ -5248,6 +5388,76 @@
     "indicator": "Releases to Ground",
     "impact_per_purchase": 1.65085161863328,
     "total_impact": 106.291129963265
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "313-316",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.659380522576937,
+    "total_impact": 36.9923894874429
+  },
+  {
+    "purchased_commodity_code": "325130/US",
+    "sector_code": "313-316",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 12.1155489007846,
+    "total_impact": 679.703279739642
+  },
+  {
+    "purchased_commodity_code": "3252A0/US",
+    "sector_code": "313-316",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 4.0388328542322,
+    "total_impact": 226.5855191393
+  },
+  {
+    "purchased_commodity_code": "313300/US",
+    "sector_code": "313-316",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 2.46627677730621,
+    "total_impact": 138.362399261348
+  },
+  {
+    "purchased_commodity_code": "313200/US",
+    "sector_code": "313-316",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 2.14311073165371,
+    "total_impact": 120.232224315971
+  },
+  {
+    "purchased_commodity_code": "325180/US",
+    "sector_code": "313-316",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.753210733524787,
+    "total_impact": 42.2564268531611
+  },
+  {
+    "purchased_commodity_code": "331110/US",
+    "sector_code": "313-316",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.685714175549501,
+    "total_impact": 37.0612108166425
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "313-316",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.580135221147487,
+    "total_impact": 4.85924686205246
+  },
+  {
+    "purchased_commodity_code": "325211/US",
+    "sector_code": "313-316",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.565951466382474,
+    "total_impact": 31.750857598265
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "313-316",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 8.46789058571743,
+    "total_impact": 432.688943928776
   },
   {
     "purchased_commodity_code": "Direct",

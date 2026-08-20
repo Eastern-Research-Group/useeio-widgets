@@ -1,73 +1,73 @@
 [
   {
     "emissions_source": "Direct",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.724518065971977,
-    "total_impact": 77.8786215770785
+    "impact_per_purchase": 1.44065138612166,
+    "total_impact": 71.5573560928167
   },
   {
     "emissions_source": "2122A0/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 12.0737069923585,
-    "total_impact": 4558.18168136024
+    "impact_per_purchase": 13.3147889273397,
+    "total_impact": 4256.86439746288
   },
   {
     "emissions_source": "331410/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 1.83445955573566,
-    "total_impact": 692.562768621333
+    "impact_per_purchase": 2.06838772887808,
+    "total_impact": 661.283189035832
   },
   {
     "emissions_source": "325180/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.633012959755073,
-    "total_impact": 238.981124773475
+    "impact_per_purchase": 0.713334960245333,
+    "total_impact": 228.059957413133
   },
   {
     "emissions_source": "325310/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.407311194960341,
-    "total_impact": 153.77202947332
+    "impact_per_purchase": 0.421588224904932,
+    "total_impact": 134.785757009063
   },
   {
     "emissions_source": "325320/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.305671676535381,
-    "total_impact": 115.400103495644
+    "impact_per_purchase": 0.343149258732806,
+    "total_impact": 109.708075019956
   },
   {
     "emissions_source": "221100/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.160354038913779,
-    "total_impact": 60.5383949744283
+    "impact_per_purchase": 0.178645462680304,
+    "total_impact": 57.1146500332853
   },
   {
     "emissions_source": "21311A/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.102047222001686,
-    "total_impact": 38.5258461428774
+    "impact_per_purchase": 0.112203281918236,
+    "total_impact": 35.8724542073278
   },
   {
     "emissions_source": "325190/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.086332984024785,
-    "total_impact": 32.5932562822672
+    "impact_per_purchase": 0.0959951107447363,
+    "total_impact": 30.690548043214
   },
   {
     "emissions_source": "All others",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.535526752885777,
-    "total_impact": 202.177196815131
+    "impact_per_purchase": 0.593364885378468,
+    "total_impact": 189.704385781571
   },
   {
     "emissions_source": "Direct",
@@ -841,6 +841,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "113-115",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.109326434412406,
+    "total_impact": 6.32126548426174
+  },
+  {
+    "emissions_source": "2122A0/US",
+    "sector_code": "113-115",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 5.21128947318324,
+    "total_impact": 301.317283897366
+  },
+  {
+    "emissions_source": "331410/US",
+    "sector_code": "113-115",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.54098106059871,
+    "total_impact": 31.2795795855011
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "113-115",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.328368026381359,
+    "total_impact": 18.9862724642567
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "113-115",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.188881844956525,
+    "total_impact": 10.9211673603421
+  },
+  {
+    "emissions_source": "325320/US",
+    "sector_code": "113-115",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.0984437656305062,
+    "total_impact": 5.69202847568816
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "113-115",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.0592137488426333,
+    "total_impact": 3.42374494114303
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "113-115",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.0505593675665268,
+    "total_impact": 2.92334774130455
+  },
+  {
+    "emissions_source": "21311A/US",
+    "sector_code": "113-115",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.0458904755913994,
+    "total_impact": 2.65339193554958
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "113-115",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.198065574514225,
+    "total_impact": 11.4521715313086
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "113000/US",
     "indicator": "Releases to Ground",
     "impact_per_purchase": 0.326378667994146,
@@ -1051,73 +1121,73 @@
   },
   {
     "emissions_source": "Direct",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 1.12504517553184,
-    "total_impact": 1024.46421856226
+    "impact_per_purchase": 0.665621125067585,
+    "total_impact": 591.893824323824
   },
   {
     "emissions_source": "2122A0/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 15.7244916820162,
-    "total_impact": 14318.6953143372
+    "impact_per_purchase": 15.7407336312959,
+    "total_impact": 13997.2165482944
   },
   {
     "emissions_source": "21311A/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 2.54225522875167,
-    "total_impact": 2314.97327658661
+    "impact_per_purchase": 2.59129111975643,
+    "total_impact": 2304.26762770377
   },
   {
     "emissions_source": "331410/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 1.26432412303763,
-    "total_impact": 1151.29139068114
+    "impact_per_purchase": 1.26066213308468,
+    "total_impact": 1121.02531459763
   },
   {
     "emissions_source": "325180/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.376499894701817,
-    "total_impact": 342.840162158052
+    "impact_per_purchase": 0.37999559380964,
+    "total_impact": 337.905509269035
   },
   {
     "emissions_source": "221100/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.173216995868788,
-    "total_impact": 157.731101091592
+    "impact_per_purchase": 0.170148820095026,
+    "total_impact": 151.302343085949
   },
   {
     "emissions_source": "325190/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.0954440989956347,
-    "total_impact": 86.9112338068725
-  },
-  {
-    "emissions_source": "212100/US",
-    "sector_code": "211",
-    "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.0912490294255282,
-    "total_impact": 83.0912106092069
+    "impact_per_purchase": 0.097030768432111,
+    "total_impact": 86.2831878999185
   },
   {
     "emissions_source": "562000/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.0726017388504065,
-    "total_impact": 66.1110196063748
+    "impact_per_purchase": 0.0727269931009614,
+    "total_impact": 64.6714120945749
+  },
+  {
+    "emissions_source": "212100/US",
+    "sector_code": "211 & 324",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.0610061201985477,
+    "total_impact": 54.2487977493366
   },
   {
     "emissions_source": "All others",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.280610467799614,
-    "total_impact": 255.523413518772
+    "impact_per_purchase": 0.276750697275838,
+    "total_impact": 246.096499083091
   },
   {
     "emissions_source": "Direct",
@@ -1263,71 +1333,71 @@
     "emissions_source": "Direct",
     "sector_code": "212",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 948.414191812324,
-    "total_impact": 207450.988119377
+    "impact_per_purchase": 1326.7087829585,
+    "total_impact": 207815.308167299
   },
   {
     "emissions_source": "2122A0/US",
     "sector_code": "212",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 258.214583496739,
-    "total_impact": 59126.204388074
+    "impact_per_purchase": 349.081985875587,
+    "total_impact": 58256.9069089841
   },
   {
     "emissions_source": "331410/US",
     "sector_code": "212",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 2.00498177295982,
-    "total_impact": 459.102504967086
+    "impact_per_purchase": 1.7720485214482,
+    "total_impact": 295.730143431129
   },
   {
     "emissions_source": "21311A/US",
     "sector_code": "212",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 1.07644515854862,
-    "total_impact": 246.485367305764
+    "impact_per_purchase": 1.47712779792937,
+    "total_impact": 246.511994598638
   },
   {
     "emissions_source": "325180/US",
     "sector_code": "212",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.27900973268711,
-    "total_impact": 63.8878960968071
+    "impact_per_purchase": 0.318548239655665,
+    "total_impact": 53.1612512089204
   },
   {
     "emissions_source": "221100/US",
     "sector_code": "212",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.213985160901167,
-    "total_impact": 48.9985119667614
-  },
-  {
-    "emissions_source": "562000/US",
-    "sector_code": "212",
-    "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.137550717422627,
-    "total_impact": 31.4964852949879
+    "impact_per_purchase": 0.272466221748178,
+    "total_impact": 45.4708061672463
   },
   {
     "emissions_source": "212100/US",
     "sector_code": "212",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.0726122360096683,
-    "total_impact": 16.626814214918
+    "impact_per_purchase": 0.26250723952715,
+    "total_impact": 43.8087911574962
   },
   {
-    "emissions_source": "325190/US",
+    "emissions_source": "562000/US",
     "sector_code": "212",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.0467083242453949,
-    "total_impact": 10.6953135200922
+    "impact_per_purchase": 0.0711977019995268,
+    "total_impact": 11.881901860723
+  },
+  {
+    "emissions_source": "3259A0/US",
+    "sector_code": "212",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.0639891647922385,
+    "total_impact": 10.6788977011655
   },
   {
     "emissions_source": "All others",
     "sector_code": "212",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.309450988264272,
-    "total_impact": 70.8583618029302
+    "impact_per_purchase": 0.319929861523733,
+    "total_impact": 53.3918245980041
   },
   {
     "emissions_source": "Direct",
@@ -1748,6 +1818,76 @@
     "indicator": "Releases to Ground",
     "impact_per_purchase": 0.334196656242276,
     "total_impact": 4.91593976237931
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "2130",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.817782555546683,
+    "total_impact": 68.2503463168989
+  },
+  {
+    "emissions_source": "2122A0/US",
+    "sector_code": "2130",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 14.2680014590309,
+    "total_impact": 1190.77624513267
+  },
+  {
+    "emissions_source": "331410/US",
+    "sector_code": "2130",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 2.32019535304986,
+    "total_impact": 193.638437619465
+  },
+  {
+    "emissions_source": "562000/US",
+    "sector_code": "2130",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.252273446304514,
+    "total_impact": 21.0541909460648
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "2130",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.187655254666493,
+    "total_impact": 15.6612977769038
+  },
+  {
+    "emissions_source": "21311A/US",
+    "sector_code": "2130",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.127957117258122,
+    "total_impact": 10.6790215899639
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "2130",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.11929935676786,
+    "total_impact": 9.95646380515746
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "2130",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.0393073880075954,
+    "total_impact": 3.2805087686637
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "2130",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.0354675368833913,
+    "total_impact": 2.96004317881376
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "2130",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.275082650690601,
+    "total_impact": 22.9577973363022
   },
   {
     "emissions_source": "Direct",
@@ -3151,73 +3291,73 @@
   },
   {
     "emissions_source": "Direct",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 9.24050849693019,
-    "total_impact": 8436.12951825399
+    "impact_per_purchase": 9.80235324653847,
+    "total_impact": 8399.13712876654
   },
   {
     "emissions_source": "2122A0/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 13.6014828903486,
-    "total_impact": 12417.4845292784
+    "impact_per_purchase": 12.6977271184031,
+    "total_impact": 10880.0354984949
   },
   {
     "emissions_source": "331410/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 1.56271513992524,
-    "total_impact": 1426.68201916868
+    "impact_per_purchase": 1.60023414841044,
+    "total_impact": 1371.15911991649
   },
   {
     "emissions_source": "311513/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.722711997154684,
-    "total_impact": 659.800487648313
+    "impact_per_purchase": 0.769791777018535,
+    "total_impact": 659.595357681969
   },
   {
     "emissions_source": "311221/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.659671907649164,
-    "total_impact": 602.247988228225
+    "impact_per_purchase": 0.701801839776702,
+    "total_impact": 601.338244118749
   },
   {
     "emissions_source": "31161A/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.640637757298274,
-    "total_impact": 584.870745657281
+    "impact_per_purchase": 0.672703903603587,
+    "total_impact": 576.405704968684
   },
   {
     "emissions_source": "325180/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.519180457422483,
-    "total_impact": 473.986207968692
+    "impact_per_purchase": 0.511125240584405,
+    "total_impact": 437.957180043293
   },
   {
     "emissions_source": "311514/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.39232518462302,
-    "total_impact": 358.173586643228
+    "impact_per_purchase": 0.417095040351209,
+    "total_impact": 357.387491710251
   },
   {
     "emissions_source": "311615/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 0.222944128390801,
-    "total_impact": 203.537017801981
+    "impact_per_purchase": 0.237172925064502,
+    "total_impact": 203.221397020239
   },
   {
     "emissions_source": "All others",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Releases to Ground",
-    "impact_per_purchase": 1.49298419091087,
-    "total_impact": 1363.02109428436
+    "impact_per_purchase": 1.50458656018597,
+    "total_impact": 1289.20357420947
   },
   {
     "emissions_source": "Direct",
@@ -5248,6 +5388,76 @@
     "indicator": "Releases to Ground",
     "impact_per_purchase": 0.271103953397026,
     "total_impact": 17.455200224436
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "313-316",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.659380522576937,
+    "total_impact": 36.9923894874429
+  },
+  {
+    "emissions_source": "2122A0/US",
+    "sector_code": "313-316",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 27.4046624021835,
+    "total_impact": 1537.44903078354
+  },
+  {
+    "emissions_source": "331410/US",
+    "sector_code": "313-316",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.989682440933524,
+    "total_impact": 55.5228992521906
+  },
+  {
+    "emissions_source": "325180/US",
+    "sector_code": "313-316",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.642208832426266,
+    "total_impact": 36.0290279253986
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "313-316",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.229774919738309,
+    "total_impact": 12.8907710106249
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "313-316",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.164182327522209,
+    "total_impact": 9.21091296861563
+  },
+  {
+    "emissions_source": "3252A0/US",
+    "sector_code": "313-316",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.154680934505185,
+    "total_impact": 8.67786836216382
+  },
+  {
+    "emissions_source": "31161A/US",
+    "sector_code": "313-316",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.150887331968023,
+    "total_impact": 8.46504068859713
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "313-316",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.101522006567738,
+    "total_impact": 5.69556042362821
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "313-316",
+    "indicator": "Releases to Ground",
+    "impact_per_purchase": 0.705129691325763,
+    "total_impact": 39.5589971004026
   },
   {
     "emissions_source": "Direct",

@@ -7,17 +7,72 @@ import { SumSmartSectorTotalParts } from "../smartSectorChart/smartSector";
 import { WebModel, Sector } from "useeio";
 import { formatNumberGraph } from "../util";
 import { sanitizeExportFilename } from "../util/chartExportOverlay";
-import { chartTypography } from "../util/chartTypography";
+import { chartTypography, apexYAxisTitleConfig } from "../util/chartTypography";
+import { getLabel } from "../util/indicatorCatalog";
+
+const STACKED_AXIS_NAME_LINE_LENGTH = 24;
+const STACKED_AXIS_MAX_NAME_LINES = 2;
+
+function stripSectorSuffix(sectorId: string): string {
+  return sectorId.replace(/\/US$/, "");
+}
+
+function wrapLabelLine(
+  text: string,
+  maxLineLength: number,
+  maxLines: number,
+): string[] {
+  const words = text.trim().split(/\s+/);
+  const lines: string[] = [];
+  let currentLine = "";
+  let nextWordIndex = 0;
+
+  for (let i = 0; i < words.length; i++) {
+    const word = words[i];
+    const nextLine = currentLine ? `${currentLine} ${word}` : word;
+    if (nextLine.length <= maxLineLength || currentLine.length === 0) {
+      currentLine = nextLine;
+      nextWordIndex = i + 1;
+      continue;
+    }
+
+    lines.push(currentLine);
+    currentLine = word;
+    nextWordIndex = i + 1;
+
+    if (lines.length === maxLines - 1) {
+      break;
+    }
+  }
+
+  const remainingText = [currentLine, ...words.slice(nextWordIndex)]
+    .filter(Boolean)
+    .join(" ");
+
+  if (lines.length < maxLines && remainingText) {
+    if (remainingText.length <= maxLineLength) {
+      lines.push(remainingText);
+    } else {
+      lines.push(`${remainingText.slice(0, maxLineLength - 1).trimEnd()}...`);
+    }
+  }
+
+  return lines.slice(0, maxLines);
+}
 
 export async function calculate(
   topSectorList: SumSmartSectorTotalParts[],
   model: WebModel,
   uniqueSortedMapping: string[],
   titleGraph?: string,
+  /** Indicator file slug (e.g. Releases-to-Ground) for catalog display names in figure titles. */
+  indicatorSlug?: string,
   impactSelector?: string,
   groupMappingSector?: string,
   perspective?: string,
   titleFileName?: string,
+  /** Filter key from the stacked Sector Filter control (e.g. construction_materials). */
+  sectorFilterName?: string,
 ): Promise<apex.ApexOptions> {
   const sortTopTen: SumSmartSectorTotalParts[] = topSectorList.sort(
     (a: SumSmartSectorTotalParts, b: SumSmartSectorTotalParts): any => {
@@ -78,6 +133,10 @@ export async function calculate(
           yaxisTitle = "Number of jobs per Million $ of Output";
           unitLabel = "jobs per Million $ of Output";
           break;
+        case "Releases to Ground":
+          yaxisTitle = "Kilograms of Releases per Million $ of Output";
+          unitLabel = "kg per Million $ of Output";
+          break;
         case "Global Warming Potential":
         case "GWP AR6 100":
         case "GWP AR6 20":
@@ -127,6 +186,10 @@ export async function calculate(
           yaxisTitle = "Thousand Metric Tons of Waste Generated";
           unitLabel = "Thousand MT";
           break;
+        case "Releases to Ground":
+          yaxisTitle = "Metric Tons of Releases";
+          unitLabel = "MT";
+          break;
         case "Global Warming Potential":
         case "GWP AR6 100":
         case "GWP AR6 20":
@@ -139,22 +202,29 @@ export async function calculate(
       }
     }
 
-    let titleName: string;
-    if (perspective == "final") {
-      titleName = `${titleFileName} from ${titleGraph.replace(" AR6 ", "-")} (Point of Consumption)`;
-    } else {
-      titleName = `${titleFileName} from ${titleGraph.replace(" AR6 ", "-")} (Supply Chain)`;
-    }
+    const indicatorTitle = indicatorSlug
+      ? getLabel(indicatorSlug)
+      : (titleGraph ?? "").replace(" AR6 ", "-");
+    const perspectiveLabel =
+      perspective == "final" ? "Point of Consumption" : "Supply Chain";
+    // Curated filter presets + custom list: "<filter>: <indicator>"; Top 10/25 keep "from".
+    const useFilterColonTitle =
+      sectorFilterName === "construction_materials" ||
+      sectorFilterName === "energy_intensive" ||
+      sectorFilterName === "custom_sector_list";
+    const titleName = useFilterColonTitle
+      ? `${titleFileName}: ${indicatorTitle} (${perspectiveLabel})`
+      : `${titleFileName} from ${indicatorTitle} (${perspectiveLabel})`;
 
     const sortedSectorCodesWithNamesWithArray: string[][] =
       sortedSectorCodes.map((t) => {
-        const sectorName: Sector = sectorsList.find((s) => {
-          if (s.id === t) {
-            return true;
-          }
-        });
-
-        return [sectorName.name].concat(sectorName.id);
+        const sectorName: Sector | undefined = sectorsList.find((s) => s.id === t);
+        const wrappedName = wrapLabelLine(
+          sectorName?.name ?? t,
+          STACKED_AXIS_NAME_LINE_LENGTH,
+          STACKED_AXIS_MAX_NAME_LINES,
+        );
+        return [...wrappedName, stripSectorSuffix(sectorName?.id ?? t)];
       });
 
     let colors: string[] = [];
@@ -179,7 +249,7 @@ export async function calculate(
       colors: colors,
       chart: {
         type: "bar",
-        height: 500,
+        height: 540,
         stacked: true,
         toolbar: {
           show: false,
@@ -254,11 +324,12 @@ export async function calculate(
         categories: sortedSectorCodesWithNamesWithArray,
         labels: {
           show: true,
-          rotate: -45,
-          rotateAlways: true,
+          rotate: 0,
+          rotateAlways: false,
           hideOverlappingLabels: false,
-          trim: true,
-          minHeight: -100,
+          trim: false,
+          minHeight: 96,
+          maxHeight: 120,
           style: {
             fontSize: chartTypography.axisLabel,
           },
@@ -266,13 +337,7 @@ export async function calculate(
       },
       yaxis: [
         {
-          title: {
-            text: yaxisTitle,
-            style: {
-              fontSize: chartTypography.axisTitle,
-              fontWeight: 600,
-            },
-          },
+          title: apexYAxisTitleConfig(yaxisTitle),
           forceNiceScale: true,
           min: 0,
           max: undefined,
@@ -299,7 +364,8 @@ export async function calculate(
       },
       grid: {
         padding: {
-          bottom: 8,
+          left: 12,
+          bottom: 24,
         },
       },
       tooltip: {

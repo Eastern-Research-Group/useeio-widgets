@@ -1,73 +1,73 @@
 [
   {
     "purchased_commodity_code": "Direct",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 2643.39095573706,
-    "total_impact": 997958.310462557
+    "impact_per_purchase": 3074.05154712175,
+    "total_impact": 982803.456991998
   },
   {
     "purchased_commodity_code": "1121A0/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 419.631821905915,
-    "total_impact": 143752.570276944
+    "impact_per_purchase": 501.270676599669,
+    "total_impact": 142735.934800402
   },
   {
     "purchased_commodity_code": "1111B0/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 390.401304240898,
-    "total_impact": 120792.217393489
+    "impact_per_purchase": 475.935786964999,
+    "total_impact": 119738.381044786
   },
   {
     "purchased_commodity_code": "311119/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 223.895473254184,
-    "total_impact": 50702.2619670029
+    "impact_per_purchase": 296.29938389605,
+    "total_impact": 49966.4333012394
   },
   {
     "purchased_commodity_code": "1111A0/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 165.967803650827,
-    "total_impact": 28262.2204534329
-  },
-  {
-    "purchased_commodity_code": "112300/US",
-    "sector_code": "11",
-    "indicator": "Nitrous oxide",
-    "impact_per_purchase": 65.9526081613771,
-    "total_impact": 12517.1940618449
-  },
-  {
-    "purchased_commodity_code": "325310/US",
-    "sector_code": "11",
-    "indicator": "Nitrous oxide",
-    "impact_per_purchase": 57.7959064323715,
-    "total_impact": 16211.0593208419
+    "impact_per_purchase": 249.876216672696,
+    "total_impact": 28102.8951625133
   },
   {
     "purchased_commodity_code": "111400/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 57.3847481777962,
-    "total_impact": 6032.66864424115
+    "impact_per_purchase": 121.189475214948,
+    "total_impact": 5733.06071503203
+  },
+  {
+    "purchased_commodity_code": "112300/US",
+    "sector_code": "111-112",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 94.2043451403803,
+    "total_impact": 12432.2072693931
+  },
+  {
+    "purchased_commodity_code": "325310/US",
+    "sector_code": "111-112",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 61.649974756279,
+    "total_impact": 13727.4715417628
   },
   {
     "purchased_commodity_code": "111900/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 37.7879709402093,
-    "total_impact": 11539.0259403326
+    "impact_per_purchase": 45.0006146112948,
+    "total_impact": 11139.5561228503
   },
   {
     "purchased_commodity_code": "All others",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 157.990303875989,
-    "total_impact": 40699.5451029052
+    "impact_per_purchase": 175.295086611302,
+    "total_impact": 35418.4195429837
   },
   {
     "purchased_commodity_code": "Direct",
@@ -841,6 +841,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "113-115",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 262.103545263813,
+    "total_impact": 15154.8534705597
+  },
+  {
+    "purchased_commodity_code": "325310/US",
+    "sector_code": "113-115",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 42.9537087333148,
+    "total_impact": 2483.58777907901
+  },
+  {
+    "purchased_commodity_code": "113000/US",
+    "sector_code": "113-115",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 37.2716745264954,
+    "total_impact": 2155.05198711792
+  },
+  {
+    "purchased_commodity_code": "115000/US",
+    "sector_code": "113-115",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 26.2035427070929,
+    "total_impact": 1515.09148697644
+  },
+  {
+    "purchased_commodity_code": "1111B0/US",
+    "sector_code": "113-115",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 18.2261243013361,
+    "total_impact": 1053.83634870311
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "113-115",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 17.5827343471391,
+    "total_impact": 1016.63547654217
+  },
+  {
+    "purchased_commodity_code": "112A00/US",
+    "sector_code": "113-115",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 15.5634638856135,
+    "total_impact": 899.881054426105
+  },
+  {
+    "purchased_commodity_code": "311119/US",
+    "sector_code": "113-115",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 12.726173986308,
+    "total_impact": 735.828665763466
+  },
+  {
+    "purchased_commodity_code": "111900/US",
+    "sector_code": "113-115",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 6.90883983744278,
+    "total_impact": 399.469817482345
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "113-115",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 21.8412486262027,
+    "total_impact": 1255.02104398163
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "113000/US",
     "indicator": "Nitrous oxide",
     "impact_per_purchase": 502.14656538599,
@@ -1051,73 +1121,73 @@
   },
   {
     "purchased_commodity_code": "Direct",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 8.31640889125522,
-    "total_impact": 7572.90775634536
+    "impact_per_purchase": 7.78562245174344,
+    "total_impact": 6923.25059129688
   },
   {
     "purchased_commodity_code": "325190/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 12.1763366779369,
-    "total_impact": 11087.7514174635
+    "impact_per_purchase": 12.4530585431438,
+    "total_impact": 11073.6996889656
   },
   {
     "purchased_commodity_code": "211000/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Nitrous oxide",
     "impact_per_purchase": 6.2921276577109,
     "total_impact": 5595.18224737543
   },
   {
     "purchased_commodity_code": "1111B0/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Nitrous oxide",
     "impact_per_purchase": 3.27723476004658,
     "total_impact": 1516.2433673489
   },
   {
     "purchased_commodity_code": "325110/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 2.51092810720081,
-    "total_impact": 2286.44685311722
-  },
-  {
-    "purchased_commodity_code": "221100/US",
-    "sector_code": "211",
-    "indicator": "Nitrous oxide",
-    "impact_per_purchase": 1.6805129418794,
-    "total_impact": 1530.27221948877
+    "impact_per_purchase": 2.57044033736534,
+    "total_impact": 2285.72637523322
   },
   {
     "purchased_commodity_code": "221300/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 1.60759219238066,
-    "total_impact": 1463.87070932996
+    "impact_per_purchase": 1.64279534470167,
+    "total_impact": 1460.8316691543
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "211 & 324",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.61312710323461,
+    "total_impact": 1434.44962050595
   },
   {
     "purchased_commodity_code": "21311A/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 0.984808148654625,
-    "total_impact": 771.240181614729
+    "impact_per_purchase": 1.00600703571348,
+    "total_impact": 766.350537108127
   },
   {
     "purchased_commodity_code": "324110/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 0.873866721774749,
-    "total_impact": 795.741546847061
+    "impact_per_purchase": 0.865743941599903,
+    "total_impact": 769.850104181591
   },
   {
     "purchased_commodity_code": "All others",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 8.83244792244708,
-    "total_impact": 7280.04979946786
+    "impact_per_purchase": 8.06359075059813,
+    "total_impact": 6504.99937704479
   },
   {
     "purchased_commodity_code": "Direct",
@@ -1263,71 +1333,71 @@
     "purchased_commodity_code": "Direct",
     "sector_code": "212",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 281.851119787074,
-    "total_impact": 64538.5194355165
-  },
-  {
-    "purchased_commodity_code": "325190/US",
-    "sector_code": "212",
-    "indicator": "Nitrous oxide",
-    "impact_per_purchase": 4.0754509940438,
-    "total_impact": 933.200383898751
-  },
-  {
-    "purchased_commodity_code": "221100/US",
-    "sector_code": "212",
-    "indicator": "Nitrous oxide",
-    "impact_per_purchase": 2.68982868221323,
-    "total_impact": 615.919357767226
+    "impact_per_purchase": 27.2368570588724,
+    "total_impact": 4545.45095528806
   },
   {
     "purchased_commodity_code": "325310/US",
     "sector_code": "212",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 1.83334614957128,
-    "total_impact": 349.559340108484
+    "impact_per_purchase": 4.19848171080595,
+    "total_impact": 539.809463548518
   },
   {
-    "purchased_commodity_code": "230301/US",
+    "purchased_commodity_code": "325190/US",
     "sector_code": "212",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 1.64334587836882,
-    "total_impact": 376.294797020869
+    "impact_per_purchase": 4.19786157519395,
+    "total_impact": 700.564454477566
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "212",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 3.75777730937784,
+    "total_impact": 627.12053831142
   },
   {
     "purchased_commodity_code": "2122A0/US",
     "sector_code": "212",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 1.37393568081471,
-    "total_impact": 293.025406775471
+    "impact_per_purchase": 2.25722474459785,
+    "total_impact": 293.025367259805
+  },
+  {
+    "purchased_commodity_code": "3259A0/US",
+    "sector_code": "212",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.37584011247735,
+    "total_impact": 229.608494844548
   },
   {
     "purchased_commodity_code": "324110/US",
     "sector_code": "212",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 1.09171790876319,
-    "total_impact": 249.982535198166
+    "impact_per_purchase": 1.09165980701522,
+    "total_impact": 182.182771746438
   },
   {
-    "purchased_commodity_code": "221300/US",
+    "purchased_commodity_code": "311221/US",
     "sector_code": "212",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 1.06084105908056,
-    "total_impact": 232.042632684916
+    "impact_per_purchase": 0.839181915377083,
+    "total_impact": 13.1805395655944
   },
   {
-    "purchased_commodity_code": "S00203/US",
+    "purchased_commodity_code": "21311A/US",
     "sector_code": "212",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 1.0345156280936,
-    "total_impact": 117.804384079095
+    "impact_per_purchase": 0.836680821657791,
+    "total_impact": 139.630341043213
   },
   {
     "purchased_commodity_code": "All others",
     "sector_code": "212",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 14.412409785409,
-    "total_impact": 2633.44727256495
+    "impact_per_purchase": 13.6592046589121,
+    "total_impact": 2007.03434875901
   },
   {
     "purchased_commodity_code": "Direct",
@@ -1748,6 +1818,76 @@
     "indicator": "Nitrous oxide",
     "impact_per_purchase": 9.27391239922215,
     "total_impact": 136.416669241323
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "2130",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 726.627274874819,
+    "total_impact": 60642.7256452769
+  },
+  {
+    "purchased_commodity_code": "230301/US",
+    "sector_code": "2130",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 3.43037378617561,
+    "total_impact": 286.291505382365
+  },
+  {
+    "purchased_commodity_code": "325190/US",
+    "sector_code": "2130",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 2.95583647851688,
+    "total_impact": 246.687657919091
+  },
+  {
+    "purchased_commodity_code": "325310/US",
+    "sector_code": "2130",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 2.7485299494379,
+    "total_impact": 229.386307691662
+  },
+  {
+    "purchased_commodity_code": "221300/US",
+    "sector_code": "2130",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.87809827046869,
+    "total_impact": 156.741980502346
+  },
+  {
+    "purchased_commodity_code": "S00203/US",
+    "sector_code": "2130",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.40364143555246,
+    "total_impact": 117.144849118435
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "2130",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.12261751193199,
+    "total_impact": 93.6912061171982
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "2130",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.01394239823203,
+    "total_impact": 84.6214184386236
+  },
+  {
+    "purchased_commodity_code": "230302/US",
+    "sector_code": "2130",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 1.00395846149796,
+    "total_impact": 83.7881808804434
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "2130",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 8.27043014061234,
+    "total_impact": 690.232039627175
   },
   {
     "purchased_commodity_code": "Direct",
@@ -3151,73 +3291,73 @@
   },
   {
     "purchased_commodity_code": "Direct",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 1.25497217491383,
-    "total_impact": 1145.72783661149
+    "impact_per_purchase": 1.32708165576208,
+    "total_impact": 1137.10866436612
   },
   {
     "purchased_commodity_code": "1121A0/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 585.94501139694,
-    "total_impact": 228905.140069755
+    "impact_per_purchase": 593.592805601193,
+    "total_impact": 226920.857167387
   },
   {
     "purchased_commodity_code": "1111B0/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 246.708193841478,
-    "total_impact": 214304.781997504
+    "impact_per_purchase": 250.106674490547,
+    "total_impact": 214303.668010301
   },
   {
     "purchased_commodity_code": "112120/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 129.477186054247,
-    "total_impact": 71704.8840016027
+    "impact_per_purchase": 132.297916522387,
+    "total_impact": 71704.85670458
   },
   {
     "purchased_commodity_code": "1111A0/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Nitrous oxide",
     "impact_per_purchase": 98.3288119812953,
     "total_impact": 68998.1216771617
   },
   {
     "purchased_commodity_code": "31161A/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 76.5169416303178,
-    "total_impact": 67402.0886583127
+    "impact_per_purchase": 79.6641508020581,
+    "total_impact": 66491.1427160098
   },
   {
     "purchased_commodity_code": "111900/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 63.7614194816827,
-    "total_impact": 51926.1906608406
-  },
-  {
-    "purchased_commodity_code": "112300/US",
-    "sector_code": "31",
-    "indicator": "Nitrous oxide",
-    "impact_per_purchase": 57.5183842263972,
-    "total_impact": 45149.739597204
+    "impact_per_purchase": 62.379121132734,
+    "total_impact": 47788.2525362478
   },
   {
     "purchased_commodity_code": "112A00/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 55.6680409127763,
-    "total_impact": 46787.4635315456
+    "impact_per_purchase": 58.6191394890406,
+    "total_impact": 45979.1457838886
+  },
+  {
+    "purchased_commodity_code": "112300/US",
+    "sector_code": "311-312",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 58.3965698443817,
+    "total_impact": 45149.5425822875
   },
   {
     "purchased_commodity_code": "All others",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Nitrous oxide",
-    "impact_per_purchase": 320.057806785944,
-    "total_impact": 247729.878436851
+    "impact_per_purchase": 303.493129972337,
+    "total_impact": 239896.849477506
   },
   {
     "purchased_commodity_code": "Direct",
@@ -5248,6 +5388,76 @@
     "indicator": "Nitrous oxide",
     "impact_per_purchase": 2.68754624634866,
     "total_impact": 173.039371999662
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "313-316",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 0.153634690218137,
+    "total_impact": 8.61917224536887
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "313-316",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 236.899345323311,
+    "total_impact": 1984.28290236825
+  },
+  {
+    "purchased_commodity_code": "111900/US",
+    "sector_code": "313-316",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 85.6913109508556,
+    "total_impact": 4137.93812459283
+  },
+  {
+    "purchased_commodity_code": "3252A0/US",
+    "sector_code": "313-316",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 49.3598955128052,
+    "total_impact": 2769.17563887569
+  },
+  {
+    "purchased_commodity_code": "313100/US",
+    "sector_code": "313-316",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 30.0196280594744,
+    "total_impact": 1684.15313376909
+  },
+  {
+    "purchased_commodity_code": "313200/US",
+    "sector_code": "313-316",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 19.9169186439332,
+    "total_impact": 1117.37363576754
+  },
+  {
+    "purchased_commodity_code": "31161A/US",
+    "sector_code": "313-316",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 19.7026191892741,
+    "total_impact": 910.945942302833
+  },
+  {
+    "purchased_commodity_code": "112A00/US",
+    "sector_code": "313-316",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 14.4080711260671,
+    "total_impact": 808.317747656952
+  },
+  {
+    "purchased_commodity_code": "313300/US",
+    "sector_code": "313-316",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 9.68584473214117,
+    "total_impact": 543.392667174903
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "313-316",
+    "indicator": "Nitrous oxide",
+    "impact_per_purchase": 33.3905671161567,
+    "total_impact": 1720.27218290049
   },
   {
     "purchased_commodity_code": "Direct",

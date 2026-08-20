@@ -1,73 +1,73 @@
 [
   {
     "emissions_source": "Direct",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 1174.51849871474,
-    "total_impact": 443415.49025901
+    "impact_per_purchase": 1304.78804407099,
+    "total_impact": 417153.122092396
   },
   {
     "emissions_source": "1111B0/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 283.929919084011,
-    "total_impact": 107191.946663767
+    "impact_per_purchase": 331.040406633344,
+    "total_impact": 105836.760072521
   },
   {
     "emissions_source": "1111A0/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 100.078934720592,
-    "total_impact": 37782.7594476302
+    "impact_per_purchase": 117.058355652778,
+    "total_impact": 37424.66736222
   },
   {
     "emissions_source": "111900/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 44.1017548305194,
-    "total_impact": 16649.7175317857
+    "impact_per_purchase": 50.1601407745773,
+    "total_impact": 16036.6731008845
   },
   {
     "emissions_source": "115000/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 42.9361571803013,
-    "total_impact": 16209.6699258248
-  },
-  {
-    "emissions_source": "113000/US",
-    "sector_code": "11",
-    "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 5.38192794602839,
-    "total_impact": 2031.83706458287
+    "impact_per_purchase": 43.4779012677657,
+    "total_impact": 13900.2977060438
   },
   {
     "emissions_source": "324110/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 4.61956780153936,
-    "total_impact": 1744.02354985965
+    "impact_per_purchase": 5.06908793010635,
+    "total_impact": 1620.63552453098
   },
   {
     "emissions_source": "325310/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 4.58905685358421,
-    "total_impact": 1732.50476410992
+    "impact_per_purchase": 4.7499120005252,
+    "total_impact": 1518.5919503838
   },
   {
     "emissions_source": "230301/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 4.12387791885764,
-    "total_impact": 1556.88595042102
+    "impact_per_purchase": 4.56230132312678,
+    "total_impact": 1458.61103611174
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "111-112",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 3.85227090030595,
+    "total_impact": 1231.60757067826
   },
   {
     "emissions_source": "All others",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 42.55347188134,
-    "total_impact": 16065.1949008341
+    "impact_per_purchase": 43.9876635452162,
+    "total_impact": 14063.2735445562
   },
   {
     "emissions_source": "Direct",
@@ -841,6 +841,76 @@
   },
   {
     "emissions_source": "Direct",
+    "sector_code": "113-115",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 454.208271750374,
+    "total_impact": 26262.3681666142
+  },
+  {
+    "emissions_source": "115000/US",
+    "sector_code": "113-115",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 39.9406465601411,
+    "total_impact": 2309.37221978097
+  },
+  {
+    "emissions_source": "113000/US",
+    "sector_code": "113-115",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 32.5137688570683,
+    "total_impact": 1879.94940056443
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "113-115",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 23.4379837950569,
+    "total_impact": 1355.18659124555
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "113-115",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 10.6026177722916,
+    "total_impact": 613.04443090116
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "113-115",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 6.19321099338065,
+    "total_impact": 358.092085410268
+  },
+  {
+    "emissions_source": "325310/US",
+    "sector_code": "113-115",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 3.69962711707451,
+    "total_impact": 213.912813726119
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "113-115",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 2.13399878425556,
+    "total_impact": 123.38802532867
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "113-115",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 1.69966694174887,
+    "total_impact": 98.274914309275
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "113-115",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 15.94949564256,
+    "total_impact": 922.201449618083
+  },
+  {
+    "emissions_source": "Direct",
     "sector_code": "113000/US",
     "indicator": "Particulate matter 2.5",
     "impact_per_purchase": 532.353438497302,
@@ -1051,73 +1121,73 @@
   },
   {
     "emissions_source": "Direct",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 97.6629946148801,
-    "total_impact": 88931.7563743924
+    "impact_per_purchase": 97.0737310394244,
+    "total_impact": 86321.3917684376
   },
   {
     "emissions_source": "211000/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 16.2122940185279,
-    "total_impact": 14762.8872902292
+    "impact_per_purchase": 16.572330243851,
+    "total_impact": 14736.7016408837
   },
   {
     "emissions_source": "1111B0/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 7.07928715585996,
-    "total_impact": 6446.38681346947
+    "impact_per_purchase": 7.19059003291949,
+    "total_impact": 6394.12673883711
   },
   {
     "emissions_source": "230301/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 5.99637532929621,
-    "total_impact": 5460.28915063739
-  },
-  {
-    "emissions_source": "111900/US",
-    "sector_code": "211",
-    "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 3.84264227842406,
-    "total_impact": 3499.10350677166
+    "impact_per_purchase": 5.85803306973006,
+    "total_impact": 5209.17000088585
   },
   {
     "emissions_source": "325190/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 3.83015887282536,
-    "total_impact": 3487.73613891852
+    "impact_per_purchase": 3.89383170419274,
+    "total_impact": 3462.53274103038
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "211 & 324",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 3.87400438816693,
+    "total_impact": 3444.90159101633
   },
   {
     "emissions_source": "324110/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 3.5664236495711,
-    "total_impact": 3247.57929430933
+    "impact_per_purchase": 3.54284015681452,
+    "total_impact": 3150.41865471449
   },
   {
     "emissions_source": "325110/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 3.43638575420866,
-    "total_impact": 3129.16700851558
+    "impact_per_purchase": 3.5039277861942,
+    "total_impact": 3115.8163997791
   },
   {
     "emissions_source": "221100/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 3.3827225143656,
-    "total_impact": 3080.30135381389
+    "impact_per_purchase": 3.32280467999905,
+    "total_impact": 2954.75533371337
   },
   {
     "emissions_source": "All others",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 29.3666205365368,
-    "total_impact": 26741.1945885244
+    "impact_per_purchase": 28.9585227333827,
+    "total_impact": 25750.9416722462
   },
   {
     "emissions_source": "Direct",
@@ -1263,71 +1333,71 @@
     "emissions_source": "Direct",
     "sector_code": "212",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 207.14600607184,
-    "total_impact": 47432.4762270119
-  },
-  {
-    "emissions_source": "230301/US",
-    "sector_code": "212",
-    "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 23.672737757442,
-    "total_impact": 5420.60449149446
+    "impact_per_purchase": 293.542754692838,
+    "total_impact": 48988.1850850997
   },
   {
     "emissions_source": "2122A0/US",
     "sector_code": "212",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 14.8900027746086,
-    "total_impact": 3409.52604406875
+    "impact_per_purchase": 20.1298922309669,
+    "total_impact": 3359.39780692458
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "212",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 10.4068965178494,
+    "total_impact": 1736.76564870884
   },
   {
     "emissions_source": "221100/US",
     "sector_code": "212",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 4.17887643120678,
-    "total_impact": 956.882832247768
-  },
-  {
-    "emissions_source": "324110/US",
-    "sector_code": "212",
-    "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 4.1281017623332,
-    "total_impact": 945.25640352751
+    "impact_per_purchase": 5.32094219789992,
+    "total_impact": 887.990921426747
   },
   {
     "emissions_source": "212310/US",
     "sector_code": "212",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 3.55582413494591,
-    "total_impact": 814.215764747902
+    "impact_per_purchase": 4.52062117943227,
+    "total_impact": 754.428523604277
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "212",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 4.10998547915144,
+    "total_impact": 685.899161641463
   },
   {
     "emissions_source": "327310/US",
     "sector_code": "212",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 3.43087624436426,
-    "total_impact": 785.605085922775
+    "impact_per_purchase": 3.67539731024874,
+    "total_impact": 613.372467271924
   },
   {
     "emissions_source": "1111B0/US",
     "sector_code": "212",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 3.41423041059978,
-    "total_impact": 781.793508141068
+    "impact_per_purchase": 3.5268447773052,
+    "total_impact": 588.581124742235
   },
   {
     "emissions_source": "111900/US",
     "sector_code": "212",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 2.94158755953633,
-    "total_impact": 673.567328828883
+    "impact_per_purchase": 3.07542233576609,
+    "total_impact": 513.245025437635
   },
   {
     "emissions_source": "All others",
     "sector_code": "212",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 33.1357686324855,
-    "total_impact": 7587.45769580056
+    "impact_per_purchase": 35.3633837703512,
+    "total_impact": 5901.65473915424
   },
   {
     "emissions_source": "Direct",
@@ -1748,6 +1818,76 @@
     "indicator": "Particulate matter 2.5",
     "impact_per_purchase": 27.9251401161177,
     "total_impact": 410.771035863736
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "2130",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 12.6369918873082,
+    "total_impact": 1054.65574786695
+  },
+  {
+    "emissions_source": "230301/US",
+    "sector_code": "2130",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 47.1490648291276,
+    "total_impact": 3934.95799253715
+  },
+  {
+    "emissions_source": "324110/US",
+    "sector_code": "2130",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 4.27183333051224,
+    "total_impact": 356.51788148089
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "2130",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 2.94127583049893,
+    "total_impact": 245.472458031195
+  },
+  {
+    "emissions_source": "2123A0/US",
+    "sector_code": "2130",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 2.72150482287346,
+    "total_impact": 227.130849642611
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "2130",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 2.57045090065585,
+    "total_impact": 214.524219146579
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "2130",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 2.32977496269285,
+    "total_impact": 194.437930921541
+  },
+  {
+    "emissions_source": "212310/US",
+    "sector_code": "2130",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 2.25077877248974,
+    "total_impact": 187.845081388973
+  },
+  {
+    "emissions_source": "327310/US",
+    "sector_code": "2130",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 2.24192311637099,
+    "total_impact": 187.106007667152
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "2130",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 29.0070096924879,
+    "total_impact": 2420.86168713454
   },
   {
     "emissions_source": "Direct",
@@ -3151,73 +3291,73 @@
   },
   {
     "emissions_source": "Direct",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 22.2734557951874,
-    "total_impact": 20334.5690304521
+    "impact_per_purchase": 22.8348294228315,
+    "total_impact": 19566.00204161
   },
   {
     "emissions_source": "1111B0/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 236.168365121758,
-    "total_impact": 215610.095152591
+    "impact_per_purchase": 250.221413746036,
+    "total_impact": 214401.982233087
   },
   {
     "emissions_source": "1111A0/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 139.701714824552,
-    "total_impact": 127540.790701467
+    "impact_per_purchase": 148.498526850701,
+    "total_impact": 127240.822593219
   },
   {
     "emissions_source": "111900/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 86.6640739820798,
-    "total_impact": 79120.0346750673
+    "impact_per_purchase": 81.8056183546953,
+    "total_impact": 70095.0668868481
   },
   {
     "emissions_source": "322130/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 12.4098117554346,
-    "total_impact": 11329.5474270465
+    "impact_per_purchase": 12.8355370661279,
+    "total_impact": 10998.117822151
   },
   {
     "emissions_source": "115000/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 10.757214351985,
-    "total_impact": 9820.80732452264
+    "impact_per_purchase": 11.2774123148478,
+    "total_impact": 9663.04009942675
   },
   {
     "emissions_source": "484000/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 5.00848443733997,
-    "total_impact": 4572.49981617312
+    "impact_per_purchase": 5.17450513383615,
+    "total_impact": 4433.76984072105
   },
   {
     "emissions_source": "221100/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 4.05607664117248,
-    "total_impact": 3702.99836770489
+    "impact_per_purchase": 4.0278469952765,
+    "total_impact": 3451.25689680325
   },
   {
     "emissions_source": "322120/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 3.71624312740972,
-    "total_impact": 3392.74709336231
+    "impact_per_purchase": 3.76945899058162,
+    "total_impact": 3229.8573788225
   },
   {
     "emissions_source": "All others",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Particulate matter 2.5",
-    "impact_per_purchase": 58.4315886866019,
-    "total_impact": 53345.164963733
+    "impact_per_purchase": 58.3665413686322,
+    "total_impact": 50011.3158909145
   },
   {
     "emissions_source": "Direct",
@@ -5248,6 +5388,76 @@
     "indicator": "Particulate matter 2.5",
     "impact_per_purchase": 17.2378986598367,
     "total_impact": 1109.87305343843
+  },
+  {
+    "emissions_source": "Direct",
+    "sector_code": "313-316",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 13.6995233279016,
+    "total_impact": 768.566988842036
+  },
+  {
+    "emissions_source": "111900/US",
+    "sector_code": "313-316",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 160.867899016257,
+    "total_impact": 9024.96778821919
+  },
+  {
+    "emissions_source": "1111B0/US",
+    "sector_code": "313-316",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 21.5343247417101,
+    "total_impact": 1208.11291950388
+  },
+  {
+    "emissions_source": "3252A0/US",
+    "sector_code": "313-316",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 11.0384975320491,
+    "total_impact": 619.278832298375
+  },
+  {
+    "emissions_source": "325190/US",
+    "sector_code": "313-316",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 6.58861475080894,
+    "total_impact": 369.632700238271
+  },
+  {
+    "emissions_source": "322130/US",
+    "sector_code": "313-316",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 5.90765368502902,
+    "total_impact": 331.429604895588
+  },
+  {
+    "emissions_source": "1111A0/US",
+    "sector_code": "313-316",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 5.34686000860427,
+    "total_impact": 299.968108248212
+  },
+  {
+    "emissions_source": "221100/US",
+    "sector_code": "313-316",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 4.48723169650225,
+    "total_impact": 251.74147090164
+  },
+  {
+    "emissions_source": "325110/US",
+    "sector_code": "313-316",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 4.47679505263411,
+    "total_impact": 251.155957102411
+  },
+  {
+    "emissions_source": "All others",
+    "sector_code": "313-316",
+    "indicator": "Particulate matter 2.5",
+    "impact_per_purchase": 45.5096197336991,
+    "total_impact": 2553.16849826722
   },
   {
     "emissions_source": "Direct",

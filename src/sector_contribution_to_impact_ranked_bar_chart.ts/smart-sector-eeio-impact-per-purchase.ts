@@ -17,7 +17,11 @@ import {
 } from "../smartSectorChart/smartSector";
 import { apexGraph } from "./getGraph";
 import { exportSmindexRankedPieChart } from "../util/chartExportOverlay";
-import { SECTOR_PURCHASES_FILE_SLUG } from "../util/util";
+import {
+  SECTOR_PURCHASES_FILE_SLUG,
+  displayContributionLabel,
+  isDirectContributionLabel,
+} from "../util/util";
 import * as apex from "apexcharts";
 
 export interface SmartSectorChartConfig {
@@ -58,6 +62,7 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
     this.perspective = "final";
     this.sectorsList = await this._chartConfig.model.sectors();
     const sector_name: string = sectorName ? sectorName : "";
+    this.sector_name = sector_name;
     this.sectorMappingList = await this.modelSmartSectorApi.sectorMapping();
     this.uniqueSortedMappingGroupNoDuplicates =
       uniqueSortedMappingGroupNoDuplicatesList(this.sectorMappingList);
@@ -106,6 +111,7 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
     this.graphName = graphName;
     this.sectorsList = await this._chartConfig.model.sectors();
     const sector_name: string = sectorName ? sectorName : "";
+    this.sector_name = sector_name;
     const sectorMappingList: SectorMapping[] =
       await this.modelSmartSectorApi.sectorMapping();
     this.uniqueSortedMappingGroupNoDuplicates =
@@ -135,6 +141,7 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
 
   async updateGraph(sectorName?: string, sectorCode?: string) {
     this.sectorCode = sectorCode;
+    this.sector_name = sectorName ? sectorName : "";
     this.options = await apexGraph(
       this.getTopValuesFromSectors,
       sectorName,
@@ -178,7 +185,10 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
           const sectorName = selectSectorName(t.sector_code, sectorsList);
           let purchaseCommodity;
           if (isDirectRow) {
-            purchaseCommodity = "Direct";
+            purchaseCommodity = displayContributionLabel(
+              "Direct",
+              this.graphName,
+            );
           } else if (
             purchasedGroup == "All Others" ||
             purchasedGroup == undefined
@@ -250,7 +260,10 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
           const sectorName = selectSectorName(t.sector_code, sectorsList);
           let purchaseCommodity;
           if (isDirectRow) {
-            purchaseCommodity = "Direct";
+            purchaseCommodity = displayContributionLabel(
+              "Direct",
+              this.graphName,
+            );
           } else if (
             purchasedGroup == "All Others" ||
             purchasedGroup == undefined
@@ -317,11 +330,11 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
 
     const sortedImpactPerPurchaseTopList: SortedImpactPerPurchaseTopList[] =
       sortListWithTop15OfEachSector.map((t) => {
-        const directBars = t._smartSectors.filter(
-          (s) => s.purchaseCommodity === "Direct",
+        const directBars = t._smartSectors.filter((s) =>
+          isDirectContributionLabel(s.purchaseCommodity),
         );
         const nonDirect = t._smartSectors.filter(
-          (s) => s.purchaseCommodity !== "Direct",
+          (s) => !isDirectContributionLabel(s.purchaseCommodity),
         );
         nonDirect.sort(
           (a: ImpactPerPurchaseSector, b: ImpactPerPurchaseSector): number =>
@@ -342,8 +355,8 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
           topFifteen.push(allOthersItem);
         }
 
-        const directIndex = topFifteen.findIndex(
-          (t) => t.purchaseCommodity === "Direct",
+        const directIndex = topFifteen.findIndex((t) =>
+          isDirectContributionLabel(t.purchaseCommodity),
         );
         if (directIndex >= 0) {
           const [directItem] = topFifteen.splice(directIndex, 1);
@@ -378,6 +391,7 @@ export class SmartSectorEEIOImpactPurchasePerSector extends Widget {
       this.options,
       type,
       this.sectorCode,
+      this.sector_name,
       this.graphName,
       this.perspective,
       "Impact-Intensity",

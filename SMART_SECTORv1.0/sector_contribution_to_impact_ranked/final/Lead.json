@@ -1,73 +1,73 @@
 [
   {
     "purchased_commodity_code": "Direct",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Lead",
-    "impact_per_purchase": 0.000137300011626291,
-    "total_impact": 0.0518348174460095
-  },
-  {
-    "purchased_commodity_code": "335911/US",
-    "sector_code": "11",
-    "indicator": "Lead",
-    "impact_per_purchase": 0.0030199722710742,
-    "total_impact": 0.952648099816469
+    "impact_per_purchase": 0.000119668272163008,
+    "total_impact": 0.0382590824425775
   },
   {
     "purchased_commodity_code": "311119/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Lead",
-    "impact_per_purchase": 0.00278194547263578,
-    "total_impact": 0.629985618205708
+    "impact_per_purchase": 0.00368157836151778,
+    "total_impact": 0.620842801713691
+  },
+  {
+    "purchased_commodity_code": "335911/US",
+    "sector_code": "111-112",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00361676600824717,
+    "total_impact": 0.931784482681378
   },
   {
     "purchased_commodity_code": "484000/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Lead",
-    "impact_per_purchase": 0.00183636076724014,
-    "total_impact": 0.693280532225966
+    "impact_per_purchase": 0.0020019660078258,
+    "total_impact": 0.640047534373288
   },
   {
     "purchased_commodity_code": "424A00/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Lead",
-    "impact_per_purchase": 0.00168204301381498,
-    "total_impact": 0.635021013652557
+    "impact_per_purchase": 0.00190868874424995,
+    "total_impact": 0.610225907866427
   },
   {
     "purchased_commodity_code": "1121A0/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Lead",
-    "impact_per_purchase": 0.00149124119746106,
-    "total_impact": 0.510851998936247
-  },
-  {
-    "purchased_commodity_code": "48A000/US",
-    "sector_code": "11",
-    "indicator": "Lead",
-    "impact_per_purchase": 0.0013632731834476,
-    "total_impact": 0.143316397622554
+    "impact_per_purchase": 0.00178136033780633,
+    "total_impact": 0.507239192122563
   },
   {
     "purchased_commodity_code": "1111B0/US",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Lead",
-    "impact_per_purchase": 0.00119151247177062,
-    "total_impact": 0.368660227191148
+    "impact_per_purchase": 0.00145256539814437,
+    "total_impact": 0.365443897893462
   },
   {
-    "purchased_commodity_code": "325310/US",
-    "sector_code": "11",
+    "purchased_commodity_code": "112300/US",
+    "sector_code": "111-112",
     "indicator": "Lead",
-    "impact_per_purchase": 0.00106891184536827,
-    "total_impact": 0.299816966350233
+    "impact_per_purchase": 0.00133112158970144,
+    "total_impact": 0.175668961758313
+  },
+  {
+    "purchased_commodity_code": "332600/US",
+    "sector_code": "111-112",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00116055964835358,
+    "total_impact": 0.126950016004727
   },
   {
     "purchased_commodity_code": "All others",
-    "sector_code": "11",
+    "sector_code": "111-112",
     "indicator": "Lead",
-    "impact_per_purchase": 0.010443970999367,
-    "total_impact": 2.76413048052214
+    "impact_per_purchase": 0.0104620000063518,
+    "total_impact": 2.42575122409374
   },
   {
     "purchased_commodity_code": "Direct",
@@ -841,6 +841,76 @@
   },
   {
     "purchased_commodity_code": "Direct",
+    "sector_code": "113-115",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.000234792654437336,
+    "total_impact": 0.013575735003432
+  },
+  {
+    "purchased_commodity_code": "48A000/US",
+    "sector_code": "113-115",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00246505869614716,
+    "total_impact": 0.142529942885121
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "113-115",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.000920665943046723,
+    "total_impact": 0.0532329978526776
+  },
+  {
+    "purchased_commodity_code": "325310/US",
+    "sector_code": "113-115",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.000794411419453444,
+    "total_impact": 0.0459329485415337
+  },
+  {
+    "purchased_commodity_code": "115000/US",
+    "sector_code": "113-115",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.000605961535849781,
+    "total_impact": 0.0350367572302603
+  },
+  {
+    "purchased_commodity_code": "113000/US",
+    "sector_code": "113-115",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.000538753610721025,
+    "total_impact": 0.0311507882085079
+  },
+  {
+    "purchased_commodity_code": "423A00/US",
+    "sector_code": "113-115",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.000505145418362162,
+    "total_impact": 0.0292075591304872
+  },
+  {
+    "purchased_commodity_code": "424A00/US",
+    "sector_code": "113-115",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00042883193455884,
+    "total_impact": 0.0247951057861297
+  },
+  {
+    "purchased_commodity_code": "335911/US",
+    "sector_code": "113-115",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.000360836746376809,
+    "total_impact": 0.0208636171350905
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "113-115",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00389728426341734,
+    "total_impact": 0.211007599245624
+  },
+  {
+    "purchased_commodity_code": "Direct",
     "sector_code": "113000/US",
     "indicator": "Lead",
     "impact_per_purchase": 0.00147957034146786,
@@ -1051,73 +1121,73 @@
   },
   {
     "purchased_commodity_code": "Direct",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Lead",
-    "impact_per_purchase": 0.0133235210704563,
-    "total_impact": 12.1323755692658
+    "impact_per_purchase": 0.0135234693513914,
+    "total_impact": 12.0255468029328
   },
   {
     "purchased_commodity_code": "211000/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Lead",
     "impact_per_purchase": 0.00407394935655486,
     "total_impact": 3.62269972201978
   },
   {
     "purchased_commodity_code": "48A000/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Lead",
-    "impact_per_purchase": 0.00156371165386118,
-    "total_impact": 1.42391316577336
+    "impact_per_purchase": 0.00157585660408571,
+    "total_impact": 1.40130737569896
   },
   {
     "purchased_commodity_code": "331110/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Lead",
-    "impact_per_purchase": 0.000848509663003919,
-    "total_impact": 0.764953868900139
+    "impact_per_purchase": 0.000863738362725078,
+    "total_impact": 0.760230936075345
   },
   {
     "purchased_commodity_code": "484000/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Lead",
-    "impact_per_purchase": 0.000808172696729108,
-    "total_impact": 0.735920679653194
+    "impact_per_purchase": 0.000813729378099837,
+    "total_impact": 0.723596916367784
   },
   {
     "purchased_commodity_code": "324190/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Lead",
-    "impact_per_purchase": 0.000717277871285997,
-    "total_impact": 0.653152006586435
+    "impact_per_purchase": 0.000704655340923621,
+    "total_impact": 0.626604428348246
   },
   {
     "purchased_commodity_code": "21311A/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Lead",
-    "impact_per_purchase": 0.00055450512488062,
-    "total_impact": 0.434253751660627
-  },
-  {
-    "purchased_commodity_code": "221100/US",
-    "sector_code": "211",
-    "indicator": "Lead",
-    "impact_per_purchase": 0.000539289985199043,
-    "total_impact": 0.491076540996867
+    "impact_per_purchase": 0.000566441349750369,
+    "total_impact": 0.431500593148018
   },
   {
     "purchased_commodity_code": "331200/US",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Lead",
-    "impact_per_purchase": 0.000508927429321454,
-    "total_impact": 0.41169373948773
+    "impact_per_purchase": 0.000521913481356588,
+    "total_impact": 0.411049110425613
+  },
+  {
+    "purchased_commodity_code": "221100/US",
+    "sector_code": "211 & 324",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.000517665332975457,
+    "total_impact": 0.460326305935074
   },
   {
     "purchased_commodity_code": "All others",
-    "sector_code": "211",
+    "sector_code": "211 & 324",
     "indicator": "Lead",
-    "impact_per_purchase": 0.00753181732602738,
-    "total_impact": 6.43682411230523
+    "impact_per_purchase": 0.0072888702373228,
+    "total_impact": 6.13644477422269
   },
   {
     "purchased_commodity_code": "Direct",
@@ -1263,29 +1333,22 @@
     "purchased_commodity_code": "Direct",
     "sector_code": "212",
     "indicator": "Lead",
-    "impact_per_purchase": 0.0546666563232671,
-    "total_impact": 12.5176194590222
+    "impact_per_purchase": 0.0733801320303318,
+    "total_impact": 12.2461189452027
   },
   {
     "purchased_commodity_code": "2122A0/US",
     "sector_code": "212",
     "indicator": "Lead",
-    "impact_per_purchase": 0.00541427648754757,
-    "total_impact": 1.15472695870139
+    "impact_per_purchase": 0.00889505894085216,
+    "total_impact": 1.15472680298177
   },
   {
     "purchased_commodity_code": "48A000/US",
     "sector_code": "212",
     "indicator": "Lead",
-    "impact_per_purchase": 0.00493417437154092,
-    "total_impact": 1.07927460150451
-  },
-  {
-    "purchased_commodity_code": "230301/US",
-    "sector_code": "212",
-    "indicator": "Lead",
-    "impact_per_purchase": 0.00192214077584131,
-    "total_impact": 0.440133499959656
+    "impact_per_purchase": 0.00244286845746251,
+    "total_impact": 0.382650260419378
   },
   {
     "purchased_commodity_code": "212230/US",
@@ -1298,36 +1361,43 @@
     "purchased_commodity_code": "331110/US",
     "sector_code": "212",
     "indicator": "Lead",
-    "impact_per_purchase": 0.00100093931011846,
-    "total_impact": 0.229195971151913
-  },
-  {
-    "purchased_commodity_code": "333130/US",
-    "sector_code": "212",
-    "indicator": "Lead",
-    "impact_per_purchase": 0.00095830368945647,
-    "total_impact": 0.139455295610278
-  },
-  {
-    "purchased_commodity_code": "335911/US",
-    "sector_code": "212",
-    "indicator": "Lead",
-    "impact_per_purchase": 0.000874378569667846,
-    "total_impact": 0.200215980533051
+    "impact_per_purchase": 0.00132146149586987,
+    "total_impact": 0.220533463379961
   },
   {
     "purchased_commodity_code": "221100/US",
     "sector_code": "212",
     "indicator": "Lead",
-    "impact_per_purchase": 0.000863187443588776,
-    "total_impact": 0.197653426555955
+    "impact_per_purchase": 0.00120590066226405,
+    "total_impact": 0.201247974589089
+  },
+  {
+    "purchased_commodity_code": "335911/US",
+    "sector_code": "212",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00103538761536423,
+    "total_impact": 0.150672785214606
+  },
+  {
+    "purchased_commodity_code": "333130/US",
+    "sector_code": "212",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00103394164721239,
+    "total_impact": 0.172550417174611
+  },
+  {
+    "purchased_commodity_code": "324190/US",
+    "sector_code": "212",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00103255180786317,
+    "total_impact": 0.172318472402716
   },
   {
     "purchased_commodity_code": "All others",
     "sector_code": "212",
     "indicator": "Lead",
-    "impact_per_purchase": 0.0153064532011401,
-    "total_impact": 2.93671618135931
+    "impact_per_purchase": 0.0133693861715827,
+    "total_impact": 2.13286929983384
   },
   {
     "purchased_commodity_code": "Direct",
@@ -1748,6 +1818,76 @@
     "indicator": "Lead",
     "impact_per_purchase": 0.00850921747722624,
     "total_impact": 0.125168219854074
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "2130",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00453317971640223,
+    "total_impact": 0.378329280152433
+  },
+  {
+    "purchased_commodity_code": "48A000/US",
+    "sector_code": "2130",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00861788820755319,
+    "total_impact": 0.719230131159539
+  },
+  {
+    "purchased_commodity_code": "230301/US",
+    "sector_code": "2130",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00401233934838487,
+    "total_impact": 0.334861080382333
+  },
+  {
+    "purchased_commodity_code": "327320/US",
+    "sector_code": "2130",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00134276015430822,
+    "total_impact": 0.112063830330552
+  },
+  {
+    "purchased_commodity_code": "331410/US",
+    "sector_code": "2130",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.000896989783370401,
+    "total_impact": 0.0748608085884454
+  },
+  {
+    "purchased_commodity_code": "332310/US",
+    "sector_code": "2130",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.000768725096561728,
+    "total_impact": 0.0641561179154236
+  },
+  {
+    "purchased_commodity_code": "335911/US",
+    "sector_code": "2130",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.000593631579381955,
+    "total_impact": 0.0495431953184446
+  },
+  {
+    "purchased_commodity_code": "230302/US",
+    "sector_code": "2130",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.000553006531094441,
+    "total_impact": 0.046152717500157
+  },
+  {
+    "purchased_commodity_code": "324110/US",
+    "sector_code": "2130",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.000550013555412554,
+    "total_impact": 0.0459029302854245
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "2130",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00891179623152723,
+    "total_impact": 0.743759053041633
   },
   {
     "purchased_commodity_code": "Direct",
@@ -3151,73 +3291,73 @@
   },
   {
     "purchased_commodity_code": "Direct",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Lead",
-    "impact_per_purchase": 0.00496096369750598,
-    "total_impact": 4.5291157192724
+    "impact_per_purchase": 0.00492838054436719,
+    "total_impact": 4.22287821850358
   },
   {
     "purchased_commodity_code": "484000/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Lead",
-    "impact_per_purchase": 0.00263353206484656,
-    "total_impact": 2.40428517509628
+    "impact_per_purchase": 0.00272496569392102,
+    "total_impact": 2.33488428327243
   },
   {
     "purchased_commodity_code": "1121A0/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Lead",
-    "impact_per_purchase": 0.0020822666319091,
-    "total_impact": 0.81345779171902
+    "impact_per_purchase": 0.00210944451783607,
+    "total_impact": 0.806406266412885
   },
   {
     "purchased_commodity_code": "112120/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Lead",
-    "impact_per_purchase": 0.00172461933518502,
-    "total_impact": 0.95509976038985
+    "impact_per_purchase": 0.00176219109939267,
+    "total_impact": 0.955099396797045
   },
   {
     "purchased_commodity_code": "327200/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Lead",
-    "impact_per_purchase": 0.000998643711474884,
-    "total_impact": 0.892640020029278
+    "impact_per_purchase": 0.00105594698560681,
+    "total_impact": 0.884620230808379
   },
   {
     "purchased_commodity_code": "332430/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Lead",
-    "impact_per_purchase": 0.000992754626128281,
-    "total_impact": 0.904296877195909
+    "impact_per_purchase": 0.00105518159002233,
+    "total_impact": 0.90413134963047
   },
   {
     "purchased_commodity_code": "322210/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Lead",
-    "impact_per_purchase": 0.000956449513495155,
-    "total_impact": 0.873191337489346
+    "impact_per_purchase": 0.000999416494880728,
+    "total_impact": 0.856349080484191
   },
   {
     "purchased_commodity_code": "112300/US",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Lead",
-    "impact_per_purchase": 0.000812743434863935,
-    "total_impact": 0.637972622788021
+    "impact_per_purchase": 0.000825152329953886,
+    "total_impact": 0.63796983893757
   },
   {
-    "purchased_commodity_code": "424A00/US",
-    "sector_code": "31",
+    "purchased_commodity_code": "424400/US",
+    "sector_code": "311-312",
     "indicator": "Lead",
-    "impact_per_purchase": 0.000770571940460827,
-    "total_impact": 0.703494260626396
+    "impact_per_purchase": 0.000770195276555056,
+    "total_impact": 0.659941095879052
   },
   {
     "purchased_commodity_code": "All others",
-    "sector_code": "31",
+    "sector_code": "311-312",
     "indicator": "Lead",
-    "impact_per_purchase": 0.0173759448176968,
-    "total_impact": 13.1547592572773
+    "impact_per_purchase": 0.0156814741569459,
+    "total_impact": 12.1726573441314
   },
   {
     "purchased_commodity_code": "Direct",
@@ -5248,6 +5388,76 @@
     "indicator": "Lead",
     "impact_per_purchase": 0.00196519694388647,
     "total_impact": 0.126530453378347
+  },
+  {
+    "purchased_commodity_code": "Direct",
+    "sector_code": "313-316",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00545861043548273,
+    "total_impact": 0.306237500768817
+  },
+  {
+    "purchased_commodity_code": "3252A0/US",
+    "sector_code": "313-316",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00407589811795437,
+    "total_impact": 0.22866494463811
+  },
+  {
+    "purchased_commodity_code": "313200/US",
+    "sector_code": "313-316",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00166957763186822,
+    "total_impact": 0.0936661971697615
+  },
+  {
+    "purchased_commodity_code": "484000/US",
+    "sector_code": "313-316",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00123705434961556,
+    "total_impact": 0.0694008918238474
+  },
+  {
+    "purchased_commodity_code": "313100/US",
+    "sector_code": "313-316",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00112097836628272,
+    "total_impact": 0.0628888280934765
+  },
+  {
+    "purchased_commodity_code": "313300/US",
+    "sector_code": "313-316",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00101336811030243,
+    "total_impact": 0.0568517063318133
+  },
+  {
+    "purchased_commodity_code": "424A00/US",
+    "sector_code": "313-316",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.000913377043584745,
+    "total_impact": 0.0512420342856481
+  },
+  {
+    "purchased_commodity_code": "48A000/US",
+    "sector_code": "313-316",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.000851104893615674,
+    "total_impact": 0.0477484588053266
+  },
+  {
+    "purchased_commodity_code": "1121A0/US",
+    "sector_code": "313-316",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.000841866714953003,
+    "total_impact": 0.00705152530613512
+  },
+  {
+    "purchased_commodity_code": "All others",
+    "sector_code": "313-316",
+    "indicator": "Lead",
+    "impact_per_purchase": 0.00958810835996989,
+    "total_impact": 0.509623629803838
   },
   {
     "purchased_commodity_code": "Direct",

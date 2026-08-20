@@ -1,73 +1,73 @@
 [
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Methane",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 7723587.21766659,
-    "contribution": 0.717692198435454
+    "total_impacts_sum": 7674581.97882493,
+    "contribution": 0.720915334942504
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Methane",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 2648423.61590117,
-    "contribution": 0.246097171394244
+    "total_impacts_sum": 2603050.75004807,
+    "contribution": 0.244518751447433
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Methane",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 171060.624569367,
-    "contribution": 0.0158953181019455
+    "total_impacts_sum": 164097.996056713,
+    "contribution": 0.0154146195997416
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Methane",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 117070.011339857,
-    "contribution": 0.0108783951603707
+    "total_impacts_sum": 109529.504736052,
+    "contribution": 0.0102887036467577
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Methane",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 43584.6498333021,
-    "contribution": 0.00404997862720482
+    "total_impacts_sum": 38966.5856702786,
+    "contribution": 0.00366034387769428
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Methane",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 31314.6676777244,
-    "contribution": 0.00290982571382051
+    "total_impacts_sum": 30495.5751793887,
+    "contribution": 0.00286461566967057
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Methane",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 16105.239770527,
-    "contribution": 0.00149653323144989
+    "total_impacts_sum": 14830.6522788427,
+    "contribution": 0.00139312404043858
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Methane",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 8702.58639934968,
-    "contribution": 0.00080866289057207
+    "total_impacts_sum": 8309.50489128213,
+    "contribution": 0.000780557106358807
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Methane",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 1019.22561370858,
-    "contribution": 9.47086180021449e-05
+    "total_impacts_sum": 937.072569334176,
+    "contribution": 8.80243363157631e-05
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Methane",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 830.887372781282,
-    "contribution": 7.72078269356055e-05
+    "total_impacts_sum": 808.271325073554,
+    "contribution": 7.5925333086225e-05
   },
   {
     "sector": "111/112",
@@ -833,6 +833,76 @@
     "contribution": 2.08883948250558e-05
   },
   {
+    "sector": "113-115",
+    "indicator": "Methane",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 49005.2388416613,
+    "contribution": 0.422128405102199
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Methane",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 45372.8658531049,
+    "contribution": 0.390839345959973
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Methane",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 7540.50660380497,
+    "contribution": 0.0649535050040557
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Methane",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 6962.62851265437,
+    "contribution": 0.0599756952284705
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Methane",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 4618.06416302353,
+    "contribution": 0.039779748163159
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Methane",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 1274.58749168434,
+    "contribution": 0.0109792258490232
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Methane",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 819.092498335673,
+    "contribution": 0.00705561727942579
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Methane",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 393.081508067551,
+    "contribution": 0.00338598227450445
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Methane",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 82.1530443744015,
+    "contribution": 0.000707661760574344
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Methane",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 22.6160477077277,
+    "contribution": 0.000194813378614985
+  },
+  {
     "sector": "113000/US",
     "indicator": "Methane",
     "sector_purchased_detail": "Agriculture",
@@ -1043,74 +1113,74 @@
     "contribution": 8.654585474735e-05
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Methane",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 7115581.44997671,
-    "contribution": 0.545505963419303
+    "total_impacts_sum": 5879197.32214465,
+    "contribution": 0.502050622894506
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Methane",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 4813598.15425929,
-    "contribution": 0.369027677795914
+    "total_impacts_sum": 4725643.2955626,
+    "contribution": 0.403543550269715
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Methane",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 664687.584020962,
-    "contribution": 0.0509573312375464
+    "total_impacts_sum": 663552.14695395,
+    "contribution": 0.0566636481899358
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Methane",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 204301.641850816,
-    "contribution": 0.0156624957144352
+    "total_impacts_sum": 201407.323068338,
+    "contribution": 0.0171990607665279
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Methane",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 106049.151438972,
-    "contribution": 0.00813010783900246
+    "total_impacts_sum": 105276.636772139,
+    "contribution": 0.00899003693388719
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Methane",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 88450.740022561,
-    "contribution": 0.0067809505787212
+    "total_impacts_sum": 86042.5614199872,
+    "contribution": 0.00734755429854928
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Methane",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 25313.8072491534,
-    "contribution": 0.00194064714294082
+    "total_impacts_sum": 23728.7070494162,
+    "contribution": 0.00202629908504159
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Methane",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 15031.2985754056,
-    "contribution": 0.00115235319396796
+    "total_impacts_sum": 15000.0931417756,
+    "contribution": 0.001280924196393
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Methane",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 7784.71557140009,
-    "contribution": 0.000596804182142522
+    "total_impacts_sum": 7369.23829266498,
+    "contribution": 0.000629291801646979
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Methane",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 3204.5058287667,
-    "contribution": 0.000245668896026743
+    "total_impacts_sum": 3150.22428691703,
+    "contribution": 0.000269011563797481
   },
   {
     "sector": "211/32411",
@@ -1256,71 +1326,71 @@
     "sector": "212",
     "indicator": "Methane",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 1008065.06319532,
-    "contribution": 0.790698966665031
+    "total_impacts_sum": 1702282.90351893,
+    "contribution": 0.86611255199224
   },
   {
     "sector": "212",
     "indicator": "Methane",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 115134.011357255,
-    "contribution": 0.0903080040484873
-  },
-  {
-    "sector": "212",
-    "indicator": "Methane",
-    "sector_purchased_detail": "Other",
-    "total_impacts_sum": 52732.6314969307,
-    "contribution": 0.0413620496895172
+    "total_impacts_sum": 165909.227954454,
+    "contribution": 0.084413739059265
   },
   {
     "sector": "212",
     "indicator": "Methane",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 30180.4584970041,
-    "contribution": 0.0236727352413307
+    "total_impacts_sum": 25904.8123365691,
+    "contribution": 0.0131802317201951
   },
   {
     "sector": "212",
     "indicator": "Methane",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 24096.6055950915,
-    "contribution": 0.0189007255977902
+    "total_impacts_sum": 24709.7272738426,
+    "contribution": 0.0125721787512166
+  },
+  {
+    "sector": "212",
+    "indicator": "Methane",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 21633.9337862842,
+    "contribution": 0.0110072312672213
   },
   {
     "sector": "212",
     "indicator": "Methane",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 19959.2252071251,
-    "contribution": 0.0156554763406682
-  },
-  {
-    "sector": "212",
-    "indicator": "Methane",
-    "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 12068.1939992899,
-    "contribution": 0.00946596491947147
+    "total_impacts_sum": 10777.3224681466,
+    "contribution": 0.00548344475952492
   },
   {
     "sector": "212",
     "indicator": "Methane",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 10188.5558039802,
-    "contribution": 0.0079916275646736
+    "total_impacts_sum": 10373.8460560331,
+    "contribution": 0.00527815809169676
+  },
+  {
+    "sector": "212",
+    "indicator": "Methane",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 2906.65238740712,
+    "contribution": 0.00147888938542907
   },
   {
     "sector": "212",
     "indicator": "Methane",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 2382.6572059131,
-    "contribution": 0.00186889185967895
+    "total_impacts_sum": 804.406631430534,
+    "contribution": 0.000409277846207327
   },
   {
     "sector": "212",
     "indicator": "Methane",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 96.3292696707625,
-    "contribution": 7.55580733517706e-05
+    "total_impacts_sum": 126.371451138249,
+    "contribution": 6.42971270040098e-05
   },
   {
     "sector": "2121/2122",
@@ -1734,6 +1804,76 @@
     "sector_purchased_detail": "Agriculture",
     "total_impacts_sum": 22.913630576807,
     "contribution": 0.00128966346438992
+  },
+  {
+    "sector": "2130",
+    "indicator": "Methane",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 542166.287508449,
+    "contribution": 0.84303814902154
+  },
+  {
+    "sector": "2130",
+    "indicator": "Methane",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 37179.6420994857,
+    "contribution": 0.0578122568278378
+  },
+  {
+    "sector": "2130",
+    "indicator": "Methane",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 33506.8763132204,
+    "contribution": 0.0521013121572056
+  },
+  {
+    "sector": "2130",
+    "indicator": "Methane",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 10317.3398059912,
+    "contribution": 0.0160428843571974
+  },
+  {
+    "sector": "2130",
+    "indicator": "Methane",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 9577.0188906179,
+    "contribution": 0.0148917268828985
+  },
+  {
+    "sector": "2130",
+    "indicator": "Methane",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 7169.964942913,
+    "contribution": 0.0111488930855527
+  },
+  {
+    "sector": "2130",
+    "indicator": "Methane",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 1609.45600811261,
+    "contribution": 0.00250261376495068
+  },
+  {
+    "sector": "2130",
+    "indicator": "Methane",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 1399.80994768427,
+    "contribution": 0.00217662590697195
+  },
+  {
+    "sector": "2130",
+    "indicator": "Methane",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 159.392988082244,
+    "contribution": 0.000247847150838891
+  },
+  {
+    "sector": "2130",
+    "indicator": "Methane",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 24.2393603821784,
+    "contribution": 3.76908450061815e-05
   },
   {
     "sector": "213111/US",
@@ -3087,74 +3227,74 @@
     "contribution": 0.000212094829108761
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Methane",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 7443864.10195412,
-    "contribution": 0.744115250439083
+    "total_impacts_sum": 7400415.36088389,
+    "contribution": 0.74793608070811
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Methane",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 2264981.10092868,
-    "contribution": 0.226415602981641
+    "total_impacts_sum": 2213670.8183368,
+    "contribution": 0.22372856050704
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Methane",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 129157.572445258,
-    "contribution": 0.0129110523848733
+    "total_impacts_sum": 122193.774364648,
+    "contribution": 0.0123497301473508
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Methane",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 97540.7480058967,
-    "contribution": 0.00975052165599983
+    "total_impacts_sum": 93476.6206854547,
+    "contribution": 0.00944738016772171
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Methane",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 38233.0176768414,
-    "contribution": 0.00382190904266727
+    "total_impacts_sum": 36992.0481356199,
+    "contribution": 0.0037386668383728
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Methane",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 21325.6290117237,
-    "contribution": 0.00213178606641462
+    "total_impacts_sum": 19599.1568741416,
+    "contribution": 0.00198082348932885
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Methane",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 5414.16237755965,
-    "contribution": 0.000541219014522048
+    "total_impacts_sum": 5119.30398103675,
+    "contribution": 0.000517391520450107
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Methane",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 1716.9135930114,
-    "contribution": 0.000171628816801016
+    "total_impacts_sum": 1639.24515413109,
+    "contribution": 0.000165673213747037
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Methane",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 1173.39432728854,
-    "contribution": 0.00011729668915972
+    "total_impacts_sum": 1108.11508208923,
+    "contribution": 0.000111993612662894
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Methane",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 237.415572433609,
-    "contribution": 2.37329088387302e-05
+    "total_impacts_sum": 234.496413649596,
+    "contribution": 2.3699795215851e-05
   },
   {
     "sector": "311111/US",
@@ -5080,6 +5220,76 @@
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.881239837501183,
     "contribution": 3.92048526265572e-05
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Methane",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 51310.2825918717,
+    "contribution": 0.469895398990572
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Methane",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 43448.7410702222,
+    "contribution": 0.397900040489435
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Methane",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 6963.79808061001,
+    "contribution": 0.0637738970101948
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Methane",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 4064.12732044203,
+    "contribution": 0.0372189477882571
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Methane",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 1726.47213758216,
+    "contribution": 0.015810891559264
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Methane",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 1240.9695412215,
+    "contribution": 0.0113646982291186
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Methane",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 294.8583965229,
+    "contribution": 0.00270028923796645
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Methane",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 77.668438880311,
+    "contribution": 0.000711281252666888
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Methane",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 65.2792451993152,
+    "contribution": 0.000597822023564432
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Methane",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 2.91915878401326,
+    "contribution": 2.67334189609012e-05
   },
   {
     "sector": "313100/US",

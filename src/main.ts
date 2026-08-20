@@ -146,3 +146,6 @@ export function countCombo(args: WidgetArgs): CountCombo {
 export function matrixSelector(args: Partial<WidgetArgs>): MatrixSelector {
     return new MatrixSelector(args.selector);
 }
+
+/** Shared Direct / Indirect / supply-chain hover definitions for chart intros. */
+export { termHelp } from "./util/termHelp";

@@ -7,6 +7,7 @@ import {
 } from "../smartSectorChart/smartSector";
 import { wrap } from "module";
 import { formatNumberGraph } from "../util";
+import { isDirectContributionLabel } from "../util/util";
 
 export async function apexGraph(
   contributionList: SortingPercentContributionIndirectAndDirect[],
@@ -66,7 +67,7 @@ export async function apexGraph(
       contrubutionList.push(t.contribution);
       totalSum += t.totalImpactSum;
 
-      if (t.directOrIndirect.match("Direct")) {
+      if (isDirectContributionLabel(t.directOrIndirect)) {
         contrubutionColorList.push("#4CAF50");
       } else {
         contrubutionColorList.push("#2E93fA");

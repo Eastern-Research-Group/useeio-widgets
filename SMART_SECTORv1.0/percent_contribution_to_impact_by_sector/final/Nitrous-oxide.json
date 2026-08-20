@@ -1,73 +1,73 @@
 [
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 997958.310462557,
-    "contribution": 0.698621850576532
+    "total_impacts_sum": 982803.456991998,
+    "contribution": 0.701102145707996
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 347572.095830711,
-    "contribution": 0.243318241105149
+    "total_impacts_sum": 339958.133801295,
+    "contribution": 0.242515810626534
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 76472.3526207017,
-    "contribution": 0.0535345574516564
+    "total_impacts_sum": 72865.8393729557,
+    "contribution": 0.0519802774092291
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 3049.67828001416,
-    "contribution": 0.0021349307494208
+    "total_impacts_sum": 2969.90835790594,
+    "contribution": 0.00211864244826412
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 2069.3705410926,
-    "contribution": 0.00144866520153189
+    "total_impacts_sum": 1939.57863618786,
+    "contribution": 0.00138363650832352
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 526.089421221733,
-    "contribution": 0.000368289497837148
+    "total_impacts_sum": 502.326827714166,
+    "contribution": 0.000358344706921356
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 433.51118865167,
-    "contribution": 0.000303480000803926
+    "total_impacts_sum": 401.948971358629,
+    "contribution": 0.000286738191934291
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 301.746991991444,
-    "contribution": 0.000211238325029083
+    "total_impacts_sum": 276.972554516371,
+    "contribution": 0.000197583810773301
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 47.0936841029419,
-    "contribution": 3.29679871328636e-05
+    "total_impacts_sum": 45.7956248023778,
+    "contribution": 3.26692082578285e-05
   },
   {
-    "sector": "11",
+    "sector": "111-112",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 36.8246025472578,
-    "contribution": 2.5779104907084e-05
+    "total_impacts_sum": 33.8553542264583,
+    "contribution": 2.41513817671354e-05
   },
   {
     "sector": "111/112",
@@ -833,6 +833,76 @@
     "contribution": 1.70666060118187e-05
   },
   {
+    "sector": "113-115",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 15154.8534705597,
+    "contribution": 0.568251803802704
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 7613.96202941622,
+    "contribution": 0.285495842352164
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 3606.51324774597,
+    "contribution": 0.135231110116059
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 129.791904904741,
+    "contribution": 0.00486672366871684
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 79.7699221082191,
+    "contribution": 0.00299108151822484
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 31.5622172930411,
+    "contribution": 0.00118346818355091
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 24.7744374750729,
+    "contribution": 0.000928951164770816
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 23.7625935075666,
+    "contribution": 0.000891010701616927
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 2.96924832079953,
+    "contribution": 0.000111335996584213
+  },
+  {
+    "sector": "113-115",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 1.2980593005641,
+    "contribution": 4.867249560818e-05
+  },
+  {
     "sector": "113000/US",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Direct",
@@ -1043,74 +1113,74 @@
     "contribution": 3.23084568382292e-05
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 17109.8080191241,
-    "contribution": 0.428820402258821
+    "total_impacts_sum": 16546.7990893163,
+    "contribution": 0.431686594480149
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 7572.90775634536,
-    "contribution": 0.189798584923643
+    "total_impacts_sum": 6923.25059129688,
+    "contribution": 0.180619493495834
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 6668.29593663875,
-    "contribution": 0.167126442490421
+    "total_impacts_sum": 6545.80459291067,
+    "contribution": 0.170772369785442
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 2181.17228023958,
-    "contribution": 0.05466637460588
+    "total_impacts_sum": 2143.21968640089,
+    "contribution": 0.0559140896466547
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 1589.68219900623,
-    "contribution": 0.0398419525969897
+    "total_impacts_sum": 1532.30479964147,
+    "contribution": 0.0399760362770046
   },
   {
-    "sector": "211",
-    "indicator": "Nitrous oxide",
-    "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 1530.27221948877,
-    "contribution": 0.0383529697114782
-  },
-  {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 1463.87070932996,
-    "contribution": 0.0366887592033844
+    "total_impacts_sum": 1460.8316691543,
+    "contribution": 0.0381113860730408
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 1434.44962050595,
+    "contribution": 0.0374231093450198
+  },
+  {
+    "sector": "211 & 324",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 877.226356791712,
-    "contribution": 0.0219857849235365
+    "total_impacts_sum": 866.314771969026,
+    "contribution": 0.022601137032033
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 619.650629735763,
-    "contribution": 0.0155302053656137
+    "total_impacts_sum": 605.799481571471,
+    "contribution": 0.0158045984438332
   },
   {
-    "sector": "211",
+    "sector": "211 & 324",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 286.81999169858,
-    "contribution": 0.00718852392023234
+    "total_impacts_sum": 271.809275447845,
+    "contribution": 0.00709118542098921
   },
   {
     "sector": "211/32411",
@@ -1256,71 +1326,71 @@
     "sector": "212",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 64538.5194355165,
-    "contribution": 0.917524979066283
+    "total_impacts_sum": 4545.45095528806,
+    "contribution": 0.489937849343209
   },
   {
     "sector": "212",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 2464.81953796104,
-    "contribution": 0.0350416079381784
-  },
-  {
-    "sector": "212",
-    "indicator": "Nitrous oxide",
-    "sector_purchased_detail": "Other",
-    "total_impacts_sum": 910.074986321989,
-    "contribution": 0.0129382660165939
+    "total_impacts_sum": 2285.94227154259,
+    "contribution": 0.24639351546393
   },
   {
     "sector": "212",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 615.919357767226,
-    "contribution": 0.008756342735853
+    "total_impacts_sum": 627.12053831142,
+    "contribution": 0.0675950727092998
+  },
+  {
+    "sector": "212",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 536.07413489857,
+    "contribution": 0.0577815075609109
   },
   {
     "sector": "212",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 503.49309227583,
-    "contribution": 0.00715801188175649
-  },
-  {
-    "sector": "212",
-    "indicator": "Nitrous oxide",
-    "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 490.98704448052,
-    "contribution": 0.00698021711140917
+    "total_impacts_sum": 505.210553797349,
+    "contribution": 0.0544548328928737
   },
   {
     "sector": "212",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 326.817520163894,
-    "contribution": 0.00464626770136057
-  },
-  {
-    "sector": "212",
-    "indicator": "Nitrous oxide",
-    "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 232.042632684916,
-    "contribution": 0.00329888125043581
+    "total_impacts_sum": 332.958537361865,
+    "contribution": 0.0358884060833947
   },
   {
     "sector": "212",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 140.217940109032,
-    "contribution": 0.00199343684498063
+    "total_impacts_sum": 168.679418872344,
+    "contribution": 0.0181813493366669
+  },
+  {
+    "sector": "212",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 105.014007889239,
+    "contribution": 0.0113190831189826
   },
   {
     "sector": "212",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 116.903998333471,
-    "contribution": 0.00166198945314903
+    "total_impacts_sum": 92.8171645245076,
+    "contribution": 0.0100044291351044
+  },
+  {
+    "sector": "212",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 78.3396923582275,
+    "contribution": 0.00844395435562811
   },
   {
     "sector": "2121/2122",
@@ -1734,6 +1804,76 @@
     "sector_purchased_detail": "Transport",
     "total_impacts_sum": 5.66930414267126,
     "contribution": 0.00545394542810207
+  },
+  {
+    "sector": "2130",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 60642.7256452769,
+    "contribution": 0.968249344927257
+  },
+  {
+    "sector": "2130",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 741.886196226275,
+    "contribution": 0.0118452925039759
+  },
+  {
+    "sector": "2130",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 431.378250788174,
+    "contribution": 0.00688758139244432
+  },
+  {
+    "sector": "2130",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 400.983752842016,
+    "contribution": 0.00640228901132833
+  },
+  {
+    "sector": "2130",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 156.741980502346,
+    "contribution": 0.00250261376495068
+  },
+  {
+    "sector": "2130",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 116.350326530101,
+    "contribution": 0.00185770224286773
+  },
+  {
+    "sector": "2130",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 84.6214184386236,
+    "contribution": 0.0013511040623286
+  },
+  {
+    "sector": "2130",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 37.9379819732552,
+    "contribution": 0.000605735078735324
+  },
+  {
+    "sector": "2130",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 9.49111507538099,
+    "contribution": 0.000151539460942462
+  },
+  {
+    "sector": "2130",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 9.19412330116863,
+    "contribution": 0.000146797555169427
   },
   {
     "sector": "213111/US",
@@ -3087,74 +3227,74 @@
     "contribution": 0.000155482625580572
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Agriculture",
-    "total_impacts_sum": 781847.550584865,
-    "contribution": 0.748857375435694
+    "total_impacts_sum": 774874.850884771,
+    "contribution": 0.753498442667174
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Manufacturing",
-    "total_impacts_sum": 252809.732378446,
-    "contribution": 0.242142387645652
+    "total_impacts_sum": 244520.963065863,
+    "contribution": 0.237775383546425
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Other",
-    "total_impacts_sum": 5193.3852183741,
-    "contribution": 0.00497424954692113
+    "total_impacts_sum": 4953.42661120174,
+    "contribution": 0.00481677684227964
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Purchased Electricity",
-    "total_impacts_sum": 1289.1785624565,
-    "contribution": 0.00123478147885346
+    "total_impacts_sum": 1184.80973623216,
+    "contribution": 0.00115212448834605
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Direct",
-    "total_impacts_sum": 1145.72783661149,
-    "contribution": 0.00109738367799027
+    "total_impacts_sum": 1137.10866436612,
+    "contribution": 0.00110573934199168
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Transport",
-    "total_impacts_sum": 1001.27877752268,
-    "contribution": 0.00095902966870484
+    "total_impacts_sum": 972.355180545121,
+    "contribution": 0.000945530898858738
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Utilities",
-    "total_impacts_sum": 527.27538344783,
-    "contribution": 0.000505026919231529
+    "total_impacts_sum": 498.55966285293,
+    "contribution": 0.000484805938800842
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Fuels",
-    "total_impacts_sum": 183.605460937463,
-    "contribution": 0.000175858200860815
+    "total_impacts_sum": 173.711524970686,
+    "contribution": 0.000168919359544702
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Construction",
-    "total_impacts_sum": 42.3933875536415,
-    "contribution": 4.06045921810461e-05
+    "total_impacts_sum": 40.0349235006078,
+    "contribution": 3.89304833878179e-05
   },
   {
-    "sector": "31",
+    "sector": "311-312",
     "indicator": "Nitrous oxide",
     "sector_purchased_detail": "Minerals",
-    "total_impacts_sum": 13.8888771750187,
-    "contribution": 1.33028339108473e-05
+    "total_impacts_sum": 13.725065432221,
+    "contribution": 1.33464331909534e-05
   },
   {
     "sector": "311111/US",
@@ -5080,6 +5220,76 @@
     "sector_purchased_detail": "Minerals",
     "total_impacts_sum": 0.0511728995842473,
     "contribution": 4.64648418126334e-06
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Manufacturing",
+    "total_impacts_sum": 8288.76931258286,
+    "contribution": 0.52846979885724
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Agriculture",
+    "total_impacts_sum": 6972.69970009394,
+    "contribution": 0.444560714508816
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Other",
+    "total_impacts_sum": 239.958607172351,
+    "contribution": 0.0152991200604327
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Purchased Electricity",
+    "total_impacts_sum": 104.368826224342,
+    "contribution": 0.00665427767642348
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Transport",
+    "total_impacts_sum": 28.9235969775563,
+    "contribution": 0.00184409131205438
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Utilities",
+    "total_impacts_sum": 28.7157205949004,
+    "contribution": 0.00183083766896378
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Fuels",
+    "total_impacts_sum": 9.8939359667766,
+    "contribution": 0.000630810938643381
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Direct",
+    "total_impacts_sum": 8.61917224536887,
+    "contribution": 0.000549535407616094
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Construction",
+    "total_impacts_sum": 2.35846405303376,
+    "contribution": 0.000150369370495896
+  },
+  {
+    "sector": "313-316",
+    "indicator": "Nitrous oxide",
+    "sector_purchased_detail": "Minerals",
+    "total_impacts_sum": 0.163811742797693,
+    "contribution": 1.04441993138032e-05
   },
   {
     "sector": "313100/US",
