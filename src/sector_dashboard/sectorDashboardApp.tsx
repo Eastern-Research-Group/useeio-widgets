@@ -8,7 +8,7 @@ import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormLabel from "@material-ui/core/FormLabel";
 import { makeStyles } from "@material-ui/core/styles";
-import { getLabel, pickPreferredBootSector } from "../util/util";
+import { getLabel, normalizeSectorCodeBase, pickPreferredBootSector } from "../util/util";
 import { SectorSearchTable } from "../util/sectorSearchTable";
 import {
   CONTROL_HELP_HREFS,
@@ -17,6 +17,7 @@ import {
 import {
   modelOfSmartSector,
   CommodityOutputTimeSeriesRow,
+  DataRow,
 } from "../smartSectorWebApi.ts/webApiSmartSector";
 import {
   encodeIndicatorsParam,
@@ -31,11 +32,12 @@ import {
   getIndustryOutputChartOptions,
   INDUSTRY_OUTPUT_CHART_HEIGHT,
   INDUSTRY_OUTPUT_CHART_MAX_WIDTH,
+  INDUSTRY_OUTPUT_DOLLAR_YEAR,
   INDUSTRY_OUTPUT_FOCAL_YEAR,
 } from "./industryOutputChart";
 import {
+  buildSectorDashboardIndicatorsBlurb,
   buildSectorDashboardInterpretation,
-  buildSectorDashboardSectionBlurb,
   SECTOR_NAME_TOKEN,
 } from "./sectorDashboardNarrative";
 import { SectorDashboardOrchestrator } from "./sectorDashboardOrchestrator";
@@ -181,6 +183,20 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 13,
     lineHeight: 1.45,
   },
+  sectorDescription: {
+    maxWidth: INDUSTRY_OUTPUT_CHART_MAX_WIDTH,
+    margin: "0 auto",
+    padding: theme.spacing(0, 2, 1),
+    fontSize: 15,
+    lineHeight: 1.55,
+    textAlign: "left" as const,
+  },
+  sectorDescriptionGroup: {
+    display: "block",
+    marginBottom: theme.spacing(0.5),
+    fontSize: 13,
+    color: "#555",
+  },
   outputChartHost: {
     width: "100%",
     maxWidth: INDUSTRY_OUTPUT_CHART_MAX_WIDTH,
@@ -233,6 +249,9 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
   >(null);
   const [outputTimeSeriesError, setOutputTimeSeriesError] =
     React.useState(false);
+  const [sectorInfoRows, setSectorInfoRows] = React.useState<DataRow[] | null>(
+    null,
+  );
 
   const orchRef = React.useRef<SectorDashboardOrchestrator | null>(null);
   const sectorSyncNeededRef = React.useRef(false);
@@ -275,6 +294,44 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
       cancelled = true;
     };
   }, [endpoint, model]);
+
+  // Sector descriptions live under SMART_TABLE_RECORDS (same source as the
+  // Sector Information Table), not the chart model tree.
+  React.useEffect(() => {
+    let cancelled = false;
+    const infoApi = modelOfSmartSector({
+      endpoint,
+      model: "SMART_TABLE_RECORDS",
+      asJsonFiles: true,
+    });
+    infoApi
+      .sectorRecordList()
+      .then((rows) => {
+        if (!cancelled) {
+          setSectorInfoRows(rows);
+        }
+      })
+      .catch(() => {
+        if (!cancelled) {
+          setSectorInfoRows(null);
+        }
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [endpoint]);
+
+  const activeSectorInfo = React.useMemo(() => {
+    if (!sectorInfoRows?.length) {
+      return null;
+    }
+    const key = normalizeSectorCodeBase(activeSector.code);
+    return (
+      sectorInfoRows.find(
+        (row) => normalizeSectorCodeBase(row.Code) === key,
+      ) ?? null
+    );
+  }, [sectorInfoRows, activeSector.code]);
 
   const industryOutputSeries = React.useMemo(
     () =>
@@ -683,6 +740,16 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
         <h2 style={{ textAlign: "center" }}>
           <em>{activeSector.name}</em> ({activeSector.code})
         </h2>
+        {activeSectorInfo?.Description ? (
+          <p className={classes.sectorDescription}>
+            {activeSectorInfo.Group ? (
+              <span className={classes.sectorDescriptionGroup}>
+                {activeSectorInfo.Group}
+              </span>
+            ) : null}
+            {activeSectorInfo.Description}
+          </p>
+        ) : null}
       </div>
 
       <section
@@ -701,8 +768,9 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
           ) : industryOutputSeries ? (
             <>
               <strong>Price-adjusted output:</strong> yearly BEA gross commodity
-              output converted to {INDUSTRY_OUTPUT_FOCAL_YEAR} dollars (using the
-              model price ratio, Rho), in millions of dollars — the same dollar
+              output converted to constant {INDUSTRY_OUTPUT_DOLLAR_YEAR} dollars
+              (using BEA chain-type price indexes for gross output, via the
+              model's price adjustment), in millions of dollars — the same dollar
               basis as the {INDUSTRY_OUTPUT_FOCAL_YEAR} output used for total
               impacts below.
             </>
@@ -743,6 +811,16 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
         onCancel={cancelIndicatorModal}
       />
 
+      <section className={`sector-dashboard-indicators ${classes.section}`}>
+        <h2 style={{ fontSize: "1.35rem", marginBottom: 8 }}>Indicators</h2>
+        <p style={{ fontSize: 14, lineHeight: 1.55, marginTop: 0 }}>
+          {renderSectorNarrative(
+            buildSectorDashboardIndicatorsBlurb(narrativeInput),
+            activeSector.name,
+          )}
+        </p>
+      </section>
+
       {appliedIndicators.map((slug, i) => {
         const domId = indicatorDomId(slug);
         const interpretation = chartsReady
@@ -763,12 +841,6 @@ export const SectorDashboardApp: React.FC<SectorDashboardAppProps> = ({
           className={`sector-dashboard-section ${classes.section}`}
         >
           <h3>{getLabel(slug)}</h3>
-          <p>
-            {renderSectorNarrative(
-              buildSectorDashboardSectionBlurb(narrativeInput, slug),
-              activeSector.name,
-            )}
-          </p>
           <p
             className={`sector-dashboard-interpretation ${classes.interpretation}`}
           >
