@@ -109,11 +109,11 @@ const Component = (props: { widget: SectorListSearch }) => {
   const [graph, setGraph] = React.useState<string>("");
   const [perspective, setPerspective] = React.useState<string>("final");
   const [totalImpactGraph, setTotalImpactGraph] =
-    React.useState<boolean>(false);
-  const [impactPerPurchaseGraph, setImpactPerPurchaseGraph] =
     React.useState<boolean>(true);
+  const [impactPerPurchaseGraph, setImpactPerPurchaseGraph] =
+    React.useState<boolean>(false);
   const [changePrespective, setChangePrespective] = React.useState(
-    "impact_per_purchase",
+    "total_impact",
   );
 
   React.useEffect(() => {
