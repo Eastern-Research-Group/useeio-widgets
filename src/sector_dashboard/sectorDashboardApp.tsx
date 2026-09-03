@@ -140,7 +140,9 @@ const useStyles = makeStyles((theme) => ({
     boxSizing: "border-box",
   },
   left: {
-    flex: 1,
+    flex: "0 1 40rem",
+    minWidth: "min(100%, 24rem)",
+    maxWidth: "40rem",
     boxSizing: "border-box",
   },
   item: {
@@ -172,7 +174,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#f5fafe",
     padding: theme.spacing(1.25, 2),
     margin: theme.spacing(1, 0, 2, 0),
-    fontSize: 14,
+    fontSize: 16,
     lineHeight: 1.5,
   },
   outputDataNotice: {
@@ -180,7 +182,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#f5f5f5",
     padding: theme.spacing(1, 1.5),
     marginBottom: theme.spacing(1.5),
-    fontSize: 13,
+    fontSize: 15,
     lineHeight: 1.45,
   },
   sectorDescription: {

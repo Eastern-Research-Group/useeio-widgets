@@ -3,7 +3,8 @@ import {
   ContributionListForSector,
   SortingPercentContribution,
 } from "../smartSectorChart/smartSector";
-import { formatNumber, formatNumberGraph } from "../util";
+import { formatPieChartMagnitude } from "../util";
+import { CHART_NO_DATA_TEXT } from "../util/chartTypography";
 
 export async function apexGraph(
   contributionList: SortingPercentContribution[],
@@ -30,7 +31,7 @@ export async function apexGraph(
       },
       labels: [],
       noData: {
-        text: "There's no data",
+        text: CHART_NO_DATA_TEXT,
         align: "center",
         verticalAlign: "middle",
         offsetX: 0,
@@ -130,15 +131,7 @@ export async function apexGraph(
         break;
     }
 
-    let totalValue;
-    switch (graphName) {
-      case "Jobs Supported":
-        totalValue = `${totalSum.toLocaleString(undefined, { maximumFractionDigits: 0 })} ${unitLabel} (100%)`;
-        break;
-      default:
-        totalValue = `${formatNumberGraph(totalSum)} ${unitLabel} (100%)`;
-        break;
-    }
+    const totalValue = `${formatPieChartMagnitude(graphName, totalSum)} ${unitLabel} (100%)`;
 
     return {
       series: contrubutionList,
@@ -224,16 +217,7 @@ export async function apexGraph(
                       if (t.contribution.toString() == val) return true;
                     });
 
-                  let value;
-                  switch (graphName) {
-                    case "Jobs Supported":
-                      value = `${uniqueValue.totalImpactsSum.toLocaleString(undefined, { maximumFractionDigits: 0 })} ${unitLabel}  (${(uniqueValue.contribution * 100).toFixed(2)}%)`;
-                      break;
-                    default:
-                      value = `${formatNumberGraph(uniqueValue.totalImpactsSum)} ${unitLabel}  (${(uniqueValue.contribution * 100).toFixed(2)}%)`;
-                      break;
-                  }
-                  return value;
+                  return `${formatPieChartMagnitude(graphName, uniqueValue.totalImpactsSum)} ${unitLabel}  (${(uniqueValue.contribution * 100).toFixed(2)}%)`;
                 },
                 fontSize: "13px",
               },
@@ -267,16 +251,7 @@ export async function apexGraph(
                 if (t.contribution == val) return true;
               });
 
-            let value;
-            switch (graphName) {
-              case "Jobs Supported":
-                value = `${uniqueValue.totalImpactsSum.toLocaleString(undefined, { maximumFractionDigits: 0 })} ${unitLabel}  (${(uniqueValue.contribution * 100).toFixed(2)}%)`;
-                break;
-              default:
-                value = `${formatNumberGraph(uniqueValue.totalImpactsSum)} ${unitLabel}  (${(uniqueValue.contribution * 100).toFixed(2)}%)`;
-                break;
-            }
-            return value;
+            return `${formatPieChartMagnitude(graphName, uniqueValue.totalImpactsSum)} ${unitLabel}  (${(uniqueValue.contribution * 100).toFixed(2)}%)`;
           },
         },
       },

@@ -288,23 +288,46 @@ const Component = (props: { widget: PieListSearch }) => {
     flexContainer: {
       display: "flex",
       flexDirection: "row",
-      flexWrap: "wrap",
+      flexWrap: "nowrap",
+      alignItems: "flex-start",
+      width: "100%",
+      gap: "1.5rem",
       "@media (max-width:1256px)": {
         flexDirection: "column",
+        flexWrap: "wrap",
       },
     },
+    controlsColumn: {
+      display: "flex",
+      flexDirection: "column",
+      flex: "0 1 40rem",
+      width: "40rem",
+      maxWidth: "100%",
+      minWidth: 0,
+    },
+    chartColumn: {
+      display: "flex",
+      flexDirection: "column",
+      flex: "1 1 600px",
+      minWidth: 0,
+    },
+    pieHost: {
+      position: "relative" as const,
+      minHeight: 480,
+      width: "100%",
+    },
+    pieMount: {
+      position: "absolute" as const,
+      left: "50%",
+      transform: "translateX(-50%)",
+      width: 600,
+      maxWidth: "100%",
+    },
     linkSectors: {
-      overflowWrap: "break-word",
-      whiteSpace: "normal",
-      wordWrap: "break-word",
+      marginTop: "0.5em",
       marginBottom: "1em",
-      flex: "1 1 220px",
-      minWidth: 200,
-      maxWidth: "28rem",
-      "@media (max-width:1256px)": {
-        bottom: "0",
-        right: "0",
-      },
+      width: "100%",
+      maxWidth: "none",
     },
   }));
 
@@ -313,9 +336,7 @@ const Component = (props: { widget: PieListSearch }) => {
     <div
       style={{
         display: "flex",
-        flexDirection: "row",
-        flexWrap: "wrap",
-        gap: "5%",
+        flexDirection: "column",
       }}
     >
       {/* Update header with graph selected */}
@@ -334,14 +355,7 @@ const Component = (props: { widget: PieListSearch }) => {
         {pieIntro}
       </p>
       <div className={classes.flexContainer}>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            flexWrap: "wrap",
-            width: "50%",
-          }}
-        >
+        <div className={classes.controlsColumn}>
           <SectorSearchTable
             sectors={props.widget.sectors}
             onPick={(sector) => handleState(sector.name, sector.code)}
@@ -428,13 +442,7 @@ const Component = (props: { widget: PieListSearch }) => {
           <SmartSectorResourceLinks className={classes.linkSectors} />
         </div>
 
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            flexWrap: "wrap",
-          }}
-        >
+        <div className={classes.chartColumn}>
           {aggregate ? (
             <div
               style={{
@@ -483,26 +491,18 @@ const Component = (props: { widget: PieListSearch }) => {
             </div>
           )}
           <ChartExportMenu onExport={handleChartExport} />
-          <div
-            style={{
-              position: "relative",
-            }}
-          >
+          <div className={classes.pieHost}>
             <div
+              className={classes.pieMount}
               style={{
                 visibility: aggregate ? "visible" : "hidden",
-                position: "absolute",
-                marginLeft: "auto",
-                marginRight: "auto",
               }}
               id="profile-chart"
             ></div>
             <div
+              className={classes.pieMount}
               style={{
                 visibility: detail ? "visible" : "hidden",
-                position: "absolute",
-                marginLeft: "auto",
-                marginRight: "auto",
               }}
               id="profile-chart-details"
             ></div>
