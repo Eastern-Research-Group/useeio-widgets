@@ -127,6 +127,14 @@ export function formatNumberGraph(value: number): string {
     }
 };
 
+/** Whole-number grouping for pie labels (Jobs, Sector Purchases). */
+export function formatPieChartMagnitude(graphName: string, value: number): string {
+    if (graphName === "Jobs Supported" || graphName === "sector purchases") {
+        return value.toLocaleString(undefined, { maximumFractionDigits: 0 });
+    }
+    return formatNumberGraph(value);
+}
+
 /** Indicator order, labels, and dropdown groupings (see `indicatorCatalog.ts`). */
 export {
   SECTOR_PURCHASES_FILE_SLUG,

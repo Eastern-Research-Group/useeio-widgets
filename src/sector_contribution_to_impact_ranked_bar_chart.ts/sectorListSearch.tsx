@@ -109,11 +109,11 @@ const Component = (props: { widget: SectorListSearch }) => {
   const [graph, setGraph] = React.useState<string>("");
   const [perspective, setPerspective] = React.useState<string>("final");
   const [totalImpactGraph, setTotalImpactGraph] =
-    React.useState<boolean>(false);
-  const [impactPerPurchaseGraph, setImpactPerPurchaseGraph] =
     React.useState<boolean>(true);
+  const [impactPerPurchaseGraph, setImpactPerPurchaseGraph] =
+    React.useState<boolean>(false);
   const [changePrespective, setChangePrespective] = React.useState(
-    "impact_per_purchase",
+    "total_impact",
   );
 
   React.useEffect(() => {
@@ -197,7 +197,9 @@ const Component = (props: { widget: SectorListSearch }) => {
       boxSizing: "border-box",
     },
     left: {
-      flex: 1,
+      flex: "0 1 40rem",
+      minWidth: "min(100%, 24rem)",
+      maxWidth: "40rem",
       boxSizing: "border-box",
     },
     item: {
@@ -429,7 +431,7 @@ const Component = (props: { widget: SectorListSearch }) => {
           </div>
           <div className={classes.item}>
             <FormControl component="fieldset">
-              <FormLabel component="legend" style={{ fontSize: "0.75rem" }}>
+              <FormLabel component="legend" style={{ fontSize: "1rem" }}>
                 Select Result View:
               </FormLabel>
               <RadioGroup

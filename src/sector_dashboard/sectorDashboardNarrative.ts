@@ -51,8 +51,8 @@ const INTRO_TEMPLATE = [
   "Indicators included: {indicatorList}.",
 ].join("");
 
-const PER_INDICATOR_TEMPLATE =
-  "For {indicatorLabel}, the charts below show the direct vs indirect impact shares and supplier contributions for {sectorName} using the selections above.";
+const INDICATORS_SECTION_TEMPLATE =
+  "The charts below show the direct vs indirect impact shares and supplier contributions for {sectorName} using the selections above.";
 
 function perspectiveLabel(p: "final" | "direct"): string {
   return p === "final" ? "Point of consumption" : "Supply chain";
@@ -83,12 +83,11 @@ export function buildSectorDashboardIntro(input: SectorDashboardNarrativeInput):
   return raw;
 }
 
-export function buildSectorDashboardSectionBlurb(
+/** Shared blurb under the Indicators section header (not per-indicator). */
+export function buildSectorDashboardIndicatorsBlurb(
   _input: SectorDashboardNarrativeInput,
-  indicatorSlug: string,
 ): string {
-  return replacePlaceholders(PER_INDICATOR_TEMPLATE, {
-    indicatorLabel: getLabel(indicatorSlug),
+  return replacePlaceholders(INDICATORS_SECTION_TEMPLATE, {
     sectorName: SECTOR_NAME_TOKEN,
   });
 }

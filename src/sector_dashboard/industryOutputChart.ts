@@ -11,8 +11,20 @@ export const INDUSTRY_OUTPUT_CHART_HEIGHT = 360;
 /** Max width of the chart host (px). */
 export const INDUSTRY_OUTPUT_CHART_MAX_WIDTH = 1120;
 
-/** Default focal year aligned with smart_sectors useeio target vintage. */
+/** Default focal year aligned with smart_sectors useeio target vintage (output year). */
 export const INDUSTRY_OUTPUT_FOCAL_YEAR = "2023";
+
+/**
+ * Constant-dollar year after USEEIO price adjustment (model IO year).
+ * Upstream: MultiYearCommodityOutput × Rho, with Rho = CPI_IOYear / CPI_year.
+ */
+export const INDUSTRY_OUTPUT_DOLLAR_YEAR = "2017";
+
+/**
+ * When true, draw the focal-year vertical bar + red marker on the output chart.
+ * Kept off for now; plumbing remains for easy re-enable.
+ */
+export const SHOW_FOCAL_YEAR_HIGHLIGHT = false;
 
 export interface CommodityOutputTimeSeriesRow {
   sector_code: string;
@@ -52,7 +64,8 @@ export function findCommodityOutputTimeSeries(
 }
 
 /**
- * Price-adjusted gross output (BEA MultiYearCommodityOutput × model Rho), millions USD.
+ * Price-adjusted gross output (BEA MultiYearCommodityOutput × model Rho),
+ * millions of constant IO-year (2017) USD.
  */
 export function buildIndustryOutputSeriesFromCatalog(
   catalog: CommodityOutputTimeSeriesRow[] | null | undefined,
@@ -167,7 +180,7 @@ export function getIndustryOutputChartOptions(
     },
     series: [
       {
-        name: "Gross output (millions $, price-adjusted)",
+        name: `Gross output (millions ${INDUSTRY_OUTPUT_DOLLAR_YEAR} $, price-adjusted)`,
         data: series.values,
       },
     ],
@@ -181,7 +194,7 @@ export function getIndustryOutputChartOptions(
       tickAmount: yAxis.tickAmount,
       decimalsInFloat: 0,
       title: {
-        text: "Millions of dollars (price-adjusted)",
+        text: `Millions of ${INDUSTRY_OUTPUT_DOLLAR_YEAR} dollars (price-adjusted)`,
       },
       labels: {
         formatter(val: string | number) {
@@ -198,42 +211,52 @@ export function getIndustryOutputChartOptions(
     markers: {
       size: 4,
       hover: { sizeOffset: 2 },
-      discrete: [
-        {
-          seriesIndex: 0,
-          dataPointIndex: markerIndex,
-          fillColor: "#c62828",
-          strokeColor: "#ffffff",
-          size: 9,
-        },
-      ],
+      // Focal-year marker plumbing — gated by SHOW_FOCAL_YEAR_HIGHLIGHT.
+      ...(SHOW_FOCAL_YEAR_HIGHLIGHT
+        ? {
+            discrete: [
+              {
+                seriesIndex: 0,
+                dataPointIndex: markerIndex,
+                fillColor: "#c62828",
+                strokeColor: "#ffffff",
+                size: 9,
+              },
+            ],
+          }
+        : {}),
     },
     dataLabels: { enabled: false },
     title: {
       text: `Industry Price Adjusted Output Over Time (${formatIndustryOutputYearRange(series)})`,
       align: "center",
     },
-    annotations: {
-      xaxis: [
-        {
-          x: series.years[markerIndex],
-          borderColor: "#c62828",
-          strokeDashArray: 0,
-          label: {
-            text: `${series.focalYear} — focal year for this dashboard`,
-            borderColor: "#c62828",
-            style: {
-              color: "#fff",
-              background: "#c62828",
-            },
+    // Focal-year vertical bar plumbing — gated by SHOW_FOCAL_YEAR_HIGHLIGHT.
+    ...(SHOW_FOCAL_YEAR_HIGHLIGHT
+      ? {
+          annotations: {
+            xaxis: [
+              {
+                x: series.years[markerIndex],
+                borderColor: "#c62828",
+                strokeDashArray: 0,
+                label: {
+                  text: `${series.focalYear} — focal year for this dashboard`,
+                  borderColor: "#c62828",
+                  style: {
+                    color: "#fff",
+                    background: "#c62828",
+                  },
+                },
+              },
+            ],
           },
-        },
-      ],
-    },
+        }
+      : {}),
     tooltip: {
       y: {
         formatter(val: number) {
-          return `${Math.round(val).toLocaleString()} million $`;
+          return `${Math.round(val).toLocaleString()} million ${INDUSTRY_OUTPUT_DOLLAR_YEAR} $`;
         },
       },
     },
@@ -265,8 +288,12 @@ export function buildIndustryOutputCaption(
   const change = ((last - first) / first) * 100;
   const dir = change >= 0 ? "up" : "down";
   const amt = Math.abs(Math.round(change * 10) / 10);
+  const highlightNote = SHOW_FOCAL_YEAR_HIGHLIGHT
+    ? ` the red marker highlights ${endYear}, the year aligned with the latest economic vintage used alongside the impact charts below.`
+    : ` ${endYear} is the latest economic vintage used alongside the impact charts below.`;
   return (
-    `Price-adjusted nominal gross output for ${SECTOR_NAME_TOKEN} trends ${dir} by about ${amt}% from ${startYear} to ${endYear}; ` +
-    `the red marker highlights ${endYear}, the year aligned with the latest economic vintage used alongside the impact charts below.`
+    `Price-adjusted gross output for ${SECTOR_NAME_TOKEN} trends ${dir} by about ${amt}% from ${startYear} to ${endYear} ` +
+    `(constant ${INDUSTRY_OUTPUT_DOLLAR_YEAR} dollars);` +
+    highlightNote
   );
 }

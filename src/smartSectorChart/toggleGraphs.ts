@@ -7,7 +7,7 @@ import { SumSmartSectorTotalParts } from "../smartSectorChart/smartSector";
 import { WebModel, Sector } from "useeio";
 import { formatNumberGraph } from "../util";
 import { sanitizeExportFilename } from "../util/chartExportOverlay";
-import { chartTypography, apexYAxisTitleConfig } from "../util/chartTypography";
+import { chartTypography, apexYAxisTitleConfig, CHART_NO_DATA_TEXT } from "../util/chartTypography";
 import { getLabel } from "../util/indicatorCatalog";
 
 const STACKED_AXIS_NAME_LINE_LENGTH = 24;
@@ -405,7 +405,7 @@ export async function calculate(
       },
       labels: [],
       noData: {
-        text: "There's no data",
+        text: CHART_NO_DATA_TEXT,
         align: "center",
         verticalAlign: "middle",
         offsetX: 0,

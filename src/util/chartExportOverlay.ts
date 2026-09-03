@@ -29,7 +29,7 @@ const chartExportQueue = new WeakMap<ApexCharts, Promise<void>>();
 /** Rebuild the on-screen chart after export (Apex can desync internal series state). */
 export type ChartExportReapply = () => void | Promise<void>;
 
-const ATTRIBUTION_MARKER = "Supply Chain Life Cycle Assessment Tool";
+const ATTRIBUTION_MARKER = "Sector Supply Chain Environmental Assessment Tool";
 
 /** True when SVG text is export disclaimer copy (not the donut center total). */
 export function isChartExportAttributionSvgText(text: string | null | undefined): boolean {

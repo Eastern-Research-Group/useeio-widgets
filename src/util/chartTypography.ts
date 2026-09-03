@@ -1,7 +1,9 @@
 /**
- * Shared font sizes for ApexCharts figures (SMCLCA bar charts).
+ * Shared font sizes for ApexCharts figures (SSCEAT bar charts).
  * Defaults are typically ~11px; these improve axis readability and data labels.
  */
+export const CHART_NO_DATA_TEXT = "No data available for this selection";
+
 export const chartTypography = {
   chartTitle: "16px",
   axisTitle: "16px",

@@ -238,11 +238,13 @@
                 <dl class="ssceat-glossary ssceat-glossary--nested">
                   <dt id="point-of-consumption">Point of consumption</dt>
                   <dd>Attributes impacts to the goods and services purchased directly by the
-                    selected sector (demand framing), for example its tier-1 suppliers.</dd>
+                    selected sector (demand framing). For example, the chart will reflect embodied
+                    impacts of its Tier-1 suppliers.</dd>
 
                   <dt id="supply-chain">Supply chain</dt>
-                  <dd>Attributes impacts to the upstream goods and services where the impact actually
-                    occurs.</dd>
+                  <dd>Attributes impacts to all the upstream goods and services where the impact
+                    first occurs. For example, the chart further disaggregates the impacts by all
+                    suppliers in the sector&rsquo;s supply chain regardless of tier.</dd>
                 </dl>
               </dd>
 
@@ -261,19 +263,30 @@
                 supply chain).</dd>
 
               <dt id="embodied-impacts">Embodied impacts</dt>
-              <dd>Direct plus indirect impacts associated with producing a
-                sector&rsquo;s output.</dd>
+              <dd>Equals the cumulative sector impacts of direct plus indirect impacts associated
+                with producing a sector&rsquo;s output.</dd>
 
               <dt id="cradle-to-gate">Cradle-to-gate</dt>
-              <dd>Life cycle scope from raw materials through production of a sector&rsquo;s goods or
-                services (the &ldquo;gate&rdquo; is where output leaves the sector). SSCEAT results
-                do not include product use or end-of-life. See the
-                <a href="./user-guide.html">User Guide</a>.</dd>
+              <dd>The Life Cycle Analysis scope capturing raw materials through production of a
+                sector&rsquo;s goods or services (the &ldquo;gate&rdquo; is where output leaves the
+                sector). SSCEAT results do not include product use or end-of-life impacts. See the
+                <a href="./user-guide.html#step-1">User Guide</a>.</dd>
 
               <dt id="impact-intensity">Impact intensity</dt>
               <dd>Impact per unit of economic activity or per purchase (e.g., embodied
                 impact per dollar), as opposed to total sector-level impacts. Intensity helps
                 compare sectors of different sizes.</dd>
+
+              <dt id="price-adjusted-industry-output">Price-adjusted industry output</dt>
+              <dd>Total sector impacts and the Sector Dashboard output chart use BEA multi-year
+                commodity gross output after a USEEIO price adjustment. That adjustment converts
+                each year&rsquo;s current-dollar output into <strong>constant 2017 dollars</strong>
+                using BEA <em>chain-type price indexes for gross output by industry</em>
+                (mapped to commodities in the model). The 2017 dollar year matches the
+                model&rsquo;s input&ndash;output accounts year. The <strong>2023</strong> label on
+                output and totals is the economic vintage (which year&rsquo;s production volume is
+                used), not the dollar year after adjustment. Primary sources are listed on
+                <a href="./about-data-methods.html">About Data and Methods</a>.</dd>
 
               <dt id="bea-naics">BEA / NAICS</dt>
               <dd>The tool organizes results by economic sector. The U.S. Bureau of Economic Analysis

@@ -10,11 +10,6 @@ export type SectorSearchTableProps = {
   onPick: (sector: Sector) => void;
   /** Label shown on the search text field. Defaults to "Search Sector". */
   label?: string;
-  /**
-   * Maximum visible characters for the sector name column before truncating
-   * (uses `strings.cut`). Defaults to 80.
-   */
-  nameCutLength?: number;
 };
 
 /**
@@ -181,17 +176,25 @@ const useStyles = makeStyles((theme) => ({
   margin: {
     margin: theme.spacing(1),
     minWidth: 150,
+    width: "100%",
   },
   selector: {
-    width: "auto",
+    width: "100%",
     height: "200px",
     border: "1px solid black",
     overflowY: "scroll",
   },
+  table: {
+    width: "100%",
+    tableLayout: "fixed",
+    borderCollapse: "collapse",
+  },
+  codeCol: {
+    width: "7.5rem",
+  },
   rowCell: {
     borderTop: "lightgray solid 1px",
     padding: "5px 0px",
-    whiteSpace: "nowrap",
     fontSize: 12,
   },
   rowLink: {
@@ -223,7 +226,6 @@ export const SectorSearchTable: React.FC<SectorSearchTableProps> = ({
   sectors,
   onPick,
   label = "Search Sector",
-  nameCutLength = 80,
 }) => {
   const classes = useStyles();
   const [searchTerm, setSearchTerm] = React.useState<string>("");
@@ -271,13 +273,14 @@ export const SectorSearchTable: React.FC<SectorSearchTableProps> = ({
         label={label}
         variant="outlined"
         size="small"
+        fullWidth
         onChange={(e) => onSearch(e.target.value)}
       />
       <div className={classes.selector}>
-        <table>
+        <table className={classes.table}>
           <thead>
             <tr>
-              <th className="indicator">
+              <th className={`indicator ${classes.codeCol}`}>
                 BEA/NAICS
                 <br />
                 Code
@@ -330,14 +333,14 @@ export const SectorSearchTable: React.FC<SectorSearchTableProps> = ({
                           {sector.code}
                         </a>
                       </td>
-                      <td className={classes.rowCell}>
+                      <td className={`${classes.rowCell} sector-search-name`}>
                         <a
                           className={linkClass}
                           style={linkStyle}
                           title={sector.name}
                           onClick={() => pick(sector)}
                         >
-                          {strings.cut(sector.name, nameCutLength)}
+                          {sector.name}
                         </a>
                       </td>
                     </tr>

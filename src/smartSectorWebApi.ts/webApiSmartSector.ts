@@ -290,7 +290,8 @@ export class WebModelSmartSector {
   }
 
   /**
-   * Price-adjusted commodity gross output time series (BEA × model Rho).
+   * Price-adjusted commodity gross output time series (BEA × model Rho →
+   * IO-year / 2017 dollars).
    */
   async commodityOutputTimeSeries(): Promise<CommodityOutputTimeSeriesRow[]> {
     if (!this._commodityOutputTimeSeries) {

@@ -1,8 +1,37 @@
 /* SSCEAT (Sector Supply Chain Environmental Assessment Tool) styles
- * Scoped rules for smindex-adjacent chart pages and EPA guidance chrome.
+ * Shared by chart pages and EPA guidance chrome.
  * Chart pages (pie, ranked, stacked, dashboard) load this file only.
- * Do not add bare html/body/a resets here; they fight the EPA theme.
+ * Guidance pages load it *with* the EPA theme — do not put html/body font
+ * resets here except under body.ssceat-chart-page.
  */
+
+/* Chart pages only: restore the widgets.css stack (Verdana / Arial / Helvetica).
+ * Apex tspan labels inherit this; EPA-themed HTML must not. */
+body.ssceat-chart-page {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.45;
+}
+
+body.ssceat-chart-page h1 {
+    font-size: 1.7em;
+}
+
+body.ssceat-chart-page p {
+    font-size: 1em;
+}
+
+body.ssceat-chart-page .MuiFormControlLabel-label,
+body.ssceat-chart-page .MuiInputLabel-root,
+body.ssceat-chart-page .MuiFormLabel-root,
+body.ssceat-chart-page .MuiTypography-body1,
+body.ssceat-chart-page .MuiTypography-body2 {
+    font-size: 1rem;
+}
+
+body.ssceat-chart-page .apexcharts-canvas {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
 
 /* Minimal base formerly supplied by widgets.css on chart pages */
 *, *::before, *::after {
@@ -18,9 +47,13 @@ th.indicator {
 }
 
 .sector-list-body td {
-    white-space: nowrap;
     padding: 4px;
     padding-left: 6px;
+}
+
+.sector-list-body td.sector-search-name {
+    white-space: normal;
+    word-break: break-word;
 }
 
 /* Shared chart download menu (stacked page HTML; ranked/pie use MUI ChartExportMenu) */
@@ -344,9 +377,13 @@ a.control-help-link:focus-visible {
     background: #eee;
 }
 
-/* Shared resource links under chart controls */
+/* Shared resource links under chart controls (keep smaller than page 18px) */
 .smart-sector-resource-links {
     line-height: 1.45;
+    font-size: 0.95rem;
+}
+
+body.ssceat-chart-page .smart-sector-resource-links {
     font-size: 0.95rem;
 }
 
@@ -363,6 +400,13 @@ a.control-help-link:focus-visible {
 
 .smart-sector-resource-line {
     display: block;
+    white-space: nowrap;
+}
+
+@media (max-width: 40rem) {
+    .smart-sector-resource-line {
+        white-space: normal;
+    }
 }
 
 .smart-sector-resource-line:not(:last-child) {
@@ -410,7 +454,7 @@ a.control-help-link:focus-visible {
 .sector-dashboard-control-label,
 .sector-dashboard-controls .MuiFormLabel-root.sector-dashboard-control-label,
 .sector-dashboard-controls .MuiInputLabel-root.sector-dashboard-control-label {
-    font-size: 0.95rem !important;
+    font-size: 1.05rem !important;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.75);
     line-height: 1.3;
@@ -631,6 +675,27 @@ abbr.term-help,
 .ssceat-share-list ul {
     margin: 0;
     padding-left: 1.2rem;
+}
+
+.ssceat-figure {
+    margin: 1rem auto 1.25rem;
+    max-width: 44rem;
+    text-align: center;
+}
+
+.ssceat-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.ssceat-figure figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #565c65;
+    text-align: left;
 }
 
 @media (min-width: 56rem) {
